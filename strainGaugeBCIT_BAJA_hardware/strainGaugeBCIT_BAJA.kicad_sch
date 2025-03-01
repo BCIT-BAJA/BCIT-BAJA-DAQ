@@ -5,6 +5,235 @@
 	(uuid "8162a86f-8c2b-4bf1-82ac-a8a91f9f1fb6")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Amplifier_Instrumentation:AD620"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 3.81 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AD620"
+				(at 5.08 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD620.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Low Cost, Low Power, Instrumentation Amplifier, DIP-8/SOIC-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Instrumentation amplifier"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*P1.27mm* DIP*W7.62mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AD620_0_1"
+				(polyline
+					(pts
+						(xy -7.62 7.62) (xy -7.62 -7.62) (xy 7.62 0) (xy -7.62 7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AD620_1_1"
+				(pin passive line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "Rg"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 2.54)
+					(name "Vs-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -7.62 90)
+					(length 5.08)
+					(name "Ref"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 2.54)
+					(name "Vs+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "Rg"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -127,91 +356,316 @@
 			)
 		)
 	)
-	(junction
-		(at 124.46 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5cf8a1f9-c335-4650-acb7-54213d88031f")
-	)
 	(wire
 		(pts
-			(xy 162.56 105.41) (xy 162.56 92.71)
+			(xy 46.99 81.28) (xy 52.07 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "09becda7-0c64-4c3f-a250-3dd7b3e227c2")
+		(uuid "0b6db805-cc01-478c-bda4-9a69f3cd7a4d")
 	)
 	(wire
 		(pts
-			(xy 124.46 93.98) (xy 124.46 105.41)
+			(xy 72.39 77.47) (xy 87.63 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "19788796-692b-41e8-b146-7bd3c74dac7b")
+		(uuid "4a80c7f1-7476-44bb-80bf-a4baff6e93b8")
 	)
 	(wire
 		(pts
-			(xy 124.46 77.47) (xy 148.59 77.47)
+			(xy 59.69 66.04) (xy 59.69 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3e513e86-e05f-4a98-a567-9cc4a782e5e9")
+		(uuid "5910ec62-73c6-46cf-9a4c-6ae0aa098f02")
 	)
 	(wire
 		(pts
-			(xy 124.46 105.41) (xy 162.56 105.41)
+			(xy 52.07 74.93) (xy 52.07 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4fedefcb-99d2-4f5b-9949-16d7529123ea")
+		(uuid "627d9da9-5000-4fd2-aabd-d6d8261133b1")
 	)
 	(wire
 		(pts
-			(xy 162.56 92.71) (xy 124.46 92.71)
+			(xy 30.48 72.39) (xy 52.07 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7741752c-d158-46d3-a954-b13263c5c79b")
+		(uuid "812a94f2-9900-41cc-a089-4d67e00ceccb")
 	)
 	(wire
 		(pts
-			(xy 124.46 75.7443) (xy 145.7364 75.7443)
+			(xy 52.07 81.28) (xy 52.07 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bc67348e-cb1d-4c7a-8840-261d19cdc23c")
+		(uuid "83ce9def-3b74-48b9-9be0-3cb53dbe8ec3")
 	)
 	(wire
 		(pts
-			(xy 124.46 77.47) (xy 124.46 92.71)
+			(xy 52.07 73.66) (xy 46.99 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be6b1573-82c6-44d7-b7e6-8e2375a34053")
+		(uuid "be19f768-21e6-409d-8226-7e416afb5023")
 	)
 	(wire
 		(pts
-			(xy 124.46 75.7443) (xy 124.46 77.47)
+			(xy 30.48 82.55) (xy 52.07 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f30adeef-240e-43cb-ac46-8b402c59cc74")
+		(uuid "cbf25faf-f8fd-457c-a54f-fd3e20fe78c2")
+	)
+	(wire
+		(pts
+			(xy 59.69 92.71) (xy 59.69 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f21fe4ed-cd78-4cda-a00b-d686de1c3a00")
+	)
+	(text "To set gain(TBD)"
+		(exclude_from_sim no)
+		(at 36.83 78.232 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a99edfcb-89c7-43c6-8aa9-9158f081127e")
+	)
+	(label "+Vcc"
+		(at 59.69 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4838134a-e749-4ce1-80f5-fc270ba9f428")
+	)
+	(label "ADC"
+		(at 87.63 77.47 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6c32093d-873b-4edf-bde1-b3c1d4e047d5")
+	)
+	(label "StrainGaugeV-"
+		(at 30.48 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6e39b28e-56e1-448e-9b77-1ea679e4c1e6")
+	)
+	(label "-Vcc"
+		(at 59.69 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b740deab-a3c7-464e-9827-b298724489dd")
+	)
+	(label "StrainGaugeV+"
+		(at 30.48 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e7a87ab5-5dfd-4315-84f1-66b8b0741ff3")
+	)
+	(symbol
+		(lib_id "Amplifier_Instrumentation:AD620")
+		(at 62.23 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d70782c-5963-4305-acfd-ca8df72337d5")
+		(property "Reference" "U2"
+			(at 74.93 71.1514 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AD620"
+			(at 74.93 73.6914 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 62.23 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD620.pdf"
+			(at 62.23 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low Cost, Low Power, Instrumentation Amplifier, DIP-8/SOIC-8"
+			(at 62.23 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "99cbae97-7fe9-478e-ba47-3b7ac6b3abe0")
+		)
+		(pin "4"
+			(uuid "e5aadf2c-3948-443a-89b4-721ff090ef13")
+		)
+		(pin "6"
+			(uuid "a7cb774c-e167-4053-94dc-482c79b12401")
+		)
+		(pin "1"
+			(uuid "3794fa6f-3f0b-46b6-9aa0-032ee601c0fe")
+		)
+		(pin "2"
+			(uuid "7e93d9d9-01cb-471d-983c-a699eddeeb8b")
+		)
+		(pin "3"
+			(uuid "0e4eb0b4-c069-4ce0-b696-5540a6a689e1")
+		)
+		(pin "5"
+			(uuid "3c21c660-7276-42ea-b020-df40fe442da9")
+		)
+		(pin "7"
+			(uuid "dc8cd3e2-ab43-407b-8a4f-71b88d68be4a")
+		)
+		(instances
+			(project "strainGaugeBCIT_BAJA"
+				(path "/8162a86f-8c2b-4bf1-82ac-a8a91f9f1fb6"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 46.99 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97695fe8-185e-4f5a-9e0a-68dfccc583cd")
+		(property "Reference" "R2"
+			(at 49.53 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 49.53 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.212 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 46.99 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d0c1a2b8-3ef6-4387-8586-ae4fa5580dfe")
+		)
+		(pin "2"
+			(uuid "0858cfee-7a80-4a34-be19-a3efccc5d2de")
+		)
+		(instances
+			(project "strainGaugeBCIT_BAJA"
+				(path "/8162a86f-8c2b-4bf1-82ac-a8a91f9f1fb6"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")

@@ -1,0 +1,11 @@
+VCC_5V -> LOAD SWITCH -> powers strain gauges
+
+sensing strain gauges
+
+Voltmeter(0-20mV) -> Amplified(Differential amplifier multiplexer) -> data fed to MCU via SP
+
+
+Currently the power situation has not been confirmed. So I will ignore it
+
+
+Another issue, we can only fit 6 differential inputs in the chosen ADC

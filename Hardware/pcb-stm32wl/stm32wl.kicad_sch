@@ -2824,16 +2824,6 @@
 	)
 	(wire
 		(pts
-			(xy 70.485 26.67) (xy 77.47 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "291e4200-f3c9-4b61-8158-17e8c4424a24")
-	)
-	(wire
-		(pts
 			(xy 37.465 38.1) (xy 27.94 38.1)
 		)
 		(stroke
@@ -2872,16 +2862,6 @@
 		)
 		(uuid "2edc487e-09a5-4e4e-9675-a7b323f56380")
 	)
-	(wire
-		(pts
-			(xy 70.485 26.035) (xy 70.485 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33064f56-88c0-44a1-ac52-96957fe5ad49")
-	)
 	(polyline
 		(pts
 			(xy 236.855 12.7) (xy 236.855 68.58)
@@ -2901,16 +2881,6 @@
 			(type dash)
 		)
 		(uuid "3bb9c3d4-9a6f-41ac-8d1e-92ed4fe334c0")
-	)
-	(wire
-		(pts
-			(xy 58.42 59.69) (xy 58.42 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d70e675-48ae-4edd-b95d-3ca51e634018")
 	)
 	(wire
 		(pts
@@ -3254,16 +3224,6 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 59.69) (xy 77.47 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72f9157b-77da-4a6d-9880-0711b21f6e23")
-	)
-	(wire
-		(pts
 			(xy 77.47 167.64) (xy 78.74 167.64)
 		)
 		(stroke
@@ -3564,16 +3524,6 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 50.165) (xy 77.47 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7dfd91c-6180-48d0-832a-f6a5a032a686")
-	)
-	(wire
-		(pts
 			(xy 48.26 36.195) (xy 48.26 38.1)
 		)
 		(stroke
@@ -3824,16 +3774,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 50.165) (xy 58.42 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed247857-b2a3-4b23-90ad-758c01ae5e8e")
-	)
-	(wire
-		(pts
 			(xy 37.465 27.305) (xy 48.26 27.305)
 		)
 		(stroke
@@ -4057,16 +3997,15 @@
 		)
 		(uuid "100847e3-630c-4c13-ba45-180e92370805")
 	)
-	(text "VDDPA → Power Amplifier Voltage\n\nNot needed if RF TX is unused.\nLeave unconnected (NC).\nVDDRF → RF Front-End Power\n\nNot needed if RF is disabled.\nLeave unconnected (NC).\nVDDSMPS → SMPS Output (2.8V for RF Power)\n\nIf not using SMPS, this power rail is unnecessary.\nLeave unconnected (NC).\nVLXSMPS → Inductor Connection for SMPS\n\nThe SMPS won't be switching if not in use.\nLeave unconnected (NC).\nVFBSMPS → SMPS Feedback Voltage\n\nOnly used for internal SMPS regulation.\nLeave unconnected (NC).\nVDDR1V55 → 1.55V for RF Low-Power TX\n\nNot needed if RF transmission is disabled.\nLeave unconnected (NC).\nVSSSMPS → SMPS Ground\n\nIf you are disabling the internal SMPS, this can also be left unconnected."
+	(text "NEED REVIEW\nTHIS WIRING FOR CLOCK\nIS WEIRD HAS NO OUT."
 		(exclude_from_sim no)
-		(at 157.226 116.332 0)
+		(at 159.258 170.688 0)
 		(effects
 			(font
-				(size 0.508 0.508)
+				(size 1.4986 1.4986)
 			)
-			(justify left)
 		)
-		(uuid "503cd45c-4bfb-450f-8e48-f3001fbdb15c")
+		(uuid "46f41500-dedc-4ab8-88f4-2c1ed27aeda0")
 	)
 	(text "What is going on here\nThis is for High powered MCU mode, which it will always be in.\nWith a switch to control when it is off and on\ncLOCK IS A BIT WEIRD"
 		(exclude_from_sim no)
@@ -4092,16 +4031,6 @@
 		)
 		(uuid "5dffd1d6-faf9-418e-b9a0-84fb6b6b4454")
 	)
-	(text "NOT NEEDED. NEED ONLY 2.8 V\n\nTIE VDDSMPS TO VDDPA"
-		(exclude_from_sim no)
-		(at 261.112 35.306 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-		)
-		(uuid "6d16dabf-919c-4562-a0d0-cec2a7679cbe")
-	)
 	(text "32MHz HSE TCXO"
 		(exclude_from_sim no)
 		(at 169.545 17.78 0)
@@ -4114,6 +4043,16 @@
 			(justify left bottom)
 		)
 		(uuid "78a228c9-bbf0-49cf-b917-2dec23b390df")
+	)
+	(text "NEED REVIEW DID I REVMOVE ALL THE CORRECT PINS ON MCU?\n\nIs there any need for these pins"
+		(exclude_from_sim no)
+		(at 176.022 119.888 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+		)
+		(uuid "7dd74b46-d55d-4835-b067-9f84e26d7439")
 	)
 	(text "VDDSMPS"
 		(exclude_from_sim no)
@@ -4354,30 +4293,6 @@
 			)
 		)
 	)
-	(global_label "VDDRF"
-		(shape output)
-		(at 77.47 26.67 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-				(thickness 0.2997)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "933a17ae-06d4-4de3-aae1-d3835cc0d957")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 87.8471 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "OSC32_OUT"
 		(shape bidirectional)
 		(at 135.89 166.37 0)
@@ -4393,30 +4308,6 @@
 		(uuid "9600911d-0df3-419b-8d4a-8d1432a7daf2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 150.4747 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VDDRF1V55"
-		(shape output)
-		(at 77.47 50.165 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-				(thickness 0.2997)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "97693043-81ba-44a2-b87b-aca6193e0970")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.47 34.2218 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4470,30 +4361,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VDDRF"
-		(shape output)
-		(at 58.42 50.165 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-				(thickness 0.2997)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "ce55d4e5-cb2b-4927-9979-4a7fc840f632")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.42 39.7879 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -5096,7 +4963,7 @@
 			(uuid "179d200d-2a6e-4708-8c68-0711267a27c0")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "U5")
 					(unit 1)
@@ -5183,7 +5050,7 @@
 			(uuid "836fc39a-a574-442f-9bd7-feb913401958")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "Y1")
 					(unit 1)
@@ -5269,7 +5136,7 @@
 			(uuid "d4d031fc-76f5-460e-958a-127c4933ba55")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "C46")
 					(unit 1)
@@ -5355,7 +5222,7 @@
 			(uuid "99157713-5a67-456e-be9f-48b28b564fb7")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "C49")
 					(unit 1)
@@ -5441,7 +5308,7 @@
 			(uuid "d7a3893e-9636-4df6-be37-1301dcdaa4b4")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "C43")
 					(unit 1)
@@ -5546,7 +5413,7 @@
 			(uuid "cc0e5981-4b4c-430d-8e17-87f5cda3e4ba")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "C15")
 					(unit 1)
@@ -5611,7 +5478,7 @@
 			(uuid "6be025ad-4f3c-43f4-8308-b16cea88de9c")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR037")
 					(unit 1)
@@ -5716,7 +5583,7 @@
 			(uuid "0f42af37-45d6-4a55-bb59-732500a7cdbf")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "C13")
 					(unit 1)
@@ -5781,7 +5648,7 @@
 			(uuid "5b88a7fa-3202-458f-8bd3-9ef04cca81bd")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR032")
 					(unit 1)
@@ -5868,7 +5735,7 @@
 			(uuid "4829bdf2-3651-43e8-a7ed-7d8da66f7263")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "C14")
 					(unit 1)
@@ -5955,7 +5822,7 @@
 			(uuid "076cccb7-8868-4501-85fd-61176334dbbe")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "C18")
 					(unit 1)
@@ -6042,7 +5909,7 @@
 			(uuid "66d9bace-f3cf-4a95-b3af-7de36e53d8a0")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "C16")
 					(unit 1)
@@ -6129,7 +5996,7 @@
 			(uuid "b9650a2f-a1ef-4013-85e8-8a07472848ff")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "C20")
 					(unit 1)
@@ -6194,7 +6061,7 @@
 			(uuid "bc52c389-6eb3-41d8-8a4f-d80daf67a8bd")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR061")
 					(unit 1)
@@ -6259,7 +6126,7 @@
 			(uuid "25fd21db-a0f4-43ba-8b07-8a3c9792cae7")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR064")
 					(unit 1)
@@ -6324,7 +6191,7 @@
 			(uuid "553b7a75-7c9a-42d0-a28c-4562592d9ab8")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR053")
 					(unit 1)
@@ -6389,7 +6256,7 @@
 			(uuid "482d80be-c7b1-4225-8e3d-bf1fee49d5fd")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR056")
 					(unit 1)
@@ -6476,7 +6343,7 @@
 			(uuid "39a07b1a-8dc8-412c-9dd3-ae16efd29c10")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "R5")
 					(unit 1)
@@ -6563,7 +6430,7 @@
 			(uuid "b0a0973f-40c2-4d3a-b6a2-b5b82e1eaf15")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "L10")
 					(unit 1)
@@ -6648,7 +6515,7 @@
 			(uuid "46b67716-89cf-4b4c-b2fa-88bb8a7f4ea5")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "C34")
 					(unit 1)
@@ -6713,7 +6580,7 @@
 			(uuid "b0394a41-fd64-45a7-8d6e-3109d76934f2")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR035")
 					(unit 1)
@@ -6778,7 +6645,7 @@
 			(uuid "95a24000-031a-4616-ba65-1ac82e1fad52")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR038")
 					(unit 1)
@@ -6865,7 +6732,7 @@
 			(uuid "dc130b41-7075-443c-b64f-58b6989d986d")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "C17")
 					(unit 1)
@@ -6950,7 +6817,7 @@
 			(uuid "7a76a00f-d673-4a8f-84c5-2772b96ecfb6")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "FB1")
 					(unit 1)
@@ -7015,7 +6882,7 @@
 			(uuid "bd284371-1670-4b38-a780-50b15598370a")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR043")
 					(unit 1)
@@ -7080,7 +6947,7 @@
 			(uuid "3a2837a2-4d4e-4414-bf7e-2338535fc4d2")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR036")
 					(unit 1)
@@ -7145,7 +7012,7 @@
 			(uuid "7706110d-f78c-4e82-a3c4-6a7b206d97b4")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#FLG03")
 					(unit 1)
@@ -7238,179 +7105,9 @@
 			(uuid "a6d89832-e80a-4165-a5a4-a07b6ecf6aa0")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "X1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 58.42 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005f1ea165")
-		(property "Reference" "C19"
-			(at 61.341 54.7116 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "33pF"
-			(at 60.325 57.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 59.3852 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 58.42 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402FRNPO9BN330"
-			(at 58.42 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DNM_MPN" ""
-			(at 58.42 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "URL" "https://lcsc.com/product-detail/Others_YAGEO-CC0402FRNPO9BN330_C327064.html"
-			(at 58.42 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ALT_MPN" "CC0402JRNPO9BN330"
-			(at 58.42 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d1ec67ca-3266-4804-8dcc-24a364d16faf")
-		)
-		(pin "2"
-			(uuid "73555d62-ae27-4e77-a96e-ec03de0c7aaf")
-		)
-		(instances
-			(project "pcb-stm32wl"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
-					(reference "C19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 58.42 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005f1ea3f9")
-		(property "Reference" "#PWR039"
-			(at 58.42 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 58.547 66.6242 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 58.42 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0e7269ea-96c0-4b66-9dad-1eeac6e5ce80")
-		)
-		(instances
-			(project "pcb-stm32wl"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
-					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -7513,7 +7210,7 @@
 			(uuid "b7e42960-c16d-4fae-b99b-fc2dbbf701c2")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "C21")
 					(unit 1)
@@ -7578,179 +7275,9 @@
 			(uuid "5c422567-1296-4699-9e2b-89f2231a0fd0")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 77.47 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005f219a28")
-		(property "Reference" "C22"
-			(at 80.391 54.7116 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "33pF"
-			(at 79.375 57.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 78.4352 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 77.47 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 77.47 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402FRNPO9BN330"
-			(at 77.47 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DNM_MPN" ""
-			(at 77.47 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "URL" "https://lcsc.com/product-detail/Others_YAGEO-CC0402FRNPO9BN330_C327064.html"
-			(at 77.47 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ALT_MPN" "CC0402JRNPO9BN330"
-			(at 77.47 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "85f125e5-1de6-4257-a03e-5f5e1d1d0c8d")
-		)
-		(pin "2"
-			(uuid "77d084c2-d102-4b9b-866a-054d8b6ca02c")
-		)
-		(instances
-			(project "pcb-stm32wl"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
-					(reference "C22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 77.47 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005f219a32")
-		(property "Reference" "#PWR042"
-			(at 77.47 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 77.597 66.6242 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 77.47 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 77.47 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 77.47 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "982baea3-832b-460a-8a80-78342a3b13db")
-		)
-		(instances
-			(project "pcb-stm32wl"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
-					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -7813,7 +7340,7 @@
 			(uuid "7cef1bc1-da3c-4dbe-bdda-9c2729f4e689")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR031")
 					(unit 1)
@@ -7878,7 +7405,7 @@
 			(uuid "62710eac-1a1d-48fd-b5f0-69b58ef73306")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR033")
 					(unit 1)
@@ -7943,7 +7470,7 @@
 			(uuid "a812b0de-24a5-4f38-a718-f77b7181ed20")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR034")
 					(unit 1)
@@ -8008,7 +7535,7 @@
 			(uuid "19dc47aa-60ac-4f93-9eab-c3dc34b89ccd")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR044")
 					(unit 1)
@@ -8095,7 +7622,7 @@
 			(uuid "502c4f14-d253-48e3-8eef-84834a6d8adb")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "C24")
 					(unit 1)
@@ -8182,74 +7709,9 @@
 			(uuid "6863f4de-b99d-490e-aa1e-7bd8905f1c7d")
 		)
 		(instances
-			(project "pcb-stm32wl"
+			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "C23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+2V8")
-		(at 70.485 26.035 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005fdaa6b1")
-		(property "Reference" "#PWR041"
-			(at 70.485 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+2V8"
-			(at 70.866 21.6408 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 70.485 26.035 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 70.485 26.035 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 70.485 26.035 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "914a5a13-7bbb-43dd-9996-9421f5ab476a")
-		)
-		(instances
-			(project "pcb-stm32wl"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
-					(reference "#PWR041")
 					(unit 1)
 				)
 			)

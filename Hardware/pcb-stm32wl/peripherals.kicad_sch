@@ -734,109 +734,6 @@
 				)
 			)
 		)
-		(symbol "CC0603KRX7R7BB104-Gyro0.1uF:CC0603KRX7R7BB104"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at -12.7 6.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "CC0603KRX7R7BB104"
-				(at -12.7 -9.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "CC0603KRX7R7BB104:CAPC1608X90"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "CC0603KRX7R7BB104_0_0"
-				(rectangle
-					(start -12.7 -5.08)
-					(end 12.7 5.08)
-					(stroke
-						(width 0.41)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin bidirectional line
-					(at -17.78 2.54 0)
-					(length 5.08)
-					(name "C1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -17.78 0 0)
-					(length 5.08)
-					(name "C2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers hide)
 			(pin_names
@@ -2830,329 +2727,6 @@
 				)
 			)
 		)
-		(symbol "ERJ-3EKF1002V-10k-PU:ERJ-3EKF1002V"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 5.715 3.81 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "ERJ-3EKF1002V"
-				(at 6.35 -3.81 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "RC0603N_PAN"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "ERJ-3EKF1002V"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "ERJ-3EKF1002V"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "RC0603N_PAN RC0603N_PAN-M RC0603N_PAN-L"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "ERJ-3EKF1002V_1_1"
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 3.175 1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 1.27) (xy 4.445 -1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.445 -1.27) (xy 5.715 1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.715 1.27) (xy 6.985 -1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.985 -1.27) (xy 8.255 1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.255 1.27) (xy 9.525 -1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 9.525 -1.27) (xy 10.16 0)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 12.7 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "ERJ-3EKF1002V_1_2"
-				(polyline
-					(pts
-						(xy -1.27 3.175) (xy 1.27 4.445)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 5.715) (xy 1.27 6.985)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 8.255) (xy 1.27 9.525)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy -1.27 3.175)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 4.445) (xy -1.27 5.715)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 6.985) (xy -1.27 8.255)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 9.525) (xy 0 10.16)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 0 12.7 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "GND_1"
 			(power)
 			(pin_numbers hide)
@@ -3249,45 +2823,44 @@
 				)
 			)
 		)
-		(symbol "ICM-42605-gyroscope:ICM-42605"
+		(symbol "ICM-45605:ICM-45605"
 			(pin_names
-				(offset 0.254)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 48.26 10.16 0)
+			(property "Reference" "U6"
+				(at 0 22.86 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "ICM-42605"
-				(at 48.26 7.62 0)
+			(property "Value" "ICM-45605"
+				(at 0 20.32 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "LGA14_2P5X3X0P91_IVS"
+			(property "Footprint" "ICM-45605:XDCR_ICM-45605"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "ICM-42605"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 					(hide yes)
 				)
@@ -3301,329 +2874,306 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
+			(property "PARTREV" "1.0"
+				(at -4.826 31.75 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-				)
-			)
-			(property "ki_keywords" "ICM-42605"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "LGA14_2P5X3X0P91_IVS LGA14_2P5X3X0P91_IVS-M LGA14_2P5X3X0P91_IVS-L"
+			(property "STANDARD" "Manufacturer Recommendations"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(symbol "ICM-42605_0_1"
-				(polyline
-					(pts
-						(xy 7.62 -20.32) (xy 88.9 -20.32)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "0.86mm"
+				(at -3.048 27.94 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
+					(justify bottom)
+					(hide yes)
 				)
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 -20.32)
+			)
+			(property "MANUFACTURER" "TDK InvenSense"
+				(at -0.508 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
+					(justify bottom)
+					(hide yes)
 				)
-				(polyline
-					(pts
-						(xy 88.9 -20.32) (xy 88.9 5.08)
-					)
+			)
+			(symbol "ICM-45605_0_0"
+				(rectangle
+					(start -25.4 17.78)
+					(end 25.4 -15.24)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 88.9 5.08) (xy 7.62 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(pin bidirectional line
-					(at 0 0 0)
-					(length 7.62)
+					(at -6.35 -20.32 90)
+					(length 5.08)
 					(name "AP_SDO/AP_AD0"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin no_connect line
-					(at 96.52 -10.16 180)
-					(length 7.62)
-					(name "RESV"
+				(pin passive line
+					(at 12.7 -20.32 90)
+					(length 5.08)
+					(name "RESV_10"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "10"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin no_connect line
-					(at 96.52 -7.62 180)
-					(length 7.62)
-					(name "RESV"
+				(pin passive line
+					(at 15.24 -20.32 90)
+					(length 5.08)
+					(name "RESV_11"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "11"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin unspecified line
-					(at 96.52 -5.08 180)
-					(length 7.62)
+				(pin input line
+					(at -16.51 22.86 270)
+					(length 5.08)
 					(name "AP_CS"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "12"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin unspecified line
-					(at 96.52 -2.54 180)
-					(length 7.62)
+				(pin input clock
+					(at -30.48 10.16 0)
+					(length 5.08)
 					(name "AP_SCL/AP_SCLK"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "13"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin unspecified line
-					(at 96.52 0 180)
-					(length 7.62)
+				(pin bidirectional line
+					(at -30.48 7.62 0)
+					(length 5.08)
 					(name "AP_SDA/AP_SDIO/AP_SDI"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "14"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin no_connect line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "RESV"
+				(pin passive line
+					(at 2.54 -20.32 90)
+					(length 5.08)
+					(name "RESV/MAS_DA"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "2"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin no_connect line
-					(at 0 -5.08 0)
-					(length 7.62)
-					(name "RESV"
+				(pin passive line
+					(at 6.35 -20.32 90)
+					(length 5.08)
+					(name "RESV/MAS_CLK"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "3"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 0 -7.62 0)
-					(length 7.62)
+				(pin output line
+					(at -30.48 -5.08 0)
+					(length 5.08)
 					(name "INT1/INT"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "4"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
 				(pin power_in line
-					(at 0 -10.16 0)
-					(length 7.62)
+					(at -19.05 22.86 270)
+					(length 5.08)
 					(name "VDDIO"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "5"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin power_out line
-					(at 0 -12.7 0)
-					(length 7.62)
+				(pin power_in line
+					(at -2.54 -20.32 90)
+					(length 5.08)
 					(name "GND"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "6"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin no_connect line
-					(at 0 -15.24 0)
-					(length 7.62)
-					(name "RESV"
+				(pin passive line
+					(at 10.16 -20.32 90)
+					(length 5.08)
+					(name "RESV_7"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "7"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
 				(pin power_in line
-					(at 96.52 -15.24 180)
-					(length 7.62)
+					(at -21.59 22.86 270)
+					(length 5.08)
 					(name "VDD"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "8"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
 				(pin bidirectional line
-					(at 96.52 -12.7 180)
-					(length 7.62)
+					(at -30.48 -7.62 0)
+					(length 5.08)
 					(name "INT2/FSYNC"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "9"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
@@ -5724,6 +5274,12 @@
 		(uuid "4160bbf7-ffff-4c5c-a647-5ee58ddecf06")
 	)
 	(junction
+		(at 318.77 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "472da747-7c92-42ab-9845-19845b395840")
+	)
+	(junction
 		(at 332.74 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5742,10 +5298,22 @@
 		(uuid "5bab6a37-1fdf-4cf8-b571-44c962ed86e9")
 	)
 	(junction
+		(at 331.47 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "65de3646-fece-41a9-8728-a4a889c328d8")
+	)
+	(junction
 		(at 250.825 65.405)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "661ca2ba-bce5-4308-99a6-de333a625515")
+	)
+	(junction
+		(at 323.85 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "666d04f5-574c-4819-975a-e2332d973b0b")
 	)
 	(junction
 		(at 320.04 38.1)
@@ -5758,6 +5326,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "76bdd9bb-0558-47a4-aa94-244675b493e1")
+	)
+	(junction
+		(at 331.47 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78b4fe87-8857-4977-94d2-6d91e900ad34")
 	)
 	(junction
 		(at 396.24 168.91)
@@ -5790,6 +5364,12 @@
 		(uuid "920df7fd-b124-48b6-8ef8-9dedc43fd185")
 	)
 	(junction
+		(at 331.47 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9bc435d3-d120-4144-b1ac-3263526af177")
+	)
+	(junction
 		(at 332.74 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5812,6 +5392,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b8c8c7a1-d546-4878-9de9-463ec76dff98")
+	)
+	(junction
+		(at 347.98 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b99a5ffd-e723-46ef-8e6b-9414a150742d")
 	)
 	(junction
 		(at 332.74 30.48)
@@ -5868,10 +5454,36 @@
 		(uuid "f284b1e2-75a4-4a3f-a5f4-6f05f15fb4f5")
 	)
 	(junction
+		(at 323.85 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fcb86f30-3f33-45e4-b81b-2463da28b49b")
+	)
+	(junction
 		(at 260.35 52.705)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd4dd248-3e78-4985-a4fc-58bc05b74cbf")
+	)
+	(junction
+		(at 360.68 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "feea9fdd-ad2d-40f6-89f6-523e8d86f296")
+	)
+	(junction
+		(at 345.44 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ff45229e-b474-4aec-9e20-b6c89191bad7")
+	)
+	(no_connect
+		(at 373.38 143.51)
+		(uuid "31915656-ef99-424a-942b-b7e739e173f8")
+	)
+	(no_connect
+		(at 369.57 143.51)
+		(uuid "e9f5fe71-13ce-41e2-b367-9d67806ff018")
 	)
 	(polyline
 		(pts
@@ -5902,6 +5514,16 @@
 			(type default)
 		)
 		(uuid "044de712-d3da-40ed-9c9f-d91ef285c74c")
+	)
+	(wire
+		(pts
+			(xy 321.31 113.03) (xy 323.85 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "074f7772-1849-431b-b54c-0dd9888c800a")
 	)
 	(wire
 		(pts
@@ -6113,6 +5735,16 @@
 		)
 		(uuid "2522909e-6f5c-4f36-9c3a-869dca14e50f")
 	)
+	(wire
+		(pts
+			(xy 322.58 130.81) (xy 336.55 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26600120-83e6-48d1-93ff-457e11d707a4")
+	)
 	(polyline
 		(pts
 			(xy 91.44 138.43) (xy 161.29 138.43)
@@ -6195,6 +5827,16 @@
 	)
 	(wire
 		(pts
+			(xy 318.77 140.97) (xy 331.47 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "370b2998-7353-4b0f-aba3-b0a19f5ac7e0")
+	)
+	(wire
+		(pts
 			(xy 332.74 33.02) (xy 332.74 35.56)
 		)
 		(stroke
@@ -6212,6 +5854,16 @@
 			(type dash)
 		)
 		(uuid "37728c8e-efcc-462c-a749-47b6bfcbaf37")
+	)
+	(wire
+		(pts
+			(xy 336.55 113.03) (xy 323.85 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "387fd347-37e3-457b-b3f3-8b59cd0583bd")
 	)
 	(wire
 		(pts
@@ -6415,6 +6067,26 @@
 	)
 	(wire
 		(pts
+			(xy 318.77 148.59) (xy 331.47 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50522d5e-4f58-4eef-9447-04e32cbb8dbe")
+	)
+	(wire
+		(pts
+			(xy 336.55 115.57) (xy 331.47 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5384fc58-cdc4-4011-8f6d-36552b0b334f")
+	)
+	(wire
+		(pts
 			(xy 396.24 168.91) (xy 396.24 187.96)
 		)
 		(stroke
@@ -6502,6 +6174,16 @@
 			(type default)
 		)
 		(uuid "60f71af3-40ea-4221-98db-854272bf114a")
+	)
+	(wire
+		(pts
+			(xy 331.47 100.33) (xy 331.47 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "617120b8-9346-46f7-ad3a-5250465d0c28")
 	)
 	(wire
 		(pts
@@ -6633,6 +6315,16 @@
 		)
 		(uuid "706c1cb9-5d96-4282-9efc-6147f0125147")
 	)
+	(wire
+		(pts
+			(xy 331.47 139.7) (xy 331.47 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7190ca68-23ba-42ad-a2fd-edbc3dc2b776")
+	)
 	(polyline
 		(pts
 			(xy 215.9 77.47) (xy 215.9 13.97)
@@ -6662,6 +6354,16 @@
 			(type default)
 		)
 		(uuid "7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12")
+	)
+	(wire
+		(pts
+			(xy 347.98 100.33) (xy 350.52 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7336de29-4f47-4760-ad57-6e2670c0a5c4")
 	)
 	(wire
 		(pts
@@ -6862,6 +6564,16 @@
 			(type dash)
 		)
 		(uuid "8bd46048-cab7-4adf-af9a-bc2710c1894c")
+	)
+	(wire
+		(pts
+			(xy 321.31 115.57) (xy 331.47 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91c3cf88-c325-4c5a-aed2-1fc6467e0f40")
 	)
 	(wire
 		(pts
@@ -7275,6 +6987,16 @@
 	)
 	(wire
 		(pts
+			(xy 323.85 100.33) (xy 323.85 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb18bdd1-0b7b-4504-87de-27915b74e2a4")
+	)
+	(wire
+		(pts
 			(xy 127 170.18) (xy 125.73 170.18)
 		)
 		(stroke
@@ -7373,6 +7095,16 @@
 		)
 		(uuid "c6bba6d7-3631-448e-9df8-b5a9e3238ade")
 	)
+	(wire
+		(pts
+			(xy 360.68 143.51) (xy 364.49 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c758b3cd-cc7a-4e19-b46f-b5d0cf68900f")
+	)
 	(polyline
 		(pts
 			(xy 13.97 139.7) (xy 13.97 196.85)
@@ -7445,6 +7177,16 @@
 	)
 	(wire
 		(pts
+			(xy 331.47 100.33) (xy 345.44 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d56cde8f-e921-4872-9d1e-53851e2149f3")
+	)
+	(wire
+		(pts
 			(xy 61.595 163.195) (xy 59.055 163.195)
 		)
 		(stroke
@@ -7462,6 +7204,16 @@
 			(type default)
 		)
 		(uuid "d7c32046-cf07-4e69-b413-97ae527c5cd7")
+	)
+	(wire
+		(pts
+			(xy 322.58 128.27) (xy 336.55 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7e4bba2-d6ee-417c-98c7-1876dd58a356")
 	)
 	(wire
 		(pts
@@ -7615,6 +7367,16 @@
 	)
 	(wire
 		(pts
+			(xy 323.85 100.33) (xy 331.47 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e084e563-a885-437f-9429-53dc90daa09d")
+	)
+	(wire
+		(pts
 			(xy 326.39 195.58) (xy 335.28 195.58)
 		)
 		(stroke
@@ -7632,6 +7394,16 @@
 			(type default)
 		)
 		(uuid "e11ae5a5-aa10-4f10-b346-f16e33c7899a")
+	)
+	(wire
+		(pts
+			(xy 345.44 100.33) (xy 347.98 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e224ff8c-2240-4177-a6f2-4e92671963e4")
 	)
 	(polyline
 		(pts
@@ -7814,8 +7586,8 @@
 		(uuid "ffa442c7-cbef-461f-8613-c211201cec06")
 	)
 	(rectangle
-		(start 301.625 75.565)
-		(end 440.055 153.67)
+		(start 303.53 90.805)
+		(end 395.859 156.718)
 		(stroke
 			(width 0)
 			(type default)
@@ -7931,9 +7703,9 @@
 		)
 		(uuid "b54cae5b-c17c-4ed7-b249-2e7d5e83609a")
 	)
-	(text "IMU\n-WEIRD LOOKING CAPACITORS BTW"
+	(text "IMU"
 		(exclude_from_sim no)
-		(at 363.22 83.058 0)
+		(at 357.124 96.774 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -7966,6 +7738,18 @@
 			(justify left bottom)
 		)
 		(uuid "cd1cff81-9d8a-4511-96d6-4ddb79484001")
+	)
+	(text "I2C address: 0x68 if AD0 is GND"
+		(exclude_from_sim no)
+		(at 310.388 155.956 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "d99cb0f7-abe1-4e69-9ede-0b9769c7e534")
 	)
 	(text "RGB LED & User Button"
 		(exclude_from_sim no)
@@ -8190,6 +7974,18 @@
 			)
 		)
 	)
+	(hierarchical_label "I2C_SDA"
+		(shape input)
+		(at 321.31 115.57 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "034e406a-7dae-4911-aca4-2e1074559935")
+	)
 	(hierarchical_label "SCK"
 		(shape input)
 		(at 123.825 159.385 180)
@@ -8351,6 +8147,18 @@
 		)
 		(uuid "5a390647-51ba-4684-b747-9001f749ff71")
 	)
+	(hierarchical_label "ICM_INT1"
+		(shape output)
+		(at 322.58 128.27 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "5a6aa3f3-e5fd-4957-89e5-792c3edabf02")
+	)
 	(hierarchical_label "ANT_SD0"
 		(shape output)
 		(at 397.51 195.58 0)
@@ -8488,6 +8296,18 @@
 			(justify right)
 		)
 		(uuid "883105b0-f6a6-466b-ba58-a2fcc1f18e4b")
+	)
+	(hierarchical_label "ICM_INT2"
+		(shape output)
+		(at 322.58 130.81 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "8b57900b-d95e-46ae-90a6-8601339ee1f6")
 	)
 	(hierarchical_label "VCC_STRAINGAUGE"
 		(shape input)
@@ -8663,6 +8483,18 @@
 			(justify right)
 		)
 		(uuid "cef60483-c30f-42bd-b692-6f58acf8eff6")
+	)
+	(hierarchical_label "I2C_SCL"
+		(shape input)
+		(at 321.31 113.03 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "cf1d2bc0-4ed0-4ffd-a936-2c032c8ff94f")
 	)
 	(hierarchical_label "PA11_SDA2"
 		(shape bidirectional)
@@ -14811,7 +14643,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 418.7952 184.15 0)
 			(effects
 				(font
@@ -14838,6 +14670,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "CL31B106KAHNNNE"
+			(at 417.83 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "URL" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
+			(at 417.83 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9c14d128-b606-429f-9ae6-9f3318accbaf")
 		)
@@ -14854,53 +14704,17 @@
 		)
 	)
 	(symbol
-		(lib_id "ICM-42605-gyroscope:ICM-42605")
-		(at 317.5 124.46 0)
+		(lib_id "power:+3.3V")
+		(at 323.85 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "16d5e18f-6317-4ade-82eb-566b7cd44be7")
-		(property "Reference" "U6"
-			(at 365.76 114.3 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "ICM-42605"
-			(at 365.76 116.84 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "LGA14_2P5X3X0P91_IVS"
-			(at 317.5 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "ICM-42605"
-			(at 317.5 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 317.5 124.46 0)
+		(uuid "1853066d-fcec-4fbc-b600-5e4d24d1be66")
+		(property "Reference" "#PWR060"
+			(at 323.85 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14908,8 +14722,16 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/tdk-invensense/ICM-42605/9953675?gclsrc=aw.ds&&utm_adgroup=General&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Zombie%20SKUs&utm_term=&productid=9953675&utm_content=General&utm_id=go_cmp-17855401585_adg-_ad-__dev-c_ext-_prd-9953675_sig-Cj0KCQjwm7q-BhDRARIsACD6-fUiamL_ZqaqPs1ju8ypbYWcq2beSpTnp8t2oy6VAJPsq3Kl4aRYmYkaAoooEALw_wcB&gad_source=1&gclid=Cj0KCQjwm7q-BhDRARIsACD6-fUiamL_ZqaqPs1ju8ypbYWcq2beSpTnp8t2oy6VAJPsq3Kl4aRYmYkaAoooEALw_wcB&gclsrc=aw.ds"
-			(at 317.5 124.46 0)
+		(property "Value" "+3.3V"
+			(at 323.85 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 323.85 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14917,8 +14739,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "TDK InvenSense"
-			(at 317.5 124.46 0)
+		(property "Datasheet" ""
+			(at 323.85 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14926,61 +14748,22 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "ICM-42605"
-			(at 317.5 124.46 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 323.85 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "14"
-			(uuid "4c6f6d0d-58ea-4a3d-a1a4-305023817b2b")
-		)
-		(pin "3"
-			(uuid "e87156b2-a504-466a-9325-188f61c5801f")
-		)
-		(pin "8"
-			(uuid "a3e85377-c2c0-42a5-80e4-3acf85580e51")
-		)
-		(pin "2"
-			(uuid "3a777c34-1dcd-410d-bd7e-b35c21cfe4b2")
-		)
-		(pin "5"
-			(uuid "e773f80a-8add-46bb-8dcd-c7126c5e29f5")
-		)
-		(pin "13"
-			(uuid "daa84de7-5337-4227-8d75-7073d9f92769")
-		)
-		(pin "4"
-			(uuid "9b0a1c72-545a-4495-be79-1a0fe547d6a5")
-		)
-		(pin "9"
-			(uuid "b9382e45-0a5c-405a-9e90-2b8e60462bdd")
-		)
-		(pin "6"
-			(uuid "f2cf19cf-83d8-448f-b5ff-fbabe6c6eb79")
-		)
-		(pin "10"
-			(uuid "bee31f0a-7ad4-46a5-ab91-d19865977c13")
-		)
-		(pin "11"
-			(uuid "46e8ccc2-9be0-463f-a168-e762dba77c64")
 		)
 		(pin "1"
-			(uuid "c2676e5f-80ea-4aa4-989c-15656cbe11a6")
-		)
-		(pin "7"
-			(uuid "492aaa57-776b-41e1-b112-3b32856ec019")
-		)
-		(pin "12"
-			(uuid "f2bdb670-74bc-46e4-977f-8554bf6cdfb4")
+			(uuid "f24c6bf9-fc20-4051-bae9-c3c5438c14b2")
 		)
 		(instances
 			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "U6")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -14988,7 +14771,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 427.99 116.84 0)
+		(at 331.47 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14997,7 +14780,7 @@
 		(fields_autoplaced yes)
 		(uuid "2120ea6e-2521-4fa0-85fc-2b5617b8655e")
 		(property "Reference" "R9"
-			(at 430.53 115.5699 0)
+			(at 334.01 110.4899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15006,7 +14789,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 430.53 118.1099 0)
+			(at 334.01 113.0299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15015,7 +14798,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 426.212 116.84 90)
+			(at 329.692 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15024,7 +14807,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 427.99 116.84 0)
+			(at 331.47 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15033,7 +14816,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 427.99 116.84 0)
+			(at 331.47 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15177,45 +14960,43 @@
 		)
 	)
 	(symbol
-		(lib_id "CC0603KRX7R7BB104-Gyro0.1uF:CC0603KRX7R7BB104")
-		(at 398.78 95.25 0)
+		(lib_id "power:GND")
+		(at 360.68 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3816a6a8-9e28-40b0-b546-36061d7adffc")
-		(property "Reference" "C19"
-			(at 412.75 93.9799 0)
+		(uuid "4a0c3d1a-923f-476b-ae6e-c2c7b1e53f6d")
+		(property "Reference" "#PWR057"
+			(at 360.68 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "CC0603KRX7R7BB104"
-			(at 412.75 96.5199 0)
+		(property "Value" "GND"
+			(at 360.807 147.9042 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "CC0603KRX7R7BB104:CAPC1608X90"
-			(at 398.78 95.25 0)
+		(property "Footprint" ""
+			(at 360.68 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 398.78 95.25 0)
+			(at 360.68 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15224,149 +15005,21 @@
 			)
 		)
 		(property "Description" ""
-			(at 398.78 95.25 0)
+			(at 360.68 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Distributor link" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB104/302822"
-			(at 398.78 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 398.78 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CC0603KRX7R7BB104"
-			(at 398.78 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "402ba6a4-6cc5-4a3c-bccb-0a1ead8b6f0d")
 		)
 		(pin "1"
-			(uuid "779d350c-0511-4f72-987f-d33c0aec7a26")
+			(uuid "75857667-5785-4664-9200-d0ddaef335c8")
 		)
 		(instances
 			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "C19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CC0603KRX7R7BB104-Gyro0.1uF:CC0603KRX7R7BB104")
-		(at 339.09 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "382cf049-6644-47f8-be5b-e7727f849ca3")
-		(property "Reference" "C8"
-			(at 353.06 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CC0603KRX7R7BB104"
-			(at 353.06 96.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "CC0603KRX7R7BB104:CAPC1608X90"
-			(at 339.09 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 339.09 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 339.09 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor link" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB104/302822"
-			(at 339.09 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 339.09 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CC0603KRX7R7BB104"
-			(at 339.09 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1abd9417-7a7a-45a7-b869-630ee5e8e5d2")
-		)
-		(pin "1"
-			(uuid "86b0e092-9758-4d56-a33b-aaa5525f0b6e")
-		)
-		(instances
-			(project "pcb-stm32wl_bajaSensors"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "C8")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -15400,7 +15053,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 407.3652 184.15 0)
 			(effects
 				(font
@@ -15427,6 +15080,42 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "CL05B104KP5NNNC"
+			(at 406.4 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "URL" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL05B104KP5NNNC/3886660"
+			(at 406.4 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
+			(at 406.4 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL31B106KAHNNNE"
+			(at 406.4 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "804c9b2b-96ed-46b7-8e7d-47a8b76194fd")
 		)
@@ -15443,53 +15132,52 @@
 		)
 	)
 	(symbol
-		(lib_id "ERJ-3EKF1002V-10k-PU:ERJ-3EKF1002V")
-		(at 332.74 113.03 0)
+		(lib_id "ICM-45605:ICM-45605")
+		(at 367.03 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6682c628-486c-40e1-872a-e285a70d4077")
-		(property "Reference" "R4"
-			(at 339.09 106.68 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "ERJ-3EKF1002V"
-			(at 339.09 109.22 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "RC0603N_PAN"
-			(at 332.74 113.03 0)
+		(uuid "710a02aa-fe78-494d-836e-8820e78c7fe8")
+		(property "Reference" "U6"
+			(at 367.03 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
+			)
+		)
+		(property "Value" "ICM-45605"
+			(at 367.03 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ICM-45605:XDCR_ICM-45605"
+			(at 367.03 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "ERJ-3EKF1002V"
-			(at 332.74 113.03 0)
+		(property "Datasheet" ""
+			(at 367.03 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 332.74 113.03 0)
+			(at 367.03 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15497,43 +15185,92 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-3EKF1002V/196066?s=N4IgTCBcDaIKICUBSBaAzHA0gMQIwAZ8wA1EAXQF8g&&utm_adgroup=Supplier_Panasonic&utm_source=google&utm_medium=cpc&utm_campaign=EN_Supplier_Panasonic&utm_term=erj-3ekf1002v&productid=&utm_content=Supplier_Panasonic&utm_id=go_cmp-134209385_adg-128615584780_ad-648340646832_kwd-375322781237_dev-c_ext-_prd-_sig-Cj0KCQjwm7q-BhDRARIsACD6-fWoZliQAlNfDTQCSgYlGuu9Fq2tmp0oMaL9siCCUjVEH1DELbHxpMcaAo8eEALw_wcB&gad_source=1&gclid=Cj0KCQjwm7q-BhDRARIsACD6-fWoZliQAlNfDTQCSgYlGuu9Fq2tmp0oMaL9siCCUjVEH1DELbHxpMcaAo8eEALw_wcB&gclsrc=aw.ds"
-			(at 332.74 113.03 0)
+		(property "PARTREV" "1.0"
+			(at 362.204 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Panasonic Electronic Components"
-			(at 332.74 113.03 0)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 367.03 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "ERJ-3EKF1002V"
-			(at 332.74 113.03 0)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "0.86mm"
+			(at 363.982 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 				(hide yes)
 			)
+		)
+		(property "MANUFACTURER" "TDK InvenSense"
+			(at 366.522 98.806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "dd759c3a-eb35-442a-920e-e180449ecee7")
+		)
+		(pin "12"
+			(uuid "2bb12aa8-4c72-474a-bd04-1369723f2c3b")
+		)
+		(pin "3"
+			(uuid "7b1ea335-f01a-453b-bd39-34020095e070")
+		)
+		(pin "5"
+			(uuid "b23f4ab4-95f7-472c-9400-f9ddac6620eb")
 		)
 		(pin "1"
-			(uuid "231650b9-958b-4f3f-8124-c983c4830822")
+			(uuid "cdb19e75-e2f8-40a7-934f-e1eb22c58e31")
+		)
+		(pin "6"
+			(uuid "b59632a7-2a70-4024-bff0-66c714f4c6d0")
+		)
+		(pin "10"
+			(uuid "49e6abcc-5455-4504-ae5d-454b7a1b8f4f")
+		)
+		(pin "4"
+			(uuid "cfaf7454-b385-41d8-b323-b9c1032f1c3d")
+		)
+		(pin "11"
+			(uuid "f8f29b4b-35c9-452f-b92a-14cd0520f38e")
+		)
+		(pin "7"
+			(uuid "9bb42fa9-0399-4927-9c45-f3a3e1faa2e8")
+		)
+		(pin "14"
+			(uuid "3c1af749-6662-4e87-ac06-67ff7b9d0f0e")
+		)
+		(pin "13"
+			(uuid "3aa9811c-c3b2-4351-8cea-c23414b4e054")
 		)
 		(pin "2"
-			(uuid "ad017e13-4181-4a15-88e5-0ceefd2571f9")
+			(uuid "9dd9edfa-033a-456d-9be5-add791b30268")
+		)
+		(pin "9"
+			(uuid "842d5804-dde2-417e-a4c9-a35f66059475")
 		)
 		(instances
 			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "R4")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -15668,7 +15405,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 427.99 102.87 0)
+		(at 318.77 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15677,7 +15414,7 @@
 		(fields_autoplaced yes)
 		(uuid "7274be41-8ae8-4f5a-81a5-63bfd06d766d")
 		(property "Reference" "C30"
-			(at 431.8 101.5999 0)
+			(at 322.58 143.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15685,8 +15422,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
-			(at 431.8 104.1399 0)
+		(property "Value" "0.1uF"
+			(at 322.58 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15694,8 +15431,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 428.9552 106.68 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 319.7352 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15704,7 +15441,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 427.99 102.87 0)
+			(at 318.77 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15713,7 +15450,43 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 427.99 102.87 0)
+			(at 318.77 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KP5NNNC"
+			(at 318.77 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "URL" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL05B104KP5NNNC/3886660"
+			(at 318.77 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
+			(at 318.77 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL31B106KAHNNNE"
+			(at 318.77 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15797,103 +15570,6 @@
 			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR052")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ERJ-3EKF1002V-10k-PU:ERJ-3EKF1002V")
-		(at 372.11 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8cb46cba-379e-4f37-8558-90b1c7c03cce")
-		(property "Reference" "R6"
-			(at 378.46 105.41 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "ERJ-3EKF1002V"
-			(at 378.46 107.95 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "RC0603N_PAN"
-			(at 372.11 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "ERJ-3EKF1002V"
-			(at 372.11 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 372.11 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-3EKF1002V/196066?s=N4IgTCBcDaIKICUBSBaAzHA0gMQIwAZ8wA1EAXQF8g&&utm_adgroup=Supplier_Panasonic&utm_source=google&utm_medium=cpc&utm_campaign=EN_Supplier_Panasonic&utm_term=erj-3ekf1002v&productid=&utm_content=Supplier_Panasonic&utm_id=go_cmp-134209385_adg-128615584780_ad-648340646832_kwd-375322781237_dev-c_ext-_prd-_sig-Cj0KCQjwm7q-BhDRARIsACD6-fWoZliQAlNfDTQCSgYlGuu9Fq2tmp0oMaL9siCCUjVEH1DELbHxpMcaAo8eEALw_wcB&gad_source=1&gclid=Cj0KCQjwm7q-BhDRARIsACD6-fWoZliQAlNfDTQCSgYlGuu9Fq2tmp0oMaL9siCCUjVEH1DELbHxpMcaAo8eEALw_wcB&gclsrc=aw.ds"
-			(at 372.11 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Panasonic Electronic Components"
-			(at 372.11 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "ERJ-3EKF1002V"
-			(at 372.11 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b0191fa5-c3fc-403b-880e-41369ea30174")
-		)
-		(pin "2"
-			(uuid "dac35715-bb5e-4a75-8e34-5530b4f39711")
-		)
-		(instances
-			(project "pcb-stm32wl_bajaSensors"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -16080,6 +15756,72 @@
 			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "TP17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 331.47 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93686600-f8ed-425d-9e77-9289c22a5f42")
+		(property "Reference" "#PWR058"
+			(at 331.47 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 331.47 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 331.47 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 331.47 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 331.47 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4d095a9-091b-4bee-a3a1-7402df1bb364")
+		)
+		(instances
+			(project "pcb-stm32wl_bajaSensors"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -16340,7 +16082,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 436.88 116.84 0)
+		(at 323.85 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16349,7 +16091,7 @@
 		(fields_autoplaced yes)
 		(uuid "bfa2d814-b64a-468e-8a05-b359e917ee17")
 		(property "Reference" "R10"
-			(at 439.42 115.5699 0)
+			(at 326.39 107.9499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16358,7 +16100,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 439.42 118.1099 0)
+			(at 326.39 110.4899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16367,7 +16109,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 435.102 116.84 90)
+			(at 322.072 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16376,7 +16118,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 436.88 116.84 0)
+			(at 323.85 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16385,7 +16127,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 436.88 116.84 0)
+			(at 323.85 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16600,7 +16342,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 438.15 102.87 0)
+		(at 331.47 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16609,7 +16351,7 @@
 		(fields_autoplaced yes)
 		(uuid "ee024010-af17-4ae5-981a-93e04b08c92e")
 		(property "Reference" "C31"
-			(at 441.96 101.5999 0)
+			(at 335.28 143.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16617,8 +16359,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
-			(at 441.96 104.1399 0)
+		(property "Value" "0.1uF"
+			(at 335.28 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16626,8 +16368,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 439.1152 106.68 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 332.4352 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16636,7 +16378,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 438.15 102.87 0)
+			(at 331.47 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16645,7 +16387,43 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 438.15 102.87 0)
+			(at 331.47 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KP5NNNC"
+			(at 331.47 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "URL" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL05B104KP5NNNC/3886660"
+			(at 331.47 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
+			(at 331.47 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL31B106KAHNNNE"
+			(at 331.47 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16663,6 +16441,72 @@
 			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 318.77 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f754cc1a-4d24-4bf9-8608-ed8b57f7685b")
+		(property "Reference" "#PWR059"
+			(at 318.77 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 318.897 152.9842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 318.77 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 318.77 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 318.77 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20e5d7cb-e6d0-4906-a31d-4bc74940f1e6")
+		)
+		(instances
+			(project "pcb-stm32wl_bajaSensors"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)

@@ -2372,6 +2372,102 @@
 				)
 			)
 		)
+		(symbol "GND_2"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_2_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_2_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "MAX1837ETT50_T-bc-5V:MAX1837ETT50+T"
 			(pin_names
 				(offset 0.254)
@@ -4883,6 +4979,12 @@
 		(uuid "91a85248-7895-453a-bdbc-36a6edbe91db")
 	)
 	(junction
+		(at 242.57 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95aec4df-cf42-46b3-b376-30039fe206f6")
+	)
+	(junction
 		(at 452.755 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5002,6 +5104,12 @@
 		(color 0 0 0 0)
 		(uuid "f22aae5d-f6eb-438b-9ba4-dcb7ba01f85f")
 	)
+	(junction
+		(at 26.67 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4de889f-564c-4d78-9871-9693565cc97a")
+	)
 	(no_connect
 		(at 39.37 167.005)
 		(uuid "18eef4d3-c3b1-4511-89f0-f3ca5fbf521d")
@@ -5041,6 +5149,16 @@
 			(type default)
 		)
 		(uuid "03ae5596-bc68-4919-b712-a127d93338cc")
+	)
+	(wire
+		(pts
+			(xy 204.47 85.09) (xy 204.47 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0644383d-e122-41d1-bbed-ee3525a4d890")
 	)
 	(wire
 		(pts
@@ -5144,7 +5262,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 156.21) (xy 26.67 164.465)
+			(xy 26.67 156.21) (xy 26.67 163.83)
 		)
 		(stroke
 			(width 0)
@@ -5171,6 +5289,16 @@
 			(type default)
 		)
 		(uuid "18a9dea8-caa6-40a3-962a-7699d9146e17")
+	)
+	(wire
+		(pts
+			(xy 242.57 88.9) (xy 251.46 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b517243-56a3-4442-a1b4-e962fc5ea83b")
 	)
 	(wire
 		(pts
@@ -5341,6 +5469,16 @@
 			(type default)
 		)
 		(uuid "30979a3d-28d7-46ae-b5aa-513ad60b71a4")
+	)
+	(wire
+		(pts
+			(xy 204.47 88.9) (xy 215.9 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31c15c85-c31b-49a5-90b1-e5cde0cab41f")
 	)
 	(wire
 		(pts
@@ -5684,6 +5822,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 88.9) (xy 226.06 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6330caec-a71a-4878-9db5-4ce6de538374")
+	)
+	(wire
+		(pts
 			(xy 237.49 43.18) (xy 237.49 52.07)
 		)
 		(stroke
@@ -5784,6 +5932,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 95.25) (xy 207.01 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74bfd6f7-ff86-46f4-9f30-773765aed7ae")
+	)
+	(wire
+		(pts
 			(xy 38.1 24.13) (xy 38.1 31.115)
 		)
 		(stroke
@@ -5791,6 +5949,16 @@
 			(type default)
 		)
 		(uuid "75080b0b-6140-45af-8605-622af6de8bea")
+	)
+	(wire
+		(pts
+			(xy 220.98 95.25) (xy 207.01 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "754f5e67-24d8-4618-8371-e6c0367940a7")
 	)
 	(wire
 		(pts
@@ -5841,6 +6009,16 @@
 			(type default)
 		)
 		(uuid "7f2e1fa9-e28e-4119-868f-75866d3b8cf1")
+	)
+	(wire
+		(pts
+			(xy 242.57 88.9) (xy 242.57 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83166b84-71d4-4eef-a41b-109b49eb76af")
 	)
 	(wire
 		(pts
@@ -6594,6 +6772,26 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 88.9) (xy 242.57 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebb6578a-0a66-4d0f-991e-253419aed09a")
+	)
+	(wire
+		(pts
+			(xy 26.67 163.83) (xy 26.67 164.465)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f186dbb5-5e53-4312-ae5f-d2f92cd73f14")
+	)
+	(wire
+		(pts
 			(xy 153.67 26.67) (xy 153.67 31.75)
 		)
 		(stroke
@@ -6611,6 +6809,16 @@
 			(type default)
 		)
 		(uuid "f4cf6dc4-65fc-4b8e-a0d8-0a9074993d40")
+	)
+	(wire
+		(pts
+			(xy 242.57 83.82) (xy 252.73 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5be837e-4436-46c7-8147-41ef429c6377")
 	)
 	(wire
 		(pts
@@ -6665,18 +6873,6 @@
 		(uuid 06b4b773-240d-421c-b447-a6f1fc44283b)
 	)
 	(rectangle
-		(start 107.95 78.105)
-		(end 284.48 140.335)
-		(stroke
-			(width 0.508)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 37c8c152-00b0-4290-9482-b7ef29eda59b)
-	)
-	(rectangle
 		(start 15.875 140.335)
 		(end 94.615 197.485)
 		(stroke
@@ -6723,6 +6919,18 @@
 			(type none)
 		)
 		(uuid aaf6b232-2472-4534-88c0-bb83faaa6270)
+	)
+	(rectangle
+		(start 193.675 78.105)
+		(end 284.48 139.7)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid c0ad9ec2-d583-49fb-a515-a3aea37db505)
 	)
 	(rectangle
 		(start 107.315 12.7)
@@ -6828,6 +7036,16 @@
 		)
 		(uuid "96d488aa-4d20-4ba2-8d75-10df5865e575")
 	)
+	(text "CHECK THIS CIRCUIT. \nDON't have op-amp to make more simple"
+		(exclude_from_sim no)
+		(at 274.574 96.266 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+		)
+		(uuid "9bec3e3e-efbd-4c1c-af84-30cac4420aed")
+	)
 	(text "- Vin: 1.8 - 5.5V\n- Vout: 2.8V\n- Iout:  300 mA\n- Iq: 300 nA\n- Output V: ±1.5%\n- w/ auto-discharge"
 		(exclude_from_sim no)
 		(at 299.72 131.445 0)
@@ -6852,6 +7070,31 @@
 			(justify left bottom)
 		)
 		(uuid "a2d090b5-bdc2-4863-87f2-2ea46a246d3d")
+	)
+	(text "Our voltage scale is 4.5-12V  To fit into ADC we need 0->3.3V range.\n\nUse voltage divider: 1M and 330K\n\nGives us voltage output range of 0-3.0V\n\n\nVout = (330K/(1330K)))Vin\n\n\n\n\n"
+		(exclude_from_sim no)
+		(at 198.628 131.826 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "a51daf3f-a213-48b6-a1aa-de00ec6f6380")
+	)
+	(text "Battery Measurement"
+		(exclude_from_sim no)
+		(at 198.628 118.872 0)
+		(effects
+			(font
+				(size 2.5908 2.5908)
+				(thickness 0.5182)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "bf8903d9-0361-4f09-b1e5-55c5ef9cab9d")
 	)
 	(text "LDO(5V ->3.3V)"
 		(exclude_from_sim no)
@@ -6995,6 +7238,18 @@
 	)
 	(hierarchical_label "VBAT_READ_EN"
 		(shape input)
+		(at 220.98 96.52 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6757c881-1cb3-4a2d-8963-c17ef5e15308")
+	)
+	(hierarchical_label "VBAT_READ_EN"
+		(shape input)
 		(at 354.33 110.49 180)
 		(fields_autoplaced yes)
 		(effects
@@ -7004,6 +7259,18 @@
 			(justify right)
 		)
 		(uuid "87110cd9-2ac8-40e0-9e87-2e8196cde92a")
+	)
+	(hierarchical_label "VBAT_ADC"
+		(shape output)
+		(at 251.46 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9859e769-6bda-4dcc-b6b7-1defc1321d51")
 	)
 	(hierarchical_label "VBAT_ADC"
 		(shape output)
@@ -11942,6 +12209,180 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 207.01 100.33 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "085821c4-d8bb-4707-8deb-eeea81080078")
+		(property "Reference" "TP18"
+			(at 205.105 95.885 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBAT_READ_EN"
+			(at 199.39 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 207.01 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 207.01 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "DNM"
+			(at 207.01 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "URL" "~"
+			(at 207.01 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" ""
+			(at 207.01 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 207.01 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 207.01 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f844530-b268-45e4-ad20-1d4100215cd5")
+		)
+		(instances
+			(project "pcb-stm32wl_bajaSensors"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005e90d709"
+					(reference "TP18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 204.47 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "091f4ae3-4638-4fb9-95a9-09e0b219e5f6")
+		(property "Reference" "#PWR049"
+			(at 204.47 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 204.851 80.6958 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 204.47 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "498a8e2e-f908-4c8f-870a-9b892de1c59d")
+		)
+		(instances
+			(project "pcb-stm32wl_bajaSensors"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005e90d709"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
 		(at 140.97 34.29 0)
@@ -12004,6 +12445,116 @@
 			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005e90d709"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 26.67 163.83 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0c66c7dc-1851-4b15-be6b-4992be642734")
+		(property "Reference" "TP20"
+			(at 28.575 159.385 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VCC"
+			(at 30.48 163.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 26.67 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 26.67 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 26.67 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "DNM"
+			(at 26.67 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "URL" "~"
+			(at 26.67 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" ""
+			(at 26.67 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 26.67 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 26.67 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c7d62c3-6076-4749-9b1e-efb1cc31eca4")
+		)
+		(instances
+			(project "pcb-stm32wl_bajaSensors"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005e90d709"
+					(reference "TP20")
 					(unit 1)
 				)
 			)
@@ -12237,6 +12788,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 233.68 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3db98ccd-5c29-4d14-9374-3152038c9b92")
+		(property "Reference" "R8"
+			(at 233.68 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100K"
+			(at 233.68 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 90.678 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 233.68 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b628676b-68c5-432c-b44a-f5890296885d")
+		)
+		(pin "1"
+			(uuid "0a346d54-e788-4d60-972c-fb7f64a2a0a0")
+		)
+		(instances
+			(project "pcb-stm32wl_bajaSensors"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005e90d709"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Regulator_Linear:MIC5365-3.3YD5")
 		(at 82.55 90.17 0)
 		(unit 1)
@@ -12391,6 +13010,94 @@
 			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005e90d709"
 					(reference "#PWR097")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 242.57 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ca688f7-414c-4f22-93ca-fffd2c7419ff")
+		(property "Reference" "R7"
+			(at 245.11 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33K"
+			(at 245.11 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.792 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 242.57 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-3EKF3322V"
+			(at 242.57 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "URL" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-3EKF3322V/196299"
+			(at 242.57 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2379555f-88e3-4e85-89eb-c554bcc447a7")
+		)
+		(pin "1"
+			(uuid "ea2ac96f-553a-45a0-a790-e98129f907d1")
+		)
+		(instances
+			(project "pcb-stm32wl_bajaSensors"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005e90d709"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -12757,6 +13464,121 @@
 			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005e90d709"
 					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_PMOS_GSD")
+		(at 220.98 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6650f127-5aa3-42a0-bb4e-8ceb48e92673")
+		(property "Reference" "Q3"
+			(at 220.98 82.7532 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PMV32UP,215"
+			(at 220.98 85.0646 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 218.44 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PMV32UP,215"
+			(at 220.98 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "URL" "https://lcsc.com/product-detail/MOSFET_Nexperia-PMV32UP-215_C282569.html"
+			(at 220.98 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://lcsc.com/product-detail/MOSFET_Nexperia-PMV32UP-215_C282569.html"
+			(at 220.98 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 220.98 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "PMV32UP,215"
+			(at 220.98 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa02e7a8-5de9-44e7-8113-9f5ed6346a6b")
+		)
+		(pin "2"
+			(uuid "04dad0f5-0735-48af-8a42-63f4a879a4de")
+		)
+		(pin "3"
+			(uuid "b001efd2-fd9e-4d37-925b-fc05df37f06a")
+		)
+		(instances
+			(project "pcb-stm32wl_bajaSensors"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005e90d709"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -13279,6 +14101,183 @@
 			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005e90d709"
 					(reference "U12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 252.73 83.82 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9f4ae165-17c0-4617-99a9-e7f41ab1a3e3")
+		(property "Reference" "TP19"
+			(at 249.555 81.915 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBAT_ADC"
+			(at 259.715 83.185 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 252.73 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 252.73 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "DNM"
+			(at 252.73 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "URL" "~"
+			(at 252.73 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" ""
+			(at 252.73 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 252.73 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 252.73 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fad2dd2d-55e2-4bbb-acd0-9e3af1ebbb67")
+		)
+		(instances
+			(project "pcb-stm32wl_bajaSensors"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005e90d709"
+					(reference "TP19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_2")
+		(lib_id "power:GND")
+		(at 242.57 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6ea96b9-5651-486d-8bc4-39f9bbce8bd3")
+		(property "Reference" "#PWR050"
+			(at 242.57 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 242.57 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 242.57 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "719b7bc0-26cb-450e-b881-f53251434221")
+		)
+		(instances
+			(project "pcb-stm32wl_bajaSensors"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005e90d709"
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)

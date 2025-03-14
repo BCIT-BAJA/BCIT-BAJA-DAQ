@@ -704,6 +704,1484 @@
 				)
 			)
 		)
+		(symbol "NUCLEO-L476RG:NUCLEO-L476RG"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -17.78 26.162 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "NUCLEO-L476RG"
+				(at -17.78 -27.94 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "NUCLEO-L476RG:MODULE_NUCLEO-L476RG"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "15"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "STmicroelectronics"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "NUCLEO-L476RG_1_0"
+				(rectangle
+					(start -17.78 -25.4)
+					(end 17.78 25.4)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 22.86 0)
+					(length 5.08)
+					(name "PC10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 22.86 12.7 180)
+					(length 5.08)
+					(name "NC_CN7_10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -22.86 10.16 0)
+					(length 5.08)
+					(name "NC_CN7_11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 22.86 10.16 180)
+					(length 5.08)
+					(name "IOREF"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 7.62 0)
+					(length 5.08)
+					(name "PA13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 22.86 7.62 180)
+					(length 5.08)
+					(name "RESET"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 5.08 0)
+					(length 5.08)
+					(name "PA14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 22.86 5.08 180)
+					(length 5.08)
+					(name "+3V3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 2.54 0)
+					(length 5.08)
+					(name "PA15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_17"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 22.86 2.54 180)
+					(length 5.08)
+					(name "+5V"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_18"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -22.86 0 0)
+					(length 5.08)
+					(name "GND_CN7_19"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_19"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 22.86 180)
+					(length 5.08)
+					(name "PC11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 22.86 0 180)
+					(length 5.08)
+					(name "GND_CN7_20"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_20"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -2.54 0)
+					(length 5.08)
+					(name "PB7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_21"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 22.86 -2.54 180)
+					(length 5.08)
+					(name "GND_CN7_22"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_22"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -5.08 0)
+					(length 5.08)
+					(name "PC13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_23"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 22.86 -5.08 180)
+					(length 5.08)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_24"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -7.62 0)
+					(length 5.08)
+					(name "PC14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_25"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 22.86 -7.62 180)
+					(length 5.08)
+					(name "NC_CN7_26"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_26"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -10.16 0)
+					(length 5.08)
+					(name "PC15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_27"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 -10.16 180)
+					(length 5.08)
+					(name "PA0"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_28"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -12.7 0)
+					(length 5.08)
+					(name "PH0"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_29"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 20.32 0)
+					(length 5.08)
+					(name "PC12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 -12.7 180)
+					(length 5.08)
+					(name "PA1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_30"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -15.24 0)
+					(length 5.08)
+					(name "PH1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_31"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 -15.24 180)
+					(length 5.08)
+					(name "PA4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_32"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -22.86 -17.78 0)
+					(length 5.08)
+					(name "VBAT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_33"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 -17.78 180)
+					(length 5.08)
+					(name "PB0"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_34"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -20.32 0)
+					(length 5.08)
+					(name "PC2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_35"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 -20.32 180)
+					(length 5.08)
+					(name "PC1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_36"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -22.86 0)
+					(length 5.08)
+					(name "PC3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_37"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 -22.86 180)
+					(length 5.08)
+					(name "PC0"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_38"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 20.32 180)
+					(length 5.08)
+					(name "PD2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -22.86 17.78 0)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 22.86 17.78 180)
+					(length 5.08)
+					(name "E5V"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 15.24 0)
+					(length 5.08)
+					(name "BOOT0"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 22.86 15.24 180)
+					(length 5.08)
+					(name "GND_CN7_8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -22.86 12.7 0)
+					(length 5.08)
+					(name "NC_CN7_9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN7_9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "NUCLEO-L476RG_2_0"
+				(rectangle
+					(start -17.78 -25.4)
+					(end 17.78 25.4)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 22.86 0)
+					(length 5.08)
+					(name "PC9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 22.86 12.7 180)
+					(length 5.08)
+					(name "NC_CN10_10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 10.16 0)
+					(length 5.08)
+					(name "PA5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 10.16 180)
+					(length 5.08)
+					(name "PA12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 7.62 0)
+					(length 5.08)
+					(name "PA6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 7.62 180)
+					(length 5.08)
+					(name "PA11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 5.08 0)
+					(length 5.08)
+					(name "PA7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 5.08 180)
+					(length 5.08)
+					(name "PB12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 2.54 0)
+					(length 5.08)
+					(name "PB6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_17"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 2.54 180)
+					(length 5.08)
+					(name "PB11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_18"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 0 0)
+					(length 5.08)
+					(name "PC7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_19"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 22.86 180)
+					(length 5.08)
+					(name "PC8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 22.86 0 180)
+					(length 5.08)
+					(name "GND_CN10_20"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_20"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -2.54 0)
+					(length 5.08)
+					(name "PA9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_21"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 -2.54 180)
+					(length 5.08)
+					(name "PB2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_22"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -5.08 0)
+					(length 5.08)
+					(name "PA8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_23"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 -5.08 180)
+					(length 5.08)
+					(name "PB1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_24"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -7.62 0)
+					(length 5.08)
+					(name "PB10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_25"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 -7.62 180)
+					(length 5.08)
+					(name "PB15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_26"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -10.16 0)
+					(length 5.08)
+					(name "PB4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_27"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 -10.16 180)
+					(length 5.08)
+					(name "PB14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_28"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -12.7 0)
+					(length 5.08)
+					(name "PB5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_29"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 20.32 0)
+					(length 5.08)
+					(name "PB8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 -12.7 180)
+					(length 5.08)
+					(name "PB13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_30"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -15.24 0)
+					(length 5.08)
+					(name "PB3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_31"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 22.86 -15.24 180)
+					(length 5.08)
+					(name "AGND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_32"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -17.78 0)
+					(length 5.08)
+					(name "PA10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_33"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 -17.78 180)
+					(length 5.08)
+					(name "PC4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_34"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -20.32 0)
+					(length 5.08)
+					(name "PA2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_35"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 22.86 -20.32 180)
+					(length 5.08)
+					(name "NC_CN10_36"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_36"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -22.86 0)
+					(length 5.08)
+					(name "PA3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_37"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 22.86 -22.86 180)
+					(length 5.08)
+					(name "NC_CN10_38"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_38"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 20.32 180)
+					(length 5.08)
+					(name "PC6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 17.78 0)
+					(length 5.08)
+					(name "PB9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 17.78 180)
+					(length 5.08)
+					(name "PC5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -22.86 15.24 0)
+					(length 5.08)
+					(name "AVDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 22.86 15.24 180)
+					(length 5.08)
+					(name "U5V"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -22.86 12.7 0)
+					(length 5.08)
+					(name "GND_CN10_9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "CN10_9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "node-lib-v1:STM32WLxx_QFN48"
 			(pin_names
 				(offset 0.254)
@@ -2552,6 +4030,16 @@
 			(type default)
 		)
 		(uuid "47484446-e64c-4a82-88af-15de92cf6ad4")
+	)
+	(wire
+		(pts
+			(xy -81.28 152.4) (xy -73.66 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48f00aa5-601f-42d1-98ba-dbaea31a0584")
 	)
 	(wire
 		(pts
@@ -6390,6 +7878,648 @@
 			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "NUCLEO-L476RG:NUCLEO-L476RG")
+		(at -50.8 175.26 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "484f95f4-5d8c-41ac-8ea8-8fad2d06111b")
+		(property "Reference" "U1"
+			(at -50.8 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NUCLEO-L476RG"
+			(at -50.8 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NUCLEO-L476RG:MODULE_NUCLEO-L476RG"
+			(at -50.8 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at -50.8 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at -50.8 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "15"
+			(at -50.8 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at -50.8 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "STmicroelectronics"
+			(at -50.8 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "CN10_2"
+			(uuid "c39b0a69-e135-478f-9793-2d6409c1d12e")
+		)
+		(pin "CN10_19"
+			(uuid "756833f1-91b2-4001-950c-31ef8b73e55d")
+		)
+		(pin "CN10_17"
+			(uuid "e00277dc-2ae1-443a-849e-fdbd644df29c")
+		)
+		(pin "CN10_18"
+			(uuid "2e8c1d86-a5da-4911-ae47-d0f9fe85a786")
+		)
+		(pin "CN10_16"
+			(uuid "6183300a-9746-4e2f-8201-914359bdb287")
+		)
+		(pin "CN10_25"
+			(uuid "812b3a49-2a97-4d4e-b358-bba81a342a49")
+		)
+		(pin "CN10_27"
+			(uuid "62d6e951-5be0-46c9-896a-522c54b992fe")
+		)
+		(pin "CN10_35"
+			(uuid "cff7d32f-913b-4baa-baf9-7381155f04db")
+		)
+		(pin "CN10_38"
+			(uuid "01c835df-9e9b-4a99-84e7-eb3a8ae67ced")
+		)
+		(pin "CN10_8"
+			(uuid "0099a671-d646-4452-a794-8efdea1fe3fb")
+		)
+		(pin "CN10_9"
+			(uuid "2d0c417a-31ce-4a89-b3d0-62e040a24199")
+		)
+		(pin "CN10_31"
+			(uuid "3ca82017-bdc9-4edd-b672-651b829c2209")
+		)
+		(pin "CN10_23"
+			(uuid "f9c82b58-0883-412b-b841-d5d50f3cb196")
+		)
+		(pin "CN10_5"
+			(uuid "c01938ca-14f8-42e9-9534-775a57547abf")
+		)
+		(pin "CN10_26"
+			(uuid "aa82ce8e-60a5-4f72-9415-7d11a42a9063")
+		)
+		(pin "CN10_6"
+			(uuid "4ee05b66-44c6-419d-884d-a6b690360d3f")
+		)
+		(pin "CN10_32"
+			(uuid "6927c4cb-8353-445d-891a-56aba63eff4f")
+		)
+		(pin "CN10_3"
+			(uuid "60a81419-5ca2-4c3e-8e3c-2fb853acb25c")
+		)
+		(pin "CN10_29"
+			(uuid "dad84e60-4a4f-4188-8f96-305c742941f6")
+		)
+		(pin "CN10_24"
+			(uuid "812481f0-7cb8-42ac-89f3-62ae76b8249f")
+		)
+		(pin "CN10_34"
+			(uuid "6cfadc88-92fa-467f-98da-467cd3ab9098")
+		)
+		(pin "CN10_36"
+			(uuid "9a0554df-ad01-4e47-a60e-10376f8f400d")
+		)
+		(pin "CN10_33"
+			(uuid "cacbb1cf-76f0-4f33-b5a3-be441e5bdcc8")
+		)
+		(pin "CN10_28"
+			(uuid "f4888d33-925b-41d6-9f81-549ffe9ecffe")
+		)
+		(pin "CN10_30"
+			(uuid "97a76d45-f4e8-4de9-b35b-f6adc687b94c")
+		)
+		(pin "CN10_37"
+			(uuid "7c3bf19f-cf81-43ca-a174-ba4be6d9ea73")
+		)
+		(pin "CN10_4"
+			(uuid "c063f6c1-1af3-44fd-ab17-dc592c9f11e1")
+		)
+		(pin "CN10_7"
+			(uuid "68a2f936-d006-42f3-bd1c-029324fd0f65")
+		)
+		(pin "CN7_18"
+			(uuid "c6b0127b-536b-4be1-bd1a-4f6301ed8a26")
+		)
+		(pin "CN7_31"
+			(uuid "c3c9ca1b-83d6-4c12-b4e3-6ffe1fe633e6")
+		)
+		(pin "CN7_24"
+			(uuid "9aafb87f-2d73-4ab9-ba86-5837c07b4600")
+		)
+		(pin "CN7_36"
+			(uuid "8fc4a635-2a7d-4dc3-a855-e7b5f5281bef")
+		)
+		(pin "CN7_15"
+			(uuid "a12d3740-8bb7-4b61-a7ee-daff591fca5e")
+		)
+		(pin "CN7_38"
+			(uuid "9a4515e0-63eb-4510-971a-9efdb971f618")
+		)
+		(pin "CN7_1"
+			(uuid "c5039c24-3be2-4fa1-ae8e-4d9c58c3fed6")
+		)
+		(pin "CN7_33"
+			(uuid "2ddd21c9-3884-45a2-b1a8-f4b0216d696f")
+		)
+		(pin "CN7_26"
+			(uuid "c22530d6-1685-4af6-a31f-8c3776e81182")
+		)
+		(pin "CN7_14"
+			(uuid "e7f78e83-fbb0-4987-ac98-7c7429e63b22")
+		)
+		(pin "CN7_4"
+			(uuid "0c3cde46-bb81-4614-8848-b31643b75480")
+		)
+		(pin "CN7_13"
+			(uuid "c4537747-bd26-4556-b59e-d812e115a085")
+		)
+		(pin "CN7_5"
+			(uuid "6d7f6c60-e898-430c-9f31-a1c085d657fe")
+		)
+		(pin "CN7_11"
+			(uuid "ee147fa4-1a89-47d1-acb2-229dd15c441b")
+		)
+		(pin "CN10_1"
+			(uuid "d05bdfcf-05fc-416c-8ea9-bea8048852c3")
+		)
+		(pin "CN7_9"
+			(uuid "9c9f0e30-0a01-4761-ac56-f756165bd1e8")
+		)
+		(pin "CN10_12"
+			(uuid "f1786685-b6f7-4a22-8ea7-76a82bf9ac4c")
+		)
+		(pin "CN10_13"
+			(uuid "6e32cab8-1e4d-427b-bf84-e16dfc06364b")
+		)
+		(pin "CN10_15"
+			(uuid "2955fd70-c2df-43a2-adbf-ab3988c32953")
+		)
+		(pin "CN7_20"
+			(uuid "63ee2d88-e69f-4691-a8e3-c74645424783")
+		)
+		(pin "CN7_3"
+			(uuid "66ee9758-d74c-4228-8664-2be1da8b589c")
+		)
+		(pin "CN10_14"
+			(uuid "2aeb5816-f5f5-4fd1-a43a-bff56ff19b86")
+		)
+		(pin "CN7_27"
+			(uuid "d8eeacd9-fdb0-431d-83d5-d43b9b377128")
+		)
+		(pin "CN7_6"
+			(uuid "244e26fa-f6b4-4a67-9c11-5b4938364c56")
+		)
+		(pin "CN7_12"
+			(uuid "6c8f3700-e173-4130-b98b-f8d485360aa6")
+		)
+		(pin "CN7_17"
+			(uuid "e78150b7-6ec4-4f24-9ab7-77236b586bf4")
+		)
+		(pin "CN7_32"
+			(uuid "9e20294e-af66-47c6-88e5-67862982c7f7")
+		)
+		(pin "CN7_28"
+			(uuid "4a51bea6-1014-44ed-8e7c-72d35c2bce7e")
+		)
+		(pin "CN7_34"
+			(uuid "5ae1b09d-05af-48aa-88bc-40b377759292")
+		)
+		(pin "CN7_30"
+			(uuid "2268137a-ccc7-4a61-9a17-3ab4ce38b963")
+		)
+		(pin "CN7_7"
+			(uuid "d99fb92c-82d2-4477-b2e6-1a304020c09e")
+		)
+		(pin "CN7_8"
+			(uuid "f2df6901-02d4-42ec-8a00-9a60b6d27f0a")
+		)
+		(pin "CN7_23"
+			(uuid "403efe80-b9db-438a-86d6-8b6f9cfed0de")
+		)
+		(pin "CN7_37"
+			(uuid "259fc607-0fdd-4dc4-9394-caf1fb3fabd3")
+		)
+		(pin "CN7_10"
+			(uuid "e8644cdb-9780-4c83-9dda-489f0e2e38d4")
+		)
+		(pin "CN10_10"
+			(uuid "b641f206-01a1-40ca-a5ea-8faf446182f7")
+		)
+		(pin "CN7_19"
+			(uuid "f5d7993d-56d5-4c94-b7d8-5cf941b5fece")
+		)
+		(pin "CN7_16"
+			(uuid "e42c2592-cbe6-4dd1-8717-a218eac1ccf5")
+		)
+		(pin "CN7_21"
+			(uuid "9360ae70-ae23-49ec-bacc-e7b9ff6895c3")
+		)
+		(pin "CN7_22"
+			(uuid "4389d318-52a5-4c61-8cb8-c40dc6f6b450")
+		)
+		(pin "CN7_2"
+			(uuid "6ed3a63b-6467-41d5-beb0-d19a2a8b9326")
+		)
+		(pin "CN7_25"
+			(uuid "d9d660cf-24ac-4bf7-a6d0-b7e2831aaea1")
+		)
+		(pin "CN7_35"
+			(uuid "5f0c9431-dd88-4de9-a2a0-ff8d7d58607f")
+		)
+		(pin "CN7_29"
+			(uuid "d510b031-0d89-4c46-a3d9-af4bced244e4")
+		)
+		(pin "CN10_11"
+			(uuid "0f64e839-e6b1-4a25-b784-4a744ac1f8b5")
+		)
+		(pin "CN10_21"
+			(uuid "9037d7ca-7f00-488c-97cc-35a41b5bc5d2")
+		)
+		(pin "CN10_22"
+			(uuid "15cb9ea7-28df-4055-a2f0-1eda99bb6614")
+		)
+		(pin "CN10_20"
+			(uuid "b0bcdada-015d-4b45-b8eb-5c048945e38c")
+		)
+		(instances
+			(project "pcb-stm32wl_bajaSensors"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
+					(reference "U1")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "NUCLEO-L476RG:NUCLEO-L476RG")
+		(at -50.8 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "579c34cc-3939-4cf0-a340-0deeec79f8f7")
+		(property "Reference" "U1"
+			(at -50.8 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NUCLEO-L476RG"
+			(at -50.8 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NUCLEO-L476RG:MODULE_NUCLEO-L476RG"
+			(at -50.8 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at -50.8 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at -50.8 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "15"
+			(at -50.8 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at -50.8 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "STmicroelectronics"
+			(at -50.8 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "CN10_17"
+			(uuid "75ad5803-612d-422f-8f52-511835491d40")
+		)
+		(pin "CN10_12"
+			(uuid "bf4f132c-3a6f-4aa7-9b77-5931d8d0a09a")
+		)
+		(pin "CN10_2"
+			(uuid "10671e9e-d1d2-4ff1-a405-e0e6141bbadd")
+		)
+		(pin "CN7_10"
+			(uuid "85695893-e2ab-44eb-b5e5-d3f2164749ad")
+		)
+		(pin "CN7_7"
+			(uuid "acc24529-567e-4e79-bd75-c0c582d42bca")
+		)
+		(pin "CN10_16"
+			(uuid "d73a930f-abfa-433f-aedc-ba2cd49a0f3a")
+		)
+		(pin "CN7_6"
+			(uuid "de46e66a-029e-4e6f-b2bf-4e3cb712016f")
+		)
+		(pin "CN7_9"
+			(uuid "aeb05cfa-5804-4e89-9efe-313cbe2e5201")
+		)
+		(pin "CN7_34"
+			(uuid "ad47144a-430e-47c8-8189-fee587086e4f")
+		)
+		(pin "CN7_17"
+			(uuid "8fee8ca3-b6de-4898-9339-43f0b02751dd")
+		)
+		(pin "CN10_10"
+			(uuid "973b5722-acea-44ab-bfa9-55ccaf989f04")
+		)
+		(pin "CN7_12"
+			(uuid "c7a4bdee-fc05-416e-aeee-8ac9ca73afc3")
+		)
+		(pin "CN7_31"
+			(uuid "4466ca48-0790-4ad5-877d-6fde2bed5419")
+		)
+		(pin "CN7_30"
+			(uuid "d7a0c354-17f0-48c3-bcae-fded77187a60")
+		)
+		(pin "CN7_36"
+			(uuid "f4759dc7-9e55-44a8-b421-8b70ade38032")
+		)
+		(pin "CN7_28"
+			(uuid "56cdd278-a4e0-40a1-ab4f-ae63e9d12130")
+		)
+		(pin "CN10_14"
+			(uuid "c6dd324a-e4a1-42a0-9b86-4704395d06e8")
+		)
+		(pin "CN7_5"
+			(uuid "f672ad85-2f08-4959-a046-3cd0dfe577ba")
+		)
+		(pin "CN7_1"
+			(uuid "67b89499-1afb-42f4-865f-19520665702d")
+		)
+		(pin "CN7_25"
+			(uuid "7f1ab93a-6f4a-44e4-ad82-71a850a36a85")
+		)
+		(pin "CN7_37"
+			(uuid "47ba23fe-0793-4380-9a1a-5194a1cd997c")
+		)
+		(pin "CN7_19"
+			(uuid "b20b425b-9a52-4463-acd3-f90696478c8c")
+		)
+		(pin "CN7_4"
+			(uuid "c9808e58-9cc7-4159-b79d-29a4b31f95a5")
+		)
+		(pin "CN7_29"
+			(uuid "211e62ae-e3ae-40bc-8ba0-3bdee9b3ebf8")
+		)
+		(pin "CN7_35"
+			(uuid "b1d5d984-d016-4f44-bf8f-3891a08d43a0")
+		)
+		(pin "CN7_8"
+			(uuid "da5a30a3-524d-454d-bd8d-fb91588467fe")
+		)
+		(pin "CN7_13"
+			(uuid "fb020a0d-ff1a-48bf-9fb5-314462022dd3")
+		)
+		(pin "CN7_23"
+			(uuid "7a327f3b-5496-4b36-8491-77db2be502fc")
+		)
+		(pin "CN7_15"
+			(uuid "321ba563-5a67-4a5e-b9e4-ec7b0217590d")
+		)
+		(pin "CN7_14"
+			(uuid "924f7f24-b096-4c77-b3ca-28a3896ff342")
+		)
+		(pin "CN7_11"
+			(uuid "2bb54f2c-714d-4624-9534-abdb5b214add")
+		)
+		(pin "CN7_22"
+			(uuid "dde8dc60-cc5a-4512-8248-c6674f8964a2")
+		)
+		(pin "CN7_27"
+			(uuid "792337d7-636d-48a7-a98e-1f510fab0ee3")
+		)
+		(pin "CN7_20"
+			(uuid "e2d6cd2e-4976-4467-a28d-e25568509c41")
+		)
+		(pin "CN7_18"
+			(uuid "2e2eac1f-d9bc-48a9-bd52-13e6b629fb47")
+		)
+		(pin "CN7_26"
+			(uuid "ce2aa067-2f17-4968-9696-ab447ab751ff")
+		)
+		(pin "CN7_3"
+			(uuid "ad30d2d8-4a7b-4588-978a-1f068376b442")
+		)
+		(pin "CN7_21"
+			(uuid "b53da1c7-e50d-44ac-8f01-c43ac1e62e03")
+		)
+		(pin "CN7_33"
+			(uuid "51fcf1e2-fdd7-4c46-917f-893f6af27764")
+		)
+		(pin "CN7_38"
+			(uuid "57ef5d2e-17a2-4b31-b3e9-9b7207245c3d")
+		)
+		(pin "CN7_32"
+			(uuid "7b904dde-b68e-48a7-9bd1-03409dbfbd28")
+		)
+		(pin "CN10_1"
+			(uuid "35e2f976-4e21-4417-863a-cf4594c64a5c")
+		)
+		(pin "CN10_11"
+			(uuid "71ee03dd-8cfb-470e-91de-2accefea39e5")
+		)
+		(pin "CN7_2"
+			(uuid "dd9a4614-448e-4dd5-bd56-2cc73a41c916")
+		)
+		(pin "CN7_16"
+			(uuid "3a9cbe32-2d73-4447-997c-835ad13ad3bc")
+		)
+		(pin "CN7_24"
+			(uuid "bd32d694-078d-4725-86d5-2e3566229c5e")
+		)
+		(pin "CN10_13"
+			(uuid "695369bb-2ca9-438a-a2a4-2b35e4cf303d")
+		)
+		(pin "CN10_15"
+			(uuid "6f0a5d59-eb74-4b88-a8e3-a8191c8bf687")
+		)
+		(pin "CN10_18"
+			(uuid "8d5e5d86-8946-4d22-8d0d-6dc6963a79f0")
+		)
+		(pin "CN10_19"
+			(uuid "ceb21308-56ec-4299-b30d-1da95a92df0e")
+		)
+		(pin "CN10_20"
+			(uuid "a86ceeac-de5d-4995-ac20-f66b63d531e4")
+		)
+		(pin "CN10_21"
+			(uuid "92198a56-e978-4b6d-812a-2d7a96f8330c")
+		)
+		(pin "CN10_22"
+			(uuid "dc025208-099c-4606-b557-1bb764adad5e")
+		)
+		(pin "CN10_23"
+			(uuid "d244ec91-31ab-49e1-a2a5-4068217bcbac")
+		)
+		(pin "CN10_24"
+			(uuid "34019626-a0cd-41f8-b8b0-f857363a75f2")
+		)
+		(pin "CN10_25"
+			(uuid "9b919c86-8fb6-4a8c-b49b-9fe2e2d0abca")
+		)
+		(pin "CN10_28"
+			(uuid "66fdf7da-130a-4b35-b0a8-6347e9a81599")
+		)
+		(pin "CN10_29"
+			(uuid "61711c3f-d6fa-4468-9923-8e20b77d6e2a")
+		)
+		(pin "CN10_3"
+			(uuid "79d2b691-9d3d-4c69-96e8-1e2e2f81eb29")
+		)
+		(pin "CN10_27"
+			(uuid "4f700240-06c0-4bd1-825c-c15ecf5821f5")
+		)
+		(pin "CN10_30"
+			(uuid "1f5c85ec-908b-44de-b37e-8212c267d056")
+		)
+		(pin "CN10_31"
+			(uuid "be71e805-b116-4212-b43e-8945b1c7d2db")
+		)
+		(pin "CN10_26"
+			(uuid "c63242d2-d40e-4404-a2b5-89d7ac943abf")
+		)
+		(pin "CN10_32"
+			(uuid "d255a87b-cabc-47d3-b782-74f698e27fb8")
+		)
+		(pin "CN10_6"
+			(uuid "3eb00e53-941d-49da-9f4b-5d8271aebc29")
+		)
+		(pin "CN10_36"
+			(uuid "86d6826f-918d-4dfa-bba7-04eb29090074")
+		)
+		(pin "CN10_9"
+			(uuid "70b34f02-6df7-4b0c-9c25-cd2e11d2951e")
+		)
+		(pin "CN10_33"
+			(uuid "ecf4d5f0-8688-435a-bde7-fd657578682c")
+		)
+		(pin "CN10_38"
+			(uuid "c61f2134-0351-41d5-b562-4649feeebad3")
+		)
+		(pin "CN10_37"
+			(uuid "2f09371e-5e37-41fb-b3a8-d8acc00ba3dd")
+		)
+		(pin "CN10_8"
+			(uuid "e12660ea-0857-4aed-84f9-c5570013a5d2")
+		)
+		(pin "CN10_5"
+			(uuid "8dce12fe-2cc8-42a2-9d27-54e1b0d36879")
+		)
+		(pin "CN10_34"
+			(uuid "0a27052c-c862-43d3-9a8a-1224de373833")
+		)
+		(pin "CN10_4"
+			(uuid "16cb5b6d-3aaa-4f18-8b96-529b27d2b6de")
+		)
+		(pin "CN10_35"
+			(uuid "6b28c279-7fbb-409f-907c-ba9c3a204ab2")
+		)
+		(pin "CN10_7"
+			(uuid "c4e1a2ed-60fe-482c-8b6c-f88473948713")
+		)
+		(instances
+			(project "pcb-stm32wl_bajaSensors"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
+					(reference "U1")
 					(unit 1)
 				)
 			)

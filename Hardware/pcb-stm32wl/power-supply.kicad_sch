@@ -4956,18 +4956,6 @@
 		(uuid 06b4b773-240d-421c-b447-a6f1fc44283b)
 	)
 	(rectangle
-		(start 15.875 140.335)
-		(end 94.615 197.485)
-		(stroke
-			(width 0.508)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 64411aeb-8690-467f-9cb9-489b207b6327)
-	)
-	(rectangle
 		(start 94.615 140.335)
 		(end 177.165 197.485)
 		(stroke
@@ -5156,6 +5144,17 @@
 			)
 		)
 		(uuid "770b545d-f302-489a-a5c0-9e979333ace7")
+	)
+	(text "ADD IN ANOTHER BATTERY"
+		(exclude_from_sim no)
+		(at 130.048 18.034 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+				(color 0 255 0 1)
+			)
+		)
+		(uuid "8237573f-41bc-4b72-9282-45e2cbe3a6d9")
 	)
 	(text "sodium ion batteries \n\nWhere to put battery?\nPut battery holder?\n\nADD battery info here"
 		(exclude_from_sim no)

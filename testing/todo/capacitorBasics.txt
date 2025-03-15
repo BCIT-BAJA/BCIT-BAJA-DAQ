@@ -1,1 +1,39 @@
-MLCC's:wq
+MLCC's:
+2 types of CLASSES
+
+1. Highest capacitance stability and accuracy
+2. Higher capacitance possible vs package size, lower stability and accuracy
+
+We'll mostly looking at CLASS 2:(common)
+
+useful for bypass,filtering, decoupling
+
+The three-digit code(DIELECTRIC) defines the capacitance change over the operating temperature range. ex)X7R
+
+Letter code | Low temperature | Number code | Upper temperature | Letter code | Change of capacitance over the temperature range
+X            | -55°C (-67°F)   | 4          | +65°C (+149°F)    | P           | = ±10%
+Y            | -30°C (-22°F)   | 5          | +85°C (+185°F)    | R           | = ±15%
+Z            | +10°C (+50°F)   | 6          | +105°C (+221°F)   | L           | = ±15%, +15/40% above 125°C
+             |                 | 7          | +125°C (+257°F)   | S           | = ±22%
+             |                 | 8          | +150°C (+302°F)   | T           | = ±22/33%
+             |                 | 9          | +200°C (+392°F)   | U           | = ±22/56%
+             |                 |            |                   | V           | = ±22/82%
+Different capacitors have a change in capacitance based on DC-Bias
+Real life capacitors ahve inductance and resistance. 
+Reactance of Capacitor:
+X_C = 1 / (j * 2π * f * C)
+Reactance of Inductor:
+X_L = j * 2π * f * L
+Total Impedance:
+Z = X_C + X_L + R_ESR
+
+
+Decreasing package size, typically decreases inductance. SO for high speed designs, we want smaller capacitors.
+
+Some rules of thumb that will help...
+
+- 20% tolerance is usually fine in PDN applications, go with 10% or better if no considerable cost difference.
+- Choose DC rating for at least double the maximum applied voltage on the cap. Check manufacturer’s documentation to be certain!
+- Choose dielectric based on expected worst case temperature range.
+- For both DC and temperature derating, increase cap value to account for derating AND tolerance!
+- Package size: The higher the frequency, the smaller the cap package (and cap value (typically)) should be. Smaller packages typically have smaller max. capacitances, smaller max. DC ratings, but better HF performance (lower ESR, lower ESL) – and vice-versa, of course!

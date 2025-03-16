@@ -2072,6 +2072,196 @@
 				(justify right)
 			)
 		)
+		(pin "BOOT0" input
+			(at 64.135 67.31 180)
+			(uuid "7391462c-88e0-43b5-b9e2-21043f9a6f6e")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "MISO" output
+			(at 64.135 69.85 180)
+			(uuid "951414af-21cd-4990-a449-4ae5f19620b2")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOSI" input
+			(at 64.135 72.39 180)
+			(uuid "7695bc62-11d4-4d97-b98b-6b88ab3d6fb9")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "NRST" input
+			(at 64.135 73.66 180)
+			(uuid "844b66a6-017e-4b1e-a9c5-a61e9f2958f4")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "PA2_TxD2" output
+			(at 64.135 76.2 180)
+			(uuid "ff6097ca-8a46-4ca4-a70b-1e6ae55c4aa6")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "PA3_RxD2" input
+			(at 64.135 80.01 180)
+			(uuid "50916402-4b8e-47d0-a2f8-7de2461a5cca")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "PA4_CS1" bidirectional
+			(at 64.135 82.55 180)
+			(uuid "50fbfd38-fb67-4d19-a053-209080d9abee")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "PA8" bidirectional
+			(at 64.135 85.09 180)
+			(uuid "f4a75aa0-eb84-4673-a818-78872092aafe")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "PA09_SCL1" output
+			(at 64.135 87.63 180)
+			(uuid "b26e0fa4-0e58-4d3a-8b8d-62f8daa3de4d")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "PA10_SDA1" bidirectional
+			(at 64.135 91.44 180)
+			(uuid "ddbefbb2-dd21-4de1-9e83-d1e04c15d30a")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "PA11_SDA2" bidirectional
+			(at 64.135 93.98 180)
+			(uuid "915b20b3-4caf-46bb-b09a-8b6d6833cfe1")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "PA12_SCL2" output
+			(at 64.135 96.52 180)
+			(uuid "7e0fb92d-9a9e-4f64-91e5-569b8277590d")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "PA15" bidirectional
+			(at 64.135 99.06 180)
+			(uuid "139e4876-3425-43d0-8e19-d6d86a13d24d")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "PB12" bidirectional
+			(at 64.135 101.6 180)
+			(uuid "6cbf6c20-264f-4380-bd09-3d681828a4d8")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "PC13" bidirectional
+			(at 64.135 104.14 180)
+			(uuid "86d51ddb-5f1f-4e85-a04e-1a35af7874dc")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCK" input
+			(at 64.135 106.68 180)
+			(uuid "12363f81-253a-4d1f-885f-cf7a77b6be90")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWCLK" input
+			(at 64.135 109.22 180)
+			(uuid "f7157c04-cfe4-404e-ab97-e703c08b9f6b")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWDIO" bidirectional
+			(at 64.135 111.76 180)
+			(uuid "f3cbc8a0-4795-43c0-8dfc-e4287e6b17ff")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "VInput_Min7VMax15V" input
+			(at 64.135 114.3 180)
+			(uuid "6b0e75bc-1409-4b60-b336-0ac749f904c5")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
@@ -2288,6 +2478,36 @@
 		(pin "strain_power_enable_Regulated3V3" input
 			(at 125.73 68.58 180)
 			(uuid "e4ecda50-bdff-4632-b40d-d95713801027")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "BatteryV_Div" output
+			(at 125.73 64.77 180)
+			(uuid "9ef81870-3dc0-4524-b556-c479a4122f32")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "BatteryV_Div_Enable" input
+			(at 125.73 60.96 180)
+			(uuid "30f0d646-85e4-449b-88f3-f4648ba824ee")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "StrainV_Enable" input
+			(at 125.73 58.42 180)
+			(uuid "ef7ae2f2-b57b-421f-86f1-1e70dc698fe2")
 			(effects
 				(font
 					(size 1.4986 1.4986)

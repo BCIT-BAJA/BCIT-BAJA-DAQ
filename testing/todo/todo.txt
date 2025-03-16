@@ -23,5 +23,6 @@ capacitor will optimize the system slighty, however the complexity of the proble
 Capacitor. Placement of capacitor is not accross differential. But we need 1 cap for each AIN, in addition to this, our switching frequency
 will be varied significantly due to our battery range. This is very complicated stuff to size for. So in terms of time, it may be best to not add this in.
 
+to size for capcitor, we need to know oscillations of buck converter which is already filtered at output of buck converter. So, I will avoid adding in this.
 
 

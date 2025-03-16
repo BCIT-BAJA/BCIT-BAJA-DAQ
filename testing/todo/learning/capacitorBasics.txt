@@ -46,3 +46,15 @@ At high frequencies, there is an impdeance of 0 so no voltage drop accross IC ch
 
 How do you pick capacitance, real world capacitance has inductance, has resistance. So your ideal capaciter will have a different frequency response where it will cutoff to a certain point. But then as frequency increases,
 the inductance of the capacitor create impedance, and therefore is not able to filter out really high frequencies.
+
+
+Capacitor impedance follows
+Z=1/jωc
+Low frequencies: High impedance → voltage drop across IC.
+High frequencies: Low impedance → noise is shorted to ground.
+
+However in reality, there exists, inductance and resistance. So at a certain frequency, the impedance actually increases as we continue to increase. So we may have several capacitors to filter out different frequencies as the 
+bigger the capacitor, the more inductance it usually has.
+
+
+

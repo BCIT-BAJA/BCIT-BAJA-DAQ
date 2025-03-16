@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "955cc99e-a129-42cf-abc7-aa99813fdb5f")
 	(paper "A4")
 	(title_block
@@ -89,6 +89,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
@@ -171,6 +172,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+2V8"
 			(power)
@@ -248,7 +250,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -260,7 +262,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -274,7 +276,8 @@
 			(symbol "+2V8_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+2V8"
 						(effects
 							(font
@@ -291,6 +294,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+BATT"
 			(power)
@@ -368,7 +372,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -380,7 +384,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -394,7 +398,8 @@
 			(symbol "+BATT_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+BATT"
 						(effects
 							(font
@@ -411,6 +416,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -490,7 +496,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -507,12 +514,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -603,12 +615,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:VCC"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -680,7 +697,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -692,7 +709,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -723,7 +740,31 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "HOW MANY MOUNTING HOLES?"
+		(exclude_from_sim no)
+		(at 118.618 167.386 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "aa9099b3-4cba-4478-8ce2-4eebb21cb7d0")
+	)
+	(text "Note: we do not use PWR_FLAG here to force explicit use of routing via hierarchical organization."
+		(exclude_from_sim no)
+		(at 20.32 194.818 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "e78fc792-10d0-4e75-8a0f-8d6ef5498af3")
 	)
 	(no_connect
 		(at 29.21 180.34)
@@ -818,29 +859,6 @@
 			(type default)
 		)
 		(uuid "fdc60c06-30fa-4dfb-96b4-809b755999e1")
-	)
-	(text "HOW MANY MOUNTING HOLES?"
-		(exclude_from_sim no)
-		(at 118.618 167.386 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-				(color 255 0 0 1)
-			)
-		)
-		(uuid "aa9099b3-4cba-4478-8ce2-4eebb21cb7d0")
-	)
-	(text "Note: we do not use PWR_FLAG here to force explicit use of routing via hierarchical organization."
-		(exclude_from_sim no)
-		(at 20.32 194.818 0)
-		(effects
-			(font
-				(size 0.8 0.8)
-				(color 255 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "e78fc792-10d0-4e75-8a0f-8d6ef5498af3")
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
@@ -1859,6 +1877,10 @@
 	(sheet
 		(at 24.13 21.59)
 		(size 35.56 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -1889,33 +1911,33 @@
 		)
 		(pin "Battery_Regulated3V3" output
 			(at 59.69 31.75 0)
+			(uuid "3911ce5b-1999-4aae-ae8e-6bccbab6da5e")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "3911ce5b-1999-4aae-ae8e-6bccbab6da5e")
 		)
 		(pin "BatteryV" output
 			(at 59.69 26.67 0)
+			(uuid "7c32900d-924d-47f4-b9fb-68f9057464e0")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "7c32900d-924d-47f4-b9fb-68f9057464e0")
 		)
 		(pin "Battery_Buck5V" output
 			(at 59.69 29.21 0)
+			(uuid "53bf56eb-c002-47cc-815c-f4191289696a")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "53bf56eb-c002-47cc-815c-f4191289696a")
 		)
 		(instances
 			(project "pcb-stm32wl_bajaSensors"
@@ -1928,6 +1950,10 @@
 	(sheet
 		(at 64.135 50.8)
 		(size 48.895 88.9)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -1958,93 +1984,93 @@
 		)
 		(pin "PB4" bidirectional
 			(at 81.28 50.8 90)
+			(uuid "91fe070a-a49b-4bc5-805a-42f23e10d114")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "91fe070a-a49b-4bc5-805a-42f23e10d114")
 		)
 		(pin "PB2" bidirectional
 			(at 78.74 50.8 90)
+			(uuid "501880c3-8633-456f-9add-0e8fa1932ba6")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "501880c3-8633-456f-9add-0e8fa1932ba6")
 		)
 		(pin "PA5_SCK1" output
 			(at 113.03 73.66 0)
+			(uuid "24b72b0d-63b8-4e06-89d0-e94dcf39a600")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "24b72b0d-63b8-4e06-89d0-e94dcf39a600")
 		)
 		(pin "PA6_MISO1" input
 			(at 113.03 76.2 0)
+			(uuid "a6738794-75ae-48a6-8949-ed8717400d71")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "a6738794-75ae-48a6-8949-ed8717400d71")
 		)
 		(pin "PA7_MOSI1" output
 			(at 113.03 78.74 0)
+			(uuid "d692b5e6-71b2-4fa6-bc83-618add8d8fef")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "d692b5e6-71b2-4fa6-bc83-618add8d8fef")
 		)
 		(pin "PB7" bidirectional
 			(at 113.03 111.76 0)
+			(uuid "1e48966e-d29d-4521-8939-ec8ac570431d")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "1e48966e-d29d-4521-8939-ec8ac570431d")
 		)
 		(pin "PB6" bidirectional
 			(at 113.03 109.22 0)
+			(uuid "07d160b6-23e1-4aa0-95cb-440482e6fc15")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "07d160b6-23e1-4aa0-95cb-440482e6fc15")
 		)
 		(pin "PB5" bidirectional
 			(at 113.03 106.68 0)
+			(uuid "a62609cd-29b7-4918-b97d-7b2404ba61cf")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "a62609cd-29b7-4918-b97d-7b2404ba61cf")
 		)
 		(pin "PB3" bidirectional
 			(at 113.03 102.87 0)
+			(uuid "844d7d7a-b386-45a8-aaf6-bf41bbcb43b5")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "844d7d7a-b386-45a8-aaf6-bf41bbcb43b5")
 		)
 		(instances
 			(project "pcb-stm32wl_bajaSensors"
@@ -2057,6 +2083,10 @@
 	(sheet
 		(at 125.73 50.8)
 		(size 48.895 88.9)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -2087,183 +2117,183 @@
 		)
 		(pin "MOSI" input
 			(at 125.73 78.74 180)
+			(uuid "d7e5a060-eb57-4238-9312-26bc885fc97d")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify left)
 			)
-			(uuid "d7e5a060-eb57-4238-9312-26bc885fc97d")
 		)
 		(pin "SCK" input
 			(at 125.73 73.66 180)
+			(uuid "901440f4-e2a6-4447-83cc-f58a2b26f5c4")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify left)
 			)
-			(uuid "901440f4-e2a6-4447-83cc-f58a2b26f5c4")
 		)
 		(pin "MISO" output
 			(at 125.73 76.2 180)
+			(uuid "2c60448a-e30f-46b2-89e1-a44f51688efc")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify left)
 			)
-			(uuid "2c60448a-e30f-46b2-89e1-a44f51688efc")
 		)
 		(pin "PB3_USR_BTN" output
 			(at 125.73 102.87 180)
+			(uuid "4b1fce17-dec7-457e-ba3b-a77604e77dc9")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify left)
 			)
-			(uuid "4b1fce17-dec7-457e-ba3b-a77604e77dc9")
 		)
 		(pin "PB5_LED_RED" output
 			(at 125.73 106.68 180)
+			(uuid "c1bac86f-cbf6-4c5b-b60d-c26fa73d9c09")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify left)
 			)
-			(uuid "c1bac86f-cbf6-4c5b-b60d-c26fa73d9c09")
 		)
 		(pin "PB6_LED_GREEN" output
 			(at 125.73 109.22 180)
+			(uuid "283c990c-ae5a-4e41-a3ad-b40ca29fe90e")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify left)
 			)
-			(uuid "283c990c-ae5a-4e41-a3ad-b40ca29fe90e")
 		)
 		(pin "PB7_LED_BLUE" output
 			(at 125.73 111.76 180)
+			(uuid "49575217-40b0-4890-8acf-12982cca52b5")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify left)
 			)
-			(uuid "49575217-40b0-4890-8acf-12982cca52b5")
 		)
 		(pin "ICM_INT1" output
 			(at 174.625 77.47 0)
+			(uuid "5de54511-6037-40c3-a5b2-2129f036dfed")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "5de54511-6037-40c3-a5b2-2129f036dfed")
 		)
 		(pin "ICM_INT2" output
 			(at 174.625 80.01 0)
+			(uuid "24da3297-f3fc-48ef-b2fb-be1f5fca59fc")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "24da3297-f3fc-48ef-b2fb-be1f5fca59fc")
 		)
 		(pin "ANT_IRQ0" input
 			(at 174.625 85.09 0)
+			(uuid "376b6bf6-fb3b-4d7b-88d5-79f0daa1271b")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "376b6bf6-fb3b-4d7b-88d5-79f0daa1271b")
 		)
 		(pin "ANT_RESET" output
 			(at 174.625 92.71 0)
+			(uuid "180eed91-c7b0-4227-a0dc-b5d749a2696f")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "180eed91-c7b0-4227-a0dc-b5d749a2696f")
 		)
 		(pin "ANT_CSCON" output
 			(at 174.625 95.25 0)
+			(uuid "11cb893c-64db-4161-9cdb-83578d5e1318")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "11cb893c-64db-4161-9cdb-83578d5e1318")
 		)
 		(pin "ANT_IRQ1" output
 			(at 174.625 97.79 0)
+			(uuid "3bb17ca4-698c-46b1-9060-6f72894a8a35")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "3bb17ca4-698c-46b1-9060-6f72894a8a35")
 		)
 		(pin "ANT_CSDATA" output
 			(at 174.625 102.87 0)
+			(uuid "0802d136-c49d-4025-85a8-3dce7b2027a5")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "0802d136-c49d-4025-85a8-3dce7b2027a5")
 		)
 		(pin "strainGaugeCS" input
 			(at 174.625 106.68 0)
+			(uuid "286a7419-59db-41ce-8276-1b0ad77f8a12")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "286a7419-59db-41ce-8276-1b0ad77f8a12")
 		)
 		(pin "Battery_Regulated3V3" input
 			(at 161.29 50.8 90)
+			(uuid "896da8e4-efb9-4b70-bd73-20df05c29040")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify right)
 			)
-			(uuid "896da8e4-efb9-4b70-bd73-20df05c29040")
 		)
 		(pin "ICM_CS" input
 			(at 125.73 118.11 180)
+			(uuid "7439214a-9540-466e-a777-41747100d994")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify left)
 			)
-			(uuid "7439214a-9540-466e-a777-41747100d994")
 		)
 		(pin "strain_power_enable_Regulated3V3" input
 			(at 125.73 68.58 180)
+			(uuid "e4ecda50-bdff-4632-b40d-d95713801027")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
 				(justify left)
 			)
-			(uuid "e4ecda50-bdff-4632-b40d-d95713801027")
 		)
 		(instances
 			(project "pcb-stm32wl_bajaSensors"
@@ -2278,4 +2308,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

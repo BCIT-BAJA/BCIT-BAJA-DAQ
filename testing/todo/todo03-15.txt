@@ -13,3 +13,14 @@ Goals for today:
 
 choose mosfets to switching
 choose capacitors for VCC_strain gauge
+
+Result - By 03-16
+
+Both mosfet will not be added into circuit. Both IMU and ANTENNA have sleep mode, which is in the micro to milliamp current usage range. Add in
+capacitor will optimize the system slighty, however the complexity of the problem is high. So I have opted to accept the uncertainty of the measurements.
+
+Capacitor. Placement of capacitor is not accross differential. But we need 1 cap for each AIN, in addition to this, our switching frequency
+will be varied significantly due to our battery range. This is very complicated stuff to size for. So in terms of time, it may be best to not add this in.
+
+
+

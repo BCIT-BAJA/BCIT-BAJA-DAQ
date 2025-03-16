@@ -276,6 +276,7 @@
       "mfg": "",
       "mpn": ""
     },
+    "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
@@ -471,10 +472,15 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "footprint_filter": "ignore",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "ignore",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
+      "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -487,9 +493,14 @@
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
       "similar_labels": "warning",
+      "similar_power": "warning",
       "simulation_model_issue": "ignore",
+      "single_global_label": "ignore",
       "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -501,7 +512,7 @@
   },
   "meta": {
     "filename": "pcb-stm32wl_bajaSensors.kicad_pro",
-    "version": 1
+    "version": 3
   },
   "net_settings": {
     "classes": [
@@ -516,6 +527,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1397,
         "via_diameter": 0.8,
@@ -533,6 +545,7 @@
         "microvia_drill": 0.1,
         "name": "100Ohm",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1397,
         "via_diameter": 0.8,
@@ -541,7 +554,7 @@
       }
     ],
     "meta": {
-      "version": 3
+      "version": 4
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -725,6 +738,7 @@
       ],
       "filter_string": "",
       "group_symbols": true,
+      "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
       "sort_field": "Value"
@@ -768,6 +782,7 @@
     },
     "page_layout_descr_file": "",
     "plot_directory": "../sch/",
+    "space_save_all_events": true,
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -798,18 +813,6 @@
     [
       "d1877f77-f27b-4899-ae92-02ff99818071",
       "NUCLEO-L476RG Reference"
-    ],
-    [
-      "0b7a3c35-e02e-4bf6-9947-2dcad6f028b4",
-      "U_ST_LINK_V2-1"
-    ],
-    [
-      "4f93d76f-6e92-4ee3-a227-e538565912a0",
-      "U_Connectors"
-    ],
-    [
-      "f39eff3e-898c-4d86-aaba-6cf04ba8eedc",
-      "U_MCU_64"
     ]
   ],
   "text_variables": {}

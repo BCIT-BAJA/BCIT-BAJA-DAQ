@@ -75,6 +75,7 @@
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -562,6 +563,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -783,7 +785,7 @@
     ],
     [
       "00000000-0000-0000-0000-00005ea70ac3",
-      "MCU"
+      "Controller"
     ],
     [
       "00000000-0000-0000-0000-00005eb1de63",
@@ -791,7 +793,23 @@
     ],
     [
       "00000000-0000-0000-0000-00005e90d709",
-      "Power Supply"
+      "(Battery) Power Supply"
+    ],
+    [
+      "d1877f77-f27b-4899-ae92-02ff99818071",
+      "NUCLEO-L476RG Reference"
+    ],
+    [
+      "0b7a3c35-e02e-4bf6-9947-2dcad6f028b4",
+      "U_ST_LINK_V2-1"
+    ],
+    [
+      "4f93d76f-6e92-4ee3-a227-e538565912a0",
+      "U_Connectors"
+    ],
+    [
+      "f39eff3e-898c-4d86-aaba-6cf04ba8eedc",
+      "U_MCU_64"
     ]
   ],
   "text_variables": {}

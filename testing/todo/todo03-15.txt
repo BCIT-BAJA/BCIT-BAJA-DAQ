@@ -1,0 +1,15 @@
+add test points for power-rails and comm ports
+add power switch with integrated LED
+replace load switch with mosfet
+add series and pull-ups on SPI bus(open drain)
+choose and add in capacitor at differential strain gauge voltage(maybe)
+choose and add capacitor near strain gauge VCC
+choose battery holder, put specification of batteries in kicad
+change load switch to mosfet
+add mosfet switch to every sensor
+
+
+Goals for today:
+
+choose mosfets to switching
+choose capacitors for VCC_strain gauge

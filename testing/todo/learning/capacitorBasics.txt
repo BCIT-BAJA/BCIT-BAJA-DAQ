@@ -37,3 +37,12 @@ Some rules of thumb that will help...
 - Choose dielectric based on expected worst case temperature range.
 - For both DC and temperature derating, increase cap value to account for derating AND tolerance!
 - Package size: The higher the frequency, the smaller the cap package (and cap value (typically)) should be. Smaller packages typically have smaller max. capacitances, smaller max. DC ratings, but better HF performance (lower ESR, lower ESL) – and vice-versa, of course!
+
+
+Summary:
+
+Capacitors, have an impedance 1/jwc, which when in parallel with an IC chip has a voltage drop at low frequencies. Allowing voltage to be read from the IC chip.
+At high frequencies, there is an impdeance of 0 so no voltage drop accross IC chip.
+
+How do you pick capacitance, real world capacitance has inductance, has resistance. So your ideal capaciter will have a different frequency response where it will cutoff to a certain point. But then as frequency increases,
+the inductance of the capacitor create impedance, and therefore is not able to filter out really high frequencies.

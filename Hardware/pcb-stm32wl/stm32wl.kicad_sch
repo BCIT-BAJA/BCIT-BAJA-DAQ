@@ -2935,18 +2935,6 @@
 		)
 		(uuid "e17335ad-40f7-48cf-b10a-af8b244bb9dd")
 	)
-	(junction
-		(at 141.605 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "376a6f44-cf22-4d88-ac13-30f83803795f")
-	)
-	(junction
-		(at 142.24 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5bc93329-7dbd-4951-bfcc-63a374922c4b")
-	)
 	(no_connect
 		(at 96.52 128.27)
 		(uuid "070f0044-8354-47f5-bda5-1e037f65c025")
@@ -3417,7 +3405,7 @@
 	)
 	(wire
 		(pts
-			(xy 141.605 62.23) (xy 141.605 59.69)
+			(xy 141.605 57.15) (xy 141.605 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3567,7 +3555,7 @@
 	)
 	(wire
 		(pts
-			(xy 141.605 57.15) (xy 142.24 57.15)
+			(xy 141.605 57.15) (xy 144.78 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3627,16 +3615,6 @@
 	)
 	(wire
 		(pts
-			(xy 141.605 57.15) (xy 141.605 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b121f1ff-8472-460b-ab2d-5110ddd1ca28")
-	)
-	(wire
-		(pts
 			(xy 144.78 139.7) (xy 142.875 139.7)
 		)
 		(stroke
@@ -3644,16 +3622,6 @@
 			(type default)
 		)
 		(uuid "bcacf97a-a49b-480c-96ed-a857f56faeb2")
-	)
-	(wire
-		(pts
-			(xy 142.24 57.15) (xy 144.78 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d813b76b-62fa-48f7-8957-22a5ec2b39be")
 	)
 	(wire
 		(pts
@@ -5831,24 +5799,23 @@
 		)
 	)
 	(sheet
-		(at 55.88 25.4)
-		(size 35.56 8.89)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(at 54.61 24.13)
+		(size 36.83 7.62)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
-			(width 0)
+			(width 0.1524)
 			(type solid)
-			(color 128 0 0 1)
 		)
 		(fill
-			(color 128 255 128 1.0000)
+			(color 0 0 0 0.0000)
 		)
-		(uuid "d1877f77-f27b-4899-ae92-02ff99818071")
-		(property "Sheetname" "NUCLEO-L476RG Reference"
-			(at 55.88 24.6884 0)
+		(uuid "dfd3e576-45ac-414e-879c-fe3a4e293d3a")
+		(property "Sheetname" "NUCLEO-L476RG_Top"
+			(at 54.61 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5856,8 +5823,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Top.kicad_sch"
-			(at 55.88 34.8746 0)
+		(property "Sheetfile" "NUCLEO-L476RG_Top.kicad_sch"
+			(at 54.61 32.3346 0)
 			(effects
 				(font
 					(size 1.27 1.27)

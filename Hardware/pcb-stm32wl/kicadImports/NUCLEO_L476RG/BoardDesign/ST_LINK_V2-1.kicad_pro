@@ -196,7 +196,6 @@
       "bus_entry_needed": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
-      "conflicting_netclasses": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
       "duplicate_reference": "error",
@@ -242,13 +241,13 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Project_Overview.kicad_pro",
+    "filename": "ST_LINK_V2-1.kicad_pro",
     "version": 3
   },
   "net_settings": {
     "classes": [
       {
-        "bus_width": 10,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -289,7 +288,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
+    "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -311,24 +310,6 @@
           "show": true
         },
         {
-          "group_by": true,
-          "label": "Value",
-          "name": "Value",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Footprint",
-          "name": "Footprint",
-          "show": true
-        },
-        {
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
@@ -336,15 +317,45 @@
         },
         {
           "group_by": true,
+          "label": "Value",
+          "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
           "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": false,
-      "name": "Grouped By Value",
+      "include_excluded_from_bom": true,
+      "name": "Default Editing",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -390,52 +401,17 @@
   },
   "sheets": [
     [
-      "8707795a-3b86-4b79-ae4d-296388df4d07",
+      "b1fa5de1-2831-43e7-bcd7-0f7153211507",
       "Root"
-    ],
-    [
-      "27791dcf-4553-48ea-a0ae-06183286e37c",
-      "U_Top"
-    ],
-    [
-      "8c434793-8497-4e55-8376-3fc3c123c008",
-      "U_MCU_64"
-    ],
-    [
-      "30bfc2ca-caf7-4953-8c17-9c3c3df5adcc",
-      "U_ST_LINK_V2-1"
-    ],
-    [
-      "9d7251b0-8fb7-405d-931f-19ba1257ef72",
-      "U_Connectors"
     ]
   ],
   "text_variables": {
-    "ADDRESS1": "Not used",
-    "ADDRESS2": "Not used",
-    "ADDRESS3": "Not used",
-    "ADDRESS4": "Not used",
-    "APPLICATION_BUILDNUMBER": "Not used",
-    "APPROVEDBY": "Not used",
-    "AUTHOR": "Not used",
-    "CHECKEDBY": "Not used",
     "CONFIGURATIONPARAMETERS": "",
     "CONFIGURATORNAME": "",
-    "CURRENTDATE": "Not used",
-    "CURRENTTIME": "Not used",
-    "DOCUMENTFULLPATHANDNAME": "Not used",
-    "DOCUMENTNAME": "Not used",
     "DOCUMENTNUMBER": "MB1136",
-    "DRAWNBY": "Not used",
-    "ENGINEER": "Not used",
-    "IMAGEPATH": "Not used",
     "ISUSERCONFIGURABLE": "",
-    "MODIFIEDDATE": "Not used",
-    "ORGANIZATION": "Not used",
     "PROJECT": "NUCLEO-XXXXRX",
-    "PROJECTNAME": "Not used",
     "SHEETTOTAL": "5",
-    "TIME": "Not used",
     "VERSIONCONTROL_PROJFOLDERREVNUMBER": "",
     "VERSIONCONTROL_REVNUMBER": ""
   }

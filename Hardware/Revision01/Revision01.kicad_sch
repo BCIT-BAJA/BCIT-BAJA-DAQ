@@ -1890,7 +1890,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "00000000-0000-0000-0000-00005e90d709")
-		(property "Sheetname" "(Battery) Power Supply"
+		(property "Sheetname" "Power"
 			(at 24.13 20.5101 0)
 			(effects
 				(font
@@ -1900,7 +1900,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "power-supply.kicad_sch"
+		(property "Sheetfile" "Revision01_Power.kicad_sch"
 			(at 24.13 43.7646 0)
 			(effects
 				(font
@@ -1940,7 +1940,7 @@
 			)
 		)
 		(instances
-			(project "pcb-stm32wl_bajaSensors"
+			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(page "4")
 				)
@@ -1973,7 +1973,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "stm32wl.kicad_sch"
+		(property "Sheetfile" "Revision01_Controller.kicad_sch"
 			(at 64.135 140.2846 0)
 			(effects
 				(font
@@ -2263,7 +2263,7 @@
 			)
 		)
 		(instances
-			(project "pcb-stm32wl_bajaSensors"
+			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(page "2")
 				)
@@ -2286,7 +2286,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "00000000-0000-0000-0000-00005eb1de63")
-		(property "Sheetname" "Peripherals"
+		(property "Sheetname" "Application"
 			(at 125.73 49.7201 0)
 			(effects
 				(font
@@ -2296,7 +2296,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "peripherals.kicad_sch"
+		(property "Sheetfile" "Revision01_Application.kicad_sch"
 			(at 125.73 140.2846 0)
 			(effects
 				(font
@@ -2516,7 +2516,7 @@
 			)
 		)
 		(instances
-			(project "pcb-stm32wl_bajaSensors"
+			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(page "3")
 				)

@@ -3204,6 +3204,18 @@
 		)
 		(uuid "e84213ad-2c3f-4f44-be94-c24c8a766e65")
 	)
+	(text "Notes on reviewing MOSFET choice.\n\nPMOS\nCutoff OFF: Vsg < Vth \n\nFull on - Triode region\n\nVsd < Vsg - |Vth|\n-------\n\nDo our choices work?\n\nVds = 5V or 3.3V\nVgs = 3.3V\nVgsTh from -0.45V to -0.95V\n\n\nCalculation check:\n#TURN ON?\nVsg - |Vth| = -3.3 - 0.95 = -4.25V\nVsd  = -3.3V or -5V\n\n-5V < -4.25V ✔ \n-3.3V < -4.25V ❌\n"
+		(exclude_from_sim no)
+		(at -48.006 40.894 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+				(color 255 144 0 1)
+			)
+			(justify left)
+		)
+		(uuid "eaaa4d36-1c18-4417-87d3-33c44f5298fd")
+	)
 	(text "Strain Gauge Pwr enable"
 		(exclude_from_sim no)
 		(at 61.214 22.352 0)

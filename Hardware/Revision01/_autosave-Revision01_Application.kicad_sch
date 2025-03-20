@@ -3180,7 +3180,7 @@
 		)
 		(uuid "bb5444a1-7886-400a-bfd2-f05badec677d")
 	)
-	(text "REVIEW SHEET\n\nVERIFY \n\nMOSFET-WIREOUT\nANTENNA WIRE-OUT\nADC WIRE-OUT\nIMU WIRE-OUT\n\nWireout includes verification of capacitor values and selected component, \n\n"
+	(text "REVIEW SHEET\n\nVERIFY \n\nMOSFET-WIREOUT\nANTENNA WIRE-OUT\nADC WIRE-OUT\nIMU WIRE-OUT\n\nWireout includes verification of capacitor \nvalues and selected component, \n\n"
 		(exclude_from_sim no)
 		(at -48.006 133.858 0)
 		(effects
@@ -3206,9 +3206,9 @@
 		)
 		(uuid "e84213ad-2c3f-4f44-be94-c24c8a766e65")
 	)
-	(text "Notes on reviewing MOSFET check.\n\nPMOS\nCutoff OFF: Vsg < Vth \n\nFull on - Triode region\n\nVsd < Vsg - |Vth|\n-------\n\nDo our choices work?\n\nVds = 5V or 3.3V\nVgs = 3.3V\nVgsTh from -0.45V to -0.95V\n\n\nCalculation check:\n#TURN ON?\nVsg - |Vth| = -3.3 - 0.95 = -4.25V\nVsd  = -3.3V or -5V\n\n-5V < -4.25V - works\n-3.3V < -4.25V - Does not work\n\nIs the terminals correctly placed?"
+	(text "Notes on reviewing MOSFET check.\n\nPMOS\nCutoff OFF: Vsg < Vth \n\nFull on - Triode region\n|Vds| < |Vgs| - |Vth|\n|Vgs| > |Vth|\n-------\n\nDo our choices work?\n\nVds = 5V or 3.3V\nVgs = 3.3V\nVgsTh from -0.45V to -0.95V\n\n\nCalculation check:\n#TURN ON?\n\n\nIs the terminals correctly placed?\nEQUATIONS TAKEN FROM\nhttps://www.xecor.com/blog/pmos-vs-nmos"
 		(exclude_from_sim no)
-		(at -48.006 40.894 0)
+		(at -42.926 45.974 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)

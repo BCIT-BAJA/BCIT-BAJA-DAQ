@@ -765,6 +765,28 @@
 		)
 		(uuid "ab1d1034-e68b-43cd-b3f4-29a3935554ec")
 	)
+	(text "Add the power switch outside of the Controller module"
+		(exclude_from_sim no)
+		(at 94.234 42.926 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+				(color 11 255 22 1)
+			)
+		)
+		(uuid "ab5a4c6b-2865-4617-870b-c1fda1dabbd4")
+	)
+	(text "Add schematic symbols for the Battery & Holder components as part of the unified BOM"
+		(exclude_from_sim no)
+		(at 113.03 38.862 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+				(color 11 255 22 1)
+			)
+		)
+		(uuid "d1c15ab9-22fb-4d17-b55b-1642c24b959c")
+	)
 	(text "Parries notes will be ORANGE"
 		(exclude_from_sim no)
 		(at 50.8 175.26 0)
@@ -982,14 +1004,6 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link" ""
-			(at 110.49 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(instances
 			(project "pcb-stm32wl_bajaSensors"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
@@ -1079,14 +1093,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Distributor Link" ""
-			(at 134.62 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(instances
@@ -1243,14 +1249,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Distributor Link" ""
-			(at 140.97 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(instances
@@ -1425,14 +1423,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Distributor Link" ""
-			(at 105.41 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(instances
@@ -1655,14 +1645,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Distributor Link" ""
-			(at 127 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(instances

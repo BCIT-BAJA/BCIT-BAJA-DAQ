@@ -1699,7 +1699,7 @@
 	)
 	(text "SWDIO\n"
 		(exclude_from_sim no)
-		(at 86.995 58.42 0)
+		(at 86.36 58.42 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1710,7 +1710,7 @@
 	)
 	(text "VDD"
 		(exclude_from_sim no)
-		(at 86.995 83.82 0)
+		(at 86.36 83.82 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1721,7 +1721,7 @@
 	)
 	(text "(NC)\n"
 		(exclude_from_sim no)
-		(at 86.995 78.74 0)
+		(at 86.36 78.74 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1732,7 +1732,7 @@
 	)
 	(text "PB11=VCAP1"
 		(exclude_from_sim no)
-		(at 219.075 121.92 0)
+		(at 219.71 121.92 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1741,9 +1741,20 @@
 		)
 		(uuid "3f5b9d5b-970c-4fa7-bdf1-0f835dce9254")
 	)
+	(text "PB13 <SB29> LED2"
+		(exclude_from_sim no)
+		(at 219.71 137.16 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "48c0edd4-140b-4b3d-bbec-88f05831b3b1")
+	)
 	(text "(NC)"
 		(exclude_from_sim no)
-		(at 86.995 81.28 0)
+		(at 86.36 81.28 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1751,6 +1762,17 @@
 			(justify right)
 		)
 		(uuid "4b6bb21b-17c1-4ce8-822b-a94e6e991d26")
+	)
+	(text "PA5 <SB42> <SB21> LED2 (Active Hi)"
+		(exclude_from_sim no)
+		(at 86.36 114.3 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "4b9b7003-a20f-4486-9b17-dcf9ae2764d7")
 	)
 	(text "+3.3V <JP6> VDD Bypass"
 		(exclude_from_sim no)
@@ -1774,9 +1796,31 @@
 		)
 		(uuid "5d8f800d-0c02-4cb0-a181-a9553af4b533")
 	)
+	(text ""
+		(exclude_from_sim no)
+		(at 135.89 153.67 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "71cbbee0-226e-4cff-a406-6bce8d58c1a1")
+	)
+	(text "~{RESET} (Internal Pullup) = Black Pushbutton B2"
+		(exclude_from_sim no)
+		(at 219.71 58.42 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "746c7325-ae35-4bfb-a1e7-387866d86606")
+	)
 	(text "OSC32_IN\n"
 		(exclude_from_sim no)
-		(at 86.995 73.66 0)
+		(at 86.36 73.66 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1798,7 +1842,7 @@
 	)
 	(text "SWCLK"
 		(exclude_from_sim no)
-		(at 86.995 60.96 0)
+		(at 86.36 60.96 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1809,7 +1853,7 @@
 	)
 	(text "OSC32_OUT\n"
 		(exclude_from_sim no)
-		(at 86.995 76.2 0)
+		(at 86.36 76.2 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1818,9 +1862,20 @@
 		)
 		(uuid "9235bc08-093b-4f86-b911-bcac51311ebc")
 	)
+	(text "PC13 <SB17> B1, Blue PB"
+		(exclude_from_sim no)
+		(at 86.36 71.12 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "b05aa1fc-a863-4c6c-9cc3-341983cb8278")
+	)
 	(text "STLK_TX = USART2_TX"
 		(exclude_from_sim no)
-		(at 86.995 144.78 0)
+		(at 86.36 144.78 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1831,7 +1886,7 @@
 	)
 	(text "10K PullDown"
 		(exclude_from_sim no)
-		(at 86.995 50.8 0)
+		(at 86.36 50.8 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1842,7 +1897,7 @@
 	)
 	(text "VDD <Bead> <SB57> AVDD"
 		(exclude_from_sim no)
-		(at 86.995 109.22 0)
+		(at 86.36 109.22 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1853,7 +1908,7 @@
 	)
 	(text "AGND <SB60> GND"
 		(exclude_from_sim no)
-		(at 219.075 139.7 0)
+		(at 219.71 139.7 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1864,7 +1919,7 @@
 	)
 	(text "+3V3 = IOREF"
 		(exclude_from_sim no)
-		(at 219.075 55.88 0)
+		(at 219.71 55.88 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1875,7 +1930,7 @@
 	)
 	(text "TRACESWO"
 		(exclude_from_sim no)
-		(at 86.995 139.7 0)
+		(at 86.36 139.7 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1886,7 +1941,7 @@
 	)
 	(text "STLK_RX = USART2_RX"
 		(exclude_from_sim no)
-		(at 86.995 147.32 0)
+		(at 86.36 147.32 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1897,7 +1952,7 @@
 	)
 	(text "+3.3V <JP6> VDD"
 		(exclude_from_sim no)
-		(at 86.995 48.26 0)
+		(at 86.36 48.26 0)
 		(effects
 			(font
 				(size 1 1)
@@ -3350,7 +3405,7 @@
 		)
 		(uuid "056a1cd7-ae5e-4740-9405-c9f3f02cb456")
 	)
-	(hierarchical_label "PA5{slash}SPI1_SCK{slash}ADC12_IN5"
+	(hierarchical_label "PA5_LED2/SPI1_SCK/ADC12_IN5"
 		(shape bidirectional)
 		(at 66.675 115.57 180)
 		(effects
@@ -3515,8 +3570,8 @@
 		)
 		(uuid "49c0fead-60d3-4ed5-8427-59c26136bc2c")
 	)
-	(hierarchical_label "PC13"
-		(shape bidirectional)
+	(hierarchical_label "~{PC13_Button1}"
+		(shape output)
 		(at 66.675 72.39 180)
 		(effects
 			(font
@@ -3724,7 +3779,7 @@
 		)
 		(uuid "bcfc0b13-8f52-4448-8939-a28646573f3b")
 	)
-	(hierarchical_label "PB13{slash}SPI2_SCK{slash}USART3_CTS{slash}TIM1_CH1N"
+	(hierarchical_label "PB13/SPI2_SCK/USART3_CTS/TIM1_CH1N"
 		(shape bidirectional)
 		(at 239.395 138.43 0)
 		(effects

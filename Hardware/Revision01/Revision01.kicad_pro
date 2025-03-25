@@ -553,12 +553,36 @@
         "microvia_drill": 0.1,
         "name": "100Ohm",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1397,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "name": "GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "GPIO",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "PWR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "SPI",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
     ],
     "meta": {
@@ -566,7 +590,24 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "PWR",
+        "pattern": "+*"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/GPIO*"
+      },
+      {
+        "netclass": "SPI",
+        "pattern": "/SPI*"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "GND"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -739,12 +780,6 @@
         },
         {
           "group_by": false,
-          "label": "Distributor Link",
-          "name": "Distributor Link",
-          "show": true
-        },
-        {
-          "group_by": false,
           "label": "LATESTREVISIONNOTE",
           "name": "LATESTREVISIONNOTE",
           "show": false
@@ -765,7 +800,7 @@
           "group_by": false,
           "label": "MANUFACTURER_PART_NUMBER",
           "name": "MANUFACTURER_PART_NUMBER",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -1030,8 +1065,8 @@
       "group_symbols": true,
       "include_excluded_from_bom": false,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Value"
+      "sort_asc": false,
+      "sort_field": "LATESTREVISIONNOTE"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -1095,10 +1130,6 @@
     [
       "00000000-0000-0000-0000-00005eb1de63",
       "Application"
-    ],
-    [
-      "00000000-0000-0000-0000-00005e90d709",
-      "Power"
     ],
     [
       "dfd3e576-45ac-414e-879c-fe3a4e293d3a",

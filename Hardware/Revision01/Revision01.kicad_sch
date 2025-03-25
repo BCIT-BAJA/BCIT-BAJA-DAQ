@@ -885,9 +885,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "\n\nfootprint added for nucleo board\n\nTo do before PCB LAYOUT\n\nclean up schematic\nwire-accross sheets\nImprove annotation ordering\n\nPerform ERC check\nEnsure all components have footprints\nCreate net classes\n	POWER\n	GND\n	SPI"
+	(text "\n\nfootprint added for nucleo board\nGOAL THIS WEEK - BEFORE FRIDAY HAVE EVERYTHING SETUP TO LAYOUT PCB\nFollowing this, complete layout of PCB on friday\n\nTo do before PCB LAYOUT\nMONDAY\n\nclean up schematic\nwire-accross sheets\nImprove annotation ordering\n\nPerform ERC check\nEnsure all components have footprints\nChange battery connection to JST-connectors\nCreate net classes\n	POWER\n	GND\n	SPI\n\n\nTUESDAY\nRead and take notes on how to place COMPONENTS ON PCB\nIMU\nANTENNA\nADC\n\nWEDNSDAY \nplace components on PCB\n\nTHURSDAY\nChecking\n\nFRIDAY/SATURDAY: Wire evrerything\n\n\n"
 		(exclude_from_sim no)
-		(at -45.466 99.568 0)
+		(at -87.884 104.902 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -997,6 +997,66 @@
 		(at 25.4 177.8)
 		(uuid "c70a9d05-5747-40b9-90e6-454f250c9e36")
 	)
+	(wire
+		(pts
+			(xy 260.35 59.69) (xy 255.27 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36b9a0a5-35c0-4086-9e0e-d350fc0ef2af")
+	)
+	(wire
+		(pts
+			(xy 260.35 54.61) (xy 255.27 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47c0dd65-37f9-44e1-b5f5-deaa267d3919")
+	)
+	(wire
+		(pts
+			(xy 260.35 57.15) (xy 255.27 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62a2e206-863a-4fe8-9a5a-4f0df02b3e39")
+	)
+	(wire
+		(pts
+			(xy 260.35 62.23) (xy 255.27 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71f3c4b2-4d13-4c60-a827-f94c21c6e89f")
+	)
+	(wire
+		(pts
+			(xy 260.35 49.53) (xy 255.27 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9096c2be-6e62-441b-a32b-2795be928812")
+	)
+	(wire
+		(pts
+			(xy 260.35 52.07) (xy 255.27 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baa7aa28-17ab-40dd-bd30-d5b7fc6f02c1")
+	)
 	(label "PC3_GPIO"
 		(at 149.86 48.26 0)
 		(effects
@@ -1007,6 +1067,16 @@
 		)
 		(uuid "003e1179-d57c-461c-b614-6eb3fd28848a")
 	)
+	(label "PB13_SPI2_SCK"
+		(at 203.2 43.18 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "047d79b7-d8ad-4baf-a105-ba0b70ab55dd")
+	)
 	(label "PB14_SPI2_MISO"
 		(at 149.86 106.68 0)
 		(effects
@@ -1016,6 +1086,56 @@
 			(justify left)
 		)
 		(uuid "05843f4f-2ac5-496b-8e4b-f3059d4d15f7")
+	)
+	(label "PA1_GPIO"
+		(at 260.35 59.69 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "11bbd1e8-6014-456d-b029-ccead3110895")
+	)
+	(label "PC5_GPIO"
+		(at 260.35 54.61 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "19552c78-a054-4fe6-a464-32e78101c8d4")
+	)
+	(label "PA0_GPIO"
+		(at 260.35 57.15 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "24cfc87d-0f8d-4619-8980-3dacce1dfbe9")
+	)
+	(label "PB15_SPI2_MOSI"
+		(at 203.2 48.26 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "3c220853-f5f9-4d22-b34e-be2129dabc4f")
+	)
+	(label "PC4_GPIO"
+		(at 260.35 52.07 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "3e417f7c-6caa-4344-8423-4e407906d493")
 	)
 	(label "PB0_GPIO"
 		(at 149.86 60.96 0)
@@ -1047,6 +1167,16 @@
 		)
 		(uuid "6e0bb173-7a63-45f1-ad87-51b05d01b8a4")
 	)
+	(label "PB14_SPI2_MISO"
+		(at 203.2 45.72 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "811029e8-0e74-483e-9122-64d2d7e81a0d")
+	)
 	(label "PB1_GPIO"
 		(at 149.86 63.5 0)
 		(effects
@@ -1066,6 +1196,16 @@
 			(justify left)
 		)
 		(uuid "a4393f67-669c-427e-bfa2-a7969d42e228")
+	)
+	(label "PB2_GPIO"
+		(at 260.35 67.31 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "b0484bd1-efb9-43e6-bb81-23c68bbe5e44")
 	)
 	(label "PC0_ADC12_IN10"
 		(at 149.86 40.64 0)
@@ -1137,6 +1277,16 @@
 		)
 		(uuid "c451beaa-0f62-4c45-bc77-6c6abdd170b3")
 	)
+	(label "PB0_GPIO"
+		(at 260.35 62.23 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "cecc6c7b-cb15-4b07-a53b-6937c31047d9")
+	)
 	(label "PB2_GPIO"
 		(at 149.86 66.04 0)
 		(effects
@@ -1156,6 +1306,26 @@
 			(justify left)
 		)
 		(uuid "e6b1e606-8267-4e50-840a-31596064796e")
+	)
+	(label "PB1_GPIO"
+		(at 260.35 64.77 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "ee93a4eb-377c-4206-8cfb-cefbc69049fb")
+	)
+	(label "PC3_GPIO"
+		(at 260.35 49.53 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "f15d0ac4-f308-48c2-b20b-d605cd112b1b")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
@@ -2897,7 +3067,7 @@
 			)
 		)
 		(pin "ICM_INT1" output
-			(at 255.27 46.99 0)
+			(at 255.27 49.53 0)
 			(uuid "5de54511-6037-40c3-a5b2-2129f036dfed")
 			(effects
 				(font
@@ -2907,7 +3077,7 @@
 			)
 		)
 		(pin "ICM_INT2" output
-			(at 255.27 49.53 0)
+			(at 255.27 52.07 0)
 			(uuid "24da3297-f3fc-48ef-b2fb-be1f5fca59fc")
 			(effects
 				(font
@@ -2927,7 +3097,7 @@
 			)
 		)
 		(pin "ANT_RESET" output
-			(at 255.27 62.23 0)
+			(at 255.27 59.69 0)
 			(uuid "180eed91-c7b0-4227-a0dc-b5d749a2696f")
 			(effects
 				(font
@@ -2937,7 +3107,7 @@
 			)
 		)
 		(pin "ANT_CSCON" output
-			(at 255.27 64.77 0)
+			(at 255.27 62.23 0)
 			(uuid "11cb893c-64db-4161-9cdb-83578d5e1318")
 			(effects
 				(font
@@ -2947,7 +3117,7 @@
 			)
 		)
 		(pin "ANT_IRQ1" output
-			(at 255.27 67.31 0)
+			(at 255.27 57.15 0)
 			(uuid "3bb17ca4-698c-46b1-9060-6f72894a8a35")
 			(effects
 				(font
@@ -2956,38 +3126,18 @@
 				(justify right)
 			)
 		)
-		(pin "ANT_CSDATA" output
-			(at 255.27 72.39 0)
-			(uuid "0802d136-c49d-4025-85a8-3dce7b2027a5")
-			(effects
-				(font
-					(size 1.4986 1.4986)
-				)
-				(justify right)
-			)
-		)
 		(pin "strainGaugeCS" input
-			(at 255.27 76.2 0)
+			(at 203.2 57.15 180)
 			(uuid "286a7419-59db-41ce-8276-1b0ad77f8a12")
 			(effects
 				(font
 					(size 1.4986 1.4986)
 				)
-				(justify right)
-			)
-		)
-		(pin "Battery_Regulated3V3" input
-			(at 224.155 20.32 90)
-			(uuid "896da8e4-efb9-4b70-bd73-20df05c29040")
-			(effects
-				(font
-					(size 1.4986 1.4986)
-				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "ICM_CS" input
-			(at 203.2 66.04 180)
+			(at 203.2 54.61 180)
 			(uuid "7439214a-9540-466e-a777-41747100d994")
 			(effects
 				(font
@@ -2996,18 +3146,8 @@
 				(justify left)
 			)
 		)
-		(pin "BatteryV_Div" output
-			(at 203.2 34.29 180)
-			(uuid "9ef81870-3dc0-4524-b556-c479a4122f32")
-			(effects
-				(font
-					(size 1.4986 1.4986)
-				)
-				(justify left)
-			)
-		)
 		(pin "BatteryV_Div_Enable" input
-			(at 203.2 82.55 180)
+			(at 203.2 67.31 180)
 			(uuid "30f0d646-85e4-449b-88f3-f4648ba824ee")
 			(effects
 				(font
@@ -3017,8 +3157,58 @@
 			)
 		)
 		(pin "StrainV_Enable" input
-			(at 203.2 80.01 180)
+			(at 203.2 64.77 180)
 			(uuid "ef7ae2f2-b57b-421f-86f1-1e70dc698fe2")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3.3V" input
+			(at 228.6 20.32 90)
+			(uuid "86b704e0-19e0-48cf-99ce-b17f53a41df7")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "+5V" input
+			(at 231.14 20.32 90)
+			(uuid "6163f838-aa73-44e5-a610-ad549a813036")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "+V_BATT" input
+			(at 233.68 20.32 90)
+			(uuid "aae646cd-d5e1-4ff7-8b25-7b9e7f1a1623")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "ANT_CS_ActiveLow" output
+			(at 203.2 59.69 180)
+			(uuid "4de6ee64-e4e5-465c-99df-e2f1c696c73d")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "BatteryV_Measurement" output
+			(at 203.2 69.85 180)
+			(uuid "718989c2-25b6-4ae0-b9bd-f41b934eba2d")
 			(effects
 				(font
 					(size 1.4986 1.4986)

@@ -500,7 +500,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -647,7 +647,7 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Value",
           "name": "Value",
           "show": true
@@ -1132,20 +1132,20 @@
       "Application"
     ],
     [
-      "dfd3e576-45ac-414e-879c-fe3a4e293d3a",
+      "e193b1b9-df24-48f2-83d4-67c7fb55ae28",
       "NUCLEO-L476RG_Top"
     ],
     [
-      "d95c2c22-4412-4afc-9129-04f7fbe3da60",
-      "NUCLEO-L476RG_Connectors"
+      "dab543c8-5bfe-4d3b-a2fa-37ac216fb52e",
+      "NUCLEO-L476RG_MCU_64"
     ],
     [
       "64cd4bef-5636-43e4-afe9-e13f95815028",
       "NUCLEO_L476RG_ST_LINK_V2-1"
     ],
     [
-      "dab543c8-5bfe-4d3b-a2fa-37ac216fb52e",
-      "NUCLEO-L476RG_MCU_64"
+      "d95c2c22-4412-4afc-9129-04f7fbe3da60",
+      "NUCLEO-L476RG_Connectors"
     ]
   ],
   "text_variables": {}

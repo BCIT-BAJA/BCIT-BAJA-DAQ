@@ -12,6 +12,317 @@
 		(comment 1 "Parry Zhuo")
 	)
 	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "NCP1117LPST50T3G:NCP1117LPST50T3G"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.6288 5.8487 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "NCP1117LPST50T3G"
+				(at -7.6253 -10.1653 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "NCP1117LPST50T3G:SOT230P700X180-4N"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "4"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "ON Semiconductor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "NCP1117LPST50T3G_0_0"
+				(rectangle
+					(start -7.62 -7.62)
+					(end 7.62 5.08)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "IN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name "OUT__1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 12.7 -5.08 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "NCP1117LPST50T3G_1_0"
+				(pin input line
+					(at 12.7 2.54 180)
+					(length 5.08)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "NUCLEO-L476RG:NUCLEO-L476RG"
 			(pin_names
 				(offset 1.016)
@@ -1615,6 +1926,16 @@
 		)
 		(uuid "10b7bb21-ff4b-4c28-9835-f735324dd733")
 	)
+	(text "Remove the power jumper on nucleo board before\nusing this daughterboard "
+		(exclude_from_sim no)
+		(at 223.012 17.78 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+		)
+		(uuid "1ab2d5b1-8a3c-4c69-80de-ee3912adf537")
+	)
 	(text "+3.3V <JP6> VDD Bypass"
 		(exclude_from_sim no)
 		(at 34.29 26.67 0)
@@ -1725,6 +2046,24 @@
 		)
 		(uuid "f68b6668-de68-4f34-8731-f134fea23e52")
 	)
+	(junction
+		(at 252.73 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "317d40c4-d3ae-41ed-91d0-3d447203e866")
+	)
+	(junction
+		(at 252.73 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b12bcf23-4359-4f5f-a02c-d9e4ab9c2810")
+	)
+	(junction
+		(at 212.09 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e035e747-3faf-46b5-84e1-408c4ecbc728")
+	)
 	(no_connect
 		(at 91.44 123.19)
 		(uuid "0158c04c-bc37-4feb-a72a-d48d2eda96e2")
@@ -1758,6 +2097,10 @@
 		(uuid "2bd1d3e8-a5d2-467d-93bd-50effa4112e8")
 	)
 	(no_connect
+		(at 242.57 33.02)
+		(uuid "3e13b344-037c-4fe8-9bce-d1466dc544b6")
+	)
+	(no_connect
 		(at 72.39 49.53)
 		(uuid "4100b76e-7b54-4984-b2a6-60cbd05ab13a")
 	)
@@ -1780,6 +2123,10 @@
 	(no_connect
 		(at 222.25 54.61)
 		(uuid "7419cad9-aa19-49c4-a323-c125e9edbae8")
+	)
+	(no_connect
+		(at 222.25 77.47)
+		(uuid "8122a958-2b5a-4b2a-b3ee-af713ab343b8")
 	)
 	(no_connect
 		(at 92.71 80.01)
@@ -1947,7 +2294,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 69.85) (xy 242.57 69.85)
+			(xy 180.34 69.85) (xy 222.25 69.85)
 		)
 		(stroke
 			(width 0)
@@ -2137,6 +2484,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 30.48) (xy 262.89 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "533b3d19-0afd-43f7-8d4b-e72f973116f5")
+	)
+	(wire
+		(pts
 			(xy 92.71 80.01) (xy 134.62 80.01)
 		)
 		(stroke
@@ -2177,6 +2534,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 30.48) (xy 217.17 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73c690c3-a27e-4cb6-af58-ae975b596dd9")
+	)
+	(wire
+		(pts
 			(xy 84.455 146.05) (xy 132.08 146.05)
 		)
 		(stroke
@@ -2204,6 +2571,16 @@
 			(type default)
 		)
 		(uuid "80391a35-e7b4-40b3-8d9a-1a719b40165d")
+	)
+	(wire
+		(pts
+			(xy 242.57 38.1) (xy 252.73 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8475291e-dc01-4eca-9d4f-db2ca1e91533")
 	)
 	(wire
 		(pts
@@ -2287,6 +2664,16 @@
 	)
 	(wire
 		(pts
+			(xy 242.57 30.48) (xy 252.73 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e9d9fd6-dfeb-45ae-b3d6-2eecb028167b")
+	)
+	(wire
+		(pts
 			(xy 180.34 57.15) (xy 219.71 57.15)
 		)
 		(stroke
@@ -2344,6 +2731,16 @@
 			(type default)
 		)
 		(uuid "aeabf871-40a0-488f-9a26-32f703452545")
+	)
+	(wire
+		(pts
+			(xy 198.12 30.48) (xy 212.09 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc99452d-6687-4dfe-a12c-492d75b21968")
 	)
 	(wire
 		(pts
@@ -2417,16 +2814,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 77.47) (xy 242.57 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdbc8f18-34b7-4f48-b562-7f342b78aed5")
-	)
-	(wire
-		(pts
 			(xy 91.44 133.35) (xy 132.08 133.35)
 		)
 		(stroke
@@ -2437,7 +2824,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 67.31) (xy 242.57 67.31)
+			(xy 180.34 67.31) (xy 223.52 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2554,6 +2941,16 @@
 			(type default)
 		)
 		(uuid "f218b2a2-4e96-4d36-95b6-d49f717e8660")
+	)
+	(wire
+		(pts
+			(xy 180.34 77.47) (xy 222.25 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5d63e52-bca8-4067-93a4-8d16ab036006")
 	)
 	(wire
 		(pts
@@ -3298,17 +3695,6 @@
 		)
 		(uuid "2c4ab040-f5ee-4192-8180-96e25ee1a233")
 	)
-	(hierarchical_label "VInput_Min7VMax15V"
-		(shape input)
-		(at 242.57 77.47 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify left)
-		)
-		(uuid "2dc3a688-7e66-4c15-b011-3b379003cf75")
-	)
 	(hierarchical_label "PB1"
 		(shape bidirectional)
 		(at 242.57 135.89 0)
@@ -3355,7 +3741,7 @@
 	)
 	(hierarchical_label "+3V3_NUCLEO"
 		(shape output)
-		(at 242.57 67.31 0)
+		(at 223.52 67.31 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -3396,6 +3782,17 @@
 			(justify right)
 		)
 		(uuid "6c7f0f4e-edd7-428e-8881-61dad3d555c1")
+	)
+	(hierarchical_label "+V_BATT"
+		(shape output)
+		(at 198.12 30.48 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "72801831-f4b1-4eea-8492-c4c8e6829dcc")
 	)
 	(hierarchical_label "PB15{slash}SPI2_MOSI{slash}TIM1_CH3N"
 		(shape bidirectional)
@@ -3443,7 +3840,7 @@
 	)
 	(hierarchical_label "+5V_NUCLEO"
 		(shape output)
-		(at 242.57 69.85 0)
+		(at 262.89 30.48 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4138,6 +4535,283 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 212.09 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c0fab53-e36d-4dec-bcd3-ca94285a5e59")
+		(property "Reference" "#PWR0148"
+			(at 212.09 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 212.09 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 212.09 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca169604-3094-473c-b4ac-14439c58d9a3")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
+					(reference "#PWR0148")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "NCP1117LPST50T3G:NCP1117LPST50T3G")
+		(at 229.87 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56564293-c6af-471b-b2d5-74cba22d3869")
+		(property "Reference" "U10"
+			(at 229.87 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NCP1117LPST50T3G"
+			(at 229.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NCP1117LPST50T3G:SOT230P700X180-4N"
+			(at 229.87 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "4"
+			(at 229.87 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 229.87 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "ON Semiconductor"
+			(at 229.87 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/onsemi/NCP1117LPST50T3G/2194022"
+			(at 229.87 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "NCP1117LPST50T3G"
+			(at 229.87 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1f20fe78-655c-4777-b9ea-8c22b3550ae8")
+		)
+		(pin "4"
+			(uuid "99820f93-5717-497b-bec4-74ae02f9dbe5")
+		)
+		(pin "3"
+			(uuid "a7562d2d-de73-43e6-8fd7-8f62b1f0fd55")
+		)
+		(pin "1"
+			(uuid "3b8e9e1d-da3a-4fe7-8024-3b6fd5aed8f0")
+		)
+		(instances
+			(project ""
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 252.73 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "565ba011-1454-4422-8a71-a80ed6593d1c")
+		(property "Reference" "C46"
+			(at 256.54 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 256.54 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 253.6952 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 252.73 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
+			(at 253.746 41.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "KGM21NR71E104KT"
+			(at 252.984 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a9fb525-311d-4730-b7fc-5bd881802187")
+		)
+		(pin "2"
+			(uuid "8f6d354d-70b8-4b35-bb83-01f5e0864f33")
+		)
+		(instances
+			(project ""
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
+					(reference "C46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "NUCLEO-L476RG:NUCLEO-L476RG")
 		(at 157.48 72.39 0)
 		(unit 1)
@@ -4567,6 +5241,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 212.09 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "84e08704-32d1-4366-a6bd-e59ae6dbf0f9")
+		(property "Reference" "C47"
+			(at 215.9 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 215.9 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 213.0552 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 212.09 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
+			(at 213.614 38.608 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "KGM21NR71E104KT"
+			(at 212.09 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "802dacf3-e0e8-4fae-9fe7-39c08ba4266a")
+		)
+		(pin "2"
+			(uuid "d591f407-235d-4b51-a4c9-578910519619")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
+					(reference "C47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 74.93 72.39 270)
 		(unit 1)
@@ -4628,6 +5389,73 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR0137")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 252.73 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f9bd97d-ce92-4a69-b136-5c64e64ba15a")
+		(property "Reference" "#PWR0147"
+			(at 252.73 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 252.73 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 252.73 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 252.73 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 252.73 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6264f446-9388-4bb4-9a72-44d06999fd11")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
+					(reference "#PWR0147")
 					(unit 1)
 				)
 			)

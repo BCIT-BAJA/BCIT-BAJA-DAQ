@@ -1103,7 +1103,7 @@
 		(at 80.01 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "03974e83-dafe-480b-9235-66fcfbc6bb50")
+		(uuid "2b10b8be-2617-414b-ae0b-30122abfff53")
 	)
 	(wire
 		(pts
@@ -1207,7 +1207,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 49.53) (xy 176.53 49.53)
+			(xy 176.53 49.53) (xy 180.34 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1357,13 +1357,13 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 24.13) (xy 102.87 24.13)
+			(xy 80.01 25.4) (xy 102.87 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a6cf1c1a-c98a-491d-861c-351c0d6b36c2")
+		(uuid "ad596a5c-ff7a-4269-9b77-8b1b2ad206c3")
 	)
 	(wire
 		(pts
@@ -1437,16 +1437,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 24.13) (xy 104.14 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c189a922-5471-41e6-9073-e6a26afd6c6a")
-	)
-	(wire
-		(pts
 			(xy 44.45 139.7) (xy 57.15 139.7)
 		)
 		(stroke
@@ -1504,16 +1494,6 @@
 			(type default)
 		)
 		(uuid "e76e5c2b-e68e-458e-bec0-3c1a17275ff6")
-	)
-	(wire
-		(pts
-			(xy 104.14 25.4) (xy 80.01 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9859a57-1935-4302-b763-3fdabc71bda4")
 	)
 	(wire
 		(pts
@@ -1623,7 +1603,7 @@
 			)
 			(justify right)
 		)
-		(uuid "47647806-77fd-4d60-81f1-51395a1754e8")
+		(uuid "4fe80ec6-ffa9-4e36-902f-56910c2eac4d")
 	)
 	(label "SPI2_SCK"
 		(at 213.36 46.99 180)
@@ -5146,16 +5126,6 @@
 				(justify left top)
 			)
 		)
-		(pin "VInput_Min7VMax15V" input
-			(at 102.87 24.13 180)
-			(uuid "6b0e75bc-1409-4b60-b336-0ac749f904c5")
-			(effects
-				(font
-					(size 1.4986 1.4986)
-				)
-				(justify left)
-			)
-		)
 		(pin "+5V_NUCLEO" output
 			(at 176.53 29.21 0)
 			(uuid "62f415f3-6f7c-4fcc-b90c-267141d6acad")
@@ -5359,6 +5329,16 @@
 		(pin "SWDIO" bidirectional
 			(at 102.87 48.26 180)
 			(uuid "da59bbf7-ffb0-4eb0-b0cf-671de25cef6f")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "+V_BATT" output
+			(at 102.87 25.4 180)
+			(uuid "2c549f21-708f-4fef-b589-09cff76a336d")
 			(effects
 				(font
 					(size 1.4986 1.4986)

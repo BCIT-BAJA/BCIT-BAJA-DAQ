@@ -18,8 +18,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U3"
-				(at 59.69 -1.524 0)
+			(property "Reference" "U"
+				(at 58.42 10.16 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -27,7 +27,7 @@
 				)
 			)
 			(property "Value" "AD7124-8BCPZ-RL7"
-				(at 59.69 -4.064 0)
+				(at 58.42 7.62 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -35,7 +35,7 @@
 				)
 			)
 			(property "Footprint" "CP-32-12_ADI"
-				(at -6.096 14.732 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -45,7 +45,7 @@
 				)
 			)
 			(property "Datasheet" "AD7124-8BCPZ-RL7"
-				(at -4.572 19.304 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -61,41 +61,6 @@
 						(size 1.27 1.27)
 					)
 					(hide yes)
-				)
-			)
-			(property "Distributor link" "https://www.digikey.ca/en/products/detail/analog-devices-inc/AD7124-8BCPZ-RL7/5268028"
-				(at -8.128 24.384 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "Analog Devices Inc."
-				(at -3.302 9.652 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer Part Number" "AD7124-8BCPZ-RL7"
-				(at -5.334 30.48 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Distributor Link" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
 				)
 			)
 			(property "ki_locked" ""
@@ -462,7 +427,7 @@
 					)
 				)
 				(pin power_in line
-					(at 41.91 12.7 270)
+					(at 36.83 12.7 270)
 					(length 7.62)
 					(name "IOVDD"
 						(effects
@@ -479,26 +444,8 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 41.91 -53.34 90)
-					(length 7.62)
-					(name "DGND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
-					(at 44.45 12.7 270)
+					(at 39.37 12.7 270)
 					(length 7.62)
 					(name "AVDD"
 						(effects
@@ -508,60 +455,6 @@
 						)
 					)
 					(number "26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 45.72 -53.34 90)
-					(length 7.62)
-					(name "AVSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 50.8 -53.34 90)
-					(length 7.62)
-					(name "PSW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 54.61 -53.34 90)
-					(length 7.62)
-					(name "EP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "33"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -588,7 +481,7 @@
 					)
 				)
 				(pin input line
-					(at 116.84 -6.35 180)
+					(at 116.84 -5.08 180)
 					(length 7.62)
 					(name "*CS"
 						(effects
@@ -606,7 +499,7 @@
 					)
 				)
 				(pin input line
-					(at 116.84 -8.89 180)
+					(at 116.84 -7.62 180)
 					(length 7.62)
 					(name "SCLK"
 						(effects
@@ -624,7 +517,7 @@
 					)
 				)
 				(pin input line
-					(at 116.84 -11.43 180)
+					(at 116.84 -10.16 180)
 					(length 7.62)
 					(name "DIN"
 						(effects
@@ -642,7 +535,7 @@
 					)
 				)
 				(pin output line
-					(at 116.84 -13.97 180)
+					(at 116.84 -12.7 180)
 					(length 7.62)
 					(name "DOUT/*RDY"
 						(effects
@@ -660,25 +553,7 @@
 					)
 				)
 				(pin output line
-					(at 116.84 -20.32 180)
-					(length 7.62)
-					(name "REGCAPD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 116.84 -22.86 180)
+					(at 116.84 -25.4 180)
 					(length 7.62)
 					(name "REGCAPA"
 						(effects
@@ -695,8 +570,26 @@
 						)
 					)
 				)
+				(pin output line
+					(at 116.84 -27.94 180)
+					(length 7.62)
+					(name "REGCAPD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin bidirectional line
-					(at 116.84 -31.75 180)
+					(at 116.84 -33.02 180)
 					(length 7.62)
 					(name "CLK"
 						(effects
@@ -714,7 +607,7 @@
 					)
 				)
 				(pin output line
-					(at 116.84 -34.29 180)
+					(at 116.84 -35.56 180)
 					(length 7.62)
 					(name "REFOUT"
 						(effects
@@ -732,7 +625,7 @@
 					)
 				)
 				(pin input line
-					(at 116.84 -36.83 180)
+					(at 116.84 -38.1 180)
 					(length 7.62)
 					(name "REFIN1(-)"
 						(effects
@@ -750,7 +643,7 @@
 					)
 				)
 				(pin input line
-					(at 116.84 -39.37 180)
+					(at 116.84 -40.64 180)
 					(length 7.62)
 					(name "REFIN1(+)"
 						(effects
@@ -760,6 +653,80 @@
 						)
 					)
 					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "AD7124-8BCPZ-RL7_1_1"
+				(pin power_in line
+					(at 46.99 -53.34 90)
+					(length 7.62)
+					(name "DGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 50.8 -53.34 90)
+					(length 7.62)
+					(name "AVSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 54.61 -53.34 90)
+					(length 7.62)
+					(name "PSW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 58.42 -53.34 90)
+					(length 7.62)
+					(name "EP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1778,7 +1745,886 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Q_PMOS_GSD"
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ICM-45605-gyroscope:ICM-45605"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U4"
+				(at 0 22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ICM-45605"
+				(at 0 20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "ICM-45605:XDCR_ICM-45605"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "1.0"
+				(at -4.826 31.75 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "0.86mm"
+				(at -3.048 27.94 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "TDK InvenSense"
+				(at -0.508 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Distributor link" "https://www.digikey.ca/en/products/detail/tdk-invensense/ICM-45605/24883424?_gl=1*m2llvq*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwnPS-BhBxEiwAZjMF0sZkpcV-zZfxWN_VXS3o9X93L80cpqtbKZ-XTpLZQtt6KBMVqUK9eRoCm7oQAvD_BwE&gclsrc=aw.ds"
+				(at -1.778 -26.67 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part Number" "ICM-45605 "
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "TDK InvenSense"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "DNM" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ALT_MPN" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "DNM_MPN" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ICM-45605_0_0"
+				(rectangle
+					(start -25.4 17.78)
+					(end 25.4 -15.24)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at -30.48 5.08 0)
+					(length 5.08)
+					(name "AP_SDA/AP_SDIO/AP_SDI"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -30.48 2.54 0)
+					(length 5.08)
+					(name "AP_SDO/AP_AD0"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input clock
+					(at -30.48 0 0)
+					(length 5.08)
+					(name "AP_SCL/AP_SCLK"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -30.48 -2.54 0)
+					(length 5.08)
+					(name "AP_CS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -21.59 22.86 270)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -17.78 22.86 270)
+					(length 5.08)
+					(name "VDDIO"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -1.27 -20.32 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -20.32 90)
+					(length 5.08)
+					(name "RESV/MAS_DA"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -20.32 90)
+					(length 5.08)
+					(name "RESV/MAS_CLK"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -20.32 90)
+					(length 5.08)
+					(name "RESV_7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -20.32 90)
+					(length 5.08)
+					(name "RESV_10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -20.32 90)
+					(length 5.08)
+					(name "RESV_11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 30.48 15.24 180)
+					(length 5.08)
+					(name "INT2/FSYNC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 30.48 12.7 180)
+					(length 5.08)
+					(name "INT1/INT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MRF89XAM9AT-antenna:MRF89XAM9AT-I_RM"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 25.4 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "MRF89XAM9AT-I/RM"
+				(at 25.4 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "MOD_MRF89XAM9A_MCH"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "MRF89XAM9AT-I/RM"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "MRF89XAM9AT-I/RM"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MOD_MRF89XAM9A_MCH"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MRF89XAM9AT-I_RM_0_1"
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 -17.78)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -17.78) (xy 43.18 -17.78)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 43.18 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 43.18 -17.78) (xy 43.18 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "RESET"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -5.08 0)
+					(length 7.62)
+					(name "*CSCON"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 -7.62 0)
+					(length 7.62)
+					(name "IRQ0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -10.16 0)
+					(length 7.62)
+					(name "SDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -12.7 0)
+					(length 7.62)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 50.8 0 180)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 50.8 -2.54 180)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 50.8 -5.08 180)
+					(length 7.62)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 50.8 -7.62 180)
+					(length 7.62)
+					(name "IRQ1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 50.8 -10.16 180)
+					(length 7.62)
+					(name "*CSDATA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 50.8 -12.7 180)
+					(length 7.62)
+					(name "SDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Transistor_FET:Q_PMOS_GSD"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -1787,7 +2633,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+				(at 5.08 1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1796,7 +2642,7 @@
 				)
 			)
 			(property "Value" "Q_PMOS_GSD"
-				(at 5.08 -1.27 0)
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1984,7 +2830,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+						(xy 2.921 -0.381) (xy 3.683 -0.381)
 					)
 					(stroke
 						(width 0)
@@ -2055,834 +2901,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "ICM-45605:ICM-45605"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U6"
-				(at 0 22.86 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "ICM-45605"
-				(at 0 20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "ICM-45605:XDCR_ICM-45605"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "PARTREV" "1.0"
-				(at -4.826 31.75 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "Manufacturer Recommendations"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "0.86mm"
-				(at -3.048 27.94 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "TDK InvenSense"
-				(at -0.508 24.384 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "ICM-45605_0_0"
-				(rectangle
-					(start -25.4 17.78)
-					(end 25.4 -15.24)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin bidirectional line
-					(at -30.48 5.08 0)
-					(length 5.08)
-					(name "AP_SDO/AP_AD0"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -30.48 2.54 0)
-					(length 5.08)
-					(name "AP_CS"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input clock
-					(at -30.48 0 0)
-					(length 5.08)
-					(name "AP_SCL/AP_SCLK"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -30.48 -2.54 0)
-					(length 5.08)
-					(name "AP_SDA/AP_SDIO/AP_SDI"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -21.59 22.86 270)
-					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -19.05 22.86 270)
-					(length 5.08)
-					(name "VDDIO"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 -20.32 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -20.32 90)
-					(length 5.08)
-					(name "RESV/MAS_DA"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 -20.32 90)
-					(length 5.08)
-					(name "RESV/MAS_CLK"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -20.32 90)
-					(length 5.08)
-					(name "RESV_7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -20.32 90)
-					(length 5.08)
-					(name "RESV_10"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 -20.32 90)
-					(length 5.08)
-					(name "RESV_11"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 30.48 13.97 180)
-					(length 5.08)
-					(name "INT2/FSYNC"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 30.48 11.43 180)
-					(length 5.08)
-					(name "INT1/INT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "MRF89XAM9AT-antenna:MRF89XAM9AT-I_RM"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 25.4 10.16 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "MRF89XAM9AT-I/RM"
-				(at 25.4 7.62 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "MOD_MRF89XAM9A_MCH"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "MRF89XAM9AT-I/RM"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "MRF89XAM9AT-I/RM"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "MOD_MRF89XAM9A_MCH"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MRF89XAM9AT-I_RM_0_1"
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 -17.78)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -17.78) (xy 43.18 -17.78)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 43.18 5.08) (xy 7.62 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 43.18 -17.78) (xy 43.18 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin power_out line
-					(at 0 0 0)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "RESET"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 -5.08 0)
-					(length 7.62)
-					(name "*CSCON"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 -7.62 0)
-					(length 7.62)
-					(name "IRQ0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 -10.16 0)
-					(length 7.62)
-					(name "SDI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 -12.7 0)
-					(length 7.62)
-					(name "SCK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 50.8 0 180)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 50.8 -2.54 180)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 50.8 -5.08 180)
-					(length 7.62)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 50.8 -7.62 180)
-					(length 7.62)
-					(name "IRQ1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 50.8 -10.16 180)
-					(length 7.62)
-					(name "*CSDATA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 50.8 -12.7 180)
-					(length 7.62)
-					(name "SDO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3184,7 +3202,7 @@
 	)
 	(text "needs to be changed\n\nGood decoupling is required for high-resolution ADC\n\n1uF tantalum capacitor. <-- changed to X7R 2.2uF capacitor because CHATGPT TOLD ME\n0.1uF cap\n\n"
 		(exclude_from_sim no)
-		(at 76.454 48.514 0)
+		(at 69.088 46.482 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -3216,7 +3234,7 @@
 	)
 	(text "Make sure do not connect to 5V, \nIt surpasses max voltage allowed -0.3-3.96 between\nAvdd to Avss"
 		(exclude_from_sim no)
-		(at 66.04 44.45 0)
+		(at 57.658 43.18 0)
 		(effects
 			(font
 				(size 0.381 0.381)
@@ -3333,10 +3351,22 @@
 		(uuid "ef4b7c20-9810-4951-a9d1-aa0d1286663d")
 	)
 	(junction
-		(at 156.21 97.79)
+		(at 76.2 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0495e719-e5ab-446f-8ce9-efa255452bd3")
+	)
+	(junction
+		(at 156.21 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "04f6551e-445a-483b-8e5c-d9fd46ad7840")
+	)
+	(junction
+		(at 245.11 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0aed7a93-5413-4852-a317-b084c1b0dfb3")
 	)
 	(junction
 		(at 266.7 148.59)
@@ -3351,34 +3381,10 @@
 		(uuid "1cb07474-53a1-4f61-93ea-a6a7ee98480a")
 	)
 	(junction
-		(at 107.95 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "21ff19e0-6c41-4ebe-afd5-93c14774fb06")
-	)
-	(junction
-		(at 78.74 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "24aaffd8-d819-4787-b4ff-0b0b8129fc7c")
-	)
-	(junction
-		(at 245.11 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "278439dd-f5d0-445c-9530-a5ddd2f14c32")
-	)
-	(junction
 		(at 147.32 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3333b8d5-30b8-4cb4-8b0e-573aacc561e8")
-	)
-	(junction
-		(at 209.55 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "34b2c371-aa3c-4ccd-b4a7-3d7f7e9e91b9")
 	)
 	(junction
 		(at 147.32 29.21)
@@ -3387,25 +3393,13 @@
 		(uuid "384859e8-5fb4-4ed5-9e91-0bbf513efc9b")
 	)
 	(junction
-		(at 67.31 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3cecebe8-f45b-490d-afeb-de7f9803841d")
-	)
-	(junction
-		(at 73.66 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "43b69889-dd84-43e5-8549-6908ee121656")
-	)
-	(junction
 		(at 259.08 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4d5dfd11-a5bc-427c-b0a9-111eb4f590ea")
 	)
 	(junction
-		(at 91.44 52.07)
+		(at 85.09 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4d952e71-3806-4f0a-a27f-66d42920c753")
@@ -3417,10 +3411,16 @@
 		(uuid "4ffba9b1-5f11-4a29-beaf-7d864d23481a")
 	)
 	(junction
-		(at 76.2 123.19)
+		(at 85.09 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5a8ba187-6cfd-4405-b0b9-a57129383888")
+		(uuid "565d0359-b4fb-4279-8d75-db8ef4941e20")
+	)
+	(junction
+		(at 62.23 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5957aa7d-eed3-4bb6-9439-8cba2ba0064f")
 	)
 	(junction
 		(at 160.02 29.21)
@@ -3429,7 +3429,7 @@
 		(uuid "6aab14bc-688a-458e-83ee-e47671dc6738")
 	)
 	(junction
-		(at 78.74 52.07)
+		(at 72.39 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "72976c1c-8bc3-4ccb-837a-433ec9d6e16d")
@@ -3447,22 +3447,10 @@
 		(uuid "7f968baa-19f5-40ed-b00a-6e97ec5c30a9")
 	)
 	(junction
-		(at 67.31 52.07)
+		(at 73.66 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "887ea451-9c3e-40c4-9b72-9aafb1c8ba6e")
-	)
-	(junction
-		(at 71.12 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "89c3a363-c4d4-42fe-9139-4da138fdfc62")
-	)
-	(junction
-		(at 91.44 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "90bff428-5c20-4b84-b822-bd26f38df65d")
+		(uuid "86727ca7-b4a1-431d-8f92-17a8d9ccc800")
 	)
 	(junction
 		(at 147.32 39.37)
@@ -3483,22 +3471,34 @@
 		(uuid "aab37ed2-83da-4e59-9dd1-6dfda14ab2c4")
 	)
 	(junction
+		(at 62.23 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0b401e7-eaa8-480f-ae0a-52ce23b76b00")
+	)
+	(junction
+		(at 72.39 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b19b6cba-1dfa-49a3-a1b3-2a41891287b8")
+	)
+	(junction
 		(at 196.85 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b702c060-910b-4eea-8a39-5b977f916630")
 	)
 	(junction
-		(at 107.95 52.07)
+		(at 101.6 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b7a97ce4-aca4-493d-8c94-42174aaf32b5")
 	)
 	(junction
-		(at 209.55 135.89)
+		(at 101.6 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c70747bf-2c8a-445a-b8b5-eab2c5ccb0c2")
+		(uuid "d3bba6ba-3058-42c8-9e06-0b2d9ba8b728")
 	)
 	(junction
 		(at 160.02 26.67)
@@ -3511,6 +3511,24 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d4c79a19-80e0-4c19-b522-54e8611bf2a4")
+	)
+	(junction
+		(at 209.55 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d57c5dab-2161-43ec-9666-8b9b40a44682")
+	)
+	(junction
+		(at 209.55 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d69d8596-4432-4824-a574-e1104c5ecd38")
+	)
+	(junction
+		(at 80.01 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dbcbbb38-e4ef-40e0-8270-a0dbeb6f309b")
 	)
 	(junction
 		(at 160.02 31.75)
@@ -3537,16 +3555,16 @@
 		(uuid "f1682542-7f9d-4238-8d26-91433dbe0e07")
 	)
 	(no_connect
-		(at 237.49 109.22)
-		(uuid "222eb737-78e6-4e88-a601-8feb4a60b703")
-	)
-	(no_connect
 		(at 246.38 109.22)
 		(uuid "3c26bb78-6ed6-427a-bb65-c87a91710c5e")
 	)
 	(no_connect
 		(at 241.3 109.22)
 		(uuid "6ba1bdb3-168b-4a16-9c71-779c4110c8b3")
+	)
+	(no_connect
+		(at 236.22 109.22)
+		(uuid "7500ca51-ca10-4969-acf3-9b40e17b4466")
 	)
 	(no_connect
 		(at 233.68 109.22)
@@ -3558,7 +3576,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 52.07) (xy 78.74 52.07)
+			(xy 62.23 50.8) (xy 72.39 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3575,16 +3593,6 @@
 			(type default)
 		)
 		(uuid "0879408f-e424-406c-a43b-6b056f08ed35")
-	)
-	(wire
-		(pts
-			(xy 67.31 123.19) (xy 71.12 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cd9eb5b-5d52-4b5f-aa7b-6f5e9b5de481")
 	)
 	(wire
 		(pts
@@ -3608,7 +3616,17 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 90.17) (xy 160.02 90.17)
+			(xy 72.39 57.15) (xy 85.09 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11ffccc6-465b-4fac-a453-588d2406efb9")
+	)
+	(wire
+		(pts
+			(xy 142.24 95.25) (xy 160.02 95.25)
 		)
 		(stroke
 			(width 0)
@@ -3618,7 +3636,17 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 52.07) (xy 118.11 52.07)
+			(xy 101.6 57.15) (xy 111.76 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1be4ef60-9598-40c1-bc09-f1a01889108b")
+	)
+	(wire
+		(pts
+			(xy 101.6 50.8) (xy 111.76 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3658,13 +3686,33 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 52.07) (xy 107.95 53.34)
+			(xy 101.6 50.8) (xy 101.6 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2bdc6cdc-6e0c-4a93-948b-e81527b72d6f")
+	)
+	(wire
+		(pts
+			(xy 196.85 66.04) (xy 209.55 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ec6790b-33a1-4620-bc71-6b2ef4b5f33a")
+	)
+	(wire
+		(pts
+			(xy 72.39 123.19) (xy 73.66 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36d8f9fc-9b80-4338-9b4f-1921c41b3b33")
 	)
 	(wire
 		(pts
@@ -3678,13 +3726,23 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 92.71) (xy 160.02 90.17)
+			(xy 160.02 97.79) (xy 160.02 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3ad668d1-38e7-4d03-a7a3-876770718521")
+	)
+	(wire
+		(pts
+			(xy 209.55 66.04) (xy 213.36 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c7c71c7-a2c8-407f-b08a-a7446ef5f890")
 	)
 	(wire
 		(pts
@@ -3698,7 +3756,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 52.07) (xy 78.74 53.34)
+			(xy 72.39 50.8) (xy 72.39 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3728,16 +3786,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 123.19) (xy 76.2 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4572a461-c0ec-40d9-a68d-6499b542c006")
-	)
-	(wire
-		(pts
 			(xy 245.11 29.21) (xy 245.11 31.75)
 		)
 		(stroke
@@ -3748,7 +3796,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 194.31) (xy 49.53 194.31)
+			(xy 25.4 191.77) (xy 46.99 191.77)
 		)
 		(stroke
 			(width 0)
@@ -3788,7 +3836,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 186.69) (xy 41.91 190.5)
+			(xy 40.64 184.15) (xy 40.64 189.23)
 		)
 		(stroke
 			(width 0)
@@ -3808,43 +3856,13 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 58.42) (xy 91.44 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "589eaca0-0cf7-4ba8-8354-99c1d12c751d")
-	)
-	(wire
-		(pts
-			(xy 91.44 59.69) (xy 107.95 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59481959-a970-4adf-b2cf-5482eed5bf7d")
-	)
-	(wire
-		(pts
-			(xy 91.44 52.07) (xy 91.44 53.34)
+			(xy 85.09 50.8) (xy 85.09 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5a8e10c3-74c4-4ae9-aada-71839feb6726")
-	)
-	(wire
-		(pts
-			(xy 76.2 123.19) (xy 80.01 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e0be82a-d866-4106-ae24-336f473015ff")
 	)
 	(wire
 		(pts
@@ -3878,7 +3896,17 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 52.07) (xy 91.44 52.07)
+			(xy 62.23 57.15) (xy 64.77 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64442013-aa05-4c11-9fd0-dc4f0ce7bad0")
+	)
+	(wire
+		(pts
+			(xy 72.39 50.8) (xy 85.09 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3908,7 +3936,17 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 52.07) (xy 118.11 53.34)
+			(xy 62.23 50.8) (xy 62.23 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6aee1040-ae35-4eab-a42d-7adb134ec116")
+	)
+	(wire
+		(pts
+			(xy 111.76 50.8) (xy 111.76 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3928,16 +3966,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 58.42) (xy 118.11 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e20372d-0118-4f1a-9f58-9ad611110691")
-	)
-	(wire
-		(pts
 			(xy 217.17 148.59) (xy 228.6 148.59)
 		)
 		(stroke
@@ -3948,7 +3976,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 97.79) (xy 156.21 97.79)
+			(xy 160.02 102.87) (xy 156.21 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3965,6 +3993,16 @@
 			(type default)
 		)
 		(uuid "882cb984-38b6-4aa4-9877-66cc6cf4fd3f")
+	)
+	(wire
+		(pts
+			(xy 85.09 57.15) (xy 101.6 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88e8152c-1346-479d-a94a-10c4b4c2ef0e")
 	)
 	(wire
 		(pts
@@ -4008,43 +4046,23 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 190.5) (xy 41.91 190.5)
+			(xy 80.01 123.19) (xy 83.82 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9129ec54-14c3-4032-ac6e-87f13aba8a1b")
+	)
+	(wire
+		(pts
+			(xy 25.4 189.23) (xy 40.64 189.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "92c2527d-f3e9-4305-903c-0dda8ec547ec")
-	)
-	(wire
-		(pts
-			(xy 107.95 59.69) (xy 118.11 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98756437-cc58-4082-aac2-a0beb1fe5fa7")
-	)
-	(wire
-		(pts
-			(xy 107.95 58.42) (xy 107.95 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9927ebfa-5816-4242-a50a-63722b59993d")
-	)
-	(wire
-		(pts
-			(xy 196.85 66.04) (xy 209.55 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "993fcffc-b867-4e10-88dd-edcbe8561900")
 	)
 	(wire
 		(pts
@@ -4088,13 +4106,13 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 107.95) (xy 228.6 109.22)
+			(xy 76.2 123.19) (xy 80.01 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a78cd946-0c03-48c5-814b-554d88fd576f")
+		(uuid "a6bb9c44-9ab9-48a3-8067-d02f2f30b9f6")
 	)
 	(wire
 		(pts
@@ -4128,7 +4146,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 187.96) (xy 49.53 194.31)
+			(xy 46.99 184.15) (xy 46.99 191.77)
 		)
 		(stroke
 			(width 0)
@@ -4198,13 +4216,23 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 52.07) (xy 107.95 52.07)
+			(xy 85.09 50.8) (xy 101.6 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ca7f4be4-61ae-416a-894d-d31a81802869")
+	)
+	(wire
+		(pts
+			(xy 73.66 123.19) (xy 76.2 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cce4934d-9454-40fe-9ff3-a70417d3605b")
 	)
 	(wire
 		(pts
@@ -4268,36 +4296,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 52.07) (xy 67.31 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db04fcf1-78c6-431b-b587-dfa2ec0f1e4b")
-	)
-	(wire
-		(pts
-			(xy 78.74 59.69) (xy 91.44 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de01313f-a2d8-4573-9746-232bc436a3eb")
-	)
-	(wire
-		(pts
-			(xy 67.31 57.15) (xy 69.85 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0f4c874-3d2d-46b9-97f1-86b4f64b9ff4")
-	)
-	(wire
-		(pts
 			(xy 147.32 36.83) (xy 147.32 39.37)
 		)
 		(stroke
@@ -4308,17 +4306,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 123.19) (xy 73.66 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5b4b041-f1fa-44fd-932a-bcd386b16b77")
-	)
-	(wire
-		(pts
-			(xy 142.24 92.71) (xy 149.86 92.71)
+			(xy 142.24 97.79) (xy 149.86 97.79)
 		)
 		(stroke
 			(width 0)
@@ -4338,23 +4326,13 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 58.42) (xy 78.74 59.69)
+			(xy 72.39 57.15) (xy 72.39 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ef63602b-a348-4c01-b7b7-0e4c5d3d6a21")
-	)
-	(wire
-		(pts
-			(xy 209.55 66.04) (xy 212.09 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4a85678-6764-4769-a044-201a78fa6348")
+		(uuid "f3e63e05-76ae-4a9a-9784-676a44870044")
 	)
 	(wire
 		(pts
@@ -4368,7 +4346,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 97.79) (xy 156.21 97.79)
+			(xy 149.86 102.87) (xy 156.21 102.87)
 		)
 		(stroke
 			(width 0)
@@ -4536,16 +4514,6 @@
 		)
 		(uuid "7d78682c-90cb-4fbf-b655-8e3d50a19631")
 	)
-	(label "AIN0"
-		(at 25.4 71.12 180)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify right bottom)
-		)
-		(uuid "8d2bc718-a799-42a3-b46f-8d8d0a27fcee")
-	)
 	(label "AIN2"
 		(at 121.92 25.4 180)
 		(effects
@@ -4635,6 +4603,16 @@
 			(justify right bottom)
 		)
 		(uuid "d1c36863-72a0-4d98-bd27-faad568787fe")
+	)
+	(label "AIN0"
+		(at 25.4 71.12 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right bottom)
+		)
+		(uuid "d716e68c-45cf-496d-9708-4050cafe54c1")
 	)
 	(label "AIN2"
 		(at 25.4 76.2 180)
@@ -4729,7 +4707,7 @@
 	)
 	(hierarchical_label "+V_BATT"
 		(shape input)
-		(at 25.4 194.31 180)
+		(at 25.4 191.77 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4739,7 +4717,7 @@
 		(uuid "11cc667d-5214-4bef-9a25-229854f2f254")
 	)
 	(hierarchical_label "ANT_CS_ActiveLow"
-		(shape output)
+		(shape input)
 		(at 246.38 39.37 0)
 		(effects
 			(font
@@ -4774,7 +4752,7 @@
 	)
 	(hierarchical_label "ICM_INT1"
 		(shape output)
-		(at 261.62 77.47 0)
+		(at 261.62 76.2 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4817,7 +4795,7 @@
 		(uuid "65a78f15-2bb9-43d7-ac2b-191e68c3d53a")
 	)
 	(hierarchical_label "ANT_IRQ1"
-		(shape output)
+		(shape input)
 		(at 246.38 36.83 0)
 		(effects
 			(font
@@ -4830,7 +4808,7 @@
 	)
 	(hierarchical_label "MISO"
 		(shape output)
-		(at 149.86 81.28 0)
+		(at 142.24 82.55 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4875,7 +4853,7 @@
 	)
 	(hierarchical_label "ICM_INT2"
 		(shape output)
-		(at 261.62 74.93 0)
+		(at 261.62 73.66 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4886,7 +4864,7 @@
 	)
 	(hierarchical_label "strainGaugeCS"
 		(shape input)
-		(at 142.24 76.2 0)
+		(at 142.24 74.93 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4897,7 +4875,7 @@
 	)
 	(hierarchical_label "MOSI"
 		(shape input)
-		(at 149.86 83.82 0)
+		(at 142.24 80.01 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4908,7 +4886,7 @@
 	)
 	(hierarchical_label "ICM_CS"
 		(shape input)
-		(at 200.66 86.36 180)
+		(at 200.66 91.44 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4930,7 +4908,7 @@
 	)
 	(hierarchical_label "SCK"
 		(shape input)
-		(at 142.24 78.74 0)
+		(at 142.24 77.47 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4952,7 +4930,7 @@
 	)
 	(hierarchical_label "MISO"
 		(shape output)
-		(at 200.66 91.44 180)
+		(at 200.66 86.36 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4975,7 +4953,7 @@
 	)
 	(hierarchical_label "+5V"
 		(shape input)
-		(at 25.4 190.5 180)
+		(at 25.4 189.23 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -5051,7 +5029,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 67.31 52.07 0)
+		(at 62.23 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5059,7 +5037,7 @@
 		(dnp no)
 		(uuid "041cb49d-d718-44e7-9654-a26df1e9b545")
 		(property "Reference" "#PWR023"
-			(at 67.31 55.88 0)
+			(at 62.23 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5068,7 +5046,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 67.691 47.6758 0)
+			(at 62.611 46.4058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5076,7 +5054,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 52.07 0)
+			(at 62.23 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5085,7 +5063,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 52.07 0)
+			(at 62.23 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5094,7 +5072,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 67.31 52.07 0)
+			(at 62.23 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5303,7 +5281,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 262.89 43.18 0)
 			(effects
 				(font
@@ -5348,7 +5326,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/kyocera-avx/KGM21NR71E104KT/1116281"
 			(at 262.89 43.18 0)
 			(effects
 				(font
@@ -5357,7 +5335,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CL31B106KAHNNNE"
+		(property "Manufacturer Part Number" "KGM21NR71E104KT"
 			(at 262.89 43.18 0)
 			(effects
 				(font
@@ -5566,7 +5544,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Q_PMOS_GSD")
+		(lib_id "Transistor_FET:Q_PMOS_GSD")
 		(at 264.16 135.89 0)
 		(mirror x)
 		(unit 1)
@@ -5611,7 +5589,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "P-MOSFET transistor, gate/source/drain"
 			(at 264.16 135.89 0)
 			(effects
 				(font
@@ -5774,7 +5752,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 118.11 55.88 0)
+		(at 111.76 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5783,7 +5761,7 @@
 		(fields_autoplaced yes)
 		(uuid "21ddef07-cd2b-4517-82a6-62a17ac99e53")
 		(property "Reference" "C4"
-			(at 120.65 54.6162 0)
+			(at 114.3 53.3462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5792,7 +5770,7 @@
 			)
 		)
 		(property "Value" "2.2uF"
-			(at 120.65 57.1562 0)
+			(at 114.3 55.8862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5801,7 +5779,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 118.11 55.88 0)
+			(at 111.76 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5810,7 +5788,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 118.11 55.88 0)
+			(at 111.76 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5819,7 +5797,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 118.11 55.88 0)
+			(at 111.76 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5828,7 +5806,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KP5NNNC"
-			(at 118.11 55.88 0)
+			(at 111.76 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5837,7 +5815,7 @@
 			)
 		)
 		(property "URL" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B225KP8NNNC/3886792"
-			(at 118.11 55.88 0)
+			(at 111.76 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5846,7 +5824,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B225KP8NNNC/3886792"
-			(at 118.11 55.88 0)
+			(at 111.76 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5855,7 +5833,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL31B106KAHNNNE"
-			(at 118.11 55.88 0)
+			(at 111.76 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5864,7 +5842,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 118.11 55.88 0)
+			(at 111.76 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5872,7 +5850,7 @@
 			)
 		)
 		(property "ALT_MPN" ""
-			(at 118.11 55.88 0)
+			(at 111.76 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5880,7 +5858,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 118.11 55.88 0)
+			(at 111.76 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5920,7 +5898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+V_Batt"
+		(property "Value" "+Batt"
 			(at 217.551 122.6058 0)
 			(effects
 				(font
@@ -5969,7 +5947,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 78.74 59.69 0)
+		(at 72.39 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5977,7 +5955,7 @@
 		(dnp no)
 		(uuid "2c3378b2-6dfd-4e3e-a80c-8037c525f67b")
 		(property "Reference" "#PWR025"
-			(at 78.74 66.04 0)
+			(at 72.39 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5986,15 +5964,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 78.867 64.0842 0)
+			(at 72.517 64.0842 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 59.69 0)
+			(at 72.39 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6003,7 +5982,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 59.69 0)
+			(at 72.39 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6012,7 +5991,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 78.74 59.69 0)
+			(at 72.39 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6207,156 +6186,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MRF89XAM9AT-antenna:MRF89XAM9AT-I_RM")
-		(at 194.31 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3e93a69c-76e6-4bda-b35e-2be24ee3fb61")
-		(property "Reference" "U3"
-			(at 219.71 19.05 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MRF89XAM9AT-I/RM"
-			(at 219.71 21.59 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "MOD_MRF89XAM9A_MCH"
-			(at 194.31 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "MRF89XAM9AT-I/RM"
-			(at 194.31 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 194.31 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/microchip-technology/MRF89XAM9AT-I-RM/10519305"
-			(at 194.31 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Microchip Technology"
-			(at 194.31 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "MRF89XAM9AT-I/RM"
-			(at 194.31 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DNM" ""
-			(at 194.31 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ALT_MPN" ""
-			(at 194.31 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DNM_MPN" ""
-			(at 194.31 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "9"
-			(uuid "dd4a1b79-18a9-4286-b919-3c4d64e6b825")
-		)
-		(pin "6"
-			(uuid "7c4878aa-b916-488f-8dc1-4627a9ddfd61")
-		)
-		(pin "11"
-			(uuid "f28e97ae-4de0-48ef-8ac6-36296117a49c")
-		)
-		(pin "12"
-			(uuid "ed229165-cae2-474c-9133-d9c904ba5838")
-		)
-		(pin "7"
-			(uuid "7d343de7-c453-477b-9c3a-ef879e8c389a")
-		)
-		(pin "8"
-			(uuid "2aa2b185-caa3-4709-8450-2b3436f92667")
-		)
-		(pin "2"
-			(uuid "3455a0a1-3f63-4d18-ae10-cd0d609e7331")
-		)
-		(pin "5"
-			(uuid "143d183e-ea4a-4713-9d31-dc145d4a5478")
-		)
-		(pin "10"
-			(uuid "5e33d341-734f-45a5-8974-45ff4094383f")
-		)
-		(pin "4"
-			(uuid "c0e20f23-4f51-497e-8320-828478a305a7")
-		)
-		(pin "3"
-			(uuid "e11214f7-4e95-42f2-8890-2a400b5852b2")
-		)
-		(pin "1"
-			(uuid "171677c6-41b4-4747-abb2-da873783c460")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -6758,6 +6587,148 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:Q_PMOS_GSD")
+		(at 214.63 135.89 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "660f4c2a-c25e-47a1-91c6-55ff97e0a477")
+		(property "Reference" "Q3"
+			(at 219.964 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "PMV32UP,215"
+			(at 219.71 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 219.71 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 214.63 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "P-MOSFET transistor, gate/source/drain"
+			(at 214.63 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PMV32UP,215"
+			(at 214.63 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "URL" "https://lcsc.com/product-detail/MOSFET_Nexperia-PMV32UP-215_C282569.html"
+			(at 214.63 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://lcsc.com/product-detail/MOSFET_Nexperia-PMV32UP-215_C282569.html"
+			(at 214.63 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 214.63 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "PMV32UP,215"
+			(at 214.63 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM" ""
+			(at 214.63 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ALT_MPN" ""
+			(at 214.63 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DNM_MPN" ""
+			(at 214.63 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b6c74d29-7df6-49f0-9e1a-d8e39cba2d12")
+		)
+		(pin "2"
+			(uuid "5d9a3d04-c671-4709-97d7-f9a8dac8eb85")
+		)
+		(pin "3"
+			(uuid "2afa2ada-65c5-4976-b630-b5f52fe002d2")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 266.7 154.94 0)
 		(unit 1)
@@ -6825,7 +6796,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 107.95 55.88 0)
+		(at 101.6 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6834,7 +6805,7 @@
 		(fields_autoplaced yes)
 		(uuid "6a7814d0-b8d0-4995-89ed-1aef470a55ee")
 		(property "Reference" "C3"
-			(at 110.49 54.6162 0)
+			(at 104.14 53.3462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6843,7 +6814,7 @@
 			)
 		)
 		(property "Value" "2.2uF"
-			(at 110.49 57.1562 0)
+			(at 104.14 55.8862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6852,7 +6823,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 107.95 55.88 0)
+			(at 101.6 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6861,7 +6832,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 55.88 0)
+			(at 101.6 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6870,7 +6841,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 107.95 55.88 0)
+			(at 101.6 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6879,7 +6850,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KP5NNNC"
-			(at 107.95 55.88 0)
+			(at 101.6 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6888,7 +6859,7 @@
 			)
 		)
 		(property "URL" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B225KP8NNNC/3886792"
-			(at 107.95 55.88 0)
+			(at 101.6 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6897,7 +6868,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B225KP8NNNC/3886792"
-			(at 107.95 55.88 0)
+			(at 101.6 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6906,7 +6877,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL31B106KAHNNNE"
-			(at 107.95 55.88 0)
+			(at 101.6 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6915,7 +6886,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 107.95 55.88 0)
+			(at 101.6 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6923,7 +6894,7 @@
 			)
 		)
 		(property "ALT_MPN" ""
-			(at 107.95 55.88 0)
+			(at 101.6 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6931,7 +6902,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 107.95 55.88 0)
+			(at 101.6 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7021,7 +6992,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 149.86 95.25 0)
+		(at 149.86 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7029,7 +7000,7 @@
 		(dnp no)
 		(uuid "75af0635-d5bc-441a-81a6-de349b46bd8f")
 		(property "Reference" "C5"
-			(at 152.654 94.488 0)
+			(at 152.654 99.568 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7038,7 +7009,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 152.654 96.012 0)
+			(at 152.654 101.092 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7046,8 +7017,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 149.86 95.25 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 149.86 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7056,7 +7027,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 149.86 95.25 0)
+			(at 149.86 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7065,7 +7036,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 149.86 95.25 0)
+			(at 149.86 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7074,7 +7045,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KP5NNNC"
-			(at 149.86 95.25 0)
+			(at 149.86 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7083,7 +7054,7 @@
 			)
 		)
 		(property "URL" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL05B104KP5NNNC/3886660"
-			(at 149.86 95.25 0)
+			(at 149.86 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7091,8 +7062,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
-			(at 149.86 95.25 0)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/kyocera-avx/KGM21NR71E104KT/1116281"
+			(at 149.86 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7100,8 +7071,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CL31B106KAHNNNE"
-			(at 149.86 95.25 0)
+		(property "Manufacturer Part Number" "KGM21NR71E104KT"
+			(at 149.86 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7110,7 +7081,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 149.86 95.25 0)
+			(at 149.86 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7118,7 +7089,7 @@
 			)
 		)
 		(property "ALT_MPN" ""
-			(at 149.86 95.25 0)
+			(at 149.86 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7126,7 +7097,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 149.86 95.25 0)
+			(at 149.86 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7150,7 +7121,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 91.44 55.88 0)
+		(at 85.09 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7159,7 +7130,7 @@
 		(fields_autoplaced yes)
 		(uuid "84f68684-2e49-4cee-a78a-44019b2bc6f9")
 		(property "Reference" "C2"
-			(at 93.98 54.6162 0)
+			(at 87.63 53.3462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7168,7 +7139,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 93.98 57.1562 0)
+			(at 87.63 55.8862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7176,8 +7147,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 91.44 55.88 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 85.09 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7186,7 +7157,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 55.88 0)
+			(at 85.09 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7195,7 +7166,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 91.44 55.88 0)
+			(at 85.09 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7204,7 +7175,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KP5NNNC"
-			(at 91.44 55.88 0)
+			(at 85.09 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7213,7 +7184,7 @@
 			)
 		)
 		(property "URL" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL05B104KP5NNNC/3886660"
-			(at 91.44 55.88 0)
+			(at 85.09 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7221,8 +7192,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
-			(at 91.44 55.88 0)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/kyocera-avx/KGM21NR71E104KT/1116281"
+			(at 85.09 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7230,8 +7201,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CL31B106KAHNNNE"
-			(at 91.44 55.88 0)
+		(property "Manufacturer Part Number" "KGM21NR71E104KT"
+			(at 85.09 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7240,7 +7211,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 91.44 55.88 0)
+			(at 85.09 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7248,7 +7219,7 @@
 			)
 		)
 		(property "ALT_MPN" ""
-			(at 91.44 55.88 0)
+			(at 85.09 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7256,7 +7227,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 91.44 55.88 0)
+			(at 85.09 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7414,16 +7385,15 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 147.32 104.14 0)
+		(at 147.32 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8caafb53-5c04-4e64-9825-e9c8db8cc022")
 		(property "Reference" "J3"
-			(at 149.86 104.1399 0)
+			(at 144.78 116.332 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7432,7 +7402,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04"
-			(at 149.86 106.6799 0)
+			(at 142.748 114.046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7441,7 +7411,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 104.14 0)
+			(at 147.32 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7450,7 +7420,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 104.14 0)
+			(at 147.32 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7459,7 +7429,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 147.32 104.14 0)
+			(at 147.32 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7468,7 +7438,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 147.32 104.14 0)
+			(at 147.32 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7476,7 +7446,7 @@
 			)
 		)
 		(property "ALT_MPN" ""
-			(at 147.32 104.14 0)
+			(at 147.32 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7484,7 +7454,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 147.32 104.14 0)
+			(at 147.32 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7520,22 +7490,23 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8e6873e7-9aed-4f33-9846-9538266f1966")
-		(property "Reference" "U2"
-			(at 85.09 71.374 0)
+		(property "Reference" "e1"
+			(at 73.914 80.264 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "AD7124-8BCPZ-RL7"
-			(at 85.09 73.914 0)
+		(property "Value" "AD7124-8BCPZ-RL7-adc"
+			(at 72.898 75.184 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "CP-32-12_ADI"
@@ -7720,7 +7691,7 @@
 		(instances
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "U2")
+					(reference "e1")
 					(unit 1)
 				)
 			)
@@ -7753,7 +7724,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 274.32 43.18 0)
 			(effects
 				(font
@@ -7807,7 +7778,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/kyocera-avx/18123D106KAT2A/564676"
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
 			(at 273.304 26.416 0)
 			(effects
 				(font
@@ -7816,7 +7787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "KYOCERA AVX"
+		(property "Manufacturer" ""
 			(at 274.32 43.18 0)
 			(effects
 				(font
@@ -7825,7 +7796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "18123D106KAT2A"
+		(property "Manufacturer Part Number" "KGM21NR71E104KT"
 			(at 274.32 43.18 0)
 			(effects
 				(font
@@ -7867,7 +7838,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 156.21 97.79 0)
+		(at 156.21 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7875,7 +7846,7 @@
 		(dnp no)
 		(uuid "957f465f-bcc4-4d51-a1a0-aae70732bae4")
 		(property "Reference" "#PWR028"
-			(at 156.21 104.14 0)
+			(at 156.21 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7884,7 +7855,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 156.337 102.1842 0)
+			(at 156.337 107.2642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7892,7 +7863,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 156.21 97.79 0)
+			(at 156.21 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7901,7 +7872,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.21 97.79 0)
+			(at 156.21 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7910,7 +7881,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 156.21 97.79 0)
+			(at 156.21 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8066,7 +8037,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 160.02 95.25 0)
+		(at 160.02 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8075,7 +8046,7 @@
 		(fields_autoplaced yes)
 		(uuid "98d02226-4d20-42b8-a0fd-4c36ad450991")
 		(property "Reference" "C6"
-			(at 162.56 93.9862 0)
+			(at 162.56 99.0662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8084,7 +8055,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 162.56 96.5262 0)
+			(at 162.56 101.6062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8092,8 +8063,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 160.02 95.25 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 160.02 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8102,7 +8073,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.02 95.25 0)
+			(at 160.02 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8111,7 +8082,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 160.02 95.25 0)
+			(at 160.02 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8120,7 +8091,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KP5NNNC"
-			(at 160.02 95.25 0)
+			(at 160.02 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8129,7 +8100,7 @@
 			)
 		)
 		(property "URL" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL05B104KP5NNNC/3886660"
-			(at 160.02 95.25 0)
+			(at 160.02 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8137,8 +8108,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
-			(at 160.02 95.25 0)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/kyocera-avx/KGM21NR71E104KT/1116281"
+			(at 160.02 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8146,8 +8117,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CL31B106KAHNNNE"
-			(at 160.02 95.25 0)
+		(property "Manufacturer Part Number" "KGM21NR71E104KT"
+			(at 160.02 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8156,7 +8127,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 160.02 95.25 0)
+			(at 160.02 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8164,7 +8135,7 @@
 			)
 		)
 		(property "ALT_MPN" ""
-			(at 160.02 95.25 0)
+			(at 160.02 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8172,7 +8143,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 160.02 95.25 0)
+			(at 160.02 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8196,7 +8167,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 228.6 107.95 0)
+		(at 229.87 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8204,7 +8175,7 @@
 		(dnp no)
 		(uuid "a2fd1d45-491f-4e34-b3c7-bb4c0b3d8fb4")
 		(property "Reference" "#PWR036"
-			(at 228.6 114.3 0)
+			(at 229.87 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8213,7 +8184,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 228.727 112.3442 0)
+			(at 229.997 113.6142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8222,7 +8193,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 107.95 0)
+			(at 229.87 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8231,7 +8202,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 107.95 0)
+			(at 229.87 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8240,7 +8211,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 228.6 107.95 0)
+			(at 229.87 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8255,71 +8226,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 49.53 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a7059e19-de39-4cf5-a0f7-ebcf093654f2")
-		(property "Reference" "#PWR022"
-			(at 49.53 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+V_Batt"
-			(at 49.911 183.5658 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 49.53 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 49.53 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8f8ecbcc-c336-4a15-8571-ce8594adcaa7")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -8353,7 +8259,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 184.15 69.85 0)
 			(effects
 				(font
@@ -8398,7 +8304,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/kyocera-avx/KGM21NR71E104KT/1116281"
 			(at 184.15 69.85 0)
 			(effects
 				(font
@@ -8407,7 +8313,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CL31B106KAHNNNE"
+		(property "Manufacturer Part Number" "KGM21NR71E104KT"
 			(at 184.15 69.85 0)
 			(effects
 				(font
@@ -8713,6 +8619,171 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MRF89XAM9AT-antenna:MRF89XAM9AT-I_RM")
+		(at 194.31 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bcd83f62-9801-440c-a7e4-9ff52becebe7")
+		(property "Reference" "U2"
+			(at 219.71 20.32 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "MRF89XAM9AT-I/RM"
+			(at 219.71 22.86 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "MOD_MRF89XAM9A_MCH"
+			(at 194.31 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "MRF89XAM9AT-I/RM"
+			(at 194.31 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 194.31 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "7a1b3407-44d9-4b56-b05a-1d8faaafcc35")
+		)
+		(pin "1"
+			(uuid "696f1ab9-b731-436a-94a9-6b64c010b422")
+		)
+		(pin "2"
+			(uuid "82133d50-e5fb-4b95-88f9-a155ee5f14f0")
+		)
+		(pin "9"
+			(uuid "b330b011-1571-4f1b-a7d5-ce259200028c")
+		)
+		(pin "11"
+			(uuid "3910e745-6fb0-45a0-901f-93b92faf101a")
+		)
+		(pin "5"
+			(uuid "5efc7209-ec61-4656-9f01-1c9f8c70157f")
+		)
+		(pin "6"
+			(uuid "c1afed4c-a7f6-4034-87d8-067f1bc4e4ca")
+		)
+		(pin "10"
+			(uuid "6e4c0105-47aa-4f79-b93b-c78632b5be14")
+		)
+		(pin "7"
+			(uuid "f4e50667-7190-4015-9171-93eb373a5451")
+		)
+		(pin "12"
+			(uuid "ba8f5118-ff29-4c97-bd32-1c0b471cbd28")
+		)
+		(pin "8"
+			(uuid "30d199d0-8f5a-485e-9b8d-cdcaef724c3a")
+		)
+		(pin "4"
+			(uuid "6e29701c-3eca-492a-9b63-252ea689894c")
+		)
+		(instances
+			(project ""
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 46.99 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c296b0ee-ff5e-457f-8a34-c7bb3fa048a6")
+		(property "Reference" "#PWR0140"
+			(at 46.99 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+Batt"
+			(at 47.371 179.7558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 46.99 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15957511-0259-46e8-8a40-5cf4c2e88da7")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR0140")
 					(unit 1)
 				)
 			)
@@ -9123,7 +9194,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 196.85 69.85 0)
 			(effects
 				(font
@@ -9168,7 +9239,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/kyocera-avx/KGM21NR71E104KT/1116281"
 			(at 196.85 69.85 0)
 			(effects
 				(font
@@ -9177,7 +9248,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CL31B106KAHNNNE"
+		(property "Manufacturer Part Number" "KGM21NR71E104KT"
 			(at 196.85 69.85 0)
 			(effects
 				(font
@@ -9226,7 +9297,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ICM-45605:ICM-45605")
+		(lib_id "ICM-45605-gyroscope:ICM-45605")
 		(at 231.14 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9487,7 +9558,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 78.74 55.88 0)
+		(at 72.39 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9496,7 +9567,7 @@
 		(fields_autoplaced yes)
 		(uuid "f5f1de4a-c7ad-4a68-93ad-9fd088f984b2")
 		(property "Reference" "C1"
-			(at 81.28 54.6162 0)
+			(at 74.93 53.3462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9505,7 +9576,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 81.28 57.1562 0)
+			(at 74.93 55.8862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9513,8 +9584,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 78.74 55.88 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 72.39 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9523,7 +9594,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 78.74 55.88 0)
+			(at 72.39 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9532,7 +9603,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 78.74 55.88 0)
+			(at 72.39 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9541,7 +9612,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KP5NNNC"
-			(at 78.74 55.88 0)
+			(at 72.39 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9550,7 +9621,7 @@
 			)
 		)
 		(property "URL" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL05B104KP5NNNC/3886660"
-			(at 78.74 55.88 0)
+			(at 72.39 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9558,8 +9629,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
-			(at 78.74 55.88 0)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/kyocera-avx/KGM21NR71E104KT/1116281"
+			(at 72.39 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9567,8 +9638,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CL31B106KAHNNNE"
-			(at 78.74 55.88 0)
+		(property "Manufacturer Part Number" "KGM21NR71E104KT"
+			(at 72.39 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9577,7 +9648,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 78.74 55.88 0)
+			(at 72.39 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9585,7 +9656,7 @@
 			)
 		)
 		(property "ALT_MPN" ""
-			(at 78.74 55.88 0)
+			(at 72.39 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9593,7 +9664,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 78.74 55.88 0)
+			(at 72.39 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9616,150 +9687,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Q_PMOS_GSD")
-		(at 214.63 135.89 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fca2085f-4cf4-47a8-927a-03cdc7eaf139")
-		(property "Reference" "Q1"
-			(at 219.964 137.414 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "PMV32UP,215"
-			(at 219.71 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 219.71 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 214.63 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 214.63 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "PMV32UP,215"
-			(at 214.63 135.89 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "URL" "https://lcsc.com/product-detail/MOSFET_Nexperia-PMV32UP-215_C282569.html"
-			(at 214.63 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor link" "https://lcsc.com/product-detail/MOSFET_Nexperia-PMV32UP-215_C282569.html"
-			(at 214.63 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 214.63 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "PMV32UP,215"
-			(at 214.63 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DNM" ""
-			(at 214.63 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ALT_MPN" ""
-			(at 214.63 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DNM_MPN" ""
-			(at 214.63 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "354bd367-089e-4882-83c7-fd6999e47ffe")
-		)
-		(pin "2"
-			(uuid "b9e2c185-7cfb-406a-a463-6a1669f266a0")
-		)
-		(pin "3"
-			(uuid "daf75927-0aab-4acf-b5c2-9fb553c5398d")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+BATT")
-		(at 41.91 186.69 0)
+		(at 40.64 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9767,7 +9696,7 @@
 		(dnp no)
 		(uuid "fe8606b8-1821-4d2f-91a7-2c6e5f714291")
 		(property "Reference" "#PWR021"
-			(at 41.91 190.5 0)
+			(at 40.64 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9776,7 +9705,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 42.291 182.2958 0)
+			(at 41.021 179.7558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9784,7 +9713,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 41.91 186.69 0)
+			(at 40.64 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9793,7 +9722,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 186.69 0)
+			(at 40.64 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9802,7 +9731,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 41.91 186.69 0)
+			(at 40.64 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)

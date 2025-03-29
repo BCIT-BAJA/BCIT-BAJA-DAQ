@@ -2013,6 +2013,17 @@
 		)
 		(uuid "81adc9ac-c2f7-423c-87ec-da0124229f2e")
 	)
+	(text "THIS DOES NOT BELONG IN CONTROLLER"
+		(exclude_from_sim no)
+		(at 253.238 23.876 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "888d2fc1-4596-4bde-a567-58e1fe37ba53")
+	)
 	(text "+3.3V <JP6> VDD"
 		(exclude_from_sim no)
 		(at 92.075 53.34 0)
@@ -3794,7 +3805,7 @@
 		(uuid "6c7f0f4e-edd7-428e-8881-61dad3d555c1")
 	)
 	(hierarchical_label "+V_BATT"
-		(shape output)
+		(shape input)
 		(at 198.12 30.48 180)
 		(effects
 			(font
@@ -5534,48 +5545,6 @@
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
 					(reference "#PWR0143")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(sheet
-		(at 139.065 35.56)
-		(size 36.83 7.62)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "e193b1b9-df24-48f2-83d4-67c7fb55ae28")
-		(property "Sheetname" "NUCLEO-L476RG_Top"
-			(at 139.065 34.8484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "NUCLEO-L476RG_Top.kicad_sch"
-			(at 139.065 43.7646 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005ea70ac3"
-					(page "4")
 				)
 			)
 		)

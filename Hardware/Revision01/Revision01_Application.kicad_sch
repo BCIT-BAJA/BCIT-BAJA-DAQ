@@ -3325,6 +3325,18 @@
 		)
 		(uuid "b29e9b35-756c-4be2-ab24-6d81b8ed7757")
 	)
+	(text "StrainV!!!"
+		(exclude_from_sim no)
+		(at 159.512 19.05 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+				(color 255 7 23 1)
+			)
+			(justify left)
+		)
+		(uuid "b3c697c4-1761-46eb-8544-2cb879e21004")
+	)
 	(text "This bypass cap, removes sharp increases in current.\nLets try to delay by 1ms\n\nFLA = 110mA\nDV = 0.25V\nDT = 1ms\n\nSo C = 456uF\n\nWe will use 1 220uF"
 		(exclude_from_sim no)
 		(at 230.886 161.544 0)
@@ -3335,6 +3347,18 @@
 			(justify left)
 		)
 		(uuid "c6b87f3c-9409-4ed1-bbc6-08b0a0ea3182")
+	)
+	(text "Not populated Strain gauages"
+		(exclude_from_sim no)
+		(at 164.592 27.686 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+				(color 255 7 23 1)
+			)
+			(justify left)
+		)
+		(uuid "db41c58e-725e-4dc1-8fe2-ce645fde2030")
 	)
 	(text "Strain Gauge Pwr enable"
 		(exclude_from_sim no)
@@ -6186,71 +6210,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 160.02 20.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "462a3e7c-8f25-418b-9790-9227e34ed4e4")
-		(property "Reference" "#PWR029"
-			(at 160.02 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 160.401 15.9258 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 160.02 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "96f86346-bcf9-4483-beda-aae7813112b4")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "#PWR029")
 					(unit 1)
 				)
 			)

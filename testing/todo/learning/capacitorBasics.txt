@@ -56,5 +56,12 @@ High frequencies: Low impedance → noise is shorted to ground.
 However in reality, there exists, inductance and resistance. So at a certain frequency, the impedance actually increases as we continue to increase. So we may have several capacitors to filter out different frequencies as the 
 bigger the capacitor, the more inductance it usually has.
 
+So how do you size a capacitor??? for a buck-convertor output
 
+1. Determine I ripple, example: I_average = 1A 
+2. Determine Max and Min of ripple.(1.15,0.85)
+3. Remove offset of 1A, giving us a ripple of (-0.15,0.15). Now we find the switching cycle(10us)
+4. Q = 1/2(Iripple)(cycle_time/2) = 375nC
+5. Q = C V, solve for C and that is the output ripple
 
+6. But capacitors have ESR. What's the maximum ESR allowable? ESR = Vpp/Ipp = 0.1V/0.3A = 0.333

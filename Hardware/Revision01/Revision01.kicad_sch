@@ -2121,17 +2121,6 @@
 		)
 		(uuid "aa9099b3-4cba-4478-8ce2-4eebb21cb7d0")
 	)
-	(text "Add the power switch outside of the Controller module"
-		(exclude_from_sim no)
-		(at 42.926 7.62 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-				(color 11 255 22 1)
-			)
-		)
-		(uuid "ab5a4c6b-2865-4617-870b-c1fda1dabbd4")
-	)
 	(text "Battery specifications:\n1.5V-4V\n4 CELL BATTERY\n\nso total range is 6-16V"
 		(exclude_from_sim no)
 		(at 39.878 104.394 0)
@@ -2142,17 +2131,6 @@
 		)
 		(uuid "c6d19008-0c9d-4fee-9a6d-ea6abfde3d40")
 	)
-	(text "Add schematic symbols for the Battery & Holder components as part of the unified BOM"
-		(exclude_from_sim no)
-		(at 61.722 3.556 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-				(color 11 255 22 1)
-			)
-		)
-		(uuid "d1c15ab9-22fb-4d17-b55b-1642c24b959c")
-	)
 	(text "*Note this is externally connected \nwired to outside of case"
 		(exclude_from_sim no)
 		(at 55.118 71.374 0)
@@ -2162,6 +2140,16 @@
 			)
 		)
 		(uuid "d4dc4437-d388-4c0d-bc1e-070e7ff9a35e")
+	)
+	(text "added netclasses again\nchanged power to be globally used\nstrain gauges symbol created and added to schematic"
+		(exclude_from_sim no)
+		(at -28.702 108.712 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+		)
+		(uuid "f69287ad-3c0b-466b-8292-90d8d59807ec")
 	)
 	(junction
 		(at 69.85 50.8)
@@ -2669,16 +2657,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 90.17) (xy 240.03 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "668a7709-31fb-46b7-b325-ec80be2c9ad1")
-	)
-	(wire
-		(pts
 			(xy 166.37 138.43) (xy 171.45 138.43)
 		)
 		(stroke
@@ -2999,16 +2977,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 90.17) (xy 246.38 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bea74f1a-29c3-41db-b181-3d4e5469bf91")
-	)
-	(wire
-		(pts
 			(xy 180.34 50.8) (xy 166.37 50.8)
 		)
 		(stroke
@@ -3076,16 +3044,6 @@
 			(type default)
 		)
 		(uuid "d9c9683e-c739-4979-9526-f71d97ab6b1c")
-	)
-	(wire
-		(pts
-			(xy 234.95 90.17) (xy 234.95 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df6b159c-9eb7-4531-bc95-0eabb94e56ab")
 	)
 	(wire
 		(pts
@@ -3487,16 +3445,6 @@
 		)
 		(uuid "e05a0633-2491-49a0-970b-55c9d0147245")
 	)
-	(label "+5V_NUCLEO"
-		(at 69.85 50.8 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right bottom)
-		)
-		(uuid "f1c3f2ce-8171-46f5-b2b8-f107b0286307")
-	)
 	(label "PC2_GPIO"
 		(at 209.55 116.84 180)
 		(effects
@@ -3536,28 +3484,6 @@
 			(justify left)
 		)
 		(uuid "f986e003-ef9b-40f9-8167-ce62057eb5a9")
-	)
-	(hierarchical_label "+3.3V"
-		(shape input)
-		(at 34.29 184.15 180)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify right)
-		)
-		(uuid "a9248fe1-fbe6-463c-9fe9-f2ca3946ef67")
-	)
-	(hierarchical_label "+5V"
-		(shape input)
-		(at 34.29 186.69 180)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify right)
-		)
-		(uuid "e793e90f-7cc2-4bd6-9932-ff5a22be9989")
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
@@ -4029,73 +3955,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(reference "TP5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 240.03 90.17 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0d8a0ef3-df03-40cb-be0b-8e0aef5a499f")
-		(property "Reference" "#PWR017"
-			(at 240.03 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 240.03 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 240.03 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 240.03 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 240.03 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "18e57f40-489f-4f94-9ad0-6b081c2f02a2")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
-					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -5069,7 +4928,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "BatteryV"
+		(property "Value" "+V_batt"
 			(at 68.326 185.42 90)
 			(effects
 				(font
@@ -5587,72 +5446,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 246.38 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2a274047-455b-425b-b60d-3b1e3d446ff1")
-		(property "Reference" "#PWR012"
-			(at 246.38 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "BatteryV"
-			(at 246.38 86.106 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 246.38 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 246.38 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 246.38 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e85c4819-7776-43dd-97d6-bbaa077e382d")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
-					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -8440,73 +8233,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 234.95 90.17 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f855aa6-6785-414e-b30e-91f422e5fd60")
-		(property "Reference" "#PWR018"
-			(at 234.95 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 234.95 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 234.95 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 234.95 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 234.95 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8b91d5bc-d093-42b2-aecd-05171becc394")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 72.39 185.42 270)
 		(unit 1)
@@ -11011,6 +10737,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 34.29 184.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8da5b9c4-e970-4386-b30c-509e4a59104b")
+		(property "Reference" "#PWR031"
+			(at 38.1 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 29.21 184.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 34.29 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc5b81da-8d7a-4bb5-8f41-d63b403792fd")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 99.06 190.5 0)
 		(unit 1)
@@ -12716,7 +12507,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "BatteryV"
+		(property "Value" "+V_batt"
 			(at 69.85 78.486 90)
 			(effects
 				(font
@@ -13317,6 +13108,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 34.29 186.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b7eac394-0130-470e-abe7-d385f65ceeaa")
+		(property "Reference" "#PWR028"
+			(at 38.1 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 29.21 186.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 34.29 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9266983-2fc6-40fa-a524-ee07a2212ebb")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 107.95 195.58 0)
 		(unit 1)
@@ -13851,7 +13707,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "BatteryV"
+		(property "Value" "+V_batt"
 			(at 26.67 46.736 90)
 			(effects
 				(font
@@ -16167,36 +16023,6 @@
 					(size 1.4986 1.4986)
 				)
 				(justify left)
-			)
-		)
-		(pin "+3.3V" input
-			(at 234.95 91.44 90)
-			(uuid "86b704e0-19e0-48cf-99ce-b17f53a41df7")
-			(effects
-				(font
-					(size 1.4986 1.4986)
-				)
-				(justify right)
-			)
-		)
-		(pin "+5V" input
-			(at 240.03 91.44 90)
-			(uuid "6163f838-aa73-44e5-a610-ad549a813036")
-			(effects
-				(font
-					(size 1.4986 1.4986)
-				)
-				(justify right)
-			)
-		)
-		(pin "+V_BATT" input
-			(at 246.38 91.44 90)
-			(uuid "aae646cd-d5e1-4ff7-8b25-7b9e7f1a1623")
-			(effects
-				(font
-					(size 1.4986 1.4986)
-				)
-				(justify right)
 			)
 		)
 		(pin "BatteryV_Measurement" output

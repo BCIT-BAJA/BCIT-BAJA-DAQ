@@ -36,14 +36,12 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "CP-32-12_ADI"
-				(at -6.096 14.732 0)
+			(property "Footprint" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "AD7124-8BCPZ-RL7"
@@ -189,14 +187,6 @@
 				)
 			)
 			(property "FITTED" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "FOOTPRINT" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -7549,81 +7539,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x04")
-		(at 96.52 34.29 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1a7dc2e9-77a8-4933-b20b-1c5c47ffa493")
-		(property "Reference" "J15"
-			(at 90.17 39.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Strain7"
-			(at 89.9161 37.338 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 96.52 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 96.52 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 96.52 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "38c304bf-856e-43fa-b531-97f1a5673b99")
-		)
-		(pin "4"
-			(uuid "e1bae412-8194-4c3a-952b-e9f972d02d29")
-		)
-		(pin "1"
-			(uuid "9f705a67-dfd1-4929-b716-740c399b0bd4")
-		)
-		(pin "2"
-			(uuid "e7921a6d-585c-4d97-9e20-d744f54b4940")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+BATT")
 		(at 200.66 64.77 0)
 		(unit 1)
@@ -10096,15 +10011,15 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x04")
-		(at 107.95 34.29 270)
+		(at 119.38 34.29 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "379f4eb3-081a-47c4-b311-26a4c3db7205")
-		(property "Reference" "J16"
-			(at 101.6 39.37 90)
+		(uuid "39a98e2b-cda5-4b8d-a18c-910dd6727fc4")
+		(property "Reference" "J25"
+			(at 113.03 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10112,8 +10027,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Strain6"
-			(at 101.3461 37.338 90)
+		(property "Value" "StrainConn"
+			(at 112.7761 37.338 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10121,8 +10036,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 107.95 34.29 0)
+		(property "Footprint" "691137710004:691137710004"
+			(at 119.38 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10131,7 +10046,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 34.29 0)
+			(at 119.38 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10140,7 +10055,25 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 107.95 34.29 0)
+			(at 119.38 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/691137710004/6644053?s=N4IgTCBcDaIGwE4CMSDMB2dSAMuAsIAugL5A"
+			(at 119.38 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "691137710004"
+			(at 119.38 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10149,21 +10082,21 @@
 			)
 		)
 		(pin "3"
-			(uuid "ac497013-fc4e-4aa1-949c-20cf3b16252b")
+			(uuid "5afe825f-c399-4906-a27c-804416c24e4b")
 		)
 		(pin "4"
-			(uuid "84f763ee-9ab3-44d9-8fbd-981349e34eea")
+			(uuid "9d8eafa4-2003-4e6d-9f7e-4057a6cf515c")
 		)
 		(pin "1"
-			(uuid "764adce0-f06a-4939-8cbf-5b2bc7824b1f")
+			(uuid "eb871f3e-cf63-48c7-be7d-63779bff304b")
 		)
 		(pin "2"
-			(uuid "6fda4287-c962-4ecb-9660-4f661ce50fc0")
+			(uuid "918cfd61-28f5-44ef-974d-9726ff88b140")
 		)
 		(instances
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J16")
+					(reference "J25")
 					(unit 1)
 				)
 			)
@@ -10197,7 +10130,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 146.05 140.97 0)
 			(effects
 				(font
@@ -10564,6 +10497,99 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x04")
+		(at 96.52 34.29 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "517f6e62-29b9-4256-afd1-bdcc63520dbf")
+		(property "Reference" "J27"
+			(at 90.17 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "StrainConn"
+			(at 89.9161 37.338 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "691137710004:691137710004"
+			(at 96.52 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 96.52 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/691137710004/6644053?s=N4IgTCBcDaIGwE4CMSDMB2dSAMuAsIAugL5A"
+			(at 96.52 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "691137710004"
+			(at 96.52 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "f6e5c96f-ec31-4d96-9b69-584182936f93")
+		)
+		(pin "4"
+			(uuid "eba0ab32-6f6b-47f4-8a09-ac5cc2ca62fb")
+		)
+		(pin "1"
+			(uuid "6bb4f96d-022a-45c7-81d2-3f9bb87899c7")
+		)
+		(pin "2"
+			(uuid "358f1a09-5429-42f9-bd61-76201a6fb7e7")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "J27")
 					(unit 1)
 				)
 			)
@@ -11085,7 +11111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor link" ""
+		(property "Distributor link" " https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-6DSFR20V/6004398"
 			(at 45.72 27.94 0)
 			(effects
 				(font
@@ -11094,7 +11120,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
+		(property "Manufacturer Part Number" "ERJ-6DSFR20V"
 			(at 45.72 27.94 0)
 			(effects
 				(font
@@ -11945,6 +11971,99 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x04")
+		(at 130.81 34.29 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c29ae09-f4c5-43e3-8ed1-be6e4fd78b00")
+		(property "Reference" "J24"
+			(at 124.46 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "StrainConn"
+			(at 124.2061 37.338 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "691137710004:691137710004"
+			(at 130.81 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 130.81 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/691137710004/6644053?s=N4IgTCBcDaIGwE4CMSDMB2dSAMuAsIAugL5A"
+			(at 130.81 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "691137710004"
+			(at 130.81 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "e317a81e-643d-49ec-86b4-1ebd2ff98d76")
+		)
+		(pin "4"
+			(uuid "1ad3c66a-1af5-4806-a407-97ac2e823f4e")
+		)
+		(pin "1"
+			(uuid "05429582-a516-4c3a-8d9c-2f0ff8cea519")
+		)
+		(pin "2"
+			(uuid "bef9994f-c70f-4dcf-8a4d-7117c2bba8e4")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "J24")
 					(unit 1)
 				)
 			)
@@ -13656,6 +13775,99 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Screw_Terminal_01x04")
+		(at 153.67 34.29 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8a40b07e-4421-4ea0-91b8-9a3e84b26eb5")
+		(property "Reference" "J22"
+			(at 147.32 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "StrainConn"
+			(at 147.0661 37.338 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "691137710004:691137710004"
+			(at 153.67 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 153.67 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/691137710004/6644053?s=N4IgTCBcDaIGwE4CMSDMB2dSAMuAsIAugL5A"
+			(at 153.67 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "691137710004"
+			(at 153.67 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "aceaba27-20e3-4d05-90b7-73c93b523c0f")
+		)
+		(pin "4"
+			(uuid "19a8fe06-0ffc-4f7c-9974-208b9f28f031")
+		)
+		(pin "1"
+			(uuid "0ac1a344-192c-4de4-b085-170d276711d0")
+		)
+		(pin "2"
+			(uuid "c8f0fd5e-9142-476b-b023-cb34fafe67a2")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "J22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 256.54 146.05 0)
 		(unit 1)
@@ -14169,6 +14381,99 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Screw_Terminal_01x04")
+		(at 142.24 34.29 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8d1c6a88-e783-449e-911f-c6251553c5d0")
+		(property "Reference" "J23"
+			(at 135.89 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "StrainConn"
+			(at 135.6361 37.338 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "691137710004:691137710004"
+			(at 142.24 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 142.24 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/691137710004/6644053?s=N4IgTCBcDaIGwE4CMSDMB2dSAMuAsIAugL5A"
+			(at 142.24 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "691137710004"
+			(at 142.24 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "2f69bb2f-6f68-4abc-a252-23a1af2924e7")
+		)
+		(pin "4"
+			(uuid "e6e1b00d-6903-4494-bda8-6fae6cfb5fc3")
+		)
+		(pin "1"
+			(uuid "aea103bd-44d2-4947-9f51-be44a1d64fc2")
+		)
+		(pin "2"
+			(uuid "f0b88b6b-e32a-4e79-bd16-dc91627d0555")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "J23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 72.39 176.53 0)
 		(unit 1)
@@ -14262,7 +14567,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AD7124-8BCPZ-RL7-adc:CP-32-12_ADI"
+		(property "Footprint" "AD7124-8BCPZ-RL7-adc:CP-32-12_ADI-L"
 			(at 18.034 88.138 0)
 			(effects
 				(font
@@ -16705,6 +17010,99 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Screw_Terminal_01x04")
+		(at 85.09 34.29 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a03c028-9dbd-40b0-93a9-50c132d41610")
+		(property "Reference" "J28"
+			(at 78.74 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "StrainConn"
+			(at 78.4861 37.338 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "691137710004:691137710004"
+			(at 85.09 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 85.09 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/691137710004/6644053?s=N4IgTCBcDaIGwE4CMSDMB2dSAMuAsIAugL5A"
+			(at 85.09 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "691137710004"
+			(at 85.09 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "ad429fc1-b885-4fa8-ae6d-a07fd74bdc54")
+		)
+		(pin "4"
+			(uuid "5dcc1baf-7933-4dc4-9d04-8b5177a6aaab")
+		)
+		(pin "1"
+			(uuid "d07ff8fe-ea23-4953-b5ab-f7de175a91fd")
+		)
+		(pin "2"
+			(uuid "c4dd2151-6190-4eae-9626-d486f287f621")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "J28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 34.29 176.53 0)
 		(unit 1)
@@ -18129,81 +18527,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x04")
-		(at 130.81 34.29 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a8e01207-090e-4303-8329-1e79c607187d")
-		(property "Reference" "J18"
-			(at 124.46 39.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Strain4"
-			(at 124.2061 37.338 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 130.81 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 130.81 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "851d9fd6-a5da-4865-af92-2099ec9eec8a")
-		)
-		(pin "4"
-			(uuid "05dd7912-b8ed-4a11-8612-b90cd7303d1a")
-		)
-		(pin "1"
-			(uuid "354a23f0-e935-47ba-b2d9-b336c19c94e4")
-		)
-		(pin "2"
-			(uuid "fc748e66-930b-4f3f-bf0d-273013abc441")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 121.92 50.8 0)
 		(unit 1)
@@ -19401,81 +19724,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x04")
-		(at 119.38 34.29 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b1bb659f-a116-4946-8990-87e0d07cb707")
-		(property "Reference" "J17"
-			(at 113.03 39.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Strain5"
-			(at 112.7761 37.338 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 119.38 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 119.38 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "151533aa-4f8a-459d-abaa-d764398aa657")
-		)
-		(pin "4"
-			(uuid "1e3cc2ac-ff4e-46e1-9274-e906a42b3d11")
-		)
-		(pin "1"
-			(uuid "dbcec2d9-f7c4-4db1-820c-1d1ae20ef297")
-		)
-		(pin "2"
-			(uuid "cd5d231b-dab7-4870-8904-4862365463ec")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 45.72 173.99 0)
 		(unit 1)
@@ -19754,7 +20002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor link" ""
+		(property "Distributor link" " https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-6DSFR20V/6004398"
 			(at 60.96 27.94 0)
 			(effects
 				(font
@@ -19763,7 +20011,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
+		(property "Manufacturer Part Number" "ERJ-6DSFR20V"
 			(at 60.96 27.94 0)
 			(effects
 				(font
@@ -20782,6 +21030,99 @@
 			(project ""
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x04")
+		(at 107.95 34.29 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "beb90663-0049-4db6-b911-780f354e92b9")
+		(property "Reference" "J26"
+			(at 101.6 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "StrainConn"
+			(at 101.3461 37.338 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "691137710004:691137710004"
+			(at 107.95 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 107.95 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/691137710004/6644053?s=N4IgTCBcDaIGwE4CMSDMB2dSAMuAsIAugL5A"
+			(at 107.95 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "691137710004"
+			(at 107.95 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "8d062b64-1773-490b-b45f-8914957c2079")
+		)
+		(pin "4"
+			(uuid "611d253a-1c00-4df8-8213-600dfb510a30")
+		)
+		(pin "1"
+			(uuid "e6a7fc2c-412c-4d76-bb2d-a0dbc587c674")
+		)
+		(pin "2"
+			(uuid "f846e36a-6922-46a1-a62f-186051feaba2")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "J26")
 					(unit 1)
 				)
 			)
@@ -22159,7 +22500,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Strain1"
+		(property "Value" "StrainConn"
 			(at 158.4961 37.338 90)
 			(effects
 				(font
@@ -22168,7 +22509,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "691137710004:691137710004"
 			(at 165.1 34.29 0)
 			(effects
 				(font
@@ -22195,7 +22536,16 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor link" "https://www.amazon.ca/dp/B0B5GNDK6Z?ref=cm_sw_r_cso_cp_apin_dp_9JJX3AZFNEENWKH8K5XQ&ref_=cm_sw_r_cso_cp_apin_dp_9JJX3AZFNEENWKH8K5XQ&social_share=cm_sw_r_cso_cp_apin_dp_9JJX3AZFNEENWKH8K5XQ&starsLeft=1"
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/691137710004/6644053?s=N4IgTCBcDaIGwE4CMSDMB2dSAMuAsIAugL5A"
+			(at 165.1 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "691137710004"
 			(at 165.1 34.29 0)
 			(effects
 				(font
@@ -22250,7 +22600,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ICM-45605-gyroscope:XDCR_ICM-45605"
+		(property "Footprint" "ICM-45605:XDCR_ICM-45605"
 			(at 234.95 88.9 0)
 			(effects
 				(font
@@ -22870,81 +23220,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x04")
-		(at 85.09 34.29 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f245871a-6d38-4f17-9b65-abb66d840bff")
-		(property "Reference" "J14"
-			(at 78.74 39.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Strain8"
-			(at 78.4861 37.338 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 85.09 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 85.09 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 85.09 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "210adaae-fa4f-47ba-adb0-35048128505c")
-		)
-		(pin "4"
-			(uuid "78009db6-ff3a-46c6-8a50-e263eb37b8a0")
-		)
-		(pin "1"
-			(uuid "a0bac2be-e4b5-45c0-947a-559407d572d7")
-		)
-		(pin "2"
-			(uuid "8bd35228-095d-4557-8f96-746f7303a7d0")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 76.2 176.53 0)
 		(unit 1)
@@ -23526,90 +23801,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x04")
-		(at 153.67 34.29 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f948daa4-96ce-4ae0-8e5e-3cf69c92409f")
-		(property "Reference" "J20"
-			(at 147.32 39.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Strain2"
-			(at 147.0661 37.338 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.67 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 153.67 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor link" "https://www.amazon.ca/dp/B0B5GNDK6Z?ref=cm_sw_r_cso_cp_apin_dp_9JJX3AZFNEENWKH8K5XQ&ref_=cm_sw_r_cso_cp_apin_dp_9JJX3AZFNEENWKH8Khttps://www.amazon.ca/dp/B0B5GNDK6Z?ref=cm_sw_r_cso_cp_apin_dp_9JJX3AZFNEENWKH8K5XQ&ref_=cm_sw_r_cso_cp_apin_dp_9JJX3AZFNEENWKH8K5XQ&social_share=cm_sw_r_cso_cp_apin_dp_9JJX3AZFNEENWKH8K5XQ&starsLeft=15XQ&social_share=cm_sw_r_cso_cp_apin_dp_9JJX3AZFNEENWKH8K5XQ&starsLeft=1"
-			(at 153.67 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "ebedf2a5-f534-42c9-89b8-854e669a0fd8")
-		)
-		(pin "4"
-			(uuid "e582adf2-7832-4abf-8815-9de622314dbb")
-		)
-		(pin "1"
-			(uuid "507a78d6-33d5-4f53-8516-2b434af49544")
-		)
-		(pin "2"
-			(uuid "bf4191b9-bc59-42e0-a626-6856400e2103")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 49.53 173.99 0)
 		(unit 1)
@@ -23700,90 +23891,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x04")
-		(at 142.24 34.29 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fde49413-a063-48b8-a90f-957bf0865106")
-		(property "Reference" "J19"
-			(at 135.89 39.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Strain3"
-			(at 135.6361 37.338 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 142.24 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor link" "https://www.amazon.ca/dp/B0B5GNDK6Z?ref=cm_sw_r_cso_cp_apin_dp_9JJX3AZFNEENWKH8K5XQ&ref_=cm_sw_r_cso_cp_apin_dp_9JJX3AZFNEENWKH8K5XQ&social_share=cm_sw_r_cso_cp_apin_dp_9JJX3AZFNEENWKH8K5XQ&starsLeft=1"
-			(at 142.24 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "fe7e7417-41f4-424a-b1ff-84c4d1a188a0")
-		)
-		(pin "4"
-			(uuid "01923ec1-0b4e-4245-a8e7-f668310afba3")
-		)
-		(pin "1"
-			(uuid "51be2b95-734d-47ba-b09e-3eaa3de6f8e8")
-		)
-		(pin "2"
-			(uuid "a14e876c-d211-4337-92e5-00a41f110f9b")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J19")
 					(unit 1)
 				)
 			)

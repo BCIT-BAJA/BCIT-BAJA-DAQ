@@ -4092,16 +4092,15 @@
 		)
 		(uuid "a72c9962-229c-404f-872a-d58ae9524287")
 	)
-	(text "ADDED 25pF to STRAIN GAUGES to remove noise\nADDED FOOTPRINTS TO COMPONENTS\nChanged PS back to external-highside switch as internal mosfet current rating is too low\npull-up for PMOS strainV_enable added\nReconfigured new Nucleo board STM32IDE file"
+	(text "TX mode - 25mA\nRx mode - 3mA"
 		(exclude_from_sim no)
-		(at -107.442 75.438 0)
+		(at 184.912 49.022 0)
 		(effects
 			(font
-				(size 1.4986 1.4986)
+				(size 0.889 0.889)
 			)
-			(justify left)
 		)
-		(uuid "d8477a97-a85b-459e-8bb4-68ce44d41e99")
+		(uuid "d066270c-9318-4ee3-b996-1db14f25e9ce")
 	)
 	(text "Power calculations:\n\nRtotal = 8/350 = 43.75 Ohm\nItotal = 3.3/43.75 = 75.4mA\nP = 0.249W"
 		(exclude_from_sim no)

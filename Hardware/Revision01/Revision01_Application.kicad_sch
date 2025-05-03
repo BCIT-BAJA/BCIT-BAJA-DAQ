@@ -36,12 +36,14 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at 0 0 0)
+			(property "Footprint" "AD7124-8BCPZ-RL7-adc:CP-32-12_ADI-L"
+				(at -6.096 14.732 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
+					(hide yes)
 				)
 			)
 			(property "Datasheet" "AD7124-8BCPZ-RL7"
@@ -187,6 +189,14 @@
 				)
 			)
 			(property "FITTED" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "FOOTPRINT" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -908,7 +918,7 @@
 					)
 				)
 				(pin input line
-					(at 58.42 -53.34 90)
+					(at 93.98 -53.34 90)
 					(length 7.62)
 					(name "REFIN1(-)"
 						(effects
@@ -1090,7 +1100,7 @@
 			)
 			(symbol "AD7124-8BCPZ-RL7_1_1"
 				(pin power_in line
-					(at 46.99 -53.34 90)
+					(at 82.55 -53.34 90)
 					(length 7.62)
 					(name "DGND"
 						(effects
@@ -1108,7 +1118,7 @@
 					)
 				)
 				(pin power_in line
-					(at 50.8 -53.34 90)
+					(at 86.36 -53.34 90)
 					(length 7.62)
 					(name "AVSS"
 						(effects
@@ -1126,7 +1136,7 @@
 					)
 				)
 				(pin power_in line
-					(at 54.61 -53.34 90)
+					(at 90.17 -53.34 90)
 					(length 7.62)
 					(name "EP"
 						(effects
@@ -3961,7 +3971,7 @@
 	)
 	(rectangle
 		(start 12.065 74.93)
-		(end 177.165 187.325)
+		(end 177.165 172.72)
 		(stroke
 			(width 0)
 			(type default)
@@ -4194,12 +4204,6 @@
 		(uuid "565d0359-b4fb-4279-8d75-db8ef4941e20")
 	)
 	(junction
-		(at 78.74 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5b237e1c-7251-40e6-8b9a-5555e7232995")
-	)
-	(junction
 		(at 135.89 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4218,16 +4222,16 @@
 		(uuid "72976c1c-8bc3-4ccb-837a-433ec9d6e16d")
 	)
 	(junction
+		(at 106.68 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73ce0709-8422-47b3-8bd0-e8eb6f964f41")
+	)
+	(junction
 		(at 220.98 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "73e0add8-35bb-4cbf-bcd1-491d0f7b6f7a")
-	)
-	(junction
-		(at 71.12 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "793347cc-f2a4-4098-a4e4-4964ba3a87df")
 	)
 	(junction
 		(at 148.59 50.8)
@@ -4252,6 +4256,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8b6a689f-933a-46d1-9484-430b673b548f")
+	)
+	(junction
+		(at 114.3 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8fe420db-2ed9-46c3-bb2d-d597dad8e5d3")
 	)
 	(junction
 		(at 220.98 149.86)
@@ -4314,10 +4324,10 @@
 		(uuid "b7a97ce4-aca4-493d-8c94-42174aaf32b5")
 	)
 	(junction
-		(at 74.93 156.21)
+		(at 110.49 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "baf9446d-63b8-43be-9841-10474124ae47")
+		(uuid "c136520e-9767-44a4-a3c1-9efc28ec7e68")
 	)
 	(junction
 		(at 60.96 87.63)
@@ -4609,6 +4619,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 156.21) (xy 114.3 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fe30a2d-df9d-408c-911b-ce823a2ea956")
+	)
+	(wire
+		(pts
 			(xy 35.56 39.37) (xy 38.1 39.37)
 		)
 		(stroke
@@ -4719,7 +4739,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 156.21) (xy 74.93 156.21)
+			(xy 106.68 156.21) (xy 110.49 156.21)
 		)
 		(stroke
 			(width 0)
@@ -4846,16 +4866,6 @@
 			(type default)
 		)
 		(uuid "4899c07b-dad5-4aef-99fa-f0fabeb4a46c")
-	)
-	(wire
-		(pts
-			(xy 78.74 156.21) (xy 74.93 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48dd87bb-1081-402d-b4d6-d1cfe1e6b0f9")
 	)
 	(wire
 		(pts
@@ -5259,6 +5269,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 156.21) (xy 118.11 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccbaea9d-cdbb-45f4-9214-69149423367f")
+	)
+	(wire
+		(pts
 			(xy 187.96 72.39) (xy 187.96 73.66)
 		)
 		(stroke
@@ -5379,16 +5399,6 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 156.21) (xy 78.74 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9d211f5-a16c-4b73-9f7a-52b4218e0d5e")
-	)
-	(wire
-		(pts
 			(xy 161.29 50.8) (xy 161.29 54.61)
 		)
 		(stroke
@@ -5418,7 +5428,7 @@
 		(uuid "fe0aa333-89a5-4b78-8cbe-555a7430e453")
 	)
 	(label "AIN3"
-		(at 64.77 171.45 90)
+		(at 66.04 158.75 90)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -5488,7 +5498,7 @@
 		(uuid "21a5e28a-3957-48e5-9fe1-746ffeb9871d")
 	)
 	(label "AIN5"
-		(at 57.15 171.45 90)
+		(at 58.42 158.75 90)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -5548,7 +5558,7 @@
 		(uuid "2e86cf1d-025c-4141-8716-e54c125da0ba")
 	)
 	(label "AIN2"
-		(at 68.58 171.45 90)
+		(at 69.85 158.75 90)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -5578,7 +5588,7 @@
 		(uuid "3db0637e-a2cd-467d-b0f2-b54e99caadb5")
 	)
 	(label "AIN11"
-		(at 34.29 171.45 90)
+		(at 35.56 158.75 90)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -5648,7 +5658,7 @@
 		(uuid "5ca9fc5a-4ab5-467c-a3da-605c182b2732")
 	)
 	(label "AIN9"
-		(at 41.91 171.45 90)
+		(at 43.18 158.75 90)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -5668,7 +5678,7 @@
 		(uuid "658607bf-b559-4bca-b94c-1119a9f5e7ea")
 	)
 	(label "AIN15"
-		(at 19.05 171.45 90)
+		(at 20.32 158.75 90)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -5678,7 +5688,7 @@
 		(uuid "6647670a-47ee-4309-8850-c1d9a7a0bb42")
 	)
 	(label "AIN13"
-		(at 26.67 171.45 90)
+		(at 27.94 158.75 90)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -5738,7 +5748,7 @@
 		(uuid "835a6236-5c9e-4903-8767-fef2d3940b55")
 	)
 	(label "AIN10"
-		(at 38.1 171.45 90)
+		(at 39.37 158.75 90)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -5748,7 +5758,7 @@
 		(uuid "84da8932-bcfa-4782-892d-ea82543bda2f")
 	)
 	(label "AIN0"
-		(at 76.2 171.45 90)
+		(at 77.47 158.75 90)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -5778,7 +5788,7 @@
 		(uuid "949388c0-ae56-4fab-9c9c-1efc7595f3d0")
 	)
 	(label "AIN12"
-		(at 30.48 171.45 90)
+		(at 31.75 158.75 90)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -5808,7 +5818,7 @@
 		(uuid "a6494f51-2627-461c-a0d3-e79de407912d")
 	)
 	(label "AIN6"
-		(at 53.34 171.45 90)
+		(at 54.61 158.75 90)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -5868,7 +5878,7 @@
 		(uuid "b5c16d7f-a9ca-47bc-a524-8d8a0620c77d")
 	)
 	(label "AIN1"
-		(at 72.39 171.45 90)
+		(at 73.66 158.75 90)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -5888,7 +5898,7 @@
 		(uuid "b9e63301-8257-411a-b9dc-0101a3c3c4ba")
 	)
 	(label "AIN7"
-		(at 49.53 171.45 90)
+		(at 50.8 158.75 90)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -5988,7 +5998,7 @@
 		(uuid "d716e68c-45cf-496d-9708-4050cafe54c1")
 	)
 	(label "AIN8"
-		(at 45.72 171.45 90)
+		(at 46.99 158.75 90)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -6038,7 +6048,7 @@
 		(uuid "f05a64e6-06d7-4ca5-8cd9-5cfbd2affecf")
 	)
 	(label "AIN4"
-		(at 60.96 171.45 90)
+		(at 62.23 158.75 90)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -6048,7 +6058,7 @@
 		(uuid "f312c13d-6916-4a0e-a908-ee1c95f67d5f")
 	)
 	(label "AIN14"
-		(at 22.86 171.45 90)
+		(at 24.13 158.75 90)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -6484,7 +6494,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 64.77 176.53 0)
+		(at 66.04 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6493,7 +6503,7 @@
 		(fields_autoplaced yes)
 		(uuid "0535bcea-2c77-4cc2-950d-66cf40dd4420")
 		(property "Reference" "#PWR0162"
-			(at 64.77 182.88 0)
+			(at 66.04 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6502,7 +6512,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 64.77 181.61 0)
+			(at 66.04 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6511,7 +6521,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 176.53 0)
+			(at 66.04 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6520,7 +6530,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 176.53 0)
+			(at 66.04 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6529,7 +6539,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 64.77 176.53 0)
+			(at 66.04 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7724,7 +7734,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 41.91 173.99 0)
+		(at 43.18 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7732,7 +7742,7 @@
 		(dnp no)
 		(uuid "207face6-5e68-4feb-b518-e65323884876")
 		(property "Reference" "C19"
-			(at 40.132 180.086 0)
+			(at 41.402 167.386 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -7741,7 +7751,7 @@
 			)
 		)
 		(property "Value" "25pF"
-			(at 40.132 181.61 0)
+			(at 41.402 168.91 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -7750,7 +7760,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 41.91 173.99 0)
+			(at 43.18 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7759,7 +7769,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 41.91 173.99 0)
+			(at 43.18 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7768,7 +7778,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 41.91 173.99 0)
+			(at 43.18 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7777,7 +7787,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 41.91 173.99 0)
+			(at 43.18 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7786,7 +7796,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 41.91 175.768 0)
+			(at 43.18 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7795,7 +7805,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 42.164 175.768 0)
+			(at 43.434 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7896,7 +7906,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 53.34 176.53 0)
+		(at 54.61 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7905,7 +7915,7 @@
 		(fields_autoplaced yes)
 		(uuid "2142861f-698c-42db-9d30-1b5f486c9ee1")
 		(property "Reference" "#PWR0165"
-			(at 53.34 182.88 0)
+			(at 54.61 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7914,7 +7924,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.34 181.61 0)
+			(at 54.61 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7923,7 +7933,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 176.53 0)
+			(at 54.61 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7932,7 +7942,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 176.53 0)
+			(at 54.61 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7941,7 +7951,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 53.34 176.53 0)
+			(at 54.61 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7963,7 +7973,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 22.86 173.99 0)
+		(at 24.13 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7971,7 +7981,7 @@
 		(dnp no)
 		(uuid "225b33a8-f1ec-4f4c-8847-41282eb281e6")
 		(property "Reference" "C14"
-			(at 21.082 180.086 0)
+			(at 22.352 167.386 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -7980,7 +7990,7 @@
 			)
 		)
 		(property "Value" "25pF"
-			(at 21.082 181.61 0)
+			(at 22.352 168.91 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -7989,7 +7999,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 22.86 173.99 0)
+			(at 24.13 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7998,7 +8008,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 22.86 173.99 0)
+			(at 24.13 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8007,7 +8017,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 22.86 173.99 0)
+			(at 24.13 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8016,7 +8026,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 22.86 173.99 0)
+			(at 24.13 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8025,7 +8035,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 22.86 175.768 0)
+			(at 24.13 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8034,7 +8044,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 23.114 175.768 0)
+			(at 24.384 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8059,7 +8069,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 68.58 173.99 0)
+		(at 69.85 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8067,7 +8077,7 @@
 		(dnp no)
 		(uuid "266452bb-0f7c-42fd-86d1-c8f67182af9e")
 		(property "Reference" "C26"
-			(at 66.802 180.086 0)
+			(at 68.072 167.386 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -8076,7 +8086,7 @@
 			)
 		)
 		(property "Value" "25pF"
-			(at 66.802 181.61 0)
+			(at 68.072 168.91 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -8085,7 +8095,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 68.58 173.99 0)
+			(at 69.85 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8094,7 +8104,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 68.58 173.99 0)
+			(at 69.85 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8103,7 +8113,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 68.58 173.99 0)
+			(at 69.85 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8112,7 +8122,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 68.58 173.99 0)
+			(at 69.85 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8121,7 +8131,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 68.58 175.768 0)
+			(at 69.85 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8130,7 +8140,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 68.834 175.768 0)
+			(at 70.104 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9469,7 +9479,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 57.15 176.53 0)
+		(at 58.42 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9478,7 +9488,7 @@
 		(fields_autoplaced yes)
 		(uuid "32ed5b85-5d9d-43c9-b9b8-3ebbd1683899")
 		(property "Reference" "#PWR0164"
-			(at 57.15 182.88 0)
+			(at 58.42 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9487,7 +9497,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 57.15 181.61 0)
+			(at 58.42 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9496,7 +9506,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 176.53 0)
+			(at 58.42 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9505,7 +9515,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 176.53 0)
+			(at 58.42 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9514,7 +9524,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 57.15 176.53 0)
+			(at 58.42 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10265,7 +10275,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 64.77 173.99 0)
+		(at 66.04 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10273,7 +10283,7 @@
 		(dnp no)
 		(uuid "4408bcad-1e9c-4423-9aa1-185b595af6a5")
 		(property "Reference" "C25"
-			(at 62.992 180.086 0)
+			(at 64.262 167.386 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -10282,7 +10292,7 @@
 			)
 		)
 		(property "Value" "25pF"
-			(at 62.992 181.61 0)
+			(at 64.262 168.91 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -10291,7 +10301,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 64.77 173.99 0)
+			(at 66.04 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10300,7 +10310,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 64.77 173.99 0)
+			(at 66.04 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10309,7 +10319,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 64.77 173.99 0)
+			(at 66.04 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10318,7 +10328,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 64.77 173.99 0)
+			(at 66.04 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10327,7 +10337,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 64.77 175.768 0)
+			(at 66.04 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10336,7 +10346,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 65.024 175.768 0)
+			(at 66.294 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10361,7 +10371,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 30.48 176.53 0)
+		(at 31.75 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10370,7 +10380,7 @@
 		(fields_autoplaced yes)
 		(uuid "4ef8923f-00bb-4620-b414-9b81085ab806")
 		(property "Reference" "#PWR0171"
-			(at 30.48 182.88 0)
+			(at 31.75 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10379,7 +10389,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 30.48 181.61 0)
+			(at 31.75 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10388,7 +10398,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 176.53 0)
+			(at 31.75 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10397,7 +10407,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 176.53 0)
+			(at 31.75 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10406,7 +10416,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 30.48 176.53 0)
+			(at 31.75 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10597,7 +10607,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 19.05 173.99 0)
+		(at 20.32 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10605,7 +10615,7 @@
 		(dnp no)
 		(uuid "52f338ef-48d6-4fff-b514-3879e4449405")
 		(property "Reference" "C13"
-			(at 17.272 180.086 0)
+			(at 18.542 167.386 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -10614,7 +10624,7 @@
 			)
 		)
 		(property "Value" "25pF"
-			(at 17.272 181.61 0)
+			(at 18.542 168.91 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -10623,7 +10633,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 19.05 173.99 0)
+			(at 20.32 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10632,7 +10642,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 19.05 173.99 0)
+			(at 20.32 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10641,7 +10651,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 19.05 173.99 0)
+			(at 20.32 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10650,7 +10660,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 19.05 173.99 0)
+			(at 20.32 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10659,7 +10669,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 19.05 175.768 0)
+			(at 20.32 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10668,7 +10678,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 19.304 175.768 0)
+			(at 20.574 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10693,7 +10703,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 68.58 176.53 0)
+		(at 69.85 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10702,7 +10712,7 @@
 		(fields_autoplaced yes)
 		(uuid "550a1879-4562-4a92-9540-1ebbab5c4c02")
 		(property "Reference" "#PWR0161"
-			(at 68.58 182.88 0)
+			(at 69.85 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10711,7 +10721,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 68.58 181.61 0)
+			(at 69.85 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10720,7 +10730,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 176.53 0)
+			(at 69.85 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10729,7 +10739,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 176.53 0)
+			(at 69.85 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10738,7 +10748,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 68.58 176.53 0)
+			(at 69.85 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10915,7 +10925,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 19.05 176.53 0)
+		(at 20.32 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10924,7 +10934,7 @@
 		(fields_autoplaced yes)
 		(uuid "56203bf2-b5a5-4338-a8a2-8d32161d93d7")
 		(property "Reference" "#PWR0174"
-			(at 19.05 182.88 0)
+			(at 20.32 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10933,7 +10943,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 19.05 181.61 0)
+			(at 20.32 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10942,7 +10952,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 19.05 176.53 0)
+			(at 20.32 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10951,7 +10961,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 19.05 176.53 0)
+			(at 20.32 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10960,7 +10970,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 19.05 176.53 0)
+			(at 20.32 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11624,7 +11634,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 34.29 173.99 0)
+		(at 35.56 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11632,7 +11642,7 @@
 		(dnp no)
 		(uuid "5cdd95e5-0164-45aa-86a5-b136788df26a")
 		(property "Reference" "C17"
-			(at 32.512 180.086 0)
+			(at 33.782 167.386 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -11641,7 +11651,7 @@
 			)
 		)
 		(property "Value" "25pF"
-			(at 32.512 181.61 0)
+			(at 33.782 168.91 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -11650,7 +11660,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 34.29 173.99 0)
+			(at 35.56 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11659,7 +11669,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 34.29 173.99 0)
+			(at 35.56 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11668,7 +11678,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 34.29 173.99 0)
+			(at 35.56 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11677,7 +11687,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 34.29 173.99 0)
+			(at 35.56 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11686,7 +11696,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 34.29 175.768 0)
+			(at 35.56 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11695,7 +11705,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 34.544 175.768 0)
+			(at 35.814 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11720,7 +11730,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 76.2 173.99 0)
+		(at 77.47 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11728,7 +11738,7 @@
 		(dnp no)
 		(uuid "60f7bf18-463e-4c1f-99a7-8e4cb75a3023")
 		(property "Reference" "C28"
-			(at 74.422 180.086 0)
+			(at 75.692 167.386 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -11737,7 +11747,7 @@
 			)
 		)
 		(property "Value" "25pF"
-			(at 74.422 181.61 0)
+			(at 75.692 168.91 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -11746,7 +11756,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 76.2 173.99 0)
+			(at 77.47 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11755,7 +11765,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 76.2 173.99 0)
+			(at 77.47 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11764,7 +11774,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 76.2 173.99 0)
+			(at 77.47 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11773,7 +11783,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 76.2 173.99 0)
+			(at 77.47 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11782,7 +11792,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 76.2 175.768 0)
+			(at 77.47 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11791,7 +11801,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 76.454 175.768 0)
+			(at 77.724 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11816,7 +11826,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 38.1 173.99 0)
+		(at 39.37 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11824,7 +11834,7 @@
 		(dnp no)
 		(uuid "66fe3a44-4181-48cd-8ba2-9aca8e94d00e")
 		(property "Reference" "C18"
-			(at 36.322 180.086 0)
+			(at 37.592 167.386 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -11833,7 +11843,7 @@
 			)
 		)
 		(property "Value" "25pF"
-			(at 36.322 181.61 0)
+			(at 37.592 168.91 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -11842,7 +11852,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 38.1 173.99 0)
+			(at 39.37 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11851,7 +11861,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 38.1 173.99 0)
+			(at 39.37 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11860,7 +11870,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 38.1 173.99 0)
+			(at 39.37 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11869,7 +11879,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 38.1 173.99 0)
+			(at 39.37 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11878,7 +11888,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 38.1 175.768 0)
+			(at 39.37 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11887,7 +11897,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 38.354 175.768 0)
+			(at 39.624 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12071,7 +12081,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 72.39 173.99 0)
+		(at 73.66 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12079,7 +12089,7 @@
 		(dnp no)
 		(uuid "6c862014-a1df-4310-9fbf-e7adb1e7b6b6")
 		(property "Reference" "C27"
-			(at 70.612 180.086 0)
+			(at 71.882 167.386 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -12088,7 +12098,7 @@
 			)
 		)
 		(property "Value" "25pF"
-			(at 70.612 181.61 0)
+			(at 71.882 168.91 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -12097,7 +12107,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 72.39 173.99 0)
+			(at 73.66 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12106,7 +12116,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 72.39 173.99 0)
+			(at 73.66 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12115,7 +12125,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 72.39 173.99 0)
+			(at 73.66 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12124,7 +12134,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 72.39 173.99 0)
+			(at 73.66 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12133,7 +12143,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 72.39 175.768 0)
+			(at 73.66 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12142,7 +12152,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 72.644 175.768 0)
+			(at 73.914 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12167,7 +12177,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 60.96 173.99 0)
+		(at 62.23 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12175,7 +12185,7 @@
 		(dnp no)
 		(uuid "71513811-a902-4063-9c55-efde6965f252")
 		(property "Reference" "C24"
-			(at 59.182 180.086 0)
+			(at 60.452 167.386 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -12184,7 +12194,7 @@
 			)
 		)
 		(property "Value" "25pF"
-			(at 59.182 181.61 0)
+			(at 60.452 168.91 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -12193,7 +12203,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 60.96 173.99 0)
+			(at 62.23 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12202,7 +12212,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 60.96 173.99 0)
+			(at 62.23 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12211,7 +12221,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 60.96 173.99 0)
+			(at 62.23 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12220,7 +12230,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 60.96 173.99 0)
+			(at 62.23 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12229,7 +12239,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 60.96 175.768 0)
+			(at 62.23 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12238,7 +12248,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 61.214 175.768 0)
+			(at 62.484 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12263,7 +12273,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 60.96 176.53 0)
+		(at 62.23 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12272,7 +12282,7 @@
 		(fields_autoplaced yes)
 		(uuid "72444d13-d66e-4b8f-8c19-b2edadf5b544")
 		(property "Reference" "#PWR0163"
-			(at 60.96 182.88 0)
+			(at 62.23 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12281,7 +12291,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 60.96 181.61 0)
+			(at 62.23 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12290,7 +12300,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 176.53 0)
+			(at 62.23 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12299,7 +12309,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 176.53 0)
+			(at 62.23 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12308,7 +12318,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 176.53 0)
+			(at 62.23 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13119,7 +13129,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 45.72 176.53 0)
+		(at 46.99 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13128,7 +13138,7 @@
 		(fields_autoplaced yes)
 		(uuid "7c782f0d-a9c6-4432-b1c5-f913d875d409")
 		(property "Reference" "#PWR0167"
-			(at 45.72 182.88 0)
+			(at 46.99 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13137,7 +13147,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 45.72 181.61 0)
+			(at 46.99 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13146,7 +13156,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 176.53 0)
+			(at 46.99 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13155,7 +13165,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 176.53 0)
+			(at 46.99 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13164,7 +13174,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 176.53 0)
+			(at 46.99 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14475,7 +14485,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 72.39 176.53 0)
+		(at 73.66 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14484,7 +14494,7 @@
 		(fields_autoplaced yes)
 		(uuid "8df26bfd-7776-4d53-a980-6838b900b303")
 		(property "Reference" "#PWR0159"
-			(at 72.39 182.88 0)
+			(at 73.66 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14493,7 +14503,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 72.39 181.61 0)
+			(at 73.66 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14502,7 +14512,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 176.53 0)
+			(at 73.66 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14511,7 +14521,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 176.53 0)
+			(at 73.66 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14520,7 +14530,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 72.39 176.53 0)
+			(at 73.66 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15141,7 +15151,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 30.48 173.99 0)
+		(at 31.75 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15149,7 +15159,7 @@
 		(dnp no)
 		(uuid "8fe36fb9-698a-4200-9414-2d7d713799ca")
 		(property "Reference" "C16"
-			(at 28.702 180.086 0)
+			(at 29.972 167.386 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -15158,7 +15168,7 @@
 			)
 		)
 		(property "Value" "25pF"
-			(at 28.702 181.61 0)
+			(at 29.972 168.91 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -15167,7 +15177,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 30.48 173.99 0)
+			(at 31.75 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15176,7 +15186,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 173.99 0)
+			(at 31.75 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15185,7 +15195,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 30.48 173.99 0)
+			(at 31.75 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15194,7 +15204,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 30.48 173.99 0)
+			(at 31.75 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15203,7 +15213,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 30.48 175.768 0)
+			(at 31.75 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15212,7 +15222,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 30.734 175.768 0)
+			(at 32.004 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15237,7 +15247,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 57.15 173.99 0)
+		(at 58.42 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15245,7 +15255,7 @@
 		(dnp no)
 		(uuid "9030f8cb-90c9-4ea2-acd2-2350b6649183")
 		(property "Reference" "C23"
-			(at 55.372 180.086 0)
+			(at 56.642 167.386 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -15254,7 +15264,7 @@
 			)
 		)
 		(property "Value" "25pF"
-			(at 55.372 181.61 0)
+			(at 56.642 168.91 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -15263,7 +15273,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 57.15 173.99 0)
+			(at 58.42 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15272,7 +15282,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 173.99 0)
+			(at 58.42 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15281,7 +15291,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 57.15 173.99 0)
+			(at 58.42 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15290,7 +15300,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 57.15 173.99 0)
+			(at 58.42 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15299,7 +15309,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 57.15 175.768 0)
+			(at 58.42 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15308,7 +15318,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 57.404 175.768 0)
+			(at 58.674 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15333,7 +15343,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 38.1 176.53 0)
+		(at 39.37 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15342,7 +15352,7 @@
 		(fields_autoplaced yes)
 		(uuid "91888bf7-9527-4d69-b2ab-723fafe9d5ff")
 		(property "Reference" "#PWR0169"
-			(at 38.1 182.88 0)
+			(at 39.37 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15351,7 +15361,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 38.1 181.61 0)
+			(at 39.37 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15360,7 +15370,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 176.53 0)
+			(at 39.37 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15369,7 +15379,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 176.53 0)
+			(at 39.37 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15378,7 +15388,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 176.53 0)
+			(at 39.37 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17104,7 +17114,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 34.29 176.53 0)
+		(at 35.56 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17113,7 +17123,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a7209a6-3aab-4c9d-bd39-312bee9d7fce")
 		(property "Reference" "#PWR0170"
-			(at 34.29 182.88 0)
+			(at 35.56 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17122,7 +17132,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 34.29 181.61 0)
+			(at 35.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17131,7 +17141,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 34.29 176.53 0)
+			(at 35.56 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17140,7 +17150,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 34.29 176.53 0)
+			(at 35.56 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17149,7 +17159,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 34.29 176.53 0)
+			(at 35.56 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17669,7 +17679,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 26.67 173.99 0)
+		(at 27.94 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17677,7 +17687,7 @@
 		(dnp no)
 		(uuid "9e501e9f-aa2b-4e0a-ba39-943303a02335")
 		(property "Reference" "C15"
-			(at 24.892 180.086 0)
+			(at 26.162 167.386 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -17686,7 +17696,7 @@
 			)
 		)
 		(property "Value" "25pF"
-			(at 24.892 181.61 0)
+			(at 26.162 168.91 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -17695,7 +17705,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 26.67 173.99 0)
+			(at 27.94 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17704,7 +17714,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 26.67 173.99 0)
+			(at 27.94 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17713,7 +17723,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 26.67 173.99 0)
+			(at 27.94 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17722,7 +17732,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 26.67 173.99 0)
+			(at 27.94 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17731,7 +17741,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 26.67 175.768 0)
+			(at 27.94 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17740,7 +17750,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 26.924 175.768 0)
+			(at 28.194 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18263,7 +18273,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 49.53 176.53 0)
+		(at 50.8 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18272,7 +18282,7 @@
 		(fields_autoplaced yes)
 		(uuid "9f5459ee-fe72-4e61-b184-2151106a3fad")
 		(property "Reference" "#PWR0166"
-			(at 49.53 182.88 0)
+			(at 50.8 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18281,7 +18291,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 49.53 181.61 0)
+			(at 50.8 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18290,7 +18300,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 176.53 0)
+			(at 50.8 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18299,7 +18309,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 176.53 0)
+			(at 50.8 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18308,7 +18318,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 49.53 176.53 0)
+			(at 50.8 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19593,7 +19603,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 71.12 156.21 0)
+		(at 106.68 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19602,7 +19612,7 @@
 		(fields_autoplaced yes)
 		(uuid "b003a34b-e84d-4f5a-a662-8718cfb35cc2")
 		(property "Reference" "#PWR0146"
-			(at 71.12 162.56 0)
+			(at 106.68 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19611,7 +19621,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 71.12 161.29 0)
+			(at 106.68 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19620,7 +19630,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 156.21 0)
+			(at 106.68 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19629,7 +19639,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 156.21 0)
+			(at 106.68 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19638,7 +19648,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 71.12 156.21 0)
+			(at 106.68 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19725,7 +19735,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 45.72 173.99 0)
+		(at 46.99 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19733,7 +19743,7 @@
 		(dnp no)
 		(uuid "b22f48cb-36d6-4e0a-ba33-3bd2faac0fc5")
 		(property "Reference" "C20"
-			(at 43.942 180.086 0)
+			(at 45.212 167.386 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -19742,7 +19752,7 @@
 			)
 		)
 		(property "Value" "25pF"
-			(at 43.942 181.61 0)
+			(at 45.212 168.91 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -19751,7 +19761,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 45.72 173.99 0)
+			(at 46.99 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19760,7 +19770,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 45.72 173.99 0)
+			(at 46.99 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19769,7 +19779,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 45.72 173.99 0)
+			(at 46.99 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19778,7 +19788,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 45.72 173.99 0)
+			(at 46.99 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19787,7 +19797,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 45.72 175.768 0)
+			(at 46.99 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19796,7 +19806,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 45.974 175.768 0)
+			(at 47.244 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20439,7 +20449,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 53.34 173.99 0)
+		(at 54.61 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20447,7 +20457,7 @@
 		(dnp no)
 		(uuid "b972f405-0866-4c31-b623-2e504c83b63a")
 		(property "Reference" "C22"
-			(at 51.562 180.086 0)
+			(at 52.832 167.386 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -20456,7 +20466,7 @@
 			)
 		)
 		(property "Value" "25pF"
-			(at 51.562 181.61 0)
+			(at 52.832 168.91 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -20465,7 +20475,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 53.34 173.99 0)
+			(at 54.61 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20474,7 +20484,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 173.99 0)
+			(at 54.61 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20483,7 +20493,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 53.34 173.99 0)
+			(at 54.61 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20492,7 +20502,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 53.34 173.99 0)
+			(at 54.61 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20501,7 +20511,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 53.34 175.768 0)
+			(at 54.61 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20510,7 +20520,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 53.594 175.768 0)
+			(at 54.864 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21130,7 +21140,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 41.91 176.53 0)
+		(at 43.18 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21139,7 +21149,7 @@
 		(fields_autoplaced yes)
 		(uuid "cbdba820-b592-40a0-8929-c6ab3b2e3260")
 		(property "Reference" "#PWR0168"
-			(at 41.91 182.88 0)
+			(at 43.18 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21148,7 +21158,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 41.91 181.61 0)
+			(at 43.18 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21157,7 +21167,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 41.91 176.53 0)
+			(at 43.18 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21166,7 +21176,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 176.53 0)
+			(at 43.18 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21175,7 +21185,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 41.91 176.53 0)
+			(at 43.18 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21197,7 +21207,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 22.86 176.53 0)
+		(at 24.13 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21206,7 +21216,7 @@
 		(fields_autoplaced yes)
 		(uuid "ccc191d0-f51f-4d46-9bb8-7d437a86df47")
 		(property "Reference" "#PWR0173"
-			(at 22.86 182.88 0)
+			(at 24.13 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21215,7 +21225,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 22.86 181.61 0)
+			(at 24.13 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21224,7 +21234,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 22.86 176.53 0)
+			(at 24.13 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21233,7 +21243,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 22.86 176.53 0)
+			(at 24.13 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21242,7 +21252,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 22.86 176.53 0)
+			(at 24.13 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21827,7 +21837,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 26.67 176.53 0)
+		(at 27.94 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21836,7 +21846,7 @@
 		(fields_autoplaced yes)
 		(uuid "da768d6a-5028-490d-98e8-8728557010c2")
 		(property "Reference" "#PWR0172"
-			(at 26.67 182.88 0)
+			(at 27.94 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21845,7 +21855,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 26.67 181.61 0)
+			(at 27.94 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21854,7 +21864,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 176.53 0)
+			(at 27.94 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21863,7 +21873,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 26.67 176.53 0)
+			(at 27.94 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21872,7 +21882,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 26.67 176.53 0)
+			(at 27.94 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23221,7 +23231,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 76.2 176.53 0)
+		(at 77.47 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23230,7 +23240,7 @@
 		(fields_autoplaced yes)
 		(uuid "f42797b9-2694-404d-9d70-6c57b44ed7aa")
 		(property "Reference" "#PWR0156"
-			(at 76.2 182.88 0)
+			(at 77.47 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23239,7 +23249,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 76.2 181.61 0)
+			(at 77.47 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23248,7 +23258,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 176.53 0)
+			(at 77.47 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23257,7 +23267,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 176.53 0)
+			(at 77.47 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23266,7 +23276,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 176.53 0)
+			(at 77.47 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23802,7 +23812,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 49.53 173.99 0)
+		(at 50.8 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23810,7 +23820,7 @@
 		(dnp no)
 		(uuid "f9d47583-a302-4c80-93c4-6e14b0fed7f2")
 		(property "Reference" "C21"
-			(at 47.752 180.086 0)
+			(at 49.022 167.386 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -23819,7 +23829,7 @@
 			)
 		)
 		(property "Value" "25pF"
-			(at 47.752 181.61 0)
+			(at 49.022 168.91 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -23828,7 +23838,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 49.53 173.99 0)
+			(at 50.8 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23837,7 +23847,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 173.99 0)
+			(at 50.8 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23846,7 +23856,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 49.53 173.99 0)
+			(at 50.8 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23855,7 +23865,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 49.53 173.99 0)
+			(at 50.8 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23864,7 +23874,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 49.53 175.768 0)
+			(at 50.8 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23873,7 +23883,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 49.784 175.768 0)
+			(at 51.054 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)

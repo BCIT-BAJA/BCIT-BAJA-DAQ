@@ -17524,6 +17524,523 @@
 			)
 		)
 	)
+	(sheet
+		(at 312.42 11.43)
+		(size 116.84 139.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1865420c-9ca4-4d80-b294-651aa45fc220")
+		(property "Sheetname" "Controller1"
+			(at 312.42 10.3501 0)
+			(effects
+				(font
+					(size 2.0066 2.0066)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Revision01_Controller.kicad_sch"
+			(at 312.42 151.7146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V_NUCLEO" output
+			(at 429.26 19.05 0)
+			(uuid "c620207b-f080-4108-817d-427d6f774dd1")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "+3V3_NUCLEO" output
+			(at 429.26 21.59 0)
+			(uuid "4aa2c827-0032-45b6-b204-d72f7833977a")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PA0/TIM2_CH1/TIM5_CH1/TIM8_ETR/USART2_CTS/OPAMP1_VINP/ADC12_IN5/RTC_TAMP2/WKUP1"
+			bidirectional
+			(at 429.26 92.71 0
+			)
+			(uuid "be385c67-0243-4027-90ef-22eb688734bc")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PA1/TIM2_CH2/TIM5_CH2/USART2_RTS_DE/OPAMP1_VINM/ADC12_IN6" bidirectional
+			(at 429.26 49.53 0)
+			(uuid "bf8bb07c-0d7a-4885-86bb-f4e6a5782b17")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PA4/SPI1_NSS/SPI3_NSS/USART2_CK/ADC12_IN9/DAC1_OUT1" bidirectional
+			(at 429.26 52.07 0)
+			(uuid "75916df6-4ad1-470f-9ec2-7a153b53a673")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PA5_LED2/TIM2_CH1/TIM2_ETR/TIM8_CH1N/SPI1_SCK/ADC12_IN10/DAC1_OUT2"
+			bidirectional
+			(at 429.26 54.61 0
+			)
+			(uuid "e83f38da-9c69-45af-9b41-fc1ac934c37b")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PA6/TIM1_BKIN/TIM3_CH1/TIM8_BKIN/SPI1_MISO/USART3_CTS/OPAMP2_VINP/ADC12_IN11"
+			bidirectional
+			(at 429.26 57.15 0
+			)
+			(uuid "3165781e-15d1-47ce-a34b-c1fa257dfbd5")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PA7/TIM1_CH1N/TIM3_CH2/TIM8_CH1N/SPI1_MOSI/OPAMP2_VINM/ADC12_IN12"
+			bidirectional
+			(at 429.26 59.69 0
+			)
+			(uuid "fbf14c5f-3bac-4188-bfe7-d1cc87523ff2")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PA8/MCO/TIM1_CH1/USART1_CK" bidirectional
+			(at 429.26 62.23 0)
+			(uuid "60fa936f-5e11-4490-a60b-76d36363860e")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PA9/TIM1_CH2/USART1_TX/OTG_FS_VBUS" bidirectional
+			(at 429.26 64.77 0)
+			(uuid "dadfa215-4fdd-4190-b015-c4f15ab0558d")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PA10/TIM1_CH3/USART1_RX" bidirectional
+			(at 429.26 67.31 0)
+			(uuid "ce8be1fb-af46-4d56-871d-976b94b06d85")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PA11/TIM1_CH4/TIM1_BKIN2/USART1_CTS" bidirectional
+			(at 429.26 69.85 0)
+			(uuid "148c2d7f-db9e-4ebf-9096-f7003df55745")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PA12/TIM1_ETR/USART1_RTS_DE" bidirectional
+			(at 429.26 72.39 0)
+			(uuid "2e094a84-16ab-4ef4-ab1f-e0799d9a1448")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PA15{slash}JTDI{slash}TIM2_CH1{slash}TIM2_ETR{slash}SPI1_NSS{slash}SPI3_NSS"
+			bidirectional
+			(at 429.26 74.93 0
+			)
+			(uuid "b76d4d1a-5f79-49f1-968c-57ad19bf98c8")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PB0/TIM1_CH2N/TIM3_CH3/TIM8_CH2N/USART3_CK/OPAMP2_VOUT/ADC12_IN15"
+			bidirectional
+			(at 429.26 77.47 0
+			)
+			(uuid "b143bc73-7183-4b43-ba51-1f2671dfd11f")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PB1/TIM1_CH3N/TIM3_CH4/TIM8_CH3N/DFSDM1_DATIN0/USART3_RTS_DE/COMP1_INM/ADC12_IN16"
+			bidirectional
+			(at 429.26 82.55 0
+			)
+			(uuid "5e702f9f-db21-4109-98db-edabbe934d3a")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PB2/RTC_OUT/LPTIM1_OUT/I2C3_SMBA/DFSDM1_CKIN0/COMP1_INP" bidirectional
+			(at 429.26 85.09 0)
+			(uuid "b3aa5268-49a5-4146-ab66-a35879608939")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PB4/NJTRST/TIM3_CH1/SPI1_MISO/SPI3_MISO/USART1_CTS/COMP2_INP" bidirectional
+			(at 429.26 87.63 0)
+			(uuid "a43f05b1-3079-4a90-8885-9f827d73a55a")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PB5/LPTIM1_IN1/TIM3_CH2/I2C1_SMBA/SPI1_MOSI/SPI3_MOSI/USART1_CK"
+			bidirectional
+			(at 429.26 90.17 0
+			)
+			(uuid "f5d73c97-346f-4ccb-b329-17ff9825a05f")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PB6/LPTIM1_ETR/TIM4_CH1/TIM8_BKIN2/I2C1_SCL/DFSDM1_DATIN5/USART1_TX/COMP2_INP"
+			bidirectional
+			(at 429.26 80.01 0
+			)
+			(uuid "4032cf7e-a0fd-46ee-9ec8-5d965d88483c")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PB7/LPTIM1_IN2/TIM4_CH2/TIM8_BKIN/I2C1_SDA/DFSDM1_CKIN5/USART1_RX/COMP2_INM/PVD_IN"
+			bidirectional
+			(at 429.26 95.25 0
+			)
+			(uuid "f99914ad-a746-460a-a6ca-df4dbb37d6e0")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PB8/TIM4_CH3/I2C1_SCL/DFSDM1_DATIN6" bidirectional
+			(at 429.26 97.79 0)
+			(uuid "770fa0c1-35e0-4f1b-b660-743cf3dde1bb")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PB9/IR_OUT/TIM4_CH4/I2C1_SDA/SPI2_NSS/DFSDM1_CKIN6" bidirectional
+			(at 429.26 100.33 0)
+			(uuid "5e33c3cd-ac7c-4705-80c7-8813b3d86e35")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PB10/TIM2_CH3/I2C2_SCL/SPI2_SCK/DFSDM1_DATIN7/USART3_TX" bidirectional
+			(at 429.26 102.87 0)
+			(uuid "09d8681e-de3a-473f-8d3a-28df2f12d94d")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PB12/TIM1_BKIN/TIM1_BKIN_COMP2/I2C2_SMBA/SPI2_NSS/DFSDM1_DATIN1/USART3_CK"
+			bidirectional
+			(at 429.26 105.41 0
+			)
+			(uuid "1db08d9a-8bb1-4787-94e0-07a02031349f")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PB13/TIM1_CH1N/I2C2_SCL/SPI2_SCK/DFSDM1_CKIN1/USART3_CTS" bidirectional
+			(at 429.26 34.29 0)
+			(uuid "4f786e5c-dbd4-4347-900e-8dcf1a9602c3")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PB14/TIM1_CH2N/TIM8_CH2N/I2C2_SDA/SPI2_MISO/DFSDM1_DATIN2/USART3_RTS_DE"
+			bidirectional
+			(at 429.26 36.83 0
+			)
+			(uuid "cff73ed9-ca08-4540-8215-eb6f59cc4d87")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PB15/RTC_REFIN/TIM1_CH3N/TIM8_CH3N/SPI2_MOSI/DFSDM1_CKIN2" bidirectional
+			(at 429.26 39.37 0)
+			(uuid "e75e9611-8139-4416-9f60-57b280a6b261")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PC0/LPTIM1_IN1/I2C3_SCL/DFSDM1_DATIN4/ADC123_IN1" bidirectional
+			(at 429.26 115.57 0)
+			(uuid "8878cb1c-0aa0-411c-9736-7f1850cb91ef")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PC1/LPTIM1_OUT/I2C3_SDA/DFSDM1_CKIN4/ADC123_IN2" bidirectional
+			(at 429.26 118.11 0)
+			(uuid "f8ae77a6-b301-4d67-b6dc-e4c177203860")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PC2/LPTIM1_IN2/SPI2_MISO/DFSDM1_CKOUT/ADC123_IN3" bidirectional
+			(at 429.26 120.65 0)
+			(uuid "6333a09f-9867-48df-8b3e-544f9bfb97b5")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PC3/LPTIM1_ETR/SPI2_MOSI/ADC123_IN4" bidirectional
+			(at 429.26 123.19 0)
+			(uuid "46f29409-b508-49c2-bbab-a405e21e2fae")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PC4/USART3_TX/COMP1_INM/ADC12_IN13" bidirectional
+			(at 429.26 125.73 0)
+			(uuid "d9db0c8b-b4be-49a9-a070-dc7570820781")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PC5/USART3_RX/COMP1_INP/ADC12_IN14/WKUP5" bidirectional
+			(at 429.26 128.27 0)
+			(uuid "86c9835e-590b-4c31-9308-7b0279b51e13")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PC6/TIM3_CH1/TIM8_CH1/DFSDM1_CKIN3" bidirectional
+			(at 429.26 130.81 0)
+			(uuid "739c8f91-5e0c-438a-b43a-94f4df15cbaa")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PC7/TIM3_CH2/TIM8_CH2/DFSDM1_DATIN3" bidirectional
+			(at 429.26 133.35 0)
+			(uuid "0d48ae7a-606f-4c7a-af40-fd24590659fd")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PC8/TIM3_CH3/TIM8_CH3" bidirectional
+			(at 429.26 135.89 0)
+			(uuid "5410b2c3-e017-4bb1-a945-bc52f2ecb6d1")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PC9/TIM8_BKIN2/TIM3_CH4/TIM8_CH4" bidirectional
+			(at 429.26 138.43 0)
+			(uuid "aaa4cff5-2adc-4015-b63d-b59e329f5c9e")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PC10{slash}SPI3_SCK{slash}USART3_TX" bidirectional
+			(at 429.26 140.97 0)
+			(uuid "9a702cd5-c230-4518-8227-2936622c6353")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PC11/SPI3_MISO/USART3_RX" bidirectional
+			(at 429.26 143.51 0)
+			(uuid "efac5230-03bd-47e2-833b-102265a01057")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PC12{slash}SPI3_MOSI{slash}USART3_CK" bidirectional
+			(at 429.26 146.05 0)
+			(uuid "f2215a6d-e97f-4d56-b2c5-bfbcf60a6e84")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "PD2/TIM3_ETR/USART3_RTS_DE" bidirectional
+			(at 429.26 148.59 0)
+			(uuid "849417d0-7967-4b96-b985-19c0db3db045")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_5V" output
+			(at 429.26 24.13 0)
+			(uuid "fdf51fea-ffcc-4e92-a4c0-9ce56db46c79")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "VIN_5V" output
+			(at 429.26 26.67 0)
+			(uuid "795422c1-6808-438f-8581-740e24ab0345")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "VIN_Max15V" input
+			(at 429.26 29.21 0)
+			(uuid "4e9937d1-7a0b-41ac-a4de-d5985cee6a9a")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
+					(page "4")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

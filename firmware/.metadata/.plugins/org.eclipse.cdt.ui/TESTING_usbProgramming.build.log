@@ -1,0 +1,10 @@
+16:50:30 **** Incremental Build of configuration Debug for project TESTING_usbProgramming ****
+make -j16 all 
+arm-none-eabi-size  TESTING_usbProgramming.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10100	     12	   1572	  11684	   2da4	TESTING_usbProgramming.elf
+Finished building: default.size.stdout
+ 
+
+16:50:30 Build Finished. 0 errors, 0 warnings. (took 366ms)
+

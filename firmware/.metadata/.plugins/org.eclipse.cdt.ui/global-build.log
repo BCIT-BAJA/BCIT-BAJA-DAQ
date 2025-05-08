@@ -1,0 +1,40 @@
+10:51:23 **** Incremental Build of configuration Debug for project proximitySensor ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -I../TOUCHSENSING/App -I../Middlewares/ST/STM32_TouchSensing_Library/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "proximitySensor.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Parry\Documents\GitHub\proximitySensor\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="proximitySensor.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: proximitySensor.elf
+ 
+arm-none-eabi-size  proximitySensor.elf 
+arm-none-eabi-objdump -h -S proximitySensor.elf  > "proximitySensor.list"
+   text	   data	    bss	    dec	    hex	filename
+  17684	     44	   1756	  19484	   4c1c	proximitySensor.elf
+Finished building: default.size.stdout
+ 
+Finished building: proximitySensor.list
+ 
+10:51:37 **** Incremental Build of configuration Debug for project STM32WB55RG ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../TOUCHSENSING/App -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_TouchSensing_Library/inc -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:120:7: warning: implicit declaration of function 'TSC_Handler'; did you mean 'Error_Handler'? [-Wimplicit-function-declaration]
+  120 |       TSC_Handler();
+      |       ^~~~~~~~~~~
+      |       Error_Handler
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:365:6: warning: conflicting types for 'TSC_Handler'; have 'void(void)'
+  365 | void TSC_Handler(void)
+      |      ^~~~~~~~~~~
+../Core/Src/main.c:120:7: note: previous implicit declaration of 'TSC_Handler' with type 'void(void)'
+  120 |       TSC_Handler();
+      |       ^~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32WB55RG.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Parry\Documents\GitHub\BreathingCubeV2\STM32WB55RG\STM32WB55RG\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32WB55RG.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32WB55RG.elf
+ 
+arm-none-eabi-size  STM32WB55RG.elf 
+arm-none-eabi-objdump -h -S STM32WB55RG.elf  > "STM32WB55RG.list"
+   text	   data	    bss	    dec	    hex	filename
+  18880	     44	   2492	  21416	   53a8	STM32WB55RG.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32WB55RG.list
+ 

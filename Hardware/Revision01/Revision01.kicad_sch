@@ -3396,6 +3396,19 @@
 		)
 		(uuid "5faa7b12-2fcb-48b7-9eff-da66a259b942")
 	)
+	(text "PUT MOUNTING HOLE WITH \nCONNECTOR TO GND ON CAR"
+		(exclude_from_sim no)
+		(at 75.438 216.154 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+				(thickness 0.2997)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "8d28e13c-3b4d-4c74-a987-50f0e040e291")
+	)
 	(text "These Mounting holes are M3"
 		(exclude_from_sim no)
 		(at 28.448 268.224 0)
@@ -3481,12 +3494,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3d6d1d5f-423d-4802-81d5-cf195732e436")
-	)
-	(junction
-		(at 66.04 190.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "40d549a4-e801-423b-af38-288eb029bacd")
 	)
 	(junction
 		(at 105.41 88.9)
@@ -3776,7 +3783,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 128.27) (xy 262.89 128.27)
+			(xy 248.92 128.27) (xy 252.73 128.27)
 		)
 		(stroke
 			(width 0)
@@ -3856,6 +3863,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 110.49) (xy 248.92 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d2373d0-8d43-48a4-bd57-3773d71784c0")
+	)
+	(wire
+		(pts
 			(xy 316.23 162.56) (xy 318.77 162.56)
 		)
 		(stroke
@@ -3906,7 +3923,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 120.65) (xy 262.89 120.65)
+			(xy 248.92 120.65) (xy 252.73 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3936,7 +3953,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 190.5) (xy 66.04 190.5)
+			(xy 60.96 184.15) (xy 66.04 184.15)
 		)
 		(stroke
 			(width 0)
@@ -4176,6 +4193,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 115.57) (xy 248.92 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81025fd9-ecc4-4c79-b30d-abf49f3b5420")
+	)
+	(wire
+		(pts
 			(xy 105.41 142.24) (xy 105.41 138.43)
 		)
 		(stroke
@@ -4186,7 +4213,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 123.19) (xy 262.89 123.19)
+			(xy 248.92 123.19) (xy 252.73 123.19)
 		)
 		(stroke
 			(width 0)
@@ -4286,7 +4313,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 125.73) (xy 262.89 125.73)
+			(xy 248.92 125.73) (xy 252.73 125.73)
 		)
 		(stroke
 			(width 0)
@@ -4534,6 +4561,16 @@
 		)
 		(uuid "fbec8100-150a-46ad-869a-aebc3ddfcd07")
 	)
+	(wire
+		(pts
+			(xy 252.73 113.03) (xy 248.92 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fea4e328-5c49-4a6a-99aa-f5d5299a2a84")
+	)
 	(label "ANT_CS_ActiveLow_GPIO"
 		(at 316.23 181.61 180)
 		(effects
@@ -4555,7 +4592,7 @@
 		(uuid "107e62f3-b1cf-4b8e-ae99-22bc4c162e8d")
 	)
 	(label "ANT_IRQ1_GPIO"
-		(at 248.92 113.03 0)
+		(at 252.73 113.03 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4605,7 +4642,7 @@
 		(uuid "49432241-dea5-4ed4-b341-d4195d2ca1fd")
 	)
 	(label "ANT_RESET_ANT_GPIO"
-		(at 248.92 115.57 0)
+		(at 252.73 115.57 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4635,7 +4672,7 @@
 		(uuid "7140456e-1aee-47d9-b3e3-549317525ebc")
 	)
 	(label "PC5_GPIO"
-		(at 60.96 190.5 180)
+		(at 60.96 184.15 180)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -4675,7 +4712,7 @@
 		(uuid "8fc73897-5a94-4fb2-a10c-0e26f955975c")
 	)
 	(label "ANT_CSCON_GPIO"
-		(at 262.89 125.73 0)
+		(at 252.73 125.73 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4695,7 +4732,7 @@
 		(uuid "94a25f11-cb82-4579-a4e7-c68d489c6334")
 	)
 	(label "strainGaugeCS_GPIO"
-		(at 262.89 123.19 0)
+		(at 252.73 123.19 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4705,7 +4742,7 @@
 		(uuid "96948841-d131-489d-aa4c-323331cb5c7e")
 	)
 	(label "ICM_CS_GPIO"
-		(at 262.89 120.65 0)
+		(at 252.73 120.65 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4775,7 +4812,7 @@
 		(uuid "cf18f3f6-83ef-45c5-b693-d766d2b120d2")
 	)
 	(label "ANT_IRQ0_GPIO"
-		(at 248.92 110.49 0)
+		(at 252.73 110.49 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4785,7 +4822,7 @@
 		(uuid "cf3f9351-4e96-46c7-9b7c-5cc5945233ea")
 	)
 	(label "PB15_SPI2_MOSI"
-		(at 316.23 165.1 180)
+		(at 316.23 167.64 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4795,7 +4832,7 @@
 		(uuid "de0f841c-9d4f-4c76-a56a-042a19759d03")
 	)
 	(label "ANT_CS_ActiveLow_GPIO"
-		(at 262.89 128.27 0)
+		(at 252.73 128.27 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4825,7 +4862,7 @@
 		(uuid "f6ef7c24-01ea-421e-ae2e-58d4588499c9")
 	)
 	(label "PB14_SPI2_MISO"
-		(at 316.23 167.64 180)
+		(at 316.23 165.1 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -5758,7 +5795,7 @@
 		(dnp no)
 		(uuid "3a9a17c5-0bf1-4ef3-9926-7f740400e39e")
 		(property "Reference" "D3"
-			(at 63.246 183.896 90)
+			(at 63.754 182.88 90)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -11277,6 +11314,223 @@
 			(project ""
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 35.56 276.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff69b7ca-3ae4-452c-867f-ec8f105ad8c9")
+		(property "Reference" "H4"
+			(at 30.48 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 38.1 278.003 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "~"
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "URL" "~"
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" ""
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM" ""
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM_MPN" ""
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DISTRIB" ""
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FOOTPRINT" ""
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ID" ""
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "INTERNAL_PART_NUMBER" ""
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER P/N" ""
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOLERANCE" ""
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price per unit" ""
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Quantity" ""
+			(at 35.56 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
+					(reference "H4")
 					(unit 1)
 				)
 			)

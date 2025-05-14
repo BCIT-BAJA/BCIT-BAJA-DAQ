@@ -3396,7 +3396,7 @@
 		)
 		(uuid "5faa7b12-2fcb-48b7-9eff-da66a259b942")
 	)
-	(text "PUT MOUNTING HOLE WITH \nCONNECTOR TO GND ON CAR"
+	(text "PUT MOUNTING HOLE CONNECTED TO GND WHICH ATTACHS\nTO EXTERNAL GND ON CAR\n"
 		(exclude_from_sim no)
 		(at 75.438 216.154 0)
 		(effects
@@ -3494,6 +3494,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3d6d1d5f-423d-4802-81d5-cf195732e436")
+	)
+	(junction
+		(at 66.04 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6e71a13d-8874-408a-87d5-2502dd599a23")
 	)
 	(junction
 		(at 105.41 88.9)
@@ -3657,10 +3663,6 @@
 		(at 251.46 140.97)
 		(uuid "eee33745-89f4-4da0-8cac-8c1a1147c955")
 	)
-	(no_connect
-		(at 251.46 130.81)
-		(uuid "f06263b6-66f8-4683-a761-c69927fb6e4f")
-	)
 	(wire
 		(pts
 			(xy 248.92 143.51) (xy 251.46 143.51)
@@ -3673,7 +3675,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 165.1) (xy 318.77 165.1)
+			(xy 298.45 166.37) (xy 300.99 166.37)
 		)
 		(stroke
 			(width 0)
@@ -3823,7 +3825,7 @@
 	)
 	(wire
 		(pts
-			(xy 370.84 185.42) (xy 373.38 185.42)
+			(xy 353.06 186.69) (xy 355.6 186.69)
 		)
 		(stroke
 			(width 0)
@@ -3843,7 +3845,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 167.64) (xy 318.77 167.64)
+			(xy 298.45 168.91) (xy 300.99 168.91)
 		)
 		(stroke
 			(width 0)
@@ -3873,7 +3875,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 162.56) (xy 318.77 162.56)
+			(xy 298.45 163.83) (xy 300.99 163.83)
 		)
 		(stroke
 			(width 0)
@@ -3913,7 +3915,7 @@
 	)
 	(wire
 		(pts
-			(xy 370.84 180.34) (xy 373.38 180.34)
+			(xy 353.06 181.61) (xy 355.6 181.61)
 		)
 		(stroke
 			(width 0)
@@ -3950,16 +3952,6 @@
 			(type default)
 		)
 		(uuid "4a315d12-0932-4ab7-8039-0ba0f5d6b8c6")
-	)
-	(wire
-		(pts
-			(xy 60.96 184.15) (xy 66.04 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b5546e3-c80e-46c8-bb19-c427a2eb4c93")
 	)
 	(wire
 		(pts
@@ -4063,7 +4055,7 @@
 	)
 	(wire
 		(pts
-			(xy 370.84 182.88) (xy 373.38 182.88)
+			(xy 353.06 184.15) (xy 355.6 184.15)
 		)
 		(stroke
 			(width 0)
@@ -4083,7 +4075,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 189.23) (xy 318.77 189.23)
+			(xy 298.45 190.5) (xy 300.99 190.5)
 		)
 		(stroke
 			(width 0)
@@ -4153,7 +4145,17 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 179.07) (xy 318.77 179.07)
+			(xy 60.96 182.88) (xy 66.04 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "795069d7-3a39-423e-bd2c-05214507502c")
+	)
+	(wire
+		(pts
+			(xy 298.45 180.34) (xy 300.99 180.34)
 		)
 		(stroke
 			(width 0)
@@ -4173,7 +4175,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 173.99) (xy 318.77 173.99)
+			(xy 298.45 175.26) (xy 300.99 175.26)
 		)
 		(stroke
 			(width 0)
@@ -4223,7 +4225,7 @@
 	)
 	(wire
 		(pts
-			(xy 370.84 170.18) (xy 372.11 170.18)
+			(xy 353.06 171.45) (xy 354.33 171.45)
 		)
 		(stroke
 			(width 0)
@@ -4253,7 +4255,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 181.61) (xy 318.77 181.61)
+			(xy 298.45 182.88) (xy 300.99 182.88)
 		)
 		(stroke
 			(width 0)
@@ -4273,7 +4275,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 194.31) (xy 318.77 194.31)
+			(xy 298.45 195.58) (xy 300.99 195.58)
 		)
 		(stroke
 			(width 0)
@@ -4293,7 +4295,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 186.69) (xy 318.77 186.69)
+			(xy 298.45 187.96) (xy 300.99 187.96)
 		)
 		(stroke
 			(width 0)
@@ -4423,7 +4425,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 130.81) (xy 251.46 130.81)
+			(xy 248.92 130.81) (xy 252.73 130.81)
 		)
 		(stroke
 			(width 0)
@@ -4503,7 +4505,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 176.53) (xy 318.77 176.53)
+			(xy 298.45 177.8) (xy 300.99 177.8)
 		)
 		(stroke
 			(width 0)
@@ -4553,7 +4555,7 @@
 	)
 	(wire
 		(pts
-			(xy 370.84 172.72) (xy 372.11 172.72)
+			(xy 353.06 173.99) (xy 354.33 173.99)
 		)
 		(stroke
 			(width 0)
@@ -4571,8 +4573,8 @@
 		)
 		(uuid "fea4e328-5c49-4a6a-99aa-f5d5299a2a84")
 	)
-	(label "ANT_CS_ActiveLow_GPIO"
-		(at 316.23 181.61 180)
+	(label "~ANT_CS_GPIO"
+		(at 298.45 182.88 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4582,7 +4584,7 @@
 		(uuid "09e4eb1f-da26-4731-b011-dda7ea144578")
 	)
 	(label "ANT_IRQ1_GPIO"
-		(at 373.38 182.88 0)
+		(at 355.6 184.15 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4590,6 +4592,26 @@
 			(justify left)
 		)
 		(uuid "107e62f3-b1cf-4b8e-ae99-22bc4c162e8d")
+	)
+	(label "USB_5V_GPIO_EN"
+		(at 60.96 182.88 180)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+			(justify right)
+		)
+		(uuid "108e2a3d-8e75-4fb2-8d33-7345f37c055f")
+	)
+	(label "BatteryV_Measurement_ADC12_IN1"
+		(at 298.45 195.58 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "25711cac-137f-44d0-9da3-e88148effd35")
 	)
 	(label "ANT_IRQ1_GPIO"
 		(at 252.73 113.03 0)
@@ -4602,7 +4624,7 @@
 		(uuid "2824da9a-b44f-4833-a0ef-c3ed412971b5")
 	)
 	(label "ANT_RESET_ANT_GPIO"
-		(at 373.38 185.42 0)
+		(at 355.6 186.69 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4612,7 +4634,7 @@
 		(uuid "2ba7fd29-bbf3-4062-a5ac-50896300c389")
 	)
 	(label "ICM_CS_GPIO"
-		(at 316.23 173.99 180)
+		(at 298.45 175.26 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4622,7 +4644,7 @@
 		(uuid "40945544-a591-4f6f-95c5-3e1b4a11179c")
 	)
 	(label "StrainV_Enable_GPIO"
-		(at 316.23 186.69 180)
+		(at 298.45 187.96 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4632,7 +4654,7 @@
 		(uuid "4095cf36-378e-400c-8507-3786065300e2")
 	)
 	(label "ANT_IRQ0_GPIO"
-		(at 373.38 180.34 0)
+		(at 355.6 181.61 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4671,18 +4693,8 @@
 		)
 		(uuid "7140456e-1aee-47d9-b3e3-549317525ebc")
 	)
-	(label "PC5_GPIO"
-		(at 60.96 184.15 180)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify right)
-		)
-		(uuid "726386d7-86c6-48a7-a75e-af6a05d58317")
-	)
 	(label "ICM_INT2_GPIO"
-		(at 372.11 172.72 0)
+		(at 354.33 173.99 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4692,7 +4704,7 @@
 		(uuid "739c2e07-66c8-4e37-ab63-7554fd517ef2")
 	)
 	(label "ICM_INT1_GPIO"
-		(at 372.11 170.18 0)
+		(at 354.33 171.45 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4711,7 +4723,7 @@
 		)
 		(uuid "8fc73897-5a94-4fb2-a10c-0e26f955975c")
 	)
-	(label "ANT_CSCON_GPIO"
+	(label "~ANT_CSCON_GPIO"
 		(at 252.73 125.73 0)
 		(effects
 			(font
@@ -4722,7 +4734,7 @@
 		(uuid "92f957bc-e6c8-4e37-9b7b-dada6301c9bd")
 	)
 	(label "PB13_SPI2_SCK"
-		(at 316.23 162.56 180)
+		(at 298.45 163.83 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4731,7 +4743,7 @@
 		)
 		(uuid "94a25f11-cb82-4579-a4e7-c68d489c6334")
 	)
-	(label "strainGaugeCS_GPIO"
+	(label "~strainGaugeCS_GPIO"
 		(at 252.73 123.19 0)
 		(effects
 			(font
@@ -4762,7 +4774,7 @@
 		(uuid "a5ae125f-95f1-4300-8156-4a5907bc58bd")
 	)
 	(label "BatteryV_Div_Enable_GPIO"
-		(at 316.23 189.23 180)
+		(at 298.45 190.5 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4791,8 +4803,18 @@
 		)
 		(uuid "c2a14849-2ceb-4b97-8d11-b462c93c409a")
 	)
-	(label "strainGaugeCS_GPIO"
-		(at 316.23 176.53 180)
+	(label "USB_5V_GPIO_EN"
+		(at 252.73 130.81 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+			(justify left)
+		)
+		(uuid "c70b9da8-ab69-4524-aace-442c06b832ec")
+	)
+	(label "~strainGaugeCS_GPIO"
+		(at 298.45 177.8 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4822,7 +4844,7 @@
 		(uuid "cf3f9351-4e96-46c7-9b7c-5cc5945233ea")
 	)
 	(label "PB15_SPI2_MOSI"
-		(at 316.23 167.64 180)
+		(at 298.45 168.91 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4831,7 +4853,7 @@
 		)
 		(uuid "de0f841c-9d4f-4c76-a56a-042a19759d03")
 	)
-	(label "ANT_CS_ActiveLow_GPIO"
+	(label "~ANT_CS_GPIO"
 		(at 252.73 128.27 0)
 		(effects
 			(font
@@ -4841,8 +4863,8 @@
 		)
 		(uuid "e8b295a2-8959-4f34-81df-552e8b1a67f3")
 	)
-	(label "ANT_CSCON_GPIO"
-		(at 316.23 179.07 180)
+	(label "~ANT_CSCON_GPIO"
+		(at 298.45 180.34 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -4851,18 +4873,8 @@
 		)
 		(uuid "f29fe55c-cadc-4135-bd60-724d21bb4fa9")
 	)
-	(label "BatteryV_Measurement_ADC12_IN10"
-		(at 316.23 194.31 180)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify right)
-		)
-		(uuid "f6ef7c24-01ea-421e-ae2e-58d4588499c9")
-	)
 	(label "PB14_SPI2_MISO"
-		(at 316.23 165.1 180)
+		(at 298.45 166.37 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -5795,7 +5807,7 @@
 		(dnp no)
 		(uuid "3a9a17c5-0bf1-4ef3-9926-7f740400e39e")
 		(property "Reference" "D3"
-			(at 63.754 182.88 90)
+			(at 68.326 181.356 90)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -11537,7 +11549,7 @@
 		)
 	)
 	(sheet
-		(at 318.77 153.67)
+		(at 300.99 154.94)
 		(size 52.07 46.736)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11553,7 +11565,7 @@
 		)
 		(uuid "00000000-0000-0000-0000-00005eb1de63")
 		(property "Sheetname" "Application"
-			(at 318.77 152.5901 0)
+			(at 300.99 153.8601 0)
 			(effects
 				(font
 					(size 2.0066 2.0066)
@@ -11563,7 +11575,7 @@
 			)
 		)
 		(property "Sheetfile" "Revision01_Application.kicad_sch"
-			(at 318.77 200.9906 0)
+			(at 300.99 202.2606 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11572,7 +11584,7 @@
 			)
 		)
 		(pin "MOSI" input
-			(at 318.77 167.64 180)
+			(at 300.99 168.91 180)
 			(uuid "d7e5a060-eb57-4238-9312-26bc885fc97d")
 			(effects
 				(font
@@ -11582,7 +11594,7 @@
 			)
 		)
 		(pin "SCK" input
-			(at 318.77 162.56 180)
+			(at 300.99 163.83 180)
 			(uuid "901440f4-e2a6-4447-83cc-f58a2b26f5c4")
 			(effects
 				(font
@@ -11592,7 +11604,7 @@
 			)
 		)
 		(pin "MISO" output
-			(at 318.77 165.1 180)
+			(at 300.99 166.37 180)
 			(uuid "2c60448a-e30f-46b2-89e1-a44f51688efc")
 			(effects
 				(font
@@ -11602,7 +11614,7 @@
 			)
 		)
 		(pin "ICM_INT1" output
-			(at 370.84 170.18 0)
+			(at 353.06 171.45 0)
 			(uuid "5de54511-6037-40c3-a5b2-2129f036dfed")
 			(effects
 				(font
@@ -11612,7 +11624,7 @@
 			)
 		)
 		(pin "ICM_INT2" output
-			(at 370.84 172.72 0)
+			(at 353.06 173.99 0)
 			(uuid "24da3297-f3fc-48ef-b2fb-be1f5fca59fc")
 			(effects
 				(font
@@ -11621,18 +11633,8 @@
 				(justify right)
 			)
 		)
-		(pin "ANT_IRQ0" input
-			(at 370.84 180.34 0)
-			(uuid "376b6bf6-fb3b-4d7b-88d5-79f0daa1271b")
-			(effects
-				(font
-					(size 1.4986 1.4986)
-				)
-				(justify right)
-			)
-		)
 		(pin "ANT_RESET" output
-			(at 370.84 185.42 0)
+			(at 353.06 186.69 0)
 			(uuid "180eed91-c7b0-4227-a0dc-b5d749a2696f")
 			(effects
 				(font
@@ -11642,7 +11644,7 @@
 			)
 		)
 		(pin "ANT_IRQ1" output
-			(at 370.84 182.88 0)
+			(at 353.06 184.15 0)
 			(uuid "3bb17ca4-698c-46b1-9060-6f72894a8a35")
 			(effects
 				(font
@@ -11651,28 +11653,8 @@
 				(justify right)
 			)
 		)
-		(pin "strainGaugeCS" input
-			(at 318.77 176.53 180)
-			(uuid "286a7419-59db-41ce-8276-1b0ad77f8a12")
-			(effects
-				(font
-					(size 1.4986 1.4986)
-				)
-				(justify left)
-			)
-		)
-		(pin "ICM_CS" input
-			(at 318.77 173.99 180)
-			(uuid "7439214a-9540-466e-a777-41747100d994")
-			(effects
-				(font
-					(size 1.4986 1.4986)
-				)
-				(justify left)
-			)
-		)
 		(pin "BatteryV_Div_Enable" input
-			(at 318.77 189.23 180)
+			(at 300.99 190.5 180)
 			(uuid "30f0d646-85e4-449b-88f3-f4648ba824ee")
 			(effects
 				(font
@@ -11681,18 +11663,8 @@
 				(justify left)
 			)
 		)
-		(pin "StrainV_Enable" input
-			(at 318.77 186.69 180)
-			(uuid "ef7ae2f2-b57b-421f-86f1-1e70dc698fe2")
-			(effects
-				(font
-					(size 1.4986 1.4986)
-				)
-				(justify left)
-			)
-		)
 		(pin "BatteryV_Measurement" output
-			(at 318.77 194.31 180)
+			(at 300.99 195.58 180)
 			(uuid "718989c2-25b6-4ae0-b9bd-f41b934eba2d")
 			(effects
 				(font
@@ -11701,9 +11673,19 @@
 				(justify left)
 			)
 		)
-		(pin "ANT_CSCON" output
-			(at 318.77 179.07 180)
-			(uuid "90c6d3b6-151f-42b2-a0d9-0625f6c85497")
+		(pin "ANT_IRQ0" output
+			(at 353.06 181.61 0)
+			(uuid "09f7d8c3-cf85-4344-906e-d2e145d3f40c")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify right)
+			)
+		)
+		(pin "~ANT_CSCON" output
+			(at 300.99 177.8 180)
+			(uuid "f274da76-1e89-4490-8c7c-dde8ca610f89")
 			(effects
 				(font
 					(size 1.4986 1.4986)
@@ -11711,9 +11693,39 @@
 				(justify left)
 			)
 		)
-		(pin "ANT_CS_ActiveLow" output
-			(at 318.77 181.61 180)
-			(uuid "a50f2fc0-0ffe-46a1-a9e8-9ff5e3cd0930")
+		(pin "~CS_DATA" output
+			(at 300.99 175.26 180)
+			(uuid "d10b1843-3223-4354-bc0e-afa709002242")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "~ICM_CS" input
+			(at 300.99 180.34 180)
+			(uuid "7eb32c1e-e454-44a3-a671-deeb44fa36d8")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "~strainGaugeCS" input
+			(at 300.99 182.88 180)
+			(uuid "bada71d2-85dd-40dc-a594-0298498d9bc5")
+			(effects
+				(font
+					(size 1.4986 1.4986)
+				)
+				(justify left)
+			)
+		)
+		(pin "~StrainV_Enable" input
+			(at 300.99 187.96 180)
+			(uuid "0b38011c-4160-43db-81ed-d907a00bbd08")
 			(effects
 				(font
 					(size 1.4986 1.4986)

@@ -2438,7 +2438,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "U2"
 				(at 25.4 10.16 0)
 				(effects
 					(font
@@ -2454,7 +2454,7 @@
 					)
 				)
 			)
-			(property "Footprint" "MOD_MRF89XAM9A_MCH"
+			(property "Footprint" "MRF89XAM9AT-antenna:MOD_MRF89XAM9A_MCH"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2475,6 +2475,42 @@
 				)
 			)
 			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Distributor link" "https://www.digikey.ca/en/products/detail/microchip-technology/MRF89XAM9AT-I-RM/10520347?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Supplier_Focus%20Supplier&utm_term=&productid=10520347&utm_content=&utm_id=go_cmp-20282403582_adg-_ad-__dev-c_ext-_prd-10520347_sig-CjwKCAjw-qi_BhBxEiwAkxvbkL1anCtEOgZTHZnwc2xR1OXgP8zKw0z9FnALtF3LaodaGyvZDBLx-RoCnGEQAvD_BwE&gad_source=1&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkL1anCtEOgZTHZnwc2xR1OXgP8zKw0z9FnALtF3LaodaGyvZDBLx-RoCnGEQAvD_BwE&gclsrc=aw.ds"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part Number" "150-MRF89XAM9AT-I/RMDKR-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price per unit" "12.7"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Quantity" "1"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2720,24 +2756,6 @@
 						)
 					)
 				)
-				(pin output line
-					(at 50.8 -7.62 180)
-					(length 7.62)
-					(name "IRQ1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at 50.8 -10.16 180)
 					(length 7.62)
@@ -2767,6 +2785,26 @@
 						)
 					)
 					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "MRF89XAM9AT-I_RM_1_1"
+				(pin input line
+					(at 50.8 -7.62 180)
+					(length 7.62)
+					(name "IRQ1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4054,6 +4092,17 @@
 		)
 		(uuid "2e82550a-69b0-47e3-97a8-ed0e3b30d3f7")
 	)
+	(text "https://www.analog.com/media/en/technical-documentation/data-sheets/2498fg.pdf\nslightly cheaper, can take 5V supply, a bit older\n\n\nhttps://www.analog.com/en/products/ad4115.html - \n10V input, with 5V supply, more expensive, most accurate\n\n\nBoth components do NOT have reference design I can find\n"
+		(exclude_from_sim no)
+		(at 10.414 212.09 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "2edf5612-333f-4eea-97ca-cfa9d69cf27d")
+	)
 	(text "350 Ohm strain gauge\nX 8 times\n"
 		(exclude_from_sim no)
 		(at 62.23 57.912 0)
@@ -4063,16 +4112,6 @@
 			)
 		)
 		(uuid "58c62f2a-4a4d-4d18-a6ce-feeeff9e79f6")
-	)
-	(text "https://www.digikey.ca/en/products/detail/analog-devices-inc/ADA4254ARUZ-R7/11483491\n"
-		(exclude_from_sim no)
-		(at 70.358 205.232 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-		)
-		(uuid "65b67623-7c91-4bd9-ab52-696d820c2c5a")
 	)
 	(text "IMU\n"
 		(exclude_from_sim no)
@@ -4122,9 +4161,9 @@
 		)
 		(uuid "d066270c-9318-4ee3-b996-1db14f25e9ce")
 	)
-	(text "Power calculations:\n\nRtotal = 8/350 = 43.75 Ohm\nItotal = 3.3/43.75 = 75.4mA\nP = 0.249W"
+	(text "Power calculations:\n\nRtotal = 8/350 = 43.75 Ohm\nItotal_3.3V = 3.3/43.75 = 75.4mA\nP = 0.249W\n\nItotal_5V = 5/43.75 = 114mA\nP = 0.569W"
 		(exclude_from_sim no)
-		(at 14.478 69.342 0)
+		(at 12.7 70.104 0)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -4142,6 +4181,17 @@
 			)
 		)
 		(uuid "e68b048e-74a7-471f-a567-577fc569e3a7")
+	)
+	(text "TODO\n\nCHECK RESISTOR RATINGS FOR NEW 5V SOURCE\n\nIMPLEMENT FEEDBACK IN EXCEL SHEET\nADD AND WIRE OUT SCHEMATIC FOR ADC\nBEGIN ROUTING DIFFERENTIAL PAIRS"
+		(exclude_from_sim no)
+		(at -48.514 76.708 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "ebd7c7a3-3c0e-4fe2-8502-b88a9f027596")
 	)
 	(text "Strain Gauge\n"
 		(exclude_from_sim no)
@@ -6551,8 +6601,8 @@
 		)
 		(uuid "ff25f1b0-0d3e-49da-9943-d97cb1072c0d")
 	)
-	(hierarchical_label "ANT_CS_ActiveLow"
-		(shape input)
+	(hierarchical_label "~CS_DATA"
+		(shape output)
 		(at 248.92 39.37 0)
 		(effects
 			(font
@@ -6619,7 +6669,7 @@
 		(uuid "65a78f15-2bb9-43d7-ac2b-191e68c3d53a")
 	)
 	(hierarchical_label "ANT_IRQ1"
-		(shape input)
+		(shape output)
 		(at 248.92 36.83 0)
 		(effects
 			(font
@@ -6675,7 +6725,7 @@
 		)
 		(uuid "9002a20b-f668-4838-abc1-cf0541927cc1")
 	)
-	(hierarchical_label "StrainV_Enable"
+	(hierarchical_label "~StrainV_Enable"
 		(shape input)
 		(at 31.75 39.37 180)
 		(effects
@@ -6697,7 +6747,7 @@
 		)
 		(uuid "ab006f70-c156-4d93-b940-73855f8745cd")
 	)
-	(hierarchical_label "strainGaugeCS"
+	(hierarchical_label "~strainGaugeCS"
 		(shape input)
 		(at 154.94 130.81 0)
 		(effects
@@ -6719,7 +6769,7 @@
 		)
 		(uuid "d0e89908-4400-4c39-b3fb-48713e2a9360")
 	)
-	(hierarchical_label "ICM_CS"
+	(hierarchical_label "~ICM_CS"
 		(shape input)
 		(at 204.47 91.44 180)
 		(effects
@@ -6753,7 +6803,7 @@
 		(uuid "dd01453e-0cb4-41f6-9b0c-89f2fa5ec590")
 	)
 	(hierarchical_label "ANT_IRQ0"
-		(shape input)
+		(shape output)
 		(at 196.85 36.83 180)
 		(effects
 			(font
@@ -6774,7 +6824,7 @@
 		)
 		(uuid "f4adc500-da0b-433c-a66a-cdf4b02c6526")
 	)
-	(hierarchical_label "ANT_CSCON"
+	(hierarchical_label "~ANT_CSCON"
 		(shape output)
 		(at 196.85 34.29 180)
 		(effects

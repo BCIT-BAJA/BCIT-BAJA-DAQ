@@ -6709,16 +6709,6 @@
 		)
 		(uuid "aa9099b3-4cba-4478-8ce2-4eebb21cb7d0")
 	)
-	(text "FLA of circuit is about 190mA.\n"
-		(exclude_from_sim no)
-		(at 58.166 76.454 0)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-		)
-		(uuid "b142c24d-f9e4-4054-b43c-2f3a2e6cd3d8")
-	)
 	(text "VDD <Bead> <SB57> AVDD"
 		(exclude_from_sim no)
 		(at 177.8 123.19 0)
@@ -6743,21 +6733,24 @@
 	)
 	(text "Battery specifications:\n1.5V-4V\n4 CELL BATTERY\n\nso total range is 6-16V"
 		(exclude_from_sim no)
-		(at 38.608 91.694 0)
+		(at 26.924 94.742 0)
 		(effects
 			(font
-				(size 1.4986 1.4986)
+				(size 0.889 0.889)
 			)
 		)
 		(uuid "c6d19008-0c9d-4fee-9a6d-ea6abfde3d40")
 	)
-	(text "250mA 24V e-fuse\n\n\nMay want to get another fuse with lower\nratings, as I was worried of false triggers\n"
+	(text "24V e-fuse\n250mA CTS CURRENT\n550mA trip\n\nFLA of circuit:\n\nPurpose: Protects human, \nbecause death looks bad on resume\n"
 		(exclude_from_sim no)
-		(at 54.102 81.28 0)
+		(at 36.83 80.772 0)
 		(effects
 			(font
-				(size 0.635 0.635)
+				(size 0.889 0.889)
+				(thickness 0.127)
+				(bold yes)
 			)
+			(justify left)
 		)
 		(uuid "c9acc3a8-7bb7-48b9-9d66-effb147449ef")
 	)
@@ -6952,10 +6945,6 @@
 	(no_connect
 		(at 238.76 135.89)
 		(uuid "413be455-f47c-456e-af89-33df664c08ce")
-	)
-	(no_connect
-		(at 193.04 151.13)
-		(uuid "4e0f0442-44ee-4db1-9505-7a1d93e70a5e")
 	)
 	(no_connect
 		(at 195.58 77.47)
@@ -8600,6 +8589,16 @@
 			(justify left bottom)
 		)
 		(uuid "d2aad7a9-f3f0-40d4-99ee-09fff2227958")
+	)
+	(label "Vref+"
+		(at 193.04 151.13 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "d445c46f-3174-499d-b692-174ac9a16b4d")
 	)
 	(label "PH0/OSC_IN"
 		(at 152.4 92.71 0)
@@ -13933,16 +13932,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Housing")
-		(at 25.4 71.12 0)
+		(at 22.86 63.5 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "97217d01-bff3-4609-ba0e-02886d5621b1")
 		(property "Reference" "N1"
-			(at 29.21 70.1674 0)
+			(at 26.67 62.5474 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13951,7 +13949,7 @@
 			)
 		)
 		(property "Value" "Battery Holder"
-			(at 29.21 72.7074 0)
+			(at 26.67 65.0874 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13960,7 +13958,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 69.85 0)
+			(at 24.13 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13969,7 +13967,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 26.67 69.85 0)
+			(at 24.13 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13978,7 +13976,7 @@
 			)
 		)
 		(property "Description" "Housing"
-			(at 25.4 71.12 0)
+			(at 22.86 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13987,7 +13985,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/seeed-technology-co-ltd/114090052/10451909?s=N4IgTCBcDaIDoBcAEAhAggFQ0gEgeQBkARAUQCUkBGADgDYBWABiQBYkBhEggpAktIgGUQAXQC%2BQA"
-			(at 25.4 71.12 0)
+			(at 22.86 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13996,7 +13994,7 @@
 			)
 		)
 		(property "Manufacturer" "Seeed Technology Co., Ltd"
-			(at 25.4 71.12 0)
+			(at 22.86 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14005,7 +14003,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "114090052"
-			(at 25.4 71.12 0)
+			(at 22.86 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14014,7 +14012,7 @@
 			)
 		)
 		(property "Price per unit" "2.19"
-			(at 25.4 71.12 0)
+			(at 22.86 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14023,7 +14021,7 @@
 			)
 		)
 		(property "Quantity" "1"
-			(at 25.4 71.12 0)
+			(at 22.86 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)

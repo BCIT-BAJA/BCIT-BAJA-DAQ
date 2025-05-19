@@ -8,3 +8,8 @@ fp-lib-table
 /Hardware/pcb-stm32wl/_autosave-stm32wl.kicad_sch
 /Hardware/pcb-stm32wl/#auto_saved_files#
 *.kicad_sch-bak
+
+# Ignore large LTspice output files
+*.raw
+*.log
+*.plt

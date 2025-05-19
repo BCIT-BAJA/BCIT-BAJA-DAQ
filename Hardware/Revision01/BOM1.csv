@@ -1,7 +1,7 @@
 Value,Reference,Manufacturer,Manufacturer Part Number,Distributor link,Price per unit,Qty,
 Battery,"BT1,BT2,BT3,BT4",,,https://www.aliexpress.com/item/1005005859082063.html?spm=a2g0o.productlist.main.1.1df5jx7ljx7lIi&algo_pvid=285806a0-1c6c-4173-9bfc-c3eb5fdcf159&algo_exp_id=285806a0-1c6c-4173-9bfc-c3eb5fdcf159-0&pdp_ext_f=%7B%22order%22%3A%2265%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21CAD%2165.20%2142.38%21%21%2144.16%2128.71%21%40%2112000034645083199%21sea%21CA%213114729883%21X&curPageLogUid=6vDQujQCxMPw&utparam-url=scene%3Asearch%7Cquery_from%3A,5.6725,4,22.69
 10nF,"C1,C2,C4,C5,C6,C13,C14,C15",,C0805C103J3GECAUTO,https://www.digikey.ca/en/products/detail/kemet/C0805C103J3GECAUTO/8647361,0.247,8,1.976
-10uF,"C3,C10,C46,C47",,CL31B106KAHNNNE,https://www.digikey.ca/en/products/detail/murata-electronics/GRM155R71C104KA88J/2610892,4,4,16
+10uF,"C3,C10,C46,C47",,CL31B106KAHNNNE,https://www.digikey.ca/en/products/detail/murata-electronics/GRM155R71C104KA88J/2610892,0.15,4,0.6
 ,,,,,,,0
 0.1uF,"C7,C8,C9,C12,C17,C18,C19,C20,C21",Murata Electronics,"CC0805JRNPO9BN250,GCM155R71C104KA55J","https://www.digikey.ca/en/products/detail/murata-electronics/GCM155R71C104KA55J/2591252,https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044",0.043,9,0.387
 100uF,C11,,GRM31CR61A107MEA8L,https://www.digikey.ca/en/products/detail/murata-electronics/GRM31CR61A107MEA8L/16033775,0.72,1,0.72
@@ -14,7 +14,7 @@ Polyfuse_Small,F3,Littelfuse Inc.,1812L014DR,https://www.digikey.ca/en/products/
 Fiducial,"FID1,FID3",,,,,2,0
 MountingHole_Pad_MP,"H5,H6,H7,H8,H9",,,,,5,0
 Battery connector,J1,,B2B-PH-K-S,https://www.digikey.ca/en/products/detail/jst-sales-america-inc/B2B-PH-K-S/926611?utm_source=chatgpt.com,0.18,1,0.18
-StrainConn,"J2,J3,J4,J5,J6,J7,J8,J9",Würth Elektronik,6.91138E+11,https://www.digikey.ca/en/products/detail/w-rth-elektronik/691137710003/6644052?gad_source=1&gad_campaignid=19908957344&gbraid=0AAAAADrbLljCdYpa1-0cHUoNv0IbjWDmn&gclid=CjwKCAjw56DBBhAkEiwAaFsG-pR-dF3_ijIpWVXm_dcaRN9GoRUwuFHoA1T9jlMmxpQfm0rzGZDbphoCMpMQAvD_BwE&gclsrc=aw.ds,,8,0
+StrainConn,"J2,J3,J4,J5,J6,J7,J8,J9",Würth Elektronik,6.91E+11,https://www.digikey.ca/en/products/detail/w-rth-elektronik/691137710003/6644052?gad_source=1&gad_campaignid=19908957344&gbraid=0AAAAADrbLljCdYpa1-0cHUoNv0IbjWDmn&gclid=CjwKCAjw56DBBhAkEiwAaFsG-pR-dF3_ijIpWVXm_dcaRN9GoRUwuFHoA1T9jlMmxpQfm0rzGZDbphoCMpMQAvD_BwE&gclsrc=aw.ds,,8,0
 Jumper_3_Bridged12,JP2,,,,,1,0
 1uH,L1,TDK Corporation,MLP2012S1R0MT0S1,https://www.digikey.ca/en/products/detail/tdk-corporation/MLP2012S1R0MT0S1/2465121,0.36,1,0.36
 Battery Holder,N1,"Seeed Technology Co., Ltd",114090052,https://www.digikey.ca/en/products/detail/seeed-technology-co-ltd/114090052/10451909?s=N4IgTCBcDaIDoBcAEAhAggFQ0gEgeQBkARAUQCUkBGADgDYBWABiQBYkBhEggpAktIgGUQAXQC%2BQA,2.19,1,2.19
@@ -48,4 +48,4 @@ TLV9062IDSGR,U1,,TLV9062IDSGR,https://www.mouser.ca/ProductDetail/Texas-Instrume
 200K,R28,,AC0805FR-07200KL,https://www.mouser.ca/ProductDetail/YAGEO/AC0805FR-07200KL?qs=yhV1fb9g%2FKbw5hOmSj8rUw%3D%3D,0.078,10,0.78
 100K,R29,,AC0805FR-07100KL,https://www.mouser.ca/ProductDetail/YAGEO/AC0805FR-07100KL?qs=yhV1fb9g%2FKaVZiBVfcTXyg%3D%3D,0.119,10,1.19
 ,,,,,,,
-,,,,,,,212.927
+,,,,,,,197.527

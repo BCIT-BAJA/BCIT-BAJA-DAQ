@@ -1,0 +1,30 @@
+B59807A0090A062
+CreateFootprintInLib, THRMC3225X180N, 
+CreateRectangularSMD, -1.5, 0, 2.7, 1.15, 0, 1, 0, 90
+CreateRectangularSMD, 1.5, 0, 2.7, 1.15, 0, 2, 0, 90
+CreateCourtyardLine, -2.325, 1.6, 2.325, 1.6, 0.05
+CreateCourtyardLine, 2.325, 1.6, 2.325, -1.6, 0.05
+CreateCourtyardLine, 2.325, -1.6, -2.325, -1.6, 0.05
+CreateCourtyardLine, -2.325, -1.6, -2.325, 1.6, 0.05
+CreateAssemblyLine, -1.6, 1.25, 1.6, 1.25, 0.1
+CreateAssemblyLine, 1.6, 1.25, 1.6, -1.25, 0.1
+CreateAssemblyLine, 1.6, -1.25, -1.6, -1.25, 0.1
+CreateAssemblyLine, -1.6, -1.25, -1.6, 1.25, 0.1
+CreateSilkscreenLine, 0, 1.15, 0, -1.15, 0.2
+AssignSTEPmodel, B59807A0090A062.stp, 90, 0, 90, 0, 0, 0.009999999776482582
+CreateComponentInLib, B59807A0090A062, Thermistor, RT?
+DrawRectangle, 200, 50, 500, -50, 0.1
+CreateLeftPin, 200, 0, 1, 1, 200, 4, 0
+CreateRightPin, 500, 0, 2, 2, 200, 4, 0
+DrawLine2, 220, -80, 280, -80, 0.1
+DrawLine2, 420, 80, 280, -80, 0.1
+AddParameter, Description, PTC Thermistors for Overcurrent Protection, Max. operating voltage=265V, Rated resistance=400?
+AddParameter, Datasheet Link, https://product.tdk.com/system/files/dam/doc/product/protection/current/ptc-thermistor/data_sheet/55/db/ptc/ptc_oc_smd_0402_0603_1210_24v_230v.pdf
+AddParameter, Height, 1.8mm
+AddParameter, Manufacturer_Name, TDK
+AddParameter, Manufacturer_Part_Number, B59807A0090A062
+AddParameter, Mouser Part Number, 871-B59807A0090A062
+AddParameter, Mouser Price/Stock, https://www.mouser.co.uk/ProductDetail/EPCOS-TDK/B59807A0090A062?qs=MD70nW2XBGixQRCh%252B1eu8g%3D%3D
+AddParameter, Arrow Part Number, B59807A0090A062
+AddParameter, Arrow Price/Stock, https://www.arrow.com/en/products/b59807a0090a062/tdk?utm_currency=USD&region=europe
+AssignFootprint, THRMC3225X180N, (1:1),(2:2)

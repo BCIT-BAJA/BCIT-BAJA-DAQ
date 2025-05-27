@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.3
+          "min_clearance": 0.15
         }
       },
       "diff_pair_dimensions": [
@@ -205,7 +205,8 @@
         0.2,
         0.3,
         0.5,
-        1.0
+        1.0,
+        2.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -239,36 +240,16 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.45,
-          "drill": 0.3
-        },
-        {
-          "diameter": 0.55,
-          "drill": 0.3
-        },
-        {
-          "diameter": 0.6,
-          "drill": 0.3
+          "diameter": 0.65,
+          "drill": 0.25
         },
         {
           "diameter": 0.7,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.9,
           "drill": 0.4
-        },
-        {
-          "diameter": 0.75,
-          "drill": 0.45
-        },
-        {
-          "diameter": 0.85,
-          "drill": 0.5
-        },
-        {
-          "diameter": 1.0,
-          "drill": 0.6
-        },
-        {
-          "diameter": 1.2,
-          "drill": 0.8
         }
       ],
       "zones_allow_external_fillets": false,
@@ -551,7 +532,7 @@
         "microvia_drill": 0.1,
         "name": "100Ohm",
         "pcb_color": "rgb(255, 0, 255)",
-        "priority": 4,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1397,
         "via_diameter": 0.8,
@@ -562,16 +543,22 @@
         "bus_width": 12,
         "name": "AIN",
         "pcb_color": "rgb(221, 133, 0)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgb(255, 153, 0)",
         "wire_width": 6
+      },
+      {
+        "name": "GND",
+        "pcb_color": "rgb(132, 132, 132)",
+        "priority": 0,
+        "schematic_color": "rgb(0, 0, 0)"
       },
       {
         "bus_width": 12,
         "line_style": 0,
         "name": "GPIO",
         "pcb_color": "rgb(0, 194, 0)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgb(0, 194, 0)",
         "wire_width": 6
       },
@@ -585,7 +572,7 @@
         "microvia_drill": 0.1,
         "name": "PWR",
         "pcb_color": "rgb(255, 0, 0)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgb(255, 0, 0)",
         "track_width": 0.1397,
         "via_diameter": 0.8,
@@ -602,7 +589,7 @@
         "microvia_drill": 0.1,
         "name": "SPI",
         "pcb_color": "rgb(0, 0, 255)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgb(0, 0, 255)",
         "track_width": 0.1397,
         "via_diameter": 0.8,
@@ -631,6 +618,10 @@
       {
         "netclass": "AIN",
         "pattern": ".*AIN.*"
+      },
+      {
+        "netclass": "GND",
+        "pattern": ".*GND*"
       }
     ]
   },
@@ -642,7 +633,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Revision01.step",
       "svg": "",
       "vrml": ""
     },

@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.15
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -205,8 +205,7 @@
         0.2,
         0.3,
         0.5,
-        1.0,
-        2.0
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -240,16 +239,36 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.65,
-          "drill": 0.25
-        },
-        {
-          "diameter": 0.7,
+          "diameter": 0.45,
           "drill": 0.3
         },
         {
-          "diameter": 0.9,
+          "diameter": 0.55,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.7,
           "drill": 0.4
+        },
+        {
+          "diameter": 0.75,
+          "drill": 0.45
+        },
+        {
+          "diameter": 0.85,
+          "drill": 0.5
+        },
+        {
+          "diameter": 1.0,
+          "drill": 0.6
+        },
+        {
+          "diameter": 1.2,
+          "drill": 0.8
         }
       ],
       "zones_allow_external_fillets": false,
@@ -532,7 +551,7 @@
         "microvia_drill": 0.1,
         "name": "100Ohm",
         "pcb_color": "rgb(255, 0, 255)",
-        "priority": 5,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1397,
         "via_diameter": 0.8,
@@ -543,22 +562,16 @@
         "bus_width": 12,
         "name": "AIN",
         "pcb_color": "rgb(221, 133, 0)",
-        "priority": 1,
+        "priority": 0,
         "schematic_color": "rgb(255, 153, 0)",
         "wire_width": 6
-      },
-      {
-        "name": "GND",
-        "pcb_color": "rgb(132, 132, 132)",
-        "priority": 0,
-        "schematic_color": "rgb(0, 0, 0)"
       },
       {
         "bus_width": 12,
         "line_style": 0,
         "name": "GPIO",
         "pcb_color": "rgb(0, 194, 0)",
-        "priority": 4,
+        "priority": 3,
         "schematic_color": "rgb(0, 194, 0)",
         "wire_width": 6
       },
@@ -572,7 +585,7 @@
         "microvia_drill": 0.1,
         "name": "PWR",
         "pcb_color": "rgb(255, 0, 0)",
-        "priority": 2,
+        "priority": 1,
         "schematic_color": "rgb(255, 0, 0)",
         "track_width": 0.1397,
         "via_diameter": 0.8,
@@ -589,7 +602,7 @@
         "microvia_drill": 0.1,
         "name": "SPI",
         "pcb_color": "rgb(0, 0, 255)",
-        "priority": 3,
+        "priority": 2,
         "schematic_color": "rgb(0, 0, 255)",
         "track_width": 0.1397,
         "via_diameter": 0.8,
@@ -618,10 +631,6 @@
       {
         "netclass": "AIN",
         "pattern": ".*AIN.*"
-      },
-      {
-        "netclass": "GND",
-        "pattern": ".*GND*"
       }
     ]
   },
@@ -633,7 +642,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "Revision01.step",
+      "step": "",
       "svg": "",
       "vrml": ""
     },
@@ -679,6 +688,12 @@
           "label": "Footprint",
           "name": "Footprint",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": false
         },
         {
           "group_by": false,
@@ -768,7 +783,7 @@
           "group_by": false,
           "label": "MANUFACTURER_PART_NUMBER",
           "name": "MANUFACTURER_PART_NUMBER",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -808,8 +823,8 @@
         },
         {
           "group_by": false,
-          "label": "Qty",
-          "name": "${QUANTITY}",
+          "label": "Quantity",
+          "name": "Quantity",
           "show": true
         },
         {
@@ -880,8 +895,14 @@
         },
         {
           "group_by": false,
-          "label": "Sim.Device",
-          "name": "Sim.Device",
+          "label": "Sim.Name",
+          "name": "Sim.Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
           "show": false
         },
         {
@@ -892,14 +913,8 @@
         },
         {
           "group_by": false,
-          "label": "Sim.Name",
-          "name": "Sim.Name",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
+          "label": "Sim.Device",
+          "name": "Sim.Device",
           "show": false
         }
       ],
@@ -907,8 +922,8 @@
       "group_symbols": true,
       "include_excluded_from_bom": false,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Value"
+      "sort_asc": false,
+      "sort_field": "Price per unit"
     },
     "connection_grid_size": 50.0,
     "drawing": {

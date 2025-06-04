@@ -5084,23 +5084,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 6.35 0)
+			(property "Reference" "SW1"
+				(at -1.2701 6.35 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "SW_SPST_LED"
-				(at 0 -3.81 0)
+			(property "Value" "ON/OFF_SW_SPST_LED"
+				(at 1.2699 6.35 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 				(at 0 7.62 0)
 				(effects
 					(font
@@ -5109,7 +5111,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6662/432_V%20Datasheet.pdf"
 				(at 0 -6.35 0)
 				(effects
 					(font
@@ -5125,6 +5127,184 @@
 						(size 1.27 1.27)
 					)
 					(hide yes)
+				)
+			)
+			(property "Distributor Link" "https://www.digikey.ca/en/products/detail/carling-technologies/V2D2S00B-GZCAD-100-XACT1/11481760"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Distributor link" "https://www.digikey.ca/en/products/detail/carling-technologies/V2D2S00B-GZCAD-100-XACT1/11481760"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "FOOTPRINT" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ID" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "INTERNAL_PART_NUMBER" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER P/N" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER_PART_NUMBER" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "TOLERANCE" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part Number" "V2D2S00B-GZCAD-100-XACT1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price per unit" "7.88"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Availability" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Check_prices" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description_1" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MF" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MP" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "PARTREV" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Package" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Price" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "SNAPEDA_PACKAGE_ID" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "STANDARD" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "SnapEDA_Link" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
 			(property "ki_keywords" "switch SPST LED OFF-ON"
@@ -5260,14 +5440,14 @@
 				(pin passive line
 					(at -5.08 2.54 0)
 					(length 2.54)
-					(name "1"
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5278,14 +5458,14 @@
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
-					(name "K"
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5314,14 +5494,14 @@
 				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
-					(name "A"
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6090,7 +6270,7 @@
 		)
 		(uuid "e0b6b6fd-7162-4fab-90d2-788231c1cff8")
 	)
-	(text "\nSPI/CANBUS header added as backup plan\nPull-down for ADC added, to detect if strain gets disconnected\n2 CONNECTORS ADDED  for debugger on NUCLEO(as not included in footprint)"
+	(text "Small details on PART B, restarting component placement on PART A\n\nSPI/CANBUS header added as backup plan\nPull-down for ADC added, to detect if strain gets disconnected\n2 CONNECTORS ADDED  for debugger on NUCLEO(as not included in footprint)"
 		(exclude_from_sim no)
 		(at -85.344 102.108 0)
 		(effects
@@ -6132,16 +6312,16 @@
 		(uuid "39c9d073-2dff-476f-9a22-8c70623a78bf")
 	)
 	(junction
+		(at 67.31 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d138779-270f-4639-89c6-9ebfd6040bac")
+	)
+	(junction
 		(at 39.37 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "81756e17-a3f7-4542-a1f2-8ab6cd56a959")
-	)
-	(junction
-		(at 67.31 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "91ca2b21-2303-4d70-a5a0-467d60b255f5")
 	)
 	(junction
 		(at 67.31 109.22)
@@ -6166,12 +6346,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d8a4bd1b-548a-4075-90b2-71cdce17b913")
-	)
-	(junction
-		(at 67.31 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e3c57e30-146b-4e46-925b-54ee0fc89aba")
 	)
 	(junction
 		(at 93.98 276.86)
@@ -6345,6 +6519,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 95.25) (xy 67.31 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fe374a5-41ce-4ced-acbf-7ce72339df47")
+	)
+	(wire
+		(pts
 			(xy 227.33 102.87) (xy 228.6 102.87)
 		)
 		(stroke
@@ -6515,16 +6699,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 95.25) (xy 67.31 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42063681-fd29-4b5f-a9b6-369ace0a62c4")
-	)
-	(wire
-		(pts
 			(xy 31.75 119.38) (xy 39.37 119.38)
 		)
 		(stroke
@@ -6612,16 +6786,6 @@
 			(type default)
 		)
 		(uuid "62c26da5-a1ac-4dc2-9d81-e128c4232bd5")
-	)
-	(wire
-		(pts
-			(xy 64.77 105.41) (xy 67.31 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63fc8a60-35a5-4bbd-bc0c-30c52da29208")
 	)
 	(wire
 		(pts
@@ -8952,6 +9116,73 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 64.77 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c3a5cb8-28ff-4bdd-ad39-21d530f8eceb")
+		(property "Reference" "#PWR071"
+			(at 64.77 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 64.77 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "82c7ffd8-8bd7-432e-8c85-8877f8409b1a")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)

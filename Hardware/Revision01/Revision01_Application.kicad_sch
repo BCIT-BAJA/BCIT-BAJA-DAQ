@@ -981,30 +981,32 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ICM-45605-gyroscope:ICM-45605"
+		(symbol "MPU6500:MPU-6500"
 			(pin_names
 				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U4"
-				(at 0 22.86 0)
+			(property "Reference" "U"
+				(at -12.7 19.05 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
-			(property "Value" "ICM-45605"
-				(at 0 20.32 0)
+			(property "Value" "MPU-6500"
+				(at -12.7 -19.05 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Footprint" "ICM-45605:XDCR_ICM-45605"
+			(property "Footprint" "MPU-6500:QFN40P300X300X95-25N"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1032,17 +1034,7 @@
 					(hide yes)
 				)
 			)
-			(property "PARTREV" "1.0"
-				(at -4.826 31.75 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "Manufacturer Recommendations"
+			(property "SNAPEDA_PACKAGE_ID" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1052,8 +1044,248 @@
 					(hide yes)
 				)
 			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "0.86mm"
-				(at -3.048 27.94 0)
+			(property "B_NOM" "0.2"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "EMAX" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "VACANCIES" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "BALL_COLUMNS" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PIN_COUNT_D" "6.0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "THERMAL_PAD" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "DMAX" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "B_MAX" "0.25"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "EMIN" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "JEDEC" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "ENOM" "0.4"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "D_NOM" "3.0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "D_MAX" "3.1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "L_MAX" "0.25"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PACKAGE_TYPE" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "E2_NOM" "1.54"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "D2_NOM" "1.7"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "1.3"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "DNOM" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "DMIN" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "E_NOM" "3.0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "BALL_ROWS" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "B_MIN" "0.15"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "IPC 7351B"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "L_NOM" "0.3"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1063,7 +1295,7 @@
 				)
 			)
 			(property "MANUFACTURER" "TDK InvenSense"
-				(at -0.508 24.384 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1072,61 +1304,110 @@
 					(hide yes)
 				)
 			)
-			(property "Distributor link" "https://www.digikey.ca/en/products/detail/tdk-invensense/ICM-45605/24883424?_gl=1*m2llvq*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwnPS-BhBxEiwAZjMF0sZkpcV-zZfxWN_VXS3o9X93L80cpqtbKZ-XTpLZQtt6KBMVqUK9eRoCm7oQAvD_BwE&gclsrc=aw.ds"
-				(at -1.778 -26.67 0)
+			(property "IPC" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Manufacturer Part Number" "ICM-45605 "
+			(property "PIN_COLUMNS" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Manufacturer" "TDK InvenSense"
+			(property "MAXIMUM_PACKAGE_HEIGHT" "0.95 mm"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "DNM" ""
+			(property "PIN_COUNT_E" "6.0"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
+					(hide yes)
 				)
 			)
-			(property "ALT_MPN" ""
+			(property "BODY_DIAMETER" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
+					(hide yes)
 				)
 			)
-			(property "DNM_MPN" ""
+			(property "E_MIN" "2.9"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
+					(hide yes)
 				)
 			)
-			(symbol "ICM-45605_0_0"
+			(property "D_MIN" "2.9"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PINS" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "L_MIN" "0.15"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "E_MAX" "3.1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "MPU-6500_0_0"
 				(rectangle
-					(start -25.4 17.78)
-					(end 25.4 -15.24)
+					(start -12.7 -17.78)
+					(end 12.7 17.78)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1135,35 +1416,17 @@
 						(type background)
 					)
 				)
-				(pin bidirectional line
-					(at -30.48 5.08 0)
+				(pin input line
+					(at -17.78 7.62 0)
 					(length 5.08)
-					(name "AP_SDA/AP_SDIO/AP_SDI"
+					(name "NCS"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "14"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -30.48 2.54 0)
-					(length 5.08)
-					(name "AP_SDO/AP_AD0"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
+					(number "22"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1172,16 +1435,16 @@
 					)
 				)
 				(pin input clock
-					(at -30.48 0 0)
+					(at -17.78 5.08 0)
 					(length 5.08)
-					(name "AP_SCL/AP_SCLK"
+					(name "SCL/SCLK"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "13"
+					(number "23"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1189,17 +1452,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -30.48 -2.54 0)
+				(pin bidirectional line
+					(at -17.78 2.54 0)
 					(length 5.08)
-					(name "AP_CS"
+					(name "SDA/SDI"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "12"
+					(number "24"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1207,100 +1470,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -21.59 22.86 270)
+				(pin input clock
+					(at -17.78 -2.54 0)
 					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -17.78 22.86 270)
-					(length 5.08)
-					(name "VDDIO"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -1.27 -20.32 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -20.32 90)
-					(length 5.08)
-					(name "RESV/MAS_DA"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -20.32 90)
-					(length 5.08)
-					(name "RESV/MAS_CLK"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -20.32 90)
-					(length 5.08)
-					(name "RESV_7"
+					(name "AUX_CL"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1315,17 +1488,17 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 12.7 -20.32 90)
+				(pin bidirectional line
+					(at -17.78 -5.08 0)
 					(length 5.08)
-					(name "RESV_10"
+					(name "AUX_DA"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "10"
+					(number "21"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1333,10 +1506,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 15.24 -20.32 90)
+				(pin input line
+					(at -17.78 -10.16 0)
 					(length 5.08)
-					(name "RESV_11"
+					(name "FSYNC"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1351,10 +1524,64 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 30.48 15.24 180)
+				(pin power_in line
+					(at 17.78 15.24 180)
 					(length 5.08)
-					(name "INT2/FSYNC"
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 12.7 180)
+					(length 5.08)
+					(name "VDDIO"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 7.62 180)
+					(length 5.08)
+					(name "INT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 5.08 180)
+					(length 5.08)
+					(name "AD0/SDO"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1370,16 +1597,88 @@
 					)
 				)
 				(pin output line
-					(at 30.48 12.7 180)
+					(at 17.78 -2.54 180)
 					(length 5.08)
-					(name "INT1/INT"
+					(name "REGOUT"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "4"
+					(number "10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -5.08 180)
+					(length 5.08)
+					(name "RESV_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -7.62 180)
+					(length 5.08)
+					(name "RESV_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -12.7 180)
+					(length 5.08)
+					(name "EXP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -15.24 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "18"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -2929,18 +3228,6 @@
 		)
 	)
 	(rectangle
-		(start 225.425 55.88)
-		(end 333.375 114.3)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 3575a7e1-9ff6-4a9e-8702-b5f4e98556be)
-	)
-	(rectangle
 		(start 12.7 63.754)
 		(end 225.552 166.37)
 		(stroke
@@ -2951,6 +3238,18 @@
 			(type none)
 		)
 		(uuid 3a6b298a-8830-442f-a126-623655980be9)
+	)
+	(rectangle
+		(start 225.298 56.134)
+		(end 408.432 166.37)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 4991c1da-1060-4775-bae8-9a2ea2e86aeb)
 	)
 	(rectangle
 		(start 225.425 11.938)
@@ -2965,8 +3264,8 @@
 		(uuid 5c915de6-f9ef-4bee-83c2-6c38587b7837)
 	)
 	(rectangle
-		(start 225.425 114.3)
-		(end 333.375 166.37)
+		(start 192.405 232.41)
+		(end 300.355 284.48)
 		(stroke
 			(width 0)
 			(type default)
@@ -2990,7 +3289,7 @@
 	)
 	(text "Battery Measurement"
 		(exclude_from_sim no)
-		(at 227.838 117.856 0)
+		(at 194.818 235.966 0)
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -3028,7 +3327,7 @@
 	)
 	(text "For a PMOS\n\nCUTOFF REGION - Vsg < Vth\nSATURATION REGION - Vsg > Vth"
 		(exclude_from_sim no)
-		(at 227.838 147.066 0)
+		(at 194.818 265.176 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -3050,16 +3349,6 @@
 			(justify left bottom)
 		)
 		(uuid "2e82550a-69b0-47e3-97a8-ed0e3b30d3f7")
-	)
-	(text "FSP201"
-		(exclude_from_sim no)
-		(at 368.3 83.058 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-		)
-		(uuid "405f5d8c-8631-42bd-82d3-cd6b49bebb03")
 	)
 	(text "350 Ohm strain gauge\nX 8 times\n"
 		(exclude_from_sim no)
@@ -3083,9 +3372,19 @@
 		)
 		(uuid "609a1bb4-798b-4c77-8a9d-d99f21c64c44")
 	)
-	(text "Stiching VIA Length calculation\n\nwavelength = 3x10^8/(f*\\sqrt(Dielectric Const))\n\n900 MHz"
+	(text "https://cdn.sparkfun.com/assets/c/7/8/f/8/15335_9DoF_Schematic.pdf"
 		(exclude_from_sim no)
-		(at 333.756 19.304 0)
+		(at 467.868 140.208 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+		)
+		(uuid "6669c783-9961-4c52-a0b1-7e13a02f68cc")
+	)
+	(text "Stiching VIA Length calculation\n\nwavelength = 3x10^8/(f* sqrt(Er))\n\nMax freq blocked = lambda/8\nEr = 4.74\nMax Antenna F = 1 GHz\n\nGives 17.224mm distance between vias to block this frequency.\n\nRounding to 20mm\n"
+		(exclude_from_sim no)
+		(at 373.38 20.574 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -3134,7 +3433,7 @@
 	)
 	(text "Calculation for battery measurement:\n\nBattery range is from 4.5-12V.\n\nChosen resistors 5 and 15k. \nLeft extra room in resistor values for uncertainty\nVmax = 3V\nVmin = 1.125V"
 		(exclude_from_sim no)
-		(at 227.838 157.734 0)
+		(at 194.818 275.844 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -3168,6 +3467,16 @@
 			(justify left bottom)
 		)
 		(uuid "b944f420-8bc9-4642-bb0d-1cd32dbe8e4f")
+	)
+	(text "understand this voltage shift register"
+		(exclude_from_sim no)
+		(at 477.52 149.86 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+		)
+		(uuid "cb9f8198-0f18-4fde-9a54-e5bd070656bd")
 	)
 	(text "TX mode - 25mA\nRx mode - 3mA"
 		(exclude_from_sim no)
@@ -3259,6 +3568,18 @@
 		(uuid "1023ef61-821b-4d5b-9438-1c5f7c169d3c")
 	)
 	(junction
+		(at 274.32 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14b13e9f-318b-4202-9624-9a3b2d8f6b88")
+	)
+	(junction
+		(at 293.37 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19999195-e979-4dc1-a2df-db36b39758f6")
+	)
+	(junction
 		(at 175.26 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3295,10 +3616,16 @@
 		(uuid "29becb54-7005-4565-a20b-ab019d4b2794")
 	)
 	(junction
-		(at 255.27 134.62)
+		(at 222.25 252.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2ec9ff0f-1ecc-4ccc-8c4f-a2b6c30569f6")
+	)
+	(junction
+		(at 293.37 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3b4ca2c9-35c9-47c1-bcee-24f7ba50e30c")
 	)
 	(junction
 		(at 130.81 39.37)
@@ -3331,7 +3658,7 @@
 		(uuid "4f49b4c8-23d6-4e6b-9961-7e7647cf360c")
 	)
 	(junction
-		(at 287.02 149.86)
+		(at 254 267.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "55f54166-b545-410d-a5b8-90fb92cddff1")
@@ -3349,7 +3676,7 @@
 		(uuid "6c055146-b335-49b0-b901-fb17fbeaf5b3")
 	)
 	(junction
-		(at 269.24 129.54)
+		(at 236.22 247.65)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "73e0add8-35bb-4cbf-bcd1-491d0f7b6f7a")
@@ -3371,6 +3698,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "799c6b9b-3db2-4915-8c6f-c2161e18ed3c")
+	)
+	(junction
+		(at 288.29 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79c18529-61cd-4d30-ab7d-a6746537783d")
 	)
 	(junction
 		(at 87.63 39.37)
@@ -3403,7 +3736,7 @@
 		(uuid "910b0121-13b3-475e-acdf-26fe5aa3b499")
 	)
 	(junction
-		(at 269.24 149.86)
+		(at 236.22 267.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "93883df6-6c57-4dee-a7de-be95a6136d2b")
@@ -3415,7 +3748,7 @@
 		(uuid "9b68943c-e57f-455e-bfd6-4b5fe44594c2")
 	)
 	(junction
-		(at 287.02 142.24)
+		(at 254 260.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a267bc33-225f-443f-a351-d0a31401720e")
@@ -3451,16 +3784,10 @@
 		(uuid "b1ab42bd-5972-44c2-98ae-b4e8948d9339")
 	)
 	(junction
-		(at 304.8 142.24)
+		(at 271.78 260.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b3dd448a-54e3-4b4f-9521-0f44acdf3ffe")
-	)
-	(junction
-		(at 248.92 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b702c060-910b-4eea-8a39-5b977f916630")
 	)
 	(junction
 		(at 107.95 153.67)
@@ -3499,12 +3826,6 @@
 		(uuid "e2fb3408-af2c-4009-a3e3-040e70e423b6")
 	)
 	(junction
-		(at 261.62 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e702d9c3-9ffc-40ea-9fd6-3646cc42cc12")
-	)
-	(junction
 		(at 313.69 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3523,7 +3844,7 @@
 		(uuid "eb05571a-6fb1-4740-a6df-f5d4b07579fc")
 	)
 	(junction
-		(at 269.24 121.92)
+		(at 236.22 240.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eb3444b1-0e68-41fd-aee0-687e3842238c")
@@ -3539,6 +3860,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2186c18-4b4d-4f30-aa83-aa33b002a33a")
+	)
+	(junction
+		(at 365.76 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f450e92d-41f5-4342-a068-8e00d21c3faf")
 	)
 	(junction
 		(at 64.77 148.59)
@@ -3591,8 +3918,8 @@
 		(uuid "19103b7a-2b05-4d70-900e-a87a803891ec")
 	)
 	(no_connect
-		(at 298.45 109.22)
-		(uuid "3c26bb78-6ed6-427a-bb65-c87a91710c5e")
+		(at 238.76 95.25)
+		(uuid "35fe4e20-6e2c-45fd-8e48-c5cf7b63fb31")
 	)
 	(no_connect
 		(at 162.56 46.99)
@@ -3607,10 +3934,6 @@
 		(uuid "5ea5dabc-8e28-46ab-9f4d-667a9fd99c49")
 	)
 	(no_connect
-		(at 293.37 109.22)
-		(uuid "6ba1bdb3-168b-4a16-9c71-779c4110c8b3")
-	)
-	(no_connect
 		(at 113.03 46.99)
 		(uuid "6c6ed5e9-6bef-4c11-9a0f-3118b3a1ae47")
 	)
@@ -3619,8 +3942,8 @@
 		(uuid "72de807d-59d1-4b04-85c2-bf1b441452ff")
 	)
 	(no_connect
-		(at 288.29 109.22)
-		(uuid "7500ca51-ca10-4969-acf3-9b40e17b4466")
+		(at 238.76 92.71)
+		(uuid "84a5d941-e621-4405-a601-9a4dcf7b5a5c")
 	)
 	(no_connect
 		(at 149.86 46.99)
@@ -3631,16 +3954,24 @@
 		(uuid "8f951221-2e1b-43a4-ab61-534372f90685")
 	)
 	(no_connect
+		(at 274.32 102.87)
+		(uuid "97f594a6-02a0-4b2a-a1c8-950a1f9e0300")
+	)
+	(no_connect
+		(at 274.32 97.79)
+		(uuid "b246caef-37ea-4b9a-9906-d38506413321")
+	)
+	(no_connect
 		(at 92.71 46.99)
 		(uuid "be66e0d0-fda9-4bb8-a75c-eb7decac7651")
 	)
 	(no_connect
-		(at 285.75 109.22)
-		(uuid "ca3c3cec-2618-4e1b-a575-5a3339d5f5d5")
+		(at 238.76 100.33)
+		(uuid "e5f36098-8a88-42ad-9c07-1bfb49c106f6")
 	)
 	(no_connect
-		(at 295.91 109.22)
-		(uuid "d5965a2e-3565-44cc-a244-5d25c19dd297")
+		(at 274.32 95.25)
+		(uuid "f5730068-6df0-45f3-bd01-ceb8bf0c4bb6")
 	)
 	(no_connect
 		(at 175.26 46.99)
@@ -3648,7 +3979,7 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 121.92) (xy 287.02 121.92)
+			(xy 236.22 240.03) (xy 254 240.03)
 		)
 		(stroke
 			(width 0)
@@ -3658,7 +3989,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 146.05) (xy 255.27 149.86)
+			(xy 222.25 264.16) (xy 222.25 267.97)
 		)
 		(stroke
 			(width 0)
@@ -3675,16 +4006,6 @@
 			(type default)
 		)
 		(uuid "0242fdf9-6831-482a-a5fe-cdb430a1df98")
-	)
-	(wire
-		(pts
-			(xy 248.92 64.77) (xy 248.92 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0879408f-e424-406c-a43b-6b056f08ed35")
 	)
 	(wire
 		(pts
@@ -3708,7 +4029,7 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 149.86) (xy 287.02 149.86)
+			(xy 236.22 267.97) (xy 254 267.97)
 		)
 		(stroke
 			(width 0)
@@ -3738,7 +4059,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 149.86) (xy 269.24 149.86)
+			(xy 222.25 267.97) (xy 236.22 267.97)
 		)
 		(stroke
 			(width 0)
@@ -3758,7 +4079,17 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 134.62) (xy 255.27 134.62)
+			(xy 363.22 39.37) (xy 365.76 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "127e1c35-d2a3-45d4-817c-a61cbd964fd4")
+	)
+	(wire
+		(pts
+			(xy 217.17 252.73) (xy 222.25 252.73)
 		)
 		(stroke
 			(width 0)
@@ -3848,16 +4179,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 66.04) (xy 248.92 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e13bbf2-7d99-4e60-92ce-f0d507e9c500")
-	)
-	(wire
-		(pts
 			(xy 87.63 148.59) (xy 91.44 148.59)
 		)
 		(stroke
@@ -3898,7 +4219,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 121.92) (xy 287.02 124.46)
+			(xy 254 240.03) (xy 254 242.57)
 		)
 		(stroke
 			(width 0)
@@ -4068,13 +4389,13 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 66.04) (xy 236.22 67.31)
+			(xy 365.76 39.37) (xy 365.76 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3dacb869-a1f8-42f3-81f4-44da75575b18")
+		(uuid "3b729ca6-9dfc-4566-8e8a-d38a02e3eb90")
 	)
 	(wire
 		(pts
@@ -4178,7 +4499,7 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 129.54) (xy 279.4 129.54)
+			(xy 236.22 247.65) (xy 246.38 247.65)
 		)
 		(stroke
 			(width 0)
@@ -4215,6 +4536,16 @@
 			(type default)
 		)
 		(uuid "4899c07b-dad5-4aef-99fa-f0fabeb4a46c")
+	)
+	(wire
+		(pts
+			(xy 274.32 74.93) (xy 288.29 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "497bd894-2aed-41b0-80d0-e0cf38208e46")
 	)
 	(wire
 		(pts
@@ -4268,13 +4599,13 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 66.04) (xy 261.62 66.04)
+			(xy 288.29 74.93) (xy 293.37 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5a4ea910-ea67-4f8a-8d9b-b6d461033c77")
+		(uuid "5790a4bb-11f3-40e6-a439-8649fa692c69")
 	)
 	(wire
 		(pts
@@ -4358,7 +4689,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 142.24) (xy 304.8 142.24)
+			(xy 254 260.35) (xy 271.78 260.35)
 		)
 		(stroke
 			(width 0)
@@ -4398,6 +4729,16 @@
 	)
 	(wire
 		(pts
+			(xy 274.32 74.93) (xy 274.32 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7872c9a5-dd3f-49b4-a5eb-3de4d7f53195")
+	)
+	(wire
+		(pts
 			(xy 107.95 153.67) (xy 111.76 153.67)
 		)
 		(stroke
@@ -4418,7 +4759,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 134.62) (xy 255.27 138.43)
+			(xy 222.25 252.73) (xy 222.25 256.54)
 		)
 		(stroke
 			(width 0)
@@ -4498,16 +4839,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 72.39) (xy 248.92 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e36d05d-519b-492b-a9c1-d218bc0bdec1")
-	)
-	(wire
-		(pts
 			(xy 152.4 153.67) (xy 158.75 153.67)
 		)
 		(stroke
@@ -4548,16 +4879,6 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 66.04) (xy 248.92 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97ba1907-ce46-46cf-98bf-27e140b0fa84")
-	)
-	(wire
-		(pts
 			(xy 158.75 148.59) (xy 162.56 148.59)
 		)
 		(stroke
@@ -4578,13 +4899,23 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 148.59) (xy 304.8 149.86)
+			(xy 271.78 266.7) (xy 271.78 267.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "99b2b7be-a4fa-4ddd-a26a-7041a262deac")
+	)
+	(wire
+		(pts
+			(xy 363.22 41.91) (xy 365.76 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99cf0bdd-9f6f-49ff-ac46-d99edf7ed050")
 	)
 	(wire
 		(pts
@@ -4615,6 +4946,16 @@
 			(type default)
 		)
 		(uuid "9e71e116-06d8-4b00-989d-b60cf1ca0603")
+	)
+	(wire
+		(pts
+			(xy 288.29 80.01) (xy 293.37 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a14569ca-4362-40f8-be7b-67a6d6ad1b5c")
 	)
 	(wire
 		(pts
@@ -4778,16 +5119,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 66.04) (xy 248.92 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9143a59-7fa6-4b4a-9947-22c0a9b5b934")
-	)
-	(wire
-		(pts
 			(xy 134.62 148.59) (xy 128.27 148.59)
 		)
 		(stroke
@@ -4795,16 +5126,6 @@
 			(type default)
 		)
 		(uuid "cb1a144e-9863-4097-8c70-fbfc4974f8f8")
-	)
-	(wire
-		(pts
-			(xy 236.22 72.39) (xy 236.22 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce92fd77-2063-4e00-9880-41834146c1f0")
 	)
 	(wire
 		(pts
@@ -4838,7 +5159,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 134.62) (xy 255.27 134.62)
+			(xy 228.6 252.73) (xy 222.25 252.73)
 		)
 		(stroke
 			(width 0)
@@ -4868,7 +5189,7 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 149.86) (xy 287.02 149.86)
+			(xy 271.78 267.97) (xy 254 267.97)
 		)
 		(stroke
 			(width 0)
@@ -4908,7 +5229,7 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 142.24) (xy 304.8 143.51)
+			(xy 271.78 260.35) (xy 271.78 261.62)
 		)
 		(stroke
 			(width 0)
@@ -4918,7 +5239,7 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 139.7) (xy 269.24 149.86)
+			(xy 236.22 257.81) (xy 236.22 267.97)
 		)
 		(stroke
 			(width 0)
@@ -4938,7 +5259,7 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 142.24) (xy 309.88 142.24)
+			(xy 271.78 260.35) (xy 276.86 260.35)
 		)
 		(stroke
 			(width 0)
@@ -19487,28 +19808,6 @@
 		)
 		(uuid "14a81ea8-ba2a-454d-903a-77207de52fc9")
 	)
-	(hierarchical_label "ICM_INT1"
-		(shape output)
-		(at 313.69 76.2 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify left)
-		)
-		(uuid "1bbbccdc-3199-4d73-b352-8ec9ed737aed")
-	)
-	(hierarchical_label "MOSI"
-		(shape input)
-		(at 252.73 83.82 180)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify right)
-		)
-		(uuid "1d081607-984d-4ce6-ba37-f7bcb5bf0b71")
-	)
 	(hierarchical_label "AIN_STRAIN_8"
 		(shape input)
 		(at 212.09 148.59 0)
@@ -19520,6 +19819,30 @@
 		)
 		(uuid "2407cba2-86f7-4b40-a0e4-6ca61bbed222")
 	)
+	(hierarchical_label "~{ANT_CSCON}"
+		(shape output)
+		(at 355.6 41.91 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+				(italic yes)
+			)
+			(justify right)
+		)
+		(uuid "2496ad63-0138-47e1-a0cb-36b5a7f09b6d")
+	)
+	(hierarchical_label "ANT_IRQ1"
+		(shape output)
+		(at 355.6 52.07 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+				(italic yes)
+			)
+			(justify right)
+		)
+		(uuid "25356adc-2786-43c2-a0b3-e98c8cb449b5")
+	)
 	(hierarchical_label "AIN_STRAIN_1"
 		(shape input)
 		(at 43.18 148.59 0)
@@ -19530,6 +19853,17 @@
 			(justify left)
 		)
 		(uuid "3f876219-40d1-4314-a80f-06e030b41a40")
+	)
+	(hierarchical_label "ANT_IRQ0"
+		(shape output)
+		(at 355.6 49.53 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "51ea05b1-1c40-4b82-a2ce-4bf8bcc23009")
 	)
 	(hierarchical_label "AIN_STRAIN_2"
 		(shape input)
@@ -19544,7 +19878,7 @@
 	)
 	(hierarchical_label "BatteryV_Div_Enable"
 		(shape input)
-		(at 250.19 134.62 180)
+		(at 217.17 252.73 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19553,9 +19887,20 @@
 		)
 		(uuid "5cb5215b-5f0f-402a-9bdd-73896fb73880")
 	)
+	(hierarchical_label "MISO"
+		(shape output)
+		(at 274.32 85.09 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "6595f67a-5b37-419d-9989-571e5e38f91f")
+	)
 	(hierarchical_label "BatteryV_Measurement"
 		(shape output)
-		(at 309.88 142.24 0)
+		(at 276.86 260.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19576,6 +19921,28 @@
 		)
 		(uuid "69387131-533d-4057-b33e-6e29b8f63d0e")
 	)
+	(hierarchical_label "MOSI"
+		(shape input)
+		(at 238.76 87.63 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "699046a0-f613-44cd-81c3-93b7ade8d26a")
+	)
+	(hierarchical_label "~{MPU_CS}"
+		(shape input)
+		(at 238.76 82.55 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "6b05ff7f-c5a0-4467-9acb-9bb229d8d40c")
+	)
 	(hierarchical_label "AIN_STRAIN_7"
 		(shape input)
 		(at 187.96 148.59 0)
@@ -19587,16 +19954,50 @@
 		)
 		(uuid "6b79baff-d8b2-4fd4-b128-687973b3b3f8")
 	)
-	(hierarchical_label "SCK"
+	(hierarchical_label "MOSI"
 		(shape input)
-		(at 252.73 88.9 180)
+		(at 327.66 102.87 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
 			)
 			(justify right)
 		)
-		(uuid "79014a2f-c22d-4512-8629-6e449f43fd6d")
+		(uuid "7f04bc32-b1e6-445c-b2fd-02acf1863fcb")
+	)
+	(hierarchical_label "MISO"
+		(shape output)
+		(at 327.66 97.79 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "84ccc235-b0f9-451c-912a-2df013fa38dc")
+	)
+	(hierarchical_label "~{CS_DATA}"
+		(shape output)
+		(at 355.6 39.37 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+				(italic yes)
+			)
+			(justify right)
+		)
+		(uuid "87dd4f9d-4ff7-4625-81b4-caa92304cab5")
+	)
+	(hierarchical_label "~{MPU_CS}"
+		(shape input)
+		(at 327.66 90.17 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "8c7b73b4-2393-4e6d-9227-468e463a0d93")
 	)
 	(hierarchical_label "ANT_RESET"
 		(shape output)
@@ -19621,6 +20022,17 @@
 		)
 		(uuid "9002a20b-f668-4838-abc1-cf0541927cc1")
 	)
+	(hierarchical_label "SCK"
+		(shape input)
+		(at 327.66 100.33 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "9de28084-f41d-4181-830f-f4e3cff9e84c")
+	)
 	(hierarchical_label "~{StrainV_Enable}"
 		(shape input)
 		(at 44.45 34.29 180)
@@ -19632,16 +20044,28 @@
 		)
 		(uuid "a5454b41-56b9-433f-b21f-69c6a8acc68c")
 	)
-	(hierarchical_label "ICM_INT2"
+	(hierarchical_label "ANT_RESET"
 		(shape output)
-		(at 313.69 73.66 0)
+		(at 355.6 46.99 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+				(italic yes)
+			)
+			(justify right)
+		)
+		(uuid "ae3b4299-bcbb-4b8a-ab4c-88aaf7d1ade4")
+	)
+	(hierarchical_label "SCK"
+		(shape input)
+		(at 238.76 85.09 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "ab006f70-c156-4d93-b940-73855f8745cd")
+		(uuid "b8d4befa-2833-4e77-b30a-cf4c7aa1788d")
 	)
 	(hierarchical_label "AIN_STRAIN_4"
 		(shape input)
@@ -19653,17 +20077,6 @@
 			(justify left)
 		)
 		(uuid "b98b44ec-c6a3-4504-ac5a-7c8a1c23acb0")
-	)
-	(hierarchical_label "~{ICM_CS}"
-		(shape input)
-		(at 252.73 91.44 180)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify right)
-		)
-		(uuid "d4dad0f9-bf77-47ba-ad96-efd2b39853fb")
 	)
 	(hierarchical_label "MISO"
 		(shape output)
@@ -19687,16 +20100,16 @@
 		)
 		(uuid "e399fcee-5c0a-4e73-b55e-0fea5453c295")
 	)
-	(hierarchical_label "MISO"
+	(hierarchical_label "MPU_INT1"
 		(shape output)
-		(at 252.73 86.36 180)
+		(at 274.32 82.55 0)
 		(effects
 			(font
 				(size 1.4986 1.4986)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "f4adc500-da0b-433c-a66a-cdf4b02c6526")
+		(uuid "e6c6705b-f62b-4347-99ec-253b0a448ae0")
 	)
 	(hierarchical_label "~{ANT_CSCON}"
 		(shape output)
@@ -19709,6 +20122,17 @@
 			(justify right)
 		)
 		(uuid "f82dabdf-e175-40ee-ba79-35b6c15e8e1f")
+	)
+	(hierarchical_label "MPU_INT1"
+		(shape output)
+		(at 327.66 92.71 180)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify right)
+		)
+		(uuid "fbdf1931-b9bd-403f-bf43-d3cab8d16605")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -20874,6 +21298,572 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 359.41 41.91 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f34b342-f4a5-42d5-bbbe-fa2bef4a4058")
+		(property "Reference" "R39"
+			(at 357.632 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K +-1%"
+			(at 366.776 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 359.41 40.132 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM_MPN" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DISTRIB" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FOOTPRINT" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ID" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "INTERNAL_PART_NUMBER" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER P/N" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOLERANCE" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price per unit" "0.16"
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOA Speer Electronics, Inc."
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 359.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c3aa6fa4-6a34-4753-bea6-730a0d3a5cf1")
+		)
+		(pin "1"
+			(uuid "e1d7d480-cccf-43e5-ae21-84ce4978b96b")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 331.47 97.79 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f56a79e-b24c-4a65-acb7-372ad1ad7321")
+		(property "Reference" "R35"
+			(at 329.692 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K +-1%"
+			(at 338.836 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 331.47 96.012 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM_MPN" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DISTRIB" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FOOTPRINT" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ID" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "INTERNAL_PART_NUMBER" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER P/N" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOLERANCE" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price per unit" "0.16"
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOA Speer Electronics, Inc."
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 331.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5c5b9c05-cfd7-4802-b598-591246efe8df")
+		)
+		(pin "1"
+			(uuid "c730cfd8-70a8-4197-8116-7306f29bcae4")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "R35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Schottky_Small")
 		(at 101.6 146.05 90)
 		(mirror x)
@@ -21358,6 +22348,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 335.28 102.87 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "167f8876-2cba-49e9-852e-502e15b4370a")
+		(property "Reference" "#PWR051"
+			(at 341.63 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 339.6742 102.743 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 335.28 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 335.28 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 335.28 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "efc4969a-9b9b-43fb-94a8-edad75ba8367")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 107.95 146.05 0)
 		(mirror y)
@@ -21546,6 +22602,72 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 293.37 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "16fd84c4-12aa-4b43-aeaa-c067beb7e8a6")
+		(property "Reference" "#PWR085"
+			(at 293.37 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 293.497 84.4042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 293.37 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 293.37 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 293.37 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "101b118b-efcb-4e35-b394-40293e9d1e18")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -22091,71 +23213,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+BATT")
-		(at 248.92 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1acefe0e-c437-44e1-9d74-2f57b665ed13")
-		(property "Reference" "#PWR050"
-			(at 248.92 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 249.301 60.3758 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 248.92 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 248.92 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 248.92 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a34ed955-060b-4939-b785-3ad58ba760de")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "#PWR050")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 96.52 106.68 180)
 		(unit 1)
@@ -22224,7 +23281,7 @@
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:PMOS")
-		(at 284.48 129.54 0)
+		(at 251.46 247.65 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22234,7 +23291,7 @@
 		(fields_autoplaced yes)
 		(uuid "1fc700bd-d490-4b35-a0d0-067c35d47ab4")
 		(property "Reference" "Q3"
-			(at 290.83 128.2699 0)
+			(at 257.81 246.3799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22243,7 +23300,7 @@
 			)
 		)
 		(property "Value" "PMOS"
-			(at 290.83 130.8099 0)
+			(at 257.81 248.9199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22252,7 +23309,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23"
-			(at 289.56 132.08 0)
+			(at 256.54 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22261,7 +23318,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/onsemi/NVTR01P02LT1G/5969313?gclsrc=aw.ds&&utm_adgroup=General&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Zombie%20SKUs&utm_term=&productid=5969313&utm_content=General&utm_id=go_cmp-17855401585_adg-_ad-__dev-c_ext-_prd-5969313_sig-CjwKCAjwq7fABhB2EiwAwk-YbCdzxZ8I_ROXJb3JHufdx-zHWTW_khwVTeU3PeYqFBXyUwEnEgnIlhoCDXMQAvD_BwE&gad_source=1&gbraid=0AAAAADrbLli6YGlW8y5wc6i5rQyT2Z2qc&gclid=CjwKCAjwq7fABhB2EiwAwk-YbCdzxZ8I_ROXJb3JHufdx-zHWTW_khwVTeU3PeYqFBXyUwEnEgnIlhoCDXMQAvD_BwE&gclsrc=aw.ds"
-			(at 284.48 116.84 0)
+			(at 251.46 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22270,7 +23327,7 @@
 			)
 		)
 		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 284.48 129.54 0)
+			(at 251.46 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22279,7 +23336,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/onsemi/NVTR01P02LT1G/5969313?gclsrc=aw.ds&&utm_adgroup=General&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Zombie%20SKUs&utm_term=&productid=5969313&utm_content=General&utm_id=go_cmp-17855401585_adg-_ad-__dev-c_ext-_prd-5969313_sig-CjwKCAjwq7fABhB2EiwAwk-YbCdzxZ8I_ROXJb3JHufdx-zHWTW_khwVTeU3PeYqFBXyUwEnEgnIlhoCDXMQAvD_BwE&gad_source=1&gbraid=0AAAAADrbLli6YGlW8y5wc6i5rQyT2Z2qc&gclid=CjwKCAjwq7fABhB2EiwAwk-YbCdzxZ8I_ROXJb3JHufdx-zHWTW_khwVTeU3PeYqFBXyUwEnEgnIlhoCDXMQAvD_BwE&gclsrc=aw.ds"
-			(at 284.48 129.54 0)
+			(at 251.46 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22288,7 +23345,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "NVTR01P02LT1G"
-			(at 284.48 129.54 0)
+			(at 251.46 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22297,7 +23354,7 @@
 			)
 		)
 		(property "Price per unit" "0.71"
-			(at 284.48 129.54 0)
+			(at 251.46 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22306,7 +23363,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 284.48 129.54 0)
+			(at 251.46 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22314,7 +23371,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 284.48 129.54 0)
+			(at 251.46 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22322,7 +23379,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 284.48 129.54 0)
+			(at 251.46 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22330,7 +23387,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 284.48 129.54 0)
+			(at 251.46 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22338,7 +23395,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 284.48 129.54 0)
+			(at 251.46 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22346,7 +23403,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 284.48 129.54 0)
+			(at 251.46 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22354,7 +23411,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 284.48 129.54 0)
+			(at 251.46 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22362,7 +23419,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 284.48 129.54 0)
+			(at 251.46 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22370,7 +23427,7 @@
 			)
 		)
 		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 284.48 129.54 0)
+			(at 251.46 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22378,7 +23435,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 284.48 129.54 0)
+			(at 251.46 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22386,7 +23443,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 284.48 129.54 0)
+			(at 251.46 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22768,7 +23825,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 287.02 149.86 0)
+		(at 254 267.97 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22777,7 +23834,7 @@
 		(fields_autoplaced yes)
 		(uuid "284e5596-93d6-4d95-8b0e-81d6bfa441d2")
 		(property "Reference" "#PWR054"
-			(at 287.02 156.21 0)
+			(at 254 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22786,7 +23843,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 287.02 154.94 0)
+			(at 254 273.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22795,7 +23852,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 287.02 149.86 0)
+			(at 254 267.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22804,7 +23861,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 287.02 149.86 0)
+			(at 254 267.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22813,7 +23870,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 287.02 149.86 0)
+			(at 254 267.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22835,7 +23892,7 @@
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:NMOS")
-		(at 266.7 134.62 0)
+		(at 233.68 252.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22843,7 +23900,7 @@
 		(dnp no)
 		(uuid "28b19bd2-d586-4c8d-8a8e-968cb014617a")
 		(property "Reference" "Q2"
-			(at 273.05 133.3499 0)
+			(at 240.03 251.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22852,7 +23909,7 @@
 			)
 		)
 		(property "Value" "NMOS"
-			(at 273.304 135.89 0)
+			(at 240.284 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22861,7 +23918,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23"
-			(at 271.78 132.08 0)
+			(at 238.76 250.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22870,7 +23927,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/onsemi/NTR4003NT3G/1967271?gclsrc=aw.ds&&utm_adgroup=General&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Zombie%20SKUs&utm_term=&productid=1967271&utm_content=General&utm_id=go_cmp-17855401585_adg-_ad-__dev-c_ext-_prd-1967271_sig-CjwKCAjwq7fABhB2EiwAwk-YbFJqpYQlYIhkgtWqhIxcVob4GPSdEPXc6bIcNIfS9s96qRU90U7eOhoCR2AQAvD_BwE&gad_source=1&gbraid=0AAAAADrbLli6YGlW8y5wc6i5rQyT2Z2qc&gclid=CjwKCAjwq7fABhB2EiwAwk-YbFJqpYQlYIhkgtWqhIxcVob4GPSdEPXc6bIcNIfS9s96qRU90U7eOhoCR2AQAvD_BwE&gclsrc=aw.ds"
-			(at 266.7 147.32 0)
+			(at 233.68 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22879,7 +23936,7 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 266.7 134.62 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22888,7 +23945,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/onsemi/NTR4003NT3G/1967271?gclsrc=aw.ds&&utm_adgroup=General&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Zombie%20SKUs&utm_term=&productid=1967271&utm_content=General&utm_id=go_cmp-17855401585_adg-_ad-__dev-c_ext-_prd-1967271_sig-CjwKCAjwq7fABhB2EiwAwk-YbFJqpYQlYIhkgtWqhIxcVob4GPSdEPXc6bIcNIfS9s96qRU90U7eOhoCR2AQAvD_BwE&gad_source=1&gbraid=0AAAAADrbLli6YGlW8y5wc6i5rQyT2Z2qc&gclid=CjwKCAjwq7fABhB2EiwAwk-YbFJqpYQlYIhkgtWqhIxcVob4GPSdEPXc6bIcNIfS9s96qRU90U7eOhoCR2AQAvD_BwE&gclsrc=aw.ds"
-			(at 266.7 134.62 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22897,7 +23954,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "NTR4003NT3G"
-			(at 266.7 134.62 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22906,7 +23963,7 @@
 			)
 		)
 		(property "Price per unit" "0.35"
-			(at 266.7 134.62 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22915,7 +23972,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 266.7 134.62 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22923,7 +23980,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 266.7 134.62 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22931,7 +23988,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 266.7 134.62 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22939,7 +23996,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 266.7 134.62 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22947,7 +24004,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 266.7 134.62 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22955,7 +24012,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 266.7 134.62 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22963,7 +24020,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 266.7 134.62 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22971,7 +24028,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 266.7 134.62 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22979,7 +24036,7 @@
 			)
 		)
 		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 266.7 134.62 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22987,7 +24044,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 266.7 134.62 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22995,7 +24052,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 266.7 134.62 0)
+			(at 233.68 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23089,7 +24146,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 269.24 125.73 180)
+		(at 236.22 243.84 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23097,7 +24154,7 @@
 		(dnp no)
 		(uuid "2a831fa7-ae60-447b-9c6e-8e0f5ab1d690")
 		(property "Reference" "R27"
-			(at 271.78 124.4599 0)
+			(at 238.76 242.5699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23106,7 +24163,7 @@
 			)
 		)
 		(property "Value" "10K +-1%"
-			(at 272.034 127 0)
+			(at 239.014 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23115,7 +24172,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 271.018 125.73 90)
+			(at 237.998 243.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23124,7 +24181,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23133,7 +24190,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23142,7 +24199,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23151,7 +24208,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23160,7 +24217,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23169,7 +24226,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23178,7 +24235,7 @@
 			)
 		)
 		(property "DISTRIB" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23187,7 +24244,7 @@
 			)
 		)
 		(property "Distributor Link" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23196,7 +24253,7 @@
 			)
 		)
 		(property "FOOTPRINT" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23205,7 +24262,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23214,7 +24271,7 @@
 			)
 		)
 		(property "INTERNAL_PART_NUMBER" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23223,7 +24280,7 @@
 			)
 		)
 		(property "MANUFACTURER P/N" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23232,7 +24289,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23241,7 +24298,7 @@
 			)
 		)
 		(property "TOLERANCE" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23250,7 +24307,7 @@
 			)
 		)
 		(property "Price per unit" "0.16"
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23259,7 +24316,7 @@
 			)
 		)
 		(property "Manufacturer" "KOA Speer Electronics, Inc."
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23268,7 +24325,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23276,7 +24333,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23284,7 +24341,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23292,7 +24349,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23300,7 +24357,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23308,7 +24365,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23316,7 +24373,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23324,7 +24381,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23332,7 +24389,7 @@
 			)
 		)
 		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23340,7 +24397,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23348,7 +24405,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23550,6 +24607,138 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 363.22 49.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2e8b981b-2a35-4d9c-af0a-d7501e1366ed")
+		(property "Reference" "#PWR071"
+			(at 369.57 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 367.6142 49.403 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 363.22 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 363.22 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 363.22 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ef0fb6a-a0ae-43bd-948b-bc72dcba8add")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 274.32 105.41 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2ff35f0e-bca5-4000-8b62-7920b0efe580")
+		(property "Reference" "#PWR084"
+			(at 280.67 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 278.7142 105.283 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 274.32 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 274.32 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "60619bb8-0552-485b-850f-49ca13417884")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -24037,7 +25226,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 287.02 138.43 180)
+		(at 254 256.54 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24046,7 +25235,7 @@
 		(fields_autoplaced yes)
 		(uuid "31789214-4b49-4600-8c0b-fa1861fb0b0e")
 		(property "Reference" "R28"
-			(at 289.56 137.1599 0)
+			(at 256.54 255.2699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24055,7 +25244,7 @@
 			)
 		)
 		(property "Value" "15K +-1%"
-			(at 289.56 139.6999 0)
+			(at 256.54 257.8099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24064,7 +25253,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 288.798 138.43 90)
+			(at 255.778 256.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24073,7 +25262,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24082,7 +25271,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24091,7 +25280,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24100,7 +25289,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/AC0805FR-0715KL/5896576"
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24109,7 +25298,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "AC0805FR-0715KL"
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24118,7 +25307,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24127,7 +25316,7 @@
 			)
 		)
 		(property "DISTRIB" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24136,7 +25325,7 @@
 			)
 		)
 		(property "Distributor Link" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24145,7 +25334,7 @@
 			)
 		)
 		(property "FOOTPRINT" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24154,7 +25343,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24163,7 +25352,7 @@
 			)
 		)
 		(property "INTERNAL_PART_NUMBER" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24172,7 +25361,7 @@
 			)
 		)
 		(property "MANUFACTURER P/N" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24181,7 +25370,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24190,7 +25379,7 @@
 			)
 		)
 		(property "TOLERANCE" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24199,7 +25388,7 @@
 			)
 		)
 		(property "Price per unit" "0.16"
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24208,7 +25397,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24217,7 +25406,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24225,7 +25414,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24233,7 +25422,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24241,7 +25430,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24249,7 +25438,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24257,7 +25446,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24265,7 +25454,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24273,7 +25462,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24281,7 +25470,7 @@
 			)
 		)
 		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24289,7 +25478,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24297,7 +25486,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 287.02 138.43 0)
+			(at 254 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24705,6 +25894,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 335.28 100.33 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "389565a6-da6a-4c07-9ed2-f3cfe0b04f24")
+		(property "Reference" "#PWR050"
+			(at 341.63 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 339.6742 100.203 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 335.28 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 335.28 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 335.28 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cd8503a7-7e45-49d1-a41e-86d030f7225a")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Schottky_Small")
 		(at 175.26 151.13 90)
 		(mirror x)
@@ -24984,6 +26239,590 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 331.47 100.33 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b70df6c-a295-4cf4-8d29-69d719922168")
+		(property "Reference" "R36"
+			(at 329.692 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K +-1%"
+			(at 338.836 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 331.47 98.552 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM_MPN" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DISTRIB" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FOOTPRINT" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ID" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "INTERNAL_PART_NUMBER" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER P/N" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOLERANCE" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price per unit" "0.16"
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOA Speer Electronics, Inc."
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 331.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2fd44f7b-9aa3-44a3-8733-2b74672d6016")
+		)
+		(pin "1"
+			(uuid "4c8ac3aa-3da9-4ca0-8791-7ac05f734b36")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "R36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 276.86 92.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c8a5534-105d-437f-89a2-462ff15ed1f2")
+		(property "Reference" "C1"
+			(at 278.13 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 282.448 95.504 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KP5NNNC"
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "URL" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL05B104KP5NNNC/3886660"
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM_MPN" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DISTRIB" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FOOTPRINT" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ID" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "INTERNAL_PART_NUMBER" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER P/N" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOLERANCE" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price per unit" "0.043"
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 276.86 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c54e32bf-394b-4978-927b-812330dd2a7b")
+		)
+		(pin "1"
+			(uuid "bc7fe263-2032-4acf-9f22-1d964636cc29")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -25531,6 +27370,289 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 359.41 49.53 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4a7a3908-24cd-4360-80bb-2d4ef28d2ccc")
+		(property "Reference" "R41"
+			(at 357.632 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K +-1%"
+			(at 366.776 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 359.41 47.752 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM_MPN" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DISTRIB" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FOOTPRINT" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ID" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "INTERNAL_PART_NUMBER" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER P/N" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOLERANCE" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price per unit" "0.16"
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOA Speer Electronics, Inc."
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 359.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7ae3d5bd-d868-47a6-b42e-caa786eaf440")
+		)
+		(pin "1"
+			(uuid "85eff348-8be6-4b38-8a85-e38b9b970b62")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Polyfuse_Small")
 		(at 127 109.22 0)
 		(mirror y)
@@ -25724,6 +27846,72 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "F9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 335.28 97.79 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4ef24c77-4c0f-4ac5-a17a-6ff966994fa7")
+		(property "Reference" "#PWR010"
+			(at 341.63 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 339.6742 97.663 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 335.28 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 335.28 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 335.28 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be35eb16-10c3-46ee-9929-7e3dcca8f03a")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -26787,73 +28975,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 236.22 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "56b2e9d4-8606-4fe0-bc00-31eae06b80eb")
-		(property "Reference" "#PWR049"
-			(at 236.22 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 236.22 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 236.22 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 236.22 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 236.22 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "de503901-2d59-4b7a-a86f-1d210024694d")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "#PWR049")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 111.76 151.13 0)
 		(unit 1)
@@ -27115,6 +29236,373 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 365.76 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5aae05cb-41e6-42d1-8487-e6767b9c9273")
+		(property "Reference" "#PWR070"
+			(at 365.76 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 366.141 34.9758 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 365.76 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 365.76 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 365.76 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0f4c169-d44c-4b0b-b853-dd2fb8f0fcd4")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 288.29 77.47 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5b1e72bb-768e-487d-a238-bf3b43db45c8")
+		(property "Reference" "C11"
+			(at 286.004 77.978 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 286.004 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KP5NNNC"
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "URL" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL05B104KP5NNNC/3886660"
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM_MPN" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DISTRIB" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FOOTPRINT" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ID" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "INTERNAL_PART_NUMBER" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER P/N" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOLERANCE" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price per unit" "0.043"
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 288.29 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ed91b593-b322-443b-8ea1-52ec23a7e4ec")
+		)
+		(pin "1"
+			(uuid "725a2637-134a-490a-af30-f2ebe6edf786")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -27627,8 +30115,310 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 293.37 77.47 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68c21f8b-61b0-477a-a62b-d9e23502d208")
+		(property "Reference" "C12"
+			(at 296.164 77.978 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 296.164 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KP5NNNC"
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "URL" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL05B104KP5NNNC/3886660"
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM_MPN" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DISTRIB" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FOOTPRINT" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ID" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "INTERNAL_PART_NUMBER" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER P/N" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOLERANCE" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price per unit" "0.043"
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 293.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fda29101-e64c-456a-91ea-17b0af7dec1f")
+		)
+		(pin "1"
+			(uuid "f1ceafcc-4b98-483c-8365-e83b947c9311")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+BATT")
-		(at 269.24 121.92 0)
+		(at 236.22 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27636,7 +30426,7 @@
 		(dnp no)
 		(uuid "6951e5c1-eae2-457d-ab72-c5b60a24d794")
 		(property "Reference" "#PWR052"
-			(at 269.24 125.73 0)
+			(at 236.22 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27645,7 +30435,7 @@
 			)
 		)
 		(property "Value" "+V_batt"
-			(at 269.24 117.856 0)
+			(at 236.22 235.966 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27654,7 +30444,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 269.24 121.92 0)
+			(at 236.22 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27663,7 +30453,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 269.24 121.92 0)
+			(at 236.22 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27672,7 +30462,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 269.24 121.92 0)
+			(at 236.22 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27687,6 +30477,289 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 331.47 102.87 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "69d88727-bb1d-4449-a80b-7b8db7c6925f")
+		(property "Reference" "R37"
+			(at 329.692 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K +-1%"
+			(at 338.836 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 331.47 101.092 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM_MPN" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DISTRIB" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FOOTPRINT" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ID" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "INTERNAL_PART_NUMBER" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER P/N" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOLERANCE" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price per unit" "0.16"
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOA Speer Electronics, Inc."
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 331.47 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c9bc4013-b69c-4655-a075-b679e0920485")
+		)
+		(pin "1"
+			(uuid "879d4702-e9c9-4ebf-81dd-0e22c4e185cc")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -27759,17 +30832,34 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 248.92 73.66 0)
+		(lib_id "Device:R")
+		(at 359.41 52.07 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "741cdbf8-b13f-4218-bb34-08d26ad5c989")
-		(property "Reference" "#PWR051"
-			(at 248.92 80.01 0)
+		(uuid "72b0d2e9-c47b-43eb-a78b-e697552d64af")
+		(property "Reference" "R42"
+			(at 357.632 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K +-1%"
+			(at 366.776 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 359.41 50.292 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27777,8 +30867,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 248.92 78.74 0)
+		(property "Datasheet" "~"
+			(at 359.41 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27786,8 +30876,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 248.92 73.66 0)
+		(property "Description" "Resistor"
+			(at 359.41 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27795,8 +30885,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 248.92 73.66 0)
+		(property "DNM" ""
+			(at 359.41 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27804,22 +30894,221 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 248.92 73.66 0)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
+			(at 359.41 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM_MPN" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DISTRIB" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FOOTPRINT" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ID" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "INTERNAL_PART_NUMBER" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER P/N" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOLERANCE" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price per unit" "0.16"
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOA Speer Electronics, Inc."
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 359.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2013970a-844b-4b8a-8871-71d94963f522")
 		)
 		(pin "1"
-			(uuid "6a7bcc53-f134-4386-a30f-f7f983def99e")
+			(uuid "e7690739-31df-4153-b399-220eacd0ce22")
 		)
 		(instances
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "#PWR051")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -27958,6 +31247,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 335.28 92.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7732e8fd-e3fa-420b-a822-18d7d741be51")
+		(property "Reference" "#PWR011"
+			(at 341.63 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 339.6742 92.583 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 335.28 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 335.28 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 335.28 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bac11cbe-1e8d-44d7-bbc4-c2c25e236fb6")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+BATT")
 		(at 77.47 143.51 0)
 		(unit 1)
@@ -28017,6 +31372,289 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 359.41 39.37 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7844432b-0b84-49ab-af9c-02159314785a")
+		(property "Reference" "R38"
+			(at 357.632 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K +-1%"
+			(at 366.776 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 359.41 37.592 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM_MPN" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DISTRIB" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FOOTPRINT" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ID" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "INTERNAL_PART_NUMBER" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER P/N" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOLERANCE" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price per unit" "0.16"
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOA Speer Electronics, Inc."
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6c34d839-ea1d-400c-ab34-ee18f4b0a089")
+		)
+		(pin "1"
+			(uuid "8e9dbda4-a7ae-4f7d-82b7-d5c0e4d7fd34")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -29102,6 +32740,289 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 331.47 92.71 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8604a139-f0e3-4a53-90ff-3721a4580614")
+		(property "Reference" "R34"
+			(at 329.692 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K +-1%"
+			(at 338.836 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 331.47 90.932 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM_MPN" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DISTRIB" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FOOTPRINT" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ID" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "INTERNAL_PART_NUMBER" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER P/N" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOLERANCE" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price per unit" "0.16"
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOA Speer Electronics, Inc."
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 331.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "19d5ef31-4e21-4c25-acab-7831f3b7aeec")
+		)
+		(pin "1"
+			(uuid "076c8c89-882b-457b-be5e-adb9cf044fc7")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 58.42 46.99 0)
 		(unit 1)
@@ -29377,7 +33298,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 304.8 146.05 0)
+		(at 271.78 264.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -29385,7 +33306,7 @@
 		(dnp no)
 		(uuid "8a6317a5-9be8-4180-b9d7-d68cb3463e02")
 		(property "Reference" "C13"
-			(at 307.594 145.288 0)
+			(at 274.574 263.398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29394,7 +33315,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 307.594 146.812 0)
+			(at 274.574 264.922 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29403,7 +33324,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29412,7 +33333,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29421,7 +33342,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29430,7 +33351,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KP5NNNC"
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29439,7 +33360,7 @@
 			)
 		)
 		(property "URL" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL05B104KP5NNNC/3886660"
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29448,7 +33369,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29457,7 +33378,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29466,7 +33387,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29475,7 +33396,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29484,7 +33405,7 @@
 			)
 		)
 		(property "DISTRIB" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29493,7 +33414,7 @@
 			)
 		)
 		(property "Distributor Link" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29502,7 +33423,7 @@
 			)
 		)
 		(property "FOOTPRINT" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29511,7 +33432,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29520,7 +33441,7 @@
 			)
 		)
 		(property "INTERNAL_PART_NUMBER" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29529,7 +33450,7 @@
 			)
 		)
 		(property "MANUFACTURER P/N" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29538,7 +33459,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29547,7 +33468,7 @@
 			)
 		)
 		(property "TOLERANCE" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29556,7 +33477,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29565,7 +33486,7 @@
 			)
 		)
 		(property "Price per unit" "0.043"
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29574,7 +33495,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29582,7 +33503,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29590,7 +33511,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29598,7 +33519,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29606,7 +33527,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29614,7 +33535,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29622,7 +33543,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29630,7 +33551,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29638,7 +33559,7 @@
 			)
 		)
 		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29646,7 +33567,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29654,7 +33575,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 304.8 146.05 0)
+			(at 271.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29671,6 +33592,138 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 363.22 52.07 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b672883-0560-4d74-8fd0-f4a8efaddb55")
+		(property "Reference" "#PWR072"
+			(at 369.57 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 367.6142 51.943 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 363.22 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 363.22 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 363.22 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5877e799-b476-42cf-b12c-a52c883e077a")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 363.22 46.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8e9fa883-6f8b-4678-b571-45b7c2e80429")
+		(property "Reference" "#PWR069"
+			(at 369.57 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 367.6142 46.863 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 363.22 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 363.22 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 363.22 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "377a5972-2791-41d8-a22d-4822ec4c6b10")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -29813,7 +33866,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 255.27 142.24 180)
+		(at 222.25 260.35 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -29821,7 +33874,7 @@
 		(dnp no)
 		(uuid "932c7247-7951-4504-8a1f-1e2b94ba009d")
 		(property "Reference" "R26"
-			(at 257.81 140.9699 0)
+			(at 224.79 259.0799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29830,7 +33883,7 @@
 			)
 		)
 		(property "Value" "10K +-1%"
-			(at 258.064 143.51 0)
+			(at 225.044 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29839,7 +33892,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 257.048 142.24 90)
+			(at 224.028 260.35 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29848,7 +33901,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29857,7 +33910,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29866,7 +33919,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29875,7 +33928,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29884,7 +33937,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29893,7 +33946,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29902,7 +33955,7 @@
 			)
 		)
 		(property "DISTRIB" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29911,7 +33964,7 @@
 			)
 		)
 		(property "Distributor Link" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29920,7 +33973,7 @@
 			)
 		)
 		(property "FOOTPRINT" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29929,7 +33982,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29938,7 +33991,7 @@
 			)
 		)
 		(property "INTERNAL_PART_NUMBER" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29947,7 +34000,7 @@
 			)
 		)
 		(property "MANUFACTURER P/N" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29956,7 +34009,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29965,7 +34018,7 @@
 			)
 		)
 		(property "TOLERANCE" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29974,7 +34027,7 @@
 			)
 		)
 		(property "Price per unit" "0.16"
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29983,7 +34036,7 @@
 			)
 		)
 		(property "Manufacturer" "KOA Speer Electronics, Inc."
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29992,7 +34045,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30000,7 +34053,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30008,7 +34061,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30016,7 +34069,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30024,7 +34077,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30032,7 +34085,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30040,7 +34093,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30048,7 +34101,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30056,7 +34109,7 @@
 			)
 		)
 		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30064,7 +34117,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30072,7 +34125,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 255.27 142.24 0)
+			(at 222.25 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30848,8 +34901,486 @@
 		)
 	)
 	(symbol
+		(lib_id "MPU6500:MPU-6500")
+		(at 256.54 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b5b68ec-cb96-4b13-bada-fca9cc1b6cdb")
+		(property "Reference" "U3"
+			(at 256.54 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MPU-6500"
+			(at 256.54 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MPU-6500:QFN40P300X300X95-25N"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "B_NOM" "0.2"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "EMAX" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "VACANCIES" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "BALL_COLUMNS" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PIN_COUNT_D" "6.0"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "THERMAL_PAD" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DMAX" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "B_MAX" "0.25"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "EMIN" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "JEDEC" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "ENOM" "0.4"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "D_NOM" "3.0"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "D_MAX" "3.1"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "L_MAX" "0.25"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE_TYPE" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "E2_NOM" "1.54"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "D2_NOM" "1.7"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "1.3"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DNOM" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DMIN" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "E_NOM" "3.0"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "BALL_ROWS" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "B_MIN" "0.15"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "IPC 7351B"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "L_NOM" "0.3"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "TDK InvenSense"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "IPC" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PIN_COLUMNS" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "0.95 mm"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PIN_COUNT_E" "6.0"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "BODY_DIAMETER" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "E_MIN" "2.9"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "D_MIN" "2.9"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PINS" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "L_MIN" "0.15"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "E_MAX" "3.1"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "19"
+			(uuid "66269a29-49eb-4a81-bc7b-2fbddad3735c")
+		)
+		(pin "24"
+			(uuid "fd8dd267-0ae3-476e-8d1a-33791d9fbd0e")
+		)
+		(pin "25"
+			(uuid "bb62f43c-b338-4649-b1cf-1c71daac3079")
+		)
+		(pin "18"
+			(uuid "032ff59a-9e2e-4f7c-be2c-bad0e57bfc97")
+		)
+		(pin "8"
+			(uuid "48c7dd0f-921e-403a-85fe-04c65875b52f")
+		)
+		(pin "23"
+			(uuid "2284435e-fbda-4bdb-96c1-e1ab01a48415")
+		)
+		(pin "10"
+			(uuid "1b077b15-e739-4254-8c66-aaa4b8ee9535")
+		)
+		(pin "12"
+			(uuid "1f608243-838d-4f17-b1bf-ce544362479b")
+		)
+		(pin "22"
+			(uuid "3d9d4b5c-e5c5-4d27-8e7e-630afcd1309f")
+		)
+		(pin "7"
+			(uuid "4485c2eb-a05b-4996-bf5b-65e39b52ff6b")
+		)
+		(pin "11"
+			(uuid "3b095210-7de4-4615-8080-dc486b6e3938")
+		)
+		(pin "9"
+			(uuid "9b975b86-11b7-4d55-880b-6b9fc8fc58bb")
+		)
+		(pin "20"
+			(uuid "16bd7021-bd89-4eb9-a654-925c1b50d8fc")
+		)
+		(pin "21"
+			(uuid "0eaea55b-35ca-42f6-852a-1d6d3df882ce")
+		)
+		(pin "13"
+			(uuid "5a03046e-24df-4be8-be7a-f82ee7506ff4")
+		)
+		(instances
+			(project ""
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
-		(at 287.02 146.05 180)
+		(at 254 264.16 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -30857,7 +35388,7 @@
 		(dnp no)
 		(uuid "9cfe4af5-29fd-450f-9429-2f02e6de2ea9")
 		(property "Reference" "R29"
-			(at 289.56 144.7799 0)
+			(at 256.54 262.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30866,7 +35397,7 @@
 			)
 		)
 		(property "Value" "5K +-1%"
-			(at 289.814 147.32 0)
+			(at 256.794 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30875,7 +35406,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 288.798 146.05 90)
+			(at 255.778 264.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30884,7 +35415,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30893,7 +35424,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30902,7 +35433,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30911,7 +35442,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/vishay-dale/TNPW08054K99BEEA/1607361"
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30920,7 +35451,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "TNPW08054K99BEEA"
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30929,7 +35460,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30938,7 +35469,7 @@
 			)
 		)
 		(property "DISTRIB" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30947,7 +35478,7 @@
 			)
 		)
 		(property "Distributor Link" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30956,7 +35487,7 @@
 			)
 		)
 		(property "FOOTPRINT" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30965,7 +35496,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30974,7 +35505,7 @@
 			)
 		)
 		(property "INTERNAL_PART_NUMBER" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30983,7 +35514,7 @@
 			)
 		)
 		(property "MANUFACTURER P/N" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30992,7 +35523,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31001,7 +35532,7 @@
 			)
 		)
 		(property "TOLERANCE" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31010,7 +35541,7 @@
 			)
 		)
 		(property "Price per unit" "0.56"
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31019,7 +35550,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay Dale"
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31028,7 +35559,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31036,7 +35567,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31044,7 +35575,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31052,7 +35583,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31060,7 +35591,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31068,7 +35599,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31076,7 +35607,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31084,7 +35615,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31092,7 +35623,7 @@
 			)
 		)
 		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31100,7 +35631,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31108,7 +35639,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 287.02 146.05 0)
+			(at 254 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32066,16 +36597,34 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 281.94 109.22 0)
+		(lib_id "Device:R")
+		(at 359.41 46.99 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a2fd1d45-491f-4e34-b3c7-bb4c0b3d8fb4")
-		(property "Reference" "#PWR053"
-			(at 281.94 115.57 0)
+		(uuid "a4f47508-88bb-4f40-b94c-f20ecc1291cc")
+		(property "Reference" "R40"
+			(at 357.632 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K +-1%"
+			(at 366.776 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 359.41 45.212 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32083,8 +36632,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 282.067 113.6142 0)
+		(property "Datasheet" "~"
+			(at 359.41 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32092,8 +36641,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 281.94 109.22 0)
+		(property "Description" "Resistor"
+			(at 359.41 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32101,8 +36650,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 281.94 109.22 0)
+		(property "DNM" ""
+			(at 359.41 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32110,22 +36659,221 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 281.94 109.22 0)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
+			(at 359.41 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM_MPN" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DISTRIB" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FOOTPRINT" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ID" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "INTERNAL_PART_NUMBER" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER P/N" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOLERANCE" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price per unit" "0.16"
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOA Speer Electronics, Inc."
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 359.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e26b6714-82ad-4649-9c59-17f3be5677c3")
 		)
 		(pin "1"
-			(uuid "3f728685-35be-4b92-802f-b67d74abba9f")
+			(uuid "572967bb-e4a6-4ce9-9196-c405615627c3")
 		)
 		(instances
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "#PWR053")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -32364,308 +37112,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 236.22 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ad26e6c3-66de-41de-8617-f8c9737cc6c0")
-		(property "Reference" "C11"
-			(at 238.76 68.5862 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 238.76 71.1262 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CL05B104KP5NNNC"
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "URL" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL05B104KP5NNNC/3886660"
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DNM" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DNM_MPN" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DISTRIB" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "FOOTPRINT" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ID" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "INTERNAL_PART_NUMBER" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER P/N" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "TOLERANCE" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price per unit" "0.043"
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Check_prices" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description_1" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 236.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "16d3e4fa-afcc-4cef-b58e-f6c1368211a2")
-		)
-		(pin "1"
-			(uuid "6d6afc70-de92-4030-ae51-7cff33e438c1")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -33752,6 +38198,289 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 331.47 90.17 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bd933ec6-753b-4bce-ba97-10b6603f4601")
+		(property "Reference" "R33"
+			(at 329.692 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K +-1%"
+			(at 338.836 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 331.47 88.392 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNM_MPN" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DISTRIB" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FOOTPRINT" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ID" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "INTERNAL_PART_NUMBER" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER P/N" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOLERANCE" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price per unit" "0.16"
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOA Speer Electronics, Inc."
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Check_prices" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 331.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8f7384ab-1950-4fac-b613-6ca72f09c543")
+		)
+		(pin "1"
+			(uuid "9dc1fc2d-fd2f-41f8-a104-d1d537351ec5")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Schottky_Small")
 		(at 199.39 151.13 90)
 		(mirror x)
@@ -33939,6 +38668,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 279.4 92.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c581f0c5-2873-4b5e-bc8b-5e6b30bed71b")
+		(property "Reference" "#PWR083"
+			(at 285.75 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 283.7942 92.583 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 279.4 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 279.4 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 279.4 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "04971e45-3dbd-4fbb-a26a-6389e710d526")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR083")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 78.74 106.68 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -33999,6 +38794,71 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 293.37 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca5a8393-cd92-48d0-b6ca-5d2df3971819")
+		(property "Reference" "#PWR049"
+			(at 293.37 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 293.751 70.5358 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 293.37 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 293.37 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 293.37 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5958a227-7689-4461-b2fd-e69d2811d131")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -35323,6 +40183,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 335.28 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dc1f873f-ed3e-412a-8313-ad7ceb04596d")
+		(property "Reference" "#PWR053"
+			(at 335.28 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 335.661 85.7758 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 335.28 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 335.28 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 335.28 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1e151ec3-a9cc-4f1b-a410-abfb4d1e01be")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 83.82 153.67 0)
 		(mirror y)
@@ -36046,308 +40971,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 248.92 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e66bc8f4-8ea0-4653-a6d0-80cbff7ba687")
-		(property "Reference" "C12"
-			(at 251.46 68.5862 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 251.46 71.1262 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CL05B104KP5NNNC"
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "URL" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL05B104KP5NNNC/3886660"
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DNM" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DNM_MPN" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DISTRIB" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "FOOTPRINT" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ID" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "INTERNAL_PART_NUMBER" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER P/N" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "TOLERANCE" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price per unit" "0.043"
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Check_prices" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description_1" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 248.92 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d2cbb359-424e-40ac-b935-14693c4aa63f")
-		)
-		(pin "1"
-			(uuid "c629fb57-2378-45f6-bd33-e6b5955c49b5")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_Schottky_Small")
 		(at 152.4 151.13 90)
 		(mirror x)
@@ -36997,344 +41620,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ICM-45605-gyroscope:ICM-45605")
-		(at 283.21 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "efcb99c8-c486-492b-a807-0355b3c9fd3e")
-		(property "Reference" "U3"
-			(at 283.21 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ICM-45605"
-			(at 283.21 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ICM-45605:XDCR_ICM-45605"
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "0.86mm"
-			(at 280.162 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "TDK InvenSense"
-			(at 282.702 64.516 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/tdk-invensense/ICM-45605/24883424?_gl=1*m2llvq*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwnPS-BhBxEiwAZjMF0sZkpcV-zZfxWN_VXS3o9X93L80cpqtbKZ-XTpLZQtt6KBMVqUK9eRoCm7oQAvD_BwE&gclsrc=aw.ds"
-			(at 281.432 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "ICM-45605 "
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TDK InvenSense"
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DNM" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DNM_MPN" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DISTRIB" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "FOOTPRINT" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ID" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "INTERNAL_PART_NUMBER" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER P/N" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "TOLERANCE" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price per unit" "7.96"
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Check_prices" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description_1" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Price" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 283.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "8"
-			(uuid "4db8216c-ddbf-40dd-9afe-d4da66f65573")
-		)
-		(pin "12"
-			(uuid "40626fb1-8a58-4e34-9447-77fc2ebcc98d")
-		)
-		(pin "3"
-			(uuid "462a7aa5-3993-41c6-90ce-bd5fdd6b7751")
-		)
-		(pin "5"
-			(uuid "9b4406bb-dfe2-4772-941f-388249775f04")
-		)
-		(pin "1"
-			(uuid "615a46d7-bc05-4f8b-9bf0-a0fc586a5589")
-		)
-		(pin "6"
-			(uuid "b8d35871-278c-4fa3-bef1-41cc1f90cb9a")
-		)
-		(pin "10"
-			(uuid "46864801-4fdd-44e9-a313-400f6a52332d")
-		)
-		(pin "4"
-			(uuid "533d0b42-1ada-4263-bd7c-a081d4ae6024")
-		)
-		(pin "11"
-			(uuid "04c9be7a-ea9d-4c5d-996d-ae83f54fe2c2")
-		)
-		(pin "7"
-			(uuid "e246ecb7-4f0d-47fd-8591-7bdd609db34b")
-		)
-		(pin "14"
-			(uuid "16dca40e-503c-4df4-b566-dece64a3ce87")
-		)
-		(pin "13"
-			(uuid "3d3fd6ff-5037-4273-b941-2af4d4140d70")
-		)
-		(pin "2"
-			(uuid "81cefa52-a5a7-4160-baba-76e777e03e10")
-		)
-		(pin "9"
-			(uuid "03f6ceba-db24-497a-a1d5-08a7c0aa11ae")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "U3")
 					(unit 1)
 				)
 			)

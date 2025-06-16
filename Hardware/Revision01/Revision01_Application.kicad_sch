@@ -3431,6 +3431,20 @@
 		)
 		(uuid "896c5aab-cd39-4c5b-b507-a456eab98d6b")
 	)
+	(text "OpAmpOutput -> Diodes Instead of -> 1.6K"
+		(exclude_from_sim no)
+		(at 20.066 136.652 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.1778)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "8e983f38-086f-4a7a-9a0d-a48d0e82cd26")
+	)
 	(text "Calculation for battery measurement:\n\nBattery range is from 4.5-12V.\n\nChosen resistors 5 and 15k. \nLeft extra room in resistor values for uncertainty\nVmax = 3V\nVmin = 1.125V"
 		(exclude_from_sim no)
 		(at 194.818 275.844 0)
@@ -19956,7 +19970,7 @@
 	)
 	(hierarchical_label "MOSI"
 		(shape input)
-		(at 327.66 102.87 180)
+		(at 251.46 127 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -19967,7 +19981,7 @@
 	)
 	(hierarchical_label "MISO"
 		(shape output)
-		(at 327.66 97.79 180)
+		(at 251.46 121.92 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -19990,7 +20004,7 @@
 	)
 	(hierarchical_label "~{MPU_CS}"
 		(shape input)
-		(at 327.66 90.17 180)
+		(at 251.46 114.3 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -20024,7 +20038,7 @@
 	)
 	(hierarchical_label "SCK"
 		(shape input)
-		(at 327.66 100.33 180)
+		(at 251.46 124.46 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -20125,7 +20139,7 @@
 	)
 	(hierarchical_label "MPU_INT1"
 		(shape output)
-		(at 327.66 92.71 180)
+		(at 251.46 116.84 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -21582,7 +21596,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 331.47 97.79 270)
+		(at 255.27 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21590,7 +21604,7 @@
 		(dnp no)
 		(uuid "0f56a79e-b24c-4a65-acb7-372ad1ad7321")
 		(property "Reference" "R35"
-			(at 329.692 97.79 90)
+			(at 253.492 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21599,7 +21613,7 @@
 			)
 		)
 		(property "Value" "10K +-1%"
-			(at 338.836 97.79 90)
+			(at 262.636 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21608,7 +21622,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 331.47 96.012 90)
+			(at 255.27 120.142 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21617,7 +21631,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21626,7 +21640,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21635,7 +21649,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21644,7 +21658,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21653,7 +21667,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21662,7 +21676,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21671,7 +21685,7 @@
 			)
 		)
 		(property "DISTRIB" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21680,7 +21694,7 @@
 			)
 		)
 		(property "Distributor Link" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21689,7 +21703,7 @@
 			)
 		)
 		(property "FOOTPRINT" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21698,7 +21712,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21707,7 +21721,7 @@
 			)
 		)
 		(property "INTERNAL_PART_NUMBER" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21716,7 +21730,7 @@
 			)
 		)
 		(property "MANUFACTURER P/N" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21725,7 +21739,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21734,7 +21748,7 @@
 			)
 		)
 		(property "TOLERANCE" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21743,7 +21757,7 @@
 			)
 		)
 		(property "Price per unit" "0.16"
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21752,7 +21766,7 @@
 			)
 		)
 		(property "Manufacturer" "KOA Speer Electronics, Inc."
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21761,7 +21775,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21769,7 +21783,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21777,7 +21791,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21785,7 +21799,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21793,7 +21807,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21801,7 +21815,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21809,7 +21823,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21817,7 +21831,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21825,7 +21839,7 @@
 			)
 		)
 		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21833,7 +21847,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21841,7 +21855,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 331.47 97.79 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22349,7 +22363,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 335.28 102.87 90)
+		(at 259.08 127 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22357,7 +22371,7 @@
 		(dnp no)
 		(uuid "167f8876-2cba-49e9-852e-502e15b4370a")
 		(property "Reference" "#PWR051"
-			(at 341.63 102.87 0)
+			(at 265.43 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22366,7 +22380,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 339.6742 102.743 0)
+			(at 263.4742 126.873 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22375,7 +22389,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 335.28 102.87 0)
+			(at 259.08 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22384,7 +22398,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 335.28 102.87 0)
+			(at 259.08 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22393,7 +22407,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 335.28 102.87 0)
+			(at 259.08 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25895,7 +25909,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 335.28 100.33 90)
+		(at 259.08 124.46 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25903,7 +25917,7 @@
 		(dnp no)
 		(uuid "389565a6-da6a-4c07-9ed2-f3cfe0b04f24")
 		(property "Reference" "#PWR050"
-			(at 341.63 100.33 0)
+			(at 265.43 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25912,7 +25926,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 339.6742 100.203 0)
+			(at 263.4742 124.333 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25921,7 +25935,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 335.28 100.33 0)
+			(at 259.08 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25930,7 +25944,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 335.28 100.33 0)
+			(at 259.08 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25939,7 +25953,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 335.28 100.33 0)
+			(at 259.08 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26246,7 +26260,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 331.47 100.33 270)
+		(at 255.27 124.46 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26254,7 +26268,7 @@
 		(dnp no)
 		(uuid "3b70df6c-a295-4cf4-8d29-69d719922168")
 		(property "Reference" "R36"
-			(at 329.692 100.33 90)
+			(at 253.492 124.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26263,7 +26277,7 @@
 			)
 		)
 		(property "Value" "10K +-1%"
-			(at 338.836 100.33 90)
+			(at 262.636 124.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26272,7 +26286,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 331.47 98.552 90)
+			(at 255.27 122.682 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26281,7 +26295,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26290,7 +26304,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26299,7 +26313,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26308,7 +26322,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26317,7 +26331,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26326,7 +26340,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26335,7 +26349,7 @@
 			)
 		)
 		(property "DISTRIB" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26344,7 +26358,7 @@
 			)
 		)
 		(property "Distributor Link" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26353,7 +26367,7 @@
 			)
 		)
 		(property "FOOTPRINT" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26362,7 +26376,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26371,7 +26385,7 @@
 			)
 		)
 		(property "INTERNAL_PART_NUMBER" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26380,7 +26394,7 @@
 			)
 		)
 		(property "MANUFACTURER P/N" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26389,7 +26403,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26398,7 +26412,7 @@
 			)
 		)
 		(property "TOLERANCE" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26407,7 +26421,7 @@
 			)
 		)
 		(property "Price per unit" "0.16"
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26416,7 +26430,7 @@
 			)
 		)
 		(property "Manufacturer" "KOA Speer Electronics, Inc."
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26425,7 +26439,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26433,7 +26447,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26441,7 +26455,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26449,7 +26463,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26457,7 +26471,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26465,7 +26479,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26473,7 +26487,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26481,7 +26495,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26489,7 +26503,7 @@
 			)
 		)
 		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26497,7 +26511,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26505,7 +26519,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 331.47 100.33 0)
+			(at 255.27 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27853,7 +27867,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 335.28 97.79 90)
+		(at 259.08 121.92 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27861,7 +27875,7 @@
 		(dnp no)
 		(uuid "4ef24c77-4c0f-4ac5-a17a-6ff966994fa7")
 		(property "Reference" "#PWR010"
-			(at 341.63 97.79 0)
+			(at 265.43 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27870,7 +27884,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 339.6742 97.663 0)
+			(at 263.4742 121.793 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27879,7 +27893,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 335.28 97.79 0)
+			(at 259.08 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27888,7 +27902,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 335.28 97.79 0)
+			(at 259.08 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27897,7 +27911,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 335.28 97.79 0)
+			(at 259.08 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30484,7 +30498,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 331.47 102.87 270)
+		(at 255.27 127 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -30492,7 +30506,7 @@
 		(dnp no)
 		(uuid "69d88727-bb1d-4449-a80b-7b8db7c6925f")
 		(property "Reference" "R37"
-			(at 329.692 102.87 90)
+			(at 253.492 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30501,7 +30515,7 @@
 			)
 		)
 		(property "Value" "10K +-1%"
-			(at 338.836 102.87 90)
+			(at 262.636 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30510,7 +30524,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 331.47 101.092 90)
+			(at 255.27 125.222 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30519,7 +30533,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30528,7 +30542,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30537,7 +30551,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30546,7 +30560,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30555,7 +30569,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30564,7 +30578,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30573,7 +30587,7 @@
 			)
 		)
 		(property "DISTRIB" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30582,7 +30596,7 @@
 			)
 		)
 		(property "Distributor Link" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30591,7 +30605,7 @@
 			)
 		)
 		(property "FOOTPRINT" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30600,7 +30614,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30609,7 +30623,7 @@
 			)
 		)
 		(property "INTERNAL_PART_NUMBER" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30618,7 +30632,7 @@
 			)
 		)
 		(property "MANUFACTURER P/N" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30627,7 +30641,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30636,7 +30650,7 @@
 			)
 		)
 		(property "TOLERANCE" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30645,7 +30659,7 @@
 			)
 		)
 		(property "Price per unit" "0.16"
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30654,7 +30668,7 @@
 			)
 		)
 		(property "Manufacturer" "KOA Speer Electronics, Inc."
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30663,7 +30677,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30671,7 +30685,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30679,7 +30693,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30687,7 +30701,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30695,7 +30709,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30703,7 +30717,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30711,7 +30725,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30719,7 +30733,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30727,7 +30741,7 @@
 			)
 		)
 		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30735,7 +30749,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30743,7 +30757,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 331.47 102.87 0)
+			(at 255.27 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31248,7 +31262,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 335.28 92.71 90)
+		(at 259.08 116.84 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -31256,7 +31270,7 @@
 		(dnp no)
 		(uuid "7732e8fd-e3fa-420b-a822-18d7d741be51")
 		(property "Reference" "#PWR011"
-			(at 341.63 92.71 0)
+			(at 265.43 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31265,7 +31279,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 339.6742 92.583 0)
+			(at 263.4742 116.713 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31274,7 +31288,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 335.28 92.71 0)
+			(at 259.08 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31283,7 +31297,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 335.28 92.71 0)
+			(at 259.08 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31292,7 +31306,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 335.28 92.71 0)
+			(at 259.08 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32741,7 +32755,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 331.47 92.71 270)
+		(at 255.27 116.84 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -32749,7 +32763,7 @@
 		(dnp no)
 		(uuid "8604a139-f0e3-4a53-90ff-3721a4580614")
 		(property "Reference" "R34"
-			(at 329.692 92.71 90)
+			(at 253.492 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32758,7 +32772,7 @@
 			)
 		)
 		(property "Value" "10K +-1%"
-			(at 338.836 92.71 90)
+			(at 262.636 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32767,7 +32781,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 331.47 90.932 90)
+			(at 255.27 115.062 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32776,7 +32790,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32785,7 +32799,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32794,7 +32808,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32803,7 +32817,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32812,7 +32826,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32821,7 +32835,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32830,7 +32844,7 @@
 			)
 		)
 		(property "DISTRIB" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32839,7 +32853,7 @@
 			)
 		)
 		(property "Distributor Link" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32848,7 +32862,7 @@
 			)
 		)
 		(property "FOOTPRINT" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32857,7 +32871,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32866,7 +32880,7 @@
 			)
 		)
 		(property "INTERNAL_PART_NUMBER" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32875,7 +32889,7 @@
 			)
 		)
 		(property "MANUFACTURER P/N" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32884,7 +32898,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32893,7 +32907,7 @@
 			)
 		)
 		(property "TOLERANCE" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32902,7 +32916,7 @@
 			)
 		)
 		(property "Price per unit" "0.16"
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32911,7 +32925,7 @@
 			)
 		)
 		(property "Manufacturer" "KOA Speer Electronics, Inc."
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32920,7 +32934,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32928,7 +32942,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32936,7 +32950,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32944,7 +32958,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32952,7 +32966,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32960,7 +32974,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32968,7 +32982,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32976,7 +32990,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32984,7 +32998,7 @@
 			)
 		)
 		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32992,7 +33006,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33000,7 +33014,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 331.47 92.71 0)
+			(at 255.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38199,7 +38213,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 331.47 90.17 270)
+		(at 255.27 114.3 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -38207,7 +38221,7 @@
 		(dnp no)
 		(uuid "bd933ec6-753b-4bce-ba97-10b6603f4601")
 		(property "Reference" "R33"
-			(at 329.692 90.17 90)
+			(at 253.492 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38216,7 +38230,7 @@
 			)
 		)
 		(property "Value" "10K +-1%"
-			(at 338.836 90.17 90)
+			(at 262.636 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38225,7 +38239,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 331.47 88.392 90)
+			(at 255.27 112.522 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38234,7 +38248,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38243,7 +38257,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38252,7 +38266,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38261,7 +38275,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD1002F/10234111"
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38270,7 +38284,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38279,7 +38293,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38288,7 +38302,7 @@
 			)
 		)
 		(property "DISTRIB" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38297,7 +38311,7 @@
 			)
 		)
 		(property "Distributor Link" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38306,7 +38320,7 @@
 			)
 		)
 		(property "FOOTPRINT" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38315,7 +38329,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38324,7 +38338,7 @@
 			)
 		)
 		(property "INTERNAL_PART_NUMBER" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38333,7 +38347,7 @@
 			)
 		)
 		(property "MANUFACTURER P/N" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38342,7 +38356,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38351,7 +38365,7 @@
 			)
 		)
 		(property "TOLERANCE" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38360,7 +38374,7 @@
 			)
 		)
 		(property "Price per unit" "0.16"
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38369,7 +38383,7 @@
 			)
 		)
 		(property "Manufacturer" "KOA Speer Electronics, Inc."
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38378,7 +38392,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38386,7 +38400,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38394,7 +38408,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38402,7 +38416,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38410,7 +38424,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38418,7 +38432,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38426,7 +38440,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38434,7 +38448,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38442,7 +38456,7 @@
 			)
 		)
 		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38450,7 +38464,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38458,7 +38472,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 331.47 90.17 0)
+			(at 255.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40184,7 +40198,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 335.28 90.17 0)
+		(at 259.08 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -40192,7 +40206,7 @@
 		(dnp no)
 		(uuid "dc1f873f-ed3e-412a-8313-ad7ceb04596d")
 		(property "Reference" "#PWR053"
-			(at 335.28 93.98 0)
+			(at 259.08 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40201,7 +40215,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 335.661 85.7758 0)
+			(at 259.461 109.9058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40209,7 +40223,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 335.28 90.17 0)
+			(at 259.08 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40218,7 +40232,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 335.28 90.17 0)
+			(at 259.08 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40227,7 +40241,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 335.28 90.17 0)
+			(at 259.08 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)

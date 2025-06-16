@@ -1,4 +1,4 @@
-Telemetry system for BCIT-BAJA, collecting strain across suspension of various parts of car as well as acceleration
+Telemetry system for BCIT-BAJA, collecting strain across suspension components of car as well as acceleration
 
 PART A -> MAINBOARD(collects analog signals and transmits to receiver)
 

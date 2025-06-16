@@ -12,5 +12,5 @@ PART B -> Amplifies 0-15mV signal to 0.3-3V
 ![image](https://github.com/user-attachments/assets/9414f8d5-4f52-4e46-ae3c-9da4bbf92fe5)
 ![image](https://github.com/user-attachments/assets/f3b23432-61bd-4f30-b635-6123515789b7)
 
-# MAINBOARD( PART B) - Amplifier circuit
+# Amplifier circuit ( PART B) - 
 ![image](https://github.com/user-attachments/assets/a1db2386-22c9-4d49-882a-4685fd6d1d30)

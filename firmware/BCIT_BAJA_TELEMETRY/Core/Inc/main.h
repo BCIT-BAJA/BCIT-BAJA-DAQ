@@ -57,6 +57,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define ADC2_IN14_BATT_MEASURE_Pin GPIO_PIN_5
+#define ADC2_IN14_BATT_MEASURE_GPIO_Port GPIOC
 
 /* USER CODE BEGIN Private defines */
 

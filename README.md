@@ -1,8 +1,9 @@
 Telemetry system for BCIT-BAJA, collecting strain across suspension components of car as well as acceleration
 
-PART A -> MAINBOARD(collects analog signals and transmits to receiver)
-
 PART B -> Amplifies 0-15mV signal to 0.3-3V
+
+PART A -> MAINBOARD(collects analog signals from part B and transmits data to receiver)
+
 
 # MAINBOARD( PART A)
 

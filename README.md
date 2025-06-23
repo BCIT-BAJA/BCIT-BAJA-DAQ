@@ -6,7 +6,7 @@ Strain across suspension is unknown and as a result during the last competition,
 the telemetry system for BCIT-BAJA, collects strain across suspension components of car to allow BAJA to optimize material use.
 As well as collects data such as linear/angular acceleration
 
-PART B -> Amplifies 0-15mV signal to 0.3-3V
+PART B -> Amplifies strain-gauge signal 0-15mV signal to 0.3-3V to reduce NOISE as it is routed to the main-board
 
 PART A -> MAINBOARD(collects analog signals from part B and transmits data to receiver)
 

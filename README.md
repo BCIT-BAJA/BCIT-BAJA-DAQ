@@ -1,4 +1,10 @@
-Telemetry system for BCIT-BAJA, collecting strain across suspension components of car as well as acceleration
+# Problem 
+Strain across suspension is unknown and as a result during the last competition, it bent.
+![ezgif-3c4af8c38ad79b](https://github.com/user-attachments/assets/8fe03ef1-5886-4e94-b8d6-ccf3dc3e0c9c)
+
+
+the telemetry system for BCIT-BAJA, collects strain across suspension components of car to allow BAJA to optimize material use.
+As well as collects data such as linear/angular acceleration
 
 PART B -> Amplifies 0-15mV signal to 0.3-3V
 

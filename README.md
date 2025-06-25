@@ -1,5 +1,5 @@
 # Problem 
-During the last BAJA competition, suspension of the car broke due to the inability to measure dynamic forces applied onto the suspension as a result, during the last competition, it bent.
+During the last BAJA competition, suspension of the car broke due to the inability to measure dynamic forces applied onto the suspension. As a result, during the last competition, it bent.
 ![ezgif-3c4af8c38ad79b](https://github.com/user-attachments/assets/8fe03ef1-5886-4e94-b8d6-ccf3dc3e0c9c)
 
 
@@ -7,8 +7,8 @@ The telemetry system for BCIT-BAJA, collects strain across suspension components
 As well as collect other data such as linear/angular acceleration.
 
 There consists of 2 parts of this project. 
-# PART A the amplification of the (0-15mV) to (0-3.0V) analog strain gauge signal which is then routed to
-# PART B, the collection of the 8 conditioned analog signals which is then transmitted and received over a 900MHz antenna
+**PART A** the amplification of the (0-15mV) to (0-3.0V) analog strain gauge signal which is then routed to
+**PART B**, the collection of the 8 conditioned analog signals which is then transmitted and received over a 900MHz antenna
 
 
 # MAINBOARD( PART A)

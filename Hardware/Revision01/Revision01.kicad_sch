@@ -5383,8 +5383,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at 0 0 0)
+			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5420,6 +5420,15 @@
 				)
 			)
 			(property "Distributor link" "https://www.digikey.ca/en/products/detail/carling-technologies/V2D2S00B-GZCAD-100-XACT1/11481760"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "FOOTPRINT" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -5684,6 +5693,30 @@
 				)
 			)
 			(symbol "SW_SPST_LED_0_1"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -5.08 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -5.08 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(circle
 					(center -2.032 2.54)
 					(radius 0.508)
@@ -5737,34 +5770,16 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 5.08 2.54 180)
 					(length 2.54)
-					(name "1"
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5775,14 +5790,14 @@
 				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
-					(name "K"
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6398,7 +6413,7 @@
 	)
 	(rectangle
 		(start 13.462 56.642)
-		(end 93.98 126.746)
+		(end 109.22 126.746)
 		(stroke
 			(width 0)
 			(type default)
@@ -6668,7 +6683,7 @@
 	)
 	(text "24V e-fuse\n250mA CTS CURRENT\n550mA trip\n\nFLA of circuit:\n\nPurpose: Protects human, \nbecause death looks bad on resume\n"
 		(exclude_from_sim no)
-		(at 34.798 88.646 0)
+		(at 80.264 104.14 0)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -6724,7 +6739,7 @@
 	)
 	(text "(Optional) Bypass BUCK-CONVERTOR\nV_batt -> 5V LDO"
 		(exclude_from_sim no)
-		(at 22.098 182.372 0)
+		(at 23.368 176.022 0)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -6764,10 +6779,10 @@
 		(uuid "3ba5093c-b2af-4b80-8d97-c27ca259f3d6")
 	)
 	(junction
-		(at 63.5 182.88)
+		(at 33.02 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3bdc48e5-61a3-4a8d-baf9-88bb1328410e")
+		(uuid "43e8e46f-1ce2-429c-9a25-f3e56b5b36a9")
 	)
 	(junction
 		(at 22.86 143.51)
@@ -6792,12 +6807,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7203b44f-cf70-4f2e-9292-d26882c0a6c8")
-	)
-	(junction
-		(at 67.31 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7d138779-270f-4639-89c6-9ebfd6040bac")
 	)
 	(junction
 		(at 39.37 109.22)
@@ -7043,6 +7052,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 181.61) (xy 43.18 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b1f04d4-42c9-4027-87eb-61433545204c")
+	)
+	(wire
+		(pts
 			(xy 144.78 125.73) (xy 200.66 125.73)
 		)
 		(stroke
@@ -7050,16 +7069,6 @@
 			(type default)
 		)
 		(uuid "0c3ab1a2-0be3-4772-8dda-d46ba8f61f04")
-	)
-	(wire
-		(pts
-			(xy 64.77 95.25) (xy 67.31 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fe374a5-41ce-4ced-acbf-7ce72339df47")
 	)
 	(wire
 		(pts
@@ -7103,16 +7112,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 187.96) (xy 71.12 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a6f2489-22a0-4539-b9f4-70185bbb4ead")
-	)
-	(wire
-		(pts
 			(xy 105.41 154.94) (xy 105.41 148.59)
 		)
 		(stroke
@@ -7140,6 +7139,16 @@
 			(type default)
 		)
 		(uuid "2263f351-df0e-484a-b47d-77ba0d1be547")
+	)
+	(wire
+		(pts
+			(xy 40.64 185.42) (xy 45.72 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "287f7919-f1cd-4245-9c2e-0391154dbd3a")
 	)
 	(wire
 		(pts
@@ -7183,13 +7192,13 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 182.88) (xy 63.5 187.96)
+			(xy 33.02 185.42) (xy 33.02 181.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "335f3005-1dbc-4ce2-8fab-6e5c1be7bdb6")
+		(uuid "338ca433-552a-447e-9235-f19e824b5adf")
 	)
 	(wire
 		(pts
@@ -7253,16 +7262,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 182.88) (xy 71.12 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b72f8a9-1c79-4f9e-a540-c0a36a7d434e")
-	)
-	(wire
-		(pts
 			(xy 195.58 229.87) (xy 196.85 229.87)
 		)
 		(stroke
@@ -7290,16 +7289,6 @@
 			(type default)
 		)
 		(uuid "3ed5841c-1eb5-4b53-9895-87dce77e7380")
-	)
-	(wire
-		(pts
-			(xy 63.5 187.96) (xy 66.04 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40b4d9fc-57ac-42fd-8239-1b830b6f4227")
 	)
 	(wire
 		(pts
@@ -7400,16 +7389,6 @@
 			(type default)
 		)
 		(uuid "63ddd5e3-60b3-4fe0-8a11-138089226504")
-	)
-	(wire
-		(pts
-			(xy 63.5 182.88) (xy 66.04 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "668a3747-8149-4084-b9bc-81207c68787b")
 	)
 	(wire
 		(pts
@@ -7533,6 +7512,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 181.61) (xy 33.02 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84fd98d1-4777-4f02-9221-4ea55e4ab455")
+	)
+	(wire
+		(pts
 			(xy 67.31 113.03) (xy 67.31 109.22)
 		)
 		(stroke
@@ -7640,6 +7629,26 @@
 			(type default)
 		)
 		(uuid "aa7cb069-0c4e-4b52-8f12-5e7337e07ce7")
+	)
+	(wire
+		(pts
+			(xy 64.77 104.14) (xy 64.77 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aad70a3f-67b1-434b-b4ac-45561557b95d")
+	)
+	(wire
+		(pts
+			(xy 35.56 185.42) (xy 33.02 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab6f2fd6-42fd-4e86-af7e-08bed9418c62")
 	)
 	(wire
 		(pts
@@ -7860,16 +7869,6 @@
 			(type default)
 		)
 		(uuid "e35a040b-718d-432d-a3fb-30beb34b0246")
-	)
-	(wire
-		(pts
-			(xy 63.5 182.88) (xy 60.96 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e75db1e6-9339-403b-80bf-0b4bd9e99f36")
 	)
 	(wire
 		(pts
@@ -9440,7 +9439,7 @@
 		(uuid "7a7e798c-810d-4f70-8ff0-96e8469a411f")
 	)
 	(label "ANT_CSCON_GPIO"
-		(at 198.12 177.8 180)
+		(at 198.12 175.26 180)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -9610,7 +9609,7 @@
 		(uuid "b27ae456-8ad0-4f97-8d26-3ed9b3711983")
 	)
 	(label "ANT_RESET_ANT_GPIO"
-		(at 198.12 175.26 180)
+		(at 198.12 177.8 180)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -9690,12 +9689,12 @@
 		(uuid "cf832d13-4fb0-46f9-81e9-6282324bd3a9")
 	)
 	(label "BuckEnable"
-		(at 60.96 182.88 180)
+		(at 45.72 185.42 0)
 		(effects
 			(font
 				(size 0.889 0.889)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "d14ed414-d923-4153-b045-775994545ccb")
 	)
@@ -10991,7 +10990,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 59.69 248.92 0)
 			(effects
 				(font
@@ -11414,7 +11413,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 64.77 105.41 0)
+		(at 64.77 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11423,15 +11422,6 @@
 		(fields_autoplaced yes)
 		(uuid "2c3a5cb8-28ff-4bdd-ad39-21d530f8eceb")
 		(property "Reference" "#PWR05"
-			(at 64.77 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
 			(at 64.77 110.49 0)
 			(effects
 				(font
@@ -11440,8 +11430,17 @@
 				(hide yes)
 			)
 		)
+		(property "Value" "GND"
+			(at 64.77 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Footprint" ""
-			(at 64.77 105.41 0)
+			(at 64.77 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11450,7 +11449,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 105.41 0)
+			(at 64.77 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11459,7 +11458,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 64.77 105.41 0)
+			(at 64.77 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11541,6 +11540,103 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 38.1 185.42 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "39db1657-48f9-460b-9cd4-28254c35b6e1")
+		(property "Reference" "R33"
+			(at 38.862 187.198 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 38.608 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 38.1 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 38.1 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW08050000Z0EAHP/2222316"
+			(at 38.1 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 38.1 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW08050000Z0EAHP"
+			(at 38.1 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "10b1e109-aa33-4985-a034-8eb8a4082bd2")
+		)
+		(pin "2"
+			(uuid "14e65aab-c2d9-4dca-94a3-4317f05e2905")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -14211,7 +14307,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 31.75 187.96 90)
+		(at 33.02 181.61 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14219,7 +14315,7 @@
 		(dnp no)
 		(uuid "65be881c-8fca-4569-8e04-16dd62bb3595")
 		(property "Reference" "#PWR073"
-			(at 35.56 187.96 0)
+			(at 36.83 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14228,7 +14324,7 @@
 			)
 		)
 		(property "Value" "+V_batt"
-			(at 28.448 187.96 90)
+			(at 29.718 181.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14237,7 +14333,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 31.75 187.96 0)
+			(at 33.02 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14246,7 +14342,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 187.96 0)
+			(at 33.02 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14255,7 +14351,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 31.75 187.96 0)
+			(at 33.02 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14300,7 +14396,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LQH44PH151MPRL:IND_LQH44PN_PR_MUR"
+		(property "Footprint" "VLS5045EX_151M_H:IND_VLS5045EX-151M-H"
 			(at 85.09 148.59 0)
 			(effects
 				(font
@@ -14748,74 +14844,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 187.96 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "783a45b8-ac73-45f3-9293-f20dad27709b")
-		(property "Reference" "#PWR075"
-			(at 73.66 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 73.66 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9454f366-faaa-49c1-8577-ff9c29f6718c")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
-					(reference "#PWR075")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 71.12 212.09 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14941,73 +14969,6 @@
 			(project ""
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 73.66 182.88 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7b109fb1-89c5-4891-99ae-a6e5fe35c4f8")
-		(property "Reference" "#PWR070"
-			(at 73.66 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+V_batt"
-			(at 79.756 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 73.66 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5b7c1100-abc6-44ba-b422-4a0843feffb5")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
-					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -15755,102 +15716,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 68.58 182.88 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "85ecc724-b38a-49d2-b160-91b33452038c")
-		(property "Reference" "R37"
-			(at 67.818 180.594 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0"
-			(at 68.072 182.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 68.58 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 68.58 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW08050000Z0EAHP/2222316"
-			(at 68.58 182.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay Dale"
-			(at 68.58 182.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CRCW08050000Z0EAHP"
-			(at 68.58 182.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ff310cc4-b317-4281-ace7-5fb232633a1b")
-		)
-		(pin "2"
-			(uuid "e0afb94a-9009-488b-bbf3-1d1a7b226126")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
-					(reference "R37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 246.38 187.96 90)
 		(unit 1)
@@ -16337,7 +16202,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 54.61 248.92 0)
 			(effects
 				(font
@@ -16646,16 +16511,16 @@
 	)
 	(symbol
 		(lib_id "Device:Polyfuse")
-		(at 67.31 91.44 0)
+		(at 67.31 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3feead7-8ae8-48ec-8ffb-38fb7007af2c")
 		(property "Reference" "F1"
-			(at 69.85 90.1699 0)
+			(at 69.85 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16664,7 +16529,7 @@
 			)
 		)
 		(property "Value" "Polyfuse"
-			(at 69.85 92.7099 0)
+			(at 69.85 102.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16673,7 +16538,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 68.58 96.52 0)
+			(at 68.58 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16683,7 +16548,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16692,7 +16557,7 @@
 			)
 		)
 		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16701,7 +16566,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/littelfuse-inc/1206L025-24YR/14320017"
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16710,7 +16575,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "1206L025/24YR"
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16719,7 +16584,7 @@
 			)
 		)
 		(property "Price per unit" "0.85"
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16728,7 +16593,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16736,7 +16601,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16744,7 +16609,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16752,7 +16617,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16760,7 +16625,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16768,7 +16633,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16776,7 +16641,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16784,7 +16649,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16792,7 +16657,7 @@
 			)
 		)
 		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16800,7 +16665,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16808,7 +16673,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16816,7 +16681,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 67.31 91.44 0)
+			(at 67.31 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17285,7 +17150,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 64.77 248.92 0)
 			(effects
 				(font
@@ -17332,7 +17197,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 34.29 187.96 90)
+		(at 38.1 181.61 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17341,7 +17206,7 @@
 		(dnp yes)
 		(uuid "adab97e1-cbd2-4ce0-a36d-db3ff8546400")
 		(property "Reference" "R36"
-			(at 35.306 185.928 90)
+			(at 39.116 179.578 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -17350,7 +17215,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 34.798 187.96 90)
+			(at 38.608 181.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17359,7 +17224,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 34.29 187.96 0)
+			(at 38.1 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17368,7 +17233,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 34.29 187.96 0)
+			(at 38.1 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17377,7 +17242,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 34.29 187.96 0)
+			(at 38.1 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17386,7 +17251,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW08050000Z0EAHP/2222316"
-			(at 34.29 187.96 90)
+			(at 38.1 181.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17395,7 +17260,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay Dale"
-			(at 34.29 187.96 90)
+			(at 38.1 181.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17404,7 +17269,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CRCW08050000Z0EAHP"
-			(at 34.29 187.96 90)
+			(at 38.1 181.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17495,16 +17360,15 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST_LED")
-		(at 64.77 100.33 270)
+		(at 64.77 92.71 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "b3c2f9bc-4832-43b7-b8db-2f613ffeef60")
 		(property "Reference" "SW1"
-			(at 71.12 99.0599 90)
+			(at 71.12 91.4399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17513,7 +17377,7 @@
 			)
 		)
 		(property "Value" "ON/OFF_SW_SPST_LED"
-			(at 71.12 101.5999 90)
+			(at 71.12 93.9799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17522,7 +17386,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 72.39 100.33 0)
+			(at 72.39 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17531,7 +17395,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 100.33 0)
+			(at 58.42 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17540,7 +17404,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch with LED, generic"
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17549,7 +17413,7 @@
 			)
 		)
 		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/carling-technologies/V2D2S00B-GZCAD-100-XACT1/11481760"
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17558,7 +17422,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/carling-technologies/V2D2S00B-GZCAD-100-XACT1/11481760"
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17567,7 +17431,7 @@
 			)
 		)
 		(property "FOOTPRINT" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17576,7 +17440,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17585,7 +17449,7 @@
 			)
 		)
 		(property "INTERNAL_PART_NUMBER" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17594,7 +17458,7 @@
 			)
 		)
 		(property "MANUFACTURER P/N" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17603,7 +17467,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17612,7 +17476,7 @@
 			)
 		)
 		(property "TOLERANCE" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17621,7 +17485,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "V2D2S00B-GZCAD-100-XACT1"
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17630,7 +17494,7 @@
 			)
 		)
 		(property "Price per unit" "7.88"
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17639,7 +17503,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17647,7 +17511,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17655,7 +17519,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17663,7 +17527,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17671,7 +17535,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17679,7 +17543,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17687,7 +17551,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17695,7 +17559,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17703,7 +17567,7 @@
 			)
 		)
 		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17711,7 +17575,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17719,7 +17583,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 64.77 100.33 0)
+			(at 64.77 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17727,7 +17591,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 64.77 100.33 90)
+			(at 64.77 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17743,9 +17607,6 @@
 		)
 		(pin "3"
 			(uuid "5f750802-f657-46a0-87a8-9d124b0d776a")
-		)
-		(pin "4"
-			(uuid "8f8ef635-81b0-464d-bd39-9b14eb8cb46e")
 		)
 		(instances
 			(project ""
@@ -17784,7 +17645,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 69.85 248.92 0)
 			(effects
 				(font
@@ -18348,102 +18209,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 68.58 187.96 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "c941e4ab-316a-4510-b344-3fa3e4521c4f")
-		(property "Reference" "R38"
-			(at 67.564 185.928 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0"
-			(at 68.072 187.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 68.58 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 68.58 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW08050000Z0EAHP/2222316"
-			(at 68.58 187.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay Dale"
-			(at 68.58 187.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CRCW08050000Z0EAHP"
-			(at 68.58 187.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8e482822-7e3c-4d24-827f-9904e51c29cf")
-		)
-		(pin "2"
-			(uuid "00d669d5-146e-4276-b1f1-ef942be83749")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
-					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -19298,7 +19063,7 @@
 	)
 	(symbol
 		(lib_id "power:+1V1")
-		(at 36.83 187.96 270)
+		(at 43.18 181.61 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19306,7 +19071,7 @@
 		(dnp no)
 		(uuid "fd9264aa-2e91-4f76-8d3a-648f74b64376")
 		(property "Reference" "#PWR071"
-			(at 33.02 187.96 0)
+			(at 39.37 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19315,7 +19080,7 @@
 			)
 		)
 		(property "Value" "+Vin_7V"
-			(at 44.45 187.96 90)
+			(at 50.8 181.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19323,7 +19088,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 187.96 0)
+			(at 43.18 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19332,7 +19097,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 187.96 0)
+			(at 43.18 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19341,7 +19106,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+1V1\""
-			(at 36.83 187.96 0)
+			(at 43.18 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)

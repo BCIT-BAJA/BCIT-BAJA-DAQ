@@ -7,8 +7,11 @@ The telemetry system for BCIT-BAJA, collects strain across suspension components
 As well as collect other data such as linear/angular acceleration.
 
 There consists of 2 parts of this project. 
+
 **PART A** the amplification of the (0-15mV) to (0-3.0V) analog strain gauge signal which is then routed to
+
 **PART B**, the collection of the 8 conditioned analog signals which is then transmitted and received over a 900MHz antenna
+
 
 
 # MAINBOARD( PART A)

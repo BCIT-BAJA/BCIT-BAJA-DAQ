@@ -1,5 +1,5 @@
 # Problem 
-During the last BAJA competition, BAJA was unable to measure dynamic forces applied onto the suspension. As a result, during the last competition, it bent.
+During the last BAJA competition,The BAJA team was unable to measure dynamic forces applied onto the suspension. As a result, during the last competition, it bent.
 ![ezgif-3c4af8c38ad79b](https://github.com/user-attachments/assets/8fe03ef1-5886-4e94-b8d6-ccf3dc3e0c9c)
 
 
@@ -8,9 +8,9 @@ As well as collect other data such as linear/angular acceleration.
 
 There consists of 2 parts of this project. 
 
-**PART B** the amplification of the (-15-15mV) to (0-3.0V) analog strain gauge signal which is then routed to
+**PART B** the amplification of the (-15-15mV) analog strain signal to (0-3.0V) which is then routed to
 
-**PART A**, the collection of the 8 conditioned analog signals which is then transmitted and received over a 900MHz antenna
+**PART A**, which collects the 8 conditioned analog signals and is transmitted/received over a 900MHz antenna
 
 
 

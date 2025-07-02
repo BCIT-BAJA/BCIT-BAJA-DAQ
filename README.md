@@ -1,9 +1,9 @@
 # Problem 
-During the last BAJA competition,The BAJA team was unable to measure dynamic forces applied onto the suspension. As a result, during the last competition, it bent.
+During the last BAJA competition,The BAJA team was unable to measure dynamic forces applied onto the suspension of the car. As a result, during the last competition, it bent.
 ![ezgif-3c4af8c38ad79b](https://github.com/user-attachments/assets/8fe03ef1-5886-4e94-b8d6-ccf3dc3e0c9c)
 
 
-The telemetry system for BCIT-BAJA, collects strain across suspension components of car to allow BAJA to optimize material and reinforce weak areas of suspension.
+The telemetry system for BCIT-BAJA car, collects strain across suspension components of car to allow BAJA to optimize material and reinforce weak areas of suspension.
 As well as collect other data such as linear/angular acceleration.
 
 There consists of 2 parts of this project. 

@@ -272,7 +272,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_mismatch|647700|927100|b3c2f9bc-4832-43b7-b8db-2f613ffeef60|00000000-0000-0000-0000-000000000000|||",
+        "This symbol was modified so that GND is pin 1."
+      ]
+    ],
     "meta": {
       "version": 0
     },

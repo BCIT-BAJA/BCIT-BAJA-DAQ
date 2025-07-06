@@ -3420,18 +3420,6 @@
 		)
 		(uuid "af2ae356-90e1-4b65-aa9c-dbdc9d7c10e8")
 	)
-	(text "Separate 8X more instrumentation amplifiers"
-		(exclude_from_sim no)
-		(at 70.866 77.978 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1875)
-			)
-			(justify left bottom)
-		)
-		(uuid "b944f420-8bc9-4642-bb0d-1cd32dbe8e4f")
-	)
 	(text "Power calculations:\nRtotal = 8/350 = 43.75 Ohm\n5V/350 = 14.3mA per strain gauge\n\nItotal_5V = 5/43.75 = 114mA\nP = 0.569W"
 		(exclude_from_sim no)
 		(at 30.48 49.784 0)
@@ -4359,16 +4347,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 82.55) (xy 74.93 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "433148b6-d36d-4a7b-b17d-d37bc13d7dc1")
-	)
-	(wire
-		(pts
 			(xy 41.91 210.82) (xy 43.18 210.82)
 		)
 		(stroke
@@ -4579,16 +4557,6 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 86.36) (xy 100.33 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b2b2559-cd7b-4de7-98de-68de67eef455")
-	)
-	(wire
-		(pts
 			(xy 149.86 243.84) (xy 149.86 247.65)
 		)
 		(stroke
@@ -4716,16 +4684,6 @@
 			(type default)
 		)
 		(uuid "9dd681be-5ef3-4e74-9bc8-be31a8431cdc")
-	)
-	(wire
-		(pts
-			(xy 74.93 88.9) (xy 72.39 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e71e116-06d8-4b00-989d-b60cf1ca0603")
 	)
 	(wire
 		(pts
@@ -23877,16 +23835,6 @@
 		)
 		(uuid "01e3bbe4-8210-4db1-8447-bf7d2247877d")
 	)
-	(label "AIN1_D-"
-		(at 72.39 88.9 180)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-			(justify right bottom)
-		)
-		(uuid "0d7f38d4-58b0-47b0-a9b6-f8e19f6de993")
-	)
 	(label "OpAmpOutput6"
 		(at 158.75 205.74 0)
 		(effects
@@ -23956,16 +23904,6 @@
 			(justify right bottom)
 		)
 		(uuid "50058161-82dc-4005-875a-5db0bc03eb7f")
-	)
-	(label "AIN1_D+"
-		(at 72.39 82.55 180)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-			(justify right bottom)
-		)
-		(uuid "51c0324d-b174-44a9-a49c-893d61efe895")
 	)
 	(label "OpAmpOutput3"
 		(at 91.44 121.92 0)
@@ -24116,16 +24054,6 @@
 			(justify right bottom)
 		)
 		(uuid "ba66e5c5-c8c7-42e9-ada2-9e0d03969dcf")
-	)
-	(label "OpAmpOutput1"
-		(at 100.33 86.36 0)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify left bottom)
-		)
-		(uuid "cbc240f0-14c3-4b85-98ef-6fd4a4413ca4")
 	)
 	(label "+StrainV"
 		(at 73.66 124.46 180)
@@ -41795,78 +41723,6 @@
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "J10")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(sheet
-		(at 74.93 80.264)
-		(size 22.86 11.176)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "14eb51a3-67a8-4f4f-b7c1-d030be0d073f")
-		(property "Sheetname" "instrumentationAmplifier.sch"
-			(at 74.93 79.5524 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "instrumentationAmplifier.sch.kicad_sch"
-			(at 74.93 92.0246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "Ain1_D+" input
-			(at 74.93 82.55 180)
-			(uuid "6443cabc-2247-4cde-83b5-111fb0ec4f06")
-			(effects
-				(font
-					(size 1.4986 1.4986)
-				)
-				(justify left)
-			)
-		)
-		(pin "Ain1_D-" input
-			(at 74.93 88.9 180)
-			(uuid "236c17a7-61d5-4cd0-b7b7-708294bb4f33")
-			(effects
-				(font
-					(size 1.4986 1.4986)
-				)
-				(justify left)
-			)
-		)
-		(pin "OpAmpOutput1" input
-			(at 97.79 86.36 0)
-			(uuid "ddd963e0-3d1a-4828-858f-d4d538ca37d4")
-			(effects
-				(font
-					(size 1.4986 1.4986)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(page "3")
 				)
 			)
 		)

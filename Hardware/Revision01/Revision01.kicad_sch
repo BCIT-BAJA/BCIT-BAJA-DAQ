@@ -2289,7 +2289,261 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "NUCLEO-L476RG:NUCLEO-L476RG"
+		(symbol "R_Small_1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_1_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "R_Small_2"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_2_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_2_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Revision01:NUCLEO-L476RG"
 			(pin_names
 				(offset 1.016)
 			)
@@ -2312,13 +2566,12 @@
 					)
 				)
 			)
-			(property "Footprint" "NUCLEO-L476RG:MODULE_NUCLEO-L476RG"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
@@ -2396,15 +2649,6 @@
 				)
 			)
 			(property "Distributor Link" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "FOOTPRINT" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -3960,1931 +4204,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "NUCLEO-L476RG_1"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U1"
-				(at -1.016 30.988 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "NUCLEO-L476RG"
-				(at -1.016 28.448 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "NUCLEO-L476RG:MODULE_NUCLEO-L476RG"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "STmicroelectronics"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "DNM" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Distributor link" "https://www.digikey.ca/en/products/detail/stmicroelectronics/NUCLEO-L476RG/5347711?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Supplier_Focus%20Supplier&utm_term=&productid=5347711&utm_content=&utm_id=go_cmp-20282403582_adg-_ad-__dev-c_ext-_prd-5347711_sig-Cj0KCQjwhYS_BhD2ARIsAJTMMQamP-66YKRPRhELO5Zs5on9XCENDND5L4gJMtzZ4mXY70MO7wsHl6oaAtF6EALw_wcB&gad_source=1&gclid=Cj0KCQjwhYS_BhD2ARIsAJTMMQamP-66YKRPRhELO5Zs5on9XCENDND5L4gJMtzZ4mXY70MO7wsHl6oaAtF6EALw_wcB&gclsrc=aw.ds"
-				(at 15.24 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer Part Number" "NUCLEO-L476RG"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "DNM_MPN" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "DISTRIB" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Distributor Link" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "FOOTPRINT" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ID" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "INTERNAL_PART_NUMBER" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER P/N" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER_PART_NUMBER" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "TOLERANCE" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Price per unit" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Availability" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Check_prices" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description_1" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MF" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MP" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "PARTREV" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Package" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Price" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "SNAPEDA_PACKAGE_ID" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "STANDARD" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "SnapEDA_Link" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Type" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "NUCLEO-L476RG_1_1_0"
-				(rectangle
-					(start -17.78 25.4)
-					(end 92.71 -25.4)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 22.86 0)
-					(length 5.08)
-					(name "PC10/SPI3_SCK/USART3_TX/UART4_TX"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 20.32 0)
-					(length 5.08)
-					(name "PC12/SPI3_MOSI/USART3_CK/UART5_TX"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -22.86 17.78 0)
-					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -22.86 15.24 0)
-					(length 5.08)
-					(name "BOOT0"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -22.86 12.7 0)
-					(length 5.08)
-					(name "NC_CN7_9"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_9"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -22.86 10.16 0)
-					(length 5.08)
-					(name "NC_CN7_11"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_11"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 7.62 0)
-					(length 5.08)
-					(name "PA13/JTMS-SWDIO"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_13"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 5.08 0)
-					(length 5.08)
-					(name "PA14/JTCK-SWCLK"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_15"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 2.54 0)
-					(length 5.08)
-					(name "PA15/JTDI/SPI1_NSS/SPI3_NSS/UART4_RTS_DE"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_17"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -22.86 0 0)
-					(length 5.08)
-					(name "GND_CN7_19"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_19"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -2.54 0)
-					(length 5.08)
-					(name "PB7/USART1_RX/UART4_CTS/TIM17_CH1N"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_21"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -5.08 0)
-					(length 5.08)
-					(name "PC13"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_23"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -7.62 0)
-					(length 5.08)
-					(name "PC14/OSC32_IN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_25"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -10.16 0)
-					(length 5.08)
-					(name "PC15/OSC32_OUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_27"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -12.7 0)
-					(length 5.08)
-					(name "PH0/OSC_IN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_29"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -15.24 0)
-					(length 5.08)
-					(name "PH1/OSC_OUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_31"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -22.86 -17.78 0)
-					(length 5.08)
-					(name "VBAT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_33"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -20.32 0)
-					(length 5.08)
-					(name "PC2/ADC123_IN3/SPI2_MISO"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_35"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -22.86 0)
-					(length 5.08)
-					(name "PC3/ADC123_IN4/SPI2_MOSI/LPTIM2_ETR"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_37"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 22.86 180)
-					(length 5.08)
-					(name "PC11/SPI3_MISO/USART3_RX/UART4_RX"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 20.32 180)
-					(length 5.08)
-					(name "PD2/USART3_RTS_DE/UART5_RX"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 97.79 17.78 180)
-					(length 5.08)
-					(name "E5V"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 97.79 15.24 180)
-					(length 5.08)
-					(name "GND_CN7_8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 97.79 12.7 180)
-					(length 5.08)
-					(name "NC_CN7_10"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_10"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 97.79 10.16 180)
-					(length 5.08)
-					(name "IOREF"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_12"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 97.79 7.62 180)
-					(length 5.08)
-					(name "RESET"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_14"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 97.79 5.08 180)
-					(length 5.08)
-					(name "+3V3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_16"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 97.79 2.54 180)
-					(length 5.08)
-					(name "+5V"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_18"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 97.79 0 180)
-					(length 5.08)
-					(name "GND_CN7_20"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_20"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 97.79 -2.54 180)
-					(length 5.08)
-					(name "GND_CN7_22"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_22"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 97.79 -5.08 180)
-					(length 5.08)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_24"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 97.79 -7.62 180)
-					(length 5.08)
-					(name "NC_CN7_26"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_26"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 -10.16 180)
-					(length 5.08)
-					(name "PA0/ADC12_IN5/USART2_CTS/UART4_TX/TIM2_ETR"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_28"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 -12.7 180)
-					(length 5.08)
-					(name "PA1/ADC12_IN6/USART2_RTS_DE/UART4_RX/TIM15_CH1N"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_30"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 -15.24 180)
-					(length 5.08)
-					(name "PA4/ADC12_IN9/DAC1_OUT1/SPI1_NSS/SPI3_NSS/USART2_CK/LPTIM2_OUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_32"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 -17.78 180)
-					(length 5.08)
-					(name "PB0/ADC12_IN15/USART3_CK"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_34"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 -20.32 180)
-					(length 5.08)
-					(name "PC1/ADC123_IN2/LPUART1_TX"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_36"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 -22.86 180)
-					(length 5.08)
-					(name "PC0/ADC123_IN1/LPUART1_RX/LPTIM2_IN1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN7_38"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(symbol "NUCLEO-L476RG_1_2_0"
-				(rectangle
-					(start -17.78 25.4)
-					(end 92.71 -25.4)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 22.86 0)
-					(length 5.08)
-					(name "PC9/TIM8_BKIN2_COMP1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 20.32 0)
-					(length 5.08)
-					(name "PB8/CAN1_RX/TIM16_CH1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 17.78 0)
-					(length 5.08)
-					(name "PB9/SPI2_NSS/CAN1_TX/TIM17_CH1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -22.86 15.24 0)
-					(length 5.08)
-					(name "AVDD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -22.86 12.7 0)
-					(length 5.08)
-					(name "GND_CN10_9"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_9"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 10.16 0)
-					(length 5.08)
-					(name "PA5/ADC12_IN10/DAC1_OUT2/SPI1_SCK/LPTIM2_ETR"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_11"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 7.62 0)
-					(length 5.08)
-					(name "PA6/ADC12_IN11/SPI1_MISO/USART3_CTS/TIM16_CH1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_13"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 5.08 0)
-					(length 5.08)
-					(name "PA7/ADC12_IN12/SPI1_MOSI/TIM17_CH1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_15"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 2.54 0)
-					(length 5.08)
-					(name "PB6/USART1_TX/TIM16_CH1N"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_17"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 0 0)
-					(length 5.08)
-					(name "PC7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_19"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -2.54 0)
-					(length 5.08)
-					(name "PA9/USART1_TX/TIM15_BKIN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_21"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -5.08 0)
-					(length 5.08)
-					(name "PA8/MCO/USART1_CK/LPTIM2_OUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_23"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -7.62 0)
-					(length 5.08)
-					(name "PB10/SPI2_SCK/USART3_TX/LPUART1_RX"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_25"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -10.16 0)
-					(length 5.08)
-					(name "PB4/NJTRST/SPI1_MISO/SPI3_MISO/USART1_CTS/UART5_RTS_DE/TIM17_BKIN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_27"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -12.7 0)
-					(length 5.08)
-					(name "PB5/SPI1_MOSI/SPI3_MOSI/USART1_CK/UART5_CTS/TIM16_BKIN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_29"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -15.24 0)
-					(length 5.08)
-					(name "PB3/JTDO-TRACESWO/SPI1_SCK/SPI3_SCK/USART1_RTS_DE"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_31"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -17.78 0)
-					(length 5.08)
-					(name "PA10/USART1_RX/TIM17_BKIN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_33"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -20.32 0)
-					(length 5.08)
-					(name "PA2/ADC12_IN7/USART2_TX/TIM15_CH1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_35"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -22.86 -22.86 0)
-					(length 5.08)
-					(name "PA3/ADC12_IN8/USART2_RX/TIM15_CH2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_37"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 22.86 180)
-					(length 5.08)
-					(name "PC8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 20.32 180)
-					(length 5.08)
-					(name "PC6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 17.78 180)
-					(length 5.08)
-					(name "PC5/ADC12_IN14/USART3_RX"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 97.79 15.24 180)
-					(length 5.08)
-					(name "U5V"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 97.79 12.7 180)
-					(length 5.08)
-					(name "NC_CN10_10"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_10"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 10.16 180)
-					(length 5.08)
-					(name "PA12/USART1_RTS_DE/CAN1_TX"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_12"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 7.62 180)
-					(length 5.08)
-					(name "PA11/USART1_CTS/CAN1_RX"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_14"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 5.08 180)
-					(length 5.08)
-					(name "PB12/SPI2_NSS/USART3_CK/LPUART1_RTS_DE/TIM15_BKIN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_16"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 2.54 180)
-					(length 5.08)
-					(name "PB11/USART3_RX/LPUART1_TX"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_18"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 97.79 0 180)
-					(length 5.08)
-					(name "GND_CN10_20"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_20"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 -2.54 180)
-					(length 5.08)
-					(name "PB2/RTC_OUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_22"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 -5.08 180)
-					(length 5.08)
-					(name "PB1/ADC12_IN16/USART3_RTS_DE/LPTIM2_IN1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_24"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 -7.62 180)
-					(length 5.08)
-					(name "PB15/RTC_REFIN/SPI2_MOSI/TIM15_CH2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_26"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 -10.16 180)
-					(length 5.08)
-					(name "PB14/SPI2_MISO/USART3_RTS_DE/TIM15_CH1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_28"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 -12.7 180)
-					(length 5.08)
-					(name "PB13/SPI2_SCK/USART3_CTS/LPUART1_CTS/TIM15_CH1N"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_30"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 97.79 -15.24 180)
-					(length 5.08)
-					(name "AGND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_32"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 97.79 -17.78 180)
-					(length 5.08)
-					(name "PC4/ADC12_IN13/USART3_TX"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_34"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 97.79 -20.32 180)
-					(length 5.08)
-					(name "NC_CN10_36"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_36"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 97.79 -22.86 180)
-					(length 5.08)
-					(name "NC_CN10_38"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "CN10_38"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "R_Small_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0.762 0.508 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "R_Small"
-				(at 0.762 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Small_1_0_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Small_1_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "R_Small_2"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0.762 0.508 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "R_Small"
-				(at 0.762 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Small_2_0_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Small_2_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Switch:SW_SPST_LED"
 			(pin_numbers
 				(hide yes)
@@ -6906,7 +5225,7 @@
 	)
 	(text "PA5 | PA5 <SB42> <SB21> LED2 (Active Hi)"
 		(exclude_from_sim no)
-		(at 87.63 194.31 0)
+		(at 87.63 198.12 0)
 		(effects
 			(font
 				(size 1 1)
@@ -6951,7 +5270,7 @@
 	)
 	(text "AVDD | VDD <Bead> <SB57> AVDD"
 		(exclude_from_sim no)
-		(at 87.63 189.23 0)
+		(at 87.63 193.04 0)
 		(effects
 			(font
 				(size 1 1)
@@ -7019,7 +5338,7 @@
 	)
 	(text "PB3 | JTDO-TRACESWO"
 		(exclude_from_sim no)
-		(at 87.63 219.71 0)
+		(at 87.63 223.52 0)
 		(effects
 			(font
 				(size 1 1)
@@ -7242,15 +5561,15 @@
 		(uuid "067279f5-8ef9-4b52-9067-5a88ee6d32a0")
 	)
 	(no_connect
-		(at 213.36 208.28)
+		(at 213.36 212.09)
 		(uuid "09ecf73c-9994-4807-a959-31d91cffb183")
 	)
 	(no_connect
-		(at 92.71 182.88)
+		(at 92.71 186.69)
 		(uuid "0fae5303-6295-490a-a02f-c87b23914c45")
 	)
 	(no_connect
-		(at 92.71 185.42)
+		(at 92.71 189.23)
 		(uuid "0fdd4cd9-a0b9-40f5-9164-73588f5ce793")
 	)
 	(no_connect
@@ -7258,7 +5577,7 @@
 		(uuid "15919a83-ea80-417b-a880-80c35fd43f78")
 	)
 	(no_connect
-		(at 87.63 220.98)
+		(at 87.63 224.79)
 		(uuid "2b0ad227-1108-41d6-a0c4-9c42e955b545")
 	)
 	(no_connect
@@ -7270,7 +5589,7 @@
 		(uuid "2fb6e50f-08d6-4f66-bf78-6d2ea6f96b3e")
 	)
 	(no_connect
-		(at 214.63 182.88)
+		(at 214.63 186.69)
 		(uuid "2fe4dd6e-8477-4b01-869d-fd7042774b85")
 	)
 	(no_connect
@@ -7278,7 +5597,7 @@
 		(uuid "311494a9-6006-462f-948d-22bdb19485b6")
 	)
 	(no_connect
-		(at 213.36 203.2)
+		(at 213.36 207.01)
 		(uuid "321dda4c-c2d1-4dab-99f8-96a469ac0957")
 	)
 	(no_connect
@@ -7298,15 +5617,15 @@
 		(uuid "762902f8-999c-4b84-8a56-d07a240b72f5")
 	)
 	(no_connect
-		(at 92.71 200.66)
+		(at 92.71 204.47)
 		(uuid "790086e9-4fe2-4f05-816c-fa16281edbd6")
 	)
 	(no_connect
-		(at 213.36 210.82)
+		(at 213.36 214.63)
 		(uuid "7d77565e-2394-4419-aa14-dce68b352ca5")
 	)
 	(no_connect
-		(at 213.36 223.52)
+		(at 213.36 227.33)
 		(uuid "84b8749c-7f9d-461e-ad72-8181e9e39104")
 	)
 	(no_connect
@@ -7326,19 +5645,19 @@
 		(uuid "a0e923bb-8a66-4794-a705-53335f1ee082")
 	)
 	(no_connect
-		(at 92.71 215.9)
+		(at 92.71 219.71)
 		(uuid "a1236172-edbf-48ce-a030-ec5be7bf9fc9")
 	)
 	(no_connect
-		(at 92.71 218.44)
+		(at 92.71 222.25)
 		(uuid "b49a22ab-1dcb-4f5c-b6da-b22eece13855")
 	)
 	(no_connect
-		(at 213.36 195.58)
+		(at 213.36 199.39)
 		(uuid "b8f24db2-5a85-4af4-80a8-a4ff542992b0")
 	)
 	(no_connect
-		(at 92.71 187.96)
+		(at 92.71 191.77)
 		(uuid "bcb9650d-50c6-44a9-86ec-ab72c29b9e22")
 	)
 	(no_connect
@@ -7346,11 +5665,11 @@
 		(uuid "c1d0e909-205a-4fe7-aa5b-44593620fb28")
 	)
 	(no_connect
-		(at 213.36 200.66)
+		(at 213.36 204.47)
 		(uuid "c517e352-4ccb-4b8c-b1da-e46b0d912513")
 	)
 	(no_connect
-		(at 87.63 190.5)
+		(at 87.63 194.31)
 		(uuid "c6cffc08-701a-4751-a362-f7a6ebd8e53d")
 	)
 	(no_connect
@@ -7366,11 +5685,11 @@
 		(uuid "cc5f0db7-c85e-44ae-8547-0ecea9c2f42d")
 	)
 	(no_connect
-		(at 87.63 195.58)
+		(at 87.63 199.39)
 		(uuid "cdb4c170-b474-43d1-bcb9-610e250c4d29")
 	)
 	(no_connect
-		(at 214.63 185.42)
+		(at 214.63 189.23)
 		(uuid "ce2fc59f-7cdc-41bc-a703-750ed8fc5890")
 	)
 	(no_connect
@@ -7378,11 +5697,11 @@
 		(uuid "ce94295d-f9e1-4e42-9d26-b9e941b85989")
 	)
 	(no_connect
-		(at 92.71 213.36)
+		(at 92.71 217.17)
 		(uuid "da56749a-0bf2-4bfe-bf1a-0286ee97e165")
 	)
 	(no_connect
-		(at 213.36 190.5)
+		(at 213.36 194.31)
 		(uuid "e26e54da-a14b-49a7-8e69-a6ab89ac707b")
 	)
 	(no_connect
@@ -7390,11 +5709,11 @@
 		(uuid "e2a8ed00-1f18-4d30-95f7-5ec5389628ef")
 	)
 	(no_connect
-		(at 92.71 223.52)
+		(at 92.71 227.33)
 		(uuid "eaac0d48-3550-4f63-8c6a-e0be200d6fcb")
 	)
 	(no_connect
-		(at 213.36 198.12)
+		(at 213.36 201.93)
 		(uuid "fb76fffb-1c47-48b3-9449-659cbda9f8ba")
 	)
 	(wire
@@ -7629,7 +5948,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 226.06) (xy 92.71 226.06)
+			(xy 52.07 229.87) (xy 92.71 229.87)
 		)
 		(stroke
 			(width 0)
@@ -7659,7 +5978,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 205.74) (xy 92.71 205.74)
+			(xy 52.07 209.55) (xy 92.71 209.55)
 		)
 		(stroke
 			(width 0)
@@ -7679,7 +5998,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 218.44) (xy 213.36 218.44)
+			(xy 241.3 222.25) (xy 213.36 222.25)
 		)
 		(stroke
 			(width 0)
@@ -7709,7 +6028,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 208.28) (xy 92.71 208.28)
+			(xy 52.07 212.09) (xy 92.71 212.09)
 		)
 		(stroke
 			(width 0)
@@ -7979,7 +6298,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 198.12) (xy 92.71 198.12)
+			(xy 52.07 201.93) (xy 92.71 201.93)
 		)
 		(stroke
 			(width 0)
@@ -8049,7 +6368,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 210.82) (xy 92.71 210.82)
+			(xy 52.07 214.63) (xy 92.71 214.63)
 		)
 		(stroke
 			(width 0)
@@ -8059,7 +6378,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 190.5) (xy 92.71 190.5)
+			(xy 87.63 194.31) (xy 92.71 194.31)
 		)
 		(stroke
 			(width 0)
@@ -8129,7 +6448,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 185.42) (xy 214.63 185.42)
+			(xy 213.36 189.23) (xy 214.63 189.23)
 		)
 		(stroke
 			(width 0)
@@ -8189,7 +6508,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 215.9) (xy 213.36 215.9)
+			(xy 241.3 219.71) (xy 213.36 219.71)
 		)
 		(stroke
 			(width 0)
@@ -8209,7 +6528,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 168.91) (xy 213.36 168.91)
+			(xy 241.3 168.91) (xy 213.36 168.91)
 		)
 		(stroke
 			(width 0)
@@ -8299,7 +6618,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 205.74) (xy 217.17 205.74)
+			(xy 213.36 209.55) (xy 217.17 209.55)
 		)
 		(stroke
 			(width 0)
@@ -8409,7 +6728,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 203.2) (xy 92.71 203.2)
+			(xy 52.07 207.01) (xy 92.71 207.01)
 		)
 		(stroke
 			(width 0)
@@ -8449,7 +6768,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 213.36) (xy 213.36 213.36)
+			(xy 241.3 217.17) (xy 213.36 217.17)
 		)
 		(stroke
 			(width 0)
@@ -8499,7 +6818,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 228.6) (xy 92.71 228.6)
+			(xy 52.07 232.41) (xy 92.71 232.41)
 		)
 		(stroke
 			(width 0)
@@ -8539,7 +6858,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 220.98) (xy 213.36 220.98)
+			(xy 217.17 224.79) (xy 213.36 224.79)
 		)
 		(stroke
 			(width 0)
@@ -8559,7 +6878,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 195.58) (xy 92.71 195.58)
+			(xy 87.63 199.39) (xy 92.71 199.39)
 		)
 		(stroke
 			(width 0)
@@ -8599,7 +6918,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 187.96) (xy 213.36 187.96)
+			(xy 241.3 191.77) (xy 213.36 191.77)
 		)
 		(stroke
 			(width 0)
@@ -8609,7 +6928,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 193.04) (xy 92.71 193.04)
+			(xy 87.63 196.85) (xy 92.71 196.85)
 		)
 		(stroke
 			(width 0)
@@ -8659,7 +6978,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 182.88) (xy 214.63 182.88)
+			(xy 213.36 186.69) (xy 214.63 186.69)
 		)
 		(stroke
 			(width 0)
@@ -8769,7 +7088,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 220.98) (xy 92.71 220.98)
+			(xy 87.63 224.79) (xy 92.71 224.79)
 		)
 		(stroke
 			(width 0)
@@ -10144,7 +8463,7 @@
 		(uuid "0edd6ed6-9ced-4d97-b4f7-2f109d51e41a")
 	)
 	(label "AIN1_11"
-		(at 52.07 198.12 180)
+		(at 52.07 201.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10244,7 +8563,7 @@
 		(uuid "49432241-dea5-4ed4-b341-d4195d2ca1fd")
 	)
 	(label "ANT_IRQ0_GPIO"
-		(at 52.07 210.82 180)
+		(at 52.07 214.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10284,7 +8603,7 @@
 		(uuid "6b9354f0-9d32-4c48-92bb-963b5f75974e")
 	)
 	(label "MPU_INT1_GPIO"
-		(at 52.07 203.2 180)
+		(at 52.07 207.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10294,7 +8613,7 @@
 		(uuid "6c19e05b-4bad-4c42-b4b7-8b8b5b04dcdb")
 	)
 	(label "AIN1_10"
-		(at 50.8 215.9 180)
+		(at 50.8 219.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10314,7 +8633,7 @@
 		(uuid "7a7e798c-810d-4f70-8ff0-96e8469a411f")
 	)
 	(label "ANT_CSCON_GPIO"
-		(at 52.07 208.28 180)
+		(at 52.07 212.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10324,7 +8643,7 @@
 		(uuid "7d3bbf86-9ed2-435d-a729-7585e64d796d")
 	)
 	(label "PB14_SPI2_MISO"
-		(at 241.3 215.9 0)
+		(at 241.3 219.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10334,7 +8653,7 @@
 		(uuid "8276043f-367e-4938-804d-c788a385e5e2")
 	)
 	(label "PB13_SPI2_SCK"
-		(at 241.3 218.44 0)
+		(at 241.3 222.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10424,7 +8743,7 @@
 		(uuid "b27ae456-8ad0-4f97-8d26-3ed9b3711983")
 	)
 	(label "ANT_RESET_ANT_GPIO"
-		(at 52.07 205.74 180)
+		(at 52.07 209.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10464,7 +8783,7 @@
 		(uuid "c407b602-17e2-4885-bab8-cfbd2a2e4d3c")
 	)
 	(label "~{CANBUS_CS_GPIO}"
-		(at 245.11 168.91 0)
+		(at 241.3 168.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10494,7 +8813,7 @@
 		(uuid "de0f841c-9d4f-4c76-a56a-042a19759d03")
 	)
 	(label "AIN1_5"
-		(at 52.07 226.06 180)
+		(at 52.07 229.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10504,7 +8823,7 @@
 		(uuid "e18db296-efa5-40a5-b610-300bcab7139c")
 	)
 	(label "AIN1_8"
-		(at 52.07 228.6 180)
+		(at 52.07 232.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10544,7 +8863,7 @@
 		(uuid "f75ba0c4-82f5-4a03-93be-cd544139bca3")
 	)
 	(label "PC5_AIN2_14_BATT_V"
-		(at 241.3 187.96 0)
+		(at 241.3 191.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10554,7 +8873,7 @@
 		(uuid "fbb0e1f0-fb7a-4852-ad49-19a8d74f422a")
 	)
 	(label "PB15_SPI2_MOSI"
-		(at 241.3 213.36 0)
+		(at 241.3 217.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12841,18 +11160,16 @@
 		)
 	)
 	(symbol
-		(lib_name "NUCLEO-L476RG_1")
-		(lib_id "NUCLEO-L476RG:NUCLEO-L476RG")
-		(at 115.57 205.74 0)
+		(lib_id "Revision01:NUCLEO-L476RG")
+		(at 115.57 209.55 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "402c00e7-2da2-4e88-8301-9224a4ebc54c")
 		(property "Reference" "U1"
-			(at 153.035 233.68 0)
+			(at 153.035 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12860,7 +11177,7 @@
 			)
 		)
 		(property "Value" "NUCLEO-L476RG"
-			(at 153.035 236.22 0)
+			(at 153.035 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12868,17 +11185,16 @@
 			)
 		)
 		(property "Footprint" "NUCLEO-L476RG:MODULE_NUCLEO-L476RG"
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12887,7 +11203,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12896,7 +11212,7 @@
 			)
 		)
 		(property "MANUFACTURER" "STmicroelectronics"
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12906,7 +11222,7 @@
 			)
 		)
 		(property "DNM" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12915,7 +11231,7 @@
 			)
 		)
 		(property "Distributor link" "https://www.digikey.ca/en/products/detail/stmicroelectronics/NUCLEO-L476RG/5347711?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Supplier_Focus%20Supplier&utm_term=&productid=5347711&utm_content=&utm_id=go_cmp-20282403582_adg-_ad-__dev-c_ext-_prd-5347711_sig-Cj0KCQjwhYS_BhD2ARIsAJTMMQamP-66YKRPRhELO5Zs5on9XCENDND5L4gJMtzZ4mXY70MO7wsHl6oaAtF6EALw_wcB&gad_source=1&gclid=Cj0KCQjwhYS_BhD2ARIsAJTMMQamP-66YKRPRhELO5Zs5on9XCENDND5L4gJMtzZ4mXY70MO7wsHl6oaAtF6EALw_wcB&gclsrc=aw.ds"
-			(at 130.81 205.74 0)
+			(at 130.81 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12924,7 +11240,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "NUCLEO-L476RG"
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12933,7 +11249,7 @@
 			)
 		)
 		(property "DNM_MPN" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12942,7 +11258,7 @@
 			)
 		)
 		(property "DISTRIB" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12951,7 +11267,7 @@
 			)
 		)
 		(property "Distributor Link" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12960,7 +11276,7 @@
 			)
 		)
 		(property "FOOTPRINT" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12969,7 +11285,7 @@
 			)
 		)
 		(property "ID" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12978,7 +11294,7 @@
 			)
 		)
 		(property "INTERNAL_PART_NUMBER" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12987,7 +11303,7 @@
 			)
 		)
 		(property "MANUFACTURER P/N" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12996,7 +11312,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13005,7 +11321,7 @@
 			)
 		)
 		(property "TOLERANCE" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13014,7 +11330,7 @@
 			)
 		)
 		(property "Price per unit" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13023,7 +11339,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13031,7 +11347,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13039,7 +11355,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13047,7 +11363,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13055,7 +11371,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13063,7 +11379,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13071,7 +11387,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13079,7 +11395,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13087,7 +11403,7 @@
 			)
 		)
 		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13095,7 +11411,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13103,7 +11419,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13111,7 +11427,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 115.57 205.74 0)
+			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15391,7 +13707,7 @@
 		)
 	)
 	(symbol
-		(lib_id "NUCLEO-L476RG:NUCLEO-L476RG")
+		(lib_id "Revision01:NUCLEO-L476RG")
 		(at 115.57 151.13 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15422,7 +13738,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
@@ -16133,7 +14448,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 217.17 220.98 90)
+		(at 217.17 224.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16142,7 +14457,7 @@
 		(fields_autoplaced yes)
 		(uuid "87e22d74-f1d6-4d58-9d22-ca6058423cf3")
 		(property "Reference" "#PWR014"
-			(at 223.52 220.98 0)
+			(at 223.52 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16151,7 +14466,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 220.98 220.9799 90)
+			(at 220.98 224.7899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16161,7 +14476,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 217.17 220.98 0)
+			(at 217.17 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16170,7 +14485,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 220.98 0)
+			(at 217.17 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16179,7 +14494,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 217.17 220.98 0)
+			(at 217.17 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18897,7 +17212,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 217.17 205.74 90)
+		(at 217.17 209.55 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18906,7 +17221,7 @@
 		(fields_autoplaced yes)
 		(uuid "def90e68-d58c-4ae4-a234-24f88b50f40e")
 		(property "Reference" "#PWR020"
-			(at 223.52 205.74 0)
+			(at 223.52 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18915,7 +17230,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 222.25 205.74 0)
+			(at 222.25 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18924,7 +17239,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 217.17 205.74 0)
+			(at 217.17 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18933,7 +17248,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 205.74 0)
+			(at 217.17 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18942,7 +17257,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 217.17 205.74 0)
+			(at 217.17 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18964,7 +17279,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 87.63 193.04 270)
+		(at 87.63 196.85 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18973,7 +17288,7 @@
 		(fields_autoplaced yes)
 		(uuid "eb39ceb0-c3d7-4655-a089-d501a3bd2c64")
 		(property "Reference" "#PWR013"
-			(at 81.28 193.04 0)
+			(at 81.28 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18982,7 +17297,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 82.55 193.04 0)
+			(at 82.55 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18991,7 +17306,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 193.04 0)
+			(at 87.63 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19000,7 +17315,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 193.04 0)
+			(at 87.63 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19009,7 +17324,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 87.63 193.04 0)
+			(at 87.63 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)

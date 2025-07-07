@@ -300,6 +300,10 @@
       [
         "pin_to_pin|1752600|889000|6ba832c2-f483-4398-8702-52616572d5af|9ffb0f11-aa1e-4f9f-b29b-b64536d79047|/955cc99e-a129-42cf-abc7-aa99813fdb5f|/955cc99e-a129-42cf-abc7-aa99813fdb5f|/955cc99e-a129-42cf-abc7-aa99813fdb5f",
         ""
+      ],
+      [
+        "pin_to_pin|2806700|1955800|77f5a09a-2bd1-45b1-9eab-edcd7291b6e6|9b975b86-11b7-4d55-880b-6b9fc8fc58bb|/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63|/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63|/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63",
+        ""
       ]
     ],
     "meta": {
@@ -562,7 +566,7 @@
         "microvia_drill": 0.1,
         "name": "100Ohm",
         "pcb_color": "rgb(255, 0, 255)",
-        "priority": 5,
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1397,
         "via_diameter": 0.8,
@@ -594,6 +598,15 @@
       },
       {
         "bus_width": 12,
+        "line_style": 0,
+        "name": "General Purpose Interrupt",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgb(0, 191, 194)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
         "clearance": 0.1524,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -602,7 +615,7 @@
         "microvia_drill": 0.1,
         "name": "PWR",
         "pcb_color": "rgb(255, 0, 0)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgb(255, 0, 0)",
         "track_width": 0.1397,
         "via_diameter": 0.8,
@@ -619,7 +632,7 @@
         "microvia_drill": 0.1,
         "name": "SPI",
         "pcb_color": "rgb(0, 0, 255)",
-        "priority": 3,
+        "priority": 2,
         "schematic_color": "rgb(0, 0, 255)",
         "track_width": 0.1397,
         "via_diameter": 0.8,
@@ -642,16 +655,40 @@
         "pattern": "/*GPIO*"
       },
       {
-        "netclass": "SPI",
-        "pattern": ".*SPI.*"
-      },
-      {
         "netclass": "AIN",
         "pattern": ".*AIN.*"
       },
       {
         "netclass": "GND",
         "pattern": ".*GND*"
+      },
+      {
+        "netclass": "AIN",
+        "pattern": ".*AIn.*"
+      },
+      {
+        "netclass": "AIN",
+        "pattern": ".*ADC.*"
+      },
+      {
+        "netclass": "SPI",
+        "pattern": ".*_MISO.*"
+      },
+      {
+        "netclass": "SPI",
+        "pattern": ".*_SCK.*"
+      },
+      {
+        "netclass": "SPI",
+        "pattern": ".*_MOSI.*"
+      },
+      {
+        "netclass": "General Purpose Interrupt",
+        "pattern": ".*_GPINT.*"
+      },
+      {
+        "netclass": "General Purpose Interrupt",
+        "pattern": ".*Interrupt.*"
       }
     ]
   },

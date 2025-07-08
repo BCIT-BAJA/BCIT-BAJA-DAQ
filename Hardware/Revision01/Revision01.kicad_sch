@@ -5099,6 +5099,17 @@
 		)
 		(uuid "0acdbf61-c2ec-4bf9-a21b-2329821ee8d6")
 	)
+	(text "E5V | VIN -> E5V <JP5> +5V"
+		(exclude_from_sim no)
+		(at 219.71 132.08 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "13b9a1e7-d4f9-4020-a884-f771b1b2144a")
+	)
 	(text "Table 4. Boot modes\nBOOT1=x | BOOT0=0 | Main Flash Memory"
 		(exclude_from_sim no)
 		(at 87.63 138.43 0)
@@ -5157,6 +5168,17 @@
 		)
 		(uuid "325df3bb-ff10-4162-8daf-a848ac6bd02c")
 	)
+	(text "AGND <SB60> GND"
+		(exclude_from_sim no)
+		(at 218.44 223.52 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "354cddd6-0f72-40f2-9770-136091bd4499")
+	)
 	(text "Inductor sizing\n"
 		(exclude_from_sim no)
 		(at 173.99 33.02 0)
@@ -5178,6 +5200,17 @@
 			(justify left)
 		)
 		(uuid "40ef6c4a-2dbd-4a12-ba4f-cb87707de620")
+	)
+	(text "PB11=VCAP1 <4.7uF>"
+		(exclude_from_sim no)
+		(at 219.71 205.74 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "4b92a19a-933a-4d10-9863-b25bc86df588")
 	)
 	(text "PA3 | USART2_RX"
 		(exclude_from_sim no)
@@ -5233,6 +5266,17 @@
 			(justify right)
 		)
 		(uuid "6dd1fe1f-8221-475b-be84-0d04691baf91")
+	)
+	(text "PB13 <SB29=OFF> LED2"
+		(exclude_from_sim no)
+		(at 257.81 220.98 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "8784efdd-fcd3-4dd7-986c-eccf98ce1320")
 	)
 	(text "PH1 | (NC)"
 		(exclude_from_sim no)
@@ -5300,6 +5344,17 @@
 			(justify right)
 		)
 		(uuid "bbca3211-644d-4b94-b140-4dfdbd02216a")
+	)
+	(text "<JP5> +5V from VIN -> E5V or U5V"
+		(exclude_from_sim no)
+		(at 241.3 154.94 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "bcc76a25-caeb-4e7e-9454-341d3c1aa19d")
 	)
 	(text "~{RESET} (Internal Pullup) = Black Pushbutton B2"
 		(exclude_from_sim no)
@@ -5634,8 +5689,8 @@
 		(uuid "2fe4dd6e-8477-4b01-869d-fd7042774b85")
 	)
 	(no_connect
-		(at 213.36 207.01)
-		(uuid "321dda4c-c2d1-4dab-99f8-96a469ac0957")
+		(at 218.44 207.01)
+		(uuid "3413a8e8-8e2f-49d8-a4c7-12f5484fd16e")
 	)
 	(no_connect
 		(at 213.36 166.37)
@@ -5686,6 +5741,10 @@
 		(uuid "bcb9650d-50c6-44a9-86ec-ab72c29b9e22")
 	)
 	(no_connect
+		(at 218.44 133.35)
+		(uuid "bd7cb502-a57c-45b3-984e-ea6fec1fa172")
+	)
+	(no_connect
 		(at 87.63 146.05)
 		(uuid "c1d0e909-205a-4fe7-aa5b-44593620fb28")
 	)
@@ -5700,10 +5759,6 @@
 	(no_connect
 		(at 87.63 194.31)
 		(uuid "c6cffc08-701a-4751-a362-f7a6ebd8e53d")
-	)
-	(no_connect
-		(at 213.36 133.35)
-		(uuid "c70868e9-3d73-4711-baa8-6c3cc77d95a3")
 	)
 	(no_connect
 		(at 87.63 161.29)
@@ -5940,6 +5995,16 @@
 			(type default)
 		)
 		(uuid "25ba6ef3-cb77-48d0-8dd3-507a0b143965")
+	)
+	(wire
+		(pts
+			(xy 213.36 133.35) (xy 218.44 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26515a92-c13a-44b5-9633-d35cbde237b6")
 	)
 	(wire
 		(pts
@@ -6740,6 +6805,16 @@
 			(type default)
 		)
 		(uuid "a256913f-b3c9-448f-96bd-0299d59e7e7d")
+	)
+	(wire
+		(pts
+			(xy 213.36 207.01) (xy 218.44 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a70f581d-7b01-446c-a0d8-0c4b9fbb14c7")
 	)
 	(wire
 		(pts
@@ -9762,15 +9837,16 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 332.74 35.56 90)
+		(at 332.74 30.48 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "18832967-6423-47d1-9d66-1897bfa41413")
 		(property "Reference" "#PWR02"
-			(at 336.55 35.56 0)
+			(at 336.55 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9778,8 +9854,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+V_batt"
-			(at 328.93 35.56 90)
+		(property "Value" "+VBattery"
+			(at 328.93 30.4799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9788,7 +9864,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 332.74 35.56 0)
+			(at 332.74 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9797,7 +9873,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 332.74 35.56 0)
+			(at 332.74 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9806,7 +9882,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 332.74 35.56 0)
+			(at 332.74 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12684,7 +12760,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 332.74 35.56 270)
+		(at 332.74 30.48 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12692,7 +12768,7 @@
 		(dnp no)
 		(uuid "6028c927-93e6-4d6e-865e-2c3544a34bf4")
 		(property "Reference" "#FLG02"
-			(at 334.645 35.56 0)
+			(at 334.645 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12701,7 +12777,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 340.36 35.56 90)
+			(at 340.36 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12709,7 +12785,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 332.74 35.56 0)
+			(at 332.74 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12718,7 +12794,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 332.74 35.56 0)
+			(at 332.74 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12727,7 +12803,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 332.74 35.56 0)
+			(at 332.74 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13761,7 +13837,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+Vin_7V"
+		(property "Value" "+VBattery_or_7V"
 			(at 245.11 156.2099 90)
 			(effects
 				(font
@@ -14421,7 +14497,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 332.74 38.1 270)
+		(at 332.74 35.56 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14429,7 +14505,7 @@
 		(dnp no)
 		(uuid "7fc1b25f-0c72-40e4-a42a-7f27da263281")
 		(property "Reference" "#FLG03"
-			(at 334.645 38.1 0)
+			(at 334.645 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14438,7 +14514,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 340.36 38.1 90)
+			(at 340.36 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14446,7 +14522,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 332.74 38.1 0)
+			(at 332.74 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14455,7 +14531,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 332.74 38.1 0)
+			(at 332.74 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14464,7 +14540,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 332.74 38.1 0)
+			(at 332.74 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14486,7 +14562,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 332.74 30.48 270)
+		(at 332.74 33.02 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14494,7 +14570,7 @@
 		(dnp no)
 		(uuid "81b8a257-4438-44ba-a6e6-d72f47022bd0")
 		(property "Reference" "#FLG05"
-			(at 334.645 30.48 0)
+			(at 334.645 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14503,7 +14579,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 340.36 30.48 90)
+			(at 340.36 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14511,7 +14587,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 332.74 30.48 0)
+			(at 332.74 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14520,7 +14596,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 332.74 30.48 0)
+			(at 332.74 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14529,7 +14605,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 332.74 30.48 0)
+			(at 332.74 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14877,15 +14953,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 332.74 33.02 90)
+		(at 332.74 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "9432be9b-cfdf-4a16-9c64-9cd55620bad5")
 		(property "Reference" "#PWR01"
-			(at 336.55 33.02 0)
+			(at 336.55 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14894,16 +14971,16 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 323.85 33.02 90)
+			(at 328.93 38.0999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 332.74 33.02 0)
+			(at 332.74 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14912,7 +14989,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 332.74 33.02 0)
+			(at 332.74 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14921,7 +14998,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 332.74 33.02 0)
+			(at 332.74 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16145,7 +16222,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+V_batt"
+		(property "Value" "+VBattery"
 			(at 101.6 54.61 0)
 			(effects
 				(font
@@ -16531,15 +16608,16 @@
 	)
 	(symbol
 		(lib_id "power:+1V1")
-		(at 332.74 30.48 90)
+		(at 332.74 33.02 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "be3db4b0-8563-497b-83d0-c8dbc007412e")
 		(property "Reference" "#PWR072"
-			(at 336.55 30.48 0)
+			(at 336.55 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16547,17 +16625,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+Vin_7V"
-			(at 321.31 30.48 90)
+		(property "Value" "+VBattery_or_7V"
+			(at 328.93 33.0199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 332.74 30.48 0)
+			(at 332.74 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16566,7 +16644,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 332.74 30.48 0)
+			(at 332.74 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16575,7 +16653,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+1V1\""
-			(at 332.74 30.48 0)
+			(at 332.74 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16988,7 +17066,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 332.74 33.02 270)
+		(at 332.74 38.1 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16996,7 +17074,7 @@
 		(dnp no)
 		(uuid "c7dd8cda-bbf9-4c25-a527-b899068263d6")
 		(property "Reference" "#FLG01"
-			(at 334.645 33.02 0)
+			(at 334.645 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17005,7 +17083,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 340.36 33.02 90)
+			(at 340.36 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17013,7 +17091,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 332.74 33.02 0)
+			(at 332.74 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17022,7 +17100,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 332.74 33.02 0)
+			(at 332.74 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17031,7 +17109,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 332.74 33.02 0)
+			(at 332.74 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17202,7 +17280,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+Vin_7V"
+		(property "Value" "+VBattery_or_7V"
 			(at 209.55 54.61 0)
 			(effects
 				(font
@@ -17251,15 +17329,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 332.74 38.1 90)
+		(at 332.74 35.56 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "d993e66b-7408-4e8e-bc88-3c29f15ab096")
 		(property "Reference" "#PWR03"
-			(at 336.55 38.1 0)
+			(at 336.55 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17268,7 +17347,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 328.93 38.1 90)
+			(at 328.93 35.5599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17277,7 +17356,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 332.74 38.1 0)
+			(at 332.74 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17286,7 +17365,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 332.74 38.1 0)
+			(at 332.74 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17295,7 +17374,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 332.74 38.1 0)
+			(at 332.74 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)

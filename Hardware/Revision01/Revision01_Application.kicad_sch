@@ -3602,17 +3602,6 @@
 		)
 		(uuid "1eee68a3-b9e5-4004-b99e-458ee0e2d462")
 	)
-	(text "Todo: This load may be inductive due to long cabling. \nPlace a TVS diode to prevent damage to the MOSFET ?"
-		(exclude_from_sim no)
-		(at 64.77 35.56 0)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-			(justify left)
-		)
-		(uuid "2a759d32-449e-41db-a2db-ee6c800119f9")
-	)
 	(text "Antenna"
 		(exclude_from_sim no)
 		(at 245.11 158.75 0)
@@ -3627,17 +3616,6 @@
 		)
 		(uuid "2e82550a-69b0-47e3-97a8-ed0e3b30d3f7")
 	)
-	(text "TODO: Add a SYMBOL FIELD FOR RECEIVER_DO_NOT_POPULATE in order to make sure we order the correct number of parts!!!!!!!"
-		(exclude_from_sim no)
-		(at 29.21 27.94 0)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-			(justify left)
-		)
-		(uuid "3688f707-51ef-4d56-bb17-85a109558d72")
-	)
 	(text "350 Ohm strain gauge\nX 8 times\n"
 		(exclude_from_sim no)
 		(at 140.97 35.56 0)
@@ -3648,17 +3626,6 @@
 			(justify left)
 		)
 		(uuid "58c62f2a-4a4d-4d18-a6ce-feeeff9e79f6")
-	)
-	(text "TODO: CHECK THE FUSE for CHEAPER options. 20mA HOLD\n40mA TRIP CURRENT"
-		(exclude_from_sim no)
-		(at 116.84 57.15 0)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-			(justify left)
-		)
-		(uuid "609a1bb4-798b-4c77-8a9d-d99f21c64c44")
 	)
 	(text "IMU\n"
 		(exclude_from_sim no)
@@ -3686,17 +3653,6 @@
 			(justify left)
 		)
 		(uuid "849f82cc-1e43-4091-9d14-f37739df0131")
-	)
-	(text "Check How much current flows into the MICRO!!!!!! Is it 5V tolerant at tristate ??"
-		(exclude_from_sim no)
-		(at 33.02 43.18 0)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-			(justify left)
-		)
-		(uuid "85bcceea-ebbd-4eab-8093-a9cb85e1f625")
 	)
 	(text "\nFSR: 0-3V\nQuantization step = 3V/(2^12) = 0.732mV\n\nMax error = 0.732mV/2 = 0.366mV\n\n%Uncertainty = 0.366mV/3V\n\n0.732mV/ 3V = 1.22% Uncertainty\nUncertainty goal 5%\n\n\n\n"
 		(exclude_from_sim no)
@@ -3780,17 +3736,6 @@
 			(justify left bottom)
 		)
 		(uuid "ef4b7c20-9810-4951-a9d1-aa0d1286663d")
-	)
-	(text "TODO: Check this circuit, see if 3.3V logic is good enough here..."
-		(exclude_from_sim no)
-		(at 288.29 24.13 0)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-			(justify left)
-		)
-		(uuid "f58f0e59-4a8a-499b-b2ad-e7a0e5db84fa")
 	)
 	(text "Cut a stranded or solid core wire the the\nproper length for the module/frequency\n868 MHz - 3.25 inches or 8.2 cm\n915 MHz - 3 inches or 7.8 cm"
 		(exclude_from_sim no)
@@ -3923,6 +3868,12 @@
 		(uuid "6b2612c4-2264-4a7a-9927-15637f90cbe0")
 	)
 	(junction
+		(at 78.74 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6dc85142-7e85-41ea-a6cf-10131c91a7c5")
+	)
+	(junction
 		(at 210.82 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4001,16 +3952,16 @@
 		(uuid "9c68e04c-0108-4e32-9cef-221a2b31a139")
 	)
 	(junction
+		(at 64.77 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a23698ff-42ab-4588-aa42-e43abc294069")
+	)
+	(junction
 		(at 107.95 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a255eb2a-56be-424a-99ed-468cd016e79e")
-	)
-	(junction
-		(at 67.31 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a598ffd1-b5f4-4683-96f7-b58e69a6569c")
 	)
 	(junction
 		(at 180.34 72.39)
@@ -4896,16 +4847,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 59.69) (xy 107.95 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1095f28e-67e6-464c-a80b-d0adc8b64db4")
-	)
-	(wire
-		(pts
 			(xy 124.46 138.43) (xy 143.51 138.43)
 		)
 		(stroke
@@ -4986,7 +4927,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 53.34) (xy 67.31 53.34)
+			(xy 43.18 53.34) (xy 64.77 53.34)
 		)
 		(stroke
 			(width 0)
@@ -5013,6 +4954,16 @@
 			(type default)
 		)
 		(uuid "17506a45-6e5f-4201-9f63-5a570eb5c924")
+	)
+	(wire
+		(pts
+			(xy 78.74 58.42) (xy 107.95 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a705599-b51d-477f-8139-ae5ac9cb4fbf")
 	)
 	(wire
 		(pts
@@ -5526,7 +5477,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 39.37) (xy 67.31 43.18)
+			(xy 64.77 39.37) (xy 64.77 43.18)
 		)
 		(stroke
 			(width 0)
@@ -5666,7 +5617,7 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 95.25) (xy 299.72 95.25)
+			(xy 293.37 95.25) (xy 299.72 95.25)
 		)
 		(stroke
 			(width 0)
@@ -5856,7 +5807,7 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 106.68) (xy 299.72 106.68)
+			(xy 293.37 106.68) (xy 299.72 106.68)
 		)
 		(stroke
 			(width 0)
@@ -5933,16 +5884,6 @@
 			(type default)
 		)
 		(uuid "7afa983e-dc83-4079-83f0-5e91d82ae8ee")
-	)
-	(wire
-		(pts
-			(xy 78.74 58.42) (xy 78.74 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b1ddebf-f5f9-4247-815e-ed1f05737433")
 	)
 	(wire
 		(pts
@@ -6216,7 +6157,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 48.26) (xy 67.31 53.34)
+			(xy 64.77 48.26) (xy 64.77 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6393,16 +6334,6 @@
 			(type default)
 		)
 		(uuid "a309f454-c54e-4dc6-9c8a-3378e0fb427c")
-	)
-	(wire
-		(pts
-			(xy 67.31 53.34) (xy 71.12 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a30c9905-cfbb-4fee-97ab-d44fce09acc2")
 	)
 	(wire
 		(pts
@@ -6816,7 +6747,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 39.37) (xy 78.74 39.37)
+			(xy 64.77 39.37) (xy 78.74 39.37)
 		)
 		(stroke
 			(width 0)
@@ -6916,7 +6847,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 59.69) (xy 107.95 74.93)
+			(xy 107.95 58.42) (xy 107.95 74.93)
 		)
 		(stroke
 			(width 0)
@@ -6993,6 +6924,16 @@
 			(type default)
 		)
 		(uuid "e67f3ae9-74ce-4941-9367-2619228a053a")
+	)
+	(wire
+		(pts
+			(xy 64.77 53.34) (xy 71.12 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e85344b1-d4bc-414f-b03f-8741c48e854a")
 	)
 	(wire
 		(pts
@@ -37704,7 +37645,7 @@
 		)
 		(uuid "a350dd67-ac0a-4d7c-ae05-13c9fc81f621")
 	)
-	(hierarchical_label "~{StrainV_Enable}"
+	(hierarchical_label "~{StrainV_Enable_5VTolerant}"
 		(shape input)
 		(at 43.18 53.34 180)
 		(effects
@@ -37880,6 +37821,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 180.34 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "21672937-47f9-477e-84c0-71a8a65497f1")
 		)
@@ -38003,6 +37952,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 187.96 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -38186,6 +38143,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 81.28 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 81.28 138.43 0)
 			(effects
 				(font
@@ -38580,7 +38545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" "495-B59622A0090A062CT-ND"
+		(property "Distributor Part Number" "495-B59622A0090A062CT-ND - Cut Tape (CT)"
 			(at 121.92 151.13 0)
 			(effects
 				(font
@@ -38596,6 +38561,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 121.92 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -38712,6 +38685,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 26.67 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 26.67 74.93 0)
 			(effects
 				(font
@@ -38855,6 +38836,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 210.82 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "84cfb465-5cec-4f31-a33f-29a33d88ed2e")
 		)
@@ -38978,6 +38967,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 187.96 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -39172,6 +39169,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 187.96 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d532f5f0-2cbd-4eef-a4b2-15350cea5cc7")
 		)
@@ -39280,7 +39285,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" "495-B59622A0090A062CT-ND"
+		(property "Distributor Part Number" "495-B59622A0090A062CT-ND - Cut Tape (CT)"
 			(at 121.92 87.63 0)
 			(effects
 				(font
@@ -39296,6 +39301,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 121.92 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -39315,7 +39328,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 294.64 97.79 0)
+		(at 293.37 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -39323,7 +39336,7 @@
 		(dnp no)
 		(uuid "158f4bf7-92d5-4770-8009-40ebf04f9868")
 		(property "Reference" "C10"
-			(at 292.1 93.9862 0)
+			(at 290.83 93.9862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39332,7 +39345,7 @@
 			)
 		)
 		(property "Value" "0.1µF ±10%, Ceramic, X7R, >2V"
-			(at 292.1 96.5262 0)
+			(at 290.83 96.5262 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -39341,7 +39354,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 294.64 97.79 0)
+			(at 293.37 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39350,7 +39363,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/893/CL21B104KCFNNNE_Spec.pdf"
-			(at 294.64 97.79 0)
+			(at 293.37 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39359,7 +39372,7 @@
 			)
 		)
 		(property "Description" "CAP CER 0.1UF 100V X7R 0805"
-			(at 292.1 99.0662 0)
+			(at 290.83 99.0662 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -39368,7 +39381,7 @@
 			)
 		)
 		(property "Detailed Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
-			(at 292.1 101.6062 0)
+			(at 290.83 101.6062 0)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -39377,7 +39390,7 @@
 			)
 		)
 		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21B104KCFNNNE/5961324"
-			(at 294.64 97.79 0)
+			(at 293.37 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39386,7 +39399,7 @@
 			)
 		)
 		(property "Distributor Part Number" "1276-6840-1-ND - Cut Tape (CT)"
-			(at 294.64 97.79 0)
+			(at 293.37 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39395,7 +39408,7 @@
 			)
 		)
 		(property "Package / Case" "0805 (2012 Metric)"
-			(at 294.64 97.79 0)
+			(at 293.37 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39404,7 +39417,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 294.64 97.79 0)
+			(at 293.37 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39413,12 +39426,20 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL21B104KCFNNNE"
-			(at 294.64 97.79 0)
+			(at 293.37 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 293.37 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -39438,7 +39459,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 294.64 100.33 0)
+		(at 293.37 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -39447,7 +39468,7 @@
 		(fields_autoplaced yes)
 		(uuid "1648ed48-d4bb-4ac8-bca7-3c39fa03f5c3")
 		(property "Reference" "#PWR065"
-			(at 294.64 106.68 0)
+			(at 293.37 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39456,7 +39477,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 294.64 105.41 0)
+			(at 293.37 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39465,7 +39486,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 294.64 100.33 0)
+			(at 293.37 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39474,7 +39495,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 294.64 100.33 0)
+			(at 293.37 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39483,7 +39504,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 294.64 100.33 0)
+			(at 293.37 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39514,7 +39535,7 @@
 		(fields_autoplaced yes)
 		(uuid "16f96804-2812-4991-ace2-66bfaec62c88")
 		(property "Reference" "AE1"
-			(at 368.3 180.9749 0)
+			(at 368.3 179.7049 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39523,7 +39544,7 @@
 			)
 		)
 		(property "Value" "ANT-916-CW-RCS"
-			(at 368.3 183.5149 0)
+			(at 368.3 182.2449 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39550,7 +39571,7 @@
 			)
 		)
 		(property "Description" "RF ANT 916MHZ WHIP RA RP-SMA MAL"
-			(at 368.3 186.0549 0)
+			(at 368.3 184.7849 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39610,6 +39631,18 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" "2"
+			(at 368.3 187.325 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
 			)
 		)
 		(pin "1"
@@ -39728,6 +39761,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 81.28 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 81.28 125.73 0)
 			(effects
 				(font
@@ -39868,6 +39909,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 148.59 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -40073,6 +40122,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 341.63 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7eeea89e-3ad9-4ca3-8d3c-9daf0057fbf6")
 		)
@@ -40265,6 +40322,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 171.45 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b2cc258b-379a-4b91-9ff9-814b470ca3c1")
 		)
@@ -40383,6 +40448,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 148.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -40521,6 +40594,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 196.85 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "dad37568-5122-45b8-babf-695a0d26e1fe")
 		)
@@ -40645,6 +40726,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 309.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "a3d62e7c-5ce2-4f27-872a-b8dc9cec51a4")
 		)
@@ -40764,6 +40853,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 44.45 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 44.45 125.73 0)
 			(effects
 				(font
@@ -40907,6 +41004,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 312.42 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1e58c36b-d4d4-48c6-84c1-1d2a4cfc7207")
 		)
@@ -41030,6 +41135,14 @@
 				)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 81.28 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b4d5fd19-71d7-4dad-82a4-714e4b5572a3")
 		)
@@ -41059,7 +41172,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 294.64 111.76 0)
+		(at 293.37 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -41068,7 +41181,7 @@
 		(fields_autoplaced yes)
 		(uuid "2bc80bec-30f2-4761-918b-77b02a84e1bf")
 		(property "Reference" "#PWR066"
-			(at 294.64 118.11 0)
+			(at 293.37 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41077,7 +41190,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 294.64 116.84 0)
+			(at 293.37 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41086,7 +41199,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 294.64 111.76 0)
+			(at 293.37 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41095,7 +41208,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 294.64 111.76 0)
+			(at 293.37 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41104,7 +41217,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 294.64 111.76 0)
+			(at 293.37 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41300,6 +41413,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 344.17 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "76d344fb-346a-49f0-84fd-ea2fde5cafea")
 		)
@@ -41421,6 +41542,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 148.59 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -41557,6 +41686,14 @@
 				)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 26.67 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "37fae224-da0f-4a1d-b28f-ce93efea6d49")
 		)
@@ -41685,6 +41822,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 93.98 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 93.98 138.43 0)
 			(effects
 				(font
@@ -41896,6 +42041,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 180.34 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7980abfb-c525-4c80-9ab1-8d4d5dc7ced1")
 		)
@@ -42088,6 +42241,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 180.34 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "08f0e998-1dfe-4f30-9c15-50cc2ae17f9c")
 		)
@@ -42203,6 +42364,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 26.67 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 26.67 138.43 0)
 			(effects
 				(font
@@ -42345,6 +42514,14 @@
 				)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 44.45 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a0edc36e-6bf2-4053-8710-92f410eb0d23")
 		)
@@ -42383,7 +42560,7 @@
 		(fields_autoplaced yes)
 		(uuid "4619c29c-6fc6-4848-a45e-46f1ae6f9464")
 		(property "Reference" "J53"
-			(at 348.234 191.77 0)
+			(at 348.234 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42391,7 +42568,7 @@
 			)
 		)
 		(property "Value" "SMA-J-P-H-ST-EM1"
-			(at 348.234 194.31 0)
+			(at 348.234 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42417,7 +42594,7 @@
 			)
 		)
 		(property "Description" "CONN SMA JACK STR 50OHM EDGE MNT"
-			(at 348.234 196.85 0)
+			(at 348.234 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42425,7 +42602,7 @@
 			)
 		)
 		(property "Detailed Description" "SMA Connector Jack, Female Socket 50 Ohms Board Edge, End Launch Solder"
-			(at 348.234 199.39 0)
+			(at 348.234 196.85 0)
 			(effects
 				(font
 					(size 1.4986 1.4986)
@@ -42475,6 +42652,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" "2"
+			(at 348.234 199.39 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
 			)
 		)
 		(pin "1"
@@ -42669,6 +42857,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 210.82 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8e556df1-91b3-4368-bf19-54721c8ab3d4")
 		)
@@ -42785,6 +42981,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 81.28 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 81.28 100.33 0)
 			(effects
 				(font
@@ -42929,6 +43133,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 180.34 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "db536526-2dc3-405e-b84d-7459746b115c")
 		)
@@ -43051,6 +43263,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 347.98 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -43177,6 +43397,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 196.85 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4453ecc1-897c-4b61-ad03-5901183aa754")
 		)
@@ -43293,6 +43521,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 44.45 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 44.45 138.43 0)
 			(effects
 				(font
@@ -43427,6 +43663,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 26.67 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 26.67 87.63 0)
 			(effects
 				(font
@@ -43570,6 +43814,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 196.85 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "17bdbc57-d1c6-42d7-81e7-81c43a6482e0")
 		)
@@ -43675,7 +43927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" "495-B59622A0090A062CT-ND"
+		(property "Distributor Part Number" "495-B59622A0090A062CT-ND - Cut Tape (CT)"
 			(at 121.92 74.93 0)
 			(effects
 				(font
@@ -43691,6 +43943,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 121.92 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -43950,6 +44210,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 196.85 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f45f1c92-0727-4fe4-89c3-3c5e37a55b9b")
 		)
@@ -43976,7 +44244,7 @@
 		(fields_autoplaced yes)
 		(uuid "66383e7f-16f5-42d8-a4e5-8a9a2f6fe773")
 		(property "Reference" "U2"
-			(at 299.72 175.26 0)
+			(at 299.72 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -43984,7 +44252,7 @@
 			)
 		)
 		(property "Value" "Adafruit 3070"
-			(at 299.72 177.8 0)
+			(at 299.72 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44070,6 +44338,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" "2"
+			(at 299.72 177.8 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
 			)
 		)
 		(pin "4"
@@ -44234,6 +44513,14 @@
 				)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 81.28 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e8697074-d88a-42a3-85b4-45584e3e138a")
 		)
@@ -44371,6 +44658,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 187.96 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1de905ba-66c9-4f8b-a061-3de7307eadfa")
 		)
@@ -44486,6 +44781,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 26.67 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 26.67 163.83 0)
 			(effects
 				(font
@@ -44687,6 +44990,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 44.45 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 44.45 151.13 0)
 			(effects
 				(font
@@ -44961,6 +45272,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 148.59 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3c2010ec-013c-440c-8ca0-b3d18b794498")
 		)
@@ -45081,7 +45400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" "495-B59622A0090A062CT-ND"
+		(property "Distributor Part Number" "495-B59622A0090A062CT-ND - Cut Tape (CT)"
 			(at 121.92 125.73 0)
 			(effects
 				(font
@@ -45097,6 +45416,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 121.92 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -45291,6 +45618,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 187.96 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "baf11155-74ac-4466-825c-ecb373dc3a25")
 		)
@@ -45482,6 +45817,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 210.82 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f7e04908-63e0-4c37-81c0-6f32633fd74c")
 		)
@@ -45598,6 +45941,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 93.98 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 93.98 151.13 0)
 			(effects
 				(font
@@ -45872,6 +46223,14 @@
 				)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 63.5 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "45187077-f99c-4c55-868e-d74313227e90")
 		)
@@ -45992,7 +46351,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" "495-B59622A0090A062CT-ND"
+		(property "Distributor Part Number" "495-B59622A0090A062CT-ND - Cut Tape (CT)"
 			(at 121.92 113.03 0)
 			(effects
 				(font
@@ -46008,6 +46367,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 121.92 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -46125,6 +46492,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 63.5 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 63.5 87.63 0)
 			(effects
 				(font
@@ -46400,6 +46775,14 @@
 				)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 44.45 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "3cf5ffa2-d863-4317-ad68-588e790990f8")
 		)
@@ -46535,6 +46918,14 @@
 				)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 44.45 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "62cbfd8d-a735-47cb-b9da-158348a2e42c")
 		)
@@ -46663,6 +47054,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 44.45 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 44.45 87.63 0)
 			(effects
 				(font
@@ -46806,6 +47205,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 90.17 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f49b5d13-4352-495f-b302-48d658ac5a9f")
 		)
@@ -46922,6 +47329,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 93.98 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 93.98 100.33 0)
 			(effects
 				(font
@@ -47065,6 +47480,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 361.95 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b47a6020-8d0a-412b-aac2-df2b373a40bf")
 		)
@@ -47086,7 +47509,7 @@
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "8b0fe94f-0de7-4dc7-bd2c-4f934058c78f")
 		(property "Reference" "#PWR074"
@@ -47454,6 +47877,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 210.82 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "972f32f0-a1c7-4853-938b-d44ac7031822")
 		)
@@ -47642,6 +48073,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 297.18 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -47900,6 +48339,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 148.59 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2c3dec18-3a9c-4a8a-8c10-567be70cb178")
 		)
@@ -48037,6 +48484,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 180.34 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c153023e-a339-4619-802c-aeae289b6aac")
 		)
@@ -48145,7 +48600,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" "495-B59622A0090A062CT-ND"
+		(property "Distributor Part Number" "495-B59622A0090A062CT-ND - Cut Tape (CT)"
 			(at 121.92 138.43 0)
 			(effects
 				(font
@@ -48161,6 +48616,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 121.92 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -48285,6 +48748,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 196.85 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -48412,6 +48883,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 187.96 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ac1557b2-15f1-4023-95fc-d48d522c8558")
 		)
@@ -48527,6 +49006,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 63.5 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 63.5 163.83 0)
 			(effects
 				(font
@@ -48734,6 +49221,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 321.31 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "24"
@@ -48959,6 +49454,14 @@
 				)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 44.45 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "db4e5d39-2aed-4acd-af54-9d92c5d4acab")
 		)
@@ -49093,6 +49596,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 344.17 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -49351,6 +49862,14 @@
 				)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 81.28 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f57611b0-1fa8-44f6-bd30-5cb0b3e42c56")
 		)
@@ -49486,6 +50005,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 148.59 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "416dc362-0216-43ba-a5e4-7ef579d9ddb4")
 		)
@@ -49515,8 +50042,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 67.31 45.72 0)
-		(mirror x)
+		(at 64.77 45.72 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -49525,7 +50051,7 @@
 		(fields_autoplaced yes)
 		(uuid "9f0209d6-a13b-43bc-a687-d7f7c6815398")
 		(property "Reference" "R1"
-			(at 64.77 44.4499 0)
+			(at 67.31 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49534,7 +50060,7 @@
 			)
 		)
 		(property "Value" "10K ±1%"
-			(at 64.77 46.9899 0)
+			(at 67.31 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49543,7 +50069,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 65.532 45.72 90)
+			(at 66.548 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49552,7 +50078,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 67.31 45.72 0)
+			(at 64.77 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49561,7 +50087,7 @@
 			)
 		)
 		(property "Description" "RES SMD 10K OHM 1% 1/8W 0805"
-			(at 67.31 45.72 0)
+			(at 64.77 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49570,7 +50096,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CRCW080510K0FKEA"
-			(at 67.31 45.72 0)
+			(at 64.77 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49579,7 +50105,7 @@
 			)
 		)
 		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
-			(at 67.31 45.72 0)
+			(at 64.77 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49588,7 +50114,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay Dale"
-			(at 67.31 45.72 0)
+			(at 64.77 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49597,7 +50123,7 @@
 			)
 		)
 		(property "Distributor Part Number" "541-10.0KCCT-ND - Cut Tape (CT)"
-			(at 67.31 45.72 0)
+			(at 64.77 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49606,7 +50132,7 @@
 			)
 		)
 		(property "Package / Case" "0805 (2012 Metric)"
-			(at 67.31 45.72 0)
+			(at 64.77 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49615,12 +50141,20 @@
 			)
 		)
 		(property "Detailed Description" "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
-			(at 67.31 45.72 0)
+			(at 64.77 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 64.77 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -49810,6 +50344,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 171.45 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -50003,6 +50545,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 210.82 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6fdcb740-573a-47f2-b1c8-f22f7bdb4bae")
 		)
@@ -50119,6 +50669,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 93.98 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 93.98 113.03 0)
 			(effects
 				(font
@@ -50394,6 +50952,14 @@
 				)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 26.67 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a3e875ee-9b23-45ae-a644-7bcf2ad05fd0")
 		)
@@ -50521,6 +51087,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 63.5 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 63.5 138.43 0)
 			(effects
 				(font
@@ -50662,6 +51236,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 196.85 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -50855,6 +51437,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 196.85 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "3653571f-2362-4d66-842a-54b22077be2a")
 		)
@@ -51046,6 +51636,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 187.96 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "06ab13dd-9f51-407c-96e9-7162cc04a69e")
 		)
@@ -51168,6 +51766,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 210.82 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -51295,6 +51901,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 76.2 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4c5df519-da58-4b78-bc62-86210812fdc1")
 		)
@@ -51418,6 +52032,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 171.45 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -51602,6 +52224,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 26.67 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 26.67 125.73 0)
 			(effects
 				(font
@@ -51810,6 +52440,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 171.45 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b500bae7-c27c-4d1f-887d-4b64f0ea6bbe")
 		)
@@ -51933,6 +52571,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 180.34 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -52190,6 +52836,14 @@
 				)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 93.98 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "302fc50e-d634-459c-81f2-b2f10e374e56")
 		)
@@ -52326,6 +52980,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 210.82 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8c58e128-e0f5-4503-8e0f-701c23c6fac5")
 		)
@@ -52441,6 +53103,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 63.5 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 63.5 125.73 0)
 			(effects
 				(font
@@ -52584,6 +53254,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 196.85 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "88713afc-ebda-44fb-af13-c206bd81184b")
 		)
@@ -52706,6 +53384,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 171.45 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3cd4ad68-e620-4b63-b33e-a0413d720bbc")
 		)
@@ -52826,6 +53512,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 171.45 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -53018,6 +53712,14 @@
 				)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 93.98 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ac795815-4032-4784-95bf-188b46169d11")
 		)
@@ -53153,6 +53855,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 180.34 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -53345,6 +54055,14 @@
 				)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 81.28 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a345669e-ea79-4d44-954e-7124b598463f")
 		)
@@ -53478,6 +54196,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 148.59 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -53617,6 +54343,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 180.34 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "49d87ed2-87b9-4233-a65d-6cc34dfa01c8")
 		)
@@ -53740,6 +54474,14 @@
 				)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 93.98 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "95150089-d6eb-4a60-80de-2f502c5ea844")
 		)
@@ -53829,6 +54571,205 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 78.74 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd8137ea-9c0d-4b1b-a5b6-2722e2b98288")
+		(property "Reference" "#PWR075"
+			(at 78.74 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 78.74 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 78.74 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7ec6f0c-d2c9-4a39-b0d5-475dade241f0")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 78.74 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dfc50a0a-c4c2-43a1-b7d0-04fb9af72b3a")
+		(property "Reference" "C14"
+			(at 81.28 59.6962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10 nF, X7R"
+			(at 81.28 62.2362 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 10000PF 50V X7R 0805"
+			(at 78.74 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Detailed Description" "10000 pF ±10% 50V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 78.74 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21B103KBANNND/3894453"
+			(at 78.74 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Part Number" "1276-CL21B103KBANNNDCT-ND - Cut Tape (CT)"
+			(at 78.74 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 78.74 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL21B103KBANNND"
+			(at 78.74 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package / Case" "0805 (2012 Metric)"
+			(at 78.74 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 78.74 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dbecff6d-31aa-4d34-b6a7-9b7a37d18625")
+		)
+		(pin "2"
+			(uuid "e29da30c-3b39-43a4-b2cc-fc2fe0f02913")
+		)
+		(instances
+			(project ""
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -53934,6 +54875,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 63.5 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 63.5 100.33 0)
 			(effects
 				(font
@@ -54078,6 +55027,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 187.96 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "888329d0-c533-4542-a6a3-73c18ac50ede")
 		)
@@ -54193,6 +55150,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 93.98 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 93.98 74.93 0)
 			(effects
 				(font
@@ -54334,6 +55299,14 @@
 				)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 26.67 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8b05dc2b-cf07-45af-97a1-d7b222a35221")
 		)
@@ -54363,7 +55336,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 294.64 109.22 0)
+		(at 293.37 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -54371,7 +55344,7 @@
 		(dnp no)
 		(uuid "eaf6ab23-58dd-4858-9839-1b826d0e3bde")
 		(property "Reference" "C11"
-			(at 292.1 105.4162 0)
+			(at 290.83 105.4162 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54380,7 +55353,7 @@
 			)
 		)
 		(property "Value" "10nF ±10%, Ceramic, X7R, >4V"
-			(at 292.1 107.9562 0)
+			(at 290.83 107.9562 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -54389,7 +55362,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 294.64 109.22 0)
+			(at 293.37 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54398,7 +55371,7 @@
 			)
 		)
 		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B103KB8WPN"
-			(at 294.64 109.22 0)
+			(at 293.37 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54407,7 +55380,7 @@
 			)
 		)
 		(property "Description" "CAP CER 10000PF 50V X7R 0603"
-			(at 292.1 110.4962 0)
+			(at 290.83 110.4962 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -54416,7 +55389,7 @@
 			)
 		)
 		(property "Detailed Description" "10000 pF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 292.1 113.0362 0)
+			(at 290.83 113.0362 0)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -54425,7 +55398,7 @@
 			)
 		)
 		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B103KB8WPND/11487754"
-			(at 294.64 109.22 0)
+			(at 293.37 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54434,7 +55407,7 @@
 			)
 		)
 		(property "Distributor Part Number" "1276-CL10B103KB8WPNDCT-ND - Cut Tape (CT)"
-			(at 294.64 109.22 0)
+			(at 293.37 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54443,7 +55416,7 @@
 			)
 		)
 		(property "Package / Case" "0603 (1608 Metric)"
-			(at 294.64 109.22 0)
+			(at 293.37 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54452,7 +55425,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 294.64 109.22 0)
+			(at 293.37 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54461,12 +55434,20 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL10B103KB8WPND"
-			(at 294.64 109.22 0)
+			(at 293.37 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 293.37 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -54577,7 +55558,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" "495-B59622A0090A062CT-ND"
+		(property "Distributor Part Number" "495-B59622A0090A062CT-ND - Cut Tape (CT)"
 			(at 121.92 163.83 0)
 			(effects
 				(font
@@ -54593,6 +55574,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 121.92 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -54703,7 +55692,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" "495-B59622A0090A062CT-ND"
+		(property "Distributor Part Number" "495-B59622A0090A062CT-ND - Cut Tape (CT)"
 			(at 121.92 100.33 0)
 			(effects
 				(font
@@ -54719,6 +55708,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 121.92 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -54841,6 +55838,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 171.45 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -55025,6 +56030,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 63.5 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 63.5 151.13 0)
 			(effects
 				(font
@@ -55233,6 +56246,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 171.45 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5d6f2353-1bd5-4cb9-8356-a49deb86c2ca")
 		)
@@ -55424,6 +56445,14 @@
 				(hide yes)
 			)
 		)
+		(property "Qty Multiplier" ""
+			(at 210.82 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f3f17a35-c4a7-4c25-8636-e35d4ba5509b")
 		)
@@ -55540,6 +56569,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 81.28 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 81.28 113.03 0)
 			(effects
 				(font
@@ -55680,6 +56717,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 148.59 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -55874,6 +56919,14 @@
 			)
 		)
 		(property "Package / Case" "n/a"
+			(at 63.5 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Qty Multiplier" ""
 			(at 63.5 113.03 0)
 			(effects
 				(font

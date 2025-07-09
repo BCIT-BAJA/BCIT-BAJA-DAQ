@@ -730,10 +730,10 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Value",
           "name": "Value",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -754,7 +754,7 @@
           "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Description",
           "name": "Description",
           "show": true
@@ -781,7 +781,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -806,6 +806,12 @@
           "label": "Package / Case",
           "name": "Package / Case",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Qty Multiplier",
+          "name": "Qty Multiplier",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -813,7 +819,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Package / Case"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {

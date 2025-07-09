@@ -730,10 +730,16 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
+          "label": "Qty Multiplier",
+          "name": "Qty Multiplier",
+          "show": true
+        },
+        {
+          "group_by": false,
           "label": "Value",
           "name": "Value",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -781,7 +787,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -806,16 +812,10 @@
           "label": "Package / Case",
           "name": "Package / Case",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Qty Multiplier",
-          "name": "Qty Multiplier",
-          "show": false
         }
       ],
-      "filter_string": "",
-      "group_symbols": true,
+      "filter_string": "F10",
+      "group_symbols": false,
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,

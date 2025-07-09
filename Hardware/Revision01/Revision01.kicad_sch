@@ -1052,6 +1052,143 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Fuse_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse_Small"
+				(at 0 1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_Small_0_1"
+				(rectangle
+					(start -1.27 0.508)
+					(end 1.27 -0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_Small_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L_Small"
 			(pin_numbers
 				(hide yes)
@@ -1198,155 +1335,6 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 0.508)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:Polyfuse"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "F"
-				(at -2.54 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Polyfuse"
-				(at 2.54 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 1.27 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "resettable fuse PTC PPTC polyfuse polyswitch"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*polyfuse* *PTC*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Polyfuse_0_1"
-				(polyline
-					(pts
-						(xy -1.524 2.54) (xy -1.524 1.524) (xy 1.524 -1.524) (xy 1.524 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -0.762 2.54)
-					(end 0.762 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Polyfuse_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
 					(name "~"
 						(effects
 							(font
@@ -5001,8 +4989,8 @@
 		)
 	)
 	(rectangle
-		(start 20.828 16.51)
-		(end 238.76 111.76)
+		(start 12.7 11.43)
+		(end 261.62 111.76)
 		(stroke
 			(width 0)
 			(type default)
@@ -5092,6 +5080,17 @@
 		)
 		(uuid "155b340d-b968-4845-990f-7a23df084228")
 	)
+	(text "LD1117S50TR | VIn 15V | VDropout 1.2V@800mA (6.2V) | CurrentOut 800mA"
+		(exclude_from_sim no)
+		(at 220.98 153.67 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "1eacf8fd-d3a5-4f9c-976c-5f0e14d877df")
+	)
 	(text "PA14 | SWCLK"
 		(exclude_from_sim no)
 		(at 87.63 144.78 0)
@@ -5138,7 +5137,7 @@
 	)
 	(text "Inductor sizing\n"
 		(exclude_from_sim no)
-		(at 173.99 33.02 0)
+		(at 157.48 48.26 0)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -5146,6 +5145,17 @@
 			(justify left)
 		)
 		(uuid "3b4c3320-2584-4d7b-8623-f23de83e47c5")
+	)
+	(text "VIN LDOs"
+		(exclude_from_sim no)
+		(at 220.98 152.4 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "4703c086-1df8-46dc-9c90-f5e17d825e88")
 	)
 	(text "PB11=VCAP1 <4.7uF>"
 		(exclude_from_sim no)
@@ -5246,21 +5256,9 @@
 		)
 		(uuid "95d9391a-8820-4646-889f-84f532af1e39")
 	)
-	(text "V_batt(4.5-12V) -> 7V buck convertor -> 5V LDO(NUCLEO)"
-		(exclude_from_sim no)
-		(at 163.83 57.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1778)
-				(bold yes)
-			)
-		)
-		(uuid "969cd5cd-e547-40d1-9e3f-cc0751eacf8b")
-	)
 	(text "Feedback resistors\n\nChoose Vout = 7V, Vref = 0.8V, Rfbb = 10K\n\nR_fbt = (Vout - Vref)*R_fbb/Vref\nR_fbt = 77.5K ~= 76.8K"
 		(exclude_from_sim no)
-		(at 173.99 24.13 0)
+		(at 157.48 39.37 0)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -5268,6 +5266,18 @@
 			(justify left)
 		)
 		(uuid "9a81a46e-f3bd-4809-b0d5-cc99252722a9")
+	)
+	(text "1x Battery\n3.8V | Fully Charged \n3.0V | Nominal\n2.2V | Empty\n\n4x in Series\n15.2V | Fully Charged\n12.0V | Nominal\n 8.8V | Empty"
+		(exclude_from_sim no)
+		(at 50.8 40.64 0)
+		(effects
+			(font
+				(face "Consolas")
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "9edf937d-7ddf-4795-a309-6124ca63afb2")
 	)
 	(text "M4 mounting holes, for mechanical connections"
 		(exclude_from_sim no)
@@ -5293,7 +5303,7 @@
 	)
 	(text "<JP5> +5V from VIN -> E5V or U5V"
 		(exclude_from_sim no)
-		(at 241.3 154.94 0)
+		(at 242.57 154.94 0)
 		(effects
 			(font
 				(size 1 1)
@@ -5313,17 +5323,6 @@
 		)
 		(uuid "c4ed95de-56c1-44a1-a872-d1b0f49336f1")
 	)
-	(text "Battery specifications:\n1.5V-4V\n3 CELL BATTERY\n\nso total range is 4.5-12V\nFor stable output, keep above 6.5V"
-		(exclude_from_sim no)
-		(at 26.67 93.98 0)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify left)
-		)
-		(uuid "c6d19008-0c9d-4fee-9a6d-ea6abfde3d40")
-	)
 	(text "PA2 | USART2_TX"
 		(exclude_from_sim no)
 		(at 87.63 228.6 0)
@@ -5335,18 +5334,42 @@
 		)
 		(uuid "c726b0c0-9768-4145-bd3c-1e51d8cc94d0")
 	)
-	(text "24V e-fuse\n250mA CTS CURRENT\n550mA trip\n\nFLA of circuit:\n\nPurpose: Protects human, \nbecause death looks bad on resume\n"
+	(text "Todo: Check the Fuses"
 		(exclude_from_sim no)
-		(at 58.42 93.98 0)
+		(at 46.99 26.67 0)
 		(effects
 			(font
-				(size 0.889 0.889)
-				(thickness 0.127)
+				(size 1.27 1.27)
+				(thickness 0.1778)
 				(bold yes)
 			)
 			(justify left)
 		)
-		(uuid "c9acc3a8-7bb7-48b9-9d66-effb147449ef")
+		(uuid "c767eb1f-225d-461d-bc72-7848b097a6ac")
+	)
+	(text "LD39050PU33R"
+		(exclude_from_sim no)
+		(at 220.98 154.94 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "caaa5892-725e-42ba-981a-9ace72278d1e")
+	)
+	(text "Todo: Check the Buck Convertor Passives"
+		(exclude_from_sim no)
+		(at 175.26 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1778)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "d0606c1f-37c9-4cbe-8061-837c640860eb")
 	)
 	(text "PC14 | OSC32_IN\n"
 		(exclude_from_sim no)
@@ -5370,6 +5393,17 @@
 		)
 		(uuid "d28ea657-04b2-4916-aa62-1047f1d6c8b9")
 	)
+	(text "TODO; is this switch the correct order number ?"
+		(exclude_from_sim no)
+		(at 92.71 36.83 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left)
+		)
+		(uuid "da694e7f-8181-4c56-b077-6d728cafd3ad")
+	)
 	(text "PB3 | JTDO-TRACESWO"
 		(exclude_from_sim no)
 		(at 87.63 223.52 0)
@@ -5381,28 +5415,17 @@
 		)
 		(uuid "e0b6b6fd-7162-4fab-90d2-788231c1cff8")
 	)
-	(text "(Optional) Bypass \nBUCK-CONVERTOR\nV_batt -> 5V LDO"
-		(exclude_from_sim no)
-		(at 115.57 57.15 0)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify left)
-		)
-		(uuid "ef9db489-ddf2-404e-8af9-dccad0fbb4e3")
+	(junction
+		(at 223.52 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04cc5f8b-47a8-47e2-b5b7-1aea5e524213")
 	)
 	(junction
 		(at 163.83 259.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0d9c8946-0862-4d34-84f3-97e1500a3739")
-	)
-	(junction
-		(at 205.74 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "10e46599-3ec4-4fb2-9a25-4882ac9385bf")
 	)
 	(junction
 		(at 163.83 256.54)
@@ -5429,28 +5452,16 @@
 		(uuid "326bfcdd-b2b9-4327-9ba1-a0b964012bd2")
 	)
 	(junction
-		(at 40.64 48.26)
+		(at 187.96 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "39c9d073-2dff-476f-9a22-8c70623a78bf")
-	)
-	(junction
-		(at 175.26 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3ba5093c-b2af-4b80-8d97-c27ca259f3d6")
+		(uuid "332e3283-177f-4b28-89a9-b89101338e67")
 	)
 	(junction
 		(at 85.09 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4936f9a6-ead1-428c-a862-867d40a828f0")
-	)
-	(junction
-		(at 184.15 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "561f7e9a-9c2b-40b3-854d-368a767db562")
 	)
 	(junction
 		(at 50.8 66.04)
@@ -5483,16 +5494,16 @@
 		(uuid "7bc6a9f8-1cce-488d-ba73-09d05a475ed5")
 	)
 	(junction
+		(at 223.52 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83ef2ffd-46ec-41db-a733-3eb72d510ecd")
+	)
+	(junction
 		(at 200.66 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "872a3d47-3e5b-4508-8e48-b95b2959566b")
-	)
-	(junction
-		(at 40.64 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "92781e8a-850d-4cc7-ac85-734fbac0820d")
 	)
 	(junction
 		(at 107.95 66.04)
@@ -5513,16 +5524,16 @@
 		(uuid "a3042571-36d9-4dbb-a42c-a9a00000f0f1")
 	)
 	(junction
-		(at 50.8 48.26)
+		(at 190.5 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a90b03ec-e13f-4377-a251-9648319df9e2")
+		(uuid "a5103ce0-5216-4ec8-8340-7d6228722af3")
 	)
 	(junction
-		(at 184.15 83.82)
+		(at 180.34 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bbf830f2-dd78-44b4-9b1e-90a41f0bea44")
+		(uuid "a53cc4e0-2425-4c54-b43c-a6f75802cf65")
 	)
 	(junction
 		(at 80.01 71.12)
@@ -5531,28 +5542,16 @@
 		(uuid "c063c179-a541-4ceb-9430-b4321b6aac2c")
 	)
 	(junction
-		(at 214.63 83.82)
+		(at 223.52 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c1e1b514-2e79-4738-ad61-8bf72f3082e3")
-	)
-	(junction
-		(at 209.55 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c3b6bee0-dfff-428c-a42e-eb7e9c0e4fea")
+		(uuid "c8e96334-01a7-4207-995a-57f1b6096d62")
 	)
 	(junction
 		(at 200.66 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d024869b-92cc-4631-91ea-fd493c28fd3b")
-	)
-	(junction
-		(at 209.55 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d2a2fe61-178c-4ad8-a737-5cca80640000")
 	)
 	(junction
 		(at 200.66 88.9)
@@ -5567,28 +5566,28 @@
 		(uuid "e40aadaf-70d2-43ba-915e-6099395e2642")
 	)
 	(junction
+		(at 50.8 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e87774bb-9165-47b3-ad0d-5d9d1b6d5782")
+	)
+	(junction
+		(at 223.52 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee4b6db7-3e1b-483a-ba80-1d8bb0fd852a")
+	)
+	(junction
 		(at 82.55 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f21fc7da-a524-40da-a638-af1ee47587fa")
 	)
 	(junction
-		(at 205.74 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f2a4e150-c579-4d67-87ff-60eb8427f690")
-	)
-	(junction
 		(at 142.24 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fc8f963d-a04f-4847-a346-69494b1f987a")
-	)
-	(junction
-		(at 50.8 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fe11c074-13cf-400a-acf9-0c4d6483622e")
 	)
 	(no_connect
 		(at 87.63 166.37)
@@ -5774,7 +5773,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 22.86) (xy 80.01 71.12)
+			(xy 80.01 31.75) (xy 80.01 71.12)
 		)
 		(stroke
 			(width 0)
@@ -5874,7 +5873,17 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 91.44) (xy 214.63 83.82)
+			(xy 190.5 80.01) (xy 190.5 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a2f4460-93ef-4ee9-a88c-69cbb1769f1f")
+	)
+	(wire
+		(pts
+			(xy 232.41 91.44) (xy 232.41 83.82)
 		)
 		(stroke
 			(width 0)
@@ -5904,16 +5913,6 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 83.82) (xy 205.74 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2263f351-df0e-484a-b47d-77ba0d1be547")
-	)
-	(wire
-		(pts
 			(xy 307.34 194.31) (xy 311.15 194.31)
 		)
 		(stroke
@@ -5924,7 +5923,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 39.37) (xy 85.09 66.04)
+			(xy 85.09 48.26) (xy 85.09 66.04)
 		)
 		(stroke
 			(width 0)
@@ -5954,26 +5953,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 55.88) (xy 50.8 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "277fe671-f55e-4a19-a002-a18761a6ee16")
-	)
-	(wire
-		(pts
-			(xy 50.8 55.88) (xy 50.8 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29cf7061-2ef9-478c-bd2f-e41ea9a72bee")
-	)
-	(wire
-		(pts
 			(xy 307.34 185.42) (xy 311.15 185.42)
 		)
 		(stroke
@@ -5991,16 +5970,6 @@
 			(type default)
 		)
 		(uuid "2e32c5a2-5e5d-43f4-8f9c-30148c5bb31b")
-	)
-	(wire
-		(pts
-			(xy 184.15 88.9) (xy 200.66 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f649437-9d6b-4490-a542-f010a20d5923")
 	)
 	(wire
 		(pts
@@ -6051,6 +6020,16 @@
 			(type default)
 		)
 		(uuid "33fbc676-1653-4783-8f67-7cd2381a922d")
+	)
+	(wire
+		(pts
+			(xy 175.26 88.9) (xy 187.96 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "346a4c58-1067-403b-938c-e0f9ccfb881f")
 	)
 	(wire
 		(pts
@@ -6184,16 +6163,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 40.64) (xy 40.64 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4957c45e-a9a0-4bba-b695-e9a05b3c5e85")
-	)
-	(wire
-		(pts
 			(xy 307.34 172.72) (xy 311.15 172.72)
 		)
 		(stroke
@@ -6274,7 +6243,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 25.4) (xy 82.55 25.4)
+			(xy 85.09 34.29) (xy 82.55 34.29)
 		)
 		(stroke
 			(width 0)
@@ -6284,7 +6253,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 66.04) (xy 214.63 83.82)
+			(xy 223.52 66.04) (xy 223.52 83.82)
 		)
 		(stroke
 			(width 0)
@@ -6334,23 +6303,23 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 66.04) (xy 209.55 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d99e15f-4294-415d-9cad-f0b5e0f75fdd")
-	)
-	(wire
-		(pts
-			(xy 205.74 96.52) (xy 205.74 102.87)
+			(xy 223.52 96.52) (xy 223.52 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "615b6507-161d-4821-ac8f-c4cf816a6d44")
+	)
+	(wire
+		(pts
+			(xy 73.66 66.04) (xy 82.55 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "618ae432-6747-42ba-8bb8-0ce836a2a1c1")
 	)
 	(wire
 		(pts
@@ -6384,6 +6353,26 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 78.74) (xy 175.26 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "694b4e2a-cd7e-49bb-868c-434442a4e6de")
+	)
+	(wire
+		(pts
+			(xy 232.41 83.82) (xy 223.52 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ae83644-5085-43fc-9142-367a6f5fe951")
+	)
+	(wire
+		(pts
 			(xy 175.26 102.87) (xy 200.66 102.87)
 		)
 		(stroke
@@ -6411,6 +6400,16 @@
 			(type default)
 		)
 		(uuid "6f0332f3-890e-47ae-a487-54aedd40a786")
+	)
+	(wire
+		(pts
+			(xy 40.64 71.12) (xy 43.18 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f744f49-a77e-44f2-a458-7b159aa96e62")
 	)
 	(wire
 		(pts
@@ -6484,16 +6483,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 71.12) (xy 44.45 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f3d2181-10b1-4b2b-98be-37218971a950")
-	)
-	(wire
-		(pts
 			(xy 52.07 214.63) (xy 92.71 214.63)
 		)
 		(stroke
@@ -6501,6 +6490,16 @@
 			(type default)
 		)
 		(uuid "820d5c3e-23a7-4db0-8059-551e0f5b8fca")
+	)
+	(wire
+		(pts
+			(xy 175.26 83.82) (xy 180.34 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8361d98f-6023-4689-b8bb-1b02989977e4")
 	)
 	(wire
 		(pts
@@ -6534,16 +6533,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 83.82) (xy 191.77 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "899d7e6c-0dff-4703-89d4-4551ecf2bc8d")
-	)
-	(wire
-		(pts
 			(xy 307.34 212.09) (xy 311.15 212.09)
 		)
 		(stroke
@@ -6554,7 +6543,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 71.12) (xy 40.64 71.12)
+			(xy 24.13 71.12) (xy 40.64 71.12)
 		)
 		(stroke
 			(width 0)
@@ -6564,7 +6553,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 66.04) (xy 59.69 66.04)
+			(xy 50.8 66.04) (xy 68.58 66.04)
 		)
 		(stroke
 			(width 0)
@@ -6614,13 +6603,13 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 83.82) (xy 184.15 83.82)
+			(xy 187.96 88.9) (xy 200.66 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8e0cc1cf-46a6-45ba-a500-ee0a09e27902")
+		(uuid "8e2e11c9-1e2a-4a82-ac6c-74994dbdc985")
 	)
 	(wire
 		(pts
@@ -6724,7 +6713,17 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 59.69) (xy 209.55 60.96)
+			(xy 53.34 71.12) (xy 50.8 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f0a0358-b74b-426c-97c1-9873f51787a6")
+	)
+	(wire
+		(pts
+			(xy 223.52 59.69) (xy 223.52 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6744,13 +6743,13 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 55.88) (xy 40.64 71.12)
+			(xy 180.34 83.82) (xy 190.5 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a256913f-b3c9-448f-96bd-0299d59e7e7d")
+		(uuid "a5815304-4e98-48c8-a59d-5585d7f6837e")
 	)
 	(wire
 		(pts
@@ -6794,7 +6793,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 83.82) (xy 205.74 91.44)
+			(xy 223.52 83.82) (xy 223.52 91.44)
 		)
 		(stroke
 			(width 0)
@@ -6804,7 +6803,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 102.87) (xy 200.66 102.87)
+			(xy 200.66 102.87) (xy 223.52 102.87)
 		)
 		(stroke
 			(width 0)
@@ -6834,7 +6833,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 48.26) (xy 40.64 55.88)
+			(xy 40.64 66.04) (xy 40.64 71.12)
 		)
 		(stroke
 			(width 0)
@@ -6844,7 +6843,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 71.12) (xy 35.56 74.93)
+			(xy 24.13 71.12) (xy 24.13 76.2)
 		)
 		(stroke
 			(width 0)
@@ -6861,6 +6860,16 @@
 			(type default)
 		)
 		(uuid "b748b836-fcb9-4187-91e3-3c3ebb59227f")
+	)
+	(wire
+		(pts
+			(xy 190.5 83.82) (xy 191.77 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9f7f332-c261-4d4d-b70f-8b0d7c8bb2e2")
 	)
 	(wire
 		(pts
@@ -6914,7 +6923,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 29.21) (xy 87.63 22.86)
+			(xy 87.63 38.1) (xy 87.63 31.75)
 		)
 		(stroke
 			(width 0)
@@ -6934,7 +6943,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 39.37) (xy 87.63 66.04)
+			(xy 87.63 48.26) (xy 87.63 66.04)
 		)
 		(stroke
 			(width 0)
@@ -6954,7 +6963,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 83.82) (xy 205.74 83.82)
+			(xy 200.66 83.82) (xy 223.52 83.82)
 		)
 		(stroke
 			(width 0)
@@ -6964,17 +6973,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 88.9) (xy 184.15 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7dbaa95-b2c8-4294-bd62-8a617f84c310")
-	)
-	(wire
-		(pts
-			(xy 214.63 96.52) (xy 214.63 102.87)
+			(xy 232.41 96.52) (xy 232.41 102.87)
 		)
 		(stroke
 			(width 0)
@@ -7004,7 +7003,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 66.04) (xy 209.55 66.04)
+			(xy 119.38 66.04) (xy 223.52 66.04)
 		)
 		(stroke
 			(width 0)
@@ -7014,7 +7013,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 60.96) (xy 209.55 60.96)
+			(xy 229.87 60.96) (xy 223.52 60.96)
 		)
 		(stroke
 			(width 0)
@@ -7124,16 +7123,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 66.04) (xy 82.55 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1c1add6-3f93-4adb-9c79-91ee11fe08af")
-	)
-	(wire
-		(pts
 			(xy 87.63 161.29) (xy 92.71 161.29)
 		)
 		(stroke
@@ -7144,7 +7133,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 29.21) (xy 85.09 25.4)
+			(xy 85.09 38.1) (xy 85.09 34.29)
 		)
 		(stroke
 			(width 0)
@@ -7174,33 +7163,13 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 71.12) (xy 46.99 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7eafe89-35cb-4978-8e7c-afe87f142d16")
-	)
-	(wire
-		(pts
-			(xy 87.63 22.86) (xy 80.01 22.86)
+			(xy 87.63 31.75) (xy 80.01 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e882d907-66de-43f1-991f-1fe879d05983")
-	)
-	(wire
-		(pts
-			(xy 50.8 48.26) (xy 50.8 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb83bb9b-ded3-4b50-96e1-47741fa33316")
 	)
 	(wire
 		(pts
@@ -7244,7 +7213,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 60.96) (xy 209.55 66.04)
+			(xy 223.52 60.96) (xy 223.52 66.04)
 		)
 		(stroke
 			(width 0)
@@ -7254,7 +7223,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 102.87) (xy 205.74 102.87)
+			(xy 232.41 102.87) (xy 223.52 102.87)
 		)
 		(stroke
 			(width 0)
@@ -7304,7 +7273,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 25.4) (xy 82.55 66.04)
+			(xy 82.55 34.29) (xy 82.55 66.04)
 		)
 		(stroke
 			(width 0)
@@ -7313,7 +7282,7 @@
 		(uuid "fcc5edb0-d0e0-42f3-b687-4f981e9f4d80")
 	)
 	(image
-		(at 187.325 38.1)
+		(at 170.815 53.34)
 		(scale 0.10482)
 		(uuid "a5de74d1-9781-46d1-ae2b-bcee564ca1c8")
 		(data "iVBORw0KGgoAAAANSUhEUgAAA6sAAAEWCAIAAAAPS5ZQAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
@@ -8109,7 +8078,7 @@
 		)
 	)
 	(image
-		(at 187.96 49.53)
+		(at 170.18 60.96)
 		(scale 0.0753578)
 		(uuid "dcd6dc32-881d-451d-97b7-ac48869e04eb")
 		(data "iVBORw0KGgoAAAANSUhEUgAABMMAAAFKCAIAAACfDA/bAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
@@ -8609,7 +8578,7 @@
 		(uuid "016c26a7-19cb-41be-8805-39afce84750c")
 	)
 	(label "BuckSW"
-		(at 177.8 83.82 0)
+		(at 175.26 83.82 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -8759,7 +8728,7 @@
 		(uuid "5c9080c1-54fc-4089-9584-a60e4544aac1")
 	)
 	(label "BuckFB"
-		(at 177.8 88.9 0)
+		(at 175.26 88.9 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -9070,16 +9039,15 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 184.15 88.9 0)
+		(at 187.96 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0b07a2db-fd76-4308-b692-8326155d5513")
 		(property "Reference" "TP3"
-			(at 186.69 85.598 0)
+			(at 189.23 86.36 0)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -9088,7 +9056,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 186.69 86.8679 0)
+			(at 190.5 86.8679 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9098,7 +9066,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 189.23 88.9 0)
+			(at 193.04 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9107,7 +9075,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 189.23 88.9 0)
+			(at 193.04 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9116,7 +9084,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 184.15 88.9 0)
+			(at 187.96 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9125,7 +9093,7 @@
 			)
 		)
 		(property "Distributor Link" ""
-			(at 184.15 88.9 0)
+			(at 187.96 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9134,7 +9102,7 @@
 			)
 		)
 		(property "Distributor Part Number" ""
-			(at 184.15 88.9 0)
+			(at 187.96 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9142,7 +9110,7 @@
 			)
 		)
 		(property "Package / Case" ""
-			(at 184.15 88.9 0)
+			(at 187.96 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9150,7 +9118,7 @@
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 184.15 88.9 0)
+			(at 187.96 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9180,7 +9148,7 @@
 		(fields_autoplaced yes)
 		(uuid "0d931270-b1f6-474e-a20e-bca715f4c97d")
 		(property "Reference" "C21"
-			(at 139.7 91.4462 0)
+			(at 139.7 92.0812 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9188,11 +9156,11 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
-			(at 139.7 93.9862 0)
+		(property "Value" "1uF, X7R"
+			(at 139.7 93.9863 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 				(justify left)
 			)
@@ -9206,7 +9174,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL21B105KBFNNNE_Spec.pdf"
 			(at 137.16 92.71 0)
 			(effects
 				(font
@@ -9215,7 +9183,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP CER 1UF 50V X7R 0805"
 			(at 137.16 92.71 0)
 			(effects
 				(font
@@ -9224,7 +9192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 137.16 92.71 0)
 			(effects
 				(font
@@ -9233,7 +9201,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "GCM21BR71H105KA03L"
+		(property "Manufacturer Part Number" "CL21B105KBFNNNE"
 			(at 137.16 92.71 0)
 			(effects
 				(font
@@ -9242,20 +9210,22 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" ""
+		(property "Distributor Part Number" "1276-1029-1-ND - Cut Tape (CT)"
 			(at 137.16 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Package / Case" ""
+		(property "Package / Case" "0805 (2012 Metric)"
 			(at 137.16 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Qty Multiplier" ""
@@ -9264,6 +9234,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Detailed Description" "1 µF ±10% 50V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 137.16 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21B105KBFNNNE/3886687"
+			(at 137.16 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -9276,119 +9264,6 @@
 			(project ""
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 44.45 76.2 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "149d7738-5dcf-4067-a552-5853b640a946")
-		(property "Reference" "J4"
-			(at 49.53 74.9299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Battery connector"
-			(at 49.53 77.4699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 44.45 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 44.45 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 44.45 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" ""
-			(at 44.45 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 44.45 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" ""
-			(at 44.45 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package / Case" ""
-			(at 44.45 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 44.45 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6330858b-bd81-44c2-b3ae-6327670c1c7a")
-		)
-		(pin "2"
-			(uuid "7940a809-6454-4905-a813-ea65b12c69de")
-		)
-		(instances
-			(project ""
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -9536,9 +9411,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "229dbd26-762e-4870-a0fa-355b9b7ab8bc")
 		(property "Reference" "R40"
-			(at 196.596 92.964 0)
+			(at 203.2 92.71 0)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -9546,13 +9422,13 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10K +-1%"
-			(at 198.628 94.742 0)
+		(property "Value" "10K +-1%, ±100ppm/°C"
+			(at 203.2 95.25 0)
 			(effects
 				(font
 					(size 0.889 0.889)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
@@ -9564,7 +9440,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
 			(at 200.66 93.98 0)
 			(effects
 				(font
@@ -9573,7 +9449,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "RES 10K OHM 1% 1/8W 0805"
 			(at 200.66 93.98 0)
 			(effects
 				(font
@@ -9582,7 +9458,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RK73H2ATTD1002F"
+		(property "Manufacturer Part Number" "CRCW080510K0FKEAC"
 			(at 200.66 93.98 0)
 			(effects
 				(font
@@ -9591,7 +9467,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link" ""
+		(property "Distributor Link" "https://www.digikey.com/en/products/detail/vishay-dale/CRCW080510K0FKEAC/7928398"
 			(at 200.66 93.98 0)
 			(effects
 				(font
@@ -9600,7 +9476,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "KOA Speer Electronics, Inc."
+		(property "Manufacturer" "Vishay Dale"
 			(at 200.66 93.98 0)
 			(effects
 				(font
@@ -9609,20 +9485,22 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" ""
+		(property "Distributor Part Number" "541-3976-1-ND - Cut Tape (CT)"
 			(at 200.66 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Package / Case" ""
+		(property "Package / Case" "0805 (2012 Metric)"
 			(at 200.66 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Qty Multiplier" ""
@@ -9631,6 +9509,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Detailed Description" "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Thick Film"
+			(at 200.66 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -9738,15 +9625,16 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 214.63 93.98 0)
+		(at 232.41 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "24267ce7-1980-4b3a-9309-bf2a8ffd720f")
 		(property "Reference" "C23"
-			(at 217.17 92.7162 0)
+			(at 234.95 93.3512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9754,17 +9642,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 217.17 95.2562 0)
+		(property "Value" "10uF, X7R"
+			(at 234.95 95.2563 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 214.63 93.98 0)
+			(at 232.41 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9772,8 +9660,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 214.63 93.98 0)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/658/CL31B106KAHNNNE_Spec.pdf"
+			(at 232.41 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9781,8 +9669,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 214.63 93.98 0)
+		(property "Description" "CAP CER 10UF 25V X7R 1206"
+			(at 232.41 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9790,8 +9678,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 214.63 93.98 0)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 232.41 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9800,7 +9688,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL31B106KAHNNNE"
-			(at 214.63 93.98 0)
+			(at 232.41 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9808,8 +9696,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link" ""
-			(at 214.63 93.98 0)
+		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
+			(at 232.41 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9817,28 +9705,39 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" ""
-			(at 214.63 93.98 0)
+		(property "Distributor Part Number" "1276-1804-1-ND - Cut Tape (CT)"
+			(at 232.41 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Package / Case" ""
-			(at 214.63 93.98 0)
+		(property "Package / Case" "1206 (3216 Metric)"
+			(at 232.41 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 214.63 93.98 0)
+			(at 232.41 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Detailed Description" "10 µF ±10% 25V Ceramic Capacitor X7R 1206 (3216 Metric)"
+			(at 232.41 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9992,7 +9891,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 116.84 78.74 0)
 			(effects
 				(font
@@ -10001,7 +9900,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "RES SMD 0 OHM JUMPER 1/2W 0805"
 			(at 116.84 78.74 0)
 			(effects
 				(font
@@ -10028,20 +9927,22 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" ""
+		(property "Distributor Part Number" "541-0.0TBCT-ND - Cut Tape (CT)"
 			(at 116.84 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Package / Case" ""
+		(property "Package / Case" "0805 (2012 Metric)"
 			(at 116.84 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Qty Multiplier" ""
@@ -10050,6 +9951,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Detailed Description" "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
+			(at 116.84 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" "https://www.digikey.com/en/products/detail/vishay-dale/CRCW08050000Z0EAHP/2222316"
+			(at 116.84 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10062,111 +9981,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(reference "R33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Battery")
-		(at 45.72 48.26 270)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3c5ff287-f45f-4590-a971-6b631bdf2036")
-		(property "Reference" "BT2"
-			(at 47.5616 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "Battery"
-			(at 45.0216 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 47.244 48.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 47.244 48.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Multiple-cell battery"
-			(at 45.72 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" ""
-			(at 45.72 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" ""
-			(at 45.72 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package / Case" ""
-			(at 45.72 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 45.72 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "08d2cdbe-4e92-4efc-bc42-8ee4d688ccc4")
-		)
-		(pin "2"
-			(uuid "e4a07bba-ecaa-4a6f-9d5a-367969e0defb")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
-					(reference "BT2")
 					(unit 1)
 				)
 			)
@@ -10274,7 +10088,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/data_brief/c8/3c/30/f7/d6/08/4a/26/DM00105918.pdf/files/DM00105918.pdf/jcr:content/translations/en.DM00105918.pdf"
 			(at 115.57 209.55 0)
 			(effects
 				(font
@@ -10283,7 +10097,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "NUCLEO-64 STM32L476RG EVAL BRD"
 			(at 115.57 209.55 0)
 			(effects
 				(font
@@ -10301,7 +10115,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link" ""
+		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/stmicroelectronics/NUCLEO-L476RG/5347711"
 			(at 115.57 209.55 0)
 			(effects
 				(font
@@ -10310,20 +10124,22 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" ""
+		(property "Distributor Part Number" "497-15881-ND"
 			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Package / Case" ""
+		(property "Package / Case" "n/a"
 			(at 115.57 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Qty Multiplier" ""
@@ -10332,6 +10148,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Detailed Description" "STM32L476 Nucleo-64 STM32L4 ARM® Cortex®-M4 MCU 32-Bit Embedded Evaluation Board"
+			(at 115.57 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 115.57 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "CN10_2"
@@ -10573,7 +10407,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 175.26 81.28 0)
+		(at 180.34 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10581,7 +10415,7 @@
 		(dnp no)
 		(uuid "42bb97a3-fd24-45b4-8682-af203cbc2532")
 		(property "Reference" "C24"
-			(at 177.8 78.74 0)
+			(at 182.88 80.6512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10589,17 +10423,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 177.8 81.28 0)
+		(property "Value" "0.1µF, X7R"
+			(at 182.88 82.55 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 175.26 81.28 0)
+			(at 180.34 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10607,8 +10441,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 175.26 81.28 0)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/893/CL21B104KCFNNNE_Spec.pdf"
+			(at 180.34 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10616,8 +10450,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 175.26 81.28 0)
+		(property "Description" "CAP CER 0.1UF 100V X7R 0805"
+			(at 180.34 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10625,8 +10459,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0805JRNPO9BN250"
-			(at 175.26 81.28 0)
+		(property "Manufacturer Part Number" "CL21B104KCFNNNE"
+			(at 180.34 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10634,8 +10468,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link" ""
-			(at 175.26 81.28 0)
+		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21B104KCFNNNE/5961324"
+			(at 180.34 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10643,8 +10477,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
-			(at 175.26 81.28 0)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 180.34 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10652,28 +10486,39 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" ""
-			(at 175.26 81.28 0)
+		(property "Distributor Part Number" "1276-6840-1-ND - Cut Tape (CT)"
+			(at 180.34 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Package / Case" ""
-			(at 175.26 81.28 0)
+		(property "Package / Case" "0805 (2012 Metric)"
+			(at 180.34 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 175.26 81.28 0)
+			(at 180.34 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Detailed Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 180.34 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -10703,7 +10548,7 @@
 		(fields_autoplaced yes)
 		(uuid "445e1e0a-85c1-4bf3-9349-1bb1fd0b651b")
 		(property "Reference" "C20"
-			(at 129.54 91.4462 0)
+			(at 129.54 92.0812 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10711,11 +10556,11 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10uF"
-			(at 129.54 93.9862 0)
+		(property "Value" "10uF, X7R"
+			(at 129.54 93.9863 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 				(justify right)
 			)
@@ -10729,7 +10574,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/658/CL31B106KAHNNNE_Spec.pdf"
 			(at 127 92.71 0)
 			(effects
 				(font
@@ -10738,7 +10583,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP CER 10UF 25V X7R 1206"
 			(at 127 92.71 0)
 			(effects
 				(font
@@ -10747,7 +10592,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 127 92.71 0)
 			(effects
 				(font
@@ -10765,7 +10610,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link" ""
+		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
 			(at 127 92.71 0)
 			(effects
 				(font
@@ -10774,20 +10619,22 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" ""
+		(property "Distributor Part Number" "1276-1804-1-ND - Cut Tape (CT)"
 			(at 127 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Package / Case" ""
+		(property "Package / Case" "1206 (3216 Metric)"
 			(at 127 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Qty Multiplier" ""
@@ -10796,6 +10643,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Detailed Description" "10 µF ±10% 25V Ceramic Capacitor X7R 1206 (3216 Metric)"
+			(at 127 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11051,7 +10907,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 35.56 74.93 0)
+		(at 24.13 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11060,7 +10916,7 @@
 		(fields_autoplaced yes)
 		(uuid "5f5a5b51-ea52-4b02-834f-677ca7ef945c")
 		(property "Reference" "#PWR028"
-			(at 35.56 81.28 0)
+			(at 24.13 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11069,7 +10925,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 35.56 80.01 0)
+			(at 24.13 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11077,7 +10933,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 74.93 0)
+			(at 24.13 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11086,7 +10942,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 74.93 0)
+			(at 24.13 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11095,7 +10951,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 35.56 74.93 0)
+			(at 24.13 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11182,25 +11038,24 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 184.15 83.82 0)
+		(at 190.5 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "63b7b921-821e-4f31-b761-cb0309ead1d3")
 		(property "Reference" "TP2"
-			(at 186.69 80.518 0)
+			(at 190.5 74.93 0)
 			(effects
 				(font
 					(size 0.635 0.635)
 				)
-				(justify left)
+				(justify bottom)
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 186.69 81.7879 0)
+			(at 193.04 77.9779 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11210,7 +11065,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 189.23 83.82 0)
+			(at 195.58 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11219,7 +11074,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 189.23 83.82 0)
+			(at 195.58 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11228,7 +11083,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 184.15 83.82 0)
+			(at 190.5 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11237,7 +11092,7 @@
 			)
 		)
 		(property "Distributor Link" ""
-			(at 184.15 83.82 0)
+			(at 190.5 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11246,7 +11101,7 @@
 			)
 		)
 		(property "Distributor Part Number" ""
-			(at 184.15 83.82 0)
+			(at 190.5 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11254,7 +11109,7 @@
 			)
 		)
 		(property "Package / Case" ""
-			(at 184.15 83.82 0)
+			(at 190.5 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11262,7 +11117,7 @@
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 184.15 83.82 0)
+			(at 190.5 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11289,9 +11144,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "6bdb9c6a-7bda-4f74-aa78-02c1b6c6d61d")
 		(property "Reference" "L1"
-			(at 194.564 78.74 90)
+			(at 194.31 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11299,7 +11155,7 @@
 			)
 		)
 		(property "Value" "150uH"
-			(at 194.564 81.28 90)
+			(at 194.31 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11315,7 +11171,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/P02/JELF243A-9153.pdf"
 			(at 194.31 83.82 0)
 			(effects
 				(font
@@ -11324,7 +11180,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor, small symbol"
+		(property "Description" "FIXED IND 150UH 330MA 2.64OHM SM"
 			(at 194.31 83.82 0)
 			(effects
 				(font
@@ -11351,20 +11207,22 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" ""
+		(property "Distributor Part Number" "490-LQH44PH151MPRLCT-ND - Cut Tape (CT)"
 			(at 194.31 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Package / Case" ""
+		(property "Package / Case" "1616 (4040 Metric)"
 			(at 194.31 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Qty Multiplier" ""
@@ -11373,6 +11231,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Detailed Description" "150 µH Shielded Drum Core, Wirewound Inductor 330 mA 2.64Ohm Max 1616 (4040 Metric)"
+			(at 194.31 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" "https://www.digikey.com/en/products/detail/murata-electronics/LQH44PH151MPRL/11690210"
+			(at 194.31 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11385,111 +11261,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(reference "L1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Battery")
-		(at 45.72 55.88 270)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "72712b5f-ab27-4100-8c46-b2c80ecfe0d8")
-		(property "Reference" "BT3"
-			(at 47.5616 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "Battery"
-			(at 45.0216 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 47.244 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 47.244 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Multiple-cell battery"
-			(at 45.72 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" ""
-			(at 45.72 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" ""
-			(at 45.72 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package / Case" ""
-			(at 45.72 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 45.72 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d4406cd4-f035-4697-bc3e-01f12c01a133")
-		)
-		(pin "2"
-			(uuid "cd0bd6a5-8301-412c-a412-ac7d2570356b")
-		)
-		(instances
-			(project ""
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
-					(reference "BT3")
 					(unit 1)
 				)
 			)
@@ -11531,7 +11302,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "LMR51603XFDBVR"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmr51606.pdf?ts=1704242784728&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FLMR51606"
 			(at 142.24 78.74 0)
 			(effects
 				(font
@@ -11541,7 +11312,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC REG BUCK ADJ 600MA SOT23-6"
 			(at 142.24 78.74 0)
 			(effects
 				(font
@@ -11568,20 +11339,22 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" ""
+		(property "Distributor Part Number" "296-LMR51606XDBVRCT-ND - Cut Tape (CT)"
 			(at 142.24 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Package / Case" ""
+		(property "Package / Case" "SOT-23-6"
 			(at 142.24 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Qty Multiplier" ""
@@ -11590,6 +11363,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Detailed Description" "Buck Switching Regulator IC Positive Adjustable 0.8V 1 Output 600mA SOT-23-6"
+			(at 142.24 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/texas-instruments/LMR51606XDBVR"
+			(at 142.24 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "6"
@@ -11721,7 +11512,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/data_brief/c8/3c/30/f7/d6/08/4a/26/DM00105918.pdf/files/DM00105918.pdf/jcr:content/translations/en.DM00105918.pdf"
 			(at 115.57 151.13 0)
 			(effects
 				(font
@@ -11730,7 +11521,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "NUCLEO-64 STM32L476RG EVAL BRD"
 			(at 115.57 151.13 0)
 			(effects
 				(font
@@ -11748,7 +11539,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link" ""
+		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/stmicroelectronics/NUCLEO-L476RG/5347711"
 			(at 115.57 151.13 0)
 			(effects
 				(font
@@ -11757,20 +11548,22 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" ""
+		(property "Distributor Part Number" "497-15881-ND"
 			(at 115.57 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Package / Case" ""
+		(property "Package / Case" "n/a"
 			(at 115.57 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Qty Multiplier" ""
@@ -11779,6 +11572,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Detailed Description" "STM32L476 Nucleo-64 STM32L4 ARM® Cortex®-M4 MCU 32-Bit Embedded Evaluation Board"
+			(at 115.57 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 115.57 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "CN10_17"
@@ -12026,23 +11837,24 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "7fa2f014-5168-4314-a0b9-06a0ac5c82cc")
 		(property "Reference" "R39"
-			(at 198.882 87.376 0)
+			(at 203.2 85.0899 0)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "76.8K+- 1%"
-			(at 199.136 85.344 0)
+		(property "Value" "76.8K+- 1%, ±100ppm/°C"
+			(at 203.2 87.63 0)
 			(effects
 				(font
 					(size 0.889 0.889)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
@@ -12054,7 +11866,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 200.66 86.36 0)
 			(effects
 				(font
@@ -12063,7 +11875,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "RES SMD 76.8K OHM 1% 1/8W 0805"
 			(at 200.66 86.36 0)
 			(effects
 				(font
@@ -12090,20 +11902,22 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" ""
+		(property "Distributor Part Number" "541-76.8KCCT-ND - Cut Tape (CT)"
 			(at 200.66 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Package / Case" ""
+		(property "Package / Case" "0805 (2012 Metric)"
 			(at 200.66 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Qty Multiplier" ""
@@ -12112,6 +11926,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Detailed Description" "76.8 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
+			(at 200.66 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" "https://www.digikey.com/en/products/detail/vishay-dale/CRCW080576K8FKEA/1175852"
+			(at 200.66 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12328,8 +12160,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 40.64 76.2 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "89fb6b86-1450-4001-8cd6-f2337959dd00")
+		(property "Reference" "J54"
+			(at 38.1 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Battery_GND"
+			(at 38.1 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 40.64 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 40.64 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a4901bef-36d8-4f18-876a-e26c6902ba9f")
+		)
+		(pin "2"
+			(uuid "cff83502-fc74-4867-ad1b-5cf8ba327f00")
+		)
+		(instances
+			(project ""
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
+					(reference "J54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Battery")
-		(at 45.72 40.64 270)
+		(at 45.72 66.04 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -12338,7 +12240,7 @@
 		(fields_autoplaced yes)
 		(uuid "92500c33-61cb-43d7-b236-c9be83be85f9")
 		(property "Reference" "BT1"
-			(at 47.5616 44.45 0)
+			(at 47.5616 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12347,8 +12249,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Battery"
-			(at 45.0216 44.45 0)
+		(property "Value" "18650 Sodium-ion 3V 1500mAh"
+			(at 45.0216 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12358,7 +12260,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 47.244 40.64 90)
+			(at 47.244 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12366,8 +12268,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 47.244 40.64 90)
+		(property "Datasheet" "https://www.aliexpress.com/item/1005005859082063.html"
+			(at 47.244 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12375,16 +12277,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Sodium 3V 1500mAh SIB Rechargeable"
-			(at 46.2915 35.56 90)
+		(property "Description" "18650 Sodium-ion 3V 1500mAh"
+			(at 46.2915 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Distributor Link" ""
-			(at 45.72 40.64 0)
+		(property "Distributor Link" "https://www.aliexpress.com/item/1005005859082063.html"
+			(at 45.72 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12392,28 +12294,56 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" ""
-			(at 45.72 40.64 0)
+		(property "Distributor Part Number" "Color: 3V 1500mAh 4PCS"
+			(at 46.2915 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Package / Case" ""
-			(at 45.72 40.64 0)
+		(property "Package / Case" "18650 "
+			(at 45.72 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 45.72 40.64 0)
+			(at 45.72 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Detailed Description" "18650 Sodium Battery 3V 1500mAh SIB Rechargeable Cell 3000+Cycles NA-ion Batteries for Energy Storage E-Bike Scooter Toy Cars"
+			(at 45.72 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "SelianEnergy Lifepo4 Battery Store"
+			(at 45.72 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "18650 Sodium-ion 3V 1500mAh"
+			(at 45.72 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12426,6 +12356,77 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 50.8 76.2 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "938f613d-135a-44c6-bd95-562e26783e16")
+		(property "Reference" "J55"
+			(at 55.88 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Battery_+V"
+			(at 55.88 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 50.8 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c40594e6-3dff-45c4-b00c-49f8a44d159d")
+		)
+		(pin "2"
+			(uuid "c3dd82d6-c847-49b9-8645-ba6fcb324a08")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
+					(reference "J55")
 					(unit 1)
 				)
 			)
@@ -12655,34 +12656,33 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Housing")
-		(at 45.72 29.21 270)
+		(at 45.72 52.07 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "97217d01-bff3-4609-ba0e-02886d5621b1")
 		(property "Reference" "N1"
-			(at 50.8 24.1299 90)
+			(at 40.64 48.8949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "Battery Holder"
-			(at 50.8 26.6699 90)
+			(at 40.64 51.4349 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 30.48 0)
+			(at 46.99 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12690,8 +12690,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 46.99 30.48 0)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/338/114090052_Web.pdf"
+			(at 46.99 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12699,163 +12699,83 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Housing"
-			(at 45.72 29.21 0)
+		(property "Description" "BATT HOLDER 18650 4 CELL LEADS"
+			(at 40.64 53.34 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
-				(hide yes)
+				(justify right)
 			)
 		)
 		(property "Manufacturer" "Seeed Technology Co., Ltd"
-			(at 50.8 29.2099 90)
+			(at 40.64 52.0699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "114090052"
-			(at 50.8 31.7499 90)
+			(at 40.64 54.6099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
+				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" ""
-			(at 45.72 29.21 0)
+		(property "Distributor Part Number" "1597-114090052-ND"
+			(at 45.72 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Package / Case" ""
-			(at 45.72 29.21 0)
+		(property "Package / Case" "n/a"
+			(at 45.72 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 45.72 29.21 0)
+			(at 45.72 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Detailed Description" "Battery Holder (Open) 18650 4 Cell Wire Leads"
+			(at 45.72 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" "https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/114090052/10451909"
+			(at 45.72 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(instances
 			(project ""
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(reference "N1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Polyfuse")
-		(at 63.5 66.04 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a3feead7-8ae8-48ec-8ffb-38fb7007af2c")
-		(property "Reference" "F1"
-			(at 63.5 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Polyfuse"
-			(at 63.5 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 58.42 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 63.5 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
-			(at 63.5 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "1206L025/24YR"
-			(at 63.5 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Distributor Part Number" ""
-			(at 63.5 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package / Case" ""
-			(at 63.5 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 63.5 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b3384d4b-4275-4abf-86b1-463470f55418")
-		)
-		(pin "2"
-			(uuid "c3fcbf1a-bc60-4264-9e48-9c644d6762ea")
-		)
-		(instances
-			(project ""
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
-					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -13032,7 +12952,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 215.9 60.96 0)
+		(at 229.87 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -13041,7 +12961,7 @@
 		(fields_autoplaced yes)
 		(uuid "a8a7f457-f61f-4ef4-843a-e5aae7b2b1f4")
 		(property "Reference" "TP1"
-			(at 218.44 57.658 0)
+			(at 232.41 57.658 0)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -13050,7 +12970,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 218.44 58.9279 0)
+			(at 232.41 58.9279 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13060,7 +12980,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 220.98 60.96 0)
+			(at 234.95 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13069,7 +12989,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 220.98 60.96 0)
+			(at 234.95 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13078,7 +12998,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 215.9 60.96 0)
+			(at 229.87 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13087,7 +13007,7 @@
 			)
 		)
 		(property "Distributor Link" ""
-			(at 215.9 60.96 0)
+			(at 229.87 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13096,7 +13016,7 @@
 			)
 		)
 		(property "Distributor Part Number" ""
-			(at 215.9 60.96 0)
+			(at 229.87 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13104,7 +13024,7 @@
 			)
 		)
 		(property "Package / Case" ""
-			(at 215.9 60.96 0)
+			(at 229.87 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13112,7 +13032,7 @@
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 215.9 60.96 0)
+			(at 229.87 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13323,7 +13243,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 116.84 66.04 0)
 			(effects
 				(font
@@ -13332,7 +13252,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "RES SMD 0 OHM JUMPER 1/2W 0805"
 			(at 116.84 66.04 0)
 			(effects
 				(font
@@ -13359,20 +13279,22 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" ""
+		(property "Distributor Part Number" "541-0.0TBCT-ND - Cut Tape (CT)"
 			(at 116.84 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Package / Case" ""
+		(property "Package / Case" "0805 (2012 Metric)"
 			(at 116.84 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Qty Multiplier" ""
@@ -13381,6 +13303,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Detailed Description" "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
+			(at 116.84 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" "https://www.digikey.com/en/products/detail/vishay-dale/CRCW08050000Z0EAHP/2222316"
+			(at 116.84 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13466,7 +13406,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST_LED")
-		(at 87.63 34.29 90)
+		(at 87.63 43.18 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -13476,7 +13416,7 @@
 		(fields_autoplaced yes)
 		(uuid "b3c2f9bc-4832-43b7-b8db-2f613ffeef60")
 		(property "Reference" "SW1"
-			(at 91.44 30.4799 90)
+			(at 91.44 40.0049 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13485,16 +13425,17 @@
 			)
 		)
 		(property "Value" "ON/OFF_SW_SPST_LED"
-			(at 91.44 33.0199 90)
+			(at 91.44 38.0999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 80.01 34.29 0)
+			(at 80.01 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13502,8 +13443,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 93.98 34.29 0)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6662/432_V%20Datasheet.pdf"
+			(at 93.98 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13511,17 +13452,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch with LED, generic"
-			(at 91.44 35.5599 90)
+		(property "Description" "SWITCH ROCKER SPST-NO 20A 12V"
+			(at 91.44 41.91 90)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 				(justify right)
 			)
 		)
 		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/carling-technologies/V2D2S00B-GZCAD-100-XACT1/11481760"
-			(at 92.71 35.306 0)
+			(at 92.71 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13530,7 +13471,45 @@
 			)
 		)
 		(property "Manufacturer Part Number" "V2D2S00B-GZCAD-100-XACT1"
-			(at 91.44 38.0999 90)
+			(at 91.44 41.275 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Distributor Part Number" "432-V2D2S00B-GZCAD-100-XACT1-ND"
+			(at 91.44 43.1799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Package / Case" "n/a"
+			(at 91.44 45.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 87.63 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Detailed Description" "Rocker Switch SPST-NO 20A (DC) Panel Mount, Snap-In"
+			(at 91.44 43.8149 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13538,28 +13517,13 @@
 				(justify right)
 			)
 		)
-		(property "Distributor Part Number" ""
-			(at 87.63 34.29 0)
+		(property "Manufacturer" "Carling Technologies"
+			(at 91.44 46.3549 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Package / Case" ""
-			(at 87.63 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 87.63 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+				(justify right)
 			)
 		)
 		(pin "2"
@@ -14000,6 +13964,127 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Fuse_Small")
+		(at 71.12 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cdc34f1c-6fe1-4614-a72e-e8aefb671062")
+		(property "Reference" "F1"
+			(at 71.12 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FAST-BLOW 375mA 32V 0.45Ω"
+			(at 71.12 62.23 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/AccuGuard2.pdf"
+			(at 71.12 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "FUSE BOARD MNT 375MA 32VDC 0603"
+			(at 71.12 63.5 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Detailed Description" "375 mA 32 V Fuse Board Mount (Cartridge Style Excluded) Surface Mount 0603 (1608 Metric)"
+			(at 71.12 57.15 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/kyocera-avx/F0603E0R37FSTR/768542"
+			(at 71.12 58.42 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Part Number" "478-2859-1-ND - Cut Tape (CT)"
+			(at 71.12 59.69 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 71.12 60.96 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "F0603E0R37FSTR"
+			(at 71.12 62.23 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package / Case" "0603 (1608 Metric)"
+			(at 71.12 63.5 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "97897902-df82-4ec8-a27e-74489148385a")
+		)
+		(pin "1"
+			(uuid "3a110b4e-45e2-4e26-b50c-cbb91db5b1be")
+		)
+		(instances
+			(project ""
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+BATT")
 		(at 241.3 148.59 270)
 		(unit 1)
@@ -14068,7 +14153,7 @@
 	)
 	(symbol
 		(lib_id "power:+1V1")
-		(at 209.55 59.69 0)
+		(at 223.52 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14077,7 +14162,7 @@
 		(fields_autoplaced yes)
 		(uuid "d620f00d-4b0c-4f26-ac3d-a53bfb8b5a73")
 		(property "Reference" "#PWR078"
-			(at 209.55 63.5 0)
+			(at 223.52 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14086,7 +14171,7 @@
 			)
 		)
 		(property "Value" "+VBattery_or_7V"
-			(at 209.55 54.61 0)
+			(at 223.52 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14094,7 +14179,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 59.69 0)
+			(at 223.52 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14103,7 +14188,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 59.69 0)
+			(at 223.52 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14112,7 +14197,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+1V1\""
-			(at 209.55 59.69 0)
+			(at 223.52 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14569,7 +14654,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 205.74 93.98 0)
+		(at 223.52 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14578,7 +14663,7 @@
 		(fields_autoplaced yes)
 		(uuid "fb5f94b8-0142-4efc-9860-c0a7ec2fc501")
 		(property "Reference" "C22"
-			(at 208.28 92.7162 0)
+			(at 226.06 93.3512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14586,17 +14671,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
-			(at 208.28 95.2562 0)
+		(property "Value" "1uF, X7R"
+			(at 226.06 95.2563 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 205.74 93.98 0)
+			(at 223.52 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14604,8 +14689,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 205.74 93.98 0)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL21B105KBFNNNE_Spec.pdf"
+			(at 223.52 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14613,8 +14698,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 205.74 93.98 0)
+		(property "Description" "CAP CER 1UF 50V X7R 0805"
+			(at 223.52 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14622,8 +14707,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics"
-			(at 205.74 93.98 0)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 223.52 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14631,8 +14716,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "GCM21BR71H105KA03L"
-			(at 205.74 93.98 0)
+		(property "Manufacturer Part Number" "CL21B105KBFNNNE"
+			(at 223.52 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14640,28 +14725,48 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Part Number" ""
-			(at 205.74 93.98 0)
+		(property "Distributor Part Number" "1276-1029-1-ND - Cut Tape (CT)"
+			(at 223.52 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Package / Case" ""
-			(at 205.74 93.98 0)
+		(property "Package / Case" "0805 (2012 Metric)"
+			(at 223.52 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 205.74 93.98 0)
+			(at 223.52 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Detailed Description" "1 µF ±10% 50V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 223.52 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21B105KBFNNNE/3886687"
+			(at 223.52 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"

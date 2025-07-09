@@ -3980,7 +3980,7 @@
 	)
 	(text "All powered female sockets may dangle freely:\nMust be siliconed to prevent shorts."
 		(exclude_from_sim no)
-		(at 36.83 68.58 0)
+		(at 36.83 82.55 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -3991,7 +3991,7 @@
 	)
 	(text "Powered female dangles outside of case."
 		(exclude_from_sim no)
-		(at 74.93 68.58 0)
+		(at 73.66 82.55 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -4016,7 +4016,7 @@
 	)
 	(text "350 Ohm strain gauge\nX 8 times\n"
 		(exclude_from_sim no)
-		(at 142.24 21.59 0)
+		(at 137.16 22.86 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -4101,7 +4101,7 @@
 	)
 	(text "INPUT (-15-15mV) ([-8klbs, +8klbs] on original test)\nDESIRED OUTPUT(0-3V)\n\nGain = (3/30mV) = 100\nG = 1 + 100K/(R_g)\n\nR_g ~= 1000 Ohms\n\nStimulation OUTPUT: 180mV-3.15V"
 		(exclude_from_sim no)
-		(at 140.97 36.83 0)
+		(at 137.16 38.1 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -4112,7 +4112,7 @@
 	)
 	(text "Power calculations:\nRtotal = 8/350 = 43.75 Ohm\n5V/350 = 14.3mA per strain gauge\n\nItotal_5V = 5/43.75 = 114mA\nP = 0.569W"
 		(exclude_from_sim no)
-		(at 142.24 27.94 0)
+		(at 137.16 29.21 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -4464,56 +4464,8 @@
 		(uuid "fe5cd608-de86-4cf7-8656-8c2ebbf30c61")
 	)
 	(no_connect
-		(at 73.66 102.87)
-		(uuid "010b88e7-c7b4-4fd5-a06a-9fc0d26b7f8c")
-	)
-	(no_connect
-		(at 17.78 123.19)
-		(uuid "0144d5a6-68e0-4bbf-81bf-1d8b8db3c4f4")
-	)
-	(no_connect
-		(at 101.6 148.59)
-		(uuid "02a66aa3-4bff-4b16-a688-41dfd7807433")
-	)
-	(no_connect
-		(at 36.83 138.43)
-		(uuid "03a354fe-c4b1-46d4-9d33-5b0809d3425d")
-	)
-	(no_connect
-		(at 73.66 123.19)
-		(uuid "057295da-5d70-470b-902a-e7548580492f")
-	)
-	(no_connect
-		(at 36.83 140.97)
-		(uuid "05d24ba8-bfdf-49f4-af0a-5dd5a8ee93c3")
-	)
-	(no_connect
-		(at 34.29 153.67)
-		(uuid "0802fc17-d4e1-4af2-b7e6-ccc943df19c0")
-	)
-	(no_connect
-		(at 36.83 153.67)
-		(uuid "0ab66007-062d-4341-8a88-b1ec8eed8d2e")
-	)
-	(no_connect
-		(at 36.83 100.33)
-		(uuid "0b8c2922-56c5-42ea-9597-b3ec269706bd")
-	)
-	(no_connect
-		(at 101.6 163.83)
-		(uuid "0e30b44c-3a1c-4bd4-b354-4ce1d7a4a595")
-	)
-	(no_connect
 		(at 156.21 163.83)
 		(uuid "0ec823c0-da69-42f6-a17c-2d41d507d2de")
-	)
-	(no_connect
-		(at 34.29 85.09)
-		(uuid "0f0b7cf8-dec1-43b6-a585-37473f009b0d")
-	)
-	(no_connect
-		(at 73.66 110.49)
-		(uuid "0f9c9ef9-0f21-4b0d-9622-ac7a355e4da0")
 	)
 	(no_connect
 		(at 156.21 74.93)
@@ -4524,14 +4476,6 @@
 		(uuid "13bc5816-fe62-4e3d-9481-d2fec78f5155")
 	)
 	(no_connect
-		(at 36.83 87.63)
-		(uuid "14ed9246-b45c-4eeb-b741-0ad7378c4101")
-	)
-	(no_connect
-		(at 73.66 97.79)
-		(uuid "16c952c5-3420-4825-9c6b-d24f13f736ca")
-	)
-	(no_connect
 		(at 318.77 190.5)
 		(uuid "17c4416a-9af7-4b56-a9b2-862572842428")
 	)
@@ -4540,156 +4484,44 @@
 		(uuid "1919aeaf-f082-46fb-aef6-5364aa0b9f03")
 	)
 	(no_connect
-		(at 73.66 163.83)
-		(uuid "1aac0762-58d4-4933-961a-32794ec8f2c5")
-	)
-	(no_connect
-		(at 34.29 123.19)
-		(uuid "1b61e5ca-211f-4fd1-8297-60ab20ac22fd")
-	)
-	(no_connect
-		(at 73.66 161.29)
-		(uuid "1e0caa21-2c20-431e-9d18-1da2b0d50a8e")
-	)
-	(no_connect
 		(at 318.77 185.42)
 		(uuid "1e7fc5fb-ea9f-4ca3-a6c8-0eb48dab5bba")
-	)
-	(no_connect
-		(at 101.6 135.89)
-		(uuid "1f939151-7557-41a5-8d24-eacc20840f27")
-	)
-	(no_connect
-		(at 71.12 97.79)
-		(uuid "231b86c1-6e3e-43c1-b33e-31235f8dcd58")
-	)
-	(no_connect
-		(at 101.6 115.57)
-		(uuid "23a098fe-54ed-4234-90ed-d30d06d04ef8")
-	)
-	(no_connect
-		(at 73.66 85.09)
-		(uuid "25132d9f-2b8f-4d90-bd20-3897885050de")
-	)
-	(no_connect
-		(at 71.12 153.67)
-		(uuid "26077900-e512-4cb0-a708-3b44c5965f82")
-	)
-	(no_connect
-		(at 17.78 110.49)
-		(uuid "275e6842-f6c9-4ece-a99f-39bc5dd1baf4")
-	)
-	(no_connect
-		(at 34.29 166.37)
-		(uuid "282ddca7-54ce-4922-8da1-c137a6e1c7f4")
-	)
-	(no_connect
-		(at 17.78 113.03)
-		(uuid "2831f0b8-8835-414c-9c8d-2cd889f0507e")
 	)
 	(no_connect
 		(at 34.29 77.47)
 		(uuid "2b400011-1197-4043-91fe-c1a2cccb8138")
 	)
 	(no_connect
-		(at 17.78 125.73)
-		(uuid "2c14b7f7-5ef3-49c3-8428-a7e4bef42557")
-	)
-	(no_connect
-		(at 34.29 97.79)
-		(uuid "2ddaf747-0c36-4b9a-b09f-271b2a5823f4")
-	)
-	(no_connect
 		(at 156.21 135.89)
 		(uuid "303dd88d-8c9f-4078-8e29-70a29621a874")
-	)
-	(no_connect
-		(at 71.12 166.37)
-		(uuid "30a493a8-3b85-4f2b-9b43-87e4b1d80e03")
-	)
-	(no_connect
-		(at 101.6 138.43)
-		(uuid "3167404c-4766-4844-b822-18f8e005420b")
-	)
-	(no_connect
-		(at 73.66 151.13)
-		(uuid "37002737-76ad-447a-babe-6794530fbf40")
-	)
-	(no_connect
-		(at 73.66 113.03)
-		(uuid "3728e70f-b929-41b6-8c9f-c71b7616e7a8")
 	)
 	(no_connect
 		(at 156.21 102.87)
 		(uuid "3b3af927-35f7-4143-9562-7a0d294f2c22")
 	)
 	(no_connect
-		(at 36.83 97.79)
-		(uuid "3d7541ea-243d-4811-b030-407004417677")
-	)
-	(no_connect
-		(at 71.12 74.93)
+		(at 69.85 74.93)
 		(uuid "3e90dcb4-fd73-4e76-8920-9a0f42aeb700")
-	)
-	(no_connect
-		(at 73.66 135.89)
-		(uuid "3f6351be-6265-4b15-842f-9977fc53f291")
-	)
-	(no_connect
-		(at 17.78 128.27)
-		(uuid "409df799-f47c-4e97-adb8-c6fe12555893")
-	)
-	(no_connect
-		(at 73.66 153.67)
-		(uuid "42ba2bcd-298f-44fb-b1fb-74e322ed5351")
-	)
-	(no_connect
-		(at 36.83 166.37)
-		(uuid "42f7d2ec-09f8-4444-92fc-c19d0cb8b755")
-	)
-	(no_connect
-		(at 17.78 153.67)
-		(uuid "43ae3717-ccb3-40c6-8938-365808d33055")
-	)
-	(no_connect
-		(at 73.66 100.33)
-		(uuid "44aa2c2c-85d6-46d1-b6dc-6ff24cbb4632")
 	)
 	(no_connect
 		(at 101.6 77.47)
 		(uuid "464397b0-fe16-439d-a0e3-0e56e606d507")
 	)
 	(no_connect
-		(at 101.6 161.29)
-		(uuid "47c4fc46-62f3-4f0c-881e-e5abfffc980f")
-	)
-	(no_connect
 		(at 144.78 53.34)
 		(uuid "48d7b9f2-1193-4ac4-a9eb-e3441e6e4b6c")
-	)
-	(no_connect
-		(at 71.12 113.03)
-		(uuid "49d294df-ac06-4e0e-940c-3f4b97e4c28d")
 	)
 	(no_connect
 		(at 156.21 100.33)
 		(uuid "4b986d8e-47af-4b85-834b-40ba75de5cb7")
 	)
 	(no_connect
-		(at 71.12 77.47)
+		(at 69.85 77.47)
 		(uuid "4cc0ac77-60e7-4473-988d-8d47a30178a5")
 	)
 	(no_connect
 		(at 154.94 53.34)
 		(uuid "4d865dce-f1c8-4854-9625-bdb56e6cae17")
-	)
-	(no_connect
-		(at 36.83 113.03)
-		(uuid "4db74636-274e-46c0-9afd-8578ed8b7303")
-	)
-	(no_connect
-		(at 17.78 97.79)
-		(uuid "507a45c7-4e8f-44c8-a9a9-7e16937bc05f")
 	)
 	(no_connect
 		(at 156.21 77.47)
@@ -4704,20 +4536,8 @@
 		(uuid "51268812-f63f-480b-8528-92945cb3bcbb")
 	)
 	(no_connect
-		(at 71.12 102.87)
-		(uuid "518d1efb-9770-47ca-a929-b7bbc53d7a5a")
-	)
-	(no_connect
 		(at 156.21 113.03)
 		(uuid "54467073-37dc-4ebe-b0ba-10660e1041b8")
-	)
-	(no_connect
-		(at 34.29 151.13)
-		(uuid "5538a50a-16f9-4c29-a9c5-a2797c611b14")
-	)
-	(no_connect
-		(at 71.12 100.33)
-		(uuid "5557cae1-3c0e-4bd9-a55c-4ca202ba6adf")
 	)
 	(no_connect
 		(at 156.21 123.19)
@@ -4732,64 +4552,20 @@
 		(uuid "57e4c952-bb51-4003-886b-71f95b7c8b57")
 	)
 	(no_connect
-		(at 17.78 135.89)
-		(uuid "58924894-db8b-4433-883f-e8a6a719ca86")
-	)
-	(no_connect
-		(at 34.29 125.73)
-		(uuid "590d9ad1-5f13-45e5-98ef-0ec1510b2a2f")
-	)
-	(no_connect
-		(at 71.12 115.57)
-		(uuid "595749ea-d46f-40fc-afdb-1efc0f59b0b1")
-	)
-	(no_connect
-		(at 73.66 115.57)
-		(uuid "5c3f02bd-05bb-4958-b544-9d08075b0e58")
-	)
-	(no_connect
-		(at 36.83 161.29)
-		(uuid "5d1f9bf1-ab60-46d8-ac07-f1aaafa9a6c5")
-	)
-	(no_connect
-		(at 101.6 128.27)
-		(uuid "5e0465bb-d30a-4680-be2c-53eb9be46463")
-	)
-	(no_connect
 		(at 156.21 90.17)
 		(uuid "63fb6feb-c477-4620-92fb-29859496165a")
-	)
-	(no_connect
-		(at 101.6 102.87)
-		(uuid "6a788b0f-65bb-40a6-b79e-fa8589de0474")
 	)
 	(no_connect
 		(at 156.21 161.29)
 		(uuid "6b63acb4-1ca0-4653-8cc7-78592ff60f65")
 	)
 	(no_connect
-		(at 73.66 138.43)
-		(uuid "6bd8a680-d719-4d89-8bac-2f7dd678e59a")
-	)
-	(no_connect
 		(at 156.21 138.43)
 		(uuid "6bfa4d6c-ee22-4bbf-8ecd-0d83f3be5cb3")
 	)
 	(no_connect
-		(at 34.29 163.83)
-		(uuid "6c47cd70-1685-474d-aff6-652103b64d10")
-	)
-	(no_connect
 		(at 156.21 125.73)
 		(uuid "6c78ce5a-8027-45f4-86f9-b60166fe605f")
-	)
-	(no_connect
-		(at 36.83 148.59)
-		(uuid "6fdb1357-d68f-444b-a99d-be27a3d55b82")
-	)
-	(no_connect
-		(at 34.29 115.57)
-		(uuid "71655bb7-305c-44c3-a45a-fa99a09b5312")
 	)
 	(no_connect
 		(at 156.21 115.57)
@@ -4804,76 +4580,12 @@
 		(uuid "78e95297-d8f6-4181-b419-5b18e465256a")
 	)
 	(no_connect
-		(at 101.6 85.09)
-		(uuid "7bf73400-e067-49d4-8173-2788b179350b")
-	)
-	(no_connect
 		(at 73.66 74.93)
 		(uuid "7e8e3522-ade7-4641-9102-302a3baa0a12")
 	)
 	(no_connect
-		(at 34.29 100.33)
-		(uuid "7e991b47-7802-401f-84f8-cb0dc28b77ae")
-	)
-	(no_connect
-		(at 101.6 140.97)
-		(uuid "811ec77d-b997-4010-911e-c0dca6651b3c")
-	)
-	(no_connect
-		(at 36.83 135.89)
-		(uuid "81cfcff7-47ee-4b0e-8b6c-bbf10122ac3d")
-	)
-	(no_connect
-		(at 71.12 138.43)
-		(uuid "82b0e6b5-7219-4b7d-ae9c-2fdc7774e7a0")
-	)
-	(no_connect
-		(at 34.29 90.17)
-		(uuid "86939545-54b2-405d-aba3-beeb79efc582")
-	)
-	(no_connect
-		(at 34.29 113.03)
-		(uuid "871fa742-3297-437b-b122-ba501dbc5a8a")
-	)
-	(no_connect
-		(at 34.29 161.29)
-		(uuid "8a82dae3-1a3b-4c09-b3dd-1eaf6cec459a")
-	)
-	(no_connect
-		(at 73.66 140.97)
-		(uuid "8ab024b2-8ac1-4a21-aae4-677370ac2c5a")
-	)
-	(no_connect
-		(at 73.66 87.63)
-		(uuid "8c57524a-c4cb-46e2-b41f-aec8ae8050cb")
-	)
-	(no_connect
-		(at 17.78 115.57)
-		(uuid "8d80a661-1cbe-4d74-9158-876add1fd376")
-	)
-	(no_connect
-		(at 17.78 140.97)
-		(uuid "8fbd2e9b-10f2-4542-9c42-9079d235afdc")
-	)
-	(no_connect
-		(at 36.83 163.83)
-		(uuid "90802d23-7d52-4c5a-bce4-94e13442b47b")
-	)
-	(no_connect
-		(at 34.29 110.49)
-		(uuid "9354ed8d-8376-4e85-bdde-8e141bcad338")
-	)
-	(no_connect
 		(at 156.21 151.13)
 		(uuid "93a37f02-9fb0-4b7f-9c6b-314445e142b5")
-	)
-	(no_connect
-		(at 36.83 90.17)
-		(uuid "93faec16-94fb-4804-a3cc-1be470badc5e")
-	)
-	(no_connect
-		(at 34.29 128.27)
-		(uuid "9668b96a-ff4b-42a8-8183-dabe08e006b9")
 	)
 	(no_connect
 		(at 17.78 77.47)
@@ -4884,76 +4596,8 @@
 		(uuid "9a509bbd-60c1-45fb-9424-6a7f077428e6")
 	)
 	(no_connect
-		(at 34.29 135.89)
-		(uuid "9dc487f8-92ff-452e-8abb-2e8b21966898")
-	)
-	(no_connect
 		(at 101.6 72.39)
 		(uuid "a096a658-ea73-45e1-9a2f-0a56380d26ec")
-	)
-	(no_connect
-		(at 73.66 166.37)
-		(uuid "a0bd767f-f717-4e9a-8ce1-74788c00fdeb")
-	)
-	(no_connect
-		(at 71.12 135.89)
-		(uuid "a32b5a40-7612-4102-97a5-4c6b6b3f8e9f")
-	)
-	(no_connect
-		(at 101.6 113.03)
-		(uuid "a362ce2c-a71b-44c9-91f8-0f135eb05ebf")
-	)
-	(no_connect
-		(at 71.12 125.73)
-		(uuid "a511429a-ce34-420d-a9af-de50f5db5fd5")
-	)
-	(no_connect
-		(at 73.66 125.73)
-		(uuid "a5159b5e-ac62-41dc-b79e-568febfbdde6")
-	)
-	(no_connect
-		(at 101.6 151.13)
-		(uuid "a614c905-10b7-414e-96b3-538eed301ae1")
-	)
-	(no_connect
-		(at 17.78 163.83)
-		(uuid "aef2c4fd-9aba-418d-b174-25b596e43da6")
-	)
-	(no_connect
-		(at 101.6 90.17)
-		(uuid "b015146f-cf00-45cd-9b3f-c36e04ef4ea6")
-	)
-	(no_connect
-		(at 71.12 128.27)
-		(uuid "b1188002-13c6-4ef8-8c2e-fa4283eec81f")
-	)
-	(no_connect
-		(at 34.29 87.63)
-		(uuid "b2336d9c-a433-4fe9-bb08-d128fc988fe9")
-	)
-	(no_connect
-		(at 101.6 87.63)
-		(uuid "b24db9a6-8788-4245-8388-4e6f244f8c7f")
-	)
-	(no_connect
-		(at 36.83 115.57)
-		(uuid "b266908f-eb11-49a3-b8da-a5083d373e98")
-	)
-	(no_connect
-		(at 71.12 140.97)
-		(uuid "b2ba49bf-e12d-4d34-8c9b-98108d88fdbb")
-	)
-	(no_connect
-		(at 101.6 125.73)
-		(uuid "b2cde374-2398-4b0b-afd7-6d9da364f76d")
-	)
-	(no_connect
-		(at 36.83 128.27)
-		(uuid "b472ec4f-40e4-4cdb-8885-f48d17dc62b2")
-	)
-	(no_connect
-		(at 71.12 87.63)
-		(uuid "b4d08c55-e065-4c64-92c6-2e608882f588")
 	)
 	(no_connect
 		(at 34.29 72.39)
@@ -4964,14 +4608,6 @@
 		(uuid "b96e321e-fa9c-4b44-b416-5f69bd2cab11")
 	)
 	(no_connect
-		(at 17.78 138.43)
-		(uuid "b96f523a-8629-4d63-8d1b-5d1a70d69f67")
-	)
-	(no_connect
-		(at 17.78 148.59)
-		(uuid "bac46e72-13cf-46d2-a977-22821495b11e")
-	)
-	(no_connect
 		(at 36.83 74.93)
 		(uuid "bac683fb-0d04-4220-acc3-8efd4daa8a7b")
 	)
@@ -4980,31 +4616,7 @@
 		(uuid "bae6798a-8092-4a61-852e-663023b52c5e")
 	)
 	(no_connect
-		(at 101.6 123.19)
-		(uuid "bbb9d930-5400-457d-bcae-1e2a7651a57a")
-	)
-	(no_connect
-		(at 71.12 163.83)
-		(uuid "bc65016c-92d5-4feb-a99e-2ed2ca97f4ae")
-	)
-	(no_connect
-		(at 73.66 128.27)
-		(uuid "bd8bb2a5-a02d-44f4-b6fa-1e659be04d68")
-	)
-	(no_connect
-		(at 36.83 125.73)
-		(uuid "bdfe1eb3-5958-462a-91ea-5e854bf6a9a1")
-	)
-	(no_connect
-		(at 71.12 151.13)
-		(uuid "bf51da2b-5990-459f-b125-a1e9efd9e36c")
-	)
-	(no_connect
-		(at 71.12 90.17)
-		(uuid "c118a744-688e-44c9-8c79-b71d1a05b470")
-	)
-	(no_connect
-		(at 71.12 72.39)
+		(at 69.85 72.39)
 		(uuid "c33c44f4-9e06-4940-85ec-a37c731cf1c3")
 	)
 	(no_connect
@@ -5012,48 +4624,12 @@
 		(uuid "c381be16-a714-4633-8c77-c715838b1a72")
 	)
 	(no_connect
-		(at 71.12 148.59)
-		(uuid "c39b5bba-39a7-4d92-a863-8a601b11a8ba")
-	)
-	(no_connect
-		(at 17.78 100.33)
-		(uuid "c4bc3b64-5684-4934-9b2c-3f100615889b")
-	)
-	(no_connect
-		(at 101.6 97.79)
-		(uuid "c4dc17d4-dae3-4bd7-be27-e92bc0cbe1e8")
-	)
-	(no_connect
 		(at 36.83 72.39)
 		(uuid "c585b314-9593-4ead-9da0-3fb4497e565f")
 	)
 	(no_connect
-		(at 34.29 140.97)
-		(uuid "c5d5e513-ab55-46f2-9673-9d1d1121d9ec")
-	)
-	(no_connect
-		(at 36.83 151.13)
-		(uuid "c6421bed-d7fe-4414-a725-52570446278c")
-	)
-	(no_connect
-		(at 101.6 166.37)
-		(uuid "c7832a51-6bc4-414a-827d-a90ce6d49e2d")
-	)
-	(no_connect
-		(at 34.29 102.87)
-		(uuid "c8bcd7ae-d03d-453f-9de4-dc0050d77c19")
-	)
-	(no_connect
-		(at 34.29 138.43)
-		(uuid "ca34704c-3adb-4f55-a181-74e63f349657")
-	)
-	(no_connect
 		(at 73.66 72.39)
 		(uuid "ca6d807b-8ef2-4f39-a9c8-59da37a47259")
-	)
-	(no_connect
-		(at 17.78 90.17)
-		(uuid "cb74654c-c6ab-4fcf-ace1-eedc8993136c")
 	)
 	(no_connect
 		(at 156.21 72.39)
@@ -5072,64 +4648,20 @@
 		(uuid "cd285da6-38db-4030-9387-9354fe6880a4")
 	)
 	(no_connect
-		(at 36.83 123.19)
-		(uuid "ce021596-fff7-4be1-923e-0613dfac8b5c")
-	)
-	(no_connect
 		(at 101.6 74.93)
 		(uuid "ced8614d-6c6d-4916-8477-f15c683a6c1b")
-	)
-	(no_connect
-		(at 71.12 85.09)
-		(uuid "cf58453a-12db-4ac6-a082-ba0770723626")
-	)
-	(no_connect
-		(at 101.6 153.67)
-		(uuid "d0bdb091-d81d-4c71-bceb-a8768cecdd8f")
-	)
-	(no_connect
-		(at 36.83 110.49)
-		(uuid "d463c835-918b-49d3-b157-ebbc8530070f")
-	)
-	(no_connect
-		(at 71.12 161.29)
-		(uuid "d642c512-74ba-40da-97e4-e29cc0a1d15d")
 	)
 	(no_connect
 		(at 17.78 72.39)
 		(uuid "d65afaa8-552d-47dd-84df-5b91220fbc67")
 	)
 	(no_connect
-		(at 17.78 102.87)
-		(uuid "d68e03b8-dc9f-4176-b6a0-cf2408eb856f")
-	)
-	(no_connect
-		(at 17.78 151.13)
-		(uuid "d94f7cb9-5c17-4860-b7b9-862db31e5058")
-	)
-	(no_connect
-		(at 17.78 161.29)
-		(uuid "e198ce3b-b46d-4b07-9628-2ab99d164e4d")
-	)
-	(no_connect
-		(at 36.83 102.87)
-		(uuid "e2d31cff-12fc-4e41-8150-0e95da4d94a2")
-	)
-	(no_connect
 		(at 339.09 109.22)
 		(uuid "e42e6b9e-4db6-4ccb-a59a-b0cff1cceb4d")
 	)
 	(no_connect
-		(at 17.78 87.63)
-		(uuid "e546f88c-e7c0-4c5b-8db2-ac800bf2a378")
-	)
-	(no_connect
 		(at 318.77 187.96)
 		(uuid "e69aa57d-4ffa-4544-a336-47f475435399")
-	)
-	(no_connect
-		(at 101.6 110.49)
-		(uuid "e83b9163-9ba8-4033-bfda-174b61e743ae")
 	)
 	(no_connect
 		(at 73.66 77.47)
@@ -5140,44 +4672,8 @@
 		(uuid "eddcaff7-8dd7-4485-9e6f-e44abd73b4be")
 	)
 	(no_connect
-		(at 71.12 110.49)
-		(uuid "ef538a29-9c11-4635-a03a-1240541732d2")
-	)
-	(no_connect
-		(at 73.66 148.59)
-		(uuid "f033c75d-8f68-4238-80f4-59f0ba1d3201")
-	)
-	(no_connect
 		(at 149.86 58.42)
 		(uuid "f9049c27-fbc2-4dc6-963b-b197798a22b5")
-	)
-	(no_connect
-		(at 34.29 148.59)
-		(uuid "f90f2120-7e6e-4c99-82ed-27a2aa68a9d9")
-	)
-	(no_connect
-		(at 101.6 100.33)
-		(uuid "fac9d60d-6585-43c1-a175-f13745643ecb")
-	)
-	(no_connect
-		(at 36.83 85.09)
-		(uuid "fb7579a4-005c-4537-bb81-d5466e4c9d79")
-	)
-	(no_connect
-		(at 71.12 123.19)
-		(uuid "fbb766fe-b83b-417a-9573-e4bb8deb4b54")
-	)
-	(no_connect
-		(at 73.66 90.17)
-		(uuid "fbfd1ec4-8afe-4db1-990f-fb522d608bd8")
-	)
-	(no_connect
-		(at 17.78 166.37)
-		(uuid "ff1630f4-59f8-4f4b-9515-3befc7b4b813")
-	)
-	(no_connect
-		(at 17.78 85.09)
-		(uuid "fff40849-b912-4455-8f6d-c92a7a88449e")
 	)
 	(wire
 		(pts
@@ -5191,7 +4687,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 72.39) (xy 58.42 72.39)
+			(xy 49.53 72.39) (xy 57.15 72.39)
 		)
 		(stroke
 			(width 0)
@@ -5351,17 +4847,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 128.27) (xy 58.42 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1728447b-64d8-4a84-97f4-23d5c77617dd")
-	)
-	(wire
-		(pts
-			(xy 49.53 74.93) (xy 58.42 74.93)
+			(xy 49.53 74.93) (xy 57.15 74.93)
 		)
 		(stroke
 			(width 0)
@@ -5378,16 +4864,6 @@
 			(type default)
 		)
 		(uuid "1a705599-b51d-477f-8139-ae5ac9cb4fbf")
-	)
-	(wire
-		(pts
-			(xy 49.53 135.89) (xy 58.42 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a927014-a6e5-4156-b8f9-75ec959198cc")
 	)
 	(wire
 		(pts
@@ -5431,16 +4907,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 113.03) (xy 58.42 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1be7f76d-312e-4673-903e-6ab8849b1d10")
-	)
-	(wire
-		(pts
 			(xy 180.34 148.59) (xy 187.96 148.59)
 		)
 		(stroke
@@ -5448,16 +4914,6 @@
 			(type default)
 		)
 		(uuid "1ce2114d-c0e4-48eb-b4ea-c9bd5e3c12cb")
-	)
-	(wire
-		(pts
-			(xy 17.78 128.27) (xy 21.59 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d1df7ea-a9da-43a1-a6c4-a39c5146fd1c")
 	)
 	(wire
 		(pts
@@ -5521,26 +4977,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 151.13) (xy 88.9 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21aebcfa-a421-4d1c-bd80-3e44d6f7fe10")
-	)
-	(wire
-		(pts
-			(xy 49.53 100.33) (xy 58.42 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "221ad01c-0fbe-491c-938f-024685b6acab")
-	)
-	(wire
-		(pts
 			(xy 165.1 72.39) (xy 165.1 80.01)
 		)
 		(stroke
@@ -5568,16 +5004,6 @@
 			(type default)
 		)
 		(uuid "248ba1e8-7a05-455e-91c0-65a29f0132f3")
-	)
-	(wire
-		(pts
-			(xy 86.36 163.83) (xy 88.9 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24e968b5-99a5-41d2-a9c5-02fbeea743be")
 	)
 	(wire
 		(pts
@@ -5611,26 +5037,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 110.49) (xy 58.42 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28ba30e2-3b4c-4505-83fe-7115c17959fb")
-	)
-	(wire
-		(pts
-			(xy 49.53 140.97) (xy 58.42 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "298dfeab-d018-482b-a6b3-b5abd088ab56")
-	)
-	(wire
-		(pts
 			(xy 355.6 97.79) (xy 339.09 97.79)
 		)
 		(stroke
@@ -5638,26 +5044,6 @@
 			(type default)
 		)
 		(uuid "2a065350-4178-490b-8643-7c66f0d42ebd")
-	)
-	(wire
-		(pts
-			(xy 86.36 100.33) (xy 88.9 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a1a007a-10a7-4f0a-857c-970c3f2ea108")
-	)
-	(wire
-		(pts
-			(xy 17.78 151.13) (xy 21.59 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ab60d8b-c259-4719-bce3-61d25e4650bf")
 	)
 	(wire
 		(pts
@@ -5678,26 +5064,6 @@
 			(type default)
 		)
 		(uuid "2b75ca31-48db-452f-bdde-fabf4f526975")
-	)
-	(wire
-		(pts
-			(xy 17.78 161.29) (xy 21.59 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d09309c-a7f2-4248-84f4-4ebf4c439b42")
-	)
-	(wire
-		(pts
-			(xy 17.78 110.49) (xy 21.59 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ee71c8d-fcd1-48bb-8914-a581081ec156")
 	)
 	(wire
 		(pts
@@ -5728,16 +5094,6 @@
 			(type default)
 		)
 		(uuid "311f2e65-516d-44bd-acd7-6f4516e8f573")
-	)
-	(wire
-		(pts
-			(xy 49.53 161.29) (xy 58.42 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32b9e148-4083-4e6e-bc51-5da370d4ef8e")
 	)
 	(wire
 		(pts
@@ -5811,16 +5167,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 125.73) (xy 58.42 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3dfdf705-2e3b-4b7e-adc8-b03781bd94d4")
-	)
-	(wire
-		(pts
 			(xy 107.95 125.73) (xy 107.95 138.43)
 		)
 		(stroke
@@ -5881,16 +5227,6 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 123.19) (xy 21.59 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a20453e-c142-4ef6-a252-e774a083ab86")
-	)
-	(wire
-		(pts
 			(xy 64.77 39.37) (xy 64.77 43.18)
 		)
 		(stroke
@@ -5901,16 +5237,6 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 163.83) (xy 21.59 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5268b550-272b-4df0-88c2-e4d992f18e33")
-	)
-	(wire
-		(pts
 			(xy 165.1 156.21) (xy 143.51 156.21)
 		)
 		(stroke
@@ -5918,16 +5244,6 @@
 			(type default)
 		)
 		(uuid "5327be09-52d1-4994-8c8d-342d17819df1")
-	)
-	(wire
-		(pts
-			(xy 86.36 97.79) (xy 88.9 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55e7069d-9721-4ee6-832c-53b9f60ad329")
 	)
 	(wire
 		(pts
@@ -5948,16 +5264,6 @@
 			(type default)
 		)
 		(uuid "5903176a-7e53-4a33-85b3-d5c60c43ad2a")
-	)
-	(wire
-		(pts
-			(xy 49.53 123.19) (xy 58.42 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5afc73ae-300f-4158-8c14-ae4fcf0d2515")
 	)
 	(wire
 		(pts
@@ -6051,26 +5357,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 87.63) (xy 58.42 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64cc4477-f90a-42db-83cc-c8063ab96417")
-	)
-	(wire
-		(pts
-			(xy 49.53 138.43) (xy 58.42 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64ec5901-b859-43aa-998b-c52f4f68dd0a")
-	)
-	(wire
-		(pts
 			(xy 124.46 74.93) (xy 143.51 74.93)
 		)
 		(stroke
@@ -6098,26 +5384,6 @@
 			(type default)
 		)
 		(uuid "67fed391-f516-4dc7-bbb7-222c87069ece")
-	)
-	(wire
-		(pts
-			(xy 86.36 135.89) (xy 88.9 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69083abb-78b9-4296-8643-5f7b782d4dec")
-	)
-	(wire
-		(pts
-			(xy 17.78 90.17) (xy 21.59 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a08a196-f350-4573-a733-8bfcbd060a87")
 	)
 	(wire
 		(pts
@@ -6151,26 +5417,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 102.87) (xy 58.42 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6dfc18cb-50a9-4cde-86f3-34634e1e70e3")
-	)
-	(wire
-		(pts
-			(xy 86.36 166.37) (xy 88.9 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ef04ad4-1748-4755-a250-1220f44f5936")
-	)
-	(wire
-		(pts
 			(xy 107.95 113.03) (xy 119.38 113.03)
 		)
 		(stroke
@@ -6181,26 +5427,6 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 87.63) (xy 21.59 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f698d2f-1df4-4818-aeac-9d4d262a6df0")
-	)
-	(wire
-		(pts
-			(xy 86.36 148.59) (xy 88.9 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7052d0cb-87d0-4c3d-ace6-9b1ec38f1f03")
-	)
-	(wire
-		(pts
 			(xy 143.51 153.67) (xy 143.51 156.21)
 		)
 		(stroke
@@ -6208,16 +5434,6 @@
 			(type default)
 		)
 		(uuid "7057f89e-f0c0-4161-9ce2-fd362128f082")
-	)
-	(wire
-		(pts
-			(xy 49.53 151.13) (xy 58.42 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70a276b7-398c-4bb7-8f60-0240e27d59f4")
 	)
 	(wire
 		(pts
@@ -6361,16 +5577,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 87.63) (xy 88.9 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e9acc5d-9645-4746-ac50-88f1c67b1af3")
-	)
-	(wire
-		(pts
 			(xy 165.1 123.19) (xy 168.91 123.19)
 		)
 		(stroke
@@ -6428,16 +5634,6 @@
 			(type default)
 		)
 		(uuid "83215e2f-38b2-42e3-9697-189638ef239a")
-	)
-	(wire
-		(pts
-			(xy 17.78 138.43) (xy 21.59 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "833f9d03-1423-4f31-bf53-b70dc9991c70")
 	)
 	(wire
 		(pts
@@ -6521,16 +5717,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 166.37) (xy 58.42 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b7c2ed1-7c6f-4066-9fb1-b01487e6bf83")
-	)
-	(wire
-		(pts
 			(xy 364.49 203.2) (xy 353.06 203.2)
 		)
 		(stroke
@@ -6601,16 +5787,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 163.83) (xy 58.42 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94ced275-60a5-4421-9920-c8c3c9010e77")
-	)
-	(wire
-		(pts
 			(xy 344.17 43.18) (xy 344.17 44.45)
 		)
 		(stroke
@@ -6618,26 +5794,6 @@
 			(type default)
 		)
 		(uuid "9570fc50-dd93-4b76-9cff-953ee72dff92")
-	)
-	(wire
-		(pts
-			(xy 17.78 115.57) (xy 21.59 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95bdf3ee-4ffa-464f-8781-e88e67fb31b9")
-	)
-	(wire
-		(pts
-			(xy 17.78 85.09) (xy 21.59 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96c7a98c-bfe5-4252-b020-d502882505ef")
 	)
 	(wire
 		(pts
@@ -6658,16 +5814,6 @@
 			(type default)
 		)
 		(uuid "99b2b7be-a4fa-4ddd-a26a-7041a262deac")
-	)
-	(wire
-		(pts
-			(xy 17.78 100.33) (xy 21.59 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9aa1900a-14c7-41f6-9ee6-6fe864b60fa3")
 	)
 	(wire
 		(pts
@@ -6711,16 +5857,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 125.73) (xy 88.9 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9fea571a-d9d5-48e7-9d2e-4066437d6259")
-	)
-	(wire
-		(pts
 			(xy 312.42 30.48) (xy 312.42 31.75)
 		)
 		(stroke
@@ -6741,16 +5877,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 148.59) (xy 58.42 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a309f454-c54e-4dc6-9c8a-3378e0fb427c")
-	)
-	(wire
-		(pts
 			(xy 143.51 140.97) (xy 143.51 143.51)
 		)
 		(stroke
@@ -6758,36 +5884,6 @@
 			(type default)
 		)
 		(uuid "a396bbcc-51f2-4c1d-91b6-9a8bb1bd0b97")
-	)
-	(wire
-		(pts
-			(xy 86.36 128.27) (xy 88.9 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a674bdee-d907-490f-b390-dbca6a813029")
-	)
-	(wire
-		(pts
-			(xy 86.36 85.09) (xy 88.9 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9cdcf65-3999-474c-9583-7103e56cbc13")
-	)
-	(wire
-		(pts
-			(xy 49.53 115.57) (xy 58.42 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa549f9c-85c6-40ca-8ea0-0e6b47971c1f")
 	)
 	(wire
 		(pts
@@ -6821,36 +5917,6 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 148.59) (xy 21.59 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae2f3a5f-323c-4399-9576-438845eefac7")
-	)
-	(wire
-		(pts
-			(xy 17.78 135.89) (xy 21.59 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aee4bdab-7125-4dce-8e2c-8a8b51802bee")
-	)
-	(wire
-		(pts
-			(xy 49.53 153.67) (xy 58.42 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b01f3775-75d7-440a-bac1-4f664ac02e73")
-	)
-	(wire
-		(pts
 			(xy 180.34 85.09) (xy 187.96 85.09)
 		)
 		(stroke
@@ -6871,26 +5937,6 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 97.79) (xy 21.59 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4aa70d2-ab1b-43de-b806-dda20cafaf3f")
-	)
-	(wire
-		(pts
-			(xy 49.53 90.17) (xy 58.42 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5f4b859-d854-4926-8682-0d5bf93e3735")
-	)
-	(wire
-		(pts
 			(xy 344.17 52.07) (xy 344.17 55.88)
 		)
 		(stroke
@@ -6908,16 +5954,6 @@
 			(type default)
 		)
 		(uuid "b6e3f4b9-eda7-4a71-ab65-cf93aacdbed6")
-	)
-	(wire
-		(pts
-			(xy 86.36 161.29) (xy 88.9 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b77c8285-4014-4a99-9f9f-015ab569c1b8")
 	)
 	(wire
 		(pts
@@ -6981,16 +6017,6 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 125.73) (xy 21.59 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2dc3acb-e2a8-4174-8df9-e5d42c91da77")
-	)
-	(wire
-		(pts
 			(xy 312.42 24.13) (xy 344.17 24.13)
 		)
 		(stroke
@@ -7008,16 +6034,6 @@
 			(type default)
 		)
 		(uuid "c61c0ad8-4b2c-4373-bac2-5e72e9b95aa7")
-	)
-	(wire
-		(pts
-			(xy 17.78 166.37) (xy 21.59 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8efb6f6-99fe-4939-bd31-53fa0e4f7d79")
 	)
 	(wire
 		(pts
@@ -7041,16 +6057,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 115.57) (xy 88.9 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca62ed5d-431b-42aa-aa3c-7888987ad007")
-	)
-	(wire
-		(pts
 			(xy 196.85 97.79) (xy 210.82 97.79)
 		)
 		(stroke
@@ -7061,16 +6067,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 110.49) (xy 88.9 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cccfc024-6151-4673-a39f-e054f18d09da")
-	)
-	(wire
-		(pts
 			(xy 196.85 85.09) (xy 210.82 85.09)
 		)
 		(stroke
@@ -7078,16 +6074,6 @@
 			(type default)
 		)
 		(uuid "cd74f6b5-98a3-4db6-8556-0e7b5485de81")
-	)
-	(wire
-		(pts
-			(xy 86.36 123.19) (xy 88.9 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdb32fb2-9533-49e4-b71e-ceaf51d4cf79")
 	)
 	(wire
 		(pts
@@ -7111,26 +6097,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 97.79) (xy 58.42 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf01886f-b19f-46fe-a1e5-6593dcbbb1aa")
-	)
-	(wire
-		(pts
-			(xy 17.78 102.87) (xy 21.59 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cfef97fb-0963-401c-916d-bd4728a62ad6")
-	)
-	(wire
-		(pts
 			(xy 210.82 97.79) (xy 219.71 97.79)
 		)
 		(stroke
@@ -7151,16 +6117,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 138.43) (xy 88.9 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d311a6b0-291c-40a8-a4aa-a8df4fc5e694")
-	)
-	(wire
-		(pts
 			(xy 64.77 39.37) (xy 78.74 39.37)
 		)
 		(stroke
@@ -7168,16 +6124,6 @@
 			(type default)
 		)
 		(uuid "d4702348-f282-4a15-9e42-156dd5541847")
-	)
-	(wire
-		(pts
-			(xy 17.78 140.97) (xy 21.59 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d510c23c-d7e9-4c4f-9922-78361f85c9a2")
 	)
 	(wire
 		(pts
@@ -7238,16 +6184,6 @@
 			(type default)
 		)
 		(uuid "d983fb29-384c-4244-a526-0040deafd0df")
-	)
-	(wire
-		(pts
-			(xy 17.78 113.03) (xy 21.59 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da3229f0-1f27-4d00-a64f-0162290d6953")
 	)
 	(wire
 		(pts
@@ -7321,16 +6257,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 85.09) (xy 58.42 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e65a9417-bf75-4216-9280-09f92efa8e07")
-	)
-	(wire
-		(pts
 			(xy 180.34 161.29) (xy 187.96 161.29)
 		)
 		(stroke
@@ -7351,16 +6277,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 90.17) (xy 88.9 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea0a96fb-e9bc-48a0-b733-94c3c0d7ed8c")
-	)
-	(wire
-		(pts
 			(xy 165.1 148.59) (xy 168.91 148.59)
 		)
 		(stroke
@@ -7368,26 +6284,6 @@
 			(type default)
 		)
 		(uuid "ebf4a2c2-4d9a-40bb-b55c-efb7c346e7d6")
-	)
-	(wire
-		(pts
-			(xy 86.36 102.87) (xy 88.9 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec524f9a-a195-4458-94e6-e647163cedfe")
-	)
-	(wire
-		(pts
-			(xy 86.36 113.03) (xy 88.9 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed0480e8-257c-4252-9392-fd906b5f58a5")
 	)
 	(wire
 		(pts
@@ -7411,16 +6307,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 153.67) (xy 88.9 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f109e14d-5758-4324-bf30-f7dab48b6ac1")
-	)
-	(wire
-		(pts
 			(xy 361.95 52.07) (xy 344.17 52.07)
 		)
 		(stroke
@@ -7431,7 +6317,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 77.47) (xy 58.42 77.47)
+			(xy 49.53 77.47) (xy 57.15 77.47)
 		)
 		(stroke
 			(width 0)
@@ -7451,16 +6337,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 140.97) (xy 88.9 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f44112ab-dd5d-45b6-963a-b38f03c1ea9c")
-	)
-	(wire
-		(pts
 			(xy 312.42 41.91) (xy 312.42 52.07)
 		)
 		(stroke
@@ -7468,16 +6344,6 @@
 			(type default)
 		)
 		(uuid "f617a0da-f520-4bba-a6f4-caf7d4d4d2af")
-	)
-	(wire
-		(pts
-			(xy 17.78 153.67) (xy 21.59 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7926571-bb83-4460-ba3f-6d756839e870")
 	)
 	(wire
 		(pts
@@ -7530,8 +6396,8 @@
 		(uuid "ff2f177e-e781-4d46-a9de-00c4f08e0b71")
 	)
 	(image
-		(at 37.592 201.93)
-		(scale 0.0872775)
+		(at 162.052 57.15)
+		(scale 0.0255308)
 		(uuid "9ccc7a22-e51d-4f3a-8c13-9fc7619fdaf4")
 		(data "iVBORw0KGgoAAAANSUhEUgAABuMAAAbICAIAAAAe4j6XAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
 			"AA50AAAOdAFrJLPWAAAgAElEQVR4nOydeZhU1Zn/z6196arq6p1u9n1HBAQFB1SWoGJEiCbRuBBN"
@@ -38580,149 +37446,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 81.28 138.43 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "03ebaf38-3531-4882-81e2-36ecefb5e90f")
-		(property "Reference" "J34"
-			(at 80.01 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 80.01 133.35 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 81.28 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 80.01 133.35 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 80.01 133.35 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 81.28 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 81.28 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 81.28 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 81.28 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 81.28 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 81.28 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "653598a5-bfc3-44a9-b710-c406eadfc30e")
-		)
-		(pin "6"
-			(uuid "ac7a6e0c-5634-4ed8-9199-169e631a4182")
-		)
-		(pin "1"
-			(uuid "0c1d7c18-9d52-442d-92b4-48cc89f431ef")
-		)
-		(pin "4"
-			(uuid "bcd907d4-6776-4ea7-8f8b-181b6c8681ff")
-		)
-		(pin "5"
-			(uuid "784eddf6-583b-4d4d-82d6-99422081ba9e")
-		)
-		(pin "3"
-			(uuid "25188e96-ac5a-4a8c-826b-d82ca549f97a")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 143.51 148.59 270)
 		(unit 1)
@@ -39120,6 +37843,7 @@
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "0c0d5c33-3e7e-4a0c-b023-42f17f2c7ea6")
 		(property "Reference" "J3"
 			(at 27.94 67.31 0)
@@ -39131,7 +37855,7 @@
 			)
 		)
 		(property "Value" "IDC 6Pin Male Header"
-			(at 27.94 69.85 0)
+			(at 27.94 67.31 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -39216,13 +37940,17 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Qty Multiplier" ""
-			(at 26.67 74.93 0)
+		(property "Qty Multiplier" "8"
+			(at 27.94 68.58 0)
+			(show_name yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
@@ -40047,149 +38775,6 @@
 			(project ""
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "AE1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 81.28 125.73 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "170abe15-145b-42b3-bcef-e5c137065f13")
-		(property "Reference" "J33"
-			(at 80.01 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 80.01 120.65 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 81.28 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 80.01 120.65 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 80.01 120.65 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 81.28 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 81.28 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 81.28 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 81.28 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 81.28 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 81.28 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "6a2af06b-8a57-44ce-9423-1bc8a0d63933")
-		)
-		(pin "6"
-			(uuid "c342b92e-f678-462c-9b66-d0ba3e8f2172")
-		)
-		(pin "1"
-			(uuid "0ae96366-ac7e-4edc-bc22-97ae809126ee")
-		)
-		(pin "4"
-			(uuid "85f8d1fa-6772-4fc3-b219-5fb471d0c383")
-		)
-		(pin "5"
-			(uuid "822b9f1a-92da-407d-ba5c-0189b239f675")
-		)
-		(pin "3"
-			(uuid "5b7a74b2-2a95-4d58-9510-bd9bbb90a4d6")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J33")
 					(unit 1)
 				)
 			)
@@ -41145,149 +39730,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 44.45 125.73 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "2a612536-468f-4d62-80de-7bf0f97b4ae1")
-		(property "Reference" "J17"
-			(at 43.18 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 43.18 120.65 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 44.45 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 43.18 119.38 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 43.18 120.65 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 44.45 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 44.45 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 44.45 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 44.45 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 44.45 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 44.45 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "3fddcccd-071c-4c7d-be89-8b67d59496a1")
-		)
-		(pin "6"
-			(uuid "7a4e6343-ec16-4003-8851-11ac855cbed9")
-		)
-		(pin "1"
-			(uuid "8fbc901b-f8ae-4ff8-821f-497439fa5b1f")
-		)
-		(pin "4"
-			(uuid "722cf1ab-eded-47aa-9fb5-c9f8f9df11c9")
-		)
-		(pin "5"
-			(uuid "05931370-ce2a-4684-8ac7-08f23fa1fc03")
-		)
-		(pin "3"
-			(uuid "9d3b74e5-7897-4c18-9ddc-cb51dbf5a43e")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Fuse_Small")
 		(at 121.92 113.03 0)
 		(unit 1)
@@ -41537,149 +39979,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 81.28 87.63 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "2ad81718-97e2-44fc-bab6-40f601748849")
-		(property "Reference" "J30"
-			(at 80.01 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 80.01 82.55 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 80.01 82.55 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 80.01 82.55 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "b4d5fd19-71d7-4dad-82a4-714e4b5572a3")
-		)
-		(pin "6"
-			(uuid "73128b46-ebfd-4a5a-bceb-991a8b60fdc2")
-		)
-		(pin "1"
-			(uuid "6bb9a089-44e7-4710-bd2a-3b5c7eb92d55")
-		)
-		(pin "4"
-			(uuid "705c0895-d684-459c-b786-f3a4041a5bf5")
-		)
-		(pin "5"
-			(uuid "b6183f89-e6cc-43e4-bcff-4cd5759d8284")
-		)
-		(pin "3"
-			(uuid "033ed2e4-e9f1-4d98-87e8-b803ffd30baf")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J30")
 					(unit 1)
 				)
 			)
@@ -42095,291 +40394,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Revision01:IDC_6Pin_Male_Header")
-		(at 26.67 151.13 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "3610e7fa-9767-46f3-a9fb-d7aa713a4483")
-		(property "Reference" "J10"
-			(at 27.94 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Male Header"
-			(at 27.94 146.05 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 26.67 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf"
-			(at 26.67 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CONN HEADER VERT 6POS 2.54MM"
-			(at 27.94 144.78 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-BHR-06-VUA-ND"
-			(at 27.94 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "Connector Header Through Hole 6 position 0.100\" (2.54mm)"
-			(at 27.94 146.05 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/BHR-06-VUA/10414837"
-			(at 26.67 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 27.94 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "BHR-06-VUA"
-			(at 27.94 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 26.67 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 26.67 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "37fae224-da0f-4a1d-b28f-ce93efea6d49")
-		)
-		(pin "5"
-			(uuid "4972bd51-a744-4e70-a34a-17768e42f9f5")
-		)
-		(pin "4"
-			(uuid "8270b40b-c203-4585-b568-059ecabc3e0c")
-		)
-		(pin "6"
-			(uuid "5fb233d7-0316-467a-a0cd-bc67118984d8")
-		)
-		(pin "3"
-			(uuid "3cf8436b-a865-44d9-9933-0274cc33c783")
-		)
-		(pin "2"
-			(uuid "711cadd6-266a-4806-89c1-5a873798ab86")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 93.98 138.43 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "372a5f3a-2463-42d2-9b55-12af2e561e43")
-		(property "Reference" "J42"
-			(at 95.25 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 95.25 133.35 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 93.98 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 95.25 133.35 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 95.25 133.35 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 93.98 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 93.98 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 93.98 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 93.98 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 93.98 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 93.98 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a8b525b1-97c7-4599-998d-405fac5d4173")
-		)
-		(pin "6"
-			(uuid "1cf47604-1938-4a7a-99dd-5d34c9185ca5")
-		)
-		(pin "1"
-			(uuid "9cc3b1b7-3d87-424d-8949-7addfee97d11")
-		)
-		(pin "4"
-			(uuid "81406a44-7453-468d-bcfd-2fd43032f89b")
-		)
-		(pin "5"
-			(uuid "fbf6de50-d3d4-4463-a72a-ed4066a18934")
-		)
-		(pin "3"
-			(uuid "b7c5aa65-5f7f-4850-b94b-ceeb3087c3a0")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 143.51 123.19 270)
 		(unit 1)
@@ -42780,291 +40794,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Revision01:IDC_6Pin_Male_Header")
-		(at 26.67 138.43 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "3fd37a71-ce2d-40f8-86d7-1feb46496a55")
-		(property "Reference" "J9"
-			(at 27.94 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Male Header"
-			(at 27.94 133.35 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 26.67 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf"
-			(at 26.67 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CONN HEADER VERT 6POS 2.54MM"
-			(at 27.94 132.08 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-BHR-06-VUA-ND"
-			(at 27.94 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "Connector Header Through Hole 6 position 0.100\" (2.54mm)"
-			(at 27.94 133.35 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/BHR-06-VUA/10414837"
-			(at 26.67 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 27.94 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "BHR-06-VUA"
-			(at 27.94 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 26.67 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 26.67 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7d397431-d169-49f5-a6ac-31a1b6213a85")
-		)
-		(pin "5"
-			(uuid "a9993e82-5c8b-40ee-9b49-e64e5978c71f")
-		)
-		(pin "4"
-			(uuid "84f5ccfb-0d07-47fb-8b69-a1c5c938a691")
-		)
-		(pin "6"
-			(uuid "b0b4736f-794f-4a32-bfb8-c70ab83e4996")
-		)
-		(pin "3"
-			(uuid "de8fbdaf-25d0-4d2f-ba4e-ed552d43f760")
-		)
-		(pin "2"
-			(uuid "3513183e-037a-4606-86cf-8dee536e00ae")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 44.45 113.03 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "45ca5a38-d4a7-4491-ad78-0472b6a15d3d")
-		(property "Reference" "J16"
-			(at 43.18 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 43.18 107.95 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 44.45 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 43.18 106.68 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 43.18 107.95 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 44.45 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 44.45 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 44.45 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 44.45 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 44.45 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 44.45 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a0edc36e-6bf2-4053-8710-92f410eb0d23")
-		)
-		(pin "6"
-			(uuid "80a672d1-4ca1-4a14-9099-2b930ee733ca")
-		)
-		(pin "1"
-			(uuid "74931574-8754-4efd-ad60-5594708740db")
-		)
-		(pin "4"
-			(uuid "658e76cc-e1eb-4a25-a9a5-cf196199f766")
-		)
-		(pin "5"
-			(uuid "c1713612-9902-4a4c-8ec6-627f58396e28")
-		)
-		(pin "3"
-			(uuid "c6e164d5-91b2-4680-993d-d8d7a263f004")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Revision01:ANT_SMA_Edge")
 		(at 347.98 203.2 0)
 		(unit 1)
@@ -43390,149 +41119,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 81.28 100.33 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "4f7cb1a6-187e-49c5-a650-3668f3e767b1")
-		(property "Reference" "J31"
-			(at 80.01 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 80.01 95.25 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 81.28 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 80.01 95.25 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 80.01 95.25 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 81.28 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 81.28 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 81.28 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 81.28 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 81.28 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 81.28 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "64fddc89-bcd0-4599-8096-2cf951e1f65d")
-		)
-		(pin "6"
-			(uuid "92b75520-7fb6-4464-9acd-bd7f59144241")
-		)
-		(pin "1"
-			(uuid "316865ad-2c28-487c-af61-6325885fce78")
-		)
-		(pin "4"
-			(uuid "6d33bdc6-ab42-4d3c-862a-903cb85c7779")
-		)
-		(pin "5"
-			(uuid "22f53eca-0796-400d-9fb3-8968afe86d0c")
-		)
-		(pin "3"
-			(uuid "c7e61d9f-529c-4e3e-938f-db2602542c09")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J31")
 					(unit 1)
 				)
 			)
@@ -43930,291 +41516,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 44.45 138.43 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "5c2869b2-0908-48f9-bb34-68b487832a55")
-		(property "Reference" "J18"
-			(at 43.18 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 43.18 133.35 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 44.45 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 43.18 132.08 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 43.18 133.35 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 44.45 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 44.45 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 44.45 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 44.45 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 44.45 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 44.45 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d82cc725-6cdf-474d-9a39-d5088fbd1b26")
-		)
-		(pin "6"
-			(uuid "4457eadd-4df0-435d-9622-9caee741b5ca")
-		)
-		(pin "1"
-			(uuid "fe8b4791-666d-4800-90b5-2dc2f19757ed")
-		)
-		(pin "4"
-			(uuid "a9c21835-8bcc-4db3-99c2-4f7fd799bad4")
-		)
-		(pin "5"
-			(uuid "7a459cd0-aa3c-45cb-ab5c-51f591fbe96e")
-		)
-		(pin "3"
-			(uuid "b24a34be-d968-402e-8801-577f397b108c")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Male_Header")
-		(at 26.67 87.63 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "5d42a0b9-9313-4b95-a48c-095d04ff47ac")
-		(property "Reference" "J5"
-			(at 27.94 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Male Header"
-			(at 27.94 82.55 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 26.67 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf"
-			(at 26.67 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CONN HEADER VERT 6POS 2.54MM"
-			(at 27.94 81.28 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-BHR-06-VUA-ND"
-			(at 27.94 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "Connector Header Through Hole 6 position 0.100\" (2.54mm)"
-			(at 27.94 82.55 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/BHR-06-VUA/10414837"
-			(at 26.67 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 27.94 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "BHR-06-VUA"
-			(at 27.94 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 26.67 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 26.67 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "929d4a52-517c-4199-99df-8805ad442d8c")
-		)
-		(pin "5"
-			(uuid "749a5b37-f75e-4bd5-bf1d-bb9e317c4256")
-		)
-		(pin "4"
-			(uuid "65f77f17-b85d-4529-8181-82af6889598f")
-		)
-		(pin "6"
-			(uuid "5adb6684-73a7-404c-b78a-fb05096f3892")
-		)
-		(pin "3"
-			(uuid "24b46f78-8eba-4d15-b60f-c0d3b65cfae9")
-		)
-		(pin "2"
-			(uuid "5b564bfa-1493-4c74-a64f-1541245f7ed8")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -44790,149 +42091,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 81.28 163.83 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "676a8fce-e99e-44aa-b55f-c4ab87903502")
-		(property "Reference" "J36"
-			(at 80.01 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 80.01 158.75 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 81.28 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 80.01 158.75 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 80.01 158.75 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 81.28 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 81.28 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 81.28 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 81.28 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 81.28 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 81.28 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "e8697074-d88a-42a3-85b4-45584e3e138a")
-		)
-		(pin "6"
-			(uuid "66e5af25-d223-4451-85a7-29bf7f606dd5")
-		)
-		(pin "1"
-			(uuid "928c7700-6e21-4d55-b627-65805c1d928f")
-		)
-		(pin "4"
-			(uuid "0d78b88e-19fd-415a-8ea5-724fa71f9180")
-		)
-		(pin "5"
-			(uuid "be38b13c-3ddb-481c-acb1-d4b33b418d37")
-		)
-		(pin "3"
-			(uuid "f77571e6-73b1-41aa-a8c2-402ca2524089")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_Zener_Small")
 		(at 187.96 74.93 270)
 		(unit 1)
@@ -45066,148 +42224,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Revision01:IDC_6Pin_Male_Header")
-		(at 26.67 163.83 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "686b3f85-9b42-483d-8e81-e7264f2fb39c")
-		(property "Reference" "J11"
-			(at 27.94 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Male Header"
-			(at 27.94 158.75 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 26.67 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf"
-			(at 26.67 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CONN HEADER VERT 6POS 2.54MM"
-			(at 27.94 157.48 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-BHR-06-VUA-ND"
-			(at 27.94 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "Connector Header Through Hole 6 position 0.100\" (2.54mm)"
-			(at 27.94 158.75 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/BHR-06-VUA/10414837"
-			(at 26.67 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 27.94 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "BHR-06-VUA"
-			(at 27.94 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 26.67 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 26.67 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ebb05ab1-dd4c-4e22-9eb3-29152dc2c513")
-		)
-		(pin "5"
-			(uuid "809c6713-1d7d-4220-b9d2-d6cc16a68d9d")
-		)
-		(pin "4"
-			(uuid "d3615e9a-7fc4-4c33-b493-09880900d722")
-		)
-		(pin "6"
-			(uuid "29a5065d-c00c-4770-86e2-69744e3682e8")
-		)
-		(pin "3"
-			(uuid "724eb0cd-234f-482e-810d-832eb12819f7")
-		)
-		(pin "2"
-			(uuid "06b43880-6717-4436-819a-16475f5f6a28")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+BATT")
 		(at 312.42 21.59 0)
 		(unit 1)
@@ -45268,149 +42284,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR069")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 44.45 151.13 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "6cb99571-3407-4d2f-bd17-9b1a2765b190")
-		(property "Reference" "J19"
-			(at 43.18 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 43.18 146.05 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 44.45 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 43.18 144.78 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 43.18 146.05 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 44.45 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 44.45 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 44.45 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 44.45 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 44.45 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 44.45 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "01113f8f-28eb-4498-bfa2-bd87a0d88c23")
-		)
-		(pin "6"
-			(uuid "55ddce16-4083-495b-aca2-133f3154ea90")
-		)
-		(pin "1"
-			(uuid "936efde2-6260-47a7-9c37-d2882a19be7b")
-		)
-		(pin "4"
-			(uuid "0339ab64-8254-4066-a674-8649bf499157")
-		)
-		(pin "5"
-			(uuid "1d931b93-26eb-4a19-b716-f18d16889b52")
-		)
-		(pin "3"
-			(uuid "d8776cf3-90ce-4103-b5de-c7e01dfe040f")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J19")
 					(unit 1)
 				)
 			)
@@ -46091,149 +42964,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 93.98 151.13 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7aef8a9f-9398-42c6-97c2-17449fc320b0")
-		(property "Reference" "J43"
-			(at 95.25 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 95.25 146.05 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 93.98 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 95.25 146.05 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 95.25 146.05 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 93.98 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 93.98 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 93.98 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 93.98 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 93.98 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 93.98 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "9a6b8b74-73ad-45cd-8960-d07282fc4837")
-		)
-		(pin "6"
-			(uuid "0442c8bf-05b0-4ba2-b986-130f7e0fd5ef")
-		)
-		(pin "1"
-			(uuid "6fae4c93-8abe-4c61-b545-eb472fa79f86")
-		)
-		(pin "4"
-			(uuid "52bf3393-24c5-43b0-8c1b-f40a289daeba")
-		)
-		(pin "5"
-			(uuid "1bf698b6-2854-46b2-a183-b34d7ebdbe95")
-		)
-		(pin "3"
-			(uuid "7a372c5b-007f-447f-ae72-93a357af7d5e")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J43")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 210.82 128.27 0)
 		(unit 1)
@@ -46510,15 +43240,17 @@
 	)
 	(symbol
 		(lib_id "Revision01:IDC_6Pin_Male_Header")
-		(at 63.5 74.93 0)
+		(at 62.23 74.93 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "7dedbfd8-d5dd-4e70-9f3c-4d311ec9e97f")
 		(property "Reference" "J21"
-			(at 64.77 67.31 0)
+			(at 63.5 67.31 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46527,7 +43259,8 @@
 			)
 		)
 		(property "Value" "IDC 6Pin Male Header"
-			(at 64.77 69.85 0)
+			(at 63.5 67.31 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -46535,7 +43268,8 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 63.5 74.93 0)
+			(at 62.23 74.93 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46544,7 +43278,8 @@
 			)
 		)
 		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf"
-			(at 63.5 74.93 0)
+			(at 62.23 74.93 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46553,7 +43288,8 @@
 			)
 		)
 		(property "Description" "CONN HEADER VERT 6POS 2.54MM"
-			(at 64.77 68.58 0)
+			(at 63.5 68.58 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -46562,7 +43298,8 @@
 			)
 		)
 		(property "Distributor Part Number" "2057-BHR-06-VUA-ND"
-			(at 64.77 63.5 0)
+			(at 63.5 63.5 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46571,7 +43308,8 @@
 			)
 		)
 		(property "Detailed Description" "Connector Header Through Hole 6 position 0.100\" (2.54mm)"
-			(at 64.77 69.85 0)
+			(at 63.5 69.85 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -46580,7 +43318,8 @@
 			)
 		)
 		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/BHR-06-VUA/10414837"
-			(at 63.5 74.93 0)
+			(at 62.23 74.93 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46589,7 +43328,8 @@
 			)
 		)
 		(property "Manufacturer" "Adam Tech"
-			(at 64.77 66.04 0)
+			(at 63.5 66.04 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46598,7 +43338,8 @@
 			)
 		)
 		(property "Manufacturer Part Number" "BHR-06-VUA"
-			(at 64.77 68.58 0)
+			(at 63.5 68.58 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46607,18 +43348,23 @@
 			)
 		)
 		(property "Package / Case" "n/a"
-			(at 63.5 74.93 0)
+			(at 62.23 74.93 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Qty Multiplier" ""
-			(at 63.5 74.93 0)
+		(property "Qty Multiplier" "8"
+			(at 63.5 68.58 0)
+			(show_name yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
@@ -46644,148 +43390,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "J21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Male_Header")
-		(at 63.5 87.63 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "83684687-62c7-4c3e-9cb7-787eb1f95ade")
-		(property "Reference" "J22"
-			(at 64.77 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Male Header"
-			(at 64.77 82.55 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 63.5 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf"
-			(at 63.5 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CONN HEADER VERT 6POS 2.54MM"
-			(at 64.77 81.28 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-BHR-06-VUA-ND"
-			(at 64.77 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "Connector Header Through Hole 6 position 0.100\" (2.54mm)"
-			(at 64.77 82.55 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/BHR-06-VUA/10414837"
-			(at 63.5 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 64.77 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "BHR-06-VUA"
-			(at 64.77 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 63.5 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 63.5 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "54dab7a8-a199-4b41-9c75-7fabdb623bc5")
-		)
-		(pin "5"
-			(uuid "3dd076a2-5464-4ed2-b6df-76a5279dfa89")
-		)
-		(pin "4"
-			(uuid "3e3de8a7-40fb-4a73-8392-786e054c1829")
-		)
-		(pin "6"
-			(uuid "666ebd78-0a88-46e3-a81b-f606f349e76e")
-		)
-		(pin "3"
-			(uuid "ee2f40f0-29af-4029-a7a2-09b09220b409")
-		)
-		(pin "2"
-			(uuid "6e36304a-c654-42f5-81b3-448c22b93f41")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J22")
 					(unit 1)
 				)
 			)
@@ -46934,6 +43538,7 @@
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "86447952-aaa5-421f-9376-74af2775d9a9")
 		(property "Reference" "J12"
 			(at 43.18 67.31 0)
@@ -46945,7 +43550,7 @@
 			)
 		)
 		(property "Value" "IDC 6Pin Female Socket"
-			(at 43.18 69.85 0)
+			(at 43.18 67.31 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -47030,13 +43635,17 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Qty Multiplier" ""
-			(at 44.45 74.93 0)
+		(property "Qty Multiplier" "8"
+			(at 43.18 68.58 0)
+			(show_name yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
@@ -47062,292 +43671,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "J12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 44.45 100.33 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "868406ad-b481-4c0e-b3e8-27f1a1f69316")
-		(property "Reference" "J15"
-			(at 43.18 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 43.18 95.25 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 44.45 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 43.18 93.98 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 43.18 95.25 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 44.45 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 44.45 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 44.45 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 44.45 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 44.45 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 44.45 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "62cbfd8d-a735-47cb-b9da-158348a2e42c")
-		)
-		(pin "6"
-			(uuid "c333a4ad-7c6e-4d57-b5bd-30fac7f7c6e3")
-		)
-		(pin "1"
-			(uuid "62362f2f-6e1c-4e36-9437-25875396e645")
-		)
-		(pin "4"
-			(uuid "612b39dd-8681-446b-8e80-2eb6490a7c05")
-		)
-		(pin "5"
-			(uuid "0452c26e-18e1-4914-9af4-b484c4af1b65")
-		)
-		(pin "3"
-			(uuid "191e2bda-abad-4783-95d9-9666f07664c7")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 44.45 87.63 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "86b984ad-87cb-4cee-ad93-a5092f28bc45")
-		(property "Reference" "J13"
-			(at 43.18 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 43.18 82.55 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 44.45 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 43.18 81.28 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 43.18 82.55 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 44.45 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 44.45 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 44.45 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 44.45 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 44.45 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 44.45 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "c96190cc-a077-4aaf-8dfc-7dec9c328823")
-		)
-		(pin "6"
-			(uuid "91a87854-7fb8-40a4-8754-8c6e327c04d7")
-		)
-		(pin "1"
-			(uuid "c9f735ff-08d4-4228-ad1f-c8a8d2d8ec31")
-		)
-		(pin "4"
-			(uuid "491ff7c8-34df-4c7f-9b58-bcffb856629b")
-		)
-		(pin "5"
-			(uuid "f6ffc5e1-3f2a-4715-a444-f7c92344b15b")
-		)
-		(pin "3"
-			(uuid "4c73205a-8599-40cd-b298-bb57b05b1c70")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -47480,149 +43803,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 93.98 100.33 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8a182ceb-c477-405f-9895-240328ce648a")
-		(property "Reference" "J39"
-			(at 95.25 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 95.25 95.25 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 93.98 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 95.25 95.25 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 95.25 95.25 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 93.98 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 93.98 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 93.98 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 93.98 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 93.98 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 93.98 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "be6b8a4b-f2e0-4df0-8ab8-951122fb93ac")
-		)
-		(pin "6"
-			(uuid "3f790ca9-ab63-4667-9fa5-5ed4d039f08f")
-		)
-		(pin "1"
-			(uuid "da5691cf-2349-4ea2-8049-285775769af2")
-		)
-		(pin "4"
-			(uuid "2ac2c28e-0703-4f81-a122-faa655a9da5d")
-		)
-		(pin "5"
-			(uuid "c8cc118e-92d4-4c8c-b45b-4a798194cf01")
-		)
-		(pin "3"
-			(uuid "ccaa2a9a-874c-4f02-bcb8-b6f44d5b564a")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J39")
 					(unit 1)
 				)
 			)
@@ -49030,148 +45210,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Revision01:IDC_6Pin_Male_Header")
-		(at 63.5 163.83 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "9a029b91-4703-4144-8be2-cf2335548bda")
-		(property "Reference" "J28"
-			(at 64.77 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Male Header"
-			(at 64.77 158.75 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 63.5 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf"
-			(at 63.5 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CONN HEADER VERT 6POS 2.54MM"
-			(at 64.77 157.48 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-BHR-06-VUA-ND"
-			(at 64.77 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "Connector Header Through Hole 6 position 0.100\" (2.54mm)"
-			(at 64.77 158.75 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/BHR-06-VUA/10414837"
-			(at 63.5 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 64.77 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "BHR-06-VUA"
-			(at 64.77 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 63.5 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 63.5 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3bc4d545-a344-4f73-8c00-27925b6f5ddd")
-		)
-		(pin "5"
-			(uuid "c2ee8ab8-ecc8-41b0-b84f-db8cce208ff1")
-		)
-		(pin "4"
-			(uuid "4fffbe51-c86b-48dc-9672-e3309fd9f5d2")
-		)
-		(pin "6"
-			(uuid "d2b63ce7-588b-4eae-90c3-ebedcfc5821a")
-		)
-		(pin "3"
-			(uuid "70c7f5ea-8503-40d7-8f11-dd6f82ad257c")
-		)
-		(pin "2"
-			(uuid "84ad9f60-362c-41dd-be70-b061e044e65d")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 187.96 102.87 0)
 		(unit 1)
@@ -49470,149 +45508,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 44.45 163.83 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "9cf17198-d343-482d-b589-d67b7688b792")
-		(property "Reference" "J20"
-			(at 43.18 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 43.18 158.75 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 44.45 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 43.18 157.48 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 43.18 158.75 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 44.45 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 44.45 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 44.45 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 44.45 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 44.45 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 44.45 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "db4e5d39-2aed-4acd-af54-9d92c5d4acab")
-		)
-		(pin "6"
-			(uuid "72095be5-fdb7-43d9-bd76-b5c8d0ddfa82")
-		)
-		(pin "1"
-			(uuid "a76aa233-e7ad-4034-b3b6-b41cb65040d4")
-		)
-		(pin "4"
-			(uuid "18152884-16fd-4a49-add6-70ce24e7bd39")
-		)
-		(pin "5"
-			(uuid "083ad5dc-1526-433f-8d68-7ae74cc976d1")
-		)
-		(pin "3"
-			(uuid "1ec8ad7f-b515-4a3c-b6ae-a79472523d81")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 344.17 48.26 180)
 		(unit 1)
@@ -49887,6 +45782,7 @@
 		(in_bom yes)
 		(on_board no)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "9e7a864e-35df-4f25-8346-81e47d53817c")
 		(property "Reference" "J29"
 			(at 80.01 67.31 0)
@@ -49898,7 +45794,7 @@
 			)
 		)
 		(property "Value" "IDC 6Pin Female Socket"
-			(at 80.01 69.85 0)
+			(at 80.01 67.31 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -49983,13 +45879,17 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Qty Multiplier" ""
-			(at 81.28 74.93 0)
+		(property "Qty Multiplier" "8"
+			(at 80.01 68.58 0)
+			(show_name yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
@@ -50692,149 +46592,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 93.98 113.03 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a4a7ac5a-2475-49ee-beba-4ddcf5576754")
-		(property "Reference" "J40"
-			(at 95.25 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 95.25 107.95 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 95.25 107.95 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 95.25 107.95 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "aa44b4ca-dc91-4943-a9a4-9f0fd343cb2b")
-		)
-		(pin "6"
-			(uuid "71f248b5-d17d-432f-ba77-181e79f15afd")
-		)
-		(pin "1"
-			(uuid "93b50662-b930-483d-bb8e-99675b50ab9b")
-		)
-		(pin "4"
-			(uuid "af27e0d8-5bb7-4ce6-9795-c1b0ab456090")
-		)
-		(pin "5"
-			(uuid "6c5eaf9b-7805-43d0-9a5d-7cec8dbfd81a")
-		)
-		(pin "3"
-			(uuid "bb0a6893-454c-4559-becd-f08f93e3ffe3")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J40")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 196.85 115.57 0)
 		(unit 1)
@@ -50963,290 +46720,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR042")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Male_Header")
-		(at 26.67 113.03 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "aa45c032-34d8-41ff-9b11-64fc160a743c")
-		(property "Reference" "J7"
-			(at 27.94 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Male Header"
-			(at 27.94 107.95 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 26.67 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf"
-			(at 26.67 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CONN HEADER VERT 6POS 2.54MM"
-			(at 27.94 106.68 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-BHR-06-VUA-ND"
-			(at 27.94 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "Connector Header Through Hole 6 position 0.100\" (2.54mm)"
-			(at 27.94 107.95 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/BHR-06-VUA/10414837"
-			(at 26.67 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 27.94 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "BHR-06-VUA"
-			(at 27.94 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 26.67 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 26.67 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a3e875ee-9b23-45ae-a644-7bcf2ad05fd0")
-		)
-		(pin "5"
-			(uuid "12e844f6-eb92-4824-9eac-d592bf35a8c0")
-		)
-		(pin "4"
-			(uuid "a49e5d19-fe47-4d8e-aee0-c8dd836d203e")
-		)
-		(pin "6"
-			(uuid "4e0f1a10-4153-45dd-b46b-a66b566eca0e")
-		)
-		(pin "3"
-			(uuid "a51bba11-1ab3-42bc-a592-25bdfe80547c")
-		)
-		(pin "2"
-			(uuid "421ed7c0-1abc-4e93-8053-e4deee8c933a")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Male_Header")
-		(at 63.5 138.43 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "ab113799-a60d-42d4-8395-5f83ee6e2ad5")
-		(property "Reference" "J26"
-			(at 64.77 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Male Header"
-			(at 64.77 133.35 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 63.5 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf"
-			(at 63.5 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CONN HEADER VERT 6POS 2.54MM"
-			(at 64.77 132.08 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-BHR-06-VUA-ND"
-			(at 64.77 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "Connector Header Through Hole 6 position 0.100\" (2.54mm)"
-			(at 64.77 133.35 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/BHR-06-VUA/10414837"
-			(at 63.5 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 64.77 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "BHR-06-VUA"
-			(at 64.77 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 63.5 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 63.5 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "093fb932-ce1a-423a-af7c-94240eda60dd")
-		)
-		(pin "5"
-			(uuid "e7bc56e6-b97f-4428-a9d0-729b94d2bc02")
-		)
-		(pin "4"
-			(uuid "caaee452-48a6-4b23-8cc1-34363ca82a30")
-		)
-		(pin "6"
-			(uuid "f8115fd9-fda5-43a7-9dd4-33c096757f29")
-		)
-		(pin "3"
-			(uuid "a1031495-db00-4297-b8fe-6ff407455b7f")
-		)
-		(pin "2"
-			(uuid "2e78f120-13fb-4de8-ae0f-8eab70514d5f")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J26")
 					(unit 1)
 				)
 			)
@@ -52248,148 +47721,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Revision01:IDC_6Pin_Male_Header")
-		(at 26.67 125.73 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "b66a0b55-01ac-4287-b8ec-cdc7b73b7e6c")
-		(property "Reference" "J8"
-			(at 27.94 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Male Header"
-			(at 27.94 120.65 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 26.67 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf"
-			(at 26.67 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CONN HEADER VERT 6POS 2.54MM"
-			(at 27.94 119.38 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-BHR-06-VUA-ND"
-			(at 27.94 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "Connector Header Through Hole 6 position 0.100\" (2.54mm)"
-			(at 27.94 120.65 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/BHR-06-VUA/10414837"
-			(at 26.67 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 27.94 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "BHR-06-VUA"
-			(at 27.94 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 26.67 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 26.67 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5bb40a48-4d7d-41a5-be8d-b329cb13af83")
-		)
-		(pin "5"
-			(uuid "3839ea24-8343-4b41-8865-9ec878c16de7")
-		)
-		(pin "4"
-			(uuid "d6c043a5-3442-4606-a4e4-d1b2cc3452f1")
-		)
-		(pin "6"
-			(uuid "e3e143b8-7cd5-453d-bed6-4147ba66e44b")
-		)
-		(pin "3"
-			(uuid "ebab756f-84ff-497f-acc7-7e0d8381f74d")
-		)
-		(pin "2"
-			(uuid "14331e33-8db1-4649-bd34-1b2d097f4e7f")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 143.51 110.49 270)
 		(unit 1)
@@ -52852,149 +48183,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 93.98 125.73 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bd643f09-e5fe-45e7-9e6b-63a5f12d8226")
-		(property "Reference" "J41"
-			(at 95.25 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 95.25 120.65 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 93.98 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 95.25 120.65 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 95.25 120.65 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 93.98 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 93.98 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 93.98 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 93.98 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 93.98 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 93.98 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "302fc50e-d634-459c-81f2-b2f10e374e56")
-		)
-		(pin "6"
-			(uuid "dfa96a05-9820-443c-a120-6d01de155a78")
-		)
-		(pin "1"
-			(uuid "4083a1ef-af6b-4179-93fe-dc5be9c5fee8")
-		)
-		(pin "4"
-			(uuid "4544d65d-1bf9-4ff3-8930-7cf47ecb1aa7")
-		)
-		(pin "5"
-			(uuid "388985c0-de6c-4f6a-9360-e5f862474caa")
-		)
-		(pin "3"
-			(uuid "948e5f55-d305-43f5-b422-07e16c4a880c")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 210.82 100.33 0)
 		(unit 1)
@@ -53121,148 +48309,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Male_Header")
-		(at 63.5 125.73 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "c306af58-c8c3-40b1-a661-fb8bfac08cd4")
-		(property "Reference" "J25"
-			(at 64.77 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Male Header"
-			(at 64.77 120.65 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 63.5 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf"
-			(at 63.5 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CONN HEADER VERT 6POS 2.54MM"
-			(at 64.77 119.38 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-BHR-06-VUA-ND"
-			(at 64.77 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "Connector Header Through Hole 6 position 0.100\" (2.54mm)"
-			(at 64.77 120.65 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/BHR-06-VUA/10414837"
-			(at 63.5 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 64.77 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "BHR-06-VUA"
-			(at 64.77 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 63.5 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 63.5 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2f53d8f5-a5bd-46a1-a4b3-c9e7a99d52eb")
-		)
-		(pin "5"
-			(uuid "3ff6f380-8231-4654-b7d3-7a718193eada")
-		)
-		(pin "4"
-			(uuid "37fcf36e-7c02-4eda-ab8f-2c0677e7b957")
-		)
-		(pin "6"
-			(uuid "2429b013-06aa-4c62-8c15-721372245020")
-		)
-		(pin "3"
-			(uuid "6d886164-8183-470d-86eb-43264ff73a7a")
-		)
-		(pin "2"
-			(uuid "87ff5268-0db5-481a-9203-ae87756ef7ec")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J25")
 					(unit 1)
 				)
 			)
@@ -53851,149 +48897,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 93.98 87.63 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ca3f64e4-2198-4ed7-8fc3-a46a0ac175b9")
-		(property "Reference" "J38"
-			(at 95.25 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 95.25 82.55 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 93.98 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 95.25 82.55 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 95.25 82.55 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 93.98 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 93.98 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 93.98 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 93.98 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 93.98 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 93.98 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ac795815-4032-4784-95bf-188b46169d11")
-		)
-		(pin "6"
-			(uuid "74bebb3a-f634-4c99-8733-5aeae0951fa3")
-		)
-		(pin "1"
-			(uuid "1b506f7e-718c-45c1-935a-349f3ff0a7e9")
-		)
-		(pin "4"
-			(uuid "20fb6c23-c31e-4c8c-a47c-3b54bb233ed4")
-		)
-		(pin "5"
-			(uuid "d4b365fe-efab-4739-a6b8-f69aa87aa0d8")
-		)
-		(pin "3"
-			(uuid "086bc075-e812-4d90-b052-e08e60b6a931")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J38")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_Zener_Small")
 		(at 180.34 107.95 270)
 		(unit 1)
@@ -54188,149 +49091,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 81.28 151.13 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "d041f34e-78a6-4292-95ea-870cf29f1990")
-		(property "Reference" "J35"
-			(at 80.01 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 80.01 146.05 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 81.28 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 80.01 146.05 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 80.01 146.05 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 81.28 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 81.28 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 81.28 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 81.28 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 81.28 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 81.28 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a345669e-ea79-4d44-954e-7124b598463f")
-		)
-		(pin "6"
-			(uuid "cb8cee4c-6c5a-4f4d-a584-1081b14793df")
-		)
-		(pin "1"
-			(uuid "ae6e49ec-0ff7-4132-8ccd-4eb4cc7f0036")
-		)
-		(pin "4"
-			(uuid "536f0a65-aec0-4dd0-abae-353559a8107d")
-		)
-		(pin "5"
-			(uuid "9a49c704-3d6e-4152-800a-9721659475aa")
-		)
-		(pin "3"
-			(uuid "f51e2dfc-2f1e-4125-91bb-6498ccf7dbff")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J35")
 					(unit 1)
 				)
 			)
@@ -54607,149 +49367,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 93.98 163.83 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d7765161-1bb7-4230-b609-c9c6ccb25284")
-		(property "Reference" "J44"
-			(at 95.25 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 95.25 158.75 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 93.98 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 95.25 158.75 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 95.25 158.75 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 93.98 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 93.98 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 93.98 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 93.98 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 93.98 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 93.98 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "95150089-d6eb-4a60-80de-2f502c5ea844")
-		)
-		(pin "6"
-			(uuid "672abfc6-ffd6-449c-ae7e-7ca4eff1cfb2")
-		)
-		(pin "1"
-			(uuid "e55283a2-d3dc-47ff-8997-b0607948554a")
-		)
-		(pin "4"
-			(uuid "5b02efd4-9173-45bc-819b-aa884f162477")
-		)
-		(pin "5"
-			(uuid "9b99f184-a2b8-415d-8b53-28488ef79ae9")
-		)
-		(pin "3"
-			(uuid "08ee0cfa-8323-4b9e-af16-72535a9a5a66")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J44")
 					(unit 1)
 				)
 			)
@@ -55154,148 +49771,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Revision01:IDC_6Pin_Male_Header")
-		(at 63.5 100.33 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "e0c5afe4-277d-4359-9a45-8e0c77d54546")
-		(property "Reference" "J23"
-			(at 64.77 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Male Header"
-			(at 64.77 95.25 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 63.5 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf"
-			(at 63.5 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CONN HEADER VERT 6POS 2.54MM"
-			(at 64.77 93.98 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-BHR-06-VUA-ND"
-			(at 64.77 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "Connector Header Through Hole 6 position 0.100\" (2.54mm)"
-			(at 64.77 95.25 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/BHR-06-VUA/10414837"
-			(at 63.5 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 64.77 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "BHR-06-VUA"
-			(at 64.77 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 63.5 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 63.5 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bf066cb8-46b8-42a1-9f95-dcbe40f81d81")
-		)
-		(pin "5"
-			(uuid "27429d69-47ca-43a6-af41-f689d066fec6")
-		)
-		(pin "4"
-			(uuid "15bb91cd-dbb4-4913-9a21-0cb42671208a")
-		)
-		(pin "6"
-			(uuid "95616b53-efa5-4fd2-97b5-5dced4b988a5")
-		)
-		(pin "3"
-			(uuid "fe86b024-6d9f-49f9-a662-00ebe6d70fd2")
-		)
-		(pin "2"
-			(uuid "64665e10-7dde-4cf0-9a05-76df6d428bef")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_Zener_Small")
 		(at 187.96 87.63 270)
 		(unit 1)
@@ -55448,7 +49923,7 @@
 			)
 		)
 		(property "Value" "IDC 6Pin Female Socket"
-			(at 95.25 69.85 0)
+			(at 95.25 67.31 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -55533,13 +50008,17 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Qty Multiplier" ""
-			(at 93.98 74.93 0)
+		(property "Qty Multiplier" "8"
+			(at 95.25 68.58 0)
+			(show_name yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
@@ -55565,148 +50044,6 @@
 			(project ""
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "J37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Male_Header")
-		(at 26.67 100.33 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "e9d8086a-e718-4b1f-ae80-3f8a3418d640")
-		(property "Reference" "J6"
-			(at 27.94 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Male Header"
-			(at 27.94 95.25 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 26.67 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf"
-			(at 26.67 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CONN HEADER VERT 6POS 2.54MM"
-			(at 27.94 93.98 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-BHR-06-VUA-ND"
-			(at 27.94 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "Connector Header Through Hole 6 position 0.100\" (2.54mm)"
-			(at 27.94 95.25 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/BHR-06-VUA/10414837"
-			(at 26.67 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 27.94 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "BHR-06-VUA"
-			(at 27.94 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 26.67 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 26.67 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8b05dc2b-cf07-45af-97a1-d7b222a35221")
-		)
-		(pin "5"
-			(uuid "bbb834d0-dcfe-47d1-b9a7-90a0d8c2d7a6")
-		)
-		(pin "4"
-			(uuid "59c3fe0b-f875-4ff4-93d5-b615ddf287ea")
-		)
-		(pin "6"
-			(uuid "9b766f09-e227-4efc-8b98-b5bb91ece3b8")
-		)
-		(pin "3"
-			(uuid "a264c7cd-6e46-4b93-b399-8dae41015a2f")
-		)
-		(pin "2"
-			(uuid "c06217a8-4d3c-43bc-b549-d2d4bca3d7f0")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -56035,148 +50372,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR052")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Male_Header")
-		(at 63.5 151.13 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "f15d4f00-43d0-45dd-a324-180a68b56ce3")
-		(property "Reference" "J27"
-			(at 64.77 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Male Header"
-			(at 64.77 146.05 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 63.5 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf"
-			(at 63.5 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CONN HEADER VERT 6POS 2.54MM"
-			(at 64.77 144.78 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-BHR-06-VUA-ND"
-			(at 64.77 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "Connector Header Through Hole 6 position 0.100\" (2.54mm)"
-			(at 64.77 146.05 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/BHR-06-VUA/10414837"
-			(at 63.5 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 64.77 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "BHR-06-VUA"
-			(at 64.77 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 63.5 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 63.5 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "13231775-bbc3-4ff9-8d77-0e7284a919ab")
-		)
-		(pin "5"
-			(uuid "d0c131d2-12b6-4832-adb1-96e9b2f0b37e")
-		)
-		(pin "4"
-			(uuid "4ac50084-510c-4132-ae57-fb11c0e48656")
-		)
-		(pin "6"
-			(uuid "e251a634-7c70-47f3-9a69-84e774697dee")
-		)
-		(pin "3"
-			(uuid "e45daed5-f31e-43d0-bb54-631f4f742750")
-		)
-		(pin "2"
-			(uuid "f2ff13c2-6f41-4630-8e65-3f2b05c572a9")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J27")
 					(unit 1)
 				)
 			)
@@ -56825,149 +51020,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Revision01:IDC_6Pin_Female_Socket")
-		(at 81.28 113.03 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "fbe78fcc-dc61-431e-90bc-c4b6e5785866")
-		(property "Reference" "J32"
-			(at 80.01 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Female Socket"
-			(at 80.01 107.95 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203410/fcs-xx-sg-data-sheet.pdf"
-			(at 81.28 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOCKET FLAT CABLE IDC 6P 2.54MM"
-			(at 80.01 107.95 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "6 Position Rectangular Socket Connector IDC Gold"
-			(at 80.01 107.95 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/FCS-06-SG/9832561"
-			(at 81.28 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-FCS-06-SG-ND"
-			(at 81.28 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 81.28 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FCS-06-SG"
-			(at 81.28 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 81.28 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 81.28 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a6903b7f-eb9b-4662-aefb-831d0c791158")
-		)
-		(pin "6"
-			(uuid "eb07481c-35b0-4a44-8a45-60734f8ede2a")
-		)
-		(pin "1"
-			(uuid "c10c165e-ddf0-4516-ab47-64b4d637a228")
-		)
-		(pin "4"
-			(uuid "87649471-2a39-4d5c-88d6-047893c4ce82")
-		)
-		(pin "5"
-			(uuid "3809bdc5-afe2-4f28-bb03-6ef0330e08d8")
-		)
-		(pin "3"
-			(uuid "ace1a173-14df-49a9-82db-5ea49c2329df")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Revision01:IDC_6Pin_Male_Header")
 		(at 148.59 125.73 0)
 		(unit 1)
@@ -57293,148 +51345,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "F17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Revision01:IDC_6Pin_Male_Header")
-		(at 63.5 113.03 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board no)
-		(dnp no)
-		(uuid "feb58de7-12df-4e68-a130-bd427d0583df")
-		(property "Reference" "J24"
-			(at 64.77 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "IDC 6Pin Male Header"
-			(at 64.77 107.95 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 63.5 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf"
-			(at 63.5 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CONN HEADER VERT 6POS 2.54MM"
-			(at 64.77 106.68 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "2057-BHR-06-VUA-ND"
-			(at 64.77 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "Connector Header Through Hole 6 position 0.100\" (2.54mm)"
-			(at 64.77 107.95 0)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/adam-tech/BHR-06-VUA/10414837"
-			(at 63.5 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Adam Tech"
-			(at 64.77 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "BHR-06-VUA"
-			(at 64.77 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "n/a"
-			(at 63.5 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 63.5 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "02182f61-fc90-40dc-ab69-c7e7695d2ca5")
-		)
-		(pin "5"
-			(uuid "255e664c-79a0-4e02-8234-c533a3ccbdba")
-		)
-		(pin "4"
-			(uuid "9fc9b1cb-2498-4d53-8976-166f9f388506")
-		)
-		(pin "6"
-			(uuid "de487994-2532-4b12-aaeb-c822d9442482")
-		)
-		(pin "3"
-			(uuid "b1013452-7361-4dc2-b6ec-ecba5ea902fb")
-		)
-		(pin "2"
-			(uuid "790e1b84-f566-455f-8fe2-dd5a0e680527")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "J24")
 					(unit 1)
 				)
 			)

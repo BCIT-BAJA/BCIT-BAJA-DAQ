@@ -5,7 +5,7 @@ WINDOW 0 0 -72 Bottom 2
 WINDOW 3 0 72 Top 2
 SYMATTR Prefix X
 SYMATTR Value INA333
-SYMATTR ModelFile C:\Users\Parry\Documents\GitHub\BCIT-BAJA\testing\LTSPICE_SIMS\library\INA333.LIB
+SYMATTR ModelFile C:\Users\Parry\Documents\BCIT-BAJA\testing\LTSPICE_SIMS\library\INA333.LIB
 PIN -64 -48 LEFT 8
 PINATTR PinName IN+
 PINATTR SpiceOrder 1

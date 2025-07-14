@@ -5482,12 +5482,6 @@
 		(uuid "6e26e4e4-1c45-4bb1-9c13-a73014a42f36")
 	)
 	(junction
-		(at 137.16 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "717ab9ad-5df3-4ecf-afee-d80d564f7eb3")
-	)
-	(junction
 		(at 101.6 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5516,12 +5510,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9f829be8-d505-4ac8-b25a-c948c640e756")
-	)
-	(junction
-		(at 127 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a3042571-36d9-4dbb-a42c-a9a00000f0f1")
 	)
 	(junction
 		(at 190.5 83.82)
@@ -6093,16 +6081,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 78.74) (xy 137.16 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a60861e-aa0e-427f-b407-eea33e5ab61f")
-	)
-	(wire
-		(pts
 			(xy 142.24 259.08) (xy 138.43 259.08)
 		)
 		(stroke
@@ -6150,16 +6128,6 @@
 			(type default)
 		)
 		(uuid "45f4c5d9-58d8-4a75-b925-7731881e655f")
-	)
-	(wire
-		(pts
-			(xy 127 95.25) (xy 127 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "474ea66e-ac9a-405b-ab7a-485b3296fa60")
 	)
 	(wire
 		(pts
@@ -6383,7 +6351,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 78.74) (xy 119.38 78.74)
+			(xy 119.38 78.74) (xy 137.16 78.74)
 		)
 		(stroke
 			(width 0)
@@ -6763,16 +6731,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 90.17) (xy 127 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a88ec65a-6b9f-4890-bf80-7f28597046c8")
-	)
-	(wire
-		(pts
 			(xy 213.36 209.55) (xy 217.17 209.55)
 		)
 		(stroke
@@ -7140,16 +7098,6 @@
 			(type default)
 		)
 		(uuid "e6d52227-d52c-4c98-9462-b88b6bdd1558")
-	)
-	(wire
-		(pts
-			(xy 127 102.87) (xy 137.16 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e796f1ab-4bba-4348-9f0a-e12fbc80eb03")
 	)
 	(wire
 		(pts
@@ -10531,139 +10479,6 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 127 92.71 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "445e1e0a-85c1-4bf3-9349-1bb1fd0b651b")
-		(property "Reference" "C1"
-			(at 129.54 92.0812 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10uF, X7R"
-			(at 129.54 93.9863 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 127 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/658/CL31B106KAHNNNE_Spec.pdf"
-			(at 127 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CAP CER 10UF 25V X7R 1206"
-			(at 127 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 127 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CL31B106KAHNNNE"
-			(at 127 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31B106KAHNNNE/3887462"
-			(at 127 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "1276-1804-1-ND - Cut Tape (CT)"
-			(at 127 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package / Case" "1206 (3216 Metric)"
-			(at 127 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 127 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Detailed Description" "10 µF ±10% 25V Ceramic Capacitor X7R 1206 (3216 Metric)"
-			(at 127 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0b1e5dc6-b306-49d9-99b7-294731ab7fba")
-		)
-		(pin "2"
-			(uuid "6b0e5a0f-b633-4d10-925b-1ce4b4d781b6")
-		)
-		(instances
-			(project "Revision01"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
-					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -14786,7 +14601,7 @@
 	)
 	(sheet
 		(at 311.15 156.21)
-		(size 52.07 90.17)
+		(size 52.07 62.992)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -14811,7 +14626,7 @@
 			)
 		)
 		(property "Sheetfile" "Revision01_Application.kicad_sch"
-			(at 311.15 246.9646 0)
+			(at 311.15 219.7866 0)
 			(effects
 				(font
 					(size 1.27 1.27)

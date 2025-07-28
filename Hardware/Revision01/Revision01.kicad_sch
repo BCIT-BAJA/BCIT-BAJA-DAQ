@@ -5290,6 +5290,16 @@
 		)
 		(uuid "a6f43ce8-dfa2-4dde-931c-e88fc3639dcb")
 	)
+	(text "PARRY TODO: IS THIS THING CORRECT?"
+		(exclude_from_sim no)
+		(at 105.918 27.178 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+		)
+		(uuid "ac727c3c-135f-4f18-afa6-2c3c20ef81ac")
+	)
 	(text "AVDD | VDD <Bead> <SB57> AVDD"
 		(exclude_from_sim no)
 		(at 87.63 193.04 0)
@@ -5434,6 +5444,12 @@
 		(uuid "1cea4c7e-1862-4979-8a8c-f00b37291cdb")
 	)
 	(junction
+		(at 198.12 265.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21db257f-412b-4b9b-a383-93fea23ecc5a")
+	)
+	(junction
 		(at 87.63 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5480,6 +5496,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6e26e4e4-1c45-4bb1-9c13-a73014a42f36")
+	)
+	(junction
+		(at 198.12 255.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "786193e7-2bb6-4858-961b-b1ede4cd51b3")
 	)
 	(junction
 		(at 101.6 66.04)
@@ -5548,6 +5570,12 @@
 		(uuid "dd6a5a28-8e2e-40d0-9af5-f24bb790afad")
 	)
 	(junction
+		(at 198.12 267.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0299495-a722-4034-ade1-f279a0fcd408")
+	)
+	(junction
 		(at 101.6 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5590,10 +5618,6 @@
 		(uuid "0bb14247-69b6-4d76-9b7e-2cc457c472c2")
 	)
 	(no_connect
-		(at 92.71 186.69)
-		(uuid "0fae5303-6295-490a-a02f-c87b23914c45")
-	)
-	(no_connect
 		(at 92.71 189.23)
 		(uuid "0fdd4cd9-a0b9-40f5-9164-73588f5ce793")
 	)
@@ -5626,12 +5650,12 @@
 		(uuid "3413a8e8-8e2f-49d8-a4c7-12f5484fd16e")
 	)
 	(no_connect
-		(at 213.36 166.37)
-		(uuid "58f8829f-d020-4acd-97b3-9ff35705a6a1")
+		(at 213.36 128.27)
+		(uuid "557fa78b-5835-4b0d-b416-9c3246700148")
 	)
 	(no_connect
-		(at 92.71 148.59)
-		(uuid "63b8c460-0c5c-424c-84f2-9b82193ecffe")
+		(at 213.36 166.37)
+		(uuid "58f8829f-d020-4acd-97b3-9ff35705a6a1")
 	)
 	(no_connect
 		(at 87.63 163.83)
@@ -5656,22 +5680,6 @@
 	(no_connect
 		(at 87.63 158.75)
 		(uuid "9a9ff3bf-90ce-4afa-a855-33cdea9df79f")
-	)
-	(no_connect
-		(at 92.71 219.71)
-		(uuid "a1236172-edbf-48ce-a030-ec5be7bf9fc9")
-	)
-	(no_connect
-		(at 30.48 210.82)
-		(uuid "b27fb42e-cd24-4acb-b62d-57216da5d049")
-	)
-	(no_connect
-		(at 92.71 222.25)
-		(uuid "b49a22ab-1dcb-4f5c-b6da-b22eece13855")
-	)
-	(no_connect
-		(at 30.48 213.36)
-		(uuid "b8ebfa9c-748a-497d-b1e4-137ec3288346")
 	)
 	(no_connect
 		(at 213.36 199.39)
@@ -5714,10 +5722,6 @@
 		(uuid "cdb4c170-b474-43d1-bcb9-610e250c4d29")
 	)
 	(no_connect
-		(at 214.63 189.23)
-		(uuid "ce2fc59f-7cdc-41bc-a703-750ed8fc5890")
-	)
-	(no_connect
 		(at 87.63 156.21)
 		(uuid "ce94295d-f9e1-4e42-9d26-b9e941b85989")
 	)
@@ -5730,20 +5734,16 @@
 		(uuid "e2a8ed00-1f18-4d30-95f7-5ec5389628ef")
 	)
 	(no_connect
-		(at 30.48 215.9)
-		(uuid "e6a581f8-dfac-4495-8c37-da461529c34d")
-	)
-	(no_connect
 		(at 92.71 227.33)
 		(uuid "eaac0d48-3550-4f63-8c6a-e0be200d6fcb")
 	)
 	(no_connect
-		(at 30.48 208.28)
-		(uuid "ee74347e-0415-4c40-a552-0ad1cfa3056c")
-	)
-	(no_connect
 		(at 213.36 201.93)
 		(uuid "fb76fffb-1c47-48b3-9449-659cbda9f8ba")
+	)
+	(no_connect
+		(at 92.71 207.01)
+		(uuid "fd811076-c49e-4dfb-903b-fc078813ed44")
 	)
 	(wire
 		(pts
@@ -5934,16 +5934,6 @@
 			(type default)
 		)
 		(uuid "24b1de7d-ce13-4188-806d-85c5eb451f90")
-	)
-	(wire
-		(pts
-			(xy 241.3 128.27) (xy 213.36 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25ba6ef3-cb77-48d0-8dd3-507a0b143965")
 	)
 	(wire
 		(pts
@@ -6227,6 +6217,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 219.71) (xy 92.71 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53853031-b76e-43b9-9a9e-3b9652d66ea7")
+	)
+	(wire
+		(pts
 			(xy 85.09 34.29) (xy 82.55 34.29)
 		)
 		(stroke
@@ -6437,6 +6437,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 255.27) (xy 198.12 265.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79864ac5-aea2-42e2-8754-f8d74e2a4aa2")
+	)
+	(wire
+		(pts
 			(xy 50.8 66.04) (xy 50.8 71.12)
 		)
 		(stroke
@@ -6457,6 +6467,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 252.73) (xy 198.12 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d291f5d-af1b-4bc0-9f1f-9691d2ef271d")
+	)
+	(wire
+		(pts
 			(xy 87.63 158.75) (xy 92.71 158.75)
 		)
 		(stroke
@@ -6464,16 +6484,6 @@
 			(type default)
 		)
 		(uuid "7df87bdc-ad12-4d8c-9b8b-bbb0a5882bd0")
-	)
-	(wire
-		(pts
-			(xy 52.07 214.63) (xy 92.71 214.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "820d5c3e-23a7-4db0-8059-551e0f5b8fca")
 	)
 	(wire
 		(pts
@@ -6537,6 +6547,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 186.69) (xy 92.71 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a4e8a62-9230-48e7-9095-a0f999cc6516")
+	)
+	(wire
+		(pts
 			(xy 50.8 66.04) (xy 68.58 66.04)
 		)
 		(stroke
@@ -6557,7 +6577,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 189.23) (xy 214.63 189.23)
+			(xy 213.36 189.23) (xy 241.3 189.23)
 		)
 		(stroke
 			(width 0)
@@ -6637,16 +6657,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 130.81) (xy 92.71 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95f750cb-c3c4-46d9-8d33-f7ec47a888e6")
-	)
-	(wire
-		(pts
 			(xy 138.43 248.92) (xy 142.24 248.92)
 		)
 		(stroke
@@ -6674,6 +6684,16 @@
 			(type default)
 		)
 		(uuid "9b071ab4-53d9-4c6b-9c9a-d22f631f65c0")
+	)
+	(wire
+		(pts
+			(xy 198.12 265.43) (xy 198.12 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cb02041-47e0-4cc6-b079-ce119228f37b")
 	)
 	(wire
 		(pts
@@ -6847,16 +6867,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 207.01) (xy 92.71 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb35eebe-2010-449e-bd63-9f4e76b97973")
-	)
-	(wire
-		(pts
 			(xy 163.83 251.46) (xy 163.83 254)
 		)
 		(stroke
@@ -6994,6 +7004,16 @@
 			(type default)
 		)
 		(uuid "d0190c44-8461-4584-a7ca-2bf58ce7f147")
+	)
+	(wire
+		(pts
+			(xy 198.12 267.97) (xy 198.12 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d058fef1-e100-436b-905f-dfbb1878711a")
 	)
 	(wire
 		(pts
@@ -7147,6 +7167,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 222.25) (xy 92.71 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efb33d79-1a29-4cfd-8b73-2923897df74e")
+	)
+	(wire
+		(pts
 			(xy 241.3 156.21) (xy 213.36 156.21)
 		)
 		(stroke
@@ -7164,6 +7194,16 @@
 			(type default)
 		)
 		(uuid "f03c4aa6-2241-43a7-9aaa-3c55e504bb10")
+	)
+	(wire
+		(pts
+			(xy 52.07 148.59) (xy 92.71 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1e8dbe7-5b1c-4b3f-8844-0b81bab9c3f4")
 	)
 	(wire
 		(pts
@@ -8561,6 +8601,16 @@
 		)
 		(uuid "10b17a3c-3397-4678-bc15-dc76cb75b3ea")
 	)
+	(label "PB5_GPInterrupt"
+		(at 307.34 167.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1321e128-cace-4883-b0bd-f3c3c8321717")
+	)
 	(label "PB10_GPIO"
 		(at 52.07 217.17 180)
 		(effects
@@ -8570,26 +8620,6 @@
 			(justify right bottom)
 		)
 		(uuid "1463b10c-6545-4ff3-89d0-9c952fc4d836")
-	)
-	(label "PC12_GPIO"
-		(at 52.07 130.81 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "17f5889a-c861-4728-b3d1-954fe0497a77")
-	)
-	(label "PC12_GPIO"
-		(at 307.34 181.61 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "23933f5c-60fc-4f4c-877b-fda51ac41adc")
 	)
 	(label "PB0_GPIO"
 		(at 138.43 248.92 180)
@@ -8611,16 +8641,6 @@
 		)
 		(uuid "3171771c-ba27-4f3c-b5c7-980e3ae14eb6")
 	)
-	(label "PB6_GPInterrupt"
-		(at 307.34 179.07 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3279448b-eecf-4d4a-b8d6-210f1850456d")
-	)
 	(label "PB7_GPIO"
 		(at 52.07 153.67 180)
 		(effects
@@ -8631,8 +8651,18 @@
 		)
 		(uuid "340cec84-b915-43ba-b95b-624ee4dbf332")
 	)
+	(label "PC6_GPIO"
+		(at 241.3 189.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3cb356b4-e496-41df-830a-a936c0de619d")
+	)
 	(label "PB10_GPIO"
-		(at 307.34 167.64 180)
+		(at 307.34 181.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8661,15 +8691,25 @@
 		)
 		(uuid "49471a75-db97-4336-b9ac-e1370d6ece7c")
 	)
-	(label "PA8_GPInterrupt"
-		(at 52.07 214.63 180)
+	(label "PC9_GPIO_EN_VBATT_MEASUREMENT"
+		(at 52.07 186.69 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "4d6d5164-8e65-444f-a20a-8e8beccec2c5")
+		(uuid "545f67c1-d193-4a08-b1d5-67b1de836e0c")
+	)
+	(label "PA15_GPInterrupt"
+		(at 307.34 179.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "564ac7f1-9059-409b-9ba5-ee5170c09731")
 	)
 	(label "PC5_AIN12_IN14"
 		(at 307.34 187.96 180)
@@ -8711,26 +8751,6 @@
 		)
 		(uuid "67e7d4ba-3586-41c8-a74d-7fa1e7538076")
 	)
-	(label "PB6_GPInterrupt"
-		(at 52.07 207.01 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6c19e05b-4bad-4c42-b4b7-8b8b5b04dcdb")
-	)
-	(label "PA8_GPInterrupt"
-		(at 307.34 172.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "79dd2cb3-bc4d-4907-bfed-70225de62468")
-	)
 	(label "PB13_SPI2_SCK"
 		(at 307.34 163.83 180)
 		(effects
@@ -8740,16 +8760,6 @@
 			(justify right bottom)
 		)
 		(uuid "7a225b48-7699-4f96-b105-5d22f184e862")
-	)
-	(label "PB7_GPIO"
-		(at 307.34 191.77 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7b590c07-4b03-4bcc-a10d-acae09aac037")
 	)
 	(label "PA9_GPIO"
 		(at 52.07 212.09 180)
@@ -8810,6 +8820,16 @@
 			(justify left bottom)
 		)
 		(uuid "9964192a-3167-440e-8aa8-d30822a29868")
+	)
+	(label "PB4_GPIO"
+		(at 52.07 219.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9fca324c-14d8-4f91-b7df-ffad81784851")
 	)
 	(label "PA7_ADC12_IN12"
 		(at 52.07 204.47 180)
@@ -8881,6 +8901,16 @@
 		)
 		(uuid "bafb19df-46fd-4574-8d4a-babca3882501")
 	)
+	(label "PA15_GPInterrupt"
+		(at 52.07 148.59 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bb7ea0ca-a49b-48b7-af57-cf449e8d5f73")
+	)
 	(label "PA6_ADC12_IN10"
 		(at 52.07 201.93 180)
 		(effects
@@ -8901,6 +8931,16 @@
 		)
 		(uuid "bfb80ecd-abcc-4a47-9738-e679beceb8f3")
 	)
+	(label "PC6_GPIO"
+		(at 307.34 191.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c1f533ff-4f9a-41a0-b14d-38a13046cb2d")
+	)
 	(label "PA1_ADC12_IN6"
 		(at 241.3 163.83 0)
 		(effects
@@ -8920,16 +8960,6 @@
 			(justify right bottom)
 		)
 		(uuid "c5c4f423-c54a-4229-a116-8b7a48426d4e")
-	)
-	(label "PC11_GPIO"
-		(at 307.34 185.42 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c6b5118c-4347-4fcd-85d3-4b7ffd76dd00")
 	)
 	(label "PC4_ADC12_IN13"
 		(at 241.3 227.33 0)
@@ -8971,6 +9001,16 @@
 		)
 		(uuid "dcfd3f97-964b-4371-886e-264c8829b7a6")
 	)
+	(label "PB5_GPInterrupt"
+		(at 52.07 222.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e26e99fc-53e6-4dee-90c6-d4359573214c")
+	)
 	(label "PA7_ADC12_IN12"
 		(at 307.34 207.01 180)
 		(effects
@@ -8980,6 +9020,16 @@
 			(justify right bottom)
 		)
 		(uuid "e9f6e901-8956-461a-9907-70e15da7cfb8")
+	)
+	(label "PC9_GPIO_EN_VBATT_MEASUREMENT"
+		(at 307.34 185.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "edcb62a3-282e-4652-9507-eeb4d925d6f5")
 	)
 	(label "PB15_SPI2_MOSI"
 		(at 241.3 217.17 0)
@@ -8991,15 +9041,15 @@
 		)
 		(uuid "f3a2187e-07eb-47b2-87dd-3d6e279391ce")
 	)
-	(label "PC11_GPIO"
-		(at 241.3 128.27 0)
+	(label "PB4_GPIO"
+		(at 307.34 172.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "f4d1c16c-f1b1-4715-8cc1-87d9d032fbf3")
+		(uuid "fdf21106-ed69-4411-abac-6250fa95e75b")
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
@@ -9362,6 +9412,74 @@
 			(project "Revision01"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 203.2 267.97 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "1fa90136-cdf2-496e-ac23-aef7ccb95447")
+		(property "Reference" "J21"
+			(at 203.2 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NUCLEO_HEADERS"
+			(at 209.296 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 203.2 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.2 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 203.2 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03f15e3e-880e-468d-8ba6-409dae0a9280")
+		)
+		(pin "2"
+			(uuid "e80c67d9-d9e6-4c21-a959-6e8201dae4d8")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
+					(reference "J21")
 					(unit 1)
 				)
 			)
@@ -10993,7 +11111,7 @@
 				)
 			)
 		)
-		(property "Footprint" "VLS5045EX_151M_H:IND_VLS5045EX-151M-H"
+		(property "Footprint" "VLS5045EX:IND_VLS5045EX-151M-H"
 			(at 194.31 83.82 0)
 			(effects
 				(font
@@ -11123,7 +11241,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DBV0006A-MFG-IPC_A"
+		(property "Footprint" "LMR51603XFDBVR:DBV0006A-MFG-IPC_A"
 			(at 142.24 78.74 0)
 			(effects
 				(font
@@ -11858,6 +11976,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 198.12 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8166c71d-5192-4be0-9411-771514fd1700")
+		(property "Reference" "#PWR085"
+			(at 198.12 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.12 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 198.12 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e80cdfce-1238-4483-a68c-9bed35e84fb9")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
+					(reference "#PWR085")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 332.74 33.02 270)
 		(unit 1)
@@ -12018,7 +12202,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 40.64 76.2 0)
 			(effects
 				(font
@@ -12061,6 +12245,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 203.2 255.27 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "9080354a-3843-4ca6-acdb-44e81fb9b9c2")
+		(property "Reference" "J20"
+			(at 203.2 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NUCLEO_HEADERS"
+			(at 211.074 248.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 203.2 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.2 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 203.2 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ecd5571-dbdd-4ca6-980b-00da2456affe")
+		)
+		(pin "2"
+			(uuid "198f484d-1436-43ca-a55e-6dfd2c2b8adc")
+		)
+		(instances
+			(project "Revision01"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
+					(reference "J20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Battery")
 		(at 45.72 66.04 270)
 		(unit 1)
@@ -12090,7 +12342,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 47.244 66.04 90)
 			(effects
 				(font
@@ -12221,7 +12473,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 50.8 76.2 0)
 			(effects
 				(font
@@ -14751,7 +15003,7 @@
 			)
 		)
 		(pin "AIn_StrainV_1" output
-			(at 311.15 194.31 180)
+			(at 311.15 212.09 180)
 			(uuid "841a2ce4-3282-42c9-b143-2b4bdb294e39")
 			(effects
 				(font
@@ -14761,7 +15013,7 @@
 			)
 		)
 		(pin "AIn_StrainV_2" output
-			(at 311.15 196.85 180)
+			(at 311.15 209.55 180)
 			(uuid "49933dac-3b38-4634-9f00-b7c9b125f3bc")
 			(effects
 				(font
@@ -14771,7 +15023,7 @@
 			)
 		)
 		(pin "AIn_StrainV_3" output
-			(at 311.15 199.39 180)
+			(at 311.15 207.01 180)
 			(uuid "2dd7b7a1-f7eb-4a09-91b3-284468882a90")
 			(effects
 				(font
@@ -14781,7 +15033,7 @@
 			)
 		)
 		(pin "AIn_StrainV_4" output
-			(at 311.15 201.93 180)
+			(at 311.15 204.47 180)
 			(uuid "fc072854-30f4-46ea-801f-a3d286e9f1bf")
 			(effects
 				(font
@@ -14791,7 +15043,7 @@
 			)
 		)
 		(pin "AIn_StrainV_5" output
-			(at 311.15 204.47 180)
+			(at 311.15 201.93 180)
 			(uuid "a654a1ff-3b78-4cb9-b1c1-22f8fc728942")
 			(effects
 				(font
@@ -14801,7 +15053,7 @@
 			)
 		)
 		(pin "AIn_StrainV_6" output
-			(at 311.15 207.01 180)
+			(at 311.15 199.39 180)
 			(uuid "e225f8f6-826f-463b-8a66-542bd8162718")
 			(effects
 				(font
@@ -14811,7 +15063,7 @@
 			)
 		)
 		(pin "AIn_StrainV_7" output
-			(at 311.15 209.55 180)
+			(at 311.15 196.85 180)
 			(uuid "71cd9b06-0505-43f7-9939-9273a4a852da")
 			(effects
 				(font
@@ -14821,7 +15073,7 @@
 			)
 		)
 		(pin "AIn_StrainV_8" output
-			(at 311.15 212.09 180)
+			(at 311.15 194.31 180)
 			(uuid "607d7498-63e7-40d3-bfd7-b74e1e071435")
 			(effects
 				(font

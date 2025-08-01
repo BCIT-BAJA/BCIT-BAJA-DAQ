@@ -1423,13 +1423,6 @@
 			)
 		)
 	)
-	(pad "" np_thru_hole oval
-		(at 22.098 19.05)
-		(size 3.81 3.81)
-		(drill 2.54)
-		(layers "*.Mask")
-		(uuid "0747c628-282a-48dc-8106-62fba2a7dcc6")
-	)
 	(pad "1" thru_hole rect
 		(at 0 0)
 		(size 1.7 1.7)
@@ -1542,6 +1535,14 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "5206a5b6-7e1b-4250-ab98-644cb63b1e88")
+	)
+	(pad "15" thru_hole oval
+		(at 21.9456 19.1008)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "32a03e55-13c9-4080-a948-05ccecd0770d")
 	)
 	(zone
 		(net 0)

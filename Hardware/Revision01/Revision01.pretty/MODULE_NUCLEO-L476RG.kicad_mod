@@ -465,13 +465,14 @@
 		(layers "*.Cu" "*.Mask")
 		(uuid "c8d4dc87-4d0e-4415-bbbe-7b23e6252650")
 	)
-	(pad "CN7_1" thru_hole rect
+	(pad "CN7_1" thru_hole circle
 		(at 0 0)
 		(size 1.524 1.524)
 		(drill 1.016)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
+		(thermal_bridge_angle 90)
 		(uuid "5bf434e2-21f9-4464-ae0e-b46686319b6f")
 	)
 	(pad "CN7_2" thru_hole circle
@@ -528,13 +529,14 @@
 		(solder_mask_margin 0.102)
 		(uuid "e7c13d61-ffb0-4f6a-898b-73b0c82ee56d")
 	)
-	(pad "CN7_8" thru_hole circle
+	(pad "CN7_8" thru_hole rect
 		(at 2.54 7.62)
 		(size 1.524 1.524)
 		(drill 1.016)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
+		(thermal_bridge_angle 45)
 		(uuid "868ea769-c042-43b2-a1da-eefd2099c835")
 	)
 	(pad "CN7_9" thru_hole circle
@@ -627,22 +629,24 @@
 		(solder_mask_margin 0.102)
 		(uuid "bb46f5e3-95c3-4eb1-9a1b-dd4e904f67fc")
 	)
-	(pad "CN7_19" thru_hole circle
+	(pad "CN7_19" thru_hole rect
 		(at 0 22.86)
 		(size 1.524 1.524)
 		(drill 1.016)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
+		(thermal_bridge_angle 45)
 		(uuid "729ac3f1-2873-4743-9b72-d74c9d56444b")
 	)
-	(pad "CN7_20" thru_hole circle
+	(pad "CN7_20" thru_hole rect
 		(at 2.54 22.86)
 		(size 1.524 1.524)
 		(drill 1.016)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
+		(thermal_bridge_angle 45)
 		(uuid "5acb91d5-781a-42d8-b869-666944c6c3d0")
 	)
 	(pad "CN7_21" thru_hole circle
@@ -654,13 +658,14 @@
 		(solder_mask_margin 0.102)
 		(uuid "16215021-812f-41a3-b0a6-4d2a730ae105")
 	)
-	(pad "CN7_22" thru_hole circle
+	(pad "CN7_22" thru_hole rect
 		(at 2.54 25.4)
 		(size 1.524 1.524)
 		(drill 1.016)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
+		(thermal_bridge_angle 45)
 		(uuid "3fafd724-5978-40b5-a101-08b2f544adf8")
 	)
 	(pad "CN7_23" thru_hole circle
@@ -879,13 +884,14 @@
 		(solder_mask_margin 0.102)
 		(uuid "b6153bd2-7268-4441-91c7-7230e8e6506f")
 	)
-	(pad "CN10_9" thru_hole circle
+	(pad "CN10_9" thru_hole rect
 		(at 60.96 10.16)
 		(size 1.524 1.524)
 		(drill 1.016)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
+		(thermal_bridge_angle 45)
 		(uuid "df36564a-4ff6-4fef-9ac4-956ec3b63f95")
 	)
 	(pad "CN10_10" thru_hole circle
@@ -978,13 +984,14 @@
 		(solder_mask_margin 0.102)
 		(uuid "5fb758e4-7e88-4b55-9762-93886febf5db")
 	)
-	(pad "CN10_20" thru_hole circle
+	(pad "CN10_20" thru_hole rect
 		(at 63.5 22.86)
 		(size 1.524 1.524)
 		(drill 1.016)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
+		(thermal_bridge_angle 45)
 		(uuid "c4afc269-b8fe-4375-b721-9335cda24f78")
 	)
 	(pad "CN10_21" thru_hole circle
@@ -1086,13 +1093,14 @@
 		(solder_mask_margin 0.102)
 		(uuid "da5cdfa9-18b3-42a5-88ec-47ededc689f5")
 	)
-	(pad "CN10_32" thru_hole circle
+	(pad "CN10_32" thru_hole rect
 		(at 63.5 38.1)
 		(size 1.524 1.524)
 		(drill 1.016)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.102)
+		(thermal_bridge_angle 45)
 		(uuid "47d68115-5145-4522-af90-9b2654a0d0b0")
 	)
 	(pad "CN10_33" thru_hole circle

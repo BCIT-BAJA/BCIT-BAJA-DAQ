@@ -322,6 +322,123 @@
 		(uuid "f4077e9f-c3f0-4675-9d5e-f9a780292340")
 	)
 	(fp_text user "SPI_SCK"
+		(at -2.54 10.16 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "061697fd-8af5-4f57-9c10-76deda2fc295")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "+3.3V"
+		(at -2.54 0 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "0dedaf52-02cd-4994-af2c-6e32cc218f2a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "G0_DIO0"
+		(at -2.54 7.62 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "0f343cc3-86a2-4e1d-9134-6ee422556ed5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "SPI_CS"
+		(at -2.54 17.78 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "1f6a75aa-0dce-4ac8-a0ce-70b24aea8c9d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "GND"
+		(at -2.54 2.54 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "2ce0ff9e-2a36-4c97-94c5-63fff5592c9e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "SPI_MOSI"
+		(at -2.54 15.24 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "557526b4-d03f-4827-a6e5-b0737a7a16c5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "RST"
+		(at -2.54 20.32 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "576cb9ed-ffdd-492a-bfba-750ddba88aca")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "EN"
+		(at -2.54 5.08 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "5e3d6b5a-93fd-448d-8657-74c18f19b28e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "SPI_MISO"
+		(at -2.54 12.7 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "be5b7877-7f52-4593-bc61-18314a91d6ed")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left)
+		)
+	)
+	(fp_text user "SPI_SCK"
 		(at -1.27 10.16 0)
 		(unlocked yes)
 		(layer "B.SilkS")
@@ -476,7 +593,7 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "1"
+		(gr_text "25.4"
 			(at 12.7 -5.543 0)
 			(layer "User.1")
 			(uuid "117d6bb8-1266-43f6-a5d5-9ff5d03c336e")
@@ -514,7 +631,7 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "1.15"
+		(gr_text "29.21"
 			(at 12.065 -8.262 0)
 			(layer "User.1")
 			(uuid "202a31f4-c1d9-4d25-b11f-1350b9bdda15")
@@ -552,7 +669,7 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "0.84"
+		(gr_text "21.336"
 			(at 29.838 8.382 90)
 			(layer "User.1")
 			(uuid "2b37a00a-5b68-48fe-9bb8-879efbcbf325")
@@ -590,7 +707,7 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "1"
+		(gr_text "25.4"
 			(at -5.214 10.414 90)
 			(layer "User.1")
 			(uuid "49cb6d92-e7a0-4efd-967e-daa5b2356b50")

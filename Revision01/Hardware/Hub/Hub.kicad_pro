@@ -66,23 +66,15 @@
       ],
       "drc_exclusions": [
         [
-          "silk_edge_clearance|101294000|51580000|86ea96de-ce87-4182-886d-85848d475662|b426ba3c-1e79-4734-b245-2885e3ce17d6",
+          "lib_footprint_mismatch|88594000|43526000|f712a470-11e3-45b2-9394-2b7be01b9513|00000000-0000-0000-0000-000000000000",
+          "It does match, weird."
+        ],
+        [
+          "silk_edge_clearance|101294000|51580000|86ea96de-ce87-4182-886d-85848d475662|a2987b8a-1a12-4ae7-bcdd-fe7a9266953f",
           ""
         ],
         [
-          "silk_edge_clearance|47220000|151580000|68850ea9-f62c-4bbc-9fb5-0645caf3968f|269e3b34-4c0a-4175-8403-6ca7bb47d6b6",
-          ""
-        ],
-        [
-          "silk_edge_clearance|49720000|151580000|68850ea9-f62c-4bbc-9fb5-0645caf3968f|3752355f-44bd-4adf-9dde-4aeaf07c3957",
-          ""
-        ],
-        [
-          "silk_edge_clearance|75894000|51580000|86ea96de-ce87-4182-886d-85848d475662|5a3bd517-9b36-4f85-b680-3f6f3823d7c3",
-          ""
-        ],
-        [
-          "silk_over_copper|51320000|146454077|b3a9052d-abf9-40b2-882e-7d4267b6fc8f|00000000-0000-0000-0000-000000000000",
+          "silk_edge_clearance|75894000|51580000|86ea96de-ce87-4182-886d-85848d475662|2ec26ad8-2fc0-42c5-a14c-79b1ca738bf1",
           ""
         ],
         [
@@ -91,14 +83,6 @@
         ],
         [
           "silk_over_copper|89016825|141205080|b8b18739-1a9c-44b6-b61f-d74b312733fe|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "silk_overlap|44133580|151580000|269e3b34-4c0a-4175-8403-6ca7bb47d6b6|56892a26-b390-4e01-abb7-b4f460cfd81d",
-          ""
-        ],
-        [
-          "silk_overlap|44720000|151580000|269e3b34-4c0a-4175-8403-6ca7bb47d6b6|3752355f-44bd-4adf-9dde-4aeaf07c3957",
           ""
         ]
       ],
@@ -308,28 +292,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "pin_to_pin|1752600|787400|f7568b94-8709-4000-9c35-c901defebee2|cc60a08a-657d-4a97-837e-c68a2db1abef|/955cc99e-a129-42cf-abc7-aa99813fdb5f|/955cc99e-a129-42cf-abc7-aa99813fdb5f|/955cc99e-a129-42cf-abc7-aa99813fdb5f",
-        ""
-      ],
-      [
-        "pin_to_pin|1752600|838200|1ae2c7ed-35d6-4d4f-85f8-7020b039e5f1|2ee55540-e5af-462a-8d04-c51ebc9e416d|/955cc99e-a129-42cf-abc7-aa99813fdb5f|/955cc99e-a129-42cf-abc7-aa99813fdb5f|/955cc99e-a129-42cf-abc7-aa99813fdb5f",
-        ""
-      ],
-      [
-        "pin_to_pin|1752600|889000|6ba832c2-f483-4398-8702-52616572d5af|9ffb0f11-aa1e-4f9f-b29b-b64536d79047|/955cc99e-a129-42cf-abc7-aa99813fdb5f|/955cc99e-a129-42cf-abc7-aa99813fdb5f|/955cc99e-a129-42cf-abc7-aa99813fdb5f",
-        ""
-      ],
-      [
-        "pin_to_pin|2806700|1955800|77f5a09a-2bd1-45b1-9eab-edcd7291b6e6|9b975b86-11b7-4d55-880b-6b9fc8fc58bb|/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63|/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63|/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63",
-        ""
-      ],
-      [
-        "pin_to_pin|3403600|1003300|9b975b86-11b7-4d55-880b-6b9fc8fc58bb|77f5a09a-2bd1-45b1-9eab-edcd7291b6e6|/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63|/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63|/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63",
-        "Yes, SPI_MISO are both outputs, but driven at different times."
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -747,7 +710,7 @@
           "group_by": false,
           "label": "Reference",
           "name": "Reference",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -759,19 +722,19 @@
           "group_by": true,
           "label": "Value",
           "name": "Value",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -783,31 +746,19 @@
           "group_by": true,
           "label": "Description",
           "name": "Description",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Detailed Description",
           "name": "Detailed Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "DigiKey Link",
-          "name": "DigiKey Link",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "DigiKey Part Number",
-          "name": "DigiKey Part Number",
           "show": true
         },
         {
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -819,6 +770,18 @@
           "group_by": false,
           "label": "Manufacturer Part Number",
           "name": "Manufacturer Part Number",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey Link",
+          "name": "DigiKey Link",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey Part Number",
+          "name": "DigiKey Part Number",
           "show": true
         },
         {
@@ -844,14 +807,26 @@
           "label": "AliExpress Part Number",
           "name": "AliExpress Part Number",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Link",
+          "name": "Mouser Link",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": true
         }
       ],
-      "filter_string": "",
+      "filter_string": "C9",
       "group_symbols": true,
       "include_excluded_from_bom": false,
       "name": "",
-      "sort_asc": false,
-      "sort_field": "DigiKey Link"
+      "sort_asc": true,
+      "sort_field": "Mouser Part Number"
     },
     "connection_grid_size": 50.0,
     "drawing": {

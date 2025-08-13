@@ -5,7 +5,7 @@
 	(uuid "a5b29326-90ee-4f27-a2a2-b00e145324d7")
 	(paper "User" 431.8 279.4)
 	(lib_symbols
-		(symbol "StrainAmplifierV1:TLV9061SQDBVRQ1"
+		(symbol "Amplifier:TLV9061SQDBVRQ1"
 			(pin_names
 				(offset 0.254)
 			)
@@ -305,328 +305,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "StrainAmplifierV1:root_0_CAP_0805_GenericSchematic-library.SchLib"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic 0805 component"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*CAP_0805*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "root_0_CAP_0805_GenericSchematic-library.SchLib_1_0"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "StrainAmplifierV1:root_0_CONN_01X04_StrainGauge_GenericSchematic-library.SchLib"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*CONN_01X04*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "root_0_CONN_01X04_StrainGauge_GenericSchematic-library.SchLib_1_0"
-				(polyline
-					(pts
-						(xy -2.54 7.62) (xy 2.54 7.62) (xy 2.54 -5.08) (xy -2.54 -5.08) (xy -2.54 7.62)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 5.08) (xy 0 5.08)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin input line
-					(at 7.62 5.08 180)
-					(length 5.08)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 2.54 180)
-					(length 5.08)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 7.62 0 180)
-					(length 5.08)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 -2.54 180)
-					(length 5.08)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "StrainAmplifierV1:root_0_TI-INAXXXXXX8_Altium Content Vault"
+		(symbol "Amplifier:root_0_TI-INAXXXXXX8_Altium Content Vault"
 			(pin_names
 				(hide yes)
 			)
@@ -965,26 +644,24 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "StrainAmplifierV1:root_1_CAP_0805_GenericSchematic-library.SchLib"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Connector:Conn_01x04_Socket"
 			(pin_names
+				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" ""
-				(at 0 0 0)
+			(property "Reference" "J"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "Conn_01x04_Socket"
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1000,7 +677,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1009,7 +686,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic 0805 component"
+			(property "Description" "Generic connector, single row, 01x04, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1018,7 +695,15 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "*CAP_0805*"
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1027,14 +712,23 @@
 					(hide yes)
 				)
 			)
-			(symbol "root_1_CAP_0805_GenericSchematic-library.SchLib_1_0"
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x04_Socket_1_1"
 				(polyline
 					(pts
-						(xy -1.27 1.27) (xy 1.27 1.27)
+						(xy -1.27 2.54) (xy -0.508 2.54)
 					)
 					(stroke
-						(width 0)
-						(type solid)
+						(width 0.1524)
+						(type default)
 					)
 					(fill
 						(type none)
@@ -1042,239 +736,11 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy 1.27 -1.27)
+						(xy -1.27 0) (xy -0.508 0)
 					)
 					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 270)
-					(length 3.81)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 3.81)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "StrainAmplifierV1:root_1_RES_0805_GenericSchematic-library.SchLib"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "RES_0805"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*RES_0805*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "root_1_RES_0805_GenericSchematic-library.SchLib_1_0"
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy -1.27 -2.54) (xy -1.27 2.54) (xy 1.27 2.54) (xy 1.27 -2.54) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "StrainAmplifierV1:root_2_CAP_0805_GenericSchematic-library.SchLib"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic 0805 component"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*CAP_0805*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "root_2_CAP_0805_GenericSchematic-library.SchLib_1_0"
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
+						(width 0.1524)
+						(type default)
 					)
 					(fill
 						(type none)
@@ -1282,236 +748,11 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27)
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
 					)
 					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "StrainAmplifierV1:root_2_RES_0805_GenericSchematic-library.SchLib"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "RES_0805"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*RES_0805*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "root_2_RES_0805_GenericSchematic-library.SchLib_1_0"
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 2.54 -1.27) (xy -2.54 -1.27) (xy -2.54 1.27) (xy 2.54 1.27) (xy 2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "StrainAmplifierV1:root_2_mirrored_CONN_01X03_2.54MM_GenericSchematic-library.SchLib"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*61300311121*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "root_2_mirrored_CONN_01X03_2.54MM_GenericSchematic-library.SchLib_1_0"
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 1.778 2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
+						(width 0.1524)
+						(type default)
 					)
 					(fill
 						(type none)
@@ -1519,68 +760,59 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 1.778 0)
+						(xy -1.27 -5.08) (xy -0.508 -5.08)
 					)
 					(stroke
-						(width 0)
-						(type solid)
+						(width 0.1524)
+						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 1.778 -2.54)
-					)
+				(arc
+					(start 0 2.032)
+					(mid -0.5058 2.54)
+					(end 0 3.048)
 					(stroke
-						(width 0)
-						(type solid)
+						(width 0.1524)
+						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(circle
-					(center 2.54 2.54)
-					(radius 0.762)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
 					(stroke
-						(width 0)
-						(type solid)
+						(width 0.1524)
+						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
-				(circle
-					(center 2.54 0)
-					(radius 0.762)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
 					(stroke
-						(width 0)
-						(type solid)
+						(width 0.1524)
+						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
-				(circle
-					(center 2.54 -2.54)
-					(radius 0.762)
+				(arc
+					(start 0 -5.588)
+					(mid -0.5058 -5.08)
+					(end 0 -4.572)
 					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -5.08) (xy 0 -5.08) (xy 0 5.08) (xy 5.08 5.08) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type solid)
+						(width 0.1524)
+						(type default)
 					)
 					(fill
 						(type none)
@@ -1588,15 +820,15 @@
 				)
 				(pin passive line
 					(at -5.08 2.54 0)
-					(length 5.08)
-					(name "3"
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1606,8 +838,8 @@
 				)
 				(pin passive line
 					(at -5.08 0 0)
-					(length 5.08)
-					(name "2"
+					(length 3.81)
+					(name "Pin_2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1624,8 +856,161 @@
 				)
 				(pin passive line
 					(at -5.08 -2.54 0)
-					(length 5.08)
-					(name "1"
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1633,6 +1018,309 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1869,10 +1557,111 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "350 Ohm strain gauge"
 		(exclude_from_sim no)
-		(at 127.508 144.272 0)
+		(at 95.25 105.41 0)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -1880,21 +1669,126 @@
 		)
 		(uuid "ac93fbfa-9304-4ace-aff6-c671622981ad")
 	)
-	(junction
-		(at 217.17 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1c01c31f-4f2e-44a8-ac98-4dfd29eaf388")
+	(text "The series R resistor should be right after the amplifier, \nto current limit a GND short on the cable.\n\nThe short circuit should be limited to what the INA333 can source, ~10mA.\n\n5V / 10mA = 500 ohm."
+		(exclude_from_sim no)
+		(at 227.33 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fe80b7c0-03f0-41bd-a868-5568c58eabef")
 	)
 	(junction
-		(at 200.66 176.53)
+		(at 254 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "73406e9c-f1d5-416c-bd3a-5da537ba2555")
+		(uuid "1f4cc3ed-d7b0-41d9-9088-58cecbde70b6")
+	)
+	(junction
+		(at 163.83 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9fb021d2-fe56-48c0-a6c4-874e7d808d26")
+	)
+	(junction
+		(at 196.85 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a67ff0cf-eaa7-4f14-a4e4-2f808369ea77")
+	)
+	(junction
+		(at 163.83 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b40b9848-ff7f-4712-a37f-4ebe6bf92b23")
+	)
+	(junction
+		(at 142.24 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eeb07947-b363-4be8-a215-d38d128b7d6d")
+	)
+	(junction
+		(at 207.01 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8199fa5-6825-43cb-b7e8-78dc09fa15e1")
 	)
 	(wire
 		(pts
-			(xy 217.17 165.1) (xy 214.63 165.1)
+			(xy 163.83 185.42) (xy 166.37 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1140eafa-1914-4551-ae48-a0f70958eb96")
+	)
+	(wire
+		(pts
+			(xy 189.23 116.84) (xy 189.23 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14526a81-f8bc-495f-bb69-e8703b83532d")
+	)
+	(wire
+		(pts
+			(xy 163.83 149.86) (xy 163.83 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15e0bf77-2fc8-4e86-a282-69e9c535c4cc")
+	)
+	(wire
+		(pts
+			(xy 142.24 172.72) (xy 142.24 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d4c95e5-60f4-4f5a-83b7-79757b41f3ef")
+	)
+	(wire
+		(pts
+			(xy 196.85 140.97) (xy 196.85 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25cc9b7e-1886-4cb0-b295-b4d0a0b60bb1")
+	)
+	(wire
+		(pts
+			(xy 163.83 151.13) (xy 171.45 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "305b885d-f96e-4203-8e0d-ce7623f1eb3d")
+	)
+	(wire
+		(pts
+			(xy 184.15 124.46) (xy 196.85 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32881c89-bdf7-4aab-9a62-c4d83cf37079")
+	)
+	(wire
+		(pts
+			(xy 196.85 168.91) (xy 177.8 168.91)
 		)
 		(stroke
 			(width 0)
@@ -1904,27 +1798,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 128.27) (xy 217.17 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "394333c7-715d-4e55-8c06-a65368fdf85a")
-	)
-	(wire
-		(pts
-			(xy 217.17 143.51) (xy 217.17 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a45fd8e-8162-4a20-822f-6e617f9cf80d")
-	)
-	(wire
-		(pts
-			(xy 147.32 140.97) (xy 168.91 140.97)
+			(xy 142.24 132.08) (xy 147.32 132.08)
 		)
 		(stroke
 			(width 0)
@@ -1934,17 +1808,37 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 135.89) (xy 254 135.89)
+			(xy 142.24 168.91) (xy 142.24 172.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "41f709db-205f-4942-b5a2-73ea87121849")
+		(uuid "44d84db9-794f-47e8-b943-b9dcb6c456a1")
 	)
 	(wire
 		(pts
-			(xy 254 119.38) (xy 254 133.35)
+			(xy 189.23 116.84) (xy 191.77 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "459711c7-9709-401f-8d1b-078a7d167a0c")
+	)
+	(wire
+		(pts
+			(xy 142.24 154.94) (xy 142.24 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "464e595d-c186-4a93-aaa4-60970e1ef573")
+	)
+	(wire
+		(pts
+			(xy 254 102.87) (xy 254 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1954,7 +1848,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 138.43) (xy 196.85 138.43)
+			(xy 142.24 129.54) (xy 179.07 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1964,73 +1858,93 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 176.53) (xy 203.2 175.26)
+			(xy 196.85 134.62) (xy 196.85 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "522547c2-081a-48c0-96d8-53310492363a")
+		(uuid "5281a4dd-775c-4eaa-92ae-719608ada838")
 	)
 	(wire
 		(pts
-			(xy 217.17 156.21) (xy 217.17 165.1)
+			(xy 163.83 187.96) (xy 163.83 185.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "62cd21de-350d-4b11-916b-0a737848a9bb")
+		(uuid "5d74b279-722a-4d55-85c9-8226e719b3d3")
 	)
 	(wire
 		(pts
-			(xy 207.01 138.43) (xy 217.17 138.43)
+			(xy 238.76 127) (xy 254 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6bce6e70-7d7f-4fa6-8c13-ecb812abc496")
+		(uuid "810f20dd-5669-42dc-bcb6-26797e0acadb")
 	)
 	(wire
 		(pts
-			(xy 173.99 167.64) (xy 173.99 168.91)
+			(xy 184.15 129.54) (xy 196.85 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6e3df448-1765-4bc1-bced-79771f9f01cb")
+		(uuid "88252d85-7cc3-4e50-bbae-c77073f52d06")
 	)
 	(wire
 		(pts
-			(xy 227.33 125.73) (xy 227.33 116.84)
+			(xy 207.01 106.68) (xy 214.63 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "912b0822-2cd0-4d4a-b53a-355a1ea72d0b")
+		(uuid "8b9f6250-2ee6-40f5-aa67-85bc151c76c8")
 	)
 	(wire
 		(pts
-			(xy 200.66 148.59) (xy 200.66 153.67)
+			(xy 166.37 179.07) (xy 166.37 185.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "92fce289-0c0e-4672-ab68-f3e880bd6e3d")
+		(uuid "940dc3af-9ff8-4e03-9d11-0b11088efc5d")
 	)
 	(wire
 		(pts
-			(xy 217.17 125.73) (xy 217.17 118.11)
+			(xy 142.24 181.61) (xy 142.24 189.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a1eacad0-df4c-428e-9c91-fdb2b7eb77a4")
+		(uuid "991d8b6a-7eaf-454a-bc36-c6a5b2a2fde7")
+	)
+	(wire
+		(pts
+			(xy 248.92 106.68) (xy 254 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3606d25-f2d0-4ba4-b5f7-6f196a0fd45d")
+	)
+	(wire
+		(pts
+			(xy 248.92 129.54) (xy 248.92 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6b20f82-e7b5-4783-a8b4-81cb68885ef0")
 	)
 	(polyline
 		(pts
@@ -2045,7 +1959,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 135.89) (xy 165.1 135.89)
+			(xy 142.24 127) (xy 147.32 127)
 		)
 		(stroke
 			(width 0)
@@ -2055,7 +1969,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 156.21) (xy 217.17 156.21)
+			(xy 151.13 140.97) (xy 196.85 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2065,27 +1979,37 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 133.35) (xy 217.17 133.35)
+			(xy 189.23 119.38) (xy 196.85 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c171d8af-9ea3-4dd0-9448-ace9fdd3adff")
+		(uuid "cb0647cf-48ef-4f30-bfa9-29be8acb1a77")
 	)
 	(wire
 		(pts
-			(xy 217.17 118.11) (xy 212.09 118.11)
+			(xy 163.83 185.42) (xy 163.83 180.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d77caebf-9a38-450d-bdf3-a4fc50fb05a3")
+		(uuid "cf14cc74-9ffe-4555-ac21-c912a2f71cf0")
 	)
 	(wire
 		(pts
-			(xy 147.32 133.35) (xy 196.85 133.35)
+			(xy 254 106.68) (xy 254 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbaf0f5b-a1af-4dae-8a69-7d59ca00aa96")
+	)
+	(wire
+		(pts
+			(xy 142.24 124.46) (xy 179.07 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2095,7 +2019,37 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 168.91) (xy 187.96 168.91)
+			(xy 248.92 129.54) (xy 254 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e79a283d-484b-4b70-b711-1818abc9af1b")
+	)
+	(wire
+		(pts
+			(xy 163.83 151.13) (xy 163.83 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7e034a5-4356-4677-ba47-c16f06f5a863")
+	)
+	(wire
+		(pts
+			(xy 207.01 106.68) (xy 207.01 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f86ff69b-5655-4c1d-94ef-f4fdcb0ec508")
+	)
+	(wire
+		(pts
+			(xy 142.24 172.72) (xy 151.13 172.72)
 		)
 		(stroke
 			(width 0)
@@ -2105,7 +2059,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 162.56) (xy 187.96 156.21)
+			(xy 151.13 166.37) (xy 151.13 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2115,17 +2069,27 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 176.53) (xy 203.2 176.53)
+			(xy 217.17 127) (xy 233.68 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fae71364-bac0-447c-9814-592f9a867ec7")
+		(uuid "fe4bfa11-5678-4c7c-8589-8dc7b07c563b")
+	)
+	(wire
+		(pts
+			(xy 207.01 106.68) (xy 207.01 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe995be4-033d-42a1-81c2-6224556f3d47")
 	)
 	(image
-		(at 129.286 136.398)
-		(scale 0.0255308)
+		(at 97.536 127.508)
+		(scale 0.0873801)
 		(uuid "42251a27-05d5-4af7-82a8-77145f8cea8a")
 		(data "iVBORw0KGgoAAAANSUhEUgAABsgAAAbjCAIAAADENDNFAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
 			"AA50AAAOdAFrJLPWAAAgAElEQVR4nOzdW4xl113v+9//P+aca1VVV3W375fEdhLjOMTqhCSbOISE"
@@ -16523,11 +16487,47 @@
 			"AAAAAAAAwCMjWAQAAAAAAADwyAgWAQAAAAAAADwygkUAAAAAAAAAj4xgEQAAAAAAAMAjI1gEAAAA"
 			"AAAA8MgIFvezh7EAAACFSURBVAEAAAAAAAA8MoJFAAAAAAAAAI+MYBEAAAAAAADAIyNYBAAAAAAA"
 			"APDICBYBAAAAAAAAPDKCRQAAAAAAAACPjGARAAAAAAAAwCMjWAQAAAAAAADwyAgWAQAAAAAAADwy"
-			"gkUAAAAAAAAAj4xgEQAAAAAAAMAjI1gEAAAAAAAA8Mj+f6/THmP4cMcbAAAAAElFTkSuQmCC"
+			"gkUAAAAAAAAAj4xgEQAAAAAAAMAjI1gEAAAAAAAA8Mj+f6/THmP4cMcbAAAAAElFTkSuQmCCMAAw"
+			"AHUAYQBtAFkASQBaAHEASABhAGwAOAAxAEcAOQA0AGgARwBKAEsAMwBTAEIARQBxAHoASwAxAFYA"
+			"VgBBAE0AegBPADAAbQB2AEkAbABDAEcAaABSAEkAQQBKAEUAMwBYAHAAcQB1AHUAUQBsAEsAMwBh"
+			"AGUAcgA2ADIAbwBTAGEAcQBZAFQAUQAvAFkAbgByAGUAYQBGAGcAWABBAEsAMwBjAG8AUgB4AEkA"
+			"TQA2AG8AbQByAEsAYQBBAFcASgBaADkAbgBJAHMAVABjAFcAUQBzAGIAaQBtAE4ANgBYAFoAMQBk"
+			"AEwAdgBYAE0AVwBoAG0ASQBYAEMAYgBXAGMATQBkAE8ASAAwAFIARwBOAHAAMgBQAHoAWgBOAGsA"
+			"dwB1AFgASAAzAGwAYQBvAFkAUwB4AGMASwAwACsAbwBEAEEAQwBYADUAYgA5AGoAWgBpAHQAUgBi"
+			"AE8ATQBMAEoAcQBoADYAbwBjAFQAUABtAGQATgB2AGwAUwBJAFcAWQBaAFYAUwByAHMAVwBpAG0A"
+			"egBlAEUAdgBQAGUAbQAxADUAVgBiAEUAdQAwAGEAUwBWAE0ATABEAEEARABpAHgARQBiAFUAVgBo"
+			"AGsARwBqAHAAcQBRADYAVwBGAEMAQgB1AEIAegBZAFgAWgBmAEMAawBYAEEAOQA4ACsAUgBUAHQA"
+			"VAB0AEMARQBRAHYAVwBHAGwAZQBXAEQAbABWAEQAQQBSAEIASQBxAGMAegBHAFIAdABvADIAbQBn"
+			"AEEAWAAxAFEARABEADIARwBIAGoAbwBvAEEAeAAwAGEAMABHAEIAdABwAGoAeABWAFIAawA0AHkA"
+			"agA2AHAASQBZAGQARgBhAHMAbwBpAHgASgBrAEIAdABKAEIAKwB5ADQATwBVAHMAOABQAEIAWQBr"
+			"AEwASQBQAEUAawBNAHcAVQBOAFcAUwBuAFYANQB3AFMAQgB0AEQAVABJADQAYwBLAHMAbgBHAFYA"
+			"OQBxAEgAcQBQAGcAcwBLAGUASgBXAG4ARQByAEUASQBJAFEAegBFADUAZwBrAEMAQQB4AHAAdQBq"
+			"AFUAMQBCAEIAMQBaAEoAWQBrADUAeABRAGkAbgBKAE8AdwB6ADMAegAxAGwAUAA3AGYAeABrAFMA"
+			"WAB0ADEANgBUAGoATgBVAE8AVABLAEoAVgBnAE4AbwA3AGkATgBBAFEAcQBBAEkAdwBrAGgAWgBL"
+			"ADIAVQBtAEsAWQBXAHIAcgBZAGwAUgBLAHAATABIAEoARABxAFQAQwB0ADEAQQA2AEMARQBVAGgA"
+			"TQBtAEIAbwBCAGEAQQB6ADEATAA4AHkAQQBGAE0AbwAxAFEAWgBwAFkAZgBIAHAAVAB3AGsAdABt"
+			"AGIAbwBJADAAaQBvAG8ATABGAE0AMABBAEQASgBWAFMASQBTAGoARgBtAHMAKwA4AHMAawBqAHEA"
+			"bwB3AEMAYQBYAE8AMAB0AEEAMwB1AFcASQBDAFMATABDADIAbAA1AHoAcQBoAGQARwBXAEUAdwBO"
+			"AFQAVgBUADAANQBGAEkANgBJAEQAMABuAGMAVgBxAEcAMABjADQAeQBSAGcAcABGAEMAWgBwAFMA"
+			"awBnADEAegBJAEsAbwBUAEMARABGAGYAQwBiAHoAagArAFQAZgBrAHMARABQADIARgA4AEkATQBz"
+			"ADQAbQAwAFQALwBGAHgATwBMAEcARQAxAFUAeQBtAHkAOABqAEMATQB6ADUANwBDAE8ASgBUAG0A"
+			"UABLAEwARABYAEMAUgBNADAAcABuAE8AVQA4ADcAcgBHAHkAagBBAFMARgB1AFIAZABGAFcARABu"
+			"AEgAbQBVADIAcwBaAEkAZgBFAHgAUQBNAFMAKwBnAGsAbgBkAEsAUQBZAHEATQBuAGIAZwBLAGsA"
+			"UABnADgANQBEAHoAQwBLAEoATAA0AEwAWABZAHgAVwBOAGsARwBaAE0AUgBzAGMARQB6ADgAVwBu"
+			"AEwAVAAwAGkAMQBZAFAAagBtAEEAWQB0AEwAcwBlAGEATwAxAGcAaQBEAHkAWgBTAGMAOAB5ADMA"
+			"eABYAHEAeABHAE4AcwBsAFUAcAByAGoAegBYAE4AUQBpAGYAaAB0AEsAbQBJAHUARgBKAEcANwBq"
+			"AGgAbQBWAEMASQBRAEkAQQB4AEYAZwBBAFUASABoADQANwBNAHcAVABWAE4ANQBJAG8AbgA4AFgA"
+			"MQBGAHgARABVAEYAbABFACsAagBnAEwASQBTAGgAeAA4AHAAaAA2AE4ASAAzAGIAcgBuAGkANABF"
+			"AFcARABVAHgATwByADgATAArAEMARwB1AFcATgBEAEkASwBTAHIAZwB5AEQASgBBAEoAMgBQAEgA"
+			"eABjADUAbQBVAEMATgAwADIAVwA4ADMASABNAGoAbgBWAFIAcABxAC8AeQBGAHQAVQBaADUAZABX"
+			"AG8AeAB0AFMAOQBkAEwAcQBRAFAAMgBrAEYATABiAGwAbwByAGgAQwB1AFIAeABmAGMATABEAHMA"
+			"dABtAGQAdABRAFIAWgBSAFoAYQBCADMANABBADYAbwBhAFMANQBUAGIAcQB4AFUARABpADcAaQB6"
+			"AEEANABEAFkAQQBSAGsAWABTAEsAMgByAEsANgBPAEsAZQBSAE8AQgBaAFIATQBoAFgAWgAwAEcA"
+			"UQBZAGcAawAxADAAawA1AEwAOQAxADgAQgBJAFgAagBoAFQAZgBXAHkARQA0AE8AYQBUAA=="
 		)
 	)
 	(label "strainAIN_D-"
-		(at 178.816 133.35 0)
+		(at 158.496 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16537,7 +16537,7 @@
 		(uuid "05a3f213-d510-43b8-b426-e189a5eb18ae")
 	)
 	(label "strainAIN_D+"
-		(at 179.07 138.43 0)
+		(at 158.75 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16547,75 +16547,8 @@
 		(uuid "a8d382f6-c597-4197-9353-c04ef803af81")
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 210.82 148.59 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "007cd29e-efdb-4294-a42d-75d35503a259")
-		(property "Reference" "#PWR012"
-			(at 217.17 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 214.63 148.5899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 210.82 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 210.82 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "43dd00c4-96ca-49e7-b6cf-67f890554f40")
-		)
-		(instances
-			(project "StrainAmplifierV1"
-				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
-		(at 168.91 140.97 270)
+		(at 147.32 132.08 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16624,7 +16557,7 @@
 		(fields_autoplaced yes)
 		(uuid "034b02cb-ff32-4f93-96c6-cf3a55fd9870")
 		(property "Reference" "#PWR03"
-			(at 165.1 140.97 0)
+			(at 143.51 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16633,7 +16566,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 172.72 140.9699 90)
+			(at 151.13 132.0799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16642,7 +16575,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 140.97 0)
+			(at 147.32 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16651,7 +16584,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 140.97 0)
+			(at 147.32 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16660,7 +16593,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 168.91 140.97 0)
+			(at 147.32 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16682,255 +16615,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 254 138.43 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "040eed5e-1bc1-40d8-8c47-42df4e256a22")
-		(property "Reference" "#PWR010"
-			(at 247.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 250.19 138.4299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 254 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 254 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 254 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6ac0e336-736e-46d8-a95f-7f22fdf896cc")
-		)
-		(instances
-			(project "StrainAmplifierV1"
-				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "StrainAmplifierV1:root_0_CAP_0805_GenericSchematic-library.SchLib")
-		(at 232.41 116.84 0)
-		(unit 0)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0dedd39e-5fe3-450f-8f11-0064f3a48c4b")
-		(property "Reference" "C1"
-			(at 230.886 115.316 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 228.346 120.904 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic 0805 component"
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "YAGEO"
-			(at 231.14 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART NUMBER" "CC0805JRNPO9BN250"
-			(at 231.14 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "VOLTAGE RATING" "50"
-			(at 231.14 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "DISTRIBUTOR LINK" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 231.14 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "ARROW PART NUMBER" ""
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ARROW PRICE/STOCK" ""
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DATASHEET LINK" ""
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "HEIGHT" ""
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_NAME" ""
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PART NUMBER" ""
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PRICE/STOCK" ""
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c8cc46d3-d4cd-400b-bfb7-84617e5b4185")
-		)
-		(pin "2"
-			(uuid "1dec3f01-d107-4e06-9957-5311930f1fb8")
-		)
-		(instances
-			(project ""
-				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
-					(reference "C1")
-					(unit 0)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 200.66 176.53 0)
+		(at 163.83 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16939,7 +16624,7 @@
 		(fields_autoplaced yes)
 		(uuid "125da2b4-aca3-4a9d-a142-88da958d335c")
 		(property "Reference" "#PWR06"
-			(at 200.66 182.88 0)
+			(at 163.83 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16948,15 +16633,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 200.66 181.61 0)
+			(at 166.37 189.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 176.53 0)
+			(at 163.83 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16965,7 +16651,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 176.53 0)
+			(at 163.83 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16974,7 +16660,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 200.66 176.53 0)
+			(at 163.83 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16995,34 +16681,34 @@
 		)
 	)
 	(symbol
-		(lib_id "StrainAmplifierV1:root_0_CONN_01X04_StrainGauge_GenericSchematic-library.SchLib")
-		(at 139.7 138.43 0)
+		(lib_id "power:GND")
+		(at 214.63 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "279110b7-ef81-4f4e-b6cd-48e66f40f1e5")
-		(property "Reference" "S1"
-			(at 138.684 130.556 0)
+		(fields_autoplaced yes)
+		(uuid "12d1055c-6f46-442b-a2c1-5b5b1e16821b")
+		(property "Reference" "#PWR012"
+			(at 214.63 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(hide yes)
 			)
 		)
-		(property "Value" "CONN_01X04_StrainGauge"
-			(at 136.906 127.508 0)
+		(property "Value" "GND"
+			(at 214.63 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Footprint" "StrainAmplifierV1:CONN_01X04"
-			(at 139.7 138.43 0)
+		(property "Footprint" ""
+			(at 214.63 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17031,7 +16717,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 138.43 0)
+			(at 214.63 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17039,8 +16725,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 139.7 138.43 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 214.63 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17048,8 +16734,46 @@
 				(hide yes)
 			)
 		)
-		(property "ARROW PART NUMBER" ""
-			(at 139.7 138.43 0)
+		(pin "1"
+			(uuid "0c051d90-5892-4a8e-a80a-b19ea872961f")
+		)
+		(instances
+			(project "Amplifier"
+				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 137.16 129.54 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "279110b7-ef81-4f4e-b6cd-48e66f40f1e5")
+		(property "Reference" "S1"
+			(at 137.795 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CONN_01X04_StrainGauge"
+			(at 137.795 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Amplifier:CONN_01X04"
+			(at 137.16 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17057,8 +16781,8 @@
 				(hide yes)
 			)
 		)
-		(property "ARROW PRICE/STOCK" ""
-			(at 139.7 138.43 0)
+		(property "Datasheet" "~"
+			(at 137.16 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17066,53 +16790,8 @@
 				(hide yes)
 			)
 		)
-		(property "DATASHEET LINK" ""
-			(at 139.7 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "HEIGHT" ""
-			(at 139.7 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_NAME" ""
-			(at 139.7 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 139.7 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PART NUMBER" ""
-			(at 139.7 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PRICE/STOCK" ""
-			(at 139.7 138.43 0)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 137.16 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17142,215 +16821,35 @@
 		)
 	)
 	(symbol
-		(lib_id "StrainAmplifierV1:root_1_CAP_0805_GenericSchematic-library.SchLib")
-		(at 147.32 146.05 0)
-		(unit 0)
+		(lib_id "Device:C_Small")
+		(at 248.92 109.22 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2e5cb583-ad01-42cb-9a31-c35b7ed6cf1a")
-		(property "Reference" "C3"
-			(at 148.844 147.066 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 148.844 149.606 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 147.32 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.32 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic 0805 component"
-			(at 147.32 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "YAGEO"
-			(at 145.796 140.462 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART NUMBER" "CC0805JRNPO9BN250"
-			(at 145.796 140.462 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "VOLTAGE RATING" "50"
-			(at 145.796 140.462 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "DISTRIBUTOR LINK" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 145.796 140.462 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "ARROW PART NUMBER" ""
-			(at 147.32 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ARROW PRICE/STOCK" ""
-			(at 147.32 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DATASHEET LINK" ""
-			(at 147.32 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "HEIGHT" ""
-			(at 147.32 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_NAME" ""
-			(at 147.32 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 147.32 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PART NUMBER" ""
-			(at 147.32 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PRICE/STOCK" ""
-			(at 147.32 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "94e88d26-512c-431c-8693-2481ce0f5ef1")
-		)
-		(pin "1"
-			(uuid "b758c449-4630-4226-b5a5-7c0ce0290434")
-		)
-		(instances
-			(project ""
-				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
-					(reference "C3")
-					(unit 0)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "StrainAmplifierV1:root_2_CAP_0805_GenericSchematic-library.SchLib")
-		(at 259.08 119.38 0)
-		(unit 0)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "31b5aa86-56b7-4430-a9c1-f3e54b6de993")
 		(property "Reference" "C4"
-			(at 257.556 117.856 0)
+			(at 246.38 107.9562 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify right)
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 257.556 123.444 0)
+			(at 246.38 110.4962 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 259.08 119.38 0)
+			(at 248.92 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17358,8 +16857,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 259.08 119.38 0)
+		(property "Datasheet" "~"
+			(at 248.92 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17367,120 +16866,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic 0805 component"
-			(at 259.08 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "YAGEO"
-			(at 253.492 117.856 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART NUMBER" "CC0805JRNPO9BN250"
-			(at 253.492 117.856 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "VOLTAGE RATING" "50"
-			(at 253.492 117.856 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "DISTRIBUTOR LINK" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 253.492 117.856 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "ARROW PART NUMBER" ""
-			(at 259.08 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ARROW PRICE/STOCK" ""
-			(at 259.08 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DATASHEET LINK" ""
-			(at 259.08 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "HEIGHT" ""
-			(at 259.08 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_NAME" ""
-			(at 259.08 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 259.08 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PART NUMBER" ""
-			(at 259.08 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PRICE/STOCK" ""
-			(at 259.08 119.38 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 248.92 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17498,14 +16885,14 @@
 			(project ""
 				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
 					(reference "C4")
-					(unit 0)
+					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 227.33 146.05 0)
+		(at 207.01 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17514,7 +16901,7 @@
 		(fields_autoplaced yes)
 		(uuid "3eb93b7e-a66a-4064-abe7-ab6823040ff3")
 		(property "Reference" "#PWR07"
-			(at 227.33 152.4 0)
+			(at 207.01 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17523,7 +16910,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 227.33 151.13 0)
+			(at 207.01 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17531,7 +16918,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 227.33 146.05 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17540,7 +16927,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 146.05 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17549,7 +16936,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 227.33 146.05 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17570,8 +16957,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 214.63 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "417377bf-020c-4575-89f4-a77e5bac7cff")
+		(property "Reference" "C5"
+			(at 217.17 107.9562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 217.17 110.4962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 214.63 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 214.63 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 214.63 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "45bc0e6b-d572-4406-8c23-f0ea327fd17e")
+		)
+		(pin "1"
+			(uuid "d62f38aa-3849-40ff-b935-0ea697202ca5")
+		)
+		(instances
+			(project "Amplifier"
+				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
-		(at 254 119.38 0)
+		(at 254 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17579,7 +17036,7 @@
 		(dnp no)
 		(uuid "48206384-5f67-4aaa-a8e9-fddde6f2b657")
 		(property "Reference" "#PWR014"
-			(at 254 123.19 0)
+			(at 254 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17588,7 +17045,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 253.746 115.316 0)
+			(at 253.746 98.806 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17596,7 +17053,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 254 119.38 0)
+			(at 254 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17605,7 +17062,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254 119.38 0)
+			(at 254 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17614,7 +17071,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 254 119.38 0)
+			(at 254 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17635,34 +17092,35 @@
 		)
 	)
 	(symbol
-		(lib_id "StrainAmplifierV1:root_1_RES_0805_GenericSchematic-library.SchLib")
-		(at 173.99 162.56 0)
+		(lib_id "Device:R_Small")
+		(at 142.24 166.37 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "546d93e5-49a4-4276-bd59-d79691e55d57")
 		(property "Reference" "R4"
-			(at 168.91 162.814 0)
+			(at 139.7 165.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify right)
 			)
 		)
 		(property "Value" "200K +-0.1%"
-			(at 159.512 165.1 0)
+			(at 139.7 167.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 173.99 162.56 0)
+			(at 142.24 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17670,8 +17128,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 173.99 162.56 0)
+		(property "Datasheet" "~"
+			(at 142.24 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17679,110 +17137,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES_0805"
-			(at 173.99 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DISTRIBUTOR LINK" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RN73R2ATTD2003B25/10027580"
-			(at 172.466 156.972 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART NUMBER" "RN73R2ATTD2003B25"
-			(at 172.466 156.972 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "KOA Speer Electronics, Inc."
-			(at 172.466 156.972 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "ARROW PART NUMBER" ""
-			(at 173.99 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ARROW PRICE/STOCK" ""
-			(at 173.99 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DATASHEET LINK" ""
-			(at 173.99 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "HEIGHT" ""
-			(at 173.99 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_NAME" ""
-			(at 173.99 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 173.99 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PART NUMBER" ""
-			(at 173.99 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PRICE/STOCK" ""
-			(at 173.99 162.56 0)
+		(property "Description" "Resistor, small symbol"
+			(at 142.24 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17806,34 +17162,33 @@
 		)
 	)
 	(symbol
-		(lib_id "StrainAmplifierV1:root_2_RES_0805_GenericSchematic-library.SchLib")
-		(at 201.93 133.35 0)
+		(lib_id "Device:R_Small")
+		(at 181.61 124.46 90)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "553830f7-e417-430f-9f45-0be470008212")
 		(property "Reference" "R2"
-			(at 193.548 132.334 0)
+			(at 181.61 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
 		(property "Value" "1K +-0.1%"
-			(at 198.882 132.08 0)
+			(at 181.61 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 201.93 133.35 0)
+			(at 181.61 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17841,8 +17196,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 201.93 133.35 0)
+		(property "Datasheet" "~"
+			(at 181.61 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17850,110 +17205,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES_0805"
-			(at 201.93 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DISTRIBUTOR LINK" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNCS0805BKE1K00/1800073"
-			(at 196.342 131.826 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART NUMBER" "RNCS0805BKE1K00"
-			(at 196.342 131.826 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Stackpole Electronics Inc"
-			(at 196.342 131.826 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "ARROW PART NUMBER" ""
-			(at 201.93 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ARROW PRICE/STOCK" ""
-			(at 201.93 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DATASHEET LINK" ""
-			(at 201.93 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "HEIGHT" ""
-			(at 201.93 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_NAME" ""
-			(at 201.93 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 201.93 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PART NUMBER" ""
-			(at 201.93 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PRICE/STOCK" ""
-			(at 201.93 133.35 0)
+		(property "Description" "Resistor, small symbol"
+			(at 181.61 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17977,34 +17230,35 @@
 		)
 	)
 	(symbol
-		(lib_id "StrainAmplifierV1:root_1_RES_0805_GenericSchematic-library.SchLib")
-		(at 173.99 173.99 0)
-		(unit 0)
+		(lib_id "power:GND")
+		(at 403.86 20.32 270)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5ea0b723-ed03-442f-a6bb-33c6f33b8bbb")
-		(property "Reference" "R5"
-			(at 168.91 174.244 0)
+		(fields_autoplaced yes)
+		(uuid "57a3b217-3bd1-446a-b12c-bfbeca01d55d")
+		(property "Reference" "#PWR022"
+			(at 397.51 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(hide yes)
 			)
 		)
-		(property "Value" "100K +-0.1%"
-			(at 159.766 176.276 0)
+		(property "Value" "GND"
+			(at 400.05 20.3199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 173.99 173.99 0)
+		(property "Footprint" ""
+			(at 403.86 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18013,7 +17267,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 173.99 0)
+			(at 403.86 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18021,8 +17275,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES_0805"
-			(at 173.99 173.99 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 403.86 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18030,56 +17284,48 @@
 				(hide yes)
 			)
 		)
-		(property "DISTRIBUTOR LINK" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNCS0805BKE100K/1800066"
-			(at 172.466 168.402 0)
+		(pin "1"
+			(uuid "ff9fbadf-260f-4b8a-adcf-1d5c65df0a69")
+		)
+		(instances
+			(project "Amplifier"
+				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 142.24 179.07 0)
+		(unit 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ea0b723-ed03-442f-a6bb-33c6f33b8bbb")
+		(property "Reference" "R5"
+			(at 139.7 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
-				(hide yes)
+				(justify right)
 			)
 		)
-		(property "MANUFACTURER PART NUMBER" "RNCS0805BKE100K"
-			(at 172.466 168.402 0)
+		(property "Value" "100K +-0.1%"
+			(at 139.7 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
-				(hide yes)
+				(justify right)
 			)
 		)
-		(property "MANUFACTURER" "Stackpole Electronics Inc"
-			(at 172.466 168.402 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "ARROW PART NUMBER" ""
-			(at 173.99 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ARROW PRICE/STOCK" ""
-			(at 173.99 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DATASHEET LINK" ""
-			(at 173.99 173.99 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 142.24 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18087,8 +17333,8 @@
 				(hide yes)
 			)
 		)
-		(property "HEIGHT" ""
-			(at 173.99 173.99 0)
+		(property "Datasheet" "~"
+			(at 142.24 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18096,35 +17342,8 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER_NAME" ""
-			(at 173.99 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 173.99 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PART NUMBER" ""
-			(at 173.99 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PRICE/STOCK" ""
-			(at 173.99 173.99 0)
+		(property "Description" "Resistor, small symbol"
+			(at 142.24 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18149,7 +17368,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 227.33 116.84 0)
+		(at 207.01 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18158,7 +17377,7 @@
 		(fields_autoplaced yes)
 		(uuid "5eb8b63a-3bc5-4663-bbb6-a9315edd13d6")
 		(property "Reference" "#PWR01"
-			(at 227.33 120.65 0)
+			(at 207.01 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18167,7 +17386,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 227.33 111.76 0)
+			(at 207.01 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18175,7 +17394,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 227.33 116.84 0)
+			(at 207.01 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18184,7 +17403,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 116.84 0)
+			(at 207.01 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18193,7 +17412,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 227.33 116.84 0)
+			(at 207.01 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18214,17 +17433,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 237.49 116.84 0)
+		(lib_id "power:PWR_FLAG")
+		(at 403.86 17.78 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "62d1f36a-b9c9-4ba2-9a50-4bdbd5cce7fd")
-		(property "Reference" "#PWR08"
-			(at 237.49 123.19 0)
+		(uuid "7fc1b25f-0c72-40e4-a42a-7f27da263281")
+		(property "Reference" "#FLG04"
+			(at 405.765 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18232,8 +17450,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 237.49 121.92 0)
+		(property "Value" "PWR_FLAG"
+			(at 411.48 17.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18241,7 +17459,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 237.49 116.84 0)
+			(at 403.86 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18249,8 +17467,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 237.49 116.84 0)
+		(property "Datasheet" "~"
+			(at 403.86 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18258,8 +17476,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 237.49 116.84 0)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 403.86 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18268,12 +17486,142 @@
 			)
 		)
 		(pin "1"
-			(uuid "5b40286f-1078-4899-ba47-5fe5d54cb6f9")
+			(uuid "0336f5d9-abb3-4b8a-b262-f9c68feefbef")
 		)
 		(instances
-			(project "StrainAmplifierV1"
+			(project "Amplifier"
 				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
-					(reference "#PWR08")
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 236.22 127 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7fe2aa1e-7acc-41ff-9d25-4c03ab120376")
+		(property "Reference" "R11"
+			(at 236.22 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "500 ± 5%"
+			(at 236.22 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 236.22 125.222 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 236.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES SMD 150 OHM 1% 1/8W 0805"
+			(at 236.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW0805150RFKEA"
+			(at 236.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW0805150RFKEA/1175541"
+			(at 236.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 236.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Part Number" "541-150CTR-ND"
+			(at 236.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Detailed Description" "150 Ohms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
+			(at 236.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 236.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0805 (2012 Metric)"
+			(at 236.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6819c159-1172-4408-b397-235a425ec529")
+		)
+		(pin "1"
+			(uuid "54f59c3c-7aec-4f86-a716-a5dddf8f0aea")
+		)
+		(instances
+			(project "Amplifier"
+				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -18281,15 +17629,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 200.66 148.59 0)
+		(at 163.83 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "80baa55d-a767-4a08-818e-1d07576e2278")
 		(property "Reference" "#PWR013"
-			(at 200.66 152.4 0)
+			(at 163.83 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18298,7 +17647,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 200.406 144.526 0)
+			(at 163.576 145.796 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18306,7 +17655,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 148.59 0)
+			(at 163.83 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18315,7 +17664,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 148.59 0)
+			(at 163.83 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18324,7 +17673,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 200.66 148.59 0)
+			(at 163.83 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18345,16 +17694,17 @@
 		)
 	)
 	(symbol
-		(lib_id "StrainAmplifierV1:TLV9061SQDBVRQ1")
-		(at 187.96 162.56 0)
+		(lib_id "Amplifier:TLV9061SQDBVRQ1")
+		(at 151.13 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "8a2c3035-b0e8-4a88-8d6c-67f7bc2b2084")
 		(property "Reference" "U2"
-			(at 219.71 158.6798 0)
+			(at 182.88 162.4898 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18362,7 +17712,7 @@
 			)
 		)
 		(property "Value" "TLV9061SQDBVRQ1"
-			(at 188.976 155.194 0)
+			(at 182.88 165.0298 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18370,7 +17720,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6"
-			(at 187.96 162.56 0)
+			(at 151.13 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18380,7 +17730,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/gpn/tlv9061-q1"
-			(at 189.484 150.622 0)
+			(at 152.654 154.432 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18390,79 +17740,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 187.96 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ARROW PART NUMBER" ""
-			(at 187.96 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ARROW PRICE/STOCK" ""
-			(at 187.96 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DATASHEET LINK" ""
-			(at 187.96 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "HEIGHT" ""
-			(at 187.96 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_NAME" ""
-			(at 187.96 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 187.96 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PART NUMBER" ""
-			(at 187.96 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PRICE/STOCK" ""
-			(at 187.96 162.56 0)
+			(at 151.13 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18498,34 +17776,33 @@
 		)
 	)
 	(symbol
-		(lib_id "StrainAmplifierV1:root_1_RES_0805_GenericSchematic-library.SchLib")
-		(at 212.09 123.19 0)
-		(unit 0)
+		(lib_id "Device:R_Small")
+		(at 194.31 116.84 90)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "93735925-a480-4f07-84f8-c6b021e47877")
 		(property "Reference" "R1"
-			(at 207.01 123.444 0)
+			(at 194.31 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
 		(property "Value" "1K +-0.1%"
-			(at 199.898 125.984 0)
+			(at 194.31 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 212.09 123.19 0)
+			(at 194.31 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18533,8 +17810,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 212.09 123.19 0)
+		(property "Datasheet" "~"
+			(at 194.31 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18542,110 +17819,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES_0805"
-			(at 212.09 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DISTRIBUTOR LINK" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNCS0805BKE1K00/1800073"
-			(at 210.566 117.602 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART NUMBER" "RNCS0805BKE1K00"
-			(at 210.566 117.602 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Stackpole Electronics Inc"
-			(at 210.566 117.602 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "ARROW PART NUMBER" ""
-			(at 212.09 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ARROW PRICE/STOCK" ""
-			(at 212.09 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DATASHEET LINK" ""
-			(at 212.09 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "HEIGHT" ""
-			(at 212.09 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_NAME" ""
-			(at 212.09 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 212.09 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PART NUMBER" ""
-			(at 212.09 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PRICE/STOCK" ""
-			(at 212.09 123.19 0)
+		(property "Description" "Resistor, small symbol"
+			(at 194.31 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18663,40 +17838,42 @@
 			(project ""
 				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
 					(reference "R1")
-					(unit 0)
+					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "StrainAmplifierV1:root_2_mirrored_CONN_01X03_2.54MM_GenericSchematic-library.SchLib")
-		(at 259.08 135.89 0)
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 259.08 127 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "9d677cc2-f7bf-4a1d-852b-520bd446cbec")
 		(property "Reference" "S2"
-			(at 258.826 130.556 0)
+			(at 261.62 125.7299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify left)
 			)
 		)
 		(property "Value" "CONN_01X03_2.54MM"
-			(at 258.826 143.764 0)
+			(at 261.62 128.2699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 259.08 135.89 0)
+			(at 259.08 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18704,8 +17881,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 259.08 135.89 0)
+		(property "Datasheet" "~"
+			(at 259.08 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18713,80 +17890,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 259.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ARROW PART NUMBER" ""
-			(at 259.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ARROW PRICE/STOCK" ""
-			(at 259.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DATASHEET LINK" ""
-			(at 259.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "HEIGHT" ""
-			(at 259.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_NAME" ""
-			(at 259.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 259.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PART NUMBER" ""
-			(at 259.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PRICE/STOCK" ""
-			(at 259.08 135.89 0)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 259.08 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18814,7 +17919,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 264.16 119.38 0)
+		(at 248.92 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18823,7 +17928,7 @@
 		(fields_autoplaced yes)
 		(uuid "9eccf18a-63fd-47db-84e6-0bb47c8e7785")
 		(property "Reference" "#PWR09"
-			(at 264.16 125.73 0)
+			(at 248.92 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18832,7 +17937,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 264.16 124.46 0)
+			(at 248.92 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18840,7 +17945,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 264.16 119.38 0)
+			(at 248.92 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18849,7 +17954,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 119.38 0)
+			(at 248.92 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18858,7 +17963,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 264.16 119.38 0)
+			(at 248.92 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18879,34 +17984,34 @@
 		)
 	)
 	(symbol
-		(lib_id "StrainAmplifierV1:root_0_TI-INAXXXXXX8_Altium Content Vault")
-		(at 222.25 130.81 0)
+		(lib_id "power:GND")
+		(at 171.45 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b774d3b2-b48d-45de-897e-1f6c5aa28f0f")
-		(property "Reference" "U1"
-			(at 233.934 131.318 0)
+		(fields_autoplaced yes)
+		(uuid "b742b0d1-8314-4c23-ad81-74714a34f896")
+		(property "Reference" "#PWR015"
+			(at 171.45 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(hide yes)
 			)
 		)
-		(property "Value" "INA333AIDGKR"
-			(at 233.934 133.858 0)
+		(property "Value" "GND"
+			(at 171.45 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
-			(at 222.25 130.81 0)
+		(property "Footprint" ""
+			(at 171.45 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18915,7 +18020,73 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 130.81 0)
+			(at 171.45 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 171.45 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34f84451-9881-4abf-b550-dfa2ecc6396d")
+		)
+		(instances
+			(project "Amplifier"
+				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier:root_0_TI-INAXXXXXX8_Altium Content Vault")
+		(at 201.93 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b774d3b2-b48d-45de-897e-1f6c5aa28f0f")
+		(property "Reference" "U1"
+			(at 213.614 122.428 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "INA333AIDGKR"
+			(at 213.614 124.968 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Amplifier:INA333AIDGKR_SOP65P490X110-8N"
+			(at 201.93 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18924,509 +18095,7 @@
 			)
 		)
 		(property "Description" "Low Power, Precision Instrumentation Amplifier, -40 to 125 degC, 8-pin SOP (DGK8), Green (RoHS & no Sb/Br)"
-			(at 222.25 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "INPUT OFFSET DRIFT (+/-)(MAX)(UV/DEGREES CELSIUS)" "0.1"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "PACKING" ""
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "VS(MAX)(V)" "5.5"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "ROHS" ""
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "GAIN (V/V)" ""
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "CODE_JEDEC" "MO-187"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "INPUT BIAS CURRENT (+/-)(MAX)(NA)" "0.2"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "VS (MIN)" ""
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "ECO-PLAN" "Green (RoHS & no Sb/Br)"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "COMPONENTLINK2URL" "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=INA333&fileType=pdf"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "INPUT OFFSET (+/-) (MAX) (UV)" ""
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "OUTPUT OFFSET (+/-)(MAX)(UV)" "75/G"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MOUNTING TECHNOLOGY" "Surface Mount"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTNUMBER" "INA333AIDGKR"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "CMRR(MIN)(DB)" "100"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "OPERATING TEMPERATURE RANGE" ""
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Texas Instruments"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "COMPONENTLINK3URL" "http://www.ti.com/litv/pdf/mpds028d"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "NOISE AT 1KHZ(TYP)(NV/RT(HZ))" "50"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "COMPONENTLINK1URL" "http://www.ti.com/"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "OUTPUT OFFSET DRIFT (+/-)(MAX)(UV/DEGREES CELSIUS)" "0.5/G"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "NOISE AT 1KHZ (TYP) (NV/RT(HZ))" ""
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "VS (MAX)" ""
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "VS(MIN)(V)" "1.8"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "DATASHEETVERSION" "SBOS445B"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "NON-LINEARITY (+/-) (MAX) (%)" ""
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "QUIESCENT CURRENT (+/-)(TYP)(MA)" "0.05"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "COMPONENTLINK2DESCRIPTION" "Datasheet"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "INPUT OFFSET DRIFT (+/-) (MAX) (UV/DEGREES CELSIUS)" ""
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "BANDWIDTH AT G" ""
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "PACKAGEVERSION" "4073329/E, 05/2006"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "PACKAGEREFERENCE" "DGK0008A"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "COMPONENTLINK3DESCRIPTION" "Package Specification"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "GAIN(V/V)" "1 to 1000"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "NON-LINEARITY (+/-)(MAX)(%)" ""
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SUBFAMILY" "Single Supply"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "NUMBER OF CHANNELS" "1"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "INPUT BIAS CURRENT (+/-) (MAX) (NA)" ""
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "INPUT OFFSET (+/-)(MAX)(UV)" "25"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "CMRR (MIN) (DB)" ""
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "PACKAGEDESCRIPTION" "8-Pin Thin Small Outline, Body 3 x 3 mm, Pitch 0.65 mm"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "COMPONENTLINK1DESCRIPTION" "Manufacturer URL"
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "IQ (TYP) (MA)" ""
-			(at 216.662 124.968 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "ARROW PART NUMBER" ""
-			(at 222.25 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ARROW PRICE/STOCK" ""
-			(at 222.25 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DATASHEET LINK" ""
-			(at 222.25 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "HEIGHT" ""
-			(at 222.25 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_NAME" ""
-			(at 222.25 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 222.25 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PART NUMBER" ""
-			(at 222.25 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PRICE/STOCK" ""
-			(at 222.25 130.81 0)
+			(at 201.93 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19468,8 +18137,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 403.86 20.32 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c7c8bb32-5b71-4030-9d22-749a2f1903fc")
+		(property "Reference" "#FLG06"
+			(at 405.765 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 411.48 20.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 403.86 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 403.86 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 403.86 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6850769-dfd0-4feb-932f-dffb270ab060")
+		)
+		(instances
+			(project "Amplifier"
+				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
+					(reference "#FLG06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
-		(at 173.99 157.48 0)
+		(at 142.24 154.94 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19478,7 +18213,7 @@
 		(fields_autoplaced yes)
 		(uuid "d1944db1-68bb-4e18-a8a8-82d5a4d80b48")
 		(property "Reference" "#PWR02"
-			(at 173.99 161.29 0)
+			(at 142.24 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19487,7 +18222,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 173.99 152.4 0)
+			(at 142.24 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19495,7 +18230,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 157.48 0)
+			(at 142.24 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19504,7 +18239,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 157.48 0)
+			(at 142.24 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19513,7 +18248,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 173.99 157.48 0)
+			(at 142.24 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19535,16 +18270,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 147.32 151.13 0)
+		(at 248.92 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d5f8b1a4-7dd0-4125-a0e8-caa0c5c95436")
-		(property "Reference" "#PWR05"
-			(at 147.32 157.48 0)
+		(uuid "d356e4b2-0a4c-4225-ab65-a2fcad17cc74")
+		(property "Reference" "#PWR010"
+			(at 248.92 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19553,7 +18288,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 147.32 156.21 0)
+			(at 248.92 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19561,7 +18296,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 151.13 0)
+			(at 248.92 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19570,7 +18305,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 151.13 0)
+			(at 248.92 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19579,7 +18314,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 147.32 151.13 0)
+			(at 248.92 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19588,46 +18323,47 @@
 			)
 		)
 		(pin "1"
-			(uuid "918993a0-a08e-4776-b710-1647f05d6f06")
+			(uuid "0cf75686-6cf6-49f3-9434-3d6083778ca1")
 		)
 		(instances
-			(project "StrainAmplifierV1"
+			(project "Amplifier"
 				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
-					(reference "#PWR05")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "StrainAmplifierV1:root_0_CAP_0805_GenericSchematic-library.SchLib")
-		(at 205.74 148.59 0)
-		(unit 0)
+		(lib_id "power:+5V")
+		(at 403.86 17.78 90)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e4eb19d2-fe89-4d6d-a6ca-f5891222e290")
-		(property "Reference" "C2"
-			(at 204.216 147.066 0)
+		(fields_autoplaced yes)
+		(uuid "d993e66b-7408-4e8e-bc88-3c29f15ab096")
+		(property "Reference" "#PWR020"
+			(at 407.67 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(hide yes)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 201.676 152.654 0)
+		(property "Value" "+5V"
+			(at 400.05 17.7799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 205.74 148.59 0)
+		(property "Footprint" ""
+			(at 403.86 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19636,7 +18372,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 148.59 0)
+			(at 403.86 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19644,171 +18380,55 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic 0805 component"
-			(at 205.74 148.59 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 403.86 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "MANUFACTURER" "YAGEO"
-			(at 204.47 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART NUMBER" "CC0805JRNPO9BN250"
-			(at 204.47 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "VOLTAGE RATING" "50"
-			(at 204.47 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "DISTRIBUTOR LINK" "https://www.digikey.ca/en/products/detail/yageo/CC0805JRNPO9BN250/5884044"
-			(at 204.47 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "ARROW PART NUMBER" ""
-			(at 205.74 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ARROW PRICE/STOCK" ""
-			(at 205.74 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DATASHEET LINK" ""
-			(at 205.74 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "HEIGHT" ""
-			(at 205.74 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_NAME" ""
-			(at 205.74 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 205.74 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PART NUMBER" ""
-			(at 205.74 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PRICE/STOCK" ""
-			(at 205.74 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d537aabc-9945-47f1-9572-3b1be614f60e")
 		)
 		(pin "1"
-			(uuid "60f85fd3-37a1-468a-81df-a87e85083194")
+			(uuid "ee75e3c1-6e09-48c1-ab28-29c90d41ba95")
 		)
 		(instances
-			(project ""
+			(project "Amplifier"
 				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
-					(reference "C2")
-					(unit 0)
+					(reference "#PWR020")
+					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "StrainAmplifierV1:root_2_RES_0805_GenericSchematic-library.SchLib")
-		(at 201.93 138.43 0)
-		(unit 0)
+		(lib_id "Device:R_Small")
+		(at 181.61 129.54 270)
+		(mirror x)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "ef03b8e3-0873-4b83-b2c0-adc2c801e202")
 		(property "Reference" "R3"
-			(at 193.04 142.24 0)
+			(at 181.61 134.62 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
 		(property "Value" "1K +-0.1%"
-			(at 198.374 142.24 0)
+			(at 181.61 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 201.93 138.43 0)
+			(at 181.61 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19816,8 +18436,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 201.93 138.43 0)
+		(property "Datasheet" "~"
+			(at 181.61 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19825,110 +18445,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES_0805"
-			(at 201.93 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DISTRIBUTOR LINK" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RNCS0805BKE1K00/1800073"
-			(at 196.342 136.906 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART NUMBER" "RNCS0805BKE1K00"
-			(at 196.342 136.906 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Stackpole Electronics Inc"
-			(at 196.342 136.906 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "ARROW PART NUMBER" ""
-			(at 201.93 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ARROW PRICE/STOCK" ""
-			(at 201.93 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DATASHEET LINK" ""
-			(at 201.93 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "HEIGHT" ""
-			(at 201.93 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_NAME" ""
-			(at 201.93 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 201.93 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PART NUMBER" ""
-			(at 201.93 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MOUSER PRICE/STOCK" ""
-			(at 201.93 138.43 0)
+		(property "Description" "Resistor, small symbol"
+			(at 181.61 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19946,14 +18464,84 @@
 			(project ""
 				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
 					(reference "R3")
-					(unit 0)
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 171.45 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "f20969ec-9b1c-4767-a441-d126f52296f9")
+		(property "Reference" "C6"
+			(at 173.99 152.4062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 173.99 154.9462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 171.45 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 171.45 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 171.45 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "144bbb99-2406-4441-9646-b4553b7aa997")
+		)
+		(pin "1"
+			(uuid "e84378af-f335-467d-a105-61c800f92eba")
+		)
+		(instances
+			(project "Amplifier"
+				(path "/a5b29326-90ee-4f27-a2a2-b00e145324d7"
+					(reference "C6")
+					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 165.1 135.89 90)
+		(at 147.32 127 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19962,7 +18550,7 @@
 		(fields_autoplaced yes)
 		(uuid "fdf7dd9b-3740-44d2-b945-3cb150e0352a")
 		(property "Reference" "#PWR011"
-			(at 171.45 135.89 0)
+			(at 153.67 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19971,7 +18559,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 168.91 135.8899 90)
+			(at 151.13 126.9999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19980,7 +18568,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 135.89 0)
+			(at 147.32 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19989,7 +18577,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 135.89 0)
+			(at 147.32 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19998,7 +18586,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 165.1 135.89 0)
+			(at 147.32 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20020,7 +18608,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 173.99 179.07 0)
+		(at 142.24 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20029,7 +18617,7 @@
 		(fields_autoplaced yes)
 		(uuid "fe71f4ad-4bc0-4fbd-8fab-3d6bf1a2ae43")
 		(property "Reference" "#PWR04"
-			(at 173.99 185.42 0)
+			(at 142.24 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20038,15 +18626,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 173.99 184.15 0)
+			(at 144.78 190.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 179.07 0)
+			(at 142.24 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20055,7 +18644,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 179.07 0)
+			(at 142.24 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20064,7 +18653,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 173.99 179.07 0)
+			(at 142.24 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)

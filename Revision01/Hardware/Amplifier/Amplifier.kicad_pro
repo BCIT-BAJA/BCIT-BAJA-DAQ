@@ -56,9 +56,55 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.15,
+          "via_gap": 0.5,
+          "width": 0.22
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "copper_edge_clearance|130000000|111737500|e867ff50-4fe7-4204-a7f6-3ab81129aaef|7095a56c-c238-40aa-869b-21d036497f28",
+          "We want this pad to be right up against the edge of the board."
+        ],
+        [
+          "copper_edge_clearance|130000000|114625000|eb09ecc0-c8db-4461-9fb6-ba148a7e366d|fdfd3cc2-5a48-4b32-9bab-5158d7366dd0",
+          "We want this pad to be right up against the edge of the board."
+        ],
+        [
+          "copper_edge_clearance|130000000|116375000|eb09ecc0-c8db-4461-9fb6-ba148a7e366d|1fb75c67-a359-4432-a3eb-e65753ebc529",
+          "We want this pad to be right up against the edge of the board."
+        ],
+        [
+          "copper_edge_clearance|130000000|118262500|13776ed0-4535-4db3-8f48-3bf32c5346e8|16253e33-8712-4aeb-8382-9bb9328fd447",
+          "We want this pad to be right up against the edge of the board."
+        ],
+        [
+          "silk_edge_clearance|149170000|119400000|26783bd0-64f5-436b-8e33-e89fdb655c6a|4bb1512b-fba3-406a-ad05-b14d1fdc3c93",
+          ""
+        ],
+        [
+          "silk_edge_clearance|150480000|119400000|26783bd0-64f5-436b-8e33-e89fdb655c6a|6ee43bf6-1f1e-4fa1-9379-e3ff9411aa29",
+          ""
+        ],
+        [
+          "silk_edge_clearance|156980000|110722731|d71cd37a-8ea1-47a9-8ed0-4a622c4b1596|f8ec13fe-6007-4f73-a752-b650cd123d6d",
+          ""
+        ],
+        [
+          "silk_edge_clearance|156980000|119277268|859b27d5-5987-4140-bc6a-600c558bed84|bf01098a-e2a8-4cc4-9b6a-dcf5da05f8b9",
+          ""
+        ],
+        [
+          "silk_edge_clearance|157500000|112810000|936fd742-62e2-4c78-94d1-3392336675a1|02d07537-521b-4ca3-8596-921434ba712d",
+          ""
+        ],
+        [
+          "silk_edge_clearance|157500000|116910000|936fd742-62e2-4c78-94d1-3392336675a1|c2242ec5-88c4-4798-ad24-068722f681df",
+          "IDC cable silkscreen doesn't matter"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -123,22 +169,22 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
+        "min_clearance": 0.1524,
+        "min_connection": 0.15,
         "min_copper_edge_clearance": 0.3,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_clearance": 0.26,
+        "min_hole_to_hole": 0.26,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 4,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_through_hole_diameter": 0.25,
+        "min_track_width": 0.15,
+        "min_via_annular_width": 0.15,
+        "min_via_diameter": 0.6,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -187,7 +233,14 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.15,
+        0.19,
+        0.2,
+        0.3,
+        0.5,
+        1.0,
+        2.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -219,6 +272,18 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.65,
+          "drill": 0.25
+        },
+        {
+          "diameter": 0.7,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.9,
+          "drill": 0.4
         }
       ],
       "zones_allow_external_fillets": false

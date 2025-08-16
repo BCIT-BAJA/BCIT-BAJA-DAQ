@@ -78,7 +78,7 @@
 		(tenting front back)
 		(grid_origin 130 119.4)
 		(pcbplotparams
-			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(layerselection 0x00000000_00000000_55555555_575555f5)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
@@ -112,9 +112,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "Product_2025-08-16")
 		)
 	)
 	(property "CHK_APP_DATE" "--/--/--")
@@ -202,7 +202,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.ca/datasheet/2/585/MLCC-1837944.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -214,7 +214,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Multilayer Ceramic Capacitors MLCC - SMD/SMT 100nF+/-10% 50V X7R 0805"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -222,6 +222,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0fedb531-a901-447c-af47-db35c84e0686")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "CL21B104KBCNNWC"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d2a6fbb-5959-4723-82f4-ae7c9d6ffe49")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Samsung-Electro-Mechanics/CL21B104KBCNNWC?qs=yOVawPpwOwlu2UTVxWhmlw%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "41ef6745-fee7-4a77-a278-dbb1a0c85641")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "187-CL21B104KBCNNWC"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "43b8311c-bd6f-4945-b1b0-5d72513ed92e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "0805 (2012 Metric)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "12046123-70aa-4ff8-bdf5-2cdd75143350")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -402,7 +467,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/203218/bhr-xx-vua-data-sheet.pdf"
+		(property "Datasheet" "https://www.mouser.ca/datasheet/2/4/bhr_xx_vua_data_sheet-3395636.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -415,7 +480,7 @@
 				)
 			)
 		)
-		(property "Description" "CONN HEADER VERT 6POS 2.54MM"
+		(property "Description" "Headers & Wire Housings CONN HEADER VERT 6POS 2.54MM"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -441,7 +506,7 @@
 				)
 			)
 		)
-		(property "Detailed Description" "Connector Header Through Hole 6 position 0.100\" (2.54mm)"
+		(property "Detailed Description" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -486,6 +551,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cb84d491-3ae4-4232-ab3f-8b23d111808b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Adam-Tech/BHR-06-VUA?qs=HoCaDK9Nz5cobId%2FEjMHxg%3D%3D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5e2ae04a-dd32-432d-8487-f8612a8d8dfb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" " 737-BHR-06-VUA"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15c1339e-6d8e-4eb8-a308-6377ebae7898")
 			(effects
 				(font
 					(size 1 1)
@@ -960,7 +1051,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/gpn/ina333"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -972,7 +1063,7 @@
 				)
 			)
 		)
-		(property "Description" "Low Power, Precision Instrumentation Amplifier, -40 to 125 degC, 8-pin SOP (DGK8), Green (RoHS & no Sb/Br)"
+		(property "Description" "Instrumentation Amplifiers Lo Pwr Prec Inst Amp A 595-INA333AIDGKT"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -980,6 +1071,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ecfb173d-7c4e-4957-9db4-429a915ffe75")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "INA333AIDGKR"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "616910f8-92fc-4399-9a7e-2945c2c9e691")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Texas-Instruments/INA333AIDGKR?qs=nJRxFdq%252BlvaKwfZOdHFpKg%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "712ce0ff-81f2-4311-9f96-e369883370b5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "595-INA333AIDGKR"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bbe0bbde-3901-47c7-94df-569fe3af45b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "VSSOP-8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "81cab5f0-ec13-4957-af10-1a12e502aa24")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -1270,7 +1426,7 @@
 				)
 			)
 		)
-		(property "Value" "200K +-0.1%"
+		(property "Value" "20K +-0.1%"
 			(at 0 1.65 90)
 			(layer "F.Fab")
 			(uuid "732a9ee2-b969-4b31-8b5e-b3233ead59f1")
@@ -1281,7 +1437,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.ca/datasheet/2/392/n_catalog_partition01_en-1140338.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1293,7 +1449,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "Thin Film Resistors - SMD 1/8W 20K Ohms 0.1% 0805 25ppm"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1301,6 +1457,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Susumu "
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ce450e5f-d920-43af-aed9-55de8f20fa00")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RG2012P-203-B-T5 "
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b622740-06a4-4efb-bc50-69b3e8b3a092")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Susumu/RG2012P-203-B-T5?qs=juJhw1yPxAE0uzMTBmg8Hw%3D%3D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ee739cb-e73f-4bb6-8cb2-43d4c50e21b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "754-RG2012P-203-B-T5 "
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "50f6cebd-029e-488e-b50e-7aff15f1df79")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "0805 (2012 Metric)"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72156fc6-a35b-4961-915b-f89c48207ea1")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -1614,6 +1835,7 @@
 		(path "/279110b7-ef81-4f4e-b6cd-48e66f40f1e5")
 		(sheetname "/")
 		(sheetfile "Amplifier.kicad_sch")
+		(attr exclude_from_bom)
 		(fp_text user "S-\n"
 			(at -2 5.25 0)
 			(unlocked yes)
@@ -1882,7 +2104,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+		(property "Datasheet" "https://www.vishay.com/doc?28952"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1894,7 +2116,7 @@
 				)
 			)
 		)
-		(property "Description" "RES SMD 150 OHM 1% 1/8W 0805"
+		(property "Description" "Thin Film Resistors - SMD .2W 499ohms .5% 0805 25ppm Auto"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1906,7 +2128,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "CRCW0805150RFKEA"
+		(property "Manufacturer Part Number" "MCU0805MD4990DP500 "
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1932,7 +2154,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Vishay Dale"
+		(property "Manufacturer" "Vishay / Beyschlag "
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1958,7 +2180,7 @@
 				)
 			)
 		)
-		(property "Detailed Description" "150 Ohms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Detailed Description" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1990,6 +2212,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "617e0e15-38dd-47f2-9769-43e5ca1df196")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay-Beyschlag/MCU0805MD4990DP500?qs=EzBFWPtgsb1DD3PTBSGEVQ%3D%3D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6655ec76-8590-49f9-ad30-88c4a0574816")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "594-MCU0805MD4990DP5 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a67ae035-13d8-4b17-b55d-940a6067c328")
 			(effects
 				(font
 					(size 1 1)
@@ -2204,7 +2452,7 @@
 				)
 			)
 		)
-		(property "Value" "100K +-0.1%"
+		(property "Value" "10K +-0.1%"
 			(at 0 1.65 90)
 			(layer "F.Fab")
 			(uuid "063d79bd-db3f-4ecc-91c4-d3b040f5cdeb")
@@ -2215,7 +2463,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.ca/datasheet/2/392/n_catalog_partition01_en-1140338.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2227,7 +2475,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "Thin Film Resistors - SMD 1/8W 10K Ohms 0.1% 0805 25ppm"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2235,6 +2483,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Susumu "
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "45b2f3f9-faab-4909-9401-a02b90202347")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RG2012P-103-B-T5 "
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd1b4612-ab9e-4a14-9160-68daae226adb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Susumu/RG2012P-103-B-T5?qs=juJhw1yPxAHrnD3%252BNCg9%252Bw%3D%3D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7bb7d609-3ba6-4471-a755-55e60a9c1dba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "754-RG2012P-103-B-T5 "
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d9ef8b3-46c1-4c93-9e1c-3011a0885618")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "0805 (2012 Metric)"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "944dbb84-ab6c-42dc-9c86-e634d2da06f7")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -2446,7 +2759,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/tlv9061-q1"
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tlv9064-q1"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2458,7 +2771,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Operational Amplifiers - Op Amps Automotive single 5.5-V 10-MHz rail-to"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2466,6 +2779,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments "
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb97d858-477c-43e8-babf-d149a945d4eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "TLV9061SQDBVRQ1 "
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19fd7e9a-86b8-4242-9415-78fd89a62fc5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Texas-Instruments/TLV9061SQDBVRQ1?qs=DRkmTr78QASJ%252B5bCrdR4jA%3D%3D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dab44390-372e-4be9-ada0-337774c1e580")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "595-TLV9061SQDBVRQ1"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8c847428-2f6d-41b4-a4e8-fbcf2561d9de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "SOT-23-6 "
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a2a5c552-f92f-4ece-8ec4-5af3d04fd544")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -2840,7 +3218,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/doc?28700"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2852,7 +3230,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "Thin Film Resistors - SMD .05W 1Kohms 0.1% 0805 25ppm"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2860,6 +3238,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay / Beyschlag "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8309ffb7-77f6-4af2-a4c6-5486224fc57c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "MCU08050D1001BP500 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a5c6e57-b391-4475-ac55-e9c79ddfaddb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay-Beyschlag/MCU08050D1001BP500?qs=70au2ePzUrEv3lkXFeCKsQ%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db476b34-e689-4be0-bbc7-914550cc68cc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "594-MCU0805D1001BP5 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b98e8d44-f505-4e45-aa2d-64db1bb24de3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "0805 (2012 Metric)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46c47a27-5d46-4e84-869b-948740745fa2")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3064,7 +3507,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/doc?28700"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3076,7 +3519,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "Thin Film Resistors - SMD .05W 1Kohms 0.1% 0805 25ppm"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3084,6 +3527,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay / Beyschlag "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c032158c-912b-48f4-aab1-a746c7b39dd9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "MCU08050D1001BP500 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0eb1f5ae-8379-4fa2-a8db-e5ca7dbef811")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay-Beyschlag/MCU08050D1001BP500?qs=70au2ePzUrEv3lkXFeCKsQ%3D%3D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5398f984-d672-4c55-81db-8392b7ff2399")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "594-MCU0805D1001BP5 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe1bcccf-ab59-4016-a37d-5101994d7cac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "0805 (2012 Metric)"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "89c3b04d-f37c-45d2-acab-63580b380bff")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3293,7 +3801,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.ca/datasheet/2/585/MLCC-1837944.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3305,7 +3813,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Multilayer Ceramic Capacitors MLCC - SMD/SMT 100nF+/-10% 50V X7R 0805"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3313,6 +3821,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cd67b5c0-c51e-4793-b833-422e2c27af0a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "CL21B104KBCNNWC"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9c908172-d83d-42fd-aab1-e36713db933d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Samsung-Electro-Mechanics/CL21B104KBCNNWC?qs=yOVawPpwOwlu2UTVxWhmlw%3D%3D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7cff77b8-a99c-4a25-b352-5e41a98e61dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "187-CL21B104KBCNNWC"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d41389c7-495e-4883-bb3d-a6112001c795")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "0805 (2012 Metric)"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fcf4b299-aebb-4594-beec-76296ae1b9d3")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3519,7 +4092,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/doc?28700"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3531,7 +4104,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "Thin Film Resistors - SMD .05W 1Kohms 0.1% 0805 25ppm"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3539,6 +4112,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay / Beyschlag "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15f45153-66dc-4f63-8d3d-ccae42e8903d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "MCU08050D1001BP500 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "26ba1870-5949-4924-9c09-16cba4c6cd3a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay-Beyschlag/MCU08050D1001BP500?qs=70au2ePzUrEv3lkXFeCKsQ%3D%3D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "878a1d47-f1cb-416a-ae3a-a7c753d7379e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "594-MCU0805D1001BP5 "
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d7b7304-4277-41f4-ba98-47491fc506fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "0805 (2012 Metric)"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6af76a07-1624-4f01-9ac7-a2c87d3142bf")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)

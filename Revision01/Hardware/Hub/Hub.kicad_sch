@@ -10598,7 +10598,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "1276-1029-1-ND - Cut Tape (CT)"
+		(property "DigiKey Part Number" "1276-1029-1-ND "
 			(at 137.16 92.71 0)
 			(effects
 				(font
@@ -10653,6 +10653,170 @@
 			(project ""
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing")
+		(at 45.72 38.1 270)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "12201e01-9b64-4808-bf5e-b2b3f2200692")
+		(property "Reference" "N2"
+			(at 40.64 34.9249 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Battery Holder"
+			(at 40.64 37.4649 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Lib:BATT_HOLDER_18650_4_CELL_LEADS"
+			(at 46.99 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.memoryprotectiondevices.com/datasheets/BH26AAB/BH26AAB-datasheet.pdf"
+			(at 46.99 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "BATTERY HOLDER AA 6 CELL"
+			(at 40.64 39.37 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify right)
+			)
+		)
+		(property "Manufacturer" "MPD (Memory Protection Devices)"
+			(at 40.64 38.0999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "BH26AAB"
+			(at 40.64 40.6399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 45.72 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Detailed Description" "Battery Holder (Covered) AA 6 Cell"
+			(at 45.72 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "n/a"
+			(at 45.72 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/mpd-memory-protection-devices/BH26AAB/2439329?s=N4IgTCBcDaILIAUAiACAQgCTANgIK7RAF0BfIA"
+			(at 45.72 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "BH26AAB-ND"
+			(at 45.72 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Link" ""
+			(at 45.72 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Part Number" ""
+			(at 45.72 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" ""
+			(at 45.72 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 45.72 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
+					(reference "N2")
 					(unit 1)
 				)
 			)
@@ -10900,7 +11064,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "541-3976-1-ND - Cut Tape (CT)"
+		(property "DigiKey Part Number" "541-3976-1-ND "
 			(at 200.66 93.98 0)
 			(effects
 				(font
@@ -11068,7 +11232,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "1276-1804-1-ND - Cut Tape (CT)"
+		(property "DigiKey Part Number" "1276-1804-1-ND "
 			(at 234.95 93.98 0)
 			(effects
 				(font
@@ -11576,7 +11740,7 @@
 				(hide yes)
 			)
 		)
-		(property "Qty Multiplier" ""
+		(property "Qty Multiplier" "2"
 			(at 115.57 209.55 0)
 			(effects
 				(font
@@ -11932,7 +12096,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1µF, X7R"
+		(property "Value" "0.1uF ±10%, X7R"
 			(at 182.88 82.55 0)
 			(effects
 				(font
@@ -12021,7 +12185,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "1276-6840-1-ND - Cut Tape (CT)"
+		(property "DigiKey Part Number" "1276-6840-1-ND "
 			(at 180.34 81.28 0)
 			(effects
 				(font
@@ -12710,7 +12874,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "490-LQH44PH151MPRLCT-ND - Cut Tape (CT)"
+		(property "DigiKey Part Number" "490-LQH44PH151MPRLCT-ND "
 			(at 194.31 83.82 90)
 			(effects
 				(font
@@ -12878,7 +13042,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "296-LMR51606XDBVRCT-ND - Cut Tape (CT)"
+		(property "DigiKey Part Number" "296-LMR51606XDBVRCT-ND "
 			(at 142.24 78.74 0)
 			(effects
 				(font
@@ -13028,7 +13192,7 @@
 		(fields_autoplaced yes)
 		(uuid "7c15b4ee-809f-4468-a471-6bba915b12d9")
 		(property "Reference" "U1"
-			(at 153.035 120.65 0)
+			(at 153.035 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13036,7 +13200,7 @@
 			)
 		)
 		(property "Value" "NUCLEO-L476RG"
-			(at 153.035 123.19 0)
+			(at 153.035 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13079,11 +13243,14 @@
 				(hide yes)
 			)
 		)
-		(property "Qty Multiplier" ""
-			(at 115.57 151.13 0)
+		(property "Qty Multiplier" "2"
+			(at 153.035 123.19 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
@@ -13525,7 +13692,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "541-76.8KCCT-ND - Cut Tape (CT)"
+		(property "DigiKey Part Number" "541-76.8KCCT-ND "
 			(at 200.66 86.36 0)
 			(effects
 				(font
@@ -13856,6 +14023,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" "2"
+			(at 152.4 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "CN7_17"
@@ -14275,7 +14450,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Link" "https://www.aliexpress.com/item/1005005859082063.html"
+		(property "DigiKey Link" ""
 			(at 45.72 66.04 0)
 			(effects
 				(font
@@ -15326,7 +15501,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "541-0.0TBCT-ND - Cut Tape (CT)"
+		(property "DigiKey Part Number" "541-0.0TBCT-ND "
 			(at 118.11 66.04 90)
 			(effects
 				(font
@@ -16098,7 +16273,7 @@
 		(fields_autoplaced yes)
 		(uuid "cdc34f1c-6fe1-4614-a72e-e8aefb671062")
 		(property "Reference" "F1"
-			(at 71.12 60.96 0)
+			(at 71.12 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16106,7 +16281,7 @@
 			)
 		)
 		(property "Value" "FAST-BLOW 375mA 32V 0.45Ω"
-			(at 71.12 62.23 0)
+			(at 71.12 59.69 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -16132,7 +16307,7 @@
 			)
 		)
 		(property "Description" "FUSE BOARD MNT 375MA 32VDC 0603"
-			(at 71.12 63.5 0)
+			(at 71.12 60.96 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -16184,7 +16359,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "478-2859-1-ND - Cut Tape (CT)"
+		(property "DigiKey Part Number" "478-2859-1-ND "
 			(at 71.12 66.04 0)
 			(effects
 				(font
@@ -16227,6 +16402,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" "2"
+			(at 71.12 63.5 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.4986 1.4986)
+					(thickness 0.2997)
+					(bold yes)
+				)
 			)
 		)
 		(pin "2"
@@ -17067,7 +17253,7 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "1276-1029-1-ND - Cut Tape (CT)"
+		(property "DigiKey Part Number" "1276-1029-1-ND "
 			(at 223.52 93.98 0)
 			(effects
 				(font

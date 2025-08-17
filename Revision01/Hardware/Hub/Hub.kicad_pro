@@ -68,14 +68,6 @@
         [
           "lib_footprint_mismatch|88594000|43526000|f712a470-11e3-45b2-9394-2b7be01b9513|00000000-0000-0000-0000-000000000000",
           "It does match, weird."
-        ],
-        [
-          "silk_edge_clearance|101294000|51580000|86ea96de-ce87-4182-886d-85848d475662|9305ffc0-dec9-40c8-81ab-6564dafdf65a",
-          "Yes, the silkscreen of the 3070 is off the edge."
-        ],
-        [
-          "silk_edge_clearance|75894000|51580000|86ea96de-ce87-4182-886d-85848d475662|5e65611f-aab6-4262-94d7-bf5434c76203",
-          "Yes, the silkscreen of the 3070 is off the edge."
         ]
       ],
       "meta": {
@@ -721,80 +713,50 @@
       "fields_ordered": [
         {
           "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": true
+        },
+        {
+          "group_by": false,
           "label": "Reference",
           "name": "Reference",
           "show": true
         },
         {
           "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": true
+        },
+        {
+          "group_by": true,
           "label": "Qty Multiplier",
           "name": "Qty Multiplier",
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Value",
           "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
           "show": true
         },
         {
           "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "DigiKey Link",
-          "name": "DigiKey Link",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "DigiKey Part Number",
-          "name": "DigiKey Part Number",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Mouser Link",
-          "name": "Mouser Link",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Mouser Part Number",
-          "name": "Mouser Part Number",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer",
-          "name": "Manufacturer",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer Part Number",
-          "name": "Manufacturer Part Number",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "DNP",
-          "name": "${DNP}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "Description",
-          "name": "Description",
           "show": true
         },
         {
@@ -811,27 +773,57 @@
         },
         {
           "group_by": false,
-          "label": "Qty",
-          "name": "${QUANTITY}",
-          "show": false
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Manufacturer Part Number",
+          "name": "Manufacturer Part Number",
+          "show": true
         },
         {
           "group_by": false,
-          "label": "Package",
-          "name": "Package",
+          "label": "Mouser Link",
+          "name": "Mouser Link",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey Link",
+          "name": "DigiKey Link",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey Part Number",
+          "name": "DigiKey Part Number",
           "show": true
         },
         {
           "group_by": false,
           "label": "AliExpress Link",
           "name": "AliExpress Link",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "AliExpress Part Number",
           "name": "AliExpress Part Number",
-          "show": false
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "DNP",
+          "name": "${DNP}",
+          "show": true
         }
       ],
       "filter_string": "",
@@ -839,7 +831,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "AliExpress Part Number"
+      "sort_field": "${ITEM_NUMBER}"
     },
     "connection_grid_size": 50.0,
     "drawing": {

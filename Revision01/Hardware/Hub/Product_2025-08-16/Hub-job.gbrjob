@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "9.0.3"
     },
-    "CreationDate": "2025-08-16T16:26:36-06:00"
+    "CreationDate": "2025-08-17T09:54:27-06:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -43,37 +43,47 @@
   ],
   "FilesAttributes": [
     {
-      "Path": "Hub-F_Cu.gbr",
+      "Path": "Hub-F_Cu.gtl",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Hub-In1_Cu.gbr",
+      "Path": "Hub-In1_Cu.g1",
       "FileFunction": "Copper,L5,Inr",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Hub-In2_Cu.gbr",
+      "Path": "Hub-In2_Cu.g2",
       "FileFunction": "Copper,L7,Inr",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Hub-B_Cu.gbr",
+      "Path": "Hub-B_Cu.gbl",
       "FileFunction": "Copper,L4,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Hub-F_Silkscreen.gbr",
+      "Path": "Hub-F_Silkscreen.gto",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Hub-B_Silkscreen.gbr",
+      "Path": "Hub-B_Silkscreen.gbo",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Hub-Edge_Cuts.gbr",
+      "Path": "Hub-F_Mask.gts",
+      "FileFunction": "SolderMask,Top",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "Hub-B_Mask.gbs",
+      "FileFunction": "SolderMask,Bot",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "Hub-Edge_Cuts.gm1",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }

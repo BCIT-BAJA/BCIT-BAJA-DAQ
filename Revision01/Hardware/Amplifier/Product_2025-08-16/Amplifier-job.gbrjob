@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "9.0.3"
     },
-    "CreationDate": "2025-08-16T16:24:49-06:00"
+    "CreationDate": "2025-08-17T09:50:08-06:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -34,27 +34,37 @@
   ],
   "FilesAttributes": [
     {
-      "Path": "Amplifier-F_Cu.gbr",
+      "Path": "Amplifier-F_Cu.gtl",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Amplifier-B_Cu.gbr",
+      "Path": "Amplifier-B_Cu.gbl",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Amplifier-F_Silkscreen.gbr",
+      "Path": "Amplifier-F_Silkscreen.gto",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Amplifier-B_Silkscreen.gbr",
+      "Path": "Amplifier-B_Silkscreen.gbo",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Amplifier-Edge_Cuts.gbr",
+      "Path": "Amplifier-F_Mask.gts",
+      "FileFunction": "SolderMask,Top",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "Amplifier-B_Mask.gbs",
+      "FileFunction": "SolderMask,Bot",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "Amplifier-Edge_Cuts.gm1",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }

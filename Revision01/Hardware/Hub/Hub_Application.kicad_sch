@@ -3874,6 +3874,17 @@
 		)
 		(uuid "2e82550a-69b0-47e3-97a8-ed0e3b30d3f7")
 	)
+	(text "Current consumption\n\n1 Amplifier board  ~=15mA \n8 amplifier board ~=120mA"
+		(exclude_from_sim no)
+		(at 28.956 29.464 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "3ae5066b-9211-418a-881e-5c85eff3e2d0")
+	)
 	(text "350 Ohm strain gauge\nX 8 times\n"
 		(exclude_from_sim no)
 		(at 137.16 22.86 0)
@@ -4005,6 +4016,17 @@
 			(justify left bottom)
 		)
 		(uuid "ef4b7c20-9810-4951-a9d1-aa0d1286663d")
+	)
+	(text "Current consumption\n\n50mA-150mA for transmission\n~30mA for receiving"
+		(exclude_from_sim no)
+		(at 244.856 164.592 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left)
+		)
+		(uuid "f74cc0ef-df81-4e1e-b610-0faa5da85ad7")
 	)
 	(text "Cut a stranded or solid core wire the the\nproper length for the module/frequency\n868 MHz - 3.25 inches or 8.2 cm\n915 MHz - 3 inches or 7.8 cm"
 		(exclude_from_sim no)

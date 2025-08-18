@@ -1807,9 +1807,70 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 60.452 79.502)
+		(end 125.222 108.712)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 0da0c780-fcf7-4852-9a74-8c44a808547c)
+	)
+	(rectangle
+		(start 71.882 124.968)
+		(end 158.496 185.42)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 4521e491-edb2-4957-a484-03a4b892ab75)
+	)
+	(rectangle
+		(start 147.828 57.912)
+		(end 190.5 102.108)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 5a8254ac-de50-451d-a1f1-466145fccb58)
+	)
+	(text "OFFSET = (5V rail)/3"
+		(exclude_from_sim no)
+		(at 85.344 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "0b743023-5792-40d0-9722-29f5942bfbfd")
+	)
+	(text "AMPLIFIER GAIN = 100\nR1 = 1K"
+		(exclude_from_sim no)
+		(at 150.368 62.738 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "351cd8d8-5abc-43d2-b6a5-5ef55b42a2bd")
+	)
 	(text "350 Ohm strain gauge"
 		(exclude_from_sim no)
-		(at 55.88 74.93 0)
+		(at 71.628 106.172 0)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -1817,9 +1878,22 @@
 		)
 		(uuid "ac93fbfa-9304-4ace-aff6-c671622981ad")
 	)
+	(text "Assuming 5V rail = 5V\n\nvoltage range of strainAIN_D+ - strainAIN_D- = [-15mV,15mV]"
+		(exclude_from_sim no)
+		(at 61.468 84.328 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "adc8f91b-a31c-4305-85a0-a299e4898a5b")
+	)
 	(text "The series R resistor should be right after the amplifier, \nto current limit a GND short on the cable.\n\nThe short circuit should be limited to what the INA333 can source, ~10mA.\n\n5V / 10mA = 500 ohm."
 		(exclude_from_sim no)
-		(at 187.96 58.42 0)
+		(at 191.516 65.532 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1835,25 +1909,25 @@
 		(uuid "0d9b7372-0979-46ed-a1a8-daa91c90dc2e")
 	)
 	(junction
-		(at 124.46 121.92)
+		(at 111.76 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1a499014-5b0e-45b7-b16e-5ac7b46db4bd")
 	)
 	(junction
-		(at 157.48 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a67ff0cf-eaa7-4f14-a4e4-2f808369ea77")
-	)
-	(junction
-		(at 124.46 154.94)
+		(at 111.76 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b40b9848-ff7f-4712-a37f-4ebe6bf92b23")
 	)
 	(junction
-		(at 102.87 142.24)
+		(at 157.48 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c43abd91-914c-42b0-966b-2418f8d56226")
+	)
+	(junction
+		(at 90.17 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eeb07947-b363-4be8-a215-d38d128b7d6d")
@@ -1872,7 +1946,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 154.94) (xy 127 154.94)
+			(xy 111.76 168.91) (xy 114.3 168.91)
 		)
 		(stroke
 			(width 0)
@@ -1892,7 +1966,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 119.38) (xy 124.46 121.92)
+			(xy 111.76 133.35) (xy 111.76 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1902,7 +1976,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 142.24) (xy 102.87 146.05)
+			(xy 90.17 156.21) (xy 90.17 160.02)
 		)
 		(stroke
 			(width 0)
@@ -1912,13 +1986,13 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 110.49) (xy 157.48 138.43)
+			(xy 157.48 119.38) (xy 157.48 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "25cc9b7e-1886-4cb0-b295-b4d0a0b60bb1")
+		(uuid "29393793-41e3-4604-b7bb-70fb07794d30")
 	)
 	(wire
 		(pts
@@ -1932,27 +2006,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 93.98) (xy 157.48 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32881c89-bdf7-4aab-9a62-c4d83cf37079")
-	)
-	(wire
-		(pts
-			(xy 157.48 138.43) (xy 138.43 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "350870f8-5436-45e3-9b2f-de7ec38c2e8b")
-	)
-	(wire
-		(pts
-			(xy 102.87 101.6) (xy 107.95 101.6)
+			(xy 87.63 101.6) (xy 92.71 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1962,7 +2016,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 138.43) (xy 102.87 142.24)
+			(xy 90.17 152.4) (xy 90.17 156.21)
 		)
 		(stroke
 			(width 0)
@@ -1982,7 +2036,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 124.46) (xy 102.87 133.35)
+			(xy 90.17 138.43) (xy 90.17 147.32)
 		)
 		(stroke
 			(width 0)
@@ -2002,7 +2056,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 99.06) (xy 139.7 99.06)
+			(xy 87.63 99.06) (xy 135.89 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2012,7 +2066,17 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 104.14) (xy 157.48 110.49)
+			(xy 140.97 93.98) (xy 157.48 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4adcc01e-de88-4c2d-99e3-389d2be035f0")
+	)
+	(wire
+		(pts
+			(xy 157.48 104.14) (xy 157.48 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2032,7 +2096,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 157.48) (xy 124.46 154.94)
+			(xy 111.76 171.45) (xy 111.76 168.91)
 		)
 		(stroke
 			(width 0)
@@ -2052,7 +2116,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 99.06) (xy 157.48 99.06)
+			(xy 140.97 99.06) (xy 157.48 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2062,7 +2126,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 148.59) (xy 127 154.94)
+			(xy 125.73 152.4) (xy 157.48 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fb4ba6e-6ceb-4c0d-86e3-19e1d6b0f9e7")
+	)
+	(wire
+		(pts
+			(xy 114.3 162.56) (xy 114.3 168.91)
 		)
 		(stroke
 			(width 0)
@@ -2072,7 +2146,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 151.13) (xy 102.87 158.75)
+			(xy 90.17 165.1) (xy 90.17 171.45)
 		)
 		(stroke
 			(width 0)
@@ -2082,7 +2156,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 121.92) (xy 124.46 127)
+			(xy 111.76 135.89) (xy 111.76 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2092,7 +2166,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 121.92) (xy 124.46 121.92)
+			(xy 116.84 135.89) (xy 111.76 135.89)
 		)
 		(stroke
 			(width 0)
@@ -2133,7 +2207,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 96.52) (xy 107.95 96.52)
+			(xy 87.63 96.52) (xy 92.71 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2143,13 +2217,23 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 110.49) (xy 157.48 110.49)
+			(xy 99.06 119.38) (xy 157.48 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "bfa1129d-99c4-48ae-ab94-0069bdbcdf43")
+	)
+	(wire
+		(pts
+			(xy 87.63 93.98) (xy 135.89 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7db73a6-a510-474d-bb55-217c2104588c")
 	)
 	(wire
 		(pts
@@ -2163,23 +2247,13 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 154.94) (xy 124.46 149.86)
+			(xy 111.76 168.91) (xy 111.76 163.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cf14cc74-9ffe-4555-ac21-c912a2f71cf0")
-	)
-	(wire
-		(pts
-			(xy 102.87 93.98) (xy 139.7 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1bf118f-40a9-4baf-bb84-b5505719c22f")
 	)
 	(wire
 		(pts
@@ -2203,7 +2277,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 142.24) (xy 111.76 142.24)
+			(xy 90.17 156.21) (xy 99.06 156.21)
 		)
 		(stroke
 			(width 0)
@@ -2213,7 +2287,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 135.89) (xy 111.76 110.49)
+			(xy 99.06 149.86) (xy 99.06 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2232,8 +2306,8 @@
 		(uuid "fe4bfa11-5678-4c7c-8589-8dc7b07c563b")
 	)
 	(image
-		(at 58.166 97.028)
-		(scale 0.0873801)
+		(at 71.374 96.774)
+		(scale 0.0441091)
 		(uuid "42251a27-05d5-4af7-82a8-77145f8cea8a")
 		(data "iVBORw0KGgoAAAANSUhEUgAABsgAAAbjCAIAAADENDNFAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
 			"AA50AAAOdAFrJLPWAAAgAElEQVR4nOzdW4xl113v+9//P+aca1VVV3W375fEdhLjOMTqhCSbOISE"
@@ -16671,7 +16745,7 @@
 		)
 	)
 	(label "strainAIN_D-"
-		(at 119.126 93.98 0)
+		(at 103.886 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16681,7 +16755,7 @@
 		(uuid "05a3f213-d510-43b8-b426-e189a5eb18ae")
 	)
 	(label "strainAIN_D+"
-		(at 119.38 99.06 0)
+		(at 104.14 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16692,7 +16766,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 107.95 101.6 270)
+		(at 92.71 101.6 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16701,7 +16775,7 @@
 		(fields_autoplaced yes)
 		(uuid "034b02cb-ff32-4f93-96c6-cf3a55fd9870")
 		(property "Reference" "#PWR07"
-			(at 104.14 101.6 0)
+			(at 88.9 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16710,7 +16784,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 111.76 101.5999 90)
+			(at 96.52 101.5999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16719,7 +16793,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 101.6 0)
+			(at 92.71 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16728,7 +16802,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 101.6 0)
+			(at 92.71 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16737,7 +16811,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 107.95 101.6 0)
+			(at 92.71 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16759,16 +16833,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 124.46 157.48 0)
+		(at 111.76 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "125da2b4-aca3-4a9d-a142-88da958d335c")
 		(property "Reference" "#PWR013"
-			(at 124.46 163.83 0)
+			(at 111.76 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16777,7 +16850,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 127 158.7499 0)
+			(at 110.49 176.276 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16786,7 +16859,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 157.48 0)
+			(at 111.76 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16795,7 +16868,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 157.48 0)
+			(at 111.76 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16804,7 +16877,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 157.48 0)
+			(at 111.76 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16826,7 +16899,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 129.54 127 0)
+		(at 116.84 140.97 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16836,7 +16909,7 @@
 		(fields_autoplaced yes)
 		(uuid "2717c7fb-7bd1-45d0-8478-c637869e47fe")
 		(property "Reference" "#PWR012"
-			(at 129.54 133.35 0)
+			(at 116.84 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16845,7 +16918,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 129.54 132.08 0)
+			(at 116.84 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16853,7 +16926,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 127 0)
+			(at 116.84 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16862,7 +16935,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 127 0)
+			(at 116.84 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16871,7 +16944,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 129.54 127 0)
+			(at 116.84 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16893,7 +16966,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Socket")
-		(at 97.79 99.06 180)
+		(at 82.55 99.06 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -16901,7 +16974,7 @@
 		(dnp no)
 		(uuid "279110b7-ef81-4f4e-b6cd-48e66f40f1e5")
 		(property "Reference" "S2"
-			(at 98.425 88.9 0)
+			(at 84.582 104.648 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16909,7 +16982,7 @@
 			)
 		)
 		(property "Value" "CONN_01X04_StrainGauge"
-			(at 98.425 91.44 0)
+			(at 95.758 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16917,7 +16990,7 @@
 			)
 		)
 		(property "Footprint" "Lib:CONN_01X04"
-			(at 97.79 99.06 0)
+			(at 82.55 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16926,7 +16999,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 99.06 0)
+			(at 82.55 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16935,7 +17008,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 97.79 99.06 0)
+			(at 82.55 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17213,7 +17286,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 129.54 124.46 0)
+		(at 116.84 138.43 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17223,7 +17296,7 @@
 		(fields_autoplaced yes)
 		(uuid "5202b21a-bf8b-4764-945c-1d422d8f2c96")
 		(property "Reference" "C2"
-			(at 132.08 123.1962 0)
+			(at 119.38 137.1662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17232,7 +17305,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 132.08 125.7362 0)
+			(at 119.38 139.7062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17241,7 +17314,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 129.54 124.46 0)
+			(at 116.84 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17250,7 +17323,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.ca/datasheet/2/585/MLCC-1837944.pdf"
-			(at 129.54 124.46 0)
+			(at 116.84 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17259,7 +17332,7 @@
 			)
 		)
 		(property "Description" "Multilayer Ceramic Capacitors MLCC - SMD/SMT 100nF+/-10% 50V X7R 0805"
-			(at 129.54 124.46 0)
+			(at 116.84 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17268,7 +17341,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 129.54 124.46 0)
+			(at 116.84 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17277,7 +17350,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL21B104KBCNNWC"
-			(at 129.54 124.46 0)
+			(at 116.84 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17286,7 +17359,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Samsung-Electro-Mechanics/CL21B104KBCNNWC?qs=yOVawPpwOwlu2UTVxWhmlw%3D%3D"
-			(at 129.54 124.46 0)
+			(at 116.84 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17295,7 +17368,7 @@
 			)
 		)
 		(property "Mouser Part Number" "187-CL21B104KBCNNWC"
-			(at 129.54 124.46 0)
+			(at 116.84 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17304,7 +17377,7 @@
 			)
 		)
 		(property "Package" "0805 (2012 Metric)"
-			(at 129.54 124.46 0)
+			(at 116.84 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17329,7 +17402,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 102.87 135.89 0)
+		(at 90.17 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17338,7 +17411,7 @@
 		(fields_autoplaced yes)
 		(uuid "546d93e5-49a4-4276-bd59-d79691e55d57")
 		(property "Reference" "R5"
-			(at 100.33 134.6199 0)
+			(at 87.63 148.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17347,7 +17420,7 @@
 			)
 		)
 		(property "Value" "20K +-0.1%"
-			(at 100.33 137.1599 0)
+			(at 87.63 151.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17356,7 +17429,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 102.87 135.89 0)
+			(at 90.17 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17365,7 +17438,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.ca/datasheet/2/392/n_catalog_partition01_en-1140338.pdf"
-			(at 102.87 135.89 0)
+			(at 90.17 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17374,7 +17447,7 @@
 			)
 		)
 		(property "Description" "Thin Film Resistors - SMD 1/8W 20K Ohms 0.1% 0805 25ppm"
-			(at 102.87 135.89 0)
+			(at 90.17 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17383,7 +17456,7 @@
 			)
 		)
 		(property "Manufacturer" "Susumu "
-			(at 102.87 135.89 0)
+			(at 90.17 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17392,7 +17465,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RG2012P-203-B-T5 "
-			(at 102.87 135.89 0)
+			(at 90.17 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17401,7 +17474,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Susumu/RG2012P-203-B-T5?qs=juJhw1yPxAE0uzMTBmg8Hw%3D%3D"
-			(at 102.87 135.89 0)
+			(at 90.17 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17410,7 +17483,7 @@
 			)
 		)
 		(property "Mouser Part Number" "754-RG2012P-203-B-T5 "
-			(at 102.87 135.89 0)
+			(at 90.17 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17419,7 +17492,7 @@
 			)
 		)
 		(property "Package" "0805 (2012 Metric)"
-			(at 102.87 135.89 0)
+			(at 90.17 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17444,7 +17517,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 142.24 93.98 90)
+		(at 138.43 93.98 90)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17453,7 +17526,7 @@
 		(fields_autoplaced yes)
 		(uuid "553830f7-e417-430f-9f45-0be470008212")
 		(property "Reference" "R2"
-			(at 142.24 88.9 90)
+			(at 138.43 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17461,7 +17534,7 @@
 			)
 		)
 		(property "Value" "1K +-0.1%"
-			(at 142.24 91.44 90)
+			(at 138.43 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17469,7 +17542,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 142.24 93.98 0)
+			(at 138.43 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17478,7 +17551,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/doc?28700"
-			(at 142.24 93.98 0)
+			(at 138.43 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17487,7 +17560,7 @@
 			)
 		)
 		(property "Description" "Thin Film Resistors - SMD .05W 1Kohms 0.1% 0805 25ppm"
-			(at 142.24 93.98 0)
+			(at 138.43 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17496,7 +17569,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay / Beyschlag "
-			(at 142.24 93.98 90)
+			(at 138.43 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17505,7 +17578,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "MCU08050D1001BP500 "
-			(at 142.24 93.98 90)
+			(at 138.43 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17514,7 +17587,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay-Beyschlag/MCU08050D1001BP500?qs=70au2ePzUrEv3lkXFeCKsQ%3D%3D"
-			(at 142.24 93.98 90)
+			(at 138.43 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17523,7 +17596,7 @@
 			)
 		)
 		(property "Mouser Part Number" "594-MCU0805D1001BP5 "
-			(at 142.24 93.98 90)
+			(at 138.43 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17532,7 +17605,7 @@
 			)
 		)
 		(property "Package" "0805 (2012 Metric)"
-			(at 142.24 93.98 90)
+			(at 138.43 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17624,7 +17697,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 102.87 148.59 0)
+		(at 90.17 162.56 0)
 		(unit 0)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17633,7 +17706,7 @@
 		(fields_autoplaced yes)
 		(uuid "5ea0b723-ed03-442f-a6bb-33c6f33b8bbb")
 		(property "Reference" "R6"
-			(at 100.33 147.3199 0)
+			(at 87.63 161.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17642,7 +17715,7 @@
 			)
 		)
 		(property "Value" "10K +-0.1%"
-			(at 100.33 149.8599 0)
+			(at 87.63 163.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17651,7 +17724,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 102.87 148.59 0)
+			(at 90.17 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17660,7 +17733,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.ca/datasheet/2/392/n_catalog_partition01_en-1140338.pdf"
-			(at 102.87 148.59 0)
+			(at 90.17 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17669,7 +17742,7 @@
 			)
 		)
 		(property "Description" "Thin Film Resistors - SMD 1/8W 10K Ohms 0.1% 0805 25ppm"
-			(at 102.87 148.59 0)
+			(at 90.17 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17678,7 +17751,7 @@
 			)
 		)
 		(property "Manufacturer" "Susumu "
-			(at 102.87 148.59 0)
+			(at 90.17 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17687,7 +17760,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RG2012P-103-B-T5 "
-			(at 102.87 148.59 0)
+			(at 90.17 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17696,7 +17769,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Susumu/RG2012P-103-B-T5?qs=juJhw1yPxAHrnD3%252BNCg9%252Bw%3D%3D"
-			(at 102.87 148.59 0)
+			(at 90.17 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17705,7 +17778,7 @@
 			)
 		)
 		(property "Mouser Part Number" "754-RG2012P-103-B-T5 "
-			(at 102.87 148.59 0)
+			(at 90.17 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17714,7 +17787,7 @@
 			)
 		)
 		(property "Package" "0805 (2012 Metric)"
-			(at 102.87 148.59 0)
+			(at 90.17 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18000,7 +18073,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 124.46 119.38 0)
+		(at 111.76 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18009,7 +18082,7 @@
 		(fields_autoplaced yes)
 		(uuid "80baa55d-a767-4a08-818e-1d07576e2278")
 		(property "Reference" "#PWR010"
-			(at 124.46 123.19 0)
+			(at 111.76 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18018,7 +18091,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 124.206 115.316 0)
+			(at 111.506 129.286 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18026,7 +18099,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 119.38 0)
+			(at 111.76 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18035,7 +18108,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 119.38 0)
+			(at 111.76 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18044,7 +18117,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 124.46 119.38 0)
+			(at 111.76 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18066,7 +18139,7 @@
 	)
 	(symbol
 		(lib_id "Lib:TLV9061SQDBVRQ1")
-		(at 111.76 135.89 0)
+		(at 99.06 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18075,7 +18148,7 @@
 		(fields_autoplaced yes)
 		(uuid "8a2c3035-b0e8-4a88-8d6c-67f7bc2b2084")
 		(property "Reference" "U2"
-			(at 143.51 132.0098 0)
+			(at 130.81 145.9798 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18083,7 +18156,7 @@
 			)
 		)
 		(property "Value" "TLV9061SQDBVRQ1"
-			(at 143.51 134.5498 0)
+			(at 130.81 148.5198 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18091,7 +18164,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6"
-			(at 111.76 135.89 0)
+			(at 99.06 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18101,7 +18174,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/gpn/tlv9064-q1"
-			(at 113.284 123.952 0)
+			(at 100.584 137.922 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18111,7 +18184,7 @@
 			)
 		)
 		(property "Description" "Operational Amplifiers - Op Amps Automotive single 5.5-V 10-MHz rail-to"
-			(at 111.76 135.89 0)
+			(at 99.06 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18120,7 +18193,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments "
-			(at 111.76 135.89 0)
+			(at 99.06 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18129,7 +18202,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "TLV9061SQDBVRQ1 "
-			(at 111.76 135.89 0)
+			(at 99.06 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18138,7 +18211,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Texas-Instruments/TLV9061SQDBVRQ1?qs=DRkmTr78QASJ%252B5bCrdR4jA%3D%3D"
-			(at 111.76 135.89 0)
+			(at 99.06 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18147,7 +18220,7 @@
 			)
 		)
 		(property "Mouser Part Number" "595-TLV9061SQDBVRQ1"
-			(at 111.76 135.89 0)
+			(at 99.06 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18156,7 +18229,7 @@
 			)
 		)
 		(property "Package" "SOT-23-6 "
-			(at 111.76 135.89 0)
+			(at 99.06 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18693,7 +18766,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 102.87 124.46 0)
+		(at 90.17 138.43 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18703,7 +18776,7 @@
 		(fields_autoplaced yes)
 		(uuid "d1944db1-68bb-4e18-a8a8-82d5a4d80b48")
 		(property "Reference" "#PWR011"
-			(at 102.87 128.27 0)
+			(at 90.17 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18712,7 +18785,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 102.87 119.38 0)
+			(at 90.17 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18720,7 +18793,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 124.46 0)
+			(at 90.17 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18729,7 +18802,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 124.46 0)
+			(at 90.17 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18738,7 +18811,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 102.87 124.46 0)
+			(at 90.17 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18894,7 +18967,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 142.24 99.06 270)
+		(at 138.43 99.06 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18903,7 +18976,7 @@
 		(dnp no)
 		(uuid "ef03b8e3-0873-4b83-b2c0-adc2c801e202")
 		(property "Reference" "R4"
-			(at 142.24 104.14 90)
+			(at 138.43 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18911,7 +18984,7 @@
 			)
 		)
 		(property "Value" "1K +-0.1%"
-			(at 142.24 101.6 90)
+			(at 138.43 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18919,7 +18992,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 142.24 99.06 0)
+			(at 138.43 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18928,7 +19001,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/doc?28700"
-			(at 142.24 99.06 0)
+			(at 138.43 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18937,7 +19010,7 @@
 			)
 		)
 		(property "Description" "Thin Film Resistors - SMD .05W 1Kohms 0.1% 0805 25ppm"
-			(at 142.24 99.06 0)
+			(at 138.43 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18946,7 +19019,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay / Beyschlag "
-			(at 142.24 99.06 90)
+			(at 138.43 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18955,7 +19028,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "MCU08050D1001BP500 "
-			(at 142.24 99.06 90)
+			(at 138.43 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18964,7 +19037,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay-Beyschlag/MCU08050D1001BP500?qs=70au2ePzUrEv3lkXFeCKsQ%3D%3D"
-			(at 142.24 99.06 90)
+			(at 138.43 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18973,7 +19046,7 @@
 			)
 		)
 		(property "Mouser Part Number" "594-MCU0805D1001BP5 "
-			(at 142.24 99.06 90)
+			(at 138.43 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18982,7 +19055,7 @@
 			)
 		)
 		(property "Package" "0805 (2012 Metric)"
-			(at 142.24 99.06 90)
+			(at 138.43 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19007,7 +19080,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 107.95 96.52 90)
+		(at 92.71 96.52 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19016,7 +19089,7 @@
 		(fields_autoplaced yes)
 		(uuid "fdf7dd9b-3740-44d2-b945-3cb150e0352a")
 		(property "Reference" "#PWR06"
-			(at 114.3 96.52 0)
+			(at 99.06 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19025,7 +19098,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 111.76 96.5199 90)
+			(at 96.52 96.5199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19034,7 +19107,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 96.52 0)
+			(at 92.71 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19043,7 +19116,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 96.52 0)
+			(at 92.71 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19052,7 +19125,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 107.95 96.52 0)
+			(at 92.71 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19074,16 +19147,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 102.87 158.75 0)
+		(at 90.17 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fe71f4ad-4bc0-4fbd-8fab-3d6bf1a2ae43")
 		(property "Reference" "#PWR014"
-			(at 102.87 165.1 0)
+			(at 90.17 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19092,7 +19164,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 105.41 160.0199 0)
+			(at 88.9 176.276 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19101,7 +19173,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 158.75 0)
+			(at 90.17 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19110,7 +19182,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 158.75 0)
+			(at 90.17 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19119,7 +19191,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 158.75 0)
+			(at 90.17 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)

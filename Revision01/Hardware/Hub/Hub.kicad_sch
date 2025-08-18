@@ -6020,6 +6020,18 @@
 		)
 		(uuid "155b340d-b968-4845-990f-7a23df084228")
 	)
+	(text "1x Battery\n1.6 | Fully Charged\n1.0 | Empty\n\n6x in Series\n 9.6V | Fully Charged\n 6.0V | Empty"
+		(exclude_from_sim no)
+		(at 51.054 23.368 0)
+		(effects
+			(font
+				(face "Consolas")
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "19d8625f-4816-4a80-ba0e-7ca71b26036d")
+	)
 	(text "LD1117S50TR | VIn 15V | VDropout 1.2V@800mA (6.2V) | CurrentOut 800mA"
 		(exclude_from_sim no)
 		(at 220.98 153.67 0)
@@ -6074,6 +6086,18 @@
 			(justify left)
 		)
 		(uuid "354cddd6-0f72-40f2-9770-136091bd4499")
+	)
+	(text "x\n"
+		(exclude_from_sim no)
+		(at 118.11 63.246 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.2381)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "358e448a-13aa-4c95-95ad-e2eb7498dfc7")
 	)
 	(text "Inductor sizing\n"
 		(exclude_from_sim no)
@@ -7621,7 +7645,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 83.82) (xy 191.77 83.82)
+			(xy 180.34 83.82) (xy 194.31 83.82)
 		)
 		(stroke
 			(width 0)
@@ -7941,7 +7965,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 83.82) (xy 200.66 83.82)
+			(xy 199.39 83.82) (xy 200.66 83.82)
 		)
 		(stroke
 			(width 0)
@@ -10660,16 +10684,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Housing")
-		(at 45.72 38.1 270)
+		(at 45.72 30.48 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
+		(dnp yes)
 		(uuid "12201e01-9b64-4808-bf5e-b2b3f2200692")
 		(property "Reference" "N2"
-			(at 40.64 34.9249 90)
+			(at 39.37 31.242 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10677,8 +10700,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Battery Holder"
-			(at 40.64 37.4649 90)
+		(property "Value" "Backup Battery Holder"
+			(at 39.624 27.686 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10687,7 +10710,7 @@
 			)
 		)
 		(property "Footprint" "Lib:BATT_HOLDER_18650_4_CELL_LEADS"
-			(at 46.99 39.37 0)
+			(at 46.99 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10696,7 +10719,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.memoryprotectiondevices.com/datasheets/BH26AAB/BH26AAB-datasheet.pdf"
-			(at 46.99 39.37 0)
+			(at 46.99 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10704,8 +10727,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "BATTERY HOLDER AA 6 CELL"
-			(at 40.64 39.37 90)
+		(property "Description" "BATTERY HOLDER AA ALKALINE 6 CELL"
+			(at 39.624 29.5911 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -10714,7 +10737,7 @@
 			)
 		)
 		(property "Manufacturer" "MPD (Memory Protection Devices)"
-			(at 40.64 38.0999 90)
+			(at 40.64 30.4799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10724,7 +10747,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "BH26AAB"
-			(at 40.64 40.6399 90)
+			(at 40.64 33.0199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10734,7 +10757,7 @@
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 45.72 38.1 0)
+			(at 45.72 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10742,7 +10765,7 @@
 			)
 		)
 		(property "Detailed Description" "Battery Holder (Covered) AA 6 Cell"
-			(at 45.72 38.1 0)
+			(at 45.72 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10751,7 +10774,7 @@
 			)
 		)
 		(property "Package" "n/a"
-			(at 45.72 38.1 0)
+			(at 45.72 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10760,7 +10783,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/mpd-memory-protection-devices/BH26AAB/2439329?s=N4IgTCBcDaILIAUAiACAQgCTANgIK7RAF0BfIA"
-			(at 45.72 38.1 90)
+			(at 45.72 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10769,7 +10792,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "BH26AAB-ND"
-			(at 45.72 38.1 90)
+			(at 45.72 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10778,7 +10801,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 45.72 38.1 90)
+			(at 45.72 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10787,7 +10810,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 45.72 38.1 90)
+			(at 45.72 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10796,7 +10819,7 @@
 			)
 		)
 		(property "Mouser Link" ""
-			(at 45.72 38.1 90)
+			(at 45.72 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10805,7 +10828,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 45.72 38.1 90)
+			(at 45.72 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12770,7 +12793,7 @@
 	)
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 194.31 83.82 90)
+		(at 196.85 83.82 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12779,7 +12802,7 @@
 		(fields_autoplaced yes)
 		(uuid "6bdb9c6a-7bda-4f74-aa78-02c1b6c6d61d")
 		(property "Reference" "L1"
-			(at 194.31 78.74 90)
+			(at 196.85 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12787,7 +12810,7 @@
 			)
 		)
 		(property "Value" "150uH"
-			(at 194.31 81.28 90)
+			(at 196.85 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12795,7 +12818,7 @@
 			)
 		)
 		(property "Footprint" "Lib:LQH44PH151MPRL_IND_LQH44PN_PR_MUR-M"
-			(at 194.31 83.82 0)
+			(at 196.85 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12804,7 +12827,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/P02/JELF243A-9153.pdf"
-			(at 194.31 83.82 0)
+			(at 196.85 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12813,7 +12836,7 @@
 			)
 		)
 		(property "Description" "FIXED IND 150UH 330MA 2.64OHM SM"
-			(at 194.31 83.82 0)
+			(at 196.85 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12822,7 +12845,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 194.31 83.82 90)
+			(at 196.85 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12831,7 +12854,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "LQH44PH151MPRL"
-			(at 194.31 83.82 90)
+			(at 196.85 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12840,7 +12863,7 @@
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 194.31 83.82 0)
+			(at 196.85 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12848,7 +12871,7 @@
 			)
 		)
 		(property "Detailed Description" "150 µH Shielded Drum Core, Wirewound Inductor 330 mA 2.64Ohm Max 1616 (4040 Metric)"
-			(at 194.31 83.82 0)
+			(at 196.85 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12857,7 +12880,7 @@
 			)
 		)
 		(property "Package" "1616 (4040 Metric)"
-			(at 194.31 83.82 0)
+			(at 196.85 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12866,7 +12889,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.com/en/products/detail/murata-electronics/LQH44PH151MPRL/11690210"
-			(at 194.31 83.82 90)
+			(at 196.85 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12875,7 +12898,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "490-LQH44PH151MPRLCT-ND "
-			(at 194.31 83.82 90)
+			(at 196.85 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12884,7 +12907,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 194.31 83.82 90)
+			(at 196.85 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12893,7 +12916,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 194.31 83.82 90)
+			(at 196.85 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12902,7 +12925,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Murata-Electronics/LQH44PH151MPRL?qs=rkhjVJ6%2F3EJ9BU%2FIW%252BFNJA%3D%3D"
-			(at 194.31 83.82 90)
+			(at 196.85 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12911,7 +12934,7 @@
 			)
 		)
 		(property "Mouser Part Number" "81-LQH44PH151MPRL"
-			(at 194.31 83.82 90)
+			(at 196.85 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14848,7 +14871,7 @@
 		(dnp no)
 		(uuid "97217d01-bff3-4609-ba0e-02886d5621b1")
 		(property "Reference" "N1"
-			(at 40.64 48.8949 90)
+			(at 40.64 54.864 90)
 			(effects
 				(font
 					(size 1.27 1.27)

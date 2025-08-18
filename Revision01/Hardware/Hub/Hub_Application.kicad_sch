@@ -3921,9 +3921,9 @@
 		)
 		(uuid "7d914f86-6b05-424d-8cee-6dfb866bce1c")
 	)
-	(text "Features below\n\nOvervoltage/undervoltage protection\nRC filtering (500R + 6.8nF -> f_3db=40-50 kHz)\nPULLDOWN(detect wire disconnection)"
+	(text "Features below\n\nOvervoltage/undervoltage protection\nRC filtering (500R(from amplifier board) +100R  + 6.8nF -> f_3db ~=40kHz)\nPULLDOWN(detect wire disconnection)"
 		(exclude_from_sim no)
-		(at 167.64 57.15 0)
+		(at 167.64 58.674 0)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -3934,7 +3934,7 @@
 		)
 		(uuid "849f82cc-1e43-4091-9d14-f37739df0131")
 	)
-	(text "\nFSR: 0-3V\nQuantization step = 3V/(2^12) = 0.732mV\n\nMax error = 0.732mV/2 = 0.366mV\n\n%Uncertainty = 0.366mV/3V\n\n0.732mV/ 3V = 1.22% Uncertainty\nUncertainty goal 5%\n\n\n\n"
+	(text "Theoretical ADC uncertainty calculations\n\nFSR: 0-3V\nQuantization step = 3V/(2^12) = 0.732mV\n\nMax error = 0.732mV/2 = 0.366mV\n\n%Uncertainty = 0.366mV/3V\n\n0.732mV/ 3V = 1.22% Uncertainty\nUncertainty goal 5%\n\n\n\n"
 		(exclude_from_sim no)
 		(at 207.518 46.228 0)
 		(effects

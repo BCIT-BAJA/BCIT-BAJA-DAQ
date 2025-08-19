@@ -1868,6 +1868,17 @@
 		)
 		(uuid "351cd8d8-5abc-43d2-b6a5-5ef55b42a2bd")
 	)
+	(text "Current consumption:\n\n5V/350ohms = 14.28mA\n\n5V/30K = 0.16mA\n\nGoing to round up to 15mA per amplifier board\n"
+		(exclude_from_sim no)
+		(at 69.342 57.404 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4182cd4f-fd65-4a9a-aeef-b9ba6c1cecce")
+	)
 	(text "350 Ohm strain gauge"
 		(exclude_from_sim no)
 		(at 71.628 106.172 0)

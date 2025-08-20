@@ -3756,7 +3756,7 @@
 		)
 	)
 	(rectangle
-		(start 242.57 66.04)
+		(start 240.284 66.04)
 		(end 407.67 153.67)
 		(stroke
 			(width 0)
@@ -3768,8 +3768,8 @@
 		(uuid 4991c1da-1060-4775-bae8-9a2ea2e86aeb)
 	)
 	(rectangle
-		(start 242.57 153.67)
-		(end 407.67 223.52)
+		(start 240.284 153.67)
+		(end 407.67 253.238)
 		(stroke
 			(width 0)
 			(type default)
@@ -3780,7 +3780,7 @@
 		(uuid 5c915de6-f9ef-4bee-83c2-6c38587b7837)
 	)
 	(rectangle
-		(start 242.57 11.43)
+		(start 240.284 11.43)
 		(end 407.67 66.04)
 		(stroke
 			(width 0)
@@ -3793,7 +3793,7 @@
 	)
 	(rectangle
 		(start 11.43 11.43)
-		(end 242.57 223.52)
+		(end 240.03 223.52)
 		(stroke
 			(width 0)
 			(type default)
@@ -3958,7 +3958,7 @@
 	)
 	(text "DIOx = 01; G0_DIO0 = Rx PayloadReady or Tx TxReady\n\nAn interrupt (PayloadReady) is also generated on DIO0 \nas soon as the payload is available in the FIFO. "
 		(exclude_from_sim no)
-		(at 285.75 213.36 0)
+		(at 285.75 214.63 0)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -4030,7 +4030,7 @@
 	)
 	(text "Cut a stranded or solid core wire the the\nproper length for the module/frequency\n868 MHz - 3.25 inches or 8.2 cm\n915 MHz - 3 inches or 7.8 cm"
 		(exclude_from_sim no)
-		(at 367.03 171.45 0)
+		(at 367.03 172.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4135,7 +4135,7 @@
 		(uuid "55f54166-b545-410d-a5b8-90fb92cddff1")
 	)
 	(junction
-		(at 349.25 207.01)
+		(at 349.25 208.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "597b101c-00d4-45cb-8160-edec93ba8937")
@@ -4181,6 +4181,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7c9e1aa3-e38d-44ce-9add-b8568b4fa1bc")
+	)
+	(junction
+		(at 275.59 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ec901b3-b877-4a69-a68e-7448f42f2b10")
 	)
 	(junction
 		(at 201.93 153.67)
@@ -4259,6 +4265,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b3dd448a-54e3-4b4f-9521-0f44acdf3ffe")
+	)
+	(junction
+		(at 278.13 179.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b5ffa8f3-5807-41dd-abef-903b19327ba7")
 	)
 	(junction
 		(at 201.93 115.57)
@@ -4361,11 +4373,11 @@
 		(uuid "025e33dc-3ba4-49bd-94e1-f0316c30ab6e")
 	)
 	(no_connect
-		(at 318.77 190.5)
+		(at 318.77 191.77)
 		(uuid "17c4416a-9af7-4b56-a9b2-862572842428")
 	)
 	(no_connect
-		(at 318.77 185.42)
+		(at 318.77 186.69)
 		(uuid "1e7fc5fb-ea9f-4ca3-a6c8-0eb48dab5bba")
 	)
 	(no_connect
@@ -4453,7 +4465,7 @@
 		(uuid "720d5ccc-f1da-430a-867a-d30c902004ee")
 	)
 	(no_connect
-		(at 318.77 182.88)
+		(at 318.77 184.15)
 		(uuid "78e95297-d8f6-4181-b419-5b18e465256a")
 	)
 	(no_connect
@@ -4485,7 +4497,7 @@
 		(uuid "aadda42f-1e23-43a8-90da-d3a3f3302bf9")
 	)
 	(no_connect
-		(at 322.58 203.2)
+		(at 322.58 204.47)
 		(uuid "afb5d59f-27fc-4ae1-9ba3-0e9c03fcfcfb")
 	)
 	(no_connect
@@ -4541,7 +4553,7 @@
 		(uuid "e42e6b9e-4db6-4ccb-a59a-b0cff1cceb4d")
 	)
 	(no_connect
-		(at 318.77 187.96)
+		(at 318.77 189.23)
 		(uuid "e69aa57d-4ffa-4544-a336-47f475435399")
 	)
 	(no_connect
@@ -4549,11 +4561,11 @@
 		(uuid "eb52f424-96e0-4b32-a156-d580be808577")
 	)
 	(no_connect
-		(at 318.77 193.04)
+		(at 318.77 194.31)
 		(uuid "eddcaff7-8dd7-4485-9e6f-e44abd73b4be")
 	)
 	(no_connect
-		(at 318.77 203.2)
+		(at 318.77 204.47)
 		(uuid "f41de29d-9f8c-43ea-8cb0-1340a480d0a9")
 	)
 	(no_connect
@@ -4718,7 +4730,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 203.2) (xy 280.67 203.2)
+			(xy 270.51 204.47) (xy 280.67 204.47)
 		)
 		(stroke
 			(width 0)
@@ -4778,6 +4790,16 @@
 	)
 	(wire
 		(pts
+			(xy 275.59 184.15) (xy 275.59 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bfc9df9-429e-4788-bbc8-56911ff6b09f")
+	)
+	(wire
+		(pts
 			(xy 185.42 153.67) (xy 193.04 153.67)
 		)
 		(stroke
@@ -4788,7 +4810,7 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 207.01) (xy 368.3 207.01)
+			(xy 349.25 208.28) (xy 368.3 208.28)
 		)
 		(stroke
 			(width 0)
@@ -4818,7 +4840,7 @@
 	)
 	(wire
 		(pts
-			(xy 278.13 180.34) (xy 278.13 182.88)
+			(xy 278.13 177.8) (xy 278.13 179.07)
 		)
 		(stroke
 			(width 0)
@@ -4868,13 +4890,33 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 198.12) (xy 280.67 198.12)
+			(xy 275.59 179.07) (xy 278.13 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30e1d129-2f5a-4ed2-a852-2cf8c8dd07a9")
+	)
+	(wire
+		(pts
+			(xy 270.51 199.39) (xy 280.67 199.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "311f2e65-516d-44bd-acd7-6f4516e8f573")
+	)
+	(wire
+		(pts
+			(xy 264.16 186.69) (xy 275.59 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "331833f7-4557-493d-a6cb-c194b3083430")
 	)
 	(wire
 		(pts
@@ -4888,7 +4930,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 195.58) (xy 280.67 195.58)
+			(xy 270.51 196.85) (xy 280.67 196.85)
 		)
 		(stroke
 			(width 0)
@@ -4958,7 +5000,7 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 207.01) (xy 349.25 209.55)
+			(xy 349.25 208.28) (xy 349.25 210.82)
 		)
 		(stroke
 			(width 0)
@@ -5068,7 +5110,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 190.5) (xy 280.67 190.5)
+			(xy 270.51 191.77) (xy 280.67 191.77)
 		)
 		(stroke
 			(width 0)
@@ -5088,7 +5130,7 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 189.23) (xy 365.76 203.2)
+			(xy 365.76 190.5) (xy 365.76 204.47)
 		)
 		(stroke
 			(width 0)
@@ -5188,6 +5230,16 @@
 	)
 	(wire
 		(pts
+			(xy 278.13 179.07) (xy 278.13 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77103602-4f39-481f-8dbc-69c4bcc7ad47")
+	)
+	(wire
+		(pts
 			(xy 312.42 52.07) (xy 344.17 52.07)
 		)
 		(stroke
@@ -5248,7 +5300,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 187.96) (xy 280.67 187.96)
+			(xy 270.51 189.23) (xy 280.67 189.23)
 		)
 		(stroke
 			(width 0)
@@ -5318,7 +5370,7 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 203.2) (xy 354.33 203.2)
+			(xy 365.76 204.47) (xy 354.33 204.47)
 		)
 		(stroke
 			(width 0)
@@ -5328,7 +5380,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 207.01) (xy 368.3 189.23)
+			(xy 368.3 208.28) (xy 368.3 190.5)
 		)
 		(stroke
 			(width 0)
@@ -5788,7 +5840,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 200.66) (xy 280.67 200.66)
+			(xy 270.51 201.93) (xy 280.67 201.93)
 		)
 		(stroke
 			(width 0)
@@ -5825,6 +5877,16 @@
 			(type default)
 		)
 		(uuid "d52f95fc-d13f-4ede-aa6d-efac9c5aa6c6")
+	)
+	(wire
+		(pts
+			(xy 275.59 186.69) (xy 280.67 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d57e3360-85d1-4325-bc62-2a682c034df2")
 	)
 	(wire
 		(pts
@@ -5898,7 +5960,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 193.04) (xy 280.67 193.04)
+			(xy 270.51 194.31) (xy 280.67 194.31)
 		)
 		(stroke
 			(width 0)
@@ -5918,7 +5980,7 @@
 	)
 	(wire
 		(pts
-			(xy 278.13 182.88) (xy 280.67 182.88)
+			(xy 278.13 184.15) (xy 280.67 184.15)
 		)
 		(stroke
 			(width 0)
@@ -5938,7 +6000,7 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 203.2) (xy 344.17 203.2)
+			(xy 322.58 204.47) (xy 344.17 204.47)
 		)
 		(stroke
 			(width 0)
@@ -6087,7 +6149,7 @@
 		(uuid "fe2c90e9-18c0-4cde-aa89-c8634a72cfef")
 	)
 	(image
-		(at 267.97 247.65)
+		(at 263.398 232.664)
 		(scale 0.370798)
 		(uuid "b445dbaa-5d45-44d9-bacf-d0f6774356e0")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAgUAAAHDCAIAAAA7p/5uAAAAAXNSR0IArs4c6QAAAARnQU1BAACx"
@@ -17512,7 +17574,7 @@
 	)
 	(hierarchical_label "ANT_SPI_CS"
 		(shape input)
-		(at 270.51 200.66 180)
+		(at 270.51 201.93 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -17534,7 +17596,7 @@
 	)
 	(hierarchical_label "SPI_MOSI"
 		(shape input)
-		(at 270.51 198.12 180)
+		(at 270.51 199.39 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -17556,7 +17618,7 @@
 	)
 	(hierarchical_label "SPI_SCK"
 		(shape input)
-		(at 270.51 193.04 180)
+		(at 270.51 194.31 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -17633,7 +17695,7 @@
 	)
 	(hierarchical_label "ANT_Enable"
 		(shape input)
-		(at 270.51 187.96 180)
+		(at 270.51 189.23 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -17666,7 +17728,7 @@
 	)
 	(hierarchical_label "ANT_Reset"
 		(shape input)
-		(at 270.51 203.2 180)
+		(at 270.51 204.47 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -17677,7 +17739,7 @@
 	)
 	(hierarchical_label "ANT_DIO0_Interrupt"
 		(shape output)
-		(at 270.51 190.5 180)
+		(at 270.51 191.77 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -17743,7 +17805,7 @@
 	)
 	(hierarchical_label "SPI_MISO"
 		(shape output)
-		(at 270.51 195.58 180)
+		(at 270.51 196.85 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -19828,6 +19890,173 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 275.59 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "12d5eae7-0cae-4a12-b49f-db01b97545f2")
+		(property "Reference" "C20"
+			(at 272.288 175.768 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1uF ±10%, X7R"
+			(at 272.288 178.308 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 275.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/893/CL21B104KCFNNNE_Spec.pdf"
+			(at 275.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 0.1UF 100V X7R 0805"
+			(at 272.288 180.848 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Detailed Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 272.288 183.388 0)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify right)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 275.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL21B104KCFNNNE"
+			(at 275.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 275.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0805 (2012 Metric)"
+			(at 275.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21B104KCFNNNE/5961324"
+			(at 275.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "1276-6840-1-ND "
+			(at 275.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Link" ""
+			(at 275.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Part Number" ""
+			(at 275.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Samsung-Electro-Mechanics/CL21B104KCFNNNE?qs=lptGheUA4EwiEGVRX9oguw%3D%3D"
+			(at 275.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "187-CL21B104KCFNNNE "
+			(at 275.59 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "18720ddc-381f-4531-ac51-5688f651d27c")
+		)
+		(pin "1"
+			(uuid "d99331f2-6308-4e60-ba85-07a325eeb9bf")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 292.1 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20062,7 +20291,7 @@
 	)
 	(symbol
 		(lib_id "Device:Antenna_Shield")
-		(at 365.76 184.15 0)
+		(at 365.76 185.42 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -20071,7 +20300,7 @@
 		(fields_autoplaced yes)
 		(uuid "16f96804-2812-4991-ace2-66bfaec62c88")
 		(property "Reference" "AE1"
-			(at 369.57 179.7049 0)
+			(at 369.57 180.9749 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20080,7 +20309,7 @@
 			)
 		)
 		(property "Value" "ANT-916-CW-RCS-SMA"
-			(at 369.57 182.2449 0)
+			(at 369.57 183.5149 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20089,7 +20318,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 365.76 181.61 0)
+			(at 365.76 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20098,7 +20327,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=CW-RCS_Series&DocType=Data+Sheet&DocLang=English&DocFormat=pdf&PartCntxt=ANT-916-CW-RCS"
-			(at 365.76 181.61 0)
+			(at 365.76 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20107,7 +20336,7 @@
 			)
 		)
 		(property "Description" "915MHZ CCOMPACT RIGHT ANGLE WHIP"
-			(at 369.57 184.7849 0)
+			(at 369.57 186.0549 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20116,7 +20345,7 @@
 			)
 		)
 		(property "Detailed Description" "RF ANTENNA ISM, LoRaWAN, LPWA Whip, Right Angle SMA Male Connector Mount"
-			(at 365.76 184.15 0)
+			(at 365.76 185.42 0)
 			(effects
 				(font
 					(size 1.4986 1.4986)
@@ -20125,7 +20354,7 @@
 			)
 		)
 		(property "Manufacturer" "TE Connectivity Linx"
-			(at 365.76 184.15 0)
+			(at 365.76 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20134,7 +20363,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "ANT-916-CW-RCS-SMA"
-			(at 365.76 184.15 0)
+			(at 365.76 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20143,7 +20372,7 @@
 			)
 		)
 		(property "Qty Multiplier" "2"
-			(at 369.57 187.325 0)
+			(at 369.57 188.595 0)
 			(show_name yes)
 			(effects
 				(font
@@ -20155,7 +20384,7 @@
 			)
 		)
 		(property "Package" "n/a"
-			(at 365.76 184.15 0)
+			(at 365.76 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20164,7 +20393,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/te-connectivity-linx/ANT-916-CW-RCS-SMA/16630288?s=N4IgTCBcDaIIIDkAqBaAnARgGwoMIHUUAlXAZRVIFk4QBdAXyA"
-			(at 365.76 184.15 0)
+			(at 365.76 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20173,7 +20402,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "343-ANT-916-CW-RCS-SMA-ND"
-			(at 365.76 184.15 0)
+			(at 365.76 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20182,7 +20411,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 365.76 184.15 0)
+			(at 365.76 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20191,7 +20420,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 365.76 184.15 0)
+			(at 365.76 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20200,7 +20429,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-916-CW-RCS-SMA?qs=vvQtp7zwQdOkPNFyaB0lDA%3D%3D"
-			(at 365.76 184.15 0)
+			(at 365.76 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20209,7 +20438,7 @@
 			)
 		)
 		(property "Mouser Part Number" "712-ANT-916-CWRCSSMA "
-			(at 365.76 184.15 0)
+			(at 365.76 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22744,7 +22973,7 @@
 	)
 	(symbol
 		(lib_id "Lib:ANT_SMA_Edge")
-		(at 349.25 203.2 0)
+		(at 349.25 204.47 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -22753,7 +22982,7 @@
 		(fields_autoplaced yes)
 		(uuid "4619c29c-6fc6-4848-a45e-46f1ae6f9464")
 		(property "Reference" "J19"
-			(at 349.504 189.23 0)
+			(at 349.504 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22761,7 +22990,7 @@
 			)
 		)
 		(property "Value" "CON-SMA-EDGE-S"
-			(at 349.504 191.77 0)
+			(at 349.504 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22769,7 +22998,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 349.25 204.47 0)
+			(at 349.25 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22778,7 +23007,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.ca/datasheet/2/975/CON_SMA_EDGE_6_DATASHEET-3539198.pdf"
-			(at 349.504 191.77 0)
+			(at 349.504 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22787,7 +23016,7 @@
 			)
 		)
 		(property "Description" "RF Connectors / Coaxial Connectors SMA Female PCB Edge Mount"
-			(at 349.504 194.31 0)
+			(at 349.504 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22795,7 +23024,7 @@
 			)
 		)
 		(property "Detailed Description" "SMA Connector Jack, Female Socket Board Edge, End Launch Solder"
-			(at 349.504 196.85 0)
+			(at 349.504 198.12 0)
 			(effects
 				(font
 					(size 1.4986 1.4986)
@@ -22803,7 +23032,7 @@
 			)
 		)
 		(property "Manufacturer" "RF Solutions "
-			(at 349.25 203.2 0)
+			(at 349.25 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22812,7 +23041,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CON-SMA-EDGE-S"
-			(at 349.25 203.2 0)
+			(at 349.25 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22821,7 +23050,7 @@
 			)
 		)
 		(property "Qty Multiplier" "2"
-			(at 349.504 199.39 0)
+			(at 349.504 200.66 0)
 			(show_name yes)
 			(effects
 				(font
@@ -22832,7 +23061,7 @@
 			)
 		)
 		(property "Package" "n/a"
-			(at 349.25 203.2 0)
+			(at 349.25 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22841,7 +23070,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/rf-solutions/CON-SMA-EDGE-S/5845767"
-			(at 349.25 203.2 0)
+			(at 349.25 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22850,7 +23079,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "CON-SMA-EDGE-S-ND"
-			(at 349.25 203.2 0)
+			(at 349.25 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22859,7 +23088,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 349.25 203.2 0)
+			(at 349.25 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22868,7 +23097,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 349.25 203.2 0)
+			(at 349.25 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22877,7 +23106,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/RF-Solutions/CON-SMA-EDGE-S?qs=UkDUCjYnTB3a941HfsgOOA%3D%3D"
-			(at 349.25 203.2 0)
+			(at 349.25 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22886,7 +23115,7 @@
 			)
 		)
 		(property "Mouser Part Number" "223-CON-SMA-EDGE-S "
-			(at 349.25 203.2 0)
+			(at 349.25 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24016,7 +24245,7 @@
 	)
 	(symbol
 		(lib_id "Lib:Adafruit3070")
-		(at 285.75 179.07 0)
+		(at 285.75 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24025,7 +24254,7 @@
 		(fields_autoplaced yes)
 		(uuid "66383e7f-16f5-42d8-a4e5-8a9a2f6fe773")
 		(property "Reference" "U4"
-			(at 299.72 172.72 0)
+			(at 299.72 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24033,7 +24262,7 @@
 			)
 		)
 		(property "Value" "Adafruit 3070"
-			(at 299.72 175.26 0)
+			(at 299.72 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24041,7 +24270,7 @@
 			)
 		)
 		(property "Footprint" "Lib:Adafruit3070"
-			(at 285.75 179.07 0)
+			(at 285.75 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24050,7 +24279,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-learn.adafruit.com/downloads/pdf/adafruit-rfm69hcw-and-rfm96-rfm95-rfm98-lora-packet-padio-breakouts.pdf"
-			(at 285.75 179.07 0)
+			(at 285.75 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24059,7 +24288,7 @@
 			)
 		)
 		(property "Description" "RFM69HCW TRANSCEIVER RADIO BREAK"
-			(at 285.75 179.07 0)
+			(at 285.75 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24068,7 +24297,7 @@
 			)
 		)
 		(property "Detailed Description" "RFM69HCW - Transceiver 868MHz, 915MHz Evaluation Board"
-			(at 285.75 179.07 0)
+			(at 285.75 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24077,7 +24306,7 @@
 			)
 		)
 		(property "Manufacturer" "Adafruit Industries LLC"
-			(at 285.75 179.07 0)
+			(at 285.75 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24086,7 +24315,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "3070"
-			(at 285.75 179.07 0)
+			(at 285.75 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24095,7 +24324,7 @@
 			)
 		)
 		(property "Qty Multiplier" "2"
-			(at 299.72 177.8 0)
+			(at 299.72 179.07 0)
 			(show_name yes)
 			(effects
 				(font
@@ -24106,7 +24335,7 @@
 			)
 		)
 		(property "Package" "Module"
-			(at 285.75 179.07 0)
+			(at 285.75 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24114,7 +24343,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/adafruit-industries-llc/3070/6005355?s=N4IgTCBcDaIIIBMCGAzATgVwJYBcAEAzAAwDsRIAugL5A"
-			(at 285.75 179.07 0)
+			(at 285.75 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24123,7 +24352,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "1528-1665-ND"
-			(at 285.75 179.07 0)
+			(at 285.75 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24132,7 +24361,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 285.75 179.07 0)
+			(at 285.75 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24141,7 +24370,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 285.75 179.07 0)
+			(at 285.75 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24150,7 +24379,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Adafruit/3070?qs=AGnqjqvSJvLhs1q9K1razA%3D%3D"
-			(at 285.75 179.07 0)
+			(at 285.75 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24159,7 +24388,7 @@
 			)
 		)
 		(property "Mouser Part Number" "485-3070"
-			(at 285.75 179.07 0)
+			(at 285.75 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26717,7 +26946,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 349.25 209.55 0)
+		(at 349.25 210.82 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -26725,7 +26954,7 @@
 		(dnp no)
 		(uuid "8b0fe94f-0de7-4dc7-bd2c-4f934058c78f")
 		(property "Reference" "#PWR076"
-			(at 349.25 215.9 0)
+			(at 349.25 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26734,7 +26963,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 349.25 214.63 0)
+			(at 349.25 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26742,7 +26971,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 349.25 209.55 0)
+			(at 349.25 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26751,7 +26980,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 349.25 209.55 0)
+			(at 349.25 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26760,7 +26989,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 349.25 209.55 0)
+			(at 349.25 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29473,7 +29702,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 278.13 180.34 0)
+		(at 278.13 177.8 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29483,7 +29712,7 @@
 		(fields_autoplaced yes)
 		(uuid "9f9c6b79-a11e-471b-937a-2dd20c692273")
 		(property "Reference" "#PWR074"
-			(at 278.13 184.15 0)
+			(at 278.13 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29492,7 +29721,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 278.13 175.26 0)
+			(at 278.13 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29500,7 +29729,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 278.13 180.34 0)
+			(at 278.13 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29509,7 +29738,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 278.13 180.34 0)
+			(at 278.13 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29518,7 +29747,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 278.13 180.34 0)
+			(at 278.13 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32224,6 +32453,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 471.17 156.21 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1c6517a-1574-41cd-a510-76d3361db7a6")
+		(property "Reference" "#PWR077"
+			(at 471.17 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 471.17 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 471.17 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 471.17 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 471.17 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "766aa796-f340-4ade-b0cf-efdfb969f948")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Fuse_Small")
 		(at 121.92 156.21 0)
 		(unit 1)
@@ -32444,6 +32740,72 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 471.17 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8f6a809-dfc2-4c43-9b72-c57549ce279e")
+		(property "Reference" "#PWR078"
+			(at 471.17 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 471.17 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 471.17 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 471.17 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 471.17 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e80e89b8-63cd-4431-af1d-cf88c991f80e")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -34673,7 +35035,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 280.67 185.42 270)
+		(at 264.16 186.69 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -34682,7 +35044,7 @@
 		(fields_autoplaced yes)
 		(uuid "f9ec2b64-4843-4f33-8bae-cad05da79b8c")
 		(property "Reference" "#PWR075"
-			(at 274.32 185.42 0)
+			(at 257.81 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34691,7 +35053,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 276.86 185.4199 90)
+			(at 260.35 186.6899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34700,7 +35062,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 280.67 185.42 0)
+			(at 264.16 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34709,7 +35071,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 280.67 185.42 0)
+			(at 264.16 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34718,7 +35080,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 280.67 185.42 0)
+			(at 264.16 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)

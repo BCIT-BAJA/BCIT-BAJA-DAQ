@@ -64,7 +64,20 @@
           "width": 0.22
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|145874000|30946000|f712a470-11e3-45b2-9394-2b7be01b9513|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_edge_clearance|133174000|39000000|86ea96de-ce87-4182-886d-85848d475662|27cc455d-60d1-487f-bc39-5e488dda1717",
+          ""
+        ],
+        [
+          "silk_edge_clearance|158574000|39000000|86ea96de-ce87-4182-886d-85848d475662|bfcf4c1f-fd79-4454-80fe-4724e3bd314d",
+          ""
+        ]
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -205,6 +218,7 @@
         0.2,
         0.3,
         0.5,
+        0.75,
         1.0,
         2.0
       ],

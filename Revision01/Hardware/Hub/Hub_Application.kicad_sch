@@ -1846,14 +1846,14 @@
 				(pin passive line
 					(at -5.08 -2.54 0)
 					(length 3.81)
-					(name "Pin_4"
+					(name "Pin_5"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1882,14 +1882,14 @@
 				(pin passive line
 					(at 7.62 0 180)
 					(length 3.81)
-					(name "Pin_5"
+					(name "Pin_4"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3828,16 +3828,6 @@
 		)
 		(uuid "0d6a8893-813c-4e77-a8b9-fcc5d7445104")
 	)
-	(text "28mA is ~2x expected current \nfrom 5V, 350 ohm load.\n\nExpected voltage post fuse:\n5V*1/(1 + 7.5/350) = 4.9V"
-		(exclude_from_sim no)
-		(at 121.92 83.82 0)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-		)
-		(uuid "10092acd-103f-496a-b938-29990240baf8")
-	)
 	(text "All powered female sockets may dangle freely:\nMust be siliconed to prevent shorts."
 		(exclude_from_sim no)
 		(at 68.58 205.74 0)
@@ -3873,6 +3863,17 @@
 			(justify left bottom)
 		)
 		(uuid "2e82550a-69b0-47e3-97a8-ed0e3b30d3f7")
+	)
+	(text "Full Load Power Cable Voltage\nRDS(ON) = 1.5 ohm\nR(eq) = 1/(8/(7.5 + 350)) ohm\nR(eq) = 44.7 ohm\nI(Full) = V/R = 5 / (1.5 + 44.7)\nI(Full) = 108mA\nV(Drain) = 5 - I(Full)*1.5 ohm = 4.838 V\nV(Cable) = (4.838V) - 1/8*I(Full)*7.5 ohm\nV(Cable) = 4.73675 V (94.7%)\n\nFull Load Bypass Capacitor Sag\nf(on) = 1khz \nt(on) = 100 us (10% of 1/f(on))\nV(Drop) = (1/C)*I(Full)*t = (1/(20uF*3))*(108mA)*(100us)\nV(Drop) = 180 mV\nV(Bypass) = 5V - 180mV = 4.82V (96.4%)\n\nhttps://chatgpt.com/share/68a9f9eb-5ca8-8003-aa01-df325591f0b7\n\nPost MOSFET Power Filter\nRC filter:\nThe RC filter post mosfet is primarily determined by \nRDS(On), which is the direct path to filling the MOSFET.\nR(Cap) ~= RDS(On) = [1, 2] ohm\nTau(Longest) = RC = 2*0.1 uF = 0.2 us = 200ns.\nThis prevents frequencies beyond the MHz range\nfrom travelling through the cable."
+		(exclude_from_sim no)
+		(at 19.558 80.264 0)
+		(effects
+			(font
+				(size 1.4986 1.4986)
+			)
+			(justify left top)
+		)
+		(uuid "3e71a43d-bff9-41ce-b27f-fde3693e753e")
 	)
 	(text "350 Ohm strain gauge\nX 8 times\n"
 		(exclude_from_sim no)
@@ -3921,7 +3922,7 @@
 		)
 		(uuid "7d914f86-6b05-424d-8cee-6dfb866bce1c")
 	)
-	(text "Features below\n\nOvervoltage/undervoltage protection\nRC filtering (500R + 6.8nF -> f_3db=40-50 kHz)\nPULLDOWN(detect wire disconnection)"
+	(text "Features below\n\nOvervoltage/undervoltage protection\nRC filtering (600R + 6.8nF -> f_3db=40-50 kHz)\nPULLDOWN(detect wire disconnection)"
 		(exclude_from_sim no)
 		(at 167.64 57.15 0)
 		(effects
@@ -3947,7 +3948,7 @@
 	)
 	(text "DIOx = 01; G0_DIO0 = Rx PayloadReady or Tx TxReady\n\nAn interrupt (PayloadReady) is also generated on DIO0 \nas soon as the payload is available in the FIFO. "
 		(exclude_from_sim no)
-		(at 285.75 213.36 0)
+		(at 284.734 211.836 0)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -4008,7 +4009,7 @@
 	)
 	(text "Cut a stranded or solid core wire the the\nproper length for the module/frequency\n868 MHz - 3.25 inches or 8.2 cm\n915 MHz - 3 inches or 7.8 cm"
 		(exclude_from_sim no)
-		(at 367.03 171.45 0)
+		(at 365.76 171.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4017,10 +4018,10 @@
 		(uuid "fe1cd197-db59-4969-8cf0-5c1312895bdf")
 	)
 	(junction
-		(at 107.95 143.51)
+		(at 278.13 173.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0abd75b2-63dd-40bd-babc-04cd3f89812a")
+		(uuid "0e5098ea-852b-4521-a746-cb2336f6882f")
 	)
 	(junction
 		(at 185.42 166.37)
@@ -4035,10 +4036,16 @@
 		(uuid "108888c4-ea67-4a76-b798-d69621c3d0d8")
 	)
 	(junction
-		(at 107.95 118.11)
+		(at 162.56 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "28073cd4-c253-469c-b991-be349bb98e4d")
+		(uuid "1c1f7e4f-3f03-449d-946b-7c6d846ba746")
+	)
+	(junction
+		(at 107.95 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b2b0959-a8d7-4e99-9506-fc74b82e5d3f")
 	)
 	(junction
 		(at 185.42 77.47)
@@ -4065,16 +4072,16 @@
 		(uuid "33553123-0ff7-44fe-97aa-273e6c756893")
 	)
 	(junction
+		(at 107.95 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "362a518c-2b9a-4b04-8037-7407bbb637d9")
+	)
+	(junction
 		(at 185.42 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "38b0d547-1782-4ebc-ad2b-5689d6b0dd45")
-	)
-	(junction
-		(at 215.9 115.57)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "431b13ff-140b-437d-b858-4b22291411e8")
 	)
 	(junction
 		(at 193.04 90.17)
@@ -4113,22 +4120,10 @@
 		(uuid "55f54166-b545-410d-a5b8-90fb92cddff1")
 	)
 	(junction
-		(at 349.25 207.01)
+		(at 347.98 207.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "597b101c-00d4-45cb-8160-edec93ba8937")
-	)
-	(junction
-		(at 215.9 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5ae08532-fb15-4628-9165-a642c89d4d79")
-	)
-	(junction
-		(at 107.95 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5c077b9a-3323-4dd8-9ce1-39d49c06976f")
 	)
 	(junction
 		(at 78.74 39.37)
@@ -4137,28 +4132,16 @@
 		(uuid "5c58f7df-d143-45ab-8c75-66a90ef1f387")
 	)
 	(junction
-		(at 107.95 105.41)
+		(at 107.95 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "681b983a-11e4-4c8b-a502-6d1b6e48045d")
+		(uuid "6567c93b-1d1e-43ca-ba00-6c6c376352fe")
 	)
 	(junction
 		(at 193.04 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6b2612c4-2264-4a7a-9927-15637f90cbe0")
-	)
-	(junction
-		(at 215.9 166.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7447a876-443a-440b-b3a2-2e605ce9de4d")
-	)
-	(junction
-		(at 215.9 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7c9e1aa3-e38d-44ce-9add-b8568b4fa1bc")
 	)
 	(junction
 		(at 201.93 153.67)
@@ -4191,16 +4174,10 @@
 		(uuid "8d80b679-7168-4ca9-8c4f-36ccbdb0bf2d")
 	)
 	(junction
-		(at 107.95 156.21)
+		(at 162.56 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8e1a817d-e760-44c5-9dc8-2a3fe55f4b83")
-	)
-	(junction
-		(at 215.9 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8f7771ef-ac75-4a39-9aea-74c0eee9c50a")
+		(uuid "8e5399a7-2ef8-4dae-a871-3cbfa8518ccc")
 	)
 	(junction
 		(at 312.42 52.07)
@@ -4221,16 +4198,34 @@
 		(uuid "9c68e04c-0108-4e32-9cef-221a2b31a139")
 	)
 	(junction
+		(at 107.95 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d7e6e31-84e6-46de-bdc0-e613562a73db")
+	)
+	(junction
+		(at 162.56 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ebc5e92-e59d-4eff-aefc-34c0a64b8b8d")
+	)
+	(junction
+		(at 162.56 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f953767-2c03-4c68-aa1c-1f3e879c21d5")
+	)
+	(junction
 		(at 64.77 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a23698ff-42ab-4588-aa42-e43abc294069")
 	)
 	(junction
-		(at 107.95 130.81)
+		(at 107.95 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a255eb2a-56be-424a-99ed-468cd016e79e")
+		(uuid "a25a126b-138b-49e6-954a-ee22a8fd25fe")
 	)
 	(junction
 		(at 361.95 44.45)
@@ -4239,16 +4234,16 @@
 		(uuid "b3dd448a-54e3-4b4f-9521-0f44acdf3ffe")
 	)
 	(junction
+		(at 78.74 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b6126b4f-b7fd-4472-b115-6f343ceccbab")
+	)
+	(junction
 		(at 201.93 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bb2cc0a5-160e-4cce-b543-655579be20a2")
-	)
-	(junction
-		(at 215.9 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "beb30b29-be51-4bac-a161-9144a8b94ff9")
 	)
 	(junction
 		(at 312.42 24.13)
@@ -4257,10 +4252,28 @@
 		(uuid "c26fe5b4-072e-4d26-8505-3c8d2b047f10")
 	)
 	(junction
+		(at 162.56 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4b0000f-916f-41b1-8117-287e4b355bb0")
+	)
+	(junction
+		(at 162.56 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1fab9e6-bca8-47e3-99b5-980ff3e90439")
+	)
+	(junction
 		(at 185.42 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d23cabdf-2b3e-48d0-8531-aadbfad584b9")
+	)
+	(junction
+		(at 107.95 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4a30c38-e12c-4bb3-8e37-dea552a52b0a")
 	)
 	(junction
 		(at 185.42 102.87)
@@ -4269,16 +4282,16 @@
 		(uuid "d6d1fdb6-1ee2-49af-9af2-29613793f73a")
 	)
 	(junction
+		(at 107.95 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7b08253-2465-4df5-91d4-e1e00b2a8257")
+	)
+	(junction
 		(at 201.93 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d98fa3f9-f856-43b4-9176-15eb0a9bb52f")
-	)
-	(junction
-		(at 215.9 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "da29e90b-b7a5-4920-b9e1-e34912ae54cd")
 	)
 	(junction
 		(at 312.42 31.75)
@@ -4297,6 +4310,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e58a0b4b-0e2d-4b63-8707-b654ea2ed95e")
+	)
+	(junction
+		(at 162.56 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e73a93a8-92d3-497b-b4e4-a18ce3f04213")
 	)
 	(junction
 		(at 78.74 58.42)
@@ -4323,68 +4342,32 @@
 		(uuid "f32836f6-da0d-4832-8134-9fa145b2533d")
 	)
 	(junction
-		(at 107.95 80.01)
+		(at 162.56 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f9cbb8c6-abdd-43be-b2ce-d5cbe85816e3")
+		(uuid "f3dc8e65-1455-4696-96eb-8302174bf485")
 	)
 	(junction
-		(at 215.9 153.67)
+		(at 78.74 21.59)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fd1273f1-1a62-4e71-bb2e-18301275cb37")
+		(uuid "fadb9faf-14a1-455f-ae73-647579aed148")
 	)
 	(no_connect
-		(at 156.21 146.05)
-		(uuid "025e33dc-3ba4-49bd-94e1-f0316c30ab6e")
-	)
-	(no_connect
-		(at 318.77 190.5)
+		(at 317.5 190.5)
 		(uuid "17c4416a-9af7-4b56-a9b2-862572842428")
 	)
 	(no_connect
-		(at 318.77 185.42)
+		(at 317.5 185.42)
 		(uuid "1e7fc5fb-ea9f-4ca3-a6c8-0eb48dab5bba")
-	)
-	(no_connect
-		(at 156.21 143.51)
-		(uuid "1f6fcd3e-5648-45e3-bed7-2e8b63188d54")
-	)
-	(no_connect
-		(at 143.51 158.75)
-		(uuid "26ec7129-707e-4692-9139-1e9df8fa991e")
-	)
-	(no_connect
-		(at 156.21 156.21)
-		(uuid "2864b492-c595-4dca-9a14-e90e4b793246")
 	)
 	(no_connect
 		(at 54.61 200.66)
 		(uuid "2b400011-1197-4043-91fe-c1a2cccb8138")
 	)
 	(no_connect
-		(at 156.21 168.91)
-		(uuid "35a91eb7-6bc2-4f52-b095-14a4c57f583c")
-	)
-	(no_connect
-		(at 143.51 120.65)
-		(uuid "37dac26a-ae0e-4ece-b3e2-be8feba26110")
-	)
-	(no_connect
-		(at 156.21 95.25)
-		(uuid "3a9991de-28bb-479b-b117-f237f720d36b")
-	)
-	(no_connect
-		(at 156.21 118.11)
-		(uuid "3cfd6b9f-673b-4b4e-8e0b-33e85f25037f")
-	)
-	(no_connect
 		(at 110.49 198.12)
 		(uuid "3e90dcb4-fd73-4e76-8920-9a0f42aeb700")
-	)
-	(no_connect
-		(at 143.51 171.45)
-		(uuid "3f0b39f0-be36-479e-a39b-e3f25962a62f")
 	)
 	(no_connect
 		(at 142.24 200.66)
@@ -4415,36 +4398,12 @@
 		(uuid "57e4c952-bb51-4003-886b-71f95b7c8b57")
 	)
 	(no_connect
-		(at 156.21 158.75)
-		(uuid "5cb565e0-47b0-4a59-9d03-262dd42cff50")
-	)
-	(no_connect
-		(at 156.21 80.01)
-		(uuid "5da349a5-50fe-4f68-b007-22a5d0f671fa")
-	)
-	(no_connect
-		(at 156.21 82.55)
-		(uuid "63a6bfeb-5a13-4de5-a908-891852d23511")
-	)
-	(no_connect
-		(at 143.51 82.55)
-		(uuid "720d5ccc-f1da-430a-867a-d30c902004ee")
-	)
-	(no_connect
-		(at 318.77 182.88)
+		(at 317.5 182.88)
 		(uuid "78e95297-d8f6-4181-b419-5b18e465256a")
 	)
 	(no_connect
 		(at 114.3 198.12)
 		(uuid "7e8e3522-ade7-4641-9102-302a3baa0a12")
-	)
-	(no_connect
-		(at 156.21 130.81)
-		(uuid "825bf95f-907b-4a6d-9e08-1ee0d4051464")
-	)
-	(no_connect
-		(at 143.51 133.35)
-		(uuid "8439fc41-ee58-43e8-bf0c-f55cf1e48ac8")
 	)
 	(no_connect
 		(at 38.1 200.66)
@@ -4455,20 +4414,8 @@
 		(uuid "a096a658-ea73-45e1-9a2f-0a56380d26ec")
 	)
 	(no_connect
-		(at 156.21 107.95)
-		(uuid "a2d6fa26-7844-4b65-8a28-7423db8da4b5")
-	)
-	(no_connect
-		(at 156.21 105.41)
-		(uuid "aadda42f-1e23-43a8-90da-d3a3f3302bf9")
-	)
-	(no_connect
-		(at 322.58 203.2)
+		(at 321.31 203.2)
 		(uuid "afb5d59f-27fc-4ae1-9ba3-0e9c03fcfcfb")
-	)
-	(no_connect
-		(at 156.21 171.45)
-		(uuid "b4ccb48f-6b57-48ec-8447-77d8f2c91e61")
 	)
 	(no_connect
 		(at 54.61 195.58)
@@ -4507,19 +4454,11 @@
 		(uuid "d65afaa8-552d-47dd-84df-5b91220fbc67")
 	)
 	(no_connect
-		(at 143.51 107.95)
-		(uuid "df8f2b65-29f4-4baa-9707-3589cbb423bf")
-	)
-	(no_connect
-		(at 156.21 120.65)
-		(uuid "e28893b1-e1c2-4ffa-91f4-cd9d674de2c3")
-	)
-	(no_connect
 		(at 340.36 109.22)
 		(uuid "e42e6b9e-4db6-4ccb-a59a-b0cff1cceb4d")
 	)
 	(no_connect
-		(at 318.77 187.96)
+		(at 317.5 187.96)
 		(uuid "e69aa57d-4ffa-4544-a336-47f475435399")
 	)
 	(no_connect
@@ -4527,28 +4466,12 @@
 		(uuid "eb52f424-96e0-4b32-a156-d580be808577")
 	)
 	(no_connect
-		(at 318.77 193.04)
+		(at 317.5 193.04)
 		(uuid "eddcaff7-8dd7-4485-9e6f-e44abd73b4be")
 	)
 	(no_connect
-		(at 318.77 203.2)
+		(at 317.5 203.2)
 		(uuid "f41de29d-9f8c-43ea-8cb0-1340a480d0a9")
-	)
-	(no_connect
-		(at 156.21 92.71)
-		(uuid "f4d79a3f-dc08-47a7-b38e-1452437fdf7c")
-	)
-	(no_connect
-		(at 143.51 146.05)
-		(uuid "f7bc5759-9b97-47a9-9e6b-bb7729ed1746")
-	)
-	(no_connect
-		(at 156.21 133.35)
-		(uuid "f8a99878-b585-4335-9f0d-ff1c7e3df732")
-	)
-	(no_connect
-		(at 143.51 95.25)
-		(uuid "f901b608-5567-471a-a138-c0a91fa4c386")
 	)
 	(no_connect
 		(at 146.05 62.23)
@@ -4576,7 +4499,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 92.71) (xy 143.51 92.71)
+			(xy 124.46 95.25) (xy 143.51 95.25)
 		)
 		(stroke
 			(width 0)
@@ -4596,7 +4519,17 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 143.51) (xy 107.95 156.21)
+			(xy 78.74 30.48) (xy 78.74 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "074de87c-a978-440c-9b59-a3b5d871477c")
+	)
+	(wire
+		(pts
+			(xy 107.95 133.35) (xy 107.95 146.05)
 		)
 		(stroke
 			(width 0)
@@ -4606,7 +4539,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 77.47) (xy 168.91 77.47)
+			(xy 156.21 77.47) (xy 162.56 77.47)
 		)
 		(stroke
 			(width 0)
@@ -4626,7 +4559,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 80.01) (xy 119.38 80.01)
+			(xy 107.95 82.55) (xy 119.38 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4636,7 +4569,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 130.81) (xy 119.38 130.81)
+			(xy 107.95 133.35) (xy 119.38 133.35)
 		)
 		(stroke
 			(width 0)
@@ -4646,23 +4579,13 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 105.41) (xy 143.51 105.41)
+			(xy 124.46 107.95) (xy 143.51 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "101ef919-feb1-423b-930a-48ba37bfef57")
-	)
-	(wire
-		(pts
-			(xy 107.95 156.21) (xy 107.95 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1040ec36-6d51-4ff9-a227-12400b4d5b41")
 	)
 	(wire
 		(pts
@@ -4696,7 +4619,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 203.2) (xy 280.67 203.2)
+			(xy 269.24 203.2) (xy 279.4 203.2)
 		)
 		(stroke
 			(width 0)
@@ -4726,6 +4649,16 @@
 	)
 	(wire
 		(pts
+			(xy 278.13 173.99) (xy 278.13 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19668388-3ae2-4f69-90c9-e6a9fc6b4b6f")
+	)
+	(wire
+		(pts
 			(xy 193.04 115.57) (xy 201.93 115.57)
 		)
 		(stroke
@@ -4736,7 +4669,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 105.41) (xy 119.38 105.41)
+			(xy 107.95 107.95) (xy 119.38 107.95)
 		)
 		(stroke
 			(width 0)
@@ -4766,7 +4699,7 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 207.01) (xy 368.3 207.01)
+			(xy 347.98 207.01) (xy 367.03 207.01)
 		)
 		(stroke
 			(width 0)
@@ -4776,7 +4709,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 118.11) (xy 107.95 130.81)
+			(xy 107.95 107.95) (xy 107.95 120.65)
 		)
 		(stroke
 			(width 0)
@@ -4786,23 +4719,13 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 140.97) (xy 224.79 140.97)
+			(xy 278.13 167.64) (xy 278.13 173.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2373a116-a504-4535-a85f-81b44fb2a5ce")
-	)
-	(wire
-		(pts
-			(xy 278.13 180.34) (xy 278.13 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "248ba1e8-7a05-455e-91c0-65a29f0132f3")
+		(uuid "244a6491-6177-4795-afdc-f8b8cd26e7cd")
 	)
 	(wire
 		(pts
@@ -4816,6 +4739,26 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 77.47) (xy 168.91 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27bea28a-f238-4c0b-a351-e81a675544d2")
+	)
+	(wire
+		(pts
+			(xy 107.95 95.25) (xy 107.95 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28efa233-37d2-4e3a-8bdb-b300a5ce3645")
+	)
+	(wire
+		(pts
 			(xy 356.87 97.79) (xy 340.36 97.79)
 		)
 		(stroke
@@ -4823,6 +4766,16 @@
 			(type default)
 		)
 		(uuid "2a065350-4178-490b-8643-7c66f0d42ebd")
+	)
+	(wire
+		(pts
+			(xy 162.56 153.67) (xy 168.91 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ac03974-2ac9-4283-9b34-fa0adeac0640")
 	)
 	(wire
 		(pts
@@ -4846,7 +4799,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 198.12) (xy 280.67 198.12)
+			(xy 269.24 198.12) (xy 279.4 198.12)
 		)
 		(stroke
 			(width 0)
@@ -4866,7 +4819,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 195.58) (xy 280.67 195.58)
+			(xy 269.24 195.58) (xy 279.4 195.58)
 		)
 		(stroke
 			(width 0)
@@ -4886,7 +4839,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 156.21) (xy 119.38 156.21)
+			(xy 107.95 158.75) (xy 119.38 158.75)
 		)
 		(stroke
 			(width 0)
@@ -4896,7 +4849,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 77.47) (xy 215.9 77.47)
+			(xy 201.93 77.47) (xy 224.79 77.47)
 		)
 		(stroke
 			(width 0)
@@ -4906,7 +4859,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 130.81) (xy 107.95 143.51)
+			(xy 107.95 120.65) (xy 107.95 133.35)
 		)
 		(stroke
 			(width 0)
@@ -4926,7 +4879,17 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 115.57) (xy 168.91 115.57)
+			(xy 107.95 82.55) (xy 107.95 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40506bae-7efd-45ff-8c07-5f10eea993c7")
+	)
+	(wire
+		(pts
+			(xy 156.21 115.57) (xy 162.56 115.57)
 		)
 		(stroke
 			(width 0)
@@ -4936,7 +4899,7 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 207.01) (xy 349.25 209.55)
+			(xy 347.98 207.01) (xy 347.98 209.55)
 		)
 		(stroke
 			(width 0)
@@ -4966,7 +4929,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 102.87) (xy 215.9 102.87)
+			(xy 201.93 102.87) (xy 224.79 102.87)
 		)
 		(stroke
 			(width 0)
@@ -4996,7 +4959,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 140.97) (xy 215.9 140.97)
+			(xy 201.93 140.97) (xy 224.79 140.97)
 		)
 		(stroke
 			(width 0)
@@ -5006,7 +4969,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 27.94) (xy 78.74 39.37)
+			(xy 78.74 19.05) (xy 78.74 21.59)
 		)
 		(stroke
 			(width 0)
@@ -5026,27 +4989,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 77.47) (xy 224.79 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5cc0a73c-25ec-4fb4-9aba-de9950c41a54")
-	)
-	(wire
-		(pts
-			(xy 215.9 128.27) (xy 224.79 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d02032a-585a-4c4e-bf5c-2cff7d2990bc")
-	)
-	(wire
-		(pts
-			(xy 270.51 190.5) (xy 280.67 190.5)
+			(xy 269.24 190.5) (xy 279.4 190.5)
 		)
 		(stroke
 			(width 0)
@@ -5066,7 +5009,7 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 189.23) (xy 365.76 203.2)
+			(xy 364.49 189.23) (xy 364.49 203.2)
 		)
 		(stroke
 			(width 0)
@@ -5086,7 +5029,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 80.01) (xy 143.51 80.01)
+			(xy 124.46 82.55) (xy 143.51 82.55)
 		)
 		(stroke
 			(width 0)
@@ -5106,13 +5049,23 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 92.71) (xy 107.95 105.41)
+			(xy 78.74 21.59) (xy 83.82 21.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "67fed391-f516-4dc7-bbb7-222c87069ece")
+		(uuid "6796e699-1052-4aa1-b098-89c4b377a0d6")
+	)
+	(wire
+		(pts
+			(xy 162.56 102.87) (xy 168.91 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68be6cb5-2c9b-429e-aefd-ee32ea4948b8")
 	)
 	(wire
 		(pts
@@ -5136,7 +5089,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 118.11) (xy 119.38 118.11)
+			(xy 107.95 120.65) (xy 119.38 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5186,16 +5139,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 115.57) (xy 224.79 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7afa983e-dc83-4079-83f0-5e91d82ae8ee")
-	)
-	(wire
-		(pts
 			(xy 193.04 90.17) (xy 201.93 90.17)
 		)
 		(stroke
@@ -5206,7 +5149,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 92.71) (xy 119.38 92.71)
+			(xy 107.95 95.25) (xy 119.38 95.25)
 		)
 		(stroke
 			(width 0)
@@ -5216,7 +5159,17 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 143.51) (xy 119.38 143.51)
+			(xy 107.95 146.05) (xy 107.95 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c9be4da-b831-4fb5-8908-c74988a78480")
+	)
+	(wire
+		(pts
+			(xy 107.95 146.05) (xy 119.38 146.05)
 		)
 		(stroke
 			(width 0)
@@ -5226,7 +5179,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 187.96) (xy 280.67 187.96)
+			(xy 269.24 187.96) (xy 279.4 187.96)
 		)
 		(stroke
 			(width 0)
@@ -5276,7 +5229,17 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 39.37) (xy 90.17 39.37)
+			(xy 107.95 158.75) (xy 107.95 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85171443-55c5-4f22-be58-30a9f6c8d1f8")
+	)
+	(wire
+		(pts
+			(xy 78.74 39.37) (xy 83.82 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5286,7 +5249,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 80.01) (xy 107.95 92.71)
+			(xy 107.95 58.42) (xy 107.95 82.55)
 		)
 		(stroke
 			(width 0)
@@ -5296,7 +5259,7 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 203.2) (xy 354.33 203.2)
+			(xy 364.49 203.2) (xy 353.06 203.2)
 		)
 		(stroke
 			(width 0)
@@ -5306,7 +5269,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 207.01) (xy 368.3 189.23)
+			(xy 367.03 207.01) (xy 367.03 189.23)
 		)
 		(stroke
 			(width 0)
@@ -5356,6 +5319,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 166.37) (xy 168.91 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94b028a5-9852-4622-a4fa-0e56adadc2e2")
+	)
+	(wire
+		(pts
 			(xy 344.17 43.18) (xy 344.17 44.45)
 		)
 		(stroke
@@ -5376,6 +5349,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 21.59) (xy 78.74 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99a14630-15a0-41f3-96b9-0126c49d1467")
+	)
+	(wire
+		(pts
 			(xy 361.95 50.8) (xy 361.95 52.07)
 		)
 		(stroke
@@ -5383,16 +5366,6 @@
 			(type default)
 		)
 		(uuid "99b2b7be-a4fa-4ddd-a26a-7041a262deac")
-	)
-	(wire
-		(pts
-			(xy 90.17 39.37) (xy 90.17 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d90f3cd-c33f-4377-b777-d88ea2d48f59")
 	)
 	(wire
 		(pts
@@ -5426,7 +5399,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 128.27) (xy 168.91 128.27)
+			(xy 156.21 128.27) (xy 162.56 128.27)
 		)
 		(stroke
 			(width 0)
@@ -5436,7 +5409,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 140.97) (xy 168.91 140.97)
+			(xy 156.21 140.97) (xy 162.56 140.97)
 		)
 		(stroke
 			(width 0)
@@ -5456,6 +5429,16 @@
 	)
 	(wire
 		(pts
+			(xy 278.13 173.99) (xy 273.05 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa0fd9bb-10e9-4fd0-9792-d29f1ab5d8bf")
+	)
+	(wire
+		(pts
 			(xy 185.42 140.97) (xy 193.04 140.97)
 		)
 		(stroke
@@ -5463,16 +5446,6 @@
 			(type default)
 		)
 		(uuid "aca876d5-737d-4d2a-9d2a-52c06dce7aaf")
-	)
-	(wire
-		(pts
-			(xy 215.9 153.67) (xy 224.79 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "acc6ec87-c4a9-44d2-ab45-d15b9d05fd0b")
 	)
 	(wire
 		(pts
@@ -5516,7 +5489,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 118.11) (xy 143.51 118.11)
+			(xy 124.46 120.65) (xy 143.51 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5536,7 +5509,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 153.67) (xy 168.91 153.67)
+			(xy 156.21 153.67) (xy 162.56 153.67)
 		)
 		(stroke
 			(width 0)
@@ -5576,7 +5549,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 130.81) (xy 143.51 130.81)
+			(xy 124.46 133.35) (xy 143.51 133.35)
 		)
 		(stroke
 			(width 0)
@@ -5596,7 +5569,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 166.37) (xy 215.9 166.37)
+			(xy 201.93 166.37) (xy 224.79 166.37)
 		)
 		(stroke
 			(width 0)
@@ -5606,17 +5579,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 166.37) (xy 224.79 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdb99d7e-c49a-45a4-9d9c-15e6521d2388")
-	)
-	(wire
-		(pts
-			(xy 201.93 153.67) (xy 215.9 153.67)
+			(xy 201.93 153.67) (xy 224.79 153.67)
 		)
 		(stroke
 			(width 0)
@@ -5626,7 +5589,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 128.27) (xy 215.9 128.27)
+			(xy 201.93 128.27) (xy 224.79 128.27)
 		)
 		(stroke
 			(width 0)
@@ -5636,7 +5599,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 90.17) (xy 215.9 90.17)
+			(xy 201.93 90.17) (xy 224.79 90.17)
 		)
 		(stroke
 			(width 0)
@@ -5676,7 +5639,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 168.91) (xy 143.51 168.91)
+			(xy 124.46 171.45) (xy 143.51 171.45)
 		)
 		(stroke
 			(width 0)
@@ -5726,17 +5689,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 102.87) (xy 224.79 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0f25225-5556-414b-8c39-1b0fd6ae5438")
-	)
-	(wire
-		(pts
-			(xy 156.21 90.17) (xy 168.91 90.17)
+			(xy 156.21 90.17) (xy 162.56 90.17)
 		)
 		(stroke
 			(width 0)
@@ -5756,7 +5709,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 143.51) (xy 143.51 143.51)
+			(xy 124.46 146.05) (xy 143.51 146.05)
 		)
 		(stroke
 			(width 0)
@@ -5766,7 +5719,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 200.66) (xy 280.67 200.66)
+			(xy 269.24 200.66) (xy 279.4 200.66)
 		)
 		(stroke
 			(width 0)
@@ -5786,7 +5739,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 166.37) (xy 168.91 166.37)
+			(xy 156.21 166.37) (xy 162.56 166.37)
 		)
 		(stroke
 			(width 0)
@@ -5806,26 +5759,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 90.17) (xy 224.79 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5ded12a-546d-476b-a224-aec44c49bc43")
-	)
-	(wire
-		(pts
-			(xy 107.95 105.41) (xy 107.95 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6a6c830-02f0-41d1-9c6b-1fdedc26cff6")
-	)
-	(wire
-		(pts
 			(xy 38.1 195.58) (xy 41.91 195.58)
 		)
 		(stroke
@@ -5833,6 +5766,16 @@
 			(type default)
 		)
 		(uuid "d6ee8ce0-34a6-46d9-9b74-e91c7a0eaafd")
+	)
+	(wire
+		(pts
+			(xy 162.56 90.17) (xy 168.91 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8143689-28e1-4691-ba33-fdf6a7e20621")
 	)
 	(wire
 		(pts
@@ -5856,7 +5799,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 156.21) (xy 143.51 156.21)
+			(xy 124.46 158.75) (xy 143.51 158.75)
 		)
 		(stroke
 			(width 0)
@@ -5866,17 +5809,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 58.42) (xy 107.95 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbc0914c-93a5-4689-9f4d-f217ca74f946")
-	)
-	(wire
-		(pts
-			(xy 270.51 193.04) (xy 280.67 193.04)
+			(xy 269.24 193.04) (xy 279.4 193.04)
 		)
 		(stroke
 			(width 0)
@@ -5886,23 +5819,13 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 102.87) (xy 168.91 102.87)
+			(xy 156.21 102.87) (xy 162.56 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "de5db394-aec2-4ab8-acb4-2447b3580802")
-	)
-	(wire
-		(pts
-			(xy 278.13 182.88) (xy 280.67 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e32dbf8a-416d-4d6b-9da3-b3565b2609c8")
 	)
 	(wire
 		(pts
@@ -5916,7 +5839,7 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 203.2) (xy 344.17 203.2)
+			(xy 321.31 203.2) (xy 342.9 203.2)
 		)
 		(stroke
 			(width 0)
@@ -5946,7 +5869,17 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 115.57) (xy 215.9 115.57)
+			(xy 278.13 182.88) (xy 279.4 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec0f1512-fcfc-4452-b7d7-32b58ef68d73")
+	)
+	(wire
+		(pts
+			(xy 201.93 115.57) (xy 224.79 115.57)
 		)
 		(stroke
 			(width 0)
@@ -5966,7 +5899,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 168.91) (xy 119.38 168.91)
+			(xy 107.95 171.45) (xy 119.38 171.45)
 		)
 		(stroke
 			(width 0)
@@ -6016,6 +5949,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 115.57) (xy 168.91 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3e6c034-1f24-4b0e-ab05-c3c18c054bae")
+	)
+	(wire
+		(pts
 			(xy 312.42 41.91) (xy 312.42 52.07)
 		)
 		(stroke
@@ -6036,6 +5979,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 30.48) (xy 83.82 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f820209e-afa0-4fba-a277-ba86b598218f")
+	)
+	(wire
+		(pts
 			(xy 344.17 36.83) (xy 344.17 38.1)
 		)
 		(stroke
@@ -6053,6 +6006,26 @@
 			(type default)
 		)
 		(uuid "fb55401c-0274-4f53-9cc1-7042c1a1c771")
+	)
+	(wire
+		(pts
+			(xy 162.56 140.97) (xy 168.91 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc788a61-dacd-4588-8f7e-828ceeb7d1fe")
+	)
+	(wire
+		(pts
+			(xy 162.56 128.27) (xy 168.91 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd046e10-125f-4012-b147-d2cb7c36179f")
 	)
 	(wire
 		(pts
@@ -17490,7 +17463,7 @@
 	)
 	(hierarchical_label "ANT_SPI_CS"
 		(shape input)
-		(at 270.51 200.66 180)
+		(at 269.24 200.66 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -17512,7 +17485,7 @@
 	)
 	(hierarchical_label "SPI_MOSI"
 		(shape input)
-		(at 270.51 198.12 180)
+		(at 269.24 198.12 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -17534,7 +17507,7 @@
 	)
 	(hierarchical_label "SPI_SCK"
 		(shape input)
-		(at 270.51 193.04 180)
+		(at 269.24 193.04 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -17611,7 +17584,7 @@
 	)
 	(hierarchical_label "ANT_Enable"
 		(shape input)
-		(at 270.51 187.96 180)
+		(at 269.24 187.96 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -17644,7 +17617,7 @@
 	)
 	(hierarchical_label "ANT_Reset"
 		(shape input)
-		(at 270.51 203.2 180)
+		(at 269.24 203.2 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -17655,7 +17628,7 @@
 	)
 	(hierarchical_label "ANT_DIO0_Interrupt"
 		(shape output)
-		(at 270.51 190.5 180)
+		(at 269.24 190.5 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -17721,7 +17694,7 @@
 	)
 	(hierarchical_label "SPI_MISO"
 		(shape output)
-		(at 270.51 195.58 180)
+		(at 269.24 195.58 180)
 		(effects
 			(font
 				(size 1.4986 1.4986)
@@ -17729,6 +17702,73 @@
 			(justify right)
 		)
 		(uuid "f87abc03-ad94-4229-91a4-2a2e00c06dc1")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00288890-fb1b-442c-a7c2-25b02a23a91c")
+		(property "Reference" "#PWR077"
+			(at 83.82 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7074d3b0-921f-4e58-a829-d55600b8f977")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:D_Zener_Small")
@@ -18070,7 +18110,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse_Small")
-		(at 121.92 130.81 0)
+		(at 121.92 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18079,7 +18119,7 @@
 		(fields_autoplaced yes)
 		(uuid "02b01bdf-18e9-4f9a-9e4a-15451d50c934")
 		(property "Reference" "F6"
-			(at 121.92 128.27 0)
+			(at 121.92 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18087,7 +18127,7 @@
 			)
 		)
 		(property "Value" "70mA 5s Fusing, 7.5 Ohms"
-			(at 121.92 127 0)
+			(at 121.92 129.54 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -18096,7 +18136,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 121.92 130.81 0)
+			(at 121.92 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18105,7 +18145,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/AccuGuardLC_0402.pdf"
-			(at 121.92 130.81 0)
+			(at 121.92 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18114,7 +18154,7 @@
 			)
 		)
 		(property "Description" "FUSE BOARD MOUNT 28MA 63VDC 0603"
-			(at 121.92 128.27 0)
+			(at 121.92 130.81 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -18123,7 +18163,7 @@
 			)
 		)
 		(property "Detailed Description" "28 mA 63 V Fuse Board Mount (Cartridge Style Excluded) Surface Mount 0603 (1608 Metric)"
-			(at 121.92 130.81 0)
+			(at 121.92 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18132,7 +18172,7 @@
 			)
 		)
 		(property "Manufacturer" "KYOCERA AVX"
-			(at 121.92 130.81 0)
+			(at 121.92 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18141,7 +18181,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "F0603G0R02FNTR"
-			(at 121.92 130.81 0)
+			(at 121.92 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18150,7 +18190,7 @@
 			)
 		)
 		(property "Package" "0603 (1608 Metric)"
-			(at 121.92 130.81 0)
+			(at 121.92 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18159,7 +18199,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/kyocera-avx/F0603G0R02FNTR/9948432"
-			(at 121.92 130.81 0)
+			(at 121.92 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18168,7 +18208,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "478-13097-1-ND "
-			(at 121.92 130.81 0)
+			(at 121.92 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18177,7 +18217,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 121.92 130.81 0)
+			(at 121.92 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18186,7 +18226,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 121.92 130.81 0)
+			(at 121.92 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18195,7 +18235,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/KYOCERA-AVX/F0603G0R02FNTR?qs=%252BdQmOuGyFcEJ7yNI5Fr0SQ%3D%3D"
-			(at 121.92 130.81 0)
+			(at 121.92 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18204,7 +18244,7 @@
 			)
 		)
 		(property "Mouser Part Number" "581-F0603G0R02FNTR "
-			(at 121.92 130.81 0)
+			(at 121.92 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18229,7 +18269,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 78.74 27.94 0)
+		(at 78.74 19.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18237,7 +18277,7 @@
 		(dnp no)
 		(uuid "03cd9b0b-307c-438f-ab5a-6299c3d70a0b")
 		(property "Reference" "#PWR024"
-			(at 78.74 31.75 0)
+			(at 78.74 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18246,7 +18286,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 79.121 23.5458 0)
+			(at 79.121 14.6558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18254,7 +18294,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 27.94 0)
+			(at 78.74 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18263,7 +18303,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 27.94 0)
+			(at 78.74 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18272,7 +18312,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 78.74 27.94 0)
+			(at 78.74 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18361,7 +18401,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 215.9 107.95 0)
+		(at 162.56 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18370,7 +18410,7 @@
 		(fields_autoplaced yes)
 		(uuid "0568cfdf-974b-435e-9f3c-1a9c5dcf9022")
 		(property "Reference" "#PWR044"
-			(at 215.9 114.3 0)
+			(at 162.56 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18379,7 +18419,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 215.9 113.03 0)
+			(at 162.56 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18388,7 +18428,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 107.95 0)
+			(at 162.56 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18397,7 +18437,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 107.95 0)
+			(at 162.56 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18406,7 +18446,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 215.9 107.95 0)
+			(at 162.56 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18662,7 +18702,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse_Small")
-		(at 121.92 92.71 0)
+		(at 121.92 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18671,7 +18711,7 @@
 		(fields_autoplaced yes)
 		(uuid "0a0126e3-64ab-422b-a4d7-1a754faf441e")
 		(property "Reference" "F3"
-			(at 121.92 90.17 0)
+			(at 121.92 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18679,7 +18719,7 @@
 			)
 		)
 		(property "Value" "70mA 5s Fusing, 7.5 Ohms"
-			(at 121.92 88.9 0)
+			(at 121.92 91.44 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -18688,7 +18728,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 121.92 92.71 0)
+			(at 121.92 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18697,7 +18737,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/AccuGuardLC_0402.pdf"
-			(at 121.92 92.71 0)
+			(at 121.92 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18706,7 +18746,7 @@
 			)
 		)
 		(property "Description" "FUSE BOARD MOUNT 28MA 63VDC 0603"
-			(at 121.92 90.17 0)
+			(at 121.92 92.71 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -18715,7 +18755,7 @@
 			)
 		)
 		(property "Detailed Description" "28 mA 63 V Fuse Board Mount (Cartridge Style Excluded) Surface Mount 0603 (1608 Metric)"
-			(at 121.92 92.71 0)
+			(at 121.92 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18724,7 +18764,7 @@
 			)
 		)
 		(property "Manufacturer" "KYOCERA AVX"
-			(at 121.92 92.71 0)
+			(at 121.92 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18733,7 +18773,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "F0603G0R02FNTR"
-			(at 121.92 92.71 0)
+			(at 121.92 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18742,7 +18782,7 @@
 			)
 		)
 		(property "Package" "0603 (1608 Metric)"
-			(at 121.92 92.71 0)
+			(at 121.92 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18751,7 +18791,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/kyocera-avx/F0603G0R02FNTR/9948432"
-			(at 121.92 92.71 0)
+			(at 121.92 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18760,7 +18800,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "478-13097-1-ND "
-			(at 121.92 92.71 0)
+			(at 121.92 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18769,7 +18809,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 121.92 92.71 0)
+			(at 121.92 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18778,7 +18818,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 121.92 92.71 0)
+			(at 121.92 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18787,7 +18827,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/KYOCERA-AVX/F0603G0R02FNTR?qs=%252BdQmOuGyFcEJ7yNI5Fr0SQ%3D%3D"
-			(at 121.92 92.71 0)
+			(at 121.92 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18796,7 +18836,7 @@
 			)
 		)
 		(property "Mouser Part Number" "581-F0603G0R02FNTR "
-			(at 121.92 92.71 0)
+			(at 121.92 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19001,7 +19041,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 215.9 118.11 0)
+		(at 162.56 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19010,7 +19050,7 @@
 		(fields_autoplaced yes)
 		(uuid "0e3a1f80-53a1-4fc3-becd-c6ac0c999cc7")
 		(property "Reference" "R18"
-			(at 218.44 116.8399 0)
+			(at 165.1 116.8399 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -19019,7 +19059,7 @@
 			)
 		)
 		(property "Value" "1M ±1%"
-			(at 218.44 119.3799 0)
+			(at 165.1 119.3799 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -19028,7 +19068,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 215.9 118.11 0)
+			(at 162.56 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19037,7 +19077,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 215.9 118.11 0)
+			(at 162.56 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19046,7 +19086,7 @@
 			)
 		)
 		(property "Description" "RES SMD 1M OHM 1% 1/8W 0805"
-			(at 215.9 118.11 0)
+			(at 162.56 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19055,7 +19095,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay Dale"
-			(at 215.9 118.11 0)
+			(at 162.56 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19064,7 +19104,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CRCW08051M00FKEA"
-			(at 215.9 118.11 0)
+			(at 162.56 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19073,7 +19113,7 @@
 			)
 		)
 		(property "Detailed Description" "1 MOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
-			(at 215.9 118.11 0)
+			(at 162.56 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19082,7 +19122,7 @@
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 215.9 118.11 0)
+			(at 162.56 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19090,7 +19130,7 @@
 			)
 		)
 		(property "Package" "0805 (2012 Metric)"
-			(at 215.9 118.11 0)
+			(at 162.56 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19099,7 +19139,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW08051M00FKEA/1176016"
-			(at 215.9 118.11 0)
+			(at 162.56 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19108,7 +19148,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "541-1.00MCCT-ND "
-			(at 215.9 118.11 0)
+			(at 162.56 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19117,7 +19157,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 215.9 118.11 0)
+			(at 162.56 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19126,7 +19166,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 215.9 118.11 0)
+			(at 162.56 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19135,7 +19175,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW08051M00FKEA?qs=1CkV0QOCgMoYllQJ5f1DKQ%3D%3D"
-			(at 215.9 118.11 0)
+			(at 162.56 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19144,7 +19184,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-CRCW0805-1.0M-E3"
-			(at 215.9 118.11 0)
+			(at 162.56 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19570,7 +19610,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 215.9 146.05 0)
+		(at 162.56 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19579,7 +19619,7 @@
 		(fields_autoplaced yes)
 		(uuid "10023a9d-bd92-4a62-8a27-8c90cd58e105")
 		(property "Reference" "#PWR063"
-			(at 215.9 152.4 0)
+			(at 162.56 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19588,7 +19628,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 215.9 151.13 0)
+			(at 162.56 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19597,7 +19637,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 146.05 0)
+			(at 162.56 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19606,7 +19646,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 146.05 0)
+			(at 162.56 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19615,7 +19655,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 215.9 146.05 0)
+			(at 162.56 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20040,7 +20080,7 @@
 	)
 	(symbol
 		(lib_id "Device:Antenna_Shield")
-		(at 365.76 184.15 0)
+		(at 364.49 184.15 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -20049,7 +20089,7 @@
 		(fields_autoplaced yes)
 		(uuid "16f96804-2812-4991-ace2-66bfaec62c88")
 		(property "Reference" "AE1"
-			(at 369.57 179.7049 0)
+			(at 368.3 179.7049 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20058,7 +20098,7 @@
 			)
 		)
 		(property "Value" "ANT-916-CW-RCS-SMA"
-			(at 369.57 182.2449 0)
+			(at 368.3 182.2449 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20067,7 +20107,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 365.76 181.61 0)
+			(at 364.49 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20076,7 +20116,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=CW-RCS_Series&DocType=Data+Sheet&DocLang=English&DocFormat=pdf&PartCntxt=ANT-916-CW-RCS"
-			(at 365.76 181.61 0)
+			(at 364.49 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20085,7 +20125,7 @@
 			)
 		)
 		(property "Description" "915MHZ CCOMPACT RIGHT ANGLE WHIP"
-			(at 369.57 184.7849 0)
+			(at 368.3 184.7849 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20094,7 +20134,7 @@
 			)
 		)
 		(property "Detailed Description" "RF ANTENNA ISM, LoRaWAN, LPWA Whip, Right Angle SMA Male Connector Mount"
-			(at 365.76 184.15 0)
+			(at 364.49 184.15 0)
 			(effects
 				(font
 					(size 1.4986 1.4986)
@@ -20103,7 +20143,7 @@
 			)
 		)
 		(property "Manufacturer" "TE Connectivity Linx"
-			(at 365.76 184.15 0)
+			(at 364.49 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20112,7 +20152,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "ANT-916-CW-RCS-SMA"
-			(at 365.76 184.15 0)
+			(at 364.49 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20121,7 +20161,7 @@
 			)
 		)
 		(property "Qty Multiplier" "2"
-			(at 369.57 187.325 0)
+			(at 368.3 187.325 0)
 			(show_name yes)
 			(effects
 				(font
@@ -20133,7 +20173,7 @@
 			)
 		)
 		(property "Package" "n/a"
-			(at 365.76 184.15 0)
+			(at 364.49 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20142,7 +20182,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/te-connectivity-linx/ANT-916-CW-RCS-SMA/16630288?s=N4IgTCBcDaIIIDkAqBaAnARgGwoMIHUUAlXAZRVIFk4QBdAXyA"
-			(at 365.76 184.15 0)
+			(at 364.49 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20151,7 +20191,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "343-ANT-916-CW-RCS-SMA-ND"
-			(at 365.76 184.15 0)
+			(at 364.49 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20160,7 +20200,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 365.76 184.15 0)
+			(at 364.49 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20169,7 +20209,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 365.76 184.15 0)
+			(at 364.49 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20178,7 +20218,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/TE-Connectivity-Linx-Technologies/ANT-916-CW-RCS-SMA?qs=vvQtp7zwQdOkPNFyaB0lDA%3D%3D"
-			(at 365.76 184.15 0)
+			(at 364.49 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20187,7 +20227,7 @@
 			)
 		)
 		(property "Mouser Part Number" "712-ANT-916-CWRCSSMA "
-			(at 365.76 184.15 0)
+			(at 364.49 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20218,6 +20258,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "17481302-48cb-4679-ba31-daa6a35eda10")
 		(property "Reference" "J9"
 			(at 149.606 112.014 0)
@@ -20695,7 +20736,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 215.9 171.45 0)
+		(at 162.56 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20704,7 +20745,7 @@
 		(fields_autoplaced yes)
 		(uuid "21518d92-ce8b-4a2a-903f-e02e84da3afe")
 		(property "Reference" "#PWR073"
-			(at 215.9 177.8 0)
+			(at 162.56 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20713,7 +20754,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 215.9 176.53 0)
+			(at 162.56 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20722,7 +20763,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 171.45 0)
+			(at 162.56 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20731,7 +20772,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 171.45 0)
+			(at 162.56 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20740,7 +20781,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 215.9 171.45 0)
+			(at 162.56 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21176,7 +21217,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse_Small")
-		(at 121.92 118.11 0)
+		(at 121.92 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21185,7 +21226,7 @@
 		(fields_autoplaced yes)
 		(uuid "2a735f7e-0f49-4377-933d-0a8a1487a921")
 		(property "Reference" "F5"
-			(at 121.92 115.57 0)
+			(at 121.92 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21193,7 +21234,7 @@
 			)
 		)
 		(property "Value" "70mA 5s Fusing, 7.5 Ohms"
-			(at 121.92 114.3 0)
+			(at 121.92 116.84 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -21202,7 +21243,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 121.92 118.11 0)
+			(at 121.92 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21211,7 +21252,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/AccuGuardLC_0402.pdf"
-			(at 121.92 118.11 0)
+			(at 121.92 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21220,7 +21261,7 @@
 			)
 		)
 		(property "Description" "FUSE BOARD MOUNT 28MA 63VDC 0603"
-			(at 121.92 115.57 0)
+			(at 121.92 118.11 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -21229,7 +21270,7 @@
 			)
 		)
 		(property "Detailed Description" "28 mA 63 V Fuse Board Mount (Cartridge Style Excluded) Surface Mount 0603 (1608 Metric)"
-			(at 121.92 118.11 0)
+			(at 121.92 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21238,7 +21279,7 @@
 			)
 		)
 		(property "Manufacturer" "KYOCERA AVX"
-			(at 121.92 118.11 0)
+			(at 121.92 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21247,7 +21288,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "F0603G0R02FNTR"
-			(at 121.92 118.11 0)
+			(at 121.92 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21256,7 +21297,7 @@
 			)
 		)
 		(property "Package" "0603 (1608 Metric)"
-			(at 121.92 118.11 0)
+			(at 121.92 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21265,7 +21306,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/kyocera-avx/F0603G0R02FNTR/9948432"
-			(at 121.92 118.11 0)
+			(at 121.92 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21274,7 +21315,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "478-13097-1-ND "
-			(at 121.92 118.11 0)
+			(at 121.92 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21283,7 +21324,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 121.92 118.11 0)
+			(at 121.92 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21292,7 +21333,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 121.92 118.11 0)
+			(at 121.92 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21301,7 +21342,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/KYOCERA-AVX/F0603G0R02FNTR?qs=%252BdQmOuGyFcEJ7yNI5Fr0SQ%3D%3D"
-			(at 121.92 118.11 0)
+			(at 121.92 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21310,7 +21351,7 @@
 			)
 		)
 		(property "Mouser Part Number" "581-F0603G0R02FNTR "
-			(at 121.92 118.11 0)
+			(at 121.92 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21811,6 +21852,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "35093837-52b0-4d6c-bf0f-42480c36dd03")
 		(property "Reference" "J8"
 			(at 149.606 99.314 0)
@@ -22318,6 +22360,140 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 143.51 105.41 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c084974-58fc-45ce-9f6f-fa49ba54bf6f")
+		(property "Reference" "#PWR0102"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 105.4099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7cae31d8-b370-4f24-90bf-c851535a93f3")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.51 80.01 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3d2d01ef-6654-438f-ae65-3d13eda68148")
+		(property "Reference" "#PWR082"
+			(at 137.16 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 80.0099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01689149-4bad-4eea-82f9-ebfa74c6b59b")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR082")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 193.04 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22722,7 +22898,7 @@
 	)
 	(symbol
 		(lib_id "Lib:ANT_SMA_Edge")
-		(at 349.25 203.2 0)
+		(at 347.98 203.2 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -22731,7 +22907,7 @@
 		(fields_autoplaced yes)
 		(uuid "4619c29c-6fc6-4848-a45e-46f1ae6f9464")
 		(property "Reference" "J19"
-			(at 349.504 189.23 0)
+			(at 348.234 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22739,7 +22915,7 @@
 			)
 		)
 		(property "Value" "CON-SMA-EDGE-S"
-			(at 349.504 191.77 0)
+			(at 348.234 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22747,7 +22923,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 349.25 204.47 0)
+			(at 347.98 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22756,7 +22932,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.ca/datasheet/2/975/CON_SMA_EDGE_6_DATASHEET-3539198.pdf"
-			(at 349.504 191.77 0)
+			(at 348.234 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22765,7 +22941,7 @@
 			)
 		)
 		(property "Description" "RF Connectors / Coaxial Connectors SMA Female PCB Edge Mount"
-			(at 349.504 194.31 0)
+			(at 348.234 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22773,7 +22949,7 @@
 			)
 		)
 		(property "Detailed Description" "SMA Connector Jack, Female Socket Board Edge, End Launch Solder"
-			(at 349.504 196.85 0)
+			(at 348.234 196.85 0)
 			(effects
 				(font
 					(size 1.4986 1.4986)
@@ -22781,7 +22957,7 @@
 			)
 		)
 		(property "Manufacturer" "RF Solutions "
-			(at 349.25 203.2 0)
+			(at 347.98 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22790,7 +22966,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CON-SMA-EDGE-S"
-			(at 349.25 203.2 0)
+			(at 347.98 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22799,7 +22975,7 @@
 			)
 		)
 		(property "Qty Multiplier" "2"
-			(at 349.504 199.39 0)
+			(at 348.234 199.39 0)
 			(show_name yes)
 			(effects
 				(font
@@ -22810,7 +22986,7 @@
 			)
 		)
 		(property "Package" "n/a"
-			(at 349.25 203.2 0)
+			(at 347.98 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22819,7 +22995,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/rf-solutions/CON-SMA-EDGE-S/5845767"
-			(at 349.25 203.2 0)
+			(at 347.98 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22828,7 +23004,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "CON-SMA-EDGE-S-ND"
-			(at 349.25 203.2 0)
+			(at 347.98 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22837,7 +23013,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 349.25 203.2 0)
+			(at 347.98 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22846,7 +23022,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 349.25 203.2 0)
+			(at 347.98 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22855,7 +23031,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/RF-Solutions/CON-SMA-EDGE-S?qs=UkDUCjYnTB3a941HfsgOOA%3D%3D"
-			(at 349.25 203.2 0)
+			(at 347.98 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22864,7 +23040,7 @@
 			)
 		)
 		(property "Mouser Part Number" "223-CON-SMA-EDGE-S "
-			(at 349.25 203.2 0)
+			(at 347.98 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22957,7 +23133,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 215.9 156.21 0)
+		(at 162.56 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22966,7 +23142,7 @@
 		(fields_autoplaced yes)
 		(uuid "4b607ed7-009c-41ab-a720-c0a2b04167a7")
 		(property "Reference" "R24"
-			(at 218.44 154.9399 0)
+			(at 165.1 154.9399 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -22975,7 +23151,7 @@
 			)
 		)
 		(property "Value" "1M ±1%"
-			(at 218.44 157.4799 0)
+			(at 165.1 157.4799 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -22984,7 +23160,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 215.9 156.21 0)
+			(at 162.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22993,7 +23169,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 215.9 156.21 0)
+			(at 162.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23002,7 +23178,7 @@
 			)
 		)
 		(property "Description" "RES SMD 1M OHM 1% 1/8W 0805"
-			(at 215.9 156.21 0)
+			(at 162.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23011,7 +23187,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay Dale"
-			(at 215.9 156.21 0)
+			(at 162.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23020,7 +23196,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CRCW08051M00FKEA"
-			(at 215.9 156.21 0)
+			(at 162.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23029,7 +23205,7 @@
 			)
 		)
 		(property "Detailed Description" "1 MOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
-			(at 215.9 156.21 0)
+			(at 162.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23038,7 +23214,7 @@
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 215.9 156.21 0)
+			(at 162.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23046,7 +23222,7 @@
 			)
 		)
 		(property "Package" "0805 (2012 Metric)"
-			(at 215.9 156.21 0)
+			(at 162.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23055,7 +23231,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW08051M00FKEA/1176016"
-			(at 215.9 156.21 0)
+			(at 162.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23064,7 +23240,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "541-1.00MCCT-ND "
-			(at 215.9 156.21 0)
+			(at 162.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23073,7 +23249,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 215.9 156.21 0)
+			(at 162.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23082,7 +23258,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 215.9 156.21 0)
+			(at 162.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23091,7 +23267,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW08051M00FKEA?qs=1CkV0QOCgMoYllQJ5f1DKQ%3D%3D"
-			(at 215.9 156.21 0)
+			(at 162.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23100,7 +23276,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-CRCW0805-1.0M-E3"
-			(at 215.9 156.21 0)
+			(at 162.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23118,6 +23294,73 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 156.21 171.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4b789e61-7286-4cb3-a2d3-1af0f174939c")
+		(property "Reference" "#PWR091"
+			(at 162.56 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 171.4501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c93256e-0810-49f7-8bf3-a7d0d9ff1fdf")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -23284,6 +23527,141 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 273.05 179.07 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "515e425a-9db4-404c-bf32-c872d90c9168")
+		(property "Reference" "#PWR084"
+			(at 273.05 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 273.05 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.05 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 273.05 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00084209-200a-4a10-925b-11fed200d70a")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR084")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.51 92.71 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5197f0d5-50dd-46e0-8155-97d3e9d53437")
+		(property "Reference" "#PWR083"
+			(at 137.16 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 92.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0fc8f5ec-eb10-4ccc-8dd1-85fda517b80b")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -23994,7 +24372,7 @@
 	)
 	(symbol
 		(lib_id "Lib:Adafruit3070")
-		(at 285.75 179.07 0)
+		(at 284.48 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24003,7 +24381,7 @@
 		(fields_autoplaced yes)
 		(uuid "66383e7f-16f5-42d8-a4e5-8a9a2f6fe773")
 		(property "Reference" "U4"
-			(at 299.72 172.72 0)
+			(at 298.45 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24011,7 +24389,7 @@
 			)
 		)
 		(property "Value" "Adafruit 3070"
-			(at 299.72 175.26 0)
+			(at 298.45 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24019,7 +24397,7 @@
 			)
 		)
 		(property "Footprint" "Lib:Adafruit3070"
-			(at 285.75 179.07 0)
+			(at 284.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24028,7 +24406,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-learn.adafruit.com/downloads/pdf/adafruit-rfm69hcw-and-rfm96-rfm95-rfm98-lora-packet-padio-breakouts.pdf"
-			(at 285.75 179.07 0)
+			(at 284.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24037,7 +24415,7 @@
 			)
 		)
 		(property "Description" "RFM69HCW TRANSCEIVER RADIO BREAK"
-			(at 285.75 179.07 0)
+			(at 284.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24046,7 +24424,7 @@
 			)
 		)
 		(property "Detailed Description" "RFM69HCW - Transceiver 868MHz, 915MHz Evaluation Board"
-			(at 285.75 179.07 0)
+			(at 284.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24055,7 +24433,7 @@
 			)
 		)
 		(property "Manufacturer" "Adafruit Industries LLC"
-			(at 285.75 179.07 0)
+			(at 284.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24064,7 +24442,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "3070"
-			(at 285.75 179.07 0)
+			(at 284.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24073,7 +24451,7 @@
 			)
 		)
 		(property "Qty Multiplier" "2"
-			(at 299.72 177.8 0)
+			(at 298.45 177.8 0)
 			(show_name yes)
 			(effects
 				(font
@@ -24084,7 +24462,7 @@
 			)
 		)
 		(property "Package" "Module"
-			(at 285.75 179.07 0)
+			(at 284.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24092,7 +24470,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/adafruit-industries-llc/3070/6005355?s=N4IgTCBcDaIIIBMCGAzATgVwJYBcAEAzAAwDsRIAugL5A"
-			(at 285.75 179.07 0)
+			(at 284.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24101,7 +24479,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "1528-1665-ND"
-			(at 285.75 179.07 0)
+			(at 284.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24110,7 +24488,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 285.75 179.07 0)
+			(at 284.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24119,7 +24497,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 285.75 179.07 0)
+			(at 284.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24128,7 +24506,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Adafruit/3070?qs=AGnqjqvSJvLhs1q9K1razA%3D%3D"
-			(at 285.75 179.07 0)
+			(at 284.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24137,7 +24515,7 @@
 			)
 		)
 		(property "Mouser Part Number" "485-3070"
-			(at 285.75 179.07 0)
+			(at 284.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24368,6 +24746,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 156.21 156.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "67ba01bb-5322-4769-b6f5-ffad7b04486b")
+		(property "Reference" "#PWR093"
+			(at 162.56 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 156.2101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ee78136-d90e-4ad2-865b-c432086e83bf")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Zener_Small")
 		(at 193.04 80.01 270)
 		(unit 1)
@@ -24531,6 +24976,140 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 156.21 95.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68ba8e7c-a067-4784-913d-aa5c483b30ae")
+		(property "Reference" "#PWR0103"
+			(at 162.56 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 95.2501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "91ebd742-3856-468c-b332-7629577eeef8")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 156.21 168.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68ef266e-5399-49cf-872f-4d8ae45f4c86")
+		(property "Reference" "#PWR090"
+			(at 162.56 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 168.9101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b463a744-e3e6-4edd-bcfa-58f80d9b0bf7")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -24742,6 +25321,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "705f896c-988f-4ee3-afe5-2abc7a97c6a1")
 		(property "Reference" "J13"
 			(at 149.606 162.814 0)
@@ -25083,7 +25663,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 215.9 120.65 0)
+		(at 162.56 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25092,7 +25672,7 @@
 		(fields_autoplaced yes)
 		(uuid "76b115b7-c27d-41c8-bb3d-c2d0c550c070")
 		(property "Reference" "#PWR050"
-			(at 215.9 127 0)
+			(at 162.56 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25101,7 +25681,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 215.9 125.73 0)
+			(at 162.56 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25110,7 +25690,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 120.65 0)
+			(at 162.56 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25119,7 +25699,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 120.65 0)
+			(at 162.56 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25128,7 +25708,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 215.9 120.65 0)
+			(at 162.56 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25150,7 +25730,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 215.9 143.51 0)
+		(at 162.56 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25159,7 +25739,7 @@
 		(fields_autoplaced yes)
 		(uuid "79df60e4-d7b8-40df-9725-3d27f394a156")
 		(property "Reference" "R22"
-			(at 218.44 142.2399 0)
+			(at 165.1 142.2399 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -25168,7 +25748,7 @@
 			)
 		)
 		(property "Value" "1M ±1%"
-			(at 218.44 144.7799 0)
+			(at 165.1 144.7799 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -25177,7 +25757,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 215.9 143.51 0)
+			(at 162.56 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25186,7 +25766,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 215.9 143.51 0)
+			(at 162.56 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25195,7 +25775,7 @@
 			)
 		)
 		(property "Description" "RES SMD 1M OHM 1% 1/8W 0805"
-			(at 215.9 143.51 0)
+			(at 162.56 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25204,7 +25784,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay Dale"
-			(at 215.9 143.51 0)
+			(at 162.56 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25213,7 +25793,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CRCW08051M00FKEA"
-			(at 215.9 143.51 0)
+			(at 162.56 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25222,7 +25802,7 @@
 			)
 		)
 		(property "Detailed Description" "1 MOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
-			(at 215.9 143.51 0)
+			(at 162.56 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25231,7 +25811,7 @@
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 215.9 143.51 0)
+			(at 162.56 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25239,7 +25819,7 @@
 			)
 		)
 		(property "Package" "0805 (2012 Metric)"
-			(at 215.9 143.51 0)
+			(at 162.56 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25248,7 +25828,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW08051M00FKEA/1176016"
-			(at 215.9 143.51 0)
+			(at 162.56 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25257,7 +25837,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "541-1.00MCCT-ND "
-			(at 215.9 143.51 0)
+			(at 162.56 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25266,7 +25846,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 215.9 143.51 0)
+			(at 162.56 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25275,7 +25855,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 215.9 143.51 0)
+			(at 162.56 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25284,7 +25864,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW08051M00FKEA?qs=1CkV0QOCgMoYllQJ5f1DKQ%3D%3D"
-			(at 215.9 143.51 0)
+			(at 162.56 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25293,7 +25873,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-CRCW0805-1.0M-E3"
-			(at 215.9 143.51 0)
+			(at 162.56 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25311,6 +25891,73 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.51 143.51 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7a799ab4-020a-440e-9048-c1a8d26a738b")
+		(property "Reference" "#PWR087"
+			(at 137.16 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 143.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e689f054-fcb8-44a7-9d35-66c6d7e84e36")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -25385,7 +26032,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 215.9 133.35 0)
+		(at 162.56 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25394,7 +26041,7 @@
 		(fields_autoplaced yes)
 		(uuid "7b7c78f5-74e5-4839-b829-58d3162af48c")
 		(property "Reference" "#PWR058"
-			(at 215.9 139.7 0)
+			(at 162.56 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25403,7 +26050,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 215.9 138.43 0)
+			(at 162.56 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25412,7 +26059,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 133.35 0)
+			(at 162.56 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25421,7 +26068,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 133.35 0)
+			(at 162.56 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25430,7 +26077,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 215.9 133.35 0)
+			(at 162.56 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25802,6 +26449,174 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "J16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 83.82 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e8ad72a-acca-423a-ba43-ef0e2b54bddd")
+		(property "Reference" "C20"
+			(at 86.36 31.7562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF ±10%"
+			(at 86.36 34.2962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 83.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/658/CL31A226KAHNNNE_Spec.pdf"
+			(at 83.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 22UF 25V X5R 1206"
+			(at 83.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL31A226KAHNNNE"
+			(at 83.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Detailed Description" "22 µF ±10% 25V Ceramic Capacitor X5R 1206 (3216 Metric)"
+			(at 83.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 83.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 83.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "1206 (3216 Metric)"
+			(at 83.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31A226KAHNNNE/3888705"
+			(at 83.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "1276-3047-1-ND "
+			(at 83.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Link" ""
+			(at 83.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Part Number" ""
+			(at 83.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Samsung-Electro-Mechanics/CL31A226KAHNNNE?qs=X6jEic%2FHinCdwsjGJII51w%3D%3D"
+			(at 83.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "187-CL31A226KAHNNNE "
+			(at 83.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b5654473-59d6-4615-afa6-e7827dbd970a")
+		)
+		(pin "1"
+			(uuid "06a553c5-f105-4983-984c-73d973f4303a")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -26224,8 +27039,75 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 156.21 107.95 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "87ed2430-d3f7-4a40-b3b5-d417cd66549c")
+		(property "Reference" "#PWR0100"
+			(at 162.56 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 107.9501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83e64521-96a9-45dc-9ee2-7bba1ce5bb3b")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR0100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
-		(at 90.17 45.72 0)
+		(at 83.82 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26234,7 +27116,7 @@
 		(fields_autoplaced yes)
 		(uuid "894f8066-4c1d-4863-b96d-6e0cccf3cd74")
 		(property "Reference" "C1"
-			(at 92.71 44.4562 0)
+			(at 86.36 40.6462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26243,7 +27125,7 @@
 			)
 		)
 		(property "Value" "22uF ±10%"
-			(at 92.71 46.9962 0)
+			(at 86.36 43.1862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26252,7 +27134,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 90.17 45.72 0)
+			(at 83.82 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26261,7 +27143,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/658/CL31A226KAHNNNE_Spec.pdf"
-			(at 90.17 45.72 0)
+			(at 83.82 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26270,7 +27152,7 @@
 			)
 		)
 		(property "Description" "CAP CER 22UF 25V X5R 1206"
-			(at 90.17 45.72 0)
+			(at 83.82 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26279,7 +27161,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL31A226KAHNNNE"
-			(at 90.17 45.72 0)
+			(at 83.82 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26288,7 +27170,7 @@
 			)
 		)
 		(property "Detailed Description" "22 µF ±10% 25V Ceramic Capacitor X5R 1206 (3216 Metric)"
-			(at 90.17 45.72 0)
+			(at 83.82 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26297,7 +27179,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 90.17 45.72 0)
+			(at 83.82 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26306,7 +27188,7 @@
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 90.17 45.72 0)
+			(at 83.82 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26314,7 +27196,7 @@
 			)
 		)
 		(property "Package" "1206 (3216 Metric)"
-			(at 90.17 45.72 0)
+			(at 83.82 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26323,7 +27205,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31A226KAHNNNE/3888705"
-			(at 90.17 45.72 0)
+			(at 83.82 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26332,7 +27214,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "1276-3047-1-ND "
-			(at 90.17 45.72 0)
+			(at 83.82 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26341,7 +27223,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 90.17 45.72 0)
+			(at 83.82 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26350,7 +27232,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 90.17 45.72 0)
+			(at 83.82 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26359,7 +27241,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Samsung-Electro-Mechanics/CL31A226KAHNNNE?qs=X6jEic%2FHinCdwsjGJII51w%3D%3D"
-			(at 90.17 45.72 0)
+			(at 83.82 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26368,7 +27250,7 @@
 			)
 		)
 		(property "Mouser Part Number" "187-CL31A226KAHNNNE "
-			(at 90.17 45.72 0)
+			(at 83.82 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26695,7 +27577,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 349.25 209.55 0)
+		(at 347.98 209.55 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -26703,7 +27585,7 @@
 		(dnp no)
 		(uuid "8b0fe94f-0de7-4dc7-bd2c-4f934058c78f")
 		(property "Reference" "#PWR076"
-			(at 349.25 215.9 0)
+			(at 347.98 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26712,7 +27594,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 349.25 214.63 0)
+			(at 347.98 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26720,7 +27602,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 349.25 209.55 0)
+			(at 347.98 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26729,7 +27611,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 349.25 209.55 0)
+			(at 347.98 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26738,7 +27620,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 349.25 209.55 0)
+			(at 347.98 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26894,7 +27776,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 90.17 48.26 0)
+		(at 83.82 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26903,7 +27785,7 @@
 		(fields_autoplaced yes)
 		(uuid "9027b197-04c8-40ff-8fff-c1843ded58f6")
 		(property "Reference" "#PWR025"
-			(at 90.17 54.61 0)
+			(at 83.82 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26912,7 +27794,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 90.17 53.34 0)
+			(at 83.82 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26921,7 +27803,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 48.26 0)
+			(at 83.82 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26930,7 +27812,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 48.26 0)
+			(at 83.82 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26939,7 +27821,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 90.17 48.26 0)
+			(at 83.82 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26961,7 +27843,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 215.9 92.71 0)
+		(at 162.56 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26970,7 +27852,7 @@
 		(fields_autoplaced yes)
 		(uuid "90ef82aa-aa79-44ca-8957-c61670e955ad")
 		(property "Reference" "R14"
-			(at 218.44 91.4399 0)
+			(at 165.1 91.4399 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -26979,7 +27861,7 @@
 			)
 		)
 		(property "Value" "1M ±1%"
-			(at 218.44 93.9799 0)
+			(at 165.1 93.9799 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -26988,7 +27870,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 215.9 92.71 0)
+			(at 162.56 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26997,7 +27879,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 215.9 92.71 0)
+			(at 162.56 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27006,7 +27888,7 @@
 			)
 		)
 		(property "Description" "RES SMD 1M OHM 1% 1/8W 0805"
-			(at 215.9 92.71 0)
+			(at 162.56 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27015,7 +27897,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay Dale"
-			(at 215.9 92.71 0)
+			(at 162.56 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27024,7 +27906,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CRCW08051M00FKEA"
-			(at 215.9 92.71 0)
+			(at 162.56 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27033,7 +27915,7 @@
 			)
 		)
 		(property "Detailed Description" "1 MOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
-			(at 215.9 92.71 0)
+			(at 162.56 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27042,7 +27924,7 @@
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 215.9 92.71 0)
+			(at 162.56 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27050,7 +27932,7 @@
 			)
 		)
 		(property "Package" "0805 (2012 Metric)"
-			(at 215.9 92.71 0)
+			(at 162.56 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27059,7 +27941,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW08051M00FKEA/1176016"
-			(at 215.9 92.71 0)
+			(at 162.56 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27068,7 +27950,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "541-1.00MCCT-ND "
-			(at 215.9 92.71 0)
+			(at 162.56 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27077,7 +27959,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 215.9 92.71 0)
+			(at 162.56 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27086,7 +27968,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 215.9 92.71 0)
+			(at 162.56 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27095,7 +27977,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW08051M00FKEA?qs=1CkV0QOCgMoYllQJ5f1DKQ%3D%3D"
-			(at 215.9 92.71 0)
+			(at 162.56 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27104,7 +27986,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-CRCW0805-1.0M-E3"
-			(at 215.9 92.71 0)
+			(at 162.56 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27670,6 +28552,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "9757068d-6a73-4335-9ee5-7e05339a70cc")
 		(property "Reference" "J11"
 			(at 149.606 137.414 0)
@@ -28620,6 +29503,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 156.21 146.05 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9c657f66-9d21-4662-9bd0-73825b692f39")
+		(property "Reference" "#PWR094"
+			(at 162.56 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 146.0501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c22a1bc8-4176-4f55-9a78-378adbffbef1")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR094")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 344.17 48.26 180)
 		(unit 1)
@@ -28789,6 +29739,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 143.51 156.21 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9d04de28-8294-4629-8e1f-092ae1c60cc3")
+		(property "Reference" "#PWR088"
+			(at 137.16 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 156.2099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc9b4438-109e-41c7-8efb-b8fee1fea853")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR088")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 340.36 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28855,7 +29872,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 215.9 158.75 0)
+		(at 162.56 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28864,7 +29881,7 @@
 		(fields_autoplaced yes)
 		(uuid "9e25e469-903e-4215-88e6-ec193097c8c4")
 		(property "Reference" "#PWR068"
-			(at 215.9 165.1 0)
+			(at 162.56 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28873,7 +29890,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 215.9 163.83 0)
+			(at 162.56 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28882,7 +29899,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 158.75 0)
+			(at 162.56 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28891,7 +29908,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 158.75 0)
+			(at 162.56 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28900,7 +29917,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 215.9 158.75 0)
+			(at 162.56 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29111,6 +30128,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "9ed2ffe5-9910-46e5-90b8-75261f76f9cb")
 		(property "Reference" "J7"
 			(at 149.606 86.614 0)
@@ -29451,7 +30469,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 278.13 180.34 0)
+		(at 278.13 167.64 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29461,7 +30479,7 @@
 		(fields_autoplaced yes)
 		(uuid "9f9c6b79-a11e-471b-937a-2dd20c692273")
 		(property "Reference" "#PWR074"
-			(at 278.13 184.15 0)
+			(at 278.13 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29470,7 +30488,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 278.13 175.26 0)
+			(at 278.13 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29478,7 +30496,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 278.13 180.34 0)
+			(at 278.13 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29487,7 +30505,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 278.13 180.34 0)
+			(at 278.13 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29496,7 +30514,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 278.13 180.34 0)
+			(at 278.13 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29585,7 +30603,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 215.9 168.91 0)
+		(at 162.56 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -29594,7 +30612,7 @@
 		(fields_autoplaced yes)
 		(uuid "a2df6489-8f85-4c48-a74b-02de2d6fa43e")
 		(property "Reference" "R26"
-			(at 218.44 167.6399 0)
+			(at 165.1 167.6399 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -29603,7 +30621,7 @@
 			)
 		)
 		(property "Value" "1M ±1%"
-			(at 218.44 170.1799 0)
+			(at 165.1 170.1799 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -29612,7 +30630,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 215.9 168.91 0)
+			(at 162.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29621,7 +30639,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 215.9 168.91 0)
+			(at 162.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29630,7 +30648,7 @@
 			)
 		)
 		(property "Description" "RES SMD 1M OHM 1% 1/8W 0805"
-			(at 215.9 168.91 0)
+			(at 162.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29639,7 +30657,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay Dale"
-			(at 215.9 168.91 0)
+			(at 162.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29648,7 +30666,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CRCW08051M00FKEA"
-			(at 215.9 168.91 0)
+			(at 162.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29657,7 +30675,7 @@
 			)
 		)
 		(property "Detailed Description" "1 MOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
-			(at 215.9 168.91 0)
+			(at 162.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29666,7 +30684,7 @@
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 215.9 168.91 0)
+			(at 162.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29674,7 +30692,7 @@
 			)
 		)
 		(property "Package" "0805 (2012 Metric)"
-			(at 215.9 168.91 0)
+			(at 162.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29683,7 +30701,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW08051M00FKEA/1176016"
-			(at 215.9 168.91 0)
+			(at 162.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29692,7 +30710,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "541-1.00MCCT-ND "
-			(at 215.9 168.91 0)
+			(at 162.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29701,7 +30719,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 215.9 168.91 0)
+			(at 162.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29710,7 +30728,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 215.9 168.91 0)
+			(at 162.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29719,7 +30737,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW08051M00FKEA?qs=1CkV0QOCgMoYllQJ5f1DKQ%3D%3D"
-			(at 215.9 168.91 0)
+			(at 162.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29728,7 +30746,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-CRCW0805-1.0M-E3"
-			(at 215.9 168.91 0)
+			(at 162.56 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29746,6 +30764,241 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 156.21 105.41 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a3eba385-19ac-497e-97bc-9ec26ab6097d")
+		(property "Reference" "#PWR0101"
+			(at 162.56 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 105.4101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ad46c82-283b-4daa-9b9d-2fb04248b208")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 83.82 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a403fcc5-0360-4e23-82fc-ffb704314e3a")
+		(property "Reference" "C21"
+			(at 86.36 22.8662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF ±10%"
+			(at 86.36 25.4062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 83.82 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/658/CL31A226KAHNNNE_Spec.pdf"
+			(at 83.82 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 22UF 25V X5R 1206"
+			(at 83.82 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL31A226KAHNNNE"
+			(at 83.82 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Detailed Description" "22 µF ±10% 25V Ceramic Capacitor X5R 1206 (3216 Metric)"
+			(at 83.82 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 83.82 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 83.82 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "1206 (3216 Metric)"
+			(at 83.82 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31A226KAHNNNE/3888705"
+			(at 83.82 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "1276-3047-1-ND "
+			(at 83.82 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Link" ""
+			(at 83.82 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Part Number" ""
+			(at 83.82 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Samsung-Electro-Mechanics/CL31A226KAHNNNE?qs=X6jEic%2FHinCdwsjGJII51w%3D%3D"
+			(at 83.82 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "187-CL31A226KAHNNNE "
+			(at 83.82 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1e342c62-e948-4dea-a004-79f053f0ca0c")
+		)
+		(pin "1"
+			(uuid "7481b64a-15f1-4370-9371-bc9bbde3a4f1")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -29813,6 +31066,73 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 156.21 118.11 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a537fa61-ed51-403f-8f4d-2b4e44c932d3")
+		(property "Reference" "#PWR099"
+			(at 162.56 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 118.1101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "99d291d7-0c47-4449-9d2a-ca5aa3bc0f9a")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -30121,6 +31441,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 143.51 168.91 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ad8961dc-cdf7-493d-b96d-576780031928")
+		(property "Reference" "#PWR089"
+			(at 137.16 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 168.9099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e9e4724-b2d4-448e-8524-6bf3dacff309")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR089")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+BATT")
 		(at 185.42 161.29 0)
 		(unit 1)
@@ -30357,7 +31744,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 215.9 130.81 0)
+		(at 162.56 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -30366,7 +31753,7 @@
 		(fields_autoplaced yes)
 		(uuid "b1ae2913-692a-41f2-9c2e-1e72ab2fb45a")
 		(property "Reference" "R20"
-			(at 218.44 129.5399 0)
+			(at 165.1 129.5399 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -30375,7 +31762,7 @@
 			)
 		)
 		(property "Value" "1M ±1%"
-			(at 218.44 132.0799 0)
+			(at 165.1 132.0799 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -30384,7 +31771,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 215.9 130.81 0)
+			(at 162.56 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30393,7 +31780,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 215.9 130.81 0)
+			(at 162.56 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30402,7 +31789,7 @@
 			)
 		)
 		(property "Description" "RES SMD 1M OHM 1% 1/8W 0805"
-			(at 215.9 130.81 0)
+			(at 162.56 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30411,7 +31798,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay Dale"
-			(at 215.9 130.81 0)
+			(at 162.56 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30420,7 +31807,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CRCW08051M00FKEA"
-			(at 215.9 130.81 0)
+			(at 162.56 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30429,7 +31816,7 @@
 			)
 		)
 		(property "Detailed Description" "1 MOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
-			(at 215.9 130.81 0)
+			(at 162.56 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30438,7 +31825,7 @@
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 215.9 130.81 0)
+			(at 162.56 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30446,7 +31833,7 @@
 			)
 		)
 		(property "Package" "0805 (2012 Metric)"
-			(at 215.9 130.81 0)
+			(at 162.56 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30455,7 +31842,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW08051M00FKEA/1176016"
-			(at 215.9 130.81 0)
+			(at 162.56 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30464,7 +31851,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "541-1.00MCCT-ND "
-			(at 215.9 130.81 0)
+			(at 162.56 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30473,7 +31860,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 215.9 130.81 0)
+			(at 162.56 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30482,7 +31869,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 215.9 130.81 0)
+			(at 162.56 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30491,7 +31878,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW08051M00FKEA?qs=1CkV0QOCgMoYllQJ5f1DKQ%3D%3D"
-			(at 215.9 130.81 0)
+			(at 162.56 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30500,7 +31887,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-CRCW0805-1.0M-E3"
-			(at 215.9 130.81 0)
+			(at 162.56 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30930,7 +32317,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 215.9 95.25 0)
+		(at 162.56 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -30939,7 +32326,7 @@
 		(fields_autoplaced yes)
 		(uuid "b5690778-a536-4eef-a4d2-9a24e63d8d3c")
 		(property "Reference" "#PWR038"
-			(at 215.9 101.6 0)
+			(at 162.56 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30948,7 +32335,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 215.9 100.33 0)
+			(at 162.56 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30957,7 +32344,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 95.25 0)
+			(at 162.56 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30966,7 +32353,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 95.25 0)
+			(at 162.56 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30975,7 +32362,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 215.9 95.25 0)
+			(at 162.56 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32034,8 +33421,75 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 143.51 130.81 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c116995d-8000-44d1-b339-ba39f7600cfc")
+		(property "Reference" "#PWR086"
+			(at 137.16 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 130.8099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f885eab-6481-4a46-a880-bf9965b5b21c")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR086")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
-		(at 215.9 105.41 0)
+		(at 162.56 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -32044,7 +33498,7 @@
 		(fields_autoplaced yes)
 		(uuid "c1710edf-c377-45fc-99ee-725b4f092aba")
 		(property "Reference" "R16"
-			(at 218.44 104.1399 0)
+			(at 165.1 104.1399 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -32053,7 +33507,7 @@
 			)
 		)
 		(property "Value" "1M ±1%"
-			(at 218.44 106.6799 0)
+			(at 165.1 106.6799 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -32062,7 +33516,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 215.9 105.41 0)
+			(at 162.56 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32071,7 +33525,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 215.9 105.41 0)
+			(at 162.56 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32080,7 +33534,7 @@
 			)
 		)
 		(property "Description" "RES SMD 1M OHM 1% 1/8W 0805"
-			(at 215.9 105.41 0)
+			(at 162.56 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32089,7 +33543,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay Dale"
-			(at 215.9 105.41 0)
+			(at 162.56 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32098,7 +33552,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CRCW08051M00FKEA"
-			(at 215.9 105.41 0)
+			(at 162.56 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32107,7 +33561,7 @@
 			)
 		)
 		(property "Detailed Description" "1 MOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
-			(at 215.9 105.41 0)
+			(at 162.56 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32116,7 +33570,7 @@
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 215.9 105.41 0)
+			(at 162.56 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32124,7 +33578,7 @@
 			)
 		)
 		(property "Package" "0805 (2012 Metric)"
-			(at 215.9 105.41 0)
+			(at 162.56 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32133,7 +33587,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW08051M00FKEA/1176016"
-			(at 215.9 105.41 0)
+			(at 162.56 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32142,7 +33596,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "541-1.00MCCT-ND "
-			(at 215.9 105.41 0)
+			(at 162.56 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32151,7 +33605,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 215.9 105.41 0)
+			(at 162.56 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32160,7 +33614,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 215.9 105.41 0)
+			(at 162.56 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32169,7 +33623,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW08051M00FKEA?qs=1CkV0QOCgMoYllQJ5f1DKQ%3D%3D"
-			(at 215.9 105.41 0)
+			(at 162.56 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32178,7 +33632,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-CRCW0805-1.0M-E3"
-			(at 215.9 105.41 0)
+			(at 162.56 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32203,7 +33657,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse_Small")
-		(at 121.92 156.21 0)
+		(at 121.92 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -32212,7 +33666,7 @@
 		(fields_autoplaced yes)
 		(uuid "c5b7e190-2a33-44b0-9215-1f434585b3b0")
 		(property "Reference" "F8"
-			(at 121.92 153.67 0)
+			(at 121.92 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32220,7 +33674,7 @@
 			)
 		)
 		(property "Value" "70mA 5s Fusing, 7.5 Ohms"
-			(at 121.92 152.4 0)
+			(at 121.92 154.94 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -32229,7 +33683,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 121.92 156.21 0)
+			(at 121.92 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32238,7 +33692,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/AccuGuardLC_0402.pdf"
-			(at 121.92 156.21 0)
+			(at 121.92 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32247,7 +33701,7 @@
 			)
 		)
 		(property "Description" "FUSE BOARD MOUNT 28MA 63VDC 0603"
-			(at 121.92 153.67 0)
+			(at 121.92 156.21 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -32256,7 +33710,7 @@
 			)
 		)
 		(property "Detailed Description" "28 mA 63 V Fuse Board Mount (Cartridge Style Excluded) Surface Mount 0603 (1608 Metric)"
-			(at 121.92 156.21 0)
+			(at 121.92 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32265,7 +33719,7 @@
 			)
 		)
 		(property "Manufacturer" "KYOCERA AVX"
-			(at 121.92 156.21 0)
+			(at 121.92 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32274,7 +33728,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "F0603G0R02FNTR"
-			(at 121.92 156.21 0)
+			(at 121.92 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32283,7 +33737,7 @@
 			)
 		)
 		(property "Package" "0603 (1608 Metric)"
-			(at 121.92 156.21 0)
+			(at 121.92 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32292,7 +33746,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/kyocera-avx/F0603G0R02FNTR/9948432"
-			(at 121.92 156.21 0)
+			(at 121.92 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32301,7 +33755,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "478-13097-1-ND "
-			(at 121.92 156.21 0)
+			(at 121.92 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32310,7 +33764,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 121.92 156.21 0)
+			(at 121.92 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32319,7 +33773,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 121.92 156.21 0)
+			(at 121.92 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32328,7 +33782,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/KYOCERA-AVX/F0603G0R02FNTR?qs=%252BdQmOuGyFcEJ7yNI5Fr0SQ%3D%3D"
-			(at 121.92 156.21 0)
+			(at 121.92 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32337,7 +33791,7 @@
 			)
 		)
 		(property "Mouser Part Number" "581-F0603G0R02FNTR "
-			(at 121.92 156.21 0)
+			(at 121.92 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32422,6 +33876,73 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 156.21 158.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c7e73755-5d19-4e97-b1dc-93ddb41f63dd")
+		(property "Reference" "#PWR092"
+			(at 162.56 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 158.7501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd3da566-e2aa-42a6-8c04-9e345b828258")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)
@@ -32932,6 +34453,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 156.21 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cacff8b7-8d60-4bdc-aa58-4e7a6756c611")
+		(property "Reference" "#PWR0106"
+			(at 162.56 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 80.0101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a2eeda3-6fb4-4465-9276-3a67d1b491af")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 201.93 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -32998,6 +34586,207 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 156.21 120.65 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cd13e177-6496-401a-8de6-c8b890690b10")
+		(property "Reference" "#PWR098"
+			(at 162.56 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 120.6501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "857ec438-9bad-48b2-9e3f-f9046d6de06d")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR098")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.51 118.11 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ce260a2b-e371-4b3f-9ecd-a668d1b7fa3a")
+		(property "Reference" "#PWR085"
+			(at 137.16 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 118.1099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd0ffb69-848b-47eb-b7b2-3990ab464b83")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR085")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0c3d326-042a-423e-a066-8e850aabb254")
+		(property "Reference" "#PWR078"
+			(at 83.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dfa9990e-f27e-49cc-92c1-48978ee4c29d")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR078")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Lib:IDC_6Pin_Male_Header")
 		(at 148.59 156.21 0)
 		(unit 1)
@@ -33005,6 +34794,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "d38f2090-447b-4fb2-8a87-550f3b0c12e7")
 		(property "Reference" "J12"
 			(at 149.606 150.114 0)
@@ -33170,6 +34960,73 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 156.21 82.55 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d4067d8f-e480-4ac5-9cc0-ca37aa3cc72e")
+		(property "Reference" "#PWR0105"
+			(at 162.56 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 82.5501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cfc67c24-4bd5-4bb1-9f0a-b77a154b559f")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -33346,7 +35203,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 215.9 82.55 0)
+		(at 162.56 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -33355,7 +35212,7 @@
 		(fields_autoplaced yes)
 		(uuid "da9d8d4d-117b-43af-8c96-68a8f003c7af")
 		(property "Reference" "#PWR032"
-			(at 215.9 88.9 0)
+			(at 162.56 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33364,7 +35221,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 215.9 87.63 0)
+			(at 162.56 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33373,7 +35230,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 82.55 0)
+			(at 162.56 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33382,7 +35239,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 82.55 0)
+			(at 162.56 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33391,7 +35248,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 215.9 82.55 0)
+			(at 162.56 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33413,7 +35270,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse_Small")
-		(at 121.92 80.01 0)
+		(at 121.92 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -33422,7 +35279,7 @@
 		(fields_autoplaced yes)
 		(uuid "df21df44-fab7-4e39-9d86-02fcb8e3518d")
 		(property "Reference" "F2"
-			(at 121.92 72.39 0)
+			(at 121.92 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33430,7 +35287,7 @@
 			)
 		)
 		(property "Value" "70mA 5s Fusing, 7.5 Ohms"
-			(at 121.92 73.66 0)
+			(at 121.92 76.2 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -33438,7 +35295,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 121.92 80.01 0)
+			(at 121.92 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33447,7 +35304,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/AccuGuardLC_0402.pdf"
-			(at 121.92 80.01 0)
+			(at 121.92 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33456,7 +35313,7 @@
 			)
 		)
 		(property "Description" "FUSE BOARD MOUNT 28MA 63VDC 0603"
-			(at 121.92 74.93 0)
+			(at 121.92 77.47 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -33464,7 +35321,7 @@
 			)
 		)
 		(property "Detailed Description" "28 mA 63 V Fuse Board Mount (Cartridge Style Excluded) Surface Mount 0603 (1608 Metric)"
-			(at 121.92 80.01 0)
+			(at 121.92 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33473,7 +35330,7 @@
 			)
 		)
 		(property "Manufacturer" "KYOCERA AVX"
-			(at 121.92 80.01 0)
+			(at 121.92 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33482,7 +35339,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "F0603G0R02FNTR"
-			(at 121.92 80.01 0)
+			(at 121.92 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33491,7 +35348,7 @@
 			)
 		)
 		(property "Qty Multiplier" "6"
-			(at 121.92 77.47 0)
+			(at 121.92 80.01 0)
 			(show_name yes)
 			(effects
 				(font
@@ -33502,7 +35359,7 @@
 			)
 		)
 		(property "Package" "0603 (1608 Metric)"
-			(at 121.92 80.01 0)
+			(at 121.92 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33511,7 +35368,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/kyocera-avx/F0603G0R02FNTR/9948432"
-			(at 121.92 80.01 0)
+			(at 121.92 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33520,7 +35377,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "478-13097-1-ND "
-			(at 121.92 80.01 0)
+			(at 121.92 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33529,7 +35386,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 121.92 80.01 0)
+			(at 121.92 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33538,7 +35395,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 121.92 80.01 0)
+			(at 121.92 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33547,7 +35404,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/KYOCERA-AVX/F0603G0R02FNTR?qs=%252BdQmOuGyFcEJ7yNI5Fr0SQ%3D%3D"
-			(at 121.92 80.01 0)
+			(at 121.92 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33556,7 +35413,7 @@
 			)
 		)
 		(property "Mouser Part Number" "581-F0603G0R02FNTR "
-			(at 121.92 80.01 0)
+			(at 121.92 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34332,43 +36189,103 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse_Small")
-		(at 121.92 143.51 0)
+		(lib_id "power:GND")
+		(at 156.21 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f12d457b-8924-4847-8134-4ff368c1a311")
+		(property "Reference" "#PWR096"
+			(at 162.56 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 133.3501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "71c79b36-c510-440f-876e-23b9fd782925")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR096")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 273.05 176.53 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f6cc285f-7567-4fb5-8a30-7d04bfbe8887")
-		(property "Reference" "F7"
-			(at 121.92 140.97 0)
+		(uuid "f285bfaf-c218-4b4d-84b9-14ae1f15e3cf")
+		(property "Reference" "C24"
+			(at 270.51 175.2662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "70mA 5s Fusing, 7.5 Ohms"
-			(at 121.92 139.7 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 121.92 143.51 0)
+		(property "Value" "22uF ±10%"
+			(at 270.51 177.8062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Datasheet" "https://datasheets.kyocera-avx.com/AccuGuardLC_0402.pdf"
-			(at 121.92 143.51 0)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 273.05 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34376,17 +36293,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FUSE BOARD MOUNT 28MA 63VDC 0603"
-			(at 121.92 140.97 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "28 mA 63 V Fuse Board Mount (Cartridge Style Excluded) Surface Mount 0603 (1608 Metric)"
-			(at 121.92 143.51 0)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/658/CL31A226KAHNNNE_Spec.pdf"
+			(at 273.05 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34394,8 +36302,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "KYOCERA AVX"
-			(at 121.92 143.51 0)
+		(property "Description" "CAP CER 22UF 25V X5R 1206"
+			(at 273.05 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34403,8 +36311,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "F0603G0R02FNTR"
-			(at 121.92 143.51 0)
+		(property "Manufacturer Part Number" "CL31A226KAHNNNE"
+			(at 273.05 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34412,8 +36320,8 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "0603 (1608 Metric)"
-			(at 121.92 143.51 0)
+		(property "Detailed Description" "22 µF ±10% 25V Ceramic Capacitor X5R 1206 (3216 Metric)"
+			(at 273.05 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34421,8 +36329,8 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/kyocera-avx/F0603G0R02FNTR/9948432"
-			(at 121.92 143.51 0)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 273.05 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34430,8 +36338,34 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey Part Number" "478-13097-1-ND "
-			(at 121.92 143.51 0)
+		(property "Qty Multiplier" ""
+			(at 273.05 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "1206 (3216 Metric)"
+			(at 273.05 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31A226KAHNNNE/3888705"
+			(at 273.05 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "1276-3047-1-ND "
+			(at 273.05 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34440,7 +36374,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 121.92 143.51 0)
+			(at 273.05 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34449,7 +36383,233 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
+			(at 273.05 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Samsung-Electro-Mechanics/CL31A226KAHNNNE?qs=X6jEic%2FHinCdwsjGJII51w%3D%3D"
+			(at 273.05 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "187-CL31A226KAHNNNE "
+			(at 273.05 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "52476b82-f365-4310-b08e-7ec771dd9cbd")
+		)
+		(pin "1"
+			(uuid "d2167a33-2cd6-4bde-8015-5df9f52c0ae2")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 156.21 130.81 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4f1c9e6-2e67-4e16-ac0c-5e93af09836a")
+		(property "Reference" "#PWR097"
+			(at 162.56 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 130.8101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e25bfaf-c50b-48ea-977b-e7843e67f30e")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR097")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse_Small")
+		(at 121.92 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6cc285f-7567-4fb5-8a30-7d04bfbe8887")
+		(property "Reference" "F7"
 			(at 121.92 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "70mA 5s Fusing, 7.5 Ohms"
+			(at 121.92 142.24 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 121.92 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/AccuGuardLC_0402.pdf"
+			(at 121.92 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "FUSE BOARD MOUNT 28MA 63VDC 0603"
+			(at 121.92 143.51 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(hide yes)
+			)
+		)
+		(property "Detailed Description" "28 mA 63 V Fuse Board Mount (Cartridge Style Excluded) Surface Mount 0603 (1608 Metric)"
+			(at 121.92 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 121.92 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "F0603G0R02FNTR"
+			(at 121.92 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603 (1608 Metric)"
+			(at 121.92 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/kyocera-avx/F0603G0R02FNTR/9948432"
+			(at 121.92 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "478-13097-1-ND "
+			(at 121.92 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Link" ""
+			(at 121.92 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Part Number" ""
+			(at 121.92 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34458,7 +36618,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/KYOCERA-AVX/F0603G0R02FNTR?qs=%252BdQmOuGyFcEJ7yNI5Fr0SQ%3D%3D"
-			(at 121.92 143.51 0)
+			(at 121.92 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34467,7 +36627,7 @@
 			)
 		)
 		(property "Mouser Part Number" "581-F0603G0R02FNTR "
-			(at 121.92 143.51 0)
+			(at 121.92 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34492,7 +36652,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse_Small")
-		(at 121.92 105.41 0)
+		(at 121.92 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -34501,7 +36661,7 @@
 		(fields_autoplaced yes)
 		(uuid "f77e2cdc-6809-4c72-acd4-a7677e772c2d")
 		(property "Reference" "F4"
-			(at 121.92 102.87 0)
+			(at 121.92 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34509,7 +36669,7 @@
 			)
 		)
 		(property "Value" "70mA 5s Fusing, 7.5 Ohms"
-			(at 121.92 101.6 0)
+			(at 121.92 104.14 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -34518,7 +36678,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 121.92 105.41 0)
+			(at 121.92 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34527,7 +36687,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/AccuGuardLC_0402.pdf"
-			(at 121.92 105.41 0)
+			(at 121.92 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34536,7 +36696,7 @@
 			)
 		)
 		(property "Description" "FUSE BOARD MOUNT 28MA 63VDC 0603"
-			(at 121.92 102.87 0)
+			(at 121.92 105.41 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -34545,7 +36705,7 @@
 			)
 		)
 		(property "Detailed Description" "28 mA 63 V Fuse Board Mount (Cartridge Style Excluded) Surface Mount 0603 (1608 Metric)"
-			(at 121.92 105.41 0)
+			(at 121.92 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34554,7 +36714,7 @@
 			)
 		)
 		(property "Manufacturer" "KYOCERA AVX"
-			(at 121.92 105.41 0)
+			(at 121.92 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34563,7 +36723,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "F0603G0R02FNTR"
-			(at 121.92 105.41 0)
+			(at 121.92 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34572,7 +36732,7 @@
 			)
 		)
 		(property "Package" "0603 (1608 Metric)"
-			(at 121.92 105.41 0)
+			(at 121.92 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34581,7 +36741,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/kyocera-avx/F0603G0R02FNTR/9948432"
-			(at 121.92 105.41 0)
+			(at 121.92 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34590,7 +36750,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "478-13097-1-ND "
-			(at 121.92 105.41 0)
+			(at 121.92 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34599,7 +36759,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 121.92 105.41 0)
+			(at 121.92 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34608,7 +36768,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 121.92 105.41 0)
+			(at 121.92 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34617,7 +36777,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/KYOCERA-AVX/F0603G0R02FNTR?qs=%252BdQmOuGyFcEJ7yNI5Fr0SQ%3D%3D"
-			(at 121.92 105.41 0)
+			(at 121.92 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34626,7 +36786,7 @@
 			)
 		)
 		(property "Mouser Part Number" "581-F0603G0R02FNTR "
-			(at 121.92 105.41 0)
+			(at 121.92 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34651,16 +36811,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 280.67 185.42 270)
+		(at 156.21 92.71 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f9ec2b64-4843-4f33-8bae-cad05da79b8c")
-		(property "Reference" "#PWR075"
-			(at 274.32 185.42 0)
+		(uuid "f7c7f6e6-4320-4a44-a780-5d94e1553c80")
+		(property "Reference" "#PWR0104"
+			(at 162.56 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34669,16 +36828,17 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 276.86 185.4199 90)
+			(at 160.02 92.7101 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 280.67 185.42 0)
+			(at 156.21 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34687,7 +36847,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 280.67 185.42 0)
+			(at 156.21 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34696,7 +36856,141 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 280.67 185.42 0)
+			(at 156.21 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01e7d782-580f-4774-9a1c-3d2fdf92d068")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 156.21 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f895eb85-45fa-405d-9875-963fcb1196a9")
+		(property "Reference" "#PWR095"
+			(at 162.56 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 143.5101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af88c8af-2df4-4fa8-971e-7e0096591d88")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR095")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 279.4 185.42 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9ec2b64-4843-4f33-8bae-cad05da79b8c")
+		(property "Reference" "#PWR075"
+			(at 273.05 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 275.59 185.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 279.4 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 279.4 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 279.4 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34718,7 +37012,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 215.9 80.01 0)
+		(at 162.56 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -34727,7 +37021,7 @@
 		(fields_autoplaced yes)
 		(uuid "fae0bf97-5d7a-4e8c-bb62-195c7fa778df")
 		(property "Reference" "R12"
-			(at 218.44 78.7399 0)
+			(at 165.1 78.7399 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -34736,7 +37030,7 @@
 			)
 		)
 		(property "Value" "1M ±1%"
-			(at 218.44 81.2799 0)
+			(at 165.1 81.2799 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -34745,7 +37039,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 215.9 80.01 0)
+			(at 162.56 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34754,7 +37048,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 215.9 80.01 0)
+			(at 162.56 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34763,7 +37057,7 @@
 			)
 		)
 		(property "Description" "RES SMD 1M OHM 1% 1/8W 0805"
-			(at 215.9 80.01 0)
+			(at 162.56 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34772,7 +37066,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay Dale"
-			(at 215.9 80.01 0)
+			(at 162.56 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34781,7 +37075,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CRCW08051M00FKEA"
-			(at 215.9 80.01 0)
+			(at 162.56 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34790,7 +37084,7 @@
 			)
 		)
 		(property "Detailed Description" "1 MOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
-			(at 215.9 80.01 0)
+			(at 162.56 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34799,7 +37093,7 @@
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 215.9 80.01 0)
+			(at 162.56 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34807,7 +37101,7 @@
 			)
 		)
 		(property "Package" "0805 (2012 Metric)"
-			(at 215.9 80.01 0)
+			(at 162.56 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34816,7 +37110,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW08051M00FKEA/1176016"
-			(at 215.9 80.01 0)
+			(at 162.56 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34825,7 +37119,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "541-1.00MCCT-ND "
-			(at 215.9 80.01 0)
+			(at 162.56 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34834,7 +37128,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 215.9 80.01 0)
+			(at 162.56 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34843,7 +37137,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 215.9 80.01 0)
+			(at 162.56 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34852,7 +37146,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW08051M00FKEA?qs=1CkV0QOCgMoYllQJ5f1DKQ%3D%3D"
-			(at 215.9 80.01 0)
+			(at 162.56 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34861,7 +37155,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-CRCW0805-1.0M-E3"
-			(at 215.9 80.01 0)
+			(at 162.56 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34892,6 +37186,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "fcb05b17-c69d-4084-a4be-3f527fd8454d")
 		(property "Reference" "J10"
 			(at 149.606 124.714 0)
@@ -35129,7 +37424,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse_Small")
-		(at 121.92 168.91 0)
+		(at 121.92 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -35138,7 +37433,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd929c39-778d-419a-a763-f1eba67911e8")
 		(property "Reference" "F9"
-			(at 121.92 166.37 0)
+			(at 121.92 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35146,7 +37441,7 @@
 			)
 		)
 		(property "Value" "70mA 5s Fusing, 7.5 Ohms"
-			(at 121.92 165.1 0)
+			(at 121.92 167.64 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -35155,7 +37450,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 121.92 168.91 0)
+			(at 121.92 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35164,7 +37459,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/AccuGuardLC_0402.pdf"
-			(at 121.92 168.91 0)
+			(at 121.92 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35173,7 +37468,7 @@
 			)
 		)
 		(property "Description" "FUSE BOARD MOUNT 28MA 63VDC 0603"
-			(at 121.92 166.37 0)
+			(at 121.92 168.91 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -35182,7 +37477,7 @@
 			)
 		)
 		(property "Detailed Description" "28 mA 63 V Fuse Board Mount (Cartridge Style Excluded) Surface Mount 0603 (1608 Metric)"
-			(at 121.92 168.91 0)
+			(at 121.92 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35191,7 +37486,7 @@
 			)
 		)
 		(property "Manufacturer" "KYOCERA AVX"
-			(at 121.92 168.91 0)
+			(at 121.92 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35200,7 +37495,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "F0603G0R02FNTR"
-			(at 121.92 168.91 0)
+			(at 121.92 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35209,7 +37504,7 @@
 			)
 		)
 		(property "Package" "0603 (1608 Metric)"
-			(at 121.92 168.91 0)
+			(at 121.92 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35218,7 +37513,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/kyocera-avx/F0603G0R02FNTR/9948432"
-			(at 121.92 168.91 0)
+			(at 121.92 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35227,7 +37522,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "478-13097-1-ND "
-			(at 121.92 168.91 0)
+			(at 121.92 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35236,7 +37531,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 121.92 168.91 0)
+			(at 121.92 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35245,7 +37540,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 121.92 168.91 0)
+			(at 121.92 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35254,7 +37549,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/KYOCERA-AVX/F0603G0R02FNTR?qs=%252BdQmOuGyFcEJ7yNI5Fr0SQ%3D%3D"
-			(at 121.92 168.91 0)
+			(at 121.92 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35263,7 +37558,7 @@
 			)
 		)
 		(property "Mouser Part Number" "581-F0603G0R02FNTR "
-			(at 121.92 168.91 0)
+			(at 121.92 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)

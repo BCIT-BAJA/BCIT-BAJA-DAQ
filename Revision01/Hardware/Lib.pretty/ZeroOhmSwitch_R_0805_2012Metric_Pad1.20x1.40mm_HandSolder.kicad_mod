@@ -5,34 +5,56 @@
 	(layer "F.Cu")
 	(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 	(tags "resistor handsolder")
-	(property "Reference" "REF**"
-		(at 0 -1.65 0)
+	(property "Reference" "R1"
+		(at 1.832 1.697 180)
 		(layer "F.SilkS")
-		(uuid "ea8a26ea-3a6d-4dab-baac-2b7813101d69")
+		(uuid "221efc1e-81f3-4a3b-8c56-b0265572b6a9")
 		(effects
 			(font
 				(size 1 1)
 				(thickness 0.15)
+				(bold yes)
 			)
 		)
 	)
-	(property "Value" "ZeroOhmSwitch_R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-		(at 1.1 3.85 0)
+	(property "Value" "0"
+		(at 1.1 3.85 180)
 		(layer "F.Fab")
-		(uuid "6264eead-45d6-41c5-8b9f-173ccc59d3cf")
+		(uuid "f07948d6-e667-44a2-906b-816716920162")
 		(effects
 			(font
+				(face "Bahnschrift")
 				(size 1 1)
 				(thickness 0.15)
+				(bold yes)
+			)
+		)
+		(render_cache "0" 0
+			(polygon
+				(pts
+					(xy 1.173065 3.264752) (xy 1.232769 3.279474) (xy 1.281586 3.302418) (xy 1.321406 3.333213) (xy 1.353534 3.372266)
+					(xy 1.377068 3.418905) (xy 1.391945 3.474658) (xy 1.397244 3.541552) (xy 1.397244 3.993096) (xy 1.39194 4.05959)
+					(xy 1.377023 4.11519) (xy 1.353379 4.161875) (xy 1.32104 4.20113) (xy 1.281045 4.23213) (xy 1.232199 4.255184)
+					(xy 1.172658 4.269949) (xy 1.100061 4.275258) (xy 1.027132 4.269895) (xy 0.967451 4.254989) (xy 0.918606 4.23173)
+					(xy 0.878716 4.200458) (xy 0.846468 4.160896) (xy 0.822938 4.114171) (xy 0.808131 4.058866) (xy 0.802879 3.993096)
+					(xy 0.802879 3.589424) (xy 0.990091 3.589424) (xy 0.990091 3.945286) (xy 0.993541 3.993044) (xy 1.0028 4.029207)
+					(xy 1.016713 4.056294) (xy 1.037193 4.077298) (xy 1.064249 4.090217) (xy 1.100061 4.094884) (xy 1.135874 4.090217)
+					(xy 1.162929 4.077298) (xy 1.183409 4.056294) (xy 1.197323 4.029207) (xy 1.206581 3.993044) (xy 1.210032 3.945286)
+					(xy 1.210032 3.589424) (xy 1.206581 3.541666) (xy 1.197323 3.505502) (xy 1.183409 3.478415) (xy 1.162924 3.457374)
+					(xy 1.135868 3.444437) (xy 1.100061 3.439764) (xy 1.064254 3.444437) (xy 1.037198 3.457374) (xy 1.016713 3.478415)
+					(xy 1.0028 3.505502) (xy 0.993541 3.541666) (xy 0.990091 3.589424) (xy 0.802879 3.589424) (xy 0.802879 3.541552)
+					(xy 0.808178 3.475087) (xy 0.823083 3.419506) (xy 0.846708 3.372831) (xy 0.879021 3.333579) (xy 0.919046 3.302577)
+					(xy 0.967913 3.279523) (xy 1.027466 3.264759) (xy 1.100061 3.259452)
+				)
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 		(at 1.1 2.2 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "fe6478ea-339f-42b4-906e-0cad2d330457")
+		(uuid "e3430973-8abe-4b93-8b78-37a1b54597d3")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40,40 +62,150 @@
 			)
 		)
 	)
-	(property "Description" ""
+	(property "Description" "RES SMD 0 OHM JUMPER 1/2W 0805"
 		(at 1.1 2.2 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d248a66c-6ba8-4779-a514-8275f9468f56")
+		(uuid "59b32535-5721-424f-b6b7-6e32c41c0ed3")
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Detailed Description" "0 Ohms Jumper Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "09286cbe-10d6-4f94-88cc-2635dd9e8166")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "Vishay Dale"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "80909ba4-b765-44d1-9612-1da1dca14943")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer Part Number" "CRCW08050000Z0EA"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "46b7958e-7028-4ed6-b724-9dc1f781b09b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Package" "0805 (2012 Metric)"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "03be8dea-759b-4abd-93c3-4b21514b1eaf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "DigiKey Link" "https://www.digikey.com/en/products/detail/vishay-dale/CRCW08050000Z0EAHP/2222316"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c54a914a-0014-47ae-ac14-3cb90a7aa07b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "DigiKey Part Number" "541-0.0TBCT-ND "
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b339ee2b-63b0-438e-995a-83f667557fb5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "AliExpress Link" ""
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0f0b3c12-ba77-48c9-8860-e4026b337ce5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "AliExpress Part Number" ""
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0608a22a-c586-4b7d-a9c7-dadb24ca7462")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW08050000Z0EA?qs=waxnFHLl2hB4NcTp6tAQPA%3D%3D"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "87d0f134-3944-49f3-9745-17aaf3022782")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" "71-CRCW0805-0-E3"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c3e4d0c2-a584-44db-82e3-d2e7077e396b")
+		(effects
+			(font
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
 	)
 	(attr smd)
-	(fp_line
-		(start -0.227064 -0.8)
-		(end 0.227064 -0.8)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "48271d98-12d9-4f33-af9f-2d7831085097")
-	)
-	(fp_line
-		(start -0.227064 0.8)
-		(end 0.227064 0.8)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "d034902c-e5b7-4c79-bf4e-2234fd7562ae")
-	)
 	(fp_line
 		(start -0.95 -0.95)
 		(end -0.95 3.1)
@@ -82,7 +214,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "54d6759d-a9b0-4a7a-b572-bcb90f78f16c")
+		(uuid "ec3cab28-6736-41c0-b197-ac6c1633525d")
 	)
 	(fp_line
 		(start -0.95 3.1)
@@ -92,7 +224,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "4ffd07da-aa4e-416c-91f0-51e8abd9f96c")
+		(uuid "9d55a38a-6fb5-486b-b41c-e0897dc809dc")
 	)
 	(fp_line
 		(start 0.95 0.95)
@@ -102,7 +234,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "1f667b28-d876-4190-a4c0-13514394c14e")
+		(uuid "f4de8838-708e-49cb-a1a5-1be89bef294f")
 	)
 	(fp_line
 		(start 0.95 0.95)
@@ -112,7 +244,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "2682e825-0d85-467f-aecf-eb3fab925831")
+		(uuid "7d64555c-62bf-467b-b57d-95d94bc4e9a9")
 	)
 	(fp_line
 		(start 3.1 -0.95)
@@ -122,7 +254,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "49a5eb84-1cdf-4972-a826-169f72a58314")
+		(uuid "669c301e-3c2a-4305-942d-150f3878f9f8")
 	)
 	(fp_line
 		(start 3.1 0.95)
@@ -132,7 +264,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "fa83aaae-a6ae-4d28-9a0c-5c24aa106cda")
+		(uuid "9b4ddac0-4dce-4a58-91f6-0902d0fceb8d")
 	)
 	(fp_line
 		(start -0.625 0.1)
@@ -142,7 +274,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "428994d4-1038-45c2-98d9-40c853a736f3")
+		(uuid "7ed351df-4e69-4b96-83a2-154b766a8ed2")
 	)
 	(fp_line
 		(start 0.1 -0.625)
@@ -152,7 +284,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "8a128ae7-eb37-424e-8c0e-2536ba19e311")
+		(uuid "66722642-395e-4049-9544-7491d9fa4904")
 	)
 	(fp_line
 		(start 0.1 0.625)
@@ -162,7 +294,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "f97d0d99-13fa-4988-85ec-df5e924cab3a")
+		(uuid "fc9f1ca4-8ffa-44fd-8208-be9df7b9abeb")
 	)
 	(fp_line
 		(start 0.625 0.1)
@@ -172,7 +304,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "e4e6e8c4-a83d-4b70-aab7-cb89727c2c71")
+		(uuid "23a26aca-7a7f-4ae8-b5dd-5e193a897f5c")
 	)
 	(fp_line
 		(start 0.625 2.1)
@@ -182,7 +314,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "98fc3e25-b6e2-4c8e-9eda-e07363ddf6ee")
+		(uuid "51bba3e2-e8df-44b6-b108-b92c059e92cf")
 	)
 	(fp_line
 		(start 2.1 -0.625)
@@ -192,7 +324,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "fe9d62b8-c669-40f7-9f74-a73c83a94bab")
+		(uuid "e652e43b-540a-4753-95c3-4f076e0b79ae")
 	)
 	(fp_line
 		(start 2.1 0.625)
@@ -202,16 +334,48 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "a7969011-0845-48e1-9690-b137beca65d7")
+		(uuid "dc460261-3001-441d-a236-cc414590472e")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 1.3 1.5 0)
+		(at 1.3 1.5 180)
 		(layer "F.Fab")
-		(uuid "2a12e1fe-6583-480f-b520-69f04005c491")
+		(uuid "1868ba54-ea84-4643-9c47-f2dc9de93327")
 		(effects
 			(font
-				(size 0.5 0.5)
-				(thickness 0.08)
+				(face "Bahnschrift")
+				(size 1 1)
+				(thickness 0.15)
+				(bold yes)
+			)
+		)
+		(render_cache "R1" 0
+			(polygon
+				(pts
+					(xy 0.794967 1.335045) (xy 1.140632 1.335045) (xy 1.167914 1.331374) (xy 1.19119 1.320696) (xy 1.210344 1.303559)
+					(xy 1.225018 1.279724) (xy 1.234022 1.25168) (xy 1.237657 1.218236) (xy 1.234531 1.184747) (xy 1.225689 1.156748)
+					(xy 1.211016 1.132913) (xy 1.191862 1.115776) (xy 1.168496 1.105119) (xy 1.140632 1.101427) (xy 0.794967 1.101427)
+					(xy 0.794967 0.921053) (xy 1.155653 0.921053) (xy 1.209302 0.925347) (xy 1.257011 0.937746) (xy 1.299817 0.957934)
+					(xy 1.337995 0.985768) (xy 1.36995 1.020242) (xy 1.39611 1.062103) (xy 1.414723 1.108115) (xy 1.42628 1.159815)
+					(xy 1.430304 1.218236) (xy 1.42628 1.276616) (xy 1.414725 1.328296) (xy 1.39611 1.374307) (xy 1.369929 1.416142)
+					(xy 1.337858 1.450619) (xy 1.299451 1.478476) (xy 1.256459 1.498697) (xy 1.208856 1.511081) (xy 1.155653 1.515357)
+					(xy 0.794967 1.515357)
+				)
+			)
+			(polygon
+				(pts
+					(xy 0.720534 0.921053) (xy 0.907685 0.921053) (xy 0.907685 1.915) (xy 0.720534 1.915)
+				)
+			)
+			(polygon
+				(pts
+					(xy 1.004039 1.484644) (xy 1.204196 1.453197) (xy 1.471947 1.915) (xy 1.245168 1.915)
+				)
+			)
+			(polygon
+				(pts
+					(xy 1.87965 1.915) (xy 1.692438 1.915) (xy 1.692438 1.141727) (xy 1.571537 1.187461) (xy 1.571537 0.988709)
+					(xy 1.719793 0.921725) (xy 1.87965 0.921725)
+				)
 			)
 		)
 	)
@@ -220,21 +384,21 @@
 		(size 1.4 1.4)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.208333)
-		(uuid "4a2147e1-debb-4a0a-8b87-e14886f26193")
+		(uuid "6b8bc5a7-fff1-4990-ab46-f6ac40083bed")
 	)
 	(pad "2" smd roundrect
 		(at 2.2 0)
 		(size 1.4 1.4)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.208333)
-		(uuid "1bdfed4a-fb38-4162-b692-6c86bd617303")
+		(uuid "49738470-688b-4642-b456-ded7dbf2ebe2")
 	)
 	(pad "3" smd roundrect
 		(at 0 2.2 270)
 		(size 1.4 1.4)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.208333)
-		(uuid "06c3d23a-ec1a-43f0-88cf-16e4d3fdfbdc")
+		(uuid "38e96f22-e5ff-444b-95c1-83bf4cf6bf08")
 	)
 	(embedded_fonts no)
 	(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"

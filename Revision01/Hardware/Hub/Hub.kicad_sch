@@ -6263,15 +6263,16 @@
 		)
 		(uuid "c726b0c0-9768-4145-bd3c-1e51d8cc94d0")
 	)
-	(text "375mA is ~3.5x min current\nfor 8x350 ohm resistors"
+	(text "375mA is good.\n~150mA for full strain load \n~150mA for +20dbm antenna\n350 mA +75mA headroom\nHowever, the strain load & antenna are switched,\nso we have an extra +100mA headroom at least."
 		(exclude_from_sim no)
-		(at 71.12 68.58 0)
+		(at 54.61 70.612 0)
 		(effects
 			(font
 				(size 0.635 0.635)
 				(thickness 0.1778)
 				(bold yes)
 			)
+			(justify left)
 		)
 		(uuid "c767eb1f-225d-461d-bc72-7848b097a6ac")
 	)
@@ -6362,6 +6363,12 @@
 		(uuid "2a692660-6950-46e6-b3d6-afd1c2b3f1ef")
 	)
 	(junction
+		(at 234.95 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2d4b5bc0-fa4f-41a9-9097-02c61b686a2d")
+	)
+	(junction
 		(at 175.26 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6414,6 +6421,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "88c0d0aa-2d09-4385-87f5-1588bbd45f55")
+	)
+	(junction
+		(at 234.95 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93b26c40-bd4f-426a-a957-07f96bd189d8")
 	)
 	(junction
 		(at 161.29 264.16)
@@ -6721,6 +6734,16 @@
 	)
 	(wire
 		(pts
+			(xy 247.65 102.87) (xy 247.65 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10793e70-2d49-47de-8549-87362748575f")
+	)
+	(wire
+		(pts
 			(xy 161.29 266.7) (xy 166.37 266.7)
 		)
 		(stroke
@@ -7008,6 +7031,16 @@
 			(type default)
 		)
 		(uuid "3f29c219-98cd-4af7-a4ef-6a7c96efc0c8")
+	)
+	(wire
+		(pts
+			(xy 234.95 102.87) (xy 247.65 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42bc9f9d-8358-451f-925d-65061d07bf9d")
 	)
 	(wire
 		(pts
@@ -7721,6 +7754,16 @@
 	)
 	(wire
 		(pts
+			(xy 247.65 83.82) (xy 234.95 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0a84567-b049-4d55-af50-8ad2409e25dc")
+	)
+	(wire
+		(pts
 			(xy 87.63 80.01) (xy 90.17 80.01)
 		)
 		(stroke
@@ -8068,6 +8111,16 @@
 			(type default)
 		)
 		(uuid "e6d52227-d52c-4c98-9462-b88b6bdd1558")
+	)
+	(wire
+		(pts
+			(xy 247.65 91.44) (xy 247.65 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7c4753f-060e-4a62-a4b1-70c6a86ebfc2")
 	)
 	(wire
 		(pts
@@ -12424,6 +12477,174 @@
 			(project ""
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 247.65 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5125f1ef-e75f-4969-8105-0b137787c136")
+		(property "Reference" "C22"
+			(at 250.19 92.7162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF ±10%"
+			(at 250.19 95.2562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 247.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/658/CL31A226KAHNNNE_Spec.pdf"
+			(at 247.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 22UF 25V X5R 1206"
+			(at 247.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL31A226KAHNNNE"
+			(at 247.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Detailed Description" "22 µF ±10% 25V Ceramic Capacitor X5R 1206 (3216 Metric)"
+			(at 247.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 247.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 247.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "1206 (3216 Metric)"
+			(at 247.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31A226KAHNNNE/3888705"
+			(at 247.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "1276-3047-1-ND "
+			(at 247.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Link" ""
+			(at 247.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Part Number" ""
+			(at 247.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Samsung-Electro-Mechanics/CL31A226KAHNNNE?qs=X6jEic%2FHinCdwsjGJII51w%3D%3D"
+			(at 247.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "187-CL31A226KAHNNNE "
+			(at 247.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f2ad49a1-9305-4306-8501-69df3545e098")
+		)
+		(pin "1"
+			(uuid "4fdbbad3-5baf-43fd-85e6-daa31c1205a2")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f"
+					(reference "C22")
 					(unit 1)
 				)
 			)

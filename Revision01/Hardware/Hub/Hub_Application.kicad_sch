@@ -2896,322 +2896,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:NMOS"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "NMOS"
-				(at 5.08 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-				(at 0 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, drain/source/gate"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "NMOS"
-				(at 0 -17.145 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Type" "VDMOS"
-				(at 0 -19.05 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
-				(at 0 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET simulation"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "NMOS_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "NMOS_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Simulation_SPICE:PMOS"
 			(pin_numbers
 				(hide yes)
@@ -3817,17 +3501,6 @@
 		)
 		(uuid "01093a4c-befc-4c36-87b9-33634d427d4b")
 	)
-	(text "For a PMOS\n\nCUTOFF REGION - Vsg < Vth\nSATURATION REGION - Vsg > Vth"
-		(exclude_from_sim no)
-		(at 347.98 24.13 0)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-			(justify left)
-		)
-		(uuid "0d6a8893-813c-4e77-a8b9-fcc5d7445104")
-	)
 	(text "All powered female sockets may dangle freely:\nMust be siliconed to prevent shorts."
 		(exclude_from_sim no)
 		(at 68.58 205.74 0)
@@ -3886,17 +3559,6 @@
 		)
 		(uuid "58c62f2a-4a4d-4d18-a6ce-feeeff9e79f6")
 	)
-	(text "V_th_min = 0.8V\n"
-		(exclude_from_sim no)
-		(at 316.484 42.926 0)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-			(justify left)
-		)
-		(uuid "6f01d13e-b76f-4173-905e-8db471b25d64")
-	)
 	(text "IMU\n"
 		(exclude_from_sim no)
 		(at 246.38 73.66 0)
@@ -3910,17 +3572,6 @@
 			(justify left bottom)
 		)
 		(uuid "708c5c6d-4bc1-4f59-9bf0-75d0b5fae468")
-	)
-	(text "V_th_min = -0.7V\n"
-		(exclude_from_sim no)
-		(at 348.234 37.338 0)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-			(justify left)
-		)
-		(uuid "7d914f86-6b05-424d-8cee-6dfb866bce1c")
 	)
 	(text "Features below\n\nOvervoltage/undervoltage protection\nRC filtering (600R + 6.8nF -> f_3db=40-50 kHz)\nPULLDOWN(detect wire disconnection)"
 		(exclude_from_sim no)
@@ -3957,9 +3608,9 @@
 		)
 		(uuid "9a5cce8e-9f3a-491d-89ab-8a97703ecc31")
 	)
-	(text "Calculation for battery measurement:\n\nBattery range is from 4.5-12V.\n\nChosen resistors 5 and 15k. \nLeft extra room in resistor values for uncertainty\nVmax = 3V\nVmin = 1.125V"
+	(text "1/5 divider. \n0.6mA @ 15V\n0V if no VBattery (usb-receiver)\n"
 		(exclude_from_sim no)
-		(at 349.25 58.42 0)
+		(at 292.354 27.94 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -4090,12 +3741,6 @@
 		(uuid "4d09d7c7-0c46-4d5f-b483-93a5ff5add51")
 	)
 	(junction
-		(at 344.17 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4f9fb4ee-b5cf-47bb-a569-127200abf6b5")
-	)
-	(junction
 		(at 201.93 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4114,10 +3759,10 @@
 		(uuid "5316d4b9-62bf-4725-8015-2061cc21c8b2")
 	)
 	(junction
-		(at 344.17 52.07)
+		(at 312.42 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "55f54166-b545-410d-a5b8-90fb92cddff1")
+		(uuid "56ea9499-b737-4c6f-a013-69f28a022dde")
 	)
 	(junction
 		(at 347.98 207.01)
@@ -4138,10 +3783,22 @@
 		(uuid "6567c93b-1d1e-43ca-ba00-6c6c376352fe")
 	)
 	(junction
+		(at 339.09 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "678e4719-2148-4987-b10c-bbab4763d38f")
+	)
+	(junction
 		(at 193.04 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6b2612c4-2264-4a7a-9927-15637f90cbe0")
+	)
+	(junction
+		(at 331.47 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7fd8ea12-07e1-46c5-9447-d337f35c2911")
 	)
 	(junction
 		(at 201.93 153.67)
@@ -4168,22 +3825,10 @@
 		(uuid "89e49155-4e42-4570-84d8-05f3ebd05211")
 	)
 	(junction
-		(at 297.18 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8d80b679-7168-4ca9-8c4f-36ccbdb0bf2d")
-	)
-	(junction
 		(at 162.56 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e5399a7-2ef8-4dae-a871-3cbfa8518ccc")
-	)
-	(junction
-		(at 312.42 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "93883df6-6c57-4dee-a7de-be95a6136d2b")
 	)
 	(junction
 		(at 193.04 77.47)
@@ -4204,6 +3849,12 @@
 		(uuid "9d7e6e31-84e6-46de-bdc0-e613562a73db")
 	)
 	(junction
+		(at 312.42 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9e06a70c-8507-436e-a7bb-fed95df69eee")
+	)
+	(junction
 		(at 162.56 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4216,22 +3867,16 @@
 		(uuid "9f953767-2c03-4c68-aa1c-1f3e879c21d5")
 	)
 	(junction
-		(at 64.77 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a23698ff-42ab-4588-aa42-e43abc294069")
-	)
-	(junction
 		(at 107.95 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a25a126b-138b-49e6-954a-ee22a8fd25fe")
 	)
 	(junction
-		(at 361.95 44.45)
+		(at 316.23 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b3dd448a-54e3-4b4f-9521-0f44acdf3ffe")
+		(uuid "ad4efe70-b6a5-4bf3-9e29-8f43ebfc832f")
 	)
 	(junction
 		(at 78.74 30.48)
@@ -4246,16 +3891,22 @@
 		(uuid "bb2cc0a5-160e-4cce-b543-655579be20a2")
 	)
 	(junction
-		(at 312.42 24.13)
+		(at 328.93 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c26fe5b4-072e-4d26-8505-3c8d2b047f10")
+		(uuid "c3b54da1-c1db-44cf-8328-d42ce0244a8e")
 	)
 	(junction
 		(at 162.56 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c4b0000f-916f-41b1-8117-287e4b355bb0")
+	)
+	(junction
+		(at 54.61 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8426fc7-fe03-4bfb-bca6-1b5ab7cc6769")
 	)
 	(junction
 		(at 162.56 77.47)
@@ -4292,12 +3943,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d98fa3f9-f856-43b4-9176-15eb0a9bb52f")
-	)
-	(junction
-		(at 312.42 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e32ee48d-12c9-4e72-ac55-48fc97bc41f2")
 	)
 	(junction
 		(at 201.93 140.97)
@@ -4489,16 +4134,6 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 36.83) (xy 297.18 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "020ec101-56fb-4ca8-9771-c0d51fb5a5a6")
-	)
-	(wire
-		(pts
 			(xy 124.46 95.25) (xy 143.51 95.25)
 		)
 		(stroke
@@ -4589,16 +4224,6 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 52.07) (xy 312.42 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "120373b7-4154-48d9-b724-47dec8904f0b")
-	)
-	(wire
-		(pts
 			(xy 78.74 39.37) (xy 78.74 48.26)
 		)
 		(stroke
@@ -4606,16 +4231,6 @@
 			(type default)
 		)
 		(uuid "12a20367-3b20-49a4-ad0f-dc72250857a6")
-	)
-	(wire
-		(pts
-			(xy 284.48 36.83) (xy 297.18 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12abfbc5-457a-4d1a-9374-d5ea3d9699d1")
 	)
 	(wire
 		(pts
@@ -4629,7 +4244,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 53.34) (xy 64.77 53.34)
+			(xy 43.18 53.34) (xy 54.61 53.34)
 		)
 		(stroke
 			(width 0)
@@ -4679,7 +4294,7 @@
 	)
 	(wire
 		(pts
-			(xy 344.17 50.8) (xy 344.17 52.07)
+			(xy 312.42 45.72) (xy 312.42 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4729,13 +4344,13 @@
 	)
 	(wire
 		(pts
-			(xy 344.17 24.13) (xy 344.17 26.67)
+			(xy 67.31 53.34) (xy 71.12 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "26bceea6-508d-481a-8e31-b343d76ea04e")
+		(uuid "253e4794-2a5a-4a9d-91a0-da8bd95a3920")
 	)
 	(wire
 		(pts
@@ -4756,6 +4371,16 @@
 			(type default)
 		)
 		(uuid "28efa233-37d2-4e3a-8bdb-b300a5ce3645")
+	)
+	(wire
+		(pts
+			(xy 328.93 39.37) (xy 331.47 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2946c8d0-b22f-4423-a987-9fbb45f616db")
 	)
 	(wire
 		(pts
@@ -4809,16 +4434,6 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 36.83) (xy 304.8 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3342bd65-92b7-4705-b2d8-0e593d9778eb")
-	)
-	(wire
-		(pts
 			(xy 269.24 195.58) (xy 279.4 195.58)
 		)
 		(stroke
@@ -4829,16 +4444,6 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 46.99) (xy 297.18 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3504a57d-2514-4087-a775-0bdb36a24780")
-	)
-	(wire
-		(pts
 			(xy 107.95 158.75) (xy 119.38 158.75)
 		)
 		(stroke
@@ -4846,6 +4451,16 @@
 			(type default)
 		)
 		(uuid "3636f9a8-42f2-4994-a173-87f4bb5248b3")
+	)
+	(wire
+		(pts
+			(xy 312.42 38.1) (xy 312.42 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39519fe8-92e4-427d-a7c5-cf22693196bc")
 	)
 	(wire
 		(pts
@@ -4866,6 +4481,16 @@
 			(type default)
 		)
 		(uuid "3e42eb79-592d-4ec1-ad04-1e1109d8b121")
+	)
+	(wire
+		(pts
+			(xy 54.61 53.34) (xy 62.23 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f0d44a7-e887-414e-bd8a-0cf396bd3268")
 	)
 	(wire
 		(pts
@@ -4909,6 +4534,16 @@
 	)
 	(wire
 		(pts
+			(xy 339.09 39.37) (xy 347.98 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44b5fc68-a9b6-4da8-85bd-2c7b131bb7f5")
+	)
+	(wire
+		(pts
 			(xy 38.1 200.66) (xy 41.91 200.66)
 		)
 		(stroke
@@ -4916,16 +4551,6 @@
 			(type default)
 		)
 		(uuid "46db2085-b7d6-4dee-9cc2-f25b1e00c148")
-	)
-	(wire
-		(pts
-			(xy 312.42 31.75) (xy 336.55 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4785dc97-068e-47d4-99cc-53d63d5b4f25")
 	)
 	(wire
 		(pts
@@ -4939,7 +4564,17 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 39.37) (xy 64.77 43.18)
+			(xy 316.23 45.72) (xy 316.23 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48fc5f62-a0ef-4d77-ad1d-17fca4d3c0fe")
+	)
+	(wire
+		(pts
+			(xy 54.61 39.37) (xy 54.61 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4956,6 +4591,16 @@
 			(type default)
 		)
 		(uuid "4e9af65e-f0c2-44ea-be7a-1096bbd9c11f")
+	)
+	(wire
+		(pts
+			(xy 312.42 46.99) (xy 312.42 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "552a00ac-aa01-46f0-b28a-cc837d74ab51")
 	)
 	(wire
 		(pts
@@ -5019,16 +4664,6 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 24.13) (xy 312.42 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62b27fea-671a-4af0-bd6b-763db8bc715d")
-	)
-	(wire
-		(pts
 			(xy 124.46 82.55) (xy 143.51 82.55)
 		)
 		(stroke
@@ -5069,6 +4704,16 @@
 	)
 	(wire
 		(pts
+			(xy 316.23 39.37) (xy 316.23 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68f94926-e290-4063-aead-1fef148786e1")
+	)
+	(wire
+		(pts
 			(xy 173.99 128.27) (xy 185.42 128.27)
 		)
 		(stroke
@@ -5099,6 +4744,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 39.37) (xy 316.23 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ffa54d4-62c2-4a03-95c3-ad8b7521d128")
+	)
+	(wire
+		(pts
 			(xy 292.1 106.68) (xy 298.45 106.68)
 		)
 		(stroke
@@ -5106,26 +4761,6 @@
 			(type default)
 		)
 		(uuid "70b3bdb8-b2de-4716-958f-4a64f85f29bd")
-	)
-	(wire
-		(pts
-			(xy 344.17 44.45) (xy 361.95 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "717d580f-fbdd-4d5a-bbae-8cb45628192d")
-	)
-	(wire
-		(pts
-			(xy 312.42 52.07) (xy 344.17 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77f49e5a-0a87-4585-b68d-02203a6647a4")
 	)
 	(wire
 		(pts
@@ -5289,7 +4924,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 48.26) (xy 64.77 53.34)
+			(xy 54.61 48.26) (xy 54.61 53.34)
 		)
 		(stroke
 			(width 0)
@@ -5309,16 +4944,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 21.59) (xy 312.42 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94a5906d-b823-4957-a3df-587c458b851d")
-	)
-	(wire
-		(pts
 			(xy 162.56 166.37) (xy 168.91 166.37)
 		)
 		(stroke
@@ -5326,16 +4951,6 @@
 			(type default)
 		)
 		(uuid "94b028a5-9852-4622-a4fa-0e56adadc2e2")
-	)
-	(wire
-		(pts
-			(xy 344.17 43.18) (xy 344.17 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9570fc50-dd93-4b76-9cff-953ee72dff92")
 	)
 	(wire
 		(pts
@@ -5349,6 +4964,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 26.67) (xy 312.42 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "999cb370-1758-4ac4-8c89-6cf6fba7df92")
+	)
+	(wire
+		(pts
 			(xy 78.74 21.59) (xy 78.74 30.48)
 		)
 		(stroke
@@ -5359,13 +4984,13 @@
 	)
 	(wire
 		(pts
-			(xy 361.95 50.8) (xy 361.95 52.07)
+			(xy 331.47 39.37) (xy 339.09 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "99b2b7be-a4fa-4ddd-a26a-7041a262deac")
+		(uuid "9a71fd53-b20a-4c73-b5bc-7103b79b51f3")
 	)
 	(wire
 		(pts
@@ -5376,16 +5001,6 @@
 			(type default)
 		)
 		(uuid "9dbb0384-3315-4de9-ab73-c8a25cade711")
-	)
-	(wire
-		(pts
-			(xy 312.42 30.48) (xy 312.42 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a06678c1-4331-4c6c-be09-7e36cda96872")
 	)
 	(wire
 		(pts
@@ -5519,16 +5134,6 @@
 	)
 	(wire
 		(pts
-			(xy 344.17 52.07) (xy 344.17 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6d01a9a-facf-45ab-8d23-cb4b33b1ebec")
-	)
-	(wire
-		(pts
 			(xy 185.42 128.27) (xy 193.04 128.27)
 		)
 		(stroke
@@ -5629,16 +5234,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 24.13) (xy 344.17 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3814878-b3f4-4b93-9bf4-48bb8bd81a79")
-	)
-	(wire
-		(pts
 			(xy 124.46 171.45) (xy 143.51 171.45)
 		)
 		(stroke
@@ -5659,16 +5254,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 24.13) (xy 312.42 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca5d002a-0b1a-47cd-babc-001131a860e3")
-	)
-	(wire
-		(pts
 			(xy 173.99 77.47) (xy 185.42 77.47)
 		)
 		(stroke
@@ -5679,13 +5264,23 @@
 	)
 	(wire
 		(pts
-			(xy 344.17 44.45) (xy 344.17 45.72)
+			(xy 312.42 39.37) (xy 312.42 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cea371ac-0268-4936-abe9-dc2a0fab78dc")
+	)
+	(wire
+		(pts
+			(xy 312.42 46.99) (xy 316.23 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf5f5ef4-e558-4d0d-b233-c9428b4cdc9b")
 	)
 	(wire
 		(pts
@@ -5729,7 +5324,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 39.37) (xy 78.74 39.37)
+			(xy 54.61 39.37) (xy 78.74 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5849,16 +5444,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 53.34) (xy 71.12 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e85344b1-d4bc-414f-b03f-8741c48e854a")
-	)
-	(wire
-		(pts
 			(xy 193.04 153.67) (xy 201.93 153.67)
 		)
 		(stroke
@@ -5866,6 +5451,16 @@
 			(type default)
 		)
 		(uuid "ea0e1721-7693-43b0-a33d-71e8cff3b919")
+	)
+	(wire
+		(pts
+			(xy 316.23 39.37) (xy 328.93 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eba500cc-74f9-494c-ac8e-a73f59a98de4")
 	)
 	(wire
 		(pts
@@ -5919,16 +5514,6 @@
 	)
 	(wire
 		(pts
-			(xy 361.95 52.07) (xy 344.17 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f133666c-f8e4-4c49-b47b-fea4023651d7")
-	)
-	(wire
-		(pts
 			(xy 81.28 200.66) (xy 97.79 200.66)
 		)
 		(stroke
@@ -5936,16 +5521,6 @@
 			(type default)
 		)
 		(uuid "f23f2025-a006-444b-bd37-a00a09c0fd66")
-	)
-	(wire
-		(pts
-			(xy 361.95 44.45) (xy 361.95 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3dcfe6c-3257-43eb-89f9-f582ab2916bf")
 	)
 	(wire
 		(pts
@@ -5959,26 +5534,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 41.91) (xy 312.42 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f617a0da-f520-4bba-a6f4-caf7d4d4d2af")
-	)
-	(wire
-		(pts
-			(xy 361.95 44.45) (xy 375.92 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f79ee3f3-8427-421a-ad1c-54ec6227dad2")
-	)
-	(wire
-		(pts
 			(xy 78.74 30.48) (xy 83.82 30.48)
 		)
 		(stroke
@@ -5986,16 +5541,6 @@
 			(type default)
 		)
 		(uuid "f820209e-afa0-4fba-a277-ba86b598218f")
-	)
-	(wire
-		(pts
-			(xy 344.17 36.83) (xy 344.17 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8d0c492-73cf-4735-a8b7-fb2f09846710")
 	)
 	(wire
 		(pts
@@ -17527,17 +17072,6 @@
 		)
 		(uuid "3f876219-40d1-4314-a80f-06e030b41a40")
 	)
-	(hierarchical_label "BatteryV_Enable"
-		(shape input)
-		(at 284.48 36.83 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5cb5215b-5f0f-402a-9bdd-73896fb73880")
-	)
 	(hierarchical_label "SPI_MISO"
 		(shape output)
 		(at 356.87 100.33 0)
@@ -17551,7 +17085,7 @@
 	)
 	(hierarchical_label "AIn_BatteryV"
 		(shape output)
-		(at 375.92 44.45 0)
+		(at 347.98 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17639,7 +17173,7 @@
 	)
 	(hierarchical_label "~{StrainV_Enable_5VTolerant}"
 		(shape input)
-		(at 53.34 53.34 180)
+		(at 43.18 53.34 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20563,178 +20097,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 341.63 31.75 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1fc700bd-d490-4b35-a0d0-067c35d47ab4")
-		(property "Reference" "Q1"
-			(at 347.98 28.5749 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PMOS"
-			(at 347.98 31.1149 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23"
-			(at 346.71 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ntr1p02lt1-d.pdf"
-			(at 341.63 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "MOSFET P-CH 20V 1.3A SOT23-3"
-			(at 347.98 33.02 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Manufacturer" "onsemi"
-			(at 341.63 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "P-Channel 20V 1.3A 400mW SOT-23-3"
-			(at 347.98 34.29 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Manufacturer Part Number" "NVTR01P02LT1G"
-			(at 347.98 35.56 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 341.63 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "TO-236-3, SC-59, SOT-23-3"
-			(at 341.63 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/onsemi/NVTR01P02LT1G/5969313?gclsrc=aw.ds&&utm_adgroup=General&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Zombie%20SKUs&utm_term=&productid=5969313&utm_content=General&utm_id=go_cmp-17855401585_adg-_ad-__dev-c_ext-_prd-5969313_sig-CjwKCAjwq7fABhB2EiwAwk-YbCdzxZ8I_ROXJb3JHufdx-zHWTW_khwVTeU3PeYqFBXyUwEnEgnIlhoCDXMQAvD_BwE&gad_source=1&gbraid=0AAAAADrbLli6YGlW8y5wc6i5rQyT2Z2qc&gclid=CjwKCAjwq7fABhB2EiwAwk-YbCdzxZ8I_ROXJb3JHufdx-zHWTW_khwVTeU3PeYqFBXyUwEnEgnIlhoCDXMQAvD_BwE&gclsrc=aw.ds"
-			(at 341.63 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "NVTR01P02LT1GOSCT-ND"
-			(at 341.63 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress Link" ""
-			(at 341.63 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress Part Number" ""
-			(at 341.63 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/onsemi/NVTR01P02LT1G?qs=3PKVEWFFm2%2F%2FrLw71IHJjw%3D%3D"
-			(at 341.63 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "863-NVTR01P02LT1G"
-			(at 341.63 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7eeea89e-3ad9-4ca3-8d3c-9daf0057fbf6")
-		)
-		(pin "1"
-			(uuid "d3c61ccf-b209-4a3f-8114-488a23a95e98")
-		)
-		(pin "3"
-			(uuid "f135d6ee-8f20-4bb4-ba1a-e1bacdb1531b")
-		)
-		(instances
-			(project "Hub"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 162.56 171.45 0)
 		(unit 1)
@@ -20796,6 +20158,241 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 339.09 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "246c93ea-c1c3-45d1-ad8b-d9422a2af1e5")
+		(property "Reference" "#PWR080"
+			(at 339.09 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 339.09 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 339.09 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 339.09 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 339.09 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6bf20699-f7bf-4ad1-8af4-f7a923e80d09")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 312.42 35.56 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24c1d2c9-d735-415f-9bab-7217f8523bde")
+		(property "Reference" "R7"
+			(at 314.96 34.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K ±1%"
+			(at 314.96 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 314.198 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 312.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES SMD 10K OHM 1% 1/8W 0805"
+			(at 312.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW080510K0FKEA"
+			(at 312.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 312.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Detailed Description" "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
+			(at 312.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 312.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0805 (2012 Metric)"
+			(at 312.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
+			(at 312.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "541-10.0KCCT-ND "
+			(at 312.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Link" ""
+			(at 312.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Part Number" ""
+			(at 312.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW080510K0FKEA?qs=LOX6nxTstiZjDFtI%2F0c8Lw%3D%3D"
+			(at 312.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "71-CRCW0805-10K-E3"
+			(at 312.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "32bfa81d-b00b-4165-99ae-6b4e6fc7f86c")
+		)
+		(pin "1"
+			(uuid "6412e64a-93bc-4f80-bdec-80a72ac59cad")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -20972,177 +20569,6 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 309.88 36.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "28b19bd2-d586-4c8d-8a8e-968cb014617a")
-		(property "Reference" "Q2"
-			(at 316.23 33.6549 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NMOS"
-			(at 316.23 36.1949 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23"
-			(at 314.96 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ntr4003n-d.pdf"
-			(at 309.88 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "MOSFET N-CH 30V 500MA SOT23-3"
-			(at 316.23 38.1 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Detailed Description" "N-Channel 30V 500mA 690mW SOT-23-3"
-			(at 316.23 39.37 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Manufacturer Part Number" "NTR4003NT1G"
-			(at 316.23 40.64 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Manufacturer" "onsemi"
-			(at 309.88 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 309.88 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "TO-236-3, SC-59, SOT-23-3"
-			(at 309.88 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/onsemi/NTR4003NT3G/1967271?gclsrc=aw.ds&&utm_adgroup=General&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Zombie%20SKUs&utm_term=&productid=1967271&utm_content=General&utm_id=go_cmp-17855401585_adg-_ad-__dev-c_ext-_prd-1967271_sig-CjwKCAjwq7fABhB2EiwAwk-YbFJqpYQlYIhkgtWqhIxcVob4GPSdEPXc6bIcNIfS9s96qRU90U7eOhoCR2AQAvD_BwE&gad_source=1&gbraid=0AAAAADrbLli6YGlW8y5wc6i5rQyT2Z2qc&gclid=CjwKCAjwq7fABhB2EiwAwk-YbFJqpYQlYIhkgtWqhIxcVob4GPSdEPXc6bIcNIfS9s96qRU90U7eOhoCR2AQAvD_BwE&gclsrc=aw.ds"
-			(at 309.88 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "NTR4003NT3GOSCT-ND "
-			(at 309.88 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress Link" ""
-			(at 309.88 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress Part Number" ""
-			(at 309.88 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/onsemi/NTR4003NT1G?qs=CBDP9nzV7kme%2Fyh64xROOQ%3D%3D"
-			(at 309.88 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "863-NTR4003NT1G"
-			(at 309.88 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "a3d62e7c-5ce2-4f27-872a-b8dc9cec51a4")
-		)
-		(pin "1"
-			(uuid "a0666777-25de-4b88-9269-59916dfc6b7b")
-		)
-		(pin "2"
-			(uuid "6e7fb31b-7441-4912-b16d-7bc2a1cf58e1")
-		)
-		(instances
-			(project "Hub"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -21375,174 +20801,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 312.42 27.94 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2a831fa7-ae60-447b-9c6e-8e0f5ab1d690")
-		(property "Reference" "R5"
-			(at 314.96 26.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10K ±1%"
-			(at 314.96 29.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 314.198 27.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 312.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RES SMD 10K OHM 1% 1/8W 0805"
-			(at 312.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CRCW080510K0FKEA"
-			(at 312.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay Dale"
-			(at 312.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
-			(at 312.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 312.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0805 (2012 Metric)"
-			(at 312.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
-			(at 312.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "541-10.0KCCT-ND "
-			(at 312.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress Link" ""
-			(at 312.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress Part Number" ""
-			(at 312.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW080510K0FKEA?qs=LOX6nxTstiZjDFtI%2F0c8Lw%3D%3D"
-			(at 312.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "71-CRCW0805-10K-E3"
-			(at 312.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1e58c36b-d4d4-48c6-84c1-1d2a4cfc7207")
-		)
-		(pin "1"
-			(uuid "8819536c-a08d-4155-b2e3-0932adcbd899")
-		)
-		(instances
-			(project "Hub"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 292.1 111.76 0)
 		(unit 1)
@@ -21671,174 +20929,6 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR061")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 344.17 40.64 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "31789214-4b49-4600-8c0b-fa1861fb0b0e")
-		(property "Reference" "R6"
-			(at 346.71 39.3699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "15K ±1%"
-			(at 346.71 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 345.948 40.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 344.17 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RES SMD 15K OHM 1% 1/8W 0805"
-			(at 344.17 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CRCW080515K0FKEA"
-			(at 344.17 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay Dale"
-			(at 344.17 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "15 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
-			(at 344.17 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 344.17 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0805 (2012 Metric)"
-			(at 344.17 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080515K0FKEA/1175769"
-			(at 344.17 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "541-15.0KCCT-ND "
-			(at 344.17 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress Link" ""
-			(at 344.17 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress Part Number" ""
-			(at 344.17 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW080515K0FKEA?qs=bMjB6bAaLEM4rXT2DoR3BA%3D%3D"
-			(at 344.17 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "71-CRCW0805-15K-E3"
-			(at 344.17 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "76d344fb-346a-49f0-84fd-ea2fde5cafea")
-		)
-		(pin "1"
-			(uuid "34f18f41-8255-4e99-8adb-c0c1d21d850c")
-		)
-		(instances
-			(project "Hub"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -23367,6 +22457,175 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 331.47 41.91 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4efc8779-2d4f-4d78-b578-600640ea0ab3")
+		(property "Reference" "D18"
+			(at 334.01 41.9099 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D_Zener_Small"
+			(at 334.01 42.9259 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 331.47 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/DDZ96xx-DDZ97xx.pdf"
+			(at 331.47 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "DIODE ZENER 3.3V 500MW SOD123"
+			(at 331.47 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 331.47 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "DDZ9684-7"
+			(at 331.47 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Detailed Description" "Zener Diode 3.3 V 500 mW ±5% Surface Mount SOD-123"
+			(at 331.47 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 331.47 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "SOD-123"
+			(at 331.47 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/diodes-incorporated/DDZ9684-7/1934818"
+			(at 331.47 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "DDZ9684-7DITR-ND"
+			(at 331.47 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Link" ""
+			(at 331.47 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Part Number" ""
+			(at 331.47 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Diodes-Incorporated/DDZ9684-7?qs=mQbszxtPdlN5OVpmKRGZYw%3D%3D"
+			(at 331.47 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "621-DDZ9684-7 "
+			(at 331.47 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cebe26f4-fe21-4396-a20d-203a45183efd")
+		)
+		(pin "2"
+			(uuid "042525cf-5113-4781-b292-8da762bcc10d")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 171.45 166.37 270)
 		(unit 1)
@@ -24371,6 +23630,172 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 64.77 53.34 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64e3fabb-f025-444a-ac2d-f18fd6c9bdf6")
+		(property "Reference" "R25"
+			(at 64.77 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K ±1%"
+			(at 64.77 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 64.77 55.118 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 64.77 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES SMD 10K OHM 1% 1/8W 0805"
+			(at 64.77 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW080510K0FKEA"
+			(at 64.77 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 64.77 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Detailed Description" "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
+			(at 64.77 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 64.77 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0805 (2012 Metric)"
+			(at 64.77 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
+			(at 64.77 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "541-10.0KCCT-ND "
+			(at 64.77 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Link" ""
+			(at 64.77 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Part Number" ""
+			(at 64.77 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW080510K0FKEA?qs=LOX6nxTstiZjDFtI%2F0c8Lw%3D%3D"
+			(at 64.77 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "71-CRCW0805-10K-E3"
+			(at 64.77 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "99d27415-8cfd-4f59-adc0-aa0a1bdcc3f8")
+		)
+		(pin "1"
+			(uuid "74f235c7-1f95-422a-ada3-c8ae25c291ad")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Lib:Adafruit3070")
 		(at 284.48 179.07 0)
 		(unit 1)
@@ -24572,174 +23997,6 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 306.07 26.67 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "66e3591f-0683-47bd-9b57-c78c25025a84")
-		(property "Reference" "C19"
-			(at 303.53 25.4062 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22uF ±10%"
-			(at 303.53 27.9462 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 306.07 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/658/CL31A226KAHNNNE_Spec.pdf"
-			(at 306.07 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CAP CER 22UF 25V X5R 1206"
-			(at 306.07 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CL31A226KAHNNNE"
-			(at 306.07 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "22 µF ±10% 25V Ceramic Capacitor X5R 1206 (3216 Metric)"
-			(at 306.07 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 306.07 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 306.07 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "1206 (3216 Metric)"
-			(at 306.07 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL31A226KAHNNNE/3888705"
-			(at 306.07 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "1276-3047-1-ND "
-			(at 306.07 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress Link" ""
-			(at 306.07 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress Part Number" ""
-			(at 306.07 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Samsung-Electro-Mechanics/CL31A226KAHNNNE?qs=X6jEic%2FHinCdwsjGJII51w%3D%3D"
-			(at 306.07 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "187-CL31A226KAHNNNE "
-			(at 306.07 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ee9601e1-8f36-4637-9d8e-31651b9372f9")
-		)
-		(pin "1"
-			(uuid "4cc9f94f-aa20-4775-be49-2af741a19316")
-		)
-		(instances
-			(project "Hub"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -25117,7 +24374,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 312.42 21.59 0)
+		(at 312.42 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25125,7 +24382,7 @@
 		(dnp no)
 		(uuid "6951e5c1-eae2-457d-ab72-c5b60a24d794")
 		(property "Reference" "#PWR023"
-			(at 312.42 25.4 0)
+			(at 312.42 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25134,7 +24391,7 @@
 			)
 		)
 		(property "Value" "+VBattery"
-			(at 312.42 17.526 0)
+			(at 312.42 22.606 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25143,7 +24400,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 312.42 21.59 0)
+			(at 312.42 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25152,7 +24409,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 312.42 21.59 0)
+			(at 312.42 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25161,7 +24418,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 312.42 21.59 0)
+			(at 312.42 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25249,7 +24506,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 344.17 55.88 0)
+		(at 312.42 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25258,7 +24515,7 @@
 		(fields_autoplaced yes)
 		(uuid "6ef9a055-51c4-443f-a10d-a736e2af0010")
 		(property "Reference" "#PWR026"
-			(at 344.17 62.23 0)
+			(at 312.42 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25267,7 +24524,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 344.17 60.96 0)
+			(at 312.42 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25275,7 +24532,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 344.17 55.88 0)
+			(at 312.42 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25284,7 +24541,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 344.17 55.88 0)
+			(at 312.42 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25293,7 +24550,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 344.17 55.88 0)
+			(at 312.42 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27408,174 +26665,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 361.95 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8a6317a5-9be8-4180-b9d7-d68cb3463e02")
-		(property "Reference" "C6"
-			(at 364.49 46.9962 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF ±10%, X7R"
-			(at 364.49 49.5362 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 361.95 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/893/CL21B104KCFNNNE_Spec.pdf"
-			(at 361.95 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CAP CER 0.1UF 100V X7R 0805"
-			(at 361.95 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CL21B104KCFNNNE"
-			(at 361.95 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 361.95 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
-			(at 361.95 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 361.95 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0805 (2012 Metric)"
-			(at 361.95 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL21B104KCFNNNE/5961324"
-			(at 361.95 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "1276-6840-1-ND "
-			(at 361.95 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress Link" ""
-			(at 361.95 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress Part Number" ""
-			(at 361.95 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Samsung-Electro-Mechanics/CL21B104KCFNNNE?qs=lptGheUA4EwiEGVRX9oguw%3D%3D"
-			(at 361.95 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "187-CL21B104KCFNNNE "
-			(at 361.95 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b47a6020-8d0a-412b-aac2-df2b373a40bf")
-		)
-		(pin "1"
-			(uuid "98438634-5233-4fda-9623-57ec4f3adb91")
-		)
-		(instances
-			(project "Hub"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 347.98 209.55 0)
 		(unit 1)
@@ -28244,174 +27333,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 297.18 44.45 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "932c7247-7951-4504-8a1f-1e2b94ba009d")
-		(property "Reference" "R7"
-			(at 299.72 43.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10K ±1%"
-			(at 299.72 45.7199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 298.958 44.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 297.18 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RES SMD 10K OHM 1% 1/8W 0805"
-			(at 297.18 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CRCW080510K0FKEA"
-			(at 297.18 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay Dale"
-			(at 297.18 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
-			(at 297.18 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 297.18 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0805 (2012 Metric)"
-			(at 297.18 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
-			(at 297.18 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "541-10.0KCCT-ND "
-			(at 297.18 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress Link" ""
-			(at 297.18 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress Part Number" ""
-			(at 297.18 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW080510K0FKEA?qs=LOX6nxTstiZjDFtI%2F0c8Lw%3D%3D"
-			(at 297.18 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "71-CRCW0805-10K-E3"
-			(at 297.18 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ce6527d0-0488-4b1b-b611-09323f0688aa")
-		)
-		(pin "1"
-			(uuid "cac824dd-61e8-48a7-b713-3d04342b4e14")
-		)
-		(instances
-			(project "Hub"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+BATT")
 		(at 185.42 110.49 0)
 		(unit 1)
@@ -28954,6 +27875,73 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 331.47 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98f30611-442f-4820-853c-f3cad097bd16")
+		(property "Reference" "#PWR0108"
+			(at 331.47 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 331.47 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 331.47 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 331.47 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 331.47 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "875eff4e-813e-416f-b895-a905a40d7342")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -29570,174 +28558,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 344.17 48.26 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9cfe4af5-29fd-450f-9429-2f02e6de2ea9")
-		(property "Reference" "R9"
-			(at 346.71 46.9899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "5K ±1%"
-			(at 346.71 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 345.948 48.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/20008/dcrcw.pdf"
-			(at 344.17 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RES SMD 5K OHM 1% 1/8W 0805"
-			(at 344.17 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CRCW08055K00FKTA"
-			(at 344.17 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay Dale"
-			(at 344.17 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Detailed Description" "5 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
-			(at 344.17 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Qty Multiplier" ""
-			(at 344.17 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0805 (2012 Metric)"
-			(at 344.17 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW08055K00FKTA/5075661"
-			(at 344.17 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" "541-CRCW08055K00FKTACT-ND "
-			(at 344.17 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress Link" ""
-			(at 344.17 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "AliExpress Part Number" ""
-			(at 344.17 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW08055K00FKTA?qs=O7pb%252BE5gJ7THvgJkhh%2F2MQ%3D%3D"
-			(at 344.17 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "71-CRCW0805-5K"
-			(at 344.17 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5cc2f134-2bd4-4698-a8a6-1a0078270cd4")
-		)
-		(pin "1"
-			(uuid "da3070ed-3035-4ba3-9f94-d982764b218e")
-		)
-		(instances
-			(project "Hub"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 143.51 156.21 270)
 		(unit 1)
@@ -30301,7 +29121,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 64.77 45.72 180)
+		(at 54.61 45.72 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -30310,7 +29130,7 @@
 		(fields_autoplaced yes)
 		(uuid "9f0209d6-a13b-43bc-a687-d7f7c6815398")
 		(property "Reference" "R8"
-			(at 67.31 44.4499 0)
+			(at 57.15 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30319,7 +29139,7 @@
 			)
 		)
 		(property "Value" "10K ±1%"
-			(at 67.31 46.9899 0)
+			(at 57.15 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30328,7 +29148,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 66.548 45.72 90)
+			(at 56.388 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30337,7 +29157,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 64.77 45.72 0)
+			(at 54.61 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30346,7 +29166,7 @@
 			)
 		)
 		(property "Description" "RES SMD 10K OHM 1% 1/8W 0805"
-			(at 64.77 45.72 0)
+			(at 54.61 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30355,7 +29175,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CRCW080510K0FKEA"
-			(at 64.77 45.72 0)
+			(at 54.61 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30364,7 +29184,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay Dale"
-			(at 64.77 45.72 0)
+			(at 54.61 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30373,7 +29193,7 @@
 			)
 		)
 		(property "Detailed Description" "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
-			(at 64.77 45.72 0)
+			(at 54.61 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30382,7 +29202,7 @@
 			)
 		)
 		(property "Qty Multiplier" ""
-			(at 64.77 45.72 0)
+			(at 54.61 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30390,7 +29210,7 @@
 			)
 		)
 		(property "Package" "0805 (2012 Metric)"
-			(at 64.77 45.72 0)
+			(at 54.61 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30399,7 +29219,7 @@
 			)
 		)
 		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
-			(at 64.77 45.72 0)
+			(at 54.61 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30408,7 +29228,7 @@
 			)
 		)
 		(property "DigiKey Part Number" "541-10.0KCCT-ND "
-			(at 64.77 45.72 0)
+			(at 54.61 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30417,7 +29237,7 @@
 			)
 		)
 		(property "AliExpress Link" ""
-			(at 64.77 45.72 0)
+			(at 54.61 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30426,7 +29246,7 @@
 			)
 		)
 		(property "AliExpress Part Number" ""
-			(at 64.77 45.72 0)
+			(at 54.61 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30435,7 +29255,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW080510K0FKEA?qs=LOX6nxTstiZjDFtI%2F0c8Lw%3D%3D"
-			(at 64.77 45.72 0)
+			(at 54.61 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30444,7 +29264,7 @@
 			)
 		)
 		(property "Mouser Part Number" "71-CRCW0805-10K-E3"
-			(at 64.77 45.72 0)
+			(at 54.61 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31200,73 +30020,6 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR048")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 306.07 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a81e2d07-1933-41e6-ba52-2cd5078a1afe")
-		(property "Reference" "#PWR080"
-			(at 306.07 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 306.07 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 306.07 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 306.07 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 306.07 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a836cdf7-7eb2-40fd-9ab1-118826fc1bdb")
-		)
-		(instances
-			(project "Hub"
-				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
-					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -34283,6 +33036,174 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 312.42 43.18 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca6ca44f-fb1f-49a3-8fc3-314a8b5ebbf5")
+		(property "Reference" "R6"
+			(at 309.88 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K ±1%"
+			(at 309.88 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 310.642 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 312.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES SMD 10K OHM 1% 1/8W 0805"
+			(at 312.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW080510K0FKEA"
+			(at 312.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 312.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Detailed Description" "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
+			(at 312.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 312.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0805 (2012 Metric)"
+			(at 312.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
+			(at 312.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "541-10.0KCCT-ND "
+			(at 312.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Link" ""
+			(at 312.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Part Number" ""
+			(at 312.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW080510K0FKEA?qs=LOX6nxTstiZjDFtI%2F0c8Lw%3D%3D"
+			(at 312.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "71-CRCW0805-10K-E3"
+			(at 312.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aa6c3f85-b173-49b9-9bbd-127844d540ba")
+		)
+		(pin "1"
+			(uuid "ade6acfd-212f-422a-a8a3-3b6a02dd3839")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Zener_Small")
 		(at 185.42 113.03 270)
 		(unit 1)
@@ -35605,6 +34526,174 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 316.23 43.18 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dfc86570-f824-46f5-acab-3a78d676f4f7")
+		(property "Reference" "R9"
+			(at 318.77 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K ±1%"
+			(at 318.77 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 318.008 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 316.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES SMD 10K OHM 1% 1/8W 0805"
+			(at 316.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW080510K0FKEA"
+			(at 316.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 316.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Detailed Description" "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
+			(at 316.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 316.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0805 (2012 Metric)"
+			(at 316.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
+			(at 316.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "541-10.0KCCT-ND "
+			(at 316.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Link" ""
+			(at 316.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Part Number" ""
+			(at 316.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW080510K0FKEA?qs=LOX6nxTstiZjDFtI%2F0c8Lw%3D%3D"
+			(at 316.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "71-CRCW0805-10K-E3"
+			(at 316.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "03b49a24-29b4-4288-af4d-48d6d2860086")
+		)
+		(pin "1"
+			(uuid "04a4fae0-5523-423e-98be-f2bdd6d25a34")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Zener_Small")
 		(at 193.04 92.71 270)
 		(unit 1)
@@ -36123,6 +35212,174 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 339.09 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eeb01e45-e7d8-4239-9a9b-aeeb05482d0c")
+		(property "Reference" "C6"
+			(at 341.63 40.6462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "6.8nF ±10%"
+			(at 341.63 43.1863 0)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 339.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.ca/datasheet/2/585/MLCC-1837944.pdf"
+			(at 339.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "6.8nF+/-10% 50V X7R 0603"
+			(at 339.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL10B682KB8NNNC"
+			(at 339.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 339.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Detailed Description" "Multilayer Ceramic Capacitors MLCC - SMD/SMT 6.8nF+/-10% 50V X7R 0603"
+			(at 339.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 339.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0603 (1608 metric)"
+			(at 339.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B682KB8NNNC/3886843?s=N4IgTCBcDaIMIBkCMAGAQgNgBxgNJqwDli4QBdAXyA"
+			(at 339.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "1276-1185-2-ND"
+			(at 339.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Link" ""
+			(at 339.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Part Number" ""
+			(at 339.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://mou.sr/3J8ffq3"
+			(at 339.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "187-CL10B682KB8NNNC"
+			(at 339.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bbcdc3ff-22a9-4c5d-9591-f889b8cd9c80")
+		)
+		(pin "1"
+			(uuid "d8aea63e-36e9-45f7-8bb0-266eabb9fd41")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 345.44 134.62 0)
 		(unit 1)
@@ -36425,6 +35682,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 328.93 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f342486b-1eb0-498a-8210-25bf5b175994")
+		(property "Reference" "#PWR0107"
+			(at 328.93 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 329.311 29.8958 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 328.93 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 328.93 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 328.93 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ebb29ca8-d208-43db-abc2-f652b14e2e09")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 156.21 130.81 90)
 		(unit 1)
@@ -36486,6 +35808,174 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "#PWR097")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 312.42 30.48 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f5de7201-d627-4039-a110-e1b2ad0debf9")
+		(property "Reference" "R5"
+			(at 314.96 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K ±1%"
+			(at 314.96 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 314.198 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 312.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES SMD 10K OHM 1% 1/8W 0805"
+			(at 312.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW080510K0FKEA"
+			(at 312.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 312.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Detailed Description" "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
+			(at 312.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 312.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0805 (2012 Metric)"
+			(at 312.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751"
+			(at 312.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "541-10.0KCCT-ND "
+			(at 312.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Link" ""
+			(at 312.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Part Number" ""
+			(at 312.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Vishay/CRCW080510K0FKEA?qs=LOX6nxTstiZjDFtI%2F0c8Lw%3D%3D"
+			(at 312.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "71-CRCW0805-10K-E3"
+			(at 312.42 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "83a93a10-377e-45bf-b58f-a90c53c983eb")
+		)
+		(pin "1"
+			(uuid "97376625-5da9-453c-adea-f17e04c3fd0a")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -37173,6 +36663,175 @@
 			(project "Hub"
 				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 328.93 36.83 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fbd7b17c-0bff-467d-9b86-331b7423b19d")
+		(property "Reference" "D17"
+			(at 331.47 33.02 90)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D_Zener_Small"
+			(at 331.47 37.8459 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 328.93 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/DDZ96xx-DDZ97xx.pdf"
+			(at 328.93 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "DIODE ZENER 3.3V 500MW SOD123"
+			(at 331.47 34.925 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 331.47 35.56 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Detailed Description" "Zener Diode 3.3 V 500 mW ±5% Surface Mount SOD-123"
+			(at 331.47 36.195 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer Part Number" "DDZ9684-7"
+			(at 331.47 37.465 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Qty Multiplier" ""
+			(at 328.93 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "SOD-123"
+			(at 328.93 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Link" "https://www.digikey.ca/en/products/detail/diodes-incorporated/DDZ9684-7/1934818"
+			(at 328.93 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" "DDZ9684-7DITR-ND"
+			(at 328.93 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Link" ""
+			(at 328.93 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "AliExpress Part Number" ""
+			(at 328.93 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Diodes-Incorporated/DDZ9684-7?qs=mQbszxtPdlN5OVpmKRGZYw%3D%3D"
+			(at 328.93 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "621-DDZ9684-7 "
+			(at 328.93 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46b2c26e-2975-46c5-8651-141b941e40b1")
+		)
+		(pin "2"
+			(uuid "2c83f1da-f650-477f-a254-ba14026be3f5")
+		)
+		(instances
+			(project "Hub"
+				(path "/955cc99e-a129-42cf-abc7-aa99813fdb5f/00000000-0000-0000-0000-00005eb1de63"
+					(reference "D17")
 					(unit 1)
 				)
 			)

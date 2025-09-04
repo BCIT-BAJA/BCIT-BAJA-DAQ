@@ -6633,6 +6633,10 @@
 		(uuid "ce94295d-f9e1-4e42-9d26-b9e941b85989")
 	)
 	(no_connect
+		(at 213.36 171.45)
+		(uuid "d9caada7-8a92-4c38-921b-ffc8aec39fcd")
+	)
+	(no_connect
 		(at 213.36 194.31)
 		(uuid "e26e54da-a14b-49a7-8e69-a6ab89ac707b")
 	)
@@ -6861,16 +6865,6 @@
 			(type default)
 		)
 		(uuid "2bd5002c-3edc-4cee-8ae7-46f01ac91745")
-	)
-	(wire
-		(pts
-			(xy 307.34 185.42) (xy 311.15 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c497aeb-83aa-4da8-91f0-628d41433c29")
 	)
 	(wire
 		(pts
@@ -8171,16 +8165,6 @@
 			(type default)
 		)
 		(uuid "f03c4aa6-2241-43a7-9aaa-3c55e504bb10")
-	)
-	(wire
-		(pts
-			(xy 241.3 171.45) (xy 213.36 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1e8dbe7-5b1c-4b3f-8844-0b81bab9c3f4")
 	)
 	(wire
 		(pts
@@ -10054,16 +10038,6 @@
 		)
 		(uuid "49471a75-db97-4336-b9ac-e1370d6ece7c")
 	)
-	(label "GPIO_BatteryV_Enable"
-		(at 241.3 171.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "545f67c1-d193-4a08-b1d5-67b1de836e0c")
-	)
 	(label "GPInterruptPB6_MPU"
 		(at 307.34 179.07 180)
 		(effects
@@ -10383,16 +10357,6 @@
 			(justify right bottom)
 		)
 		(uuid "e9f6e901-8956-461a-9907-70e15da7cfb8")
-	)
-	(label "GPIO_BatteryV_Enable"
-		(at 307.34 185.42 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "edcb62a3-282e-4652-9507-eeb4d925d6f5")
 	)
 	(label "SPI2_MOSI"
 		(at 241.3 217.17 0)
@@ -17602,16 +17566,6 @@
 		(pin "ANT_SPI_CS" input
 			(at 311.15 175.26 180)
 			(uuid "a076ceaa-e9c0-43e9-bdfc-14a7d02eedfa")
-			(effects
-				(font
-					(size 1.4986 1.4986)
-				)
-				(justify left)
-			)
-		)
-		(pin "BatteryV_Enable" input
-			(at 311.15 185.42 180)
-			(uuid "45d3a46d-33bc-422f-907f-4579211970d1")
 			(effects
 				(font
 					(size 1.4986 1.4986)

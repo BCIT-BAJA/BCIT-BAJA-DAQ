@@ -6119,6 +6119,17 @@
 		)
 		(uuid "4e6263b4-02e1-48e4-b30a-d0c85460bee7")
 	)
+	(text "X"
+		(exclude_from_sim no)
+		(at 118.11 63.754 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "53bbd5e5-f304-4efc-9452-c9e876c074fb")
+	)
 	(text "PC13 | PC13 <SB17> B1, Blue PB"
 		(exclude_from_sim no)
 		(at 87.63 154.94 0)
@@ -10682,7 +10693,7 @@
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board no)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "12201e01-9b64-4808-bf5e-b2b3f2200692")
 		(property "Reference" "N2"

@@ -18,11 +18,11 @@ There consists of 2 parts of this project.
 # MAINBOARD( PART A)
 
 
-![image](https://github.com/user-attachments/assets/dc81cf34-a69d-406f-8c19-f821d3af4d6a)
-![image](https://github.com/user-attachments/assets/468851e0-d970-4809-af6d-eac6403165c4)
-![image](https://github.com/user-attachments/assets/9414f8d5-4f52-4e46-ae3c-9da4bbf92fe5)
-![image](https://github.com/user-attachments/assets/fceb3653-d5f6-441f-b3fb-d435e3fac4fa)
+<img width="1517" height="637" alt="image" src="https://github.com/user-attachments/assets/bcdc23bd-8d69-4ecf-9ca2-a52fb841371e" />
+<img width="1012" height="874" alt="image" src="https://github.com/user-attachments/assets/a358a92b-f11e-45f4-a3e6-7e469a0d1c29" />
+<img width="728" height="905" alt="image" src="https://github.com/user-attachments/assets/79fa74c0-0673-4497-bb1a-21e40093e76f" />
+
 
 
 # Amplifier circuit ( PART B) - 
-![image](https://github.com/user-attachments/assets/a1db2386-22c9-4d49-882a-4685fd6d1d30)
+<img width="1394" height="712" alt="image" src="https://github.com/user-attachments/assets/7e6c37c9-6c85-46aa-b98a-5fa17f14f869" />

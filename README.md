@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/22166440/README.md)
+
 # Problem 
 During the last BAJA competition,The BAJA team was unable to measure dynamic forces applied onto the suspension of the car. As a result, during the last competition, it bent.
 ![ezgif-3c4af8c38ad79b](https://github.com/user-attachments/assets/8fe03ef1-5886-4e94-b8d6-ccf3dc3e0c9c)

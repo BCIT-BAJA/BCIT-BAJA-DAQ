@@ -856,7 +856,7 @@
 				)
 			)
 			(property "Value" "TLV9061SQDBVRQ1"
-				(at 1.016 7.366 0)
+				(at 31.75 1.3402 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -873,7 +873,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.ti.com/lit/gpn/tlv9061-q1"
+			(property "Datasheet" "https://www.ti.com/lit/gpn/tlv9064-q1"
 				(at 1.524 11.938 0)
 				(effects
 					(font
@@ -883,7 +883,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Operational Amplifiers - Op Amps Automotive single 5.5-V 10-MHz rail-to"
 				(at 0 0 0)
 				(effects
 					(font
@@ -892,7 +892,7 @@
 					(hide yes)
 				)
 			)
-			(property "ARROW PART NUMBER" ""
+			(property "Manufacturer" "Texas Instruments "
 				(at 0 0 0)
 				(effects
 					(font
@@ -901,7 +901,7 @@
 					(hide yes)
 				)
 			)
-			(property "ARROW PRICE/STOCK" ""
+			(property "Manufacturer Part Number" "TLV9061SQDBVRQ1 "
 				(at 0 0 0)
 				(effects
 					(font
@@ -910,7 +910,7 @@
 					(hide yes)
 				)
 			)
-			(property "DATASHEET LINK" ""
+			(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Texas-Instruments/TLV9061SQDBVRQ1?qs=DRkmTr78QASJ%252B5bCrdR4jA%3D%3D"
 				(at 0 0 0)
 				(effects
 					(font
@@ -919,7 +919,7 @@
 					(hide yes)
 				)
 			)
-			(property "HEIGHT" ""
+			(property "Mouser Part Number" "595-TLV9061SQDBVRQ1"
 				(at 0 0 0)
 				(effects
 					(font
@@ -928,34 +928,7 @@
 					(hide yes)
 				)
 			)
-			(property "MANUFACTURER_NAME" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER_PART_NUMBER" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MOUSER PART NUMBER" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MOUSER PRICE/STOCK" ""
+			(property "Package" "SOT-23-6 "
 				(at 0 0 0)
 				(effects
 					(font
@@ -1120,7 +1093,7 @@
 			)
 			(symbol "TLV9061SQDBVRQ1_1_1"
 				(pin passive line
-					(at 15.24 -12.7 90)
+					(at 15.24 7.62 270)
 					(length 7.62)
 					(name ""
 						(effects
@@ -1847,26 +1820,16 @@
 		(uuid "a67ff0cf-eaa7-4f14-a4e4-2f808369ea77")
 	)
 	(junction
-		(at 124.46 154.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b40b9848-ff7f-4712-a37f-4ebe6bf92b23")
-	)
-	(junction
 		(at 102.87 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eeb07947-b363-4be8-a215-d38d128b7d6d")
 	)
-	(wire
-		(pts
-			(xy 124.46 154.94) (xy 127 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1140eafa-1914-4551-ae48-a0f70958eb96")
+	(junction
+		(at 127 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f013b51e-208d-435a-8fdc-cbeea4d95947")
 	)
 	(wire
 		(pts
@@ -1897,6 +1860,16 @@
 			(type default)
 		)
 		(uuid "1d4c95e5-60f4-4f5a-83b7-79757b41f3ef")
+	)
+	(wire
+		(pts
+			(xy 127 121.92) (xy 127 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20854ef0-49aa-42d6-934f-749459f596ef")
 	)
 	(wire
 		(pts
@@ -1947,6 +1920,16 @@
 			(type default)
 		)
 		(uuid "3c3947eb-2279-40e7-9d0a-0a3a5a7a480e")
+	)
+	(wire
+		(pts
+			(xy 127 121.92) (xy 124.46 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3de89470-8a1c-4d1d-97ed-707b4e48dda6")
 	)
 	(wire
 		(pts
@@ -2020,16 +2003,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 157.48) (xy 124.46 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d74b279-722a-4d55-85c9-8226e719b3d3")
-	)
-	(wire
-		(pts
 			(xy 199.39 96.52) (xy 210.82 96.52)
 		)
 		(stroke
@@ -2050,17 +2023,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 148.59) (xy 127 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "940dc3af-9ff8-4e03-9d11-0b11088efc5d")
-	)
-	(wire
-		(pts
-			(xy 102.87 151.13) (xy 102.87 158.75)
+			(xy 102.87 151.13) (xy 102.87 157.48)
 		)
 		(stroke
 			(width 0)
@@ -2080,7 +2043,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 121.92) (xy 124.46 121.92)
+			(xy 133.35 121.92) (xy 127 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2141,7 +2104,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 154.94) (xy 124.46 149.86)
+			(xy 124.46 149.86) (xy 124.46 157.48)
 		)
 		(stroke
 			(width 0)
@@ -16930,7 +16893,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 129.54 127 0)
+		(at 133.35 127 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16940,7 +16903,7 @@
 		(fields_autoplaced yes)
 		(uuid "2717c7fb-7bd1-45d0-8478-c637869e47fe")
 		(property "Reference" "#PWR012"
-			(at 129.54 133.35 0)
+			(at 133.35 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16949,7 +16912,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 129.54 132.08 0)
+			(at 133.35 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16957,7 +16920,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 127 0)
+			(at 133.35 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16966,7 +16929,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 127 0)
+			(at 133.35 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16975,7 +16938,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 129.54 127 0)
+			(at 133.35 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17317,7 +17280,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 129.54 124.46 0)
+		(at 133.35 124.46 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17327,7 +17290,7 @@
 		(fields_autoplaced yes)
 		(uuid "5202b21a-bf8b-4764-945c-1d422d8f2c96")
 		(property "Reference" "C2"
-			(at 132.08 123.1962 0)
+			(at 135.89 123.1962 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17336,7 +17299,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 132.08 125.7362 0)
+			(at 135.89 125.7362 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17345,7 +17308,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 129.54 124.46 0)
+			(at 133.35 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17354,7 +17317,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.ca/datasheet/2/585/MLCC-1837944.pdf"
-			(at 129.54 124.46 0)
+			(at 133.35 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17363,7 +17326,7 @@
 			)
 		)
 		(property "Description" "Multilayer Ceramic Capacitors MLCC - SMD/SMT 100nF+/-10% 50V X7R 0805"
-			(at 129.54 124.46 0)
+			(at 133.35 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17372,7 +17335,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 129.54 124.46 0)
+			(at 133.35 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17381,7 +17344,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL21B104KBCNNWC"
-			(at 129.54 124.46 0)
+			(at 133.35 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17390,7 +17353,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.ca/ProductDetail/Samsung-Electro-Mechanics/CL21B104KBCNNWC?qs=yOVawPpwOwlu2UTVxWhmlw%3D%3D"
-			(at 129.54 124.46 0)
+			(at 133.35 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17399,7 +17362,7 @@
 			)
 		)
 		(property "Mouser Part Number" "187-CL21B104KBCNNWC"
-			(at 129.54 124.46 0)
+			(at 133.35 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17408,7 +17371,7 @@
 			)
 		)
 		(property "Package" "0805 (2012 Metric)"
-			(at 129.54 124.46 0)
+			(at 133.35 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19247,7 +19210,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 102.87 158.75 0)
+		(at 102.87 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19256,7 +19219,7 @@
 		(fields_autoplaced yes)
 		(uuid "fe71f4ad-4bc0-4fbd-8fab-3d6bf1a2ae43")
 		(property "Reference" "#PWR014"
-			(at 102.87 165.1 0)
+			(at 102.87 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19265,7 +19228,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 105.41 160.0199 0)
+			(at 105.41 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19274,7 +19237,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 158.75 0)
+			(at 102.87 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19283,7 +19246,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 158.75 0)
+			(at 102.87 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19292,7 +19255,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 158.75 0)
+			(at 102.87 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)

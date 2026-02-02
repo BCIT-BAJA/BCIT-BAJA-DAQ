@@ -57,8 +57,44 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define LED2_Pin GPIO_PIN_5
-#define LED2_GPIO_Port GPIOA
+#define BluePB_Down_N_Pin GPIO_PIN_13
+#define BluePB_Down_N_GPIO_Port GPIOC
+#define AIn_BatteryV_Pin GPIO_PIN_0
+#define AIn_BatteryV_GPIO_Port GPIOC
+#define AIn_StrainV_1_Pin GPIO_PIN_0
+#define AIn_StrainV_1_GPIO_Port GPIOA
+#define AIn_StrainV_2_Pin GPIO_PIN_1
+#define AIn_StrainV_2_GPIO_Port GPIOA
+#define AIn_StrainV_3_Pin GPIO_PIN_4
+#define AIn_StrainV_3_GPIO_Port GPIOA
+#define GPIO_LED2_Pin GPIO_PIN_5
+#define GPIO_LED2_GPIO_Port GPIOA
+#define AIn_StrainV_6_Pin GPIO_PIN_6
+#define AIn_StrainV_6_GPIO_Port GPIOA
+#define AIn_StrainV_8_Pin GPIO_PIN_4
+#define AIn_StrainV_8_GPIO_Port GPIOC
+#define AIn_StrainV_5_Pin GPIO_PIN_5
+#define AIn_StrainV_5_GPIO_Port GPIOC
+#define AIn_StrainV_4_Pin GPIO_PIN_0
+#define AIn_StrainV_4_GPIO_Port GPIOB
+#define AIn_StrainV_7_Pin GPIO_PIN_1
+#define AIn_StrainV_7_GPIO_Port GPIOB
+#define GPIO_ANT_Enable_Pin GPIO_PIN_6
+#define GPIO_ANT_Enable_GPIO_Port GPIOC
+#define GPIO_MPU_SPI_CS_N_Pin GPIO_PIN_7
+#define GPIO_MPU_SPI_CS_N_GPIO_Port GPIOC
+#define GPInterruptPC8_ANT_DIO0_Pin GPIO_PIN_8
+#define GPInterruptPC8_ANT_DIO0_GPIO_Port GPIOC
+#define GPIO_ANT_Reset_Pin GPIO_PIN_9
+#define GPIO_ANT_Reset_GPIO_Port GPIOC
+#define GPIO_Extra_SPI_CS_Pin GPIO_PIN_10
+#define GPIO_Extra_SPI_CS_GPIO_Port GPIOA
+#define GPIO_StrainV_Enable_5VTolerant_N_Pin GPIO_PIN_15
+#define GPIO_StrainV_Enable_5VTolerant_N_GPIO_Port GPIOA
+#define GPInterruptPB6_MPU_Pin GPIO_PIN_6
+#define GPInterruptPB6_MPU_GPIO_Port GPIOB
+#define GPIO_ANT_SPI_CS_Pin GPIO_PIN_8
+#define GPIO_ANT_SPI_CS_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

@@ -1,20 +1,13 @@
 /* USER CODE BEGIN Header */
-/**
- ******************************************************************************
- * @file           : main.c
- * @brief          : Main program body
- ******************************************************************************
- * @attention
- *
- * Copyright (c) 2026 STMicroelectronics.
- * All rights reserved.
- *
- * This software is licensed under terms that can be found in the LICENSE file
- * in the root directory of this software component.
- * If no LICENSE file comes with this software, it is provided AS-IS.
- *
- ******************************************************************************
- */
+
+// todo
+// i'd like versioning to spit out on serial port.
+// immediately i need a binary format to fully exploit 500 kbps. that's a lot of bandwidth.
+// sample all analog ins
+// test gpio outs
+// test gpio ins
+// get SPI hello world echo working
+
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -94,7 +87,10 @@ int main(void)
   MX_SPI2_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-
+	{
+		const char msg[] = "Hello World from STM32!\r\n";
+		HAL_UART_Transmit(&huart2, (const uint8_t*)msg, (sizeof(msg) - 1), 100);
+	}
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -103,7 +99,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
+		if (GPIO_PIN_RESET == HAL_GPIO_ReadPin(BluePB_Down_N_GPIO_Port, BluePB_Down_N_Pin)) {
+			HAL_GPIO_TogglePin(GPIO_LED2_GPIO_Port, GPIO_LED2_Pin);
+		}
 		HAL_Delay(500);
 	}
   /* USER CODE END 3 */
@@ -209,7 +207,7 @@ static void MX_USART2_UART_Init(void)
 
   /* USER CODE END USART2_Init 1 */
   huart2.Instance = USART2;
-  huart2.Init.BaudRate = 115200;
+  huart2.Init.BaudRate = 500000;
   huart2.Init.WordLength = UART_WORDLENGTH_8B;
   huart2.Init.StopBits = UART_STOPBITS_1;
   huart2.Init.Parity = UART_PARITY_NONE;
@@ -246,13 +244,16 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GPIO_LED2_Pin|GPIO_Extra_SPI_CS_Pin|GPIO_StrainV_Enable_5VTolerant_N_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, GPIO_LED2_Pin|GPIO_Extra_SPI_CS_Pin|GPIO_StrainV_Enable_5VTolerant_N_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, GPIO_ANT_Enable_Pin|GPIO_MPU_SPI_CS_N_Pin|GPIO_ANT_Reset_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, GPIO_ANT_Enable_Pin|GPIO_ANT_Reset_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIO_ANT_SPI_CS_GPIO_Port, GPIO_ANT_SPI_CS_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIO_MPU_SPI_CS_N_GPIO_Port, GPIO_MPU_SPI_CS_N_Pin, GPIO_PIN_SET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIO_ANT_SPI_CS_GPIO_Port, GPIO_ANT_SPI_CS_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin : BluePB_Down_N_Pin */
   GPIO_InitStruct.Pin = BluePB_Down_N_Pin;

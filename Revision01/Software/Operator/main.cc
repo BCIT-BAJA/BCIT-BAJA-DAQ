@@ -1,13 +1,16 @@
 //
+// #1 test, link libxlwsxwriter by writing an example data file.
+// #2 test lite3 communication packet.
+// #3 test lite3 over serial port.
+//
 // scan for serial ports
 // open serial port
 // initiate contact
+// use lite3 to communicate
+// use libxlsxwriter to log data
 //
 
-#include <windows.h>
-#include <string>
-#include <vector>
-#include <iostream>
+#include "pch.h"
 
 // Scan serial ports by reading the registry key:
 // HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\SERIALCOMM
@@ -126,6 +129,17 @@ static HANDLE openSerialPort(const std::string& portName, DWORD baudRate = CBR_1
 
 int main()
 {
+	{
+		lxw_workbook* workbook = workbook_new("hello_world.xlsx");
+		lxw_worksheet* worksheet = workbook_add_worksheet(workbook, NULL);
+
+		worksheet_write_string(worksheet, 0, 0, "Hello", NULL);
+		worksheet_write_number(worksheet, 1, 0, 123, NULL);
+
+		workbook_close(workbook);
+	}
+
+
 	auto ports = scanSerialPorts();
 	if (ports.empty()) {
 		std::cout << "No serial ports found via registry.\n";

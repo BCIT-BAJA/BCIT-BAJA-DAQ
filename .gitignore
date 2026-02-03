@@ -57,3 +57,13 @@ x86/
 *.launch
 *.cyclo
 *~
+
+# CMake
+# 1. Ignore everything inside any folder ending in -cmake
+*-cmake/
+
+# 2. Re-open (Whitelist) the specific build folders
+!*-cmake/Release/
+!*-cmake/RelWithDebInfo/
+!*-cmake/Debug/
+

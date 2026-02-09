@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{fd66c1fd-fe10-4b79-8467-cc507e7a3136}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cc">
@@ -21,10 +24,67 @@
     <ClCompile Include="pch.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Common\basic.cc">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="OS_AddressEvent.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OS_Signal.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\compile.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\compile_pch.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\protocol.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\assure.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\basic.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="OS_AddressEvent.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OS_Signal.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Y.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Y_EventMM.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Y_PoolFairMM.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Y_PoolFrugalMM.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Y_QueueMM.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Y_QueueSS.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Y_RWLockMM.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

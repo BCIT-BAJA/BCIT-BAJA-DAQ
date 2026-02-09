@@ -11,10 +11,12 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "Common/Protocol.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdint.h>
+#include <stdbool.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -35,6 +37,8 @@
 /* Private variables ---------------------------------------------------------*/
 SPI_HandleTypeDef hspi2;
 
+TIM_HandleTypeDef htim17;
+
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
@@ -46,13 +50,20 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_SPI2_Init(void);
 static void MX_USART2_UART_Init(void);
+static void MX_TIM17_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+    /* Check which timer triggered this callback */
+    if (htim->Instance == TIM17) {
+        // read
+    }
+}
 /* USER CODE END 0 */
 
 /**
@@ -86,23 +97,32 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI2_Init();
   MX_USART2_UART_Init();
+  MX_TIM17_Init();
   /* USER CODE BEGIN 2 */
 	{
 		const char msg[] = "Hello World from STM32!\r\n";
 		HAL_UART_Transmit(&huart2, (const uint8_t*)msg, (sizeof(msg) - 1), 100);
 	}
+
+	HAL_TIM_Base_Start_IT(&htim17);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+	bool blue_pb_down_now = false;
+	bool blue_pb_down_was = false;
 	while (1) {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		if (GPIO_PIN_RESET == HAL_GPIO_ReadPin(BluePB_Down_N_GPIO_Port, BluePB_Down_N_Pin)) {
-			HAL_GPIO_TogglePin(GPIO_LED2_GPIO_Port, GPIO_LED2_Pin);
+		blue_pb_down_now = (GPIO_PIN_RESET == HAL_GPIO_ReadPin(BluePB_Down_N_GPIO_Port, BluePB_Down_N_Pin));
+		if (!blue_pb_down_was && blue_pb_down_now) {
+			// HAL_GPIO_TogglePin(GPIO_LED2_GPIO_Port, GPIO_LED2_Pin);
+
+			HAL_GPIO_TogglePin(GPIO_StrainV_Enable_5VTolerant_N_GPIO_Port, GPIO_StrainV_Enable_5VTolerant_N_Pin);
 		}
-		HAL_Delay(500);
+		blue_pb_down_was = blue_pb_down_now;
+		HAL_Delay(50);
 	}
   /* USER CODE END 3 */
 }
@@ -192,6 +212,38 @@ static void MX_SPI2_Init(void)
 }
 
 /**
+  * @brief TIM17 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM17_Init(void)
+{
+
+  /* USER CODE BEGIN TIM17_Init 0 */
+
+  /* USER CODE END TIM17_Init 0 */
+
+  /* USER CODE BEGIN TIM17_Init 1 */
+
+  /* USER CODE END TIM17_Init 1 */
+  htim17.Instance = TIM17;
+  htim17.Init.Prescaler = 3;
+  htim17.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim17.Init.Period = 999;
+  htim17.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim17.Init.RepetitionCounter = 0;
+  htim17.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim17) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM17_Init 2 */
+
+  /* USER CODE END TIM17_Init 2 */
+
+}
+
+/**
   * @brief USART2 Initialization Function
   * @param None
   * @retval None
@@ -273,8 +325,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : GPIO_LED2_Pin GPIO_Extra_SPI_CS_Pin GPIO_StrainV_Enable_5VTolerant_N_Pin */
-  GPIO_InitStruct.Pin = GPIO_LED2_Pin|GPIO_Extra_SPI_CS_Pin|GPIO_StrainV_Enable_5VTolerant_N_Pin;
+  /*Configure GPIO pins : GPIO_LED2_Pin GPIO_Extra_SPI_CS_Pin */
+  GPIO_InitStruct.Pin = GPIO_LED2_Pin|GPIO_Extra_SPI_CS_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -298,6 +350,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPInterruptPC8_ANT_DIO0_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : GPIO_StrainV_Enable_5VTolerant_N_Pin */
+  GPIO_InitStruct.Pin = GPIO_StrainV_Enable_5VTolerant_N_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIO_StrainV_Enable_5VTolerant_N_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : GPInterruptPB6_MPU_Pin */
   GPIO_InitStruct.Pin = GPInterruptPB6_MPU_Pin;

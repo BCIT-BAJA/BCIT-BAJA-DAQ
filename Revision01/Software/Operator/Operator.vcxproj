@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -112,17 +112,18 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>Lib/libxlsxwriter/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Lib/libxlsxwriter/include;$(ProjectDir);$(ProjectDir)../Common</AdditionalIncludeDirectories>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)Lib\libxlsxwriter-cmake\RelWithDebInfo\xlsxwriter.lib;$(SolutionDir)Lib\zlib-cmake\Release\zs.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)Lib\libxlsxwriter-cmake\RelWithDebInfo\xlsxwriter.lib;$(SolutionDir)Lib\zlib-cmake\Release\zs.lib;Synchronization.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -131,28 +132,48 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>Lib/libxlsxwriter/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Lib/libxlsxwriter/include;$(ProjectDir);$(ProjectDir)../Common</AdditionalIncludeDirectories>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)Lib\libxlsxwriter-cmake\RelWithDebInfo\xlsxwriter.lib;$(SolutionDir)Lib\zlib-cmake\Release\zs.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)Lib\libxlsxwriter-cmake\RelWithDebInfo\xlsxwriter.lib;$(SolutionDir)Lib\zlib-cmake\Release\zs.lib;Synchronization.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Common\basic.cc" />
+    <ClCompile Include="Log.cc" />
     <ClCompile Include="main.cc" />
+    <ClCompile Include="OS_AddressEvent.cc" />
+    <ClCompile Include="OS_Signal.cc" />
     <ClCompile Include="pch.cc">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Common\assure.h" />
+    <ClInclude Include="..\Common\basic.h" />
+    <ClInclude Include="..\Common\compile.h" />
+    <ClInclude Include="..\Common\compile_pch.h" />
+    <ClInclude Include="..\Common\protocol.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="OS_AddressEvent.h" />
+    <ClInclude Include="OS_Signal.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Y.h" />
+    <ClInclude Include="Y_EventMM.h" />
+    <ClInclude Include="Y_PoolFairMM.h" />
+    <ClInclude Include="Y_PoolFrugalMM.h" />
+    <ClInclude Include="Y_QueueMM.h" />
+    <ClInclude Include="Y_QueueSS.h" />
+    <ClInclude Include="Y_RWLockMM.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

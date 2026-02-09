@@ -1,16 +1,51 @@
 //
-// #1 test, link libxlwsxwriter by writing an example data file.
-// #2 test lite3 communication packet.
-// #3 test lite3 over serial port.
+
+// Feb 8
+// - 30 minutes Get the assertion handler for Windows working
+// - 30 minutes Get Mutexes, Atomics, Event queues
+// - 30 minutes Basic packet definition(fake "1khz" data in windows written to.xlsx)
+// - 30 minutes Basic UI(just use a single line printf() fflush(stdout) with summary statistics I guess)
+// - Stretch Goal : Opening up the serial port and moving the fake data generation to the STM32
+
+
+// integrate a nice terminal command library like https://github.com/jart/bestline/tree/master
+// assure.h, basic.h, version.h, etc, all boilerplate
+// write assertions (assure, tru) for STM32.
+// then define protocol.h for a packet containing 10kbps 1khz plain-old-data
+// integrate the log.h function with threads / message queues (probably requires it tbh for separating logging & input & file writing anyway)
+// 
+//
+
+// low priority todos
+// fix: >LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library 
+
 //
 // scan for serial ports
 // open serial port
 // initiate contact
-// use lite3 to communicate
 // use libxlsxwriter to log data
 //
 
 #include "pch.h"
+
+#define assure_implementation
+#include "assure.h"
+
+#define protocol_implmentation
+#include "protocol.h"
+
+#include "Y.h"
+#include "Y_EventMM.h"
+#include "Y_PoolFairMM.h"
+#include "Y_PoolFrugalMM.h"
+#include "Y_QueueMM.h"
+#include "Y_QueueSS.h"
+#include "Y_RWLockMM.h"
+
+#include "OS_AddressEvent.h"
+#include "OS_Signal.h"
+
+#include "Log.h"
 
 // Scan serial ports by reading the registry key:
 // HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\SERIALCOMM
@@ -129,6 +164,24 @@ static HANDLE openSerialPort(const std::string& portName, DWORD baudRate = CBR_1
 
 int main()
 {
+	LogThread log_thread;
+
+	if(!tru(LogThread_Create(&log_thread))) {
+		return false;
+	}
+	defer(LogThread_Destroy(&log_thread));
+
+	LogThread_Begin(&log_thread);
+	defer(LogThread_End(&log_thread));
+
+	uint32_t j = 0;
+	while(1) {
+		for(uint32_t i = 0; i < 100; ++i) {
+			Log(&log_thread, "Hello, %s %u!\n", "world", ++j);
+		}
+		Sleep(1000);
+	}
+
 	{
 		lxw_workbook* workbook = workbook_new("hello_world.xlsx");
 		lxw_worksheet* worksheet = workbook_add_worksheet(workbook, NULL);
@@ -138,7 +191,6 @@ int main()
 
 		workbook_close(workbook);
 	}
-
 
 	auto ports = scanSerialPorts();
 	if (ports.empty()) {

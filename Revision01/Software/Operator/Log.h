@@ -7,8 +7,8 @@
 
 #pragma once
 
-#include "pch.h"
-#include "compile.h"
+#include "PCH.h"
+#include "Compile.h"
 
 #include "Y_QueueMM.h"
 #include "Y_EventMM.h"

@@ -1,8 +1,8 @@
 //
 
-#include "pch.h"
+#include "PCH.h"
 #include "OS_Signal.h"
-#include "basic.h"
+#include "Basic.h"
 
 std::atomic<int> received_termination_signal = 0;
 std::atomic<bool> uninstalled = false;

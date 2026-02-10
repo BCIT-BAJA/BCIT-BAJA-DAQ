@@ -6,8 +6,8 @@
 
 #pragma once
 
-#include "basic.h"
-#include "compile.h"
+#include "Basic.h"
+#include "Compile.h"
 
 /* WaitOnAddress function 
 // https://learn.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-waitonaddress

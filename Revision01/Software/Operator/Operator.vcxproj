@@ -147,26 +147,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Common\basic.cc" />
+    <ClCompile Include="..\Common\Basic.cc" />
     <ClCompile Include="Log.cc" />
     <ClCompile Include="main.cc" />
     <ClCompile Include="OS_AddressEvent.cc" />
     <ClCompile Include="OS_Signal.cc" />
-    <ClCompile Include="pch.cc">
+    <ClCompile Include="PCH.cc">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Common\assure.h" />
-    <ClInclude Include="..\Common\basic.h" />
-    <ClInclude Include="..\Common\compile.h" />
-    <ClInclude Include="..\Common\compile_pch.h" />
-    <ClInclude Include="..\Common\protocol.h" />
+    <ClInclude Include="..\Common\Assure.h" />
+    <ClInclude Include="..\Common\Basic.h" />
+    <ClInclude Include="..\Common\Compile.h" />
+    <ClInclude Include="..\Common\Compile_PCH.h" />
+    <ClInclude Include="..\Common\Protocol.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="OS_AddressEvent.h" />
     <ClInclude Include="OS_Signal.h" />
-    <ClInclude Include="pch.h" />
+    <ClInclude Include="PCH.h" />
     <ClInclude Include="Y.h" />
     <ClInclude Include="Y_EventMM.h" />
     <ClInclude Include="Y_PoolFairMM.h" />

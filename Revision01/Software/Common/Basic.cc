@@ -1,8 +1,8 @@
 //
 
-#include "pch.h"
+#include "PCH.h"
 
-#include "basic.h"
+#include "Basic.h"
 
 char Char_ToLower(const char ch) {
 	if('A' <= ch && ch <= 'Z') { return cast(char)(cast(int)ch - cast(int)'A' + cast(int)'a'); }

@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "assure.h"
-#include "compile.h"
+#include "Assure.h"
+#include "Compile.h"
 
 // https://web.archive.org/web/20170602083648/http://www.insomniacgames.com/core-coding-standard/
 /*

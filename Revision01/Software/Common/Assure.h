@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "compile_pch.h"
+#include "Compile_PCH.h"
 
 #define _Assure_AtCompileTime3(c, msg) typedef char Assure_AtCompileTime_##msg[(!!(c))*2-1]
 #define _Assure_AtCompileTime2(c, line) _Assure_AtCompileTime3(c, at_line_##line)
@@ -27,8 +27,8 @@ bool _assure_true_failed(const char* condition_str, const char* file, const int 
 
 
 #if (defined(assure_implementation) || defined(__INTELLISENSE__))
-#include "basic.h"
-#include "compile.h"
+#include "Basic.h"
+#include "Compile.h"
 
 /* see zmq_abort */
 void rc_abort(const char* errmsg_) {

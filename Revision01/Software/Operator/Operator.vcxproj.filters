@@ -21,10 +21,10 @@
     <ClCompile Include="main.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cc">
+    <ClCompile Include="PCH.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Common\basic.cc">
+    <ClCompile Include="..\Common\Basic.cc">
       <Filter>Source Files\Common</Filter>
     </ClCompile>
     <ClCompile Include="OS_AddressEvent.cc">
@@ -38,22 +38,22 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h">
+    <ClInclude Include="PCH.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\compile.h">
+    <ClInclude Include="..\Common\Compile.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\compile_pch.h">
+    <ClInclude Include="..\Common\Compile_PCH.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\protocol.h">
+    <ClInclude Include="..\Common\Protocol.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\assure.h">
+    <ClInclude Include="..\Common\Assure.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\basic.h">
+    <ClInclude Include="..\Common\Basic.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
     <ClInclude Include="OS_AddressEvent.h">

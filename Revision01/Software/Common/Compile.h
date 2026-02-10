@@ -7,7 +7,7 @@ todo: the fact that i can mispell c_compile(wanblows) and have it still compile 
       i remember i tried to get it to fail to compile somehow. it needs a static assert.
 */
 
-#include "compile_pch.h"
+#include "Compile_PCH.h"
 
 /* features */
 #define c_feature(F) c_compile(feature_##F)

@@ -20,7 +20,7 @@
 #define DCLC_COUNTERS_RATIO      (DCLC_HASH_RATIO*DCLC_CACHE_LINE/sizeof(int))
 #endif
 
-#include "basic.h"
+#include "Basic.h"
 
 struct Y_RWLockMM {
 	struct ReaderEntry {

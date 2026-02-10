@@ -1,17 +1,18 @@
 //
 
 // Feb 8
-// - 30 minutes Get the assertion handler for Windows working
-// - 30 minutes Get Mutexes, Atomics, Event queues
+// x 30 minutes Get the assertion handler for Windows working
+// x 30 minutes Get Mutexes, Atomics, Event queues
+
+// Feb 9
 // - 30 minutes Basic packet definition(fake "1khz" data in windows written to.xlsx)
 // - 30 minutes Basic UI(just use a single line printf() fflush(stdout) with summary statistics I guess)
 // - Stretch Goal : Opening up the serial port and moving the fake data generation to the STM32
 
-
 // integrate a nice terminal command library like https://github.com/jart/bestline/tree/master
-// assure.h, basic.h, version.h, etc, all boilerplate
+// Assure.h, Basic.h, version.h, etc, all boilerplate
 // write assertions (assure, tru) for STM32.
-// then define protocol.h for a packet containing 10kbps 1khz plain-old-data
+// then define Protocol.h for a packet containing 10kbps 1khz plain-old-data
 // integrate the log.h function with threads / message queues (probably requires it tbh for separating logging & input & file writing anyway)
 // 
 //
@@ -26,13 +27,13 @@
 // use libxlsxwriter to log data
 //
 
-#include "pch.h"
+#include "PCH.h"
 
 #define assure_implementation
-#include "assure.h"
+#include "Assure.h"
 
-#define protocol_implmentation
-#include "protocol.h"
+#define Protocol_Implmentation
+#include "Protocol.h"
 
 #include "Y.h"
 #include "Y_EventMM.h"

@@ -1,7 +1,7 @@
 //
 
 #include "PCH.h"
-#include "Log.h"
+#include "LogService.h"
 
 #if 0
 const char* stringof_trace_flag(const trace_level_e l) {
@@ -30,7 +30,7 @@ v4 colorof_trace_flag(const trace_flag_e l) {
 }
 #endif
 
-intptr_t Thread_LogThread(void* _) {
+intptr_t Thread_LogService(void* _) {
 	TracyCZoneN(init, "Init", true);
 
 	#if 0
@@ -38,7 +38,7 @@ intptr_t Thread_LogThread(void* _) {
 	defer(rpmalloc_thread_finalize(false));
 	#endif
 
-	LogThread* self = cast(LogThread*)_;
+	LogService* self = cast(LogService*)_;
 	#if 0
 	rc_SetThreadName("Log");
 	#endif

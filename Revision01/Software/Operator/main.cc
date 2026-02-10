@@ -46,7 +46,7 @@
 #include "OS_AddressEvent.h"
 #include "OS_Signal.h"
 
-#include "Log.h"
+#include "LogService.h"
 
 // Scan serial ports by reading the registry key:
 // HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\SERIALCOMM
@@ -165,20 +165,19 @@ static HANDLE openSerialPort(const std::string& portName, DWORD baudRate = CBR_1
 
 int main()
 {
-	LogThread log_thread;
-
-	if(!tru(LogThread_Create(&log_thread))) {
+	LogService log;
+	if(!tru(LogService_Create(&log))) {
 		return false;
 	}
-	defer(LogThread_Destroy(&log_thread));
+	defer(LogService_Destroy(&log));
 
-	LogThread_Begin(&log_thread);
-	defer(LogThread_End(&log_thread));
+	LogService_Begin(&log);
+	defer(LogService_End(&log));
 
 	uint32_t j = 0;
 	while(1) {
 		for(uint32_t i = 0; i < 100; ++i) {
-			Log(&log_thread, "Hello, %s %u!\n", "world", ++j);
+			Log(&log, "Hello, %s %u!\n", "world", ++j);
 		}
 		Sleep(1000);
 	}

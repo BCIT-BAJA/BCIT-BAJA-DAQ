@@ -45,31 +45,31 @@ struct Log_MsgIn {
 	}
 };
 
-struct LogThread {
+struct LogService {
 	std::thread thread;
 	Y_EventMM qi_produce_event;
 	Y_QueueMM<Log_MsgIn> qi;
 };
 
 
-intptr_t Thread_LogThread(void* _);
+intptr_t Thread_LogService(void* _);
 
-inl bool LogThread_Create(LogThread* l, const uint32_t drops_n = 64) {
+inl bool LogService_Create(LogService* l, const uint32_t drops_n = 64) {
 	ZoneScoped;
 	if(!/* this goes away */tru(l->qi.Create(512))) {
 		return false;
 	}
 	return true;
 }
-inl void LogThread_Destroy(LogThread* l) {
+inl void LogService_Destroy(LogService* l) {
 	ZoneScoped;
 	l->qi.Destroy();
 }
-inl void LogThread_Begin(LogThread* l) {
+inl void LogService_Begin(LogService* l) {
 	ZoneScoped;
-	l->thread = std::thread(Thread_LogThread, l);
+	l->thread = std::thread(Thread_LogService, l);
 }
-inl bool LogThread_End(LogThread* l) {
+inl bool LogService_End(LogService* l) {
 	ZoneScoped;
 
 	Log_MsgIn si;
@@ -82,12 +82,12 @@ inl bool LogThread_End(LogThread* l) {
 
 	return true;
 }
-inl void LogThread_Join(LogThread* l) {
+inl void LogService_Join(LogService* l) {
 	ZoneScoped;
 	l->thread.join();
 }
 
-typedef LogThread* Logger;
+typedef LogService* Logger;
 typedef Log_MsgIn Txt;
 
 void Txt_Fmt_(Txt* txt, const char* fmt, va_list va);
@@ -101,7 +101,7 @@ void Log_Txt(Logger l, Txt* txt);
 */
 void Log(Logger l, const char* fmt, ...);
 
-struct Loop_LogThread { } ;
+struct Loop_LogService { } ;
 
 #if 0
 // take inspiration from https://github.com/rs/zerolog

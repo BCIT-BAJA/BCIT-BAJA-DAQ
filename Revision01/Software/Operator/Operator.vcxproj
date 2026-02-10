@@ -148,7 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Common\Basic.cc" />
-    <ClCompile Include="Log.cc" />
+    <ClCompile Include="LogService.cc" />
     <ClCompile Include="main.cc" />
     <ClCompile Include="OS_AddressEvent.cc" />
     <ClCompile Include="OS_Signal.cc" />
@@ -163,7 +163,7 @@
     <ClInclude Include="..\Common\Compile.h" />
     <ClInclude Include="..\Common\Compile_PCH.h" />
     <ClInclude Include="..\Common\Protocol.h" />
-    <ClInclude Include="Log.h" />
+    <ClInclude Include="LogService.h" />
     <ClInclude Include="OS_AddressEvent.h" />
     <ClInclude Include="OS_Signal.h" />
     <ClInclude Include="PCH.h" />

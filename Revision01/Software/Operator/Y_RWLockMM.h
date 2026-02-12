@@ -56,7 +56,7 @@ struct Y_RWLockMM {
 		Assure(!m_entries_capacity);
 
 		/* we allocate one extra entry to prevent false sharing with adjacent memory. */
-		if(!tru(rc_ArrayPtr_Allocate(m_entries, (1 + arg_entries_capacity)))) {
+		if(!tru(Basic_ArrayPointer_New(m_entries, (1 + arg_entries_capacity)))) {
 			return false;
 		}
 
@@ -71,7 +71,7 @@ struct Y_RWLockMM {
 	void Destroy() {
 		Task_ZoneScoped_NoCallstack;
 
-		rc_ArrayPtr_Free(m_entries);
+		Basic_ArrayPointer_Delete(m_entries);
 		m_entries_capacity = 0;
 		m_writer_a.store(0, std::memory_order_relaxed);
 	}

@@ -148,6 +148,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Common\Basic.cc" />
+    <ClCompile Include="DataService.cc" />
+    <ClCompile Include="ExcelService.cc" />
     <ClCompile Include="LogService.cc" />
     <ClCompile Include="main.cc" />
     <ClCompile Include="OS_AddressEvent.cc" />
@@ -156,6 +158,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="DeviceService.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Common\Assure.h" />
@@ -163,10 +166,16 @@
     <ClInclude Include="..\Common\Compile.h" />
     <ClInclude Include="..\Common\Compile_PCH.h" />
     <ClInclude Include="..\Common\Protocol.h" />
+    <ClInclude Include="..\Common\Version.h" />
+    <ClInclude Include="..\Common\Version_MajorMinorPatch.h" />
+    <ClInclude Include="..\Common\Version_Revision.h" />
+    <ClInclude Include="DataService.h" />
+    <ClInclude Include="ExcelService.h" />
     <ClInclude Include="LogService.h" />
     <ClInclude Include="OS_AddressEvent.h" />
     <ClInclude Include="OS_Signal.h" />
     <ClInclude Include="PCH.h" />
+    <ClInclude Include="DeviceService.h" />
     <ClInclude Include="Y.h" />
     <ClInclude Include="Y_EventMM.h" />
     <ClInclude Include="Y_PoolFairMM.h" />
@@ -174,6 +183,10 @@
     <ClInclude Include="Y_QueueMM.h" />
     <ClInclude Include="Y_QueueSS.h" />
     <ClInclude Include="Y_RWLockMM.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Common\Version_Revision.bat" />
+    <None Include="..\Common\Version_Revision.sh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

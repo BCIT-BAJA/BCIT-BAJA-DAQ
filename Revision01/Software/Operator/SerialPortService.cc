@@ -1,7 +1,7 @@
 //
 
-#include "PCH.h"
-#include "LogService.h"
+#include "pch.h"
+#include "Log.h"
 
 #if 0
 const char* stringof_trace_flag(const trace_level_e l) {
@@ -30,18 +30,15 @@ v4 colorof_trace_flag(const trace_flag_e l) {
 }
 #endif
 
-intptr_t Thread_LogService(void* _) {
-#if c_config(debug)
-	puts(MACRO_FunctionSignature());
-	defer(puts(MACRO_FunctionSignature()));
-#endif
+intptr_t Thread_LogThread(void* _) {
+	TracyCZoneN(init, "Init", true);
 
 	#if 0
 	rpmalloc_thread_initialize();
 	defer(rpmalloc_thread_finalize(false));
 	#endif
 
-	LogService* self = cast(LogService*)_;
+	LogThread* self = cast(LogThread*)_;
 	#if 0
 	rc_SetThreadName("Log");
 	#endif
@@ -94,6 +91,10 @@ intptr_t Thread_LogService(void* _) {
 		}
 	}
 	end:;
+
+#if c_config(debug)
+	puts(MACRO_FunctionSignature());
+#endif
 
 	return 0;
 }
@@ -177,7 +178,7 @@ void Log_Txt(Logger l, Txt* txt) {
 */
 void Log(Logger l, const char* fmt, ...) c_fmt(2) {
 	Task_ZoneScoped_NoCallstack;
-	if(!tru(l)) {
+	if(!l) {
 		return;
 	}
 

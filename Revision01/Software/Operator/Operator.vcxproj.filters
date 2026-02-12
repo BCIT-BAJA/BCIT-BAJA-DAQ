@@ -36,6 +36,15 @@
     <ClCompile Include="LogService.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DeviceService.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataService.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExcelService.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PCH.h">
@@ -86,5 +95,31 @@
     <ClInclude Include="LogService.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="DeviceService.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataService.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExcelService.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Version.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Version_MajorMinorPatch.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Version_Revision.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Common\Version_Revision.bat">
+      <Filter>Source Files\Common</Filter>
+    </None>
+    <None Include="..\Common\Version_Revision.sh">
+      <Filter>Source Files\Common</Filter>
+    </None>
   </ItemGroup>
 </Project>

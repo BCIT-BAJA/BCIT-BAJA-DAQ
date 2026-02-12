@@ -221,7 +221,7 @@ template<typename T>
 #endif
 
 	/* we allocate one extra entry to prevent false sharing with adjacent memory. */
-	if(!/* Check_Allocation */tru(rc_ArrayPtr_Allocate(server.m_entries, (1 + arg_entries_capacity)))) {
+	if(!/* Check_Allocation */tru(Basic_ArrayPointer_New(server.m_entries, (1 + arg_entries_capacity)))) {
 		// Check_Allocation:
 		// Allocations are critical faults in recall.
 		// we immediately Trace() what we can, without allocating anything. the Trace / Trap subsystems must limit its allocations to support this.
@@ -244,7 +244,7 @@ void Y_QueueMM<T>::Destroy() {
 	Assure(server.m_returns_n_a.load(std::memory_order_relaxed) == server.m_rents_n_a.load(std::memory_order_relaxed), "No outstanding clients allowed!");
 #endif
 
-	rc_ArrayPtr_Free(server.m_entries);
+	Basic_ArrayPointer_Delete(server.m_entries);
 	server.m_entries_capacity = 0;
 	server.m_writer_a = 0;
 	server.m_reader_a = 0;

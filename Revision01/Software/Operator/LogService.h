@@ -69,7 +69,7 @@ inl void LogService_Begin(LogService* l) {
 	ZoneScoped;
 	l->thread = std::thread(Thread_LogService, l);
 }
-inl bool LogService_End(LogService* l) {
+inl void LogService_SignalEnd(LogService* l) {
 	ZoneScoped;
 
 	Log_MsgIn si;
@@ -79,10 +79,8 @@ inl bool LogService_End(LogService* l) {
 	defer(l->qi.Producer_Return(&qi_producer));
 	while(qi_producer.Push_Tx(&si) != Y_Tx_e::Success) { Y_Thread_Yield(); } // note: todo: will lock up if full.
 	l->qi_produce_event.Signal_One();
-
-	return true;
 }
-inl void LogService_Join(LogService* l) {
+inl void LogService_WaitForEnd(LogService* l) {
 	ZoneScoped;
 	l->thread.join();
 }
@@ -100,8 +98,6 @@ void Log_Txt(Logger l, Txt* txt);
 // :)
 */
 void Log(Logger l, const char* fmt, ...);
-
-struct Loop_LogService { } ;
 
 #if 0
 // take inspiration from https://github.com/rs/zerolog

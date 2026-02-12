@@ -2,12 +2,18 @@
 
 #include "Compile_PCH.h"
 
-#if c_os(windows)
-
 #include "xlsxwriter.h"
 
+#if c_os(windows)
 #include <windows.h>
+#include <conio.h>
 #include <synchapi.h>
+#include <processthreadsapi.h>
+#elif defined(__linux__)
+#include <sys/prctl.h>
+#elif defined(__APPLE__) && defined(__MACH__)
+#include <pthread.h>
+#endif
 
 #include <cstdlib>
 #include <new>
@@ -24,5 +30,3 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdarg.h>
-
-#endif

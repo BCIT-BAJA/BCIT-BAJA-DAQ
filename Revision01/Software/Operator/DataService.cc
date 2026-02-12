@@ -1,55 +1,26 @@
 //
 
-#include "PCH.h"
-#include "LogService.h"
+#include "pch.h"
+#include "DeviceService.h"
 
 #if 0
-const char* stringof_trace_flag(const trace_level_e l) {
-	switch(l) {
-		case trace_flag_fault:   return "fault";
-		case trace_flag_error:   return "error";
-		case trace_flag_warn:    return "warn";
-		case trace_flag_info:    return "info";
-		case trace_flag_verbose: return "verbose";
-		case trace_flag_debug:   return "debug";
-	}
-	asshert(false);
-	return "";
-}
-v4 colorof_trace_flag(const trace_flag_e l) {
-	switch(l) {
-		case trace_flag_fault:   ;
-		case trace_flag_error:   return v4vi(1.0f, 0.0f, 0.0f, 1.0f);
-		case trace_flag_warn:    return v4vi(1.0f, 1.0f, 0.0f, 1.0f);
-		case trace_flag_info:    return v4vi(0.9f, 0.9f, 0.9f, 1.0f);
-		case trace_flag_verbose: ;
-		case trace_flag_debug:   return v4vi(0.65f, 0.65f, 0.65f, 1.0f);
-	}
-	asshert(false);
-	return v41i;
-}
-#endif
-
-intptr_t Thread_LogService(void* _) {
-#if c_config(debug)
-	puts(MACRO_FunctionSignature());
-	defer(puts(MACRO_FunctionSignature()));
-#endif
+intptr_t Thread_DeviceService(void* _) {
+	TracyCZoneN(init, "Init", true);
 
 	#if 0
 	rpmalloc_thread_initialize();
 	defer(rpmalloc_thread_finalize(false));
 	#endif
 
-	LogService* self = cast(LogService*)_;
+	DeviceService* self = cast(DeviceService*)_;
 	#if 0
-	rc_SetThreadName("Log");
+	rc_SetThreadName("SerialPort");
 	#endif
 	
-	Y_QueueMM<Log_MsgIn>::Consumer qi_consumer = self->qi.Consumer_Rent();
+	Y_QueueMM<SerialPort_MsgIn>::Consumer qi_consumer = self->qi.Consumer_Rent();
 	defer(self->qi.Consumer_Return(&qi_consumer));
 
-	Log_MsgIn mi;
+	SerialPort_MsgIn mi;
 
 	std::string accum;
 
@@ -71,12 +42,12 @@ intptr_t Thread_LogService(void* _) {
 			Y_Thread_Yield();
 		} else if(mi_pull == Y_Rx_e::Success) {
 			switch(mi.type) {
-				case Log_MsgIn_e::End: {
+				case SerialPort_MsgIn_e::End: {
 					/* note: race: other incoming messages are lost */
 					goto end;
 				} break;
 
-				case Log_MsgIn_e::String: {
+				case SerialPort_MsgIn_e::String: {
 					ZoneScopedN("String");
 
 					auto& str = mi.as.String.object;
@@ -94,6 +65,10 @@ intptr_t Thread_LogService(void* _) {
 		}
 	}
 	end:;
+
+#if c_config(debug)
+	puts(MACRO_FunctionSignature());
+#endif
 
 	return 0;
 }
@@ -127,7 +102,7 @@ void _append_sprintf(std::string& str, const char* format, ...) {
 
 void Txt_Fmt_(Txt* txt, const char* fmt, va_list va) c_fmt_va(2) {
 	Task_ZoneScoped_NoCallstack;
-	if(txt->type != Log_MsgIn_e::String) {
+	if(txt->type != SerialPort_MsgIn_e::String) {
 		txt->Construct_String();
 		txt->as.String.object.reserve(512);
 	}
@@ -137,7 +112,7 @@ void Txt_Fmt_(Txt* txt, const char* fmt, va_list va) c_fmt_va(2) {
 
 void Txt_Append(Txt* txt, const char* str) {
 	Task_ZoneScoped_NoCallstack;
-	if(txt->type != Log_MsgIn_e::String) {
+	if(txt->type != SerialPort_MsgIn_e::String) {
 		txt->Construct_String();
 		txt->as.String.object.reserve(512);
 	}
@@ -154,14 +129,14 @@ void Txt_AppendFormat(Txt* txt, const char* fmt, ...) c_fmt(2) {
 }
 #endif
 
-void Log_Txt(Logger l, Txt* txt) {
+void SerialPort_Txt(SerialPortger l, Txt* txt) {
 	Task_ZoneScoped_NoCallstack;
 	if(!l) {
 		return;
 	}
 
 	// todo: make this thread local !!!!!!
-	Y_QueueMM<Log_MsgIn>::Producer qi_producer = l->qi.Producer_Rent();
+	Y_QueueMM<SerialPort_MsgIn>::Producer qi_producer = l->qi.Producer_Rent();
 	defer(l->qi.Producer_Return(&qi_producer));
 
 	while(qi_producer.Push_Tx(txt) != Y_Tx_e::Success) { Y_Thread_Yield(); } // note: todo: will lock up if full.
@@ -171,13 +146,9 @@ void Log_Txt(Logger l, Txt* txt) {
 	// todo: reset the messages here? they were "moved" to a new memory location...
 }
 
-/*
-// Log <<< Printf ~1.3ms
-// :)
-*/
-void Log(Logger l, const char* fmt, ...) c_fmt(2) {
+void SerialPort(SerialPortger l, const char* fmt, ...) c_fmt(2) {
 	Task_ZoneScoped_NoCallstack;
-	if(!tru(l)) {
+	if(!l) {
 		return;
 	}
 
@@ -185,6 +156,6 @@ void Log(Logger l, const char* fmt, ...) c_fmt(2) {
 	va_scope(va, fmt) {
 		Txt_Fmt_(&msg, fmt, va);
 	}
-	Log_Txt(l, &msg);
+	SerialPort_Txt(l, &msg);
 }
-
+#endif

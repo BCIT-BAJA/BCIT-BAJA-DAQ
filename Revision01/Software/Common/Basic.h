@@ -223,10 +223,17 @@ template <typename T> struct TIsPointer<const volatile T> { enum { Value = TIsPo
 #endif
 
 /* C/C++ interoperability boilerplate */
-#define Struct(T) \
+#define _Struct(T) \
 	struct T; \
 	typedef struct T T; \
 	struct T
+
+// (you must define Struct_Name)
+#define Struct \
+	_Struct(Struct_Name)
+
+#define Struct_(F) \
+	Struct_Name ## F
 
 #define Union(U) \
 	union U; \
@@ -266,7 +273,6 @@ inl void MemClear_Explicit(void* p, size_t n) {
 	_Memset_Explicit(p, 0, n);
 }
 
-#if 1
 inl void* Malloc_Aligned(size_t size, size_t alignment) {
 #if defined(_WIN32)
 	return _aligned_malloc(size, alignment);
@@ -293,9 +299,9 @@ template<typename T> inline T* DestructAt_NullSafe(T* p) {
 	return p;
 }
 
-inl void* Free_NullSafe(void* p) {
+inl const void* Free_NullSafe(const void* p) {
 	if(tru(p)) {
-		free(p);
+		free(cast(void*)p);
 	}
 	return p;
 }
@@ -309,8 +315,7 @@ inl void Free_Aligned(void* ptr) {
 #endif
 }
 
-// 1. New Object (Alloc + Construct)
-#define rc_Ptr_New(Ptr) \
+#define Basic_Pointer_New(Ptr) \
 ( \
 	(Ptr = cast(type_of(Ptr))Malloc_Aligned( \
 		sizeof(type_of(*Ptr)), \
@@ -319,8 +324,7 @@ inl void Free_Aligned(void* ptr) {
 	&& ConstructAt_NullSafe(Ptr) \
 )
 
-// 2. Delete Object (Destruct + Free)
-#define rc_Ptr_Delete(Ptr) \
+#define Basic_Pointer_Delete(Ptr) \
 	do { \
 		if (Ptr) { \
 			(Ptr)->~decltype(*Ptr)(); \
@@ -329,8 +333,7 @@ inl void Free_Aligned(void* ptr) {
 		} \
 	} while(0)
 
-// 3. Array Allocate (Alloc only - no construction for POD/SDI buffers)
-#define rc_ArrayPtr_Allocate(Ptr, Count) \
+#define Basic_ArrayPointer_New(Ptr, Count) \
 ( \
 	Ptr = cast(type_of(Ptr))Malloc_Aligned( \
 		(Count)*sizeof(type_of(*Ptr)), \
@@ -338,34 +341,13 @@ inl void Free_Aligned(void* ptr) {
 	) \
 )
 
-// 4. Array Free
-#define rc_ArrayPtr_Free(Ptr) \
+#define Basic_ArrayPointer_Delete(Ptr) \
 	do { \
 		if (Ptr) { \
 			Free_Aligned(Ptr); \
 			Ptr = null; \
 		} \
 	} while(0)
-#else
-#define rc_Ptr_New(Ptr) \
-	((Ptr = cast(type_of(Ptr))rpaligned_alloc( \
-		( alignof(type_of(*Ptr)) + sizeof(void*) - 1) / sizeof(void*), \
-		sizeof(type_of(*Ptr)) \
-	)) && rc_construct(Ptr))
-
-#define rc_Ptr_Delete(Ptr) \
-	(!Ptr || (rc_destruct(Ptr) && rc_rpfree(Ptr) && !(Ptr = null)))
-
-// todo: rpaligned_alloc takes in as argument alignment in void*, not bytes. so this is overly conservative? 
-#define rc_ArrayPtr_Allocate(Ptr, Count) \
-	(Ptr = cast(type_of(Ptr))rpaligned_alloc( \
-		( alignof(type_of(*Ptr)) + sizeof(void*) - 1 ) / sizeof(void*), \
-		(Count)*sizeof(type_of(*Ptr)) \
-	))
-
-#define rc_ArrayPtr_Free(Ptr) \
-	if(Ptr) { rpfree(Ptr); Ptr = null; }
-#endif
 
 #if 0
 // todo: it'd be nice to put an aligned pointer / generational counter in here, or at least a magic byte, so that we *know* it's actually an aligned pointer, right?
@@ -932,10 +914,21 @@ constexpr std::size_t hardware_destructive_interference_size = 64;
 #endif
 #define kCacheLineSize std::hardware_destructive_interference_size
 
-#if 0
 #define rc_SetThreadName(Cstr) \
 	EA::Thread::SetThreadName(Cstr); \
 	tracy::SetThreadName(Cstr)
+
+#if defined(_WIN32) || defined(_WIN64)
+// Windows uses a wide string (wchar_t) for thread names
+#define Basic_SetThreadName(name) SetThreadDescription(GetCurrentThread(), L##name)
+#elif defined(__linux__)
+// Linux limits thread names to 16 characters (including null terminator)
+#define Basic_SetThreadName(name) prctl(PR_SET_NAME, name, 0, 0, 0)
+#elif defined(__APPLE__) && defined(__MACH__)
+// macOS only allows setting the name for the current thread
+#define Basic_SetThreadName(name) pthread_setname_np(name)
+#else
+#define Basic_SetThreadName(name) ((void)0)
 #endif
 
 #define MACRO_Empty

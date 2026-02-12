@@ -64,7 +64,7 @@ struct Y_QueueSS {
 
 		/* allocate one extra entry to prevent false sharing with adjacent memory. */
 		T* entries = null;
-		if(!tru(rc_ArrayPtr_Allocate(entries, (1 + arg_entries_capacity)))) {
+		if(!tru(Basic_ArrayPointer_New(entries, (1 + arg_entries_capacity)))) {
 			return false;
 		}
 
@@ -97,7 +97,7 @@ struct Y_QueueSS {
 
 		Assure(Count() <= 0);
 
-		rc_ArrayPtr_Free(m_entries);
+		Basic_ArrayPointer_Delete(m_entries);
 		m_entries_capacity = 0;
 		m_write_i_a = 0;
 		m_consume_cached_write_i = 0;

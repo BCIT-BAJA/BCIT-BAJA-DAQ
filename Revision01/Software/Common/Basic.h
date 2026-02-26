@@ -76,10 +76,12 @@ YourEnum::kSomeValue;
 #define null NULL
 #define nop (void)0
 #define unused(v) (void)(v)
+#define Unused unused
 #define stringify(v) #v
 #define stringof(v) ((char*)&v, #v)
 #define case_stringof(c) case c: return #c
 #define case_fallthrough [[fallthrough]]
+#define SWITCH_FallThroughToNextCase() [[fallthrough]]
 
 /* get the size of a structure variable without an instantiated object present in scope */
 #define size_of(T, V) (sizeof((cast((T)*)0)->(V)))
@@ -194,6 +196,8 @@ template <typename T> struct TIsPointer<const volatile T> { enum { Value = TIsPo
 #endif
 #endif
 
+#define Array_CountOf(A) _countof(A)
+
 /* array argument */
 #define aarg(A) (A), countof(A)
 
@@ -223,22 +227,28 @@ template <typename T> struct TIsPointer<const volatile T> { enum { Value = TIsPo
 #endif
 
 /* C/C++ interoperability boilerplate */
-#define _Struct(T) \
+#define Struct(T) \
 	struct T; \
 	typedef struct T T; \
 	struct T
-
-// (you must define Struct_Name)
-#define Struct \
-	_Struct(Struct_Name)
-
-#define Struct_(F) \
-	Struct_Name ## F
 
 #define Union(U) \
 	union U; \
 	typedef union U U; \
 	union U
+
+#if 1
+#define Enum(E, T) \
+	typedef T E; \
+	enum : T
+#endif
+
+#if 0
+#define Enum(E, T) \
+	enum class E : T 
+#endif
+
+
 
 /* todo: StringLiteral_{ Define when *_implementation, otherwise, Declare */
 #define StringLiteral_Declare(S, L) \
@@ -259,6 +269,7 @@ template<typename F> inline _ScopedFunction<F> _ScopedFunction_Create(F f) { ret
 #define defer(code) \
 	auto _cc(scope_exit_, __COUNTER__) = _ScopedFunction_Create([&](){ code; })
 #endif
+#define Defer defer
 
 // 
 // Compilers(GCC, Clang, and MSVC) are "smart." If they see you filling a buffer with zeros, but then you never read from that buffer again before it goes out of scope, the optimizer applies Dead Store Elimination(DSE).It decides the memset was useless work and deletes it entirely to save CPU cycles.
@@ -286,21 +297,21 @@ inl void* Malloc_Aligned(size_t size, size_t alignment) {
 }
 
 template<typename T> inline T* ConstructAt_NullSafe(T* p) {
-	if(tru(p)) {
+	if(Assure_True(p)) {
 		new (p) T();
 	}
 	return p;
 }
 
 template<typename T> inline T* DestructAt_NullSafe(T* p) {
-	if(tru(p)) {
+	if(Assure_True(p)) {
 		p->~T();
 	}
 	return p;
 }
 
 inl const void* Free_NullSafe(const void* p) {
-	if(tru(p)) {
+	if(Assure_True(p)) {
 		free(cast(void*)p);
 	}
 	return p;

@@ -60,7 +60,7 @@ intptr_t Thread_DeviceService(void* _) {
 					}
 				} break;
 
-				default: tru(false, "unknown message type %d", mi.type);
+				default: Assure_True(false, "unknown message type %d", mi.type);
 			}
 		}
 	}

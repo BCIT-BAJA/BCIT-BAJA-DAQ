@@ -2,6 +2,8 @@
 
 #pragma once
 
+// todo: rename me to Assume(), vs Assume_DebugOnly(), that makes more sense..
+
 #include "Compile_PCH.h"
 
 #define _Assure_AtCompileTime3(c, msg) typedef char Assure_AtCompileTime_##msg[(!!(c))*2-1]
@@ -17,10 +19,10 @@ bool _assure_true_failed(const char* condition_str, const char* file, const int 
 #define _ASSURE_TRUE(c, ...) ((uintptr_t)((bool)(c)) || _assure_true_failed(#c, __FILE__, __LINE__, "" __VA_ARGS__))
 
 #if (c_compile(assure_debug) && !defined(__INTELLISENSE__))
-#define tru(c, ...)         _ASSURE_TRUE(c, "" __VA_ARGS__)
+#define Assure_True(c, ...)         _ASSURE_TRUE(c, "" __VA_ARGS__)
 #define Assure(c, ...) do { _ASSURE_TRUE(c, "" __VA_ARGS__); } while(0)
 #else
-#define tru(c, ...) (uintptr_t)(!!(c))
+#define Assure_True(c, ...) (uintptr_t)(!!(c))
 #define Assure(c, ...) (void)(c)
 #endif
 #define assure Assure

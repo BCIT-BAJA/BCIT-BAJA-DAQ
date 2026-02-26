@@ -176,7 +176,7 @@ struct Y_QueueMM {
 	#if c_config(debug)
 		Task_ZoneScoped_NoCallstack;
 
-		if(tru(client) && tru(client->m_client_uid)) {
+		if(Assure_True(client) && Assure_True(client->m_client_uid)) {
 			const uint64_t returns_n = (1 + server.m_returns_n_a.fetch_add(1, std::memory_order_relaxed));
 			Assure(returns_n <= server.m_rents_n_a.load(std::memory_order_relaxed), "Too many returns!");
 
@@ -221,7 +221,7 @@ template<typename T>
 #endif
 
 	/* we allocate one extra entry to prevent false sharing with adjacent memory. */
-	if(!/* Check_Allocation */tru(Basic_ArrayPointer_New(server.m_entries, (1 + arg_entries_capacity)))) {
+	if(!/* Check_Allocation */Assure_True(Basic_ArrayPointer_New(server.m_entries, (1 + arg_entries_capacity)))) {
 		// Check_Allocation:
 		// Allocations are critical faults in recall.
 		// we immediately Trace() what we can, without allocating anything. the Trace / Trap subsystems must limit its allocations to support this.

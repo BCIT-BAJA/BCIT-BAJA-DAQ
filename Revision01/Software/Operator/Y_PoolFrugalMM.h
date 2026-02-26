@@ -49,7 +49,7 @@ struct Y_PoolFrugalMM {
 		Assure(!m_entries_capacity);
 
 		/* we allocate one extra entry to prevent false sharing with adjacent memory. */
-		if(!tru(Basic_ArrayPointer_New(m_entries, (1 + arg_entries_capacity)))) {
+		if(!Assure_True(Basic_ArrayPointer_New(m_entries, (1 + arg_entries_capacity)))) {
 			return false;
 		}
 
@@ -98,7 +98,7 @@ struct Y_PoolFrugalMM {
 		Assure(m_entries);
 		Assure(m_entries_capacity);
 
-		if(!tru(out)) {
+		if(!Assure_True(out)) {
 			return Y_Rx_e::Success;
 		}
 
@@ -137,7 +137,7 @@ struct Y_PoolFrugalMM {
 		Assure(m_entries);
 		Assure(m_entries_capacity);
 
-		if(!tru(arg)) {
+		if(!Assure_True(arg)) {
 			return Y_Tx_e::Success;
 		}
 
@@ -148,12 +148,12 @@ struct Y_PoolFrugalMM {
 		);
 
 		const uint64_t entry_i = cast(uint64_t)cast(uintptr_t)arg->key;
-		if(!tru(entry_i < m_entries_capacity)) {
+		if(!Assure_True(entry_i < m_entries_capacity)) {
 			return Y_Tx_e::Success;
 		}
 
 		uint64_t exclusive = arg->key_epoch;
-		if(!tru(exclusive % 2 != 0)) {
+		if(!Assure_True(exclusive % 2 != 0)) {
 			return Y_Tx_e::Success;
 		}
 

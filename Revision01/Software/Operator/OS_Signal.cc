@@ -326,22 +326,22 @@ static BOOL WINAPI Win32_CtrlHandler(DWORD fdwCtrlType) {
 #endif
 
 bool OS_Signal_Install() {
-	if(!tru(SIG_ERR != signal(SIGINT, OS_SignalHandler))) {
+	if(!Assure_True(SIG_ERR != signal(SIGINT, OS_SignalHandler))) {
 		return false;
 	}
 
-	if(!tru(SIG_ERR != signal(SIGTERM, OS_SignalHandler))) {
+	if(!Assure_True(SIG_ERR != signal(SIGTERM, OS_SignalHandler))) {
 		return false;
 	}
 
 #ifdef SIGPIPE
-	if(!tru(SIG_ERR != signal(SIGPIPE, OS_SignalHandler))) {
+	if(!Assure_True(SIG_ERR != signal(SIGPIPE, OS_SignalHandler))) {
 		return false;
 	}
 #endif
 
 #if c_os(windows)
-	if(!tru(SetConsoleCtrlHandler(cast(PHANDLER_ROUTINE)Win32_CtrlHandler, TRUE))) {
+	if(!Assure_True(SetConsoleCtrlHandler(cast(PHANDLER_ROUTINE)Win32_CtrlHandler, TRUE))) {
 		return false;
 	}
 #endif

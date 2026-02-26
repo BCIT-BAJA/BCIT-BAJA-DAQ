@@ -50,7 +50,7 @@ intptr_t Thread_ExcelService(void* _);
 
 inl bool ExcelService_Create(ExcelService* _) {
 	ZoneScoped;
-	if(!tru(_->qi.Create(512))) {
+	if(!Assure_True(_->qi.Create(512))) {
 		return false;
 	}
 	return true;

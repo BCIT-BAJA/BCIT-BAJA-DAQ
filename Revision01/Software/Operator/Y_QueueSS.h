@@ -64,7 +64,7 @@ struct Y_QueueSS {
 
 		/* allocate one extra entry to prevent false sharing with adjacent memory. */
 		T* entries = null;
-		if(!tru(Basic_ArrayPointer_New(entries, (1 + arg_entries_capacity)))) {
+		if(!Assure_True(Basic_ArrayPointer_New(entries, (1 + arg_entries_capacity)))) {
 			return false;
 		}
 
@@ -110,7 +110,7 @@ struct Y_QueueSS {
 	Y_Tx_e S_Produce_Tx(const T* in) {
 		Task_ZoneScoped_NoCallstack;
 
-		if(!tru(in)) {
+		if(!Assure_True(in)) {
 			return Y_Tx_e::Success;
 		}
 
@@ -153,7 +153,7 @@ struct Y_QueueSS {
 	Y_Rx_e S_Consume_Rx(T* out) {
 		Task_ZoneScoped_NoCallstack;
 
-		if(!tru(out)) {
+		if(!Assure_True(out)) {
 			return Y_Rx_e::Success;
 		}
 

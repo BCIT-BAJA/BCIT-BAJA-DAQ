@@ -89,7 +89,7 @@ intptr_t Thread_LogService(void* _) {
 					}
 				} break;
 
-				default: tru(false, "unknown message type %d", mi.type);
+				default: Assure_True(false, "unknown message type %d", mi.type);
 			}
 		}
 	}
@@ -177,7 +177,7 @@ void Log_Txt(Logger l, Txt* txt) {
 */
 void Log(Logger l, const char* fmt, ...) c_fmt(2) {
 	Task_ZoneScoped_NoCallstack;
-	if(!tru(l)) {
+	if(!Assure_True(l)) {
 		return;
 	}
 

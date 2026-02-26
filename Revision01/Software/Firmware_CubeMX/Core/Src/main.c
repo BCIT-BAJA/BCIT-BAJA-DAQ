@@ -17,6 +17,8 @@
 /* USER CODE BEGIN Includes */
 #include <stdint.h>
 #include <stdbool.h>
+#include <stdlib.h>
+#include <string.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -111,6 +113,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 	bool blue_pb_down_now = false;
 	bool blue_pb_down_was = false;
+
+	int loop_n = 0;
+	char number_str[32 + 1] = { 0 };
 	while (1) {
     /* USER CODE END WHILE */
 
@@ -122,7 +127,12 @@ int main(void)
 			HAL_GPIO_TogglePin(GPIO_StrainV_Enable_5VTolerant_N_GPIO_Port, GPIO_StrainV_Enable_5VTolerant_N_Pin);
 		}
 		blue_pb_down_was = blue_pb_down_now;
-		HAL_Delay(50);
+		// HAL_Delay(50);
+
+		++loop_n;
+		itoa(loop_n, number_str, 10);
+		HAL_UART_Transmit(&huart2, (const uint8_t*)number_str, (1 + strlen(number_str)), 100);
+		HAL_Delay(1000);
 	}
   /* USER CODE END 3 */
 }

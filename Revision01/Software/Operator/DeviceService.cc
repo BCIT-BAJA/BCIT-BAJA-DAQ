@@ -1,12 +1,16 @@
 //
 
 #include "pch.h"
+
 #include "DeviceService.h"
+#include "Pausable.h"
+
+using namespace std;
 
 // Scan serial ports by reading the registry key:
 // HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\SERIALCOMM
-std::vector<std::string> scanSerialPorts() {
-	std::vector<std::string> ports;
+vector<string> scanSerialPorts() {
+	vector<string> ports;
 	HKEY hKey = NULL;
 	constexpr char kRegPath[] = "HARDWARE\\DEVICEMAP\\SERIALCOMM";
 
@@ -24,8 +28,8 @@ std::vector<std::string> scanSerialPorts() {
 	}
 
 	// Buffers must be large enough for the largest value name/data + terminating NUL
-	std::vector<char> valueName(maxValueNameLen + 1);
-	std::vector<BYTE> valueData(maxValueLen + 1);
+	vector<char> valueName(maxValueNameLen + 1);
+	vector<BYTE> valueData(maxValueLen + 1);
 
 	for (DWORD i = 0; i < valueCount; ++i) {
 		DWORD nameLen = (DWORD)valueName.size();
@@ -40,10 +44,10 @@ std::vector<std::string> scanSerialPorts() {
 
 		if (type == REG_SZ) {
 			// data is a null-terminated ANSI string like "COM3"
-			std::string port(reinterpret_cast<char*>(valueData.data()), dataLen);
+			string port(reinterpret_cast<char*>(valueData.data()), dataLen);
 			// trim trailing NULs/newline
 			if (!port.empty() && port.back() == '\0') {
-				port.resize(std::strlen(port.c_str()));
+				port.resize(strlen(port.c_str()));
 			}
 			ports.push_back(port);
 		}
@@ -55,10 +59,10 @@ std::vector<std::string> scanSerialPorts() {
 
 // Open and configure a serial port (non-overlapped). Returns INVALID_HANDLE_VALUE on failure.
 // Typical configuration: 115200 8N1; adjust as needed.
-HANDLE openSerialPort(const std::string& portName, DWORD baudRate)
+HANDLE openSerialPort(const string& portName, DWORD baudRate)
 {
 	// Windows device path for COM ports >= COM10 requires the \\.\ prefix.
-	std::string devicePath = "\\\\.\\" + portName;
+	string devicePath = "\\\\.\\" + portName;
 	HANDLE h = CreateFileA(devicePath.c_str(),
 		GENERIC_READ | GENERIC_WRITE,
 		0,              // exclusive access
@@ -67,7 +71,7 @@ HANDLE openSerialPort(const std::string& portName, DWORD baudRate)
 		FILE_ATTRIBUTE_NORMAL,
 		NULL);
 	if (h == INVALID_HANDLE_VALUE) {
-		std::cerr << "CreateFile failed for " << devicePath << " (error " << GetLastError() << ")\n";
+		cerr << "CreateFile failed for " << devicePath << " (error " << GetLastError() << ")\n";
 		return INVALID_HANDLE_VALUE;
 	}
 
@@ -79,7 +83,7 @@ HANDLE openSerialPort(const std::string& portName, DWORD baudRate)
 	timeouts.WriteTotalTimeoutConstant = 50;
 	timeouts.WriteTotalTimeoutMultiplier = 10;
 	if (!SetCommTimeouts(h, &timeouts)) {
-		std::cerr << "SetCommTimeouts failed (error " << GetLastError() << ")\n";
+		cerr << "SetCommTimeouts failed (error " << GetLastError() << ")\n";
 		CloseHandle(h);
 		return INVALID_HANDLE_VALUE;
 	}
@@ -89,9 +93,9 @@ HANDLE openSerialPort(const std::string& portName, DWORD baudRate)
 	dcb.DCBlength = sizeof(DCB);
 	if (!GetCommState(h, &dcb)) {
 		// Try to build a DCB string if GetCommState fails
-		std::string dcbSpec = "baud=" + std::to_string(baudRate) + " parity=N data=8 stop=1";
+		string dcbSpec = "baud=" + to_string(baudRate) + " parity=N data=8 stop=1";
 		if (!BuildCommDCBA(dcbSpec.c_str(), &dcb)) {
-			std::cerr << "BuildCommDCB failed (error " << GetLastError() << ")\n";
+			cerr << "BuildCommDCB failed (error " << GetLastError() << ")\n";
 			CloseHandle(h);
 			return INVALID_HANDLE_VALUE;
 		}
@@ -104,99 +108,200 @@ HANDLE openSerialPort(const std::string& portName, DWORD baudRate)
 	}
 
 	if (!SetCommState(h, &dcb)) {
-		std::cerr << "SetCommState failed (error " << GetLastError() << ")\n";
+		cerr << "SetCommState failed (error " << GetLastError() << ")\n";
 		CloseHandle(h);
 		return INVALID_HANDLE_VALUE;
 	}
 
 	// Clear buffers
 	if (!PurgeComm(h, PURGE_RXCLEAR | PURGE_TXCLEAR | PURGE_RXABORT | PURGE_TXABORT)) {
-		std::cerr << "PurgeComm failed (error " << GetLastError() << ")\n";
+		cerr << "PurgeComm failed (error " << GetLastError() << ")\n";
 		// Not fatal; continue
 	}
 
 	return h;
 }
 
-#if 0
-	auto ports = scanSerialPorts();
-	if (ports.empty()) {
-		std::cout << "No serial ports found via registry.\n";
-	}
-	else {
-		std::cout << "Found serial ports:\n";
-		for (const auto& p : ports) std::cout << "  " << p << '\n';
-	}
+#if 0 // overlapped i/o
+#include <windows.h>
+#include <stdio.h>
 
-	// Example: open first found port
-	if (!ports.empty()) {
-		HANDLE h = openSerialPort(ports[0], CBR_115200);
-		if (h != INVALID_HANDLE_VALUE) {
-			std::cout << "Opened " << ports[0] << " successfully.\n";
+	int main() {
+		HANDLE hComm;
+		OVERLAPPED osReader = { 0 };
+		char buffer[128];
+		DWORD bytesRead;
+		BOOL fWaitingOnRead = FALSE;
 
-			// Example write (send a simple string). Use WriteFile/ReadFile or overlapped IO as needed.
-			const char* msg = "Hello device\r\n";
-			DWORD written = 0;
-			if (!WriteFile(h, msg, (DWORD)strlen(msg), &written, NULL)) {
-				std::cerr << "WriteFile failed (error " << GetLastError() << ")\n";
+		// 1. Open the port with the Overlapped flag
+		hComm = CreateFile("\\\\.\\COM3",
+			GENERIC_READ | GENERIC_WRITE,
+			0,
+			NULL,
+			OPEN_EXISTING,
+			FILE_FLAG_OVERLAPPED,
+			NULL);
+
+		if (hComm == INVALID_HANDLE_VALUE) {
+			printf("Error opening port\n");
+			return 1;
+		}
+
+		// 2. Create the event for the overlapped structure
+		osReader.hEvent = CreateEvent(NULL, TRUE, FALSE, NULL);
+		if (osReader.hEvent == NULL) {
+			// Handle error
+			return 1;
+		}
+
+		// 3. Start an overlapped Read
+		if (!ReadFile(hComm, buffer, sizeof(buffer), &bytesRead, &osReader)) {
+			if (GetLastError() != ERROR_IO_PENDING) {
+				// A real error occurred
+				printf("Read failed immediately\n");
 			}
 			else {
-				std::cout << "Wrote " << written << " bytes.\n";
+				// The read is happening in the background
+				fWaitingOnRead = TRUE;
+				printf("Read pending...\n");
 			}
-
-			CloseHandle(h);
 		}
 		else {
-			std::cerr << "Failed to open " << ports[0] << '\n';
+			// Read completed immediately (data was already in the buffer)
+			printf("Read %d bytes immediately\n", bytesRead);
 		}
+
+		// 4. Do other work or wait for completion
+		if (fWaitingOnRead) {
+			// Wait for 5 seconds for data to arrive
+			DWORD dwRes = WaitForSingleObject(osReader.hEvent, 5000);
+
+			switch (dwRes) {
+			case WAIT_OBJECT_0:
+				// Read completed! Get the result
+				if (GetOverlappedResult(hComm, &osReader, &bytesRead, FALSE)) {
+					printf("Delayed read finished: %d bytes\n", bytesRead);
+				}
+				fWaitingOnRead = FALSE;
+				break;
+
+			case WAIT_TIMEOUT:
+				printf("Timeout: No data arrived.\n");
+				break;
+
+			default:
+				// Error in WaitForSingleObject
+				break;
+			}
+		}
+
+		CloseHandle(osReader.hEvent);
+		CloseHandle(hComm);
+		return 0;
 	}
 #endif
 
-#if 0
-intptr_t Thread_DeviceService(void* _) {
-	TracyCZoneN(init, "Init", true);
+Enum(DeviceService_State, uint32_t) {
+	DeviceService_State_Nul = 0,
 
-	#if 0
-	rpmalloc_thread_initialize();
-	defer(rpmalloc_thread_finalize(false));
-	#endif
+	// unfortunately, most of these are blocking calls, so no incoming messages are processed.
+	// it requires deliberate design to make sure the queue is processed in between, or that states finish
+	// loop execution quickly.
+
+	// basically, the state machine is a simple ascending / descending chain.
+	// #1 Scan | Gather COM port signatures
+	//           Attempt to open each COM port signature
+	//           If one succeeds, move to State #2
+	//           Else Next COM Port
+	//           Else Finished COM Ports, Log, Wait for 1 second, and rescan
+	// #2 Open | Open COM port. If it fails, pop back into #1 Scan
+
+	Scan,
+};
+
+static pausable State_Root(pausable* pt, DeviceService* device) {
+	Logger l = device->log;
+
+	auto ports = scanSerialPorts();
+	if (!ports.empty()) {
+		HANDLE h = openSerialPort(ports[0], CBR_115200);
+		if (h != INVALID_HANDLE_VALUE) {
+			CloseHandle(h);
+		}
+	}
+
+	static DeviceService_State state = DeviceService_State_Nul;
+	static uint32_t com_i;
+
+	if(*pt == pausable_closed) {
+		*pt = pausable_init;
+	}
+	pause_open(pt);
+	{
+		// scan for com ports here
+
+		// for each com port, attempt to open it.
+
+		// if it is opened, recurse here
+
+		// inside the opened com port, read data
+
+		// if read data succeeds, try to make it intelligible for 10 seconds.
+		// if it is not intelligible for 10 seconds, skip
+		// else if it is intelligible, interpret the data, and publish it to the excel queue.
+
+		for(com_i = 0; com_i < 10; ++com_i) {
+			Log(l, "COM PORT %u\n", com_i);
+			if(com_i + 1 < 10) {
+				pause_here;
+			}
+		}
+	}
+	pause_closer;
+}
+
+intptr_t Thread_DeviceService(void* _) {
+	Basic_SetThreadName("DeviceService");
+
+#if c_config(debug)
+	puts(MACRO_FunctionSignature());
+	defer(puts(MACRO_FunctionSignature()));
+#endif
 
 	DeviceService* self = cast(DeviceService*)_;
-	#if 0
-	rc_SetThreadName("SerialPort");
-	#endif
-	
-	Y_QueueMM<SerialPort_MsgIn>::Consumer qi_consumer = self->qi.Consumer_Rent();
+	Logger l = self->log;
+
+	Y_QueueMM<DeviceService_MsgIn>::Consumer qi_consumer = self->qi.Consumer_Rent();
 	defer(self->qi.Consumer_Return(&qi_consumer));
 
-	SerialPort_MsgIn mi;
-
-	std::string accum;
-
+	DeviceService_MsgIn mi;
 	TracyCZoneEnd(init);
+
+	pausable statemachine = pausable_init;
 	while(true) {
+		// importantly, the AwaitSignalUntil depends on our current state.
+
+		Log(l, "EVENT QUEUE\n");
 		Y_Rx_e mi_pull = Y_Rx_e::Empty;
-		self->qi_produce_event.AwaitSignalUntil((accum.size() ? 25*1000 : Timeout32_e::Infinite),
-			[self, &accum, &qi_consumer, &mi, &mi_pull]() {
-			return 4096 <= accum.size() || ((mi_pull = qi_consumer.Pull_Rx(&mi)) != Y_Rx_e::Empty);
+		self->qi_produce_event.AwaitSignalUntil(10*1000, // 10 ms
+			[self, &qi_consumer, &mi, &mi_pull]() {
+			return (Y_Rx_e::Empty != (mi_pull = qi_consumer.Pull_Rx(&mi)));
 		});
 
 		if(mi_pull == Y_Rx_e::Empty) {
-			ZoneScopedN("Fputs");
-			/* timedout */
-			fputs(accum.c_str(), stdout);
-			accum.resize(0);
+			// event queue timed out, run the state machine.
+			State_Root(&statemachine, self);
 		} else if(mi_pull == Y_Rx_e::Contention) {
-			ZoneScopedN("Contention");
 			Y_Thread_Yield();
 		} else if(mi_pull == Y_Rx_e::Success) {
 			switch(mi.type) {
-				case SerialPort_MsgIn_e::End: {
+				case DeviceService_MsgIn_e::End: {
 					/* note: race: other incoming messages are lost */
 					goto end;
 				} break;
 
-				case SerialPort_MsgIn_e::String: {
+				#if 0
+				case DeviceService_MsgIn_e::String: {
 					ZoneScopedN("String");
 
 					auto& str = mi.as.String.object;
@@ -208,104 +313,22 @@ intptr_t Thread_DeviceService(void* _) {
 						accum += str;
 					}
 				} break;
+				#endif
 
-				default: tru(false, "unknown message type %d", mi.type);
+				#if 0
+				vector<uint16_t> data; // roughly 2khz
+				for(uint32_t dat_i = 0; dat_i < 200; ++dat_i) {
+					data.push_back(cast(uint16_t)dat_i);
+				}
+
+				ExcelService_PublishData(&excel, data);
+				#endif
+
+				default: Assure_True(false, "unknown message type %d", mi.type);
 			}
 		}
 	}
 	end:;
 
-#if c_config(debug)
-	puts(MACRO_FunctionSignature());
-#endif
-
 	return 0;
 }
-
-void _append_sprintf_va_list(std::string& str, const char* format, va_list args) {
-	// 1. Clone the va_list
-	va_list args_copy;
-	va_copy(args_copy, args); // Correct: Use copy, NOT start
-
-	// 2. Determine required size
-	int len = std::vsnprintf(nullptr, 0, format, args_copy);
-	va_end(args_copy); // Clean up the copy
-
-	if (len > 0) {
-		size_t old_size = str.size();
-		str.resize(old_size + len);
-
-		// 3. Write directly into the string
-		// We use the ORIGINAL 'args' here
-		std::vsnprintf(&str[old_size], len + 1, format, args);
-	}
-}
-
-// Helper wrapper for standard variadic calls
-void _append_sprintf(std::string& str, const char* format, ...) {
-	va_list args;
-	va_start(args, format);
-	_append_sprintf_va_list(str, format, args);
-	va_end(args);
-}
-
-void Txt_Fmt_(Txt* txt, const char* fmt, va_list va) c_fmt_va(2) {
-	Task_ZoneScoped_NoCallstack;
-	if(txt->type != SerialPort_MsgIn_e::String) {
-		txt->Construct_String();
-		txt->as.String.object.reserve(512);
-	}
-	auto& m_str = txt->as.String.object;
-	_append_sprintf_va_list(m_str, fmt, va);
-}
-
-void Txt_Append(Txt* txt, const char* str) {
-	Task_ZoneScoped_NoCallstack;
-	if(txt->type != SerialPort_MsgIn_e::String) {
-		txt->Construct_String();
-		txt->as.String.object.reserve(512);
-	}
-	auto& m_str = txt->as.String.object;
-	m_str.append(str);
-}
-
-#if 0
-void Txt_AppendFormat(Txt* txt, const char* fmt, ...) c_fmt(2) {
-	Task_ZoneScoped_NoCallstack;
-	va_scope(va, fmt) {
-		Txt_Fmt_(txt, fmt, va);
-	}
-}
-#endif
-
-void SerialPort_Txt(SerialPortger l, Txt* txt) {
-	Task_ZoneScoped_NoCallstack;
-	if(!l) {
-		return;
-	}
-
-	// todo: make this thread local !!!!!!
-	Y_QueueMM<SerialPort_MsgIn>::Producer qi_producer = l->qi.Producer_Rent();
-	defer(l->qi.Producer_Return(&qi_producer));
-
-	while(qi_producer.Push_Tx(txt) != Y_Tx_e::Success) { Y_Thread_Yield(); } // note: todo: will lock up if full.
-	l->qi_produce_event.Signal_One();
-
-	// todo: flush to multiple sinks here.
-	// todo: reset the messages here? they were "moved" to a new memory location...
-}
-
-void SerialPort(SerialPortger l, const char* fmt, ...) c_fmt(2) {
-	Task_ZoneScoped_NoCallstack;
-	if(!l) {
-		return;
-	}
-
-	Txt msg;
-	va_scope(va, fmt) {
-		Txt_Fmt_(&msg, fmt, va);
-	}
-	SerialPort_Txt(l, &msg);
-}
-
-#endif

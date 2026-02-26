@@ -37,6 +37,8 @@
 #define Protocol_Implmentation
 #include "Protocol.h"
 
+#include "StateMachine.h"
+
 #include "Y.h"
 #include "Y_EventMM.h"
 #include "Y_PoolFairMM.h"
@@ -59,30 +61,34 @@ int main()
 	printf(Version_StringLiteral() "\n"); 
 	fflush(stdout);
 
+	StateMachine_Demo();
+
 	LogService log;
 	ExcelService excel;
+	DeviceService device;
 
-	if(!tru(LogService_Create(&log))) { return __LINE__; }
-	if(!tru(ExcelService_Create(&excel))) { return __LINE__; }
+	if(!Assure_True(LogService_Create(&log))) { return __LINE__; }
+	if(!Assure_True(ExcelService_Create(&excel))) { return __LINE__; }
+	if(!Assure_True(DeviceService_Create(&device))) { return __LINE__; }
 
 	defer(LogService_Destroy(&log));
 	defer(ExcelService_Destroy(&excel));
+	defer(DeviceService_Destroy(&device));
 
 	LogService_Begin(&log);
 	ExcelService_Begin(&excel, &log);
+	DeviceService_Begin(&device, &log, &excel);
 
 	defer(
-		LogService_SignalEnd(&log);
+		DeviceService_SignalEnd(&device);
+		DeviceService_WaitForEnd(&device);
+
 		ExcelService_SignalEnd(&excel);
-
-		LogService_WaitForEnd(&log);
 		ExcelService_WaitForEnd(&excel);
-	);
 
-	std::vector<uint16_t> data; // roughly 2khz
-	for(uint32_t dat_i = 0; dat_i < 200; ++dat_i) {
-		data.push_back(cast(uint16_t)dat_i);
-	}
+		LogService_SignalEnd(&log);
+		LogService_WaitForEnd(&log);
+	);
 
 	bool run = true;
 	while(run) {
@@ -93,7 +99,6 @@ int main()
 			}
 		}
 
-		ExcelService_PublishData(&excel, data);
 		Sleep(10);
 	}
 

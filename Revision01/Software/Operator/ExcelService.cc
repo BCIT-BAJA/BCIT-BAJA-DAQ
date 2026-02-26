@@ -3,6 +3,17 @@
 #include "pch.h"
 #include "ExcelService.h"
 
+// i think a combination is a good median solution.
+// perhaps i can dump a .csv, but then run a second process that attempts to use libxlsx to graph such an outlier.
+// (1khz)(60s)(60min)(2hr) = 7 million rows. say, 80 bytes, 7 million * 80 bytes ~560 megabytes of data.
+// filtering must be applied, and everything should be extremely stable, with no memory allocations,
+// and no user input / false behaviour.
+// in addition, any crashes should just autostart the program again...
+//
+// checkout xlslib. .xls 
+// https://github.com/JanX2/xlslib/blob/rebased-on-svn/xlslib/src/xlslib.h
+// it allows repeated dumping of .xls object, unlike this other crappy lib :(((
+
 //
 // annoyingly, .xlsx is not meant for streaming.
 // this means we'll have to put limits on bandwidth, or chunk data or something... IDK.
@@ -31,12 +42,12 @@ static bool GetLastModified_AsString(const char* filename, SYSTEMTIME* out_st) {
 
 		// 2. Convert FILETIME to SYSTEMTIME (UTC)
 		SYSTEMTIME stUTC;
-		if(!tru(FileTimeToSystemTime(&fileInfo.ftLastWriteTime, &stUTC))) {
+		if(!Assure_True(FileTimeToSystemTime(&fileInfo.ftLastWriteTime, &stUTC))) {
 			return false;
 		}
 
 		// 3. Convert UTC to Local Time (optional but usually preferred)
-		if(!tru(SystemTimeToTzSpecificLocalTime(NULL, &stUTC, out_st))) {
+		if(!Assure_True(SystemTimeToTzSpecificLocalTime(NULL, &stUTC, out_st))) {
 			return false;
 		}
 
@@ -78,11 +89,11 @@ intptr_t Thread_ExcelService(void* _) {
 		);
 
 		// hmm, what do we do with the live.xlsx data? put it somewhere? name it something? i don't know.
-		tru(CopyFileA(live_xlsx_filename, dead_xlsx_filename, false));
+		Assure_True(CopyFileA(live_xlsx_filename, dead_xlsx_filename, false));
 	}
 
 	lxw_workbook_options workbook_options = {
-		.constant_memory = LXW_TRUE,
+		.constant_memory = LXW_FALSE,
 		.tmpdir = ".",
 		.use_zip64 = LXW_FALSE,
 		.output_buffer = null,
@@ -92,21 +103,21 @@ intptr_t Thread_ExcelService(void* _) {
 	lxw_workbook* live_xlsx = null;
 
 	lxw_error xlsx_error = LXW_NO_ERROR;
-	if(!tru(live_xlsx = workbook_new_opt(live_xlsx_filename, &workbook_options))) { return __LINE__; }
+	if(!Assure_True(live_xlsx = workbook_new_opt(live_xlsx_filename, &workbook_options))) { return __LINE__; }
 	defer(
-		while(!tru(LXW_NO_ERROR == (xlsx_error = workbook_close(live_xlsx)))) {
+		while(!Assure_True(LXW_NO_ERROR == (xlsx_error = workbook_close(live_xlsx)))) {
 			// loop until we close and write the notebook for good :D
 		}
 	);
 
 	lxw_worksheet* worksheet = null;
-	if(!tru(worksheet = workbook_add_worksheet(live_xlsx, null))) { return __LINE__; }
+	if(!Assure_True(worksheet = workbook_add_worksheet(live_xlsx, null))) { return __LINE__; }
 	uint32_t worksheet_row_i = 0;
 
 	#if 0
 	for(uint32_t row_i = 0; row_i < 10; ++row_i) {
-		tru(LXW_NO_ERROR == (xlsx_error = worksheet_write_string(worksheet, row_i*2 + 0, 0, "Hello", null)));
-		tru(LXW_NO_ERROR == (xlsx_error = worksheet_write_number(worksheet, row_i*2 + 1, 0, 123, null)));
+		Assure_True(LXW_NO_ERROR == (xlsx_error = worksheet_write_string(worksheet, row_i*2 + 0, 0, "Hello", null)));
+		Assure_True(LXW_NO_ERROR == (xlsx_error = worksheet_write_number(worksheet, row_i*2 + 1, 0, 123, null)));
 	}
 	#endif
 
@@ -115,7 +126,7 @@ intptr_t Thread_ExcelService(void* _) {
 		Y_Rx_e mi_pull = Y_Rx_e::Empty;
 		self->qi_produce_event.AwaitSignalUntil(Timeout32_e::Infinite,
 			[self, &qi_consumer, &mi, &mi_pull]() {
-			return ((mi_pull = qi_consumer.Pull_Rx(&mi)) != Y_Rx_e::Empty);
+			return (Y_Rx_e::Empty != (mi_pull = qi_consumer.Pull_Rx(&mi)));
 		});
 
 		if(mi_pull == Y_Rx_e::Empty) {
@@ -134,7 +145,7 @@ intptr_t Thread_ExcelService(void* _) {
 					defer(DestructAt_NullSafe(&vec));
 
 					for(auto& it : vec) {
-						tru(LXW_NO_ERROR == (xlsx_error = worksheet_write_number(worksheet, worksheet_row_i, 0, it, null)));
+						Assure_True(LXW_NO_ERROR == (xlsx_error = worksheet_write_number(worksheet, worksheet_row_i, 0, it, null)));
 						++worksheet_row_i;
 					}
 

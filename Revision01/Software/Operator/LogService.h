@@ -56,7 +56,7 @@ intptr_t Thread_LogService(void* _);
 
 inl bool LogService_Create(LogService* l, const uint32_t drops_n = 64) {
 	ZoneScoped;
-	if(!/* this goes away */tru(l->qi.Create(512))) {
+	if(!/* this goes away */Assure_True(l->qi.Create(512))) {
 		return false;
 	}
 	return true;
@@ -534,7 +534,7 @@ inl bool L_string(L_scope_t* l, const char* str) {
 inl bool L_entry_start(L_scope_t* l) {
 	mp_t<L_entry_t>* mp_e = &l->entries[l->entries_n];
 	++l->entries_n;
-	if(!tru(l->entries_n < countof(l->entries))) {
+	if(!Assure_True(l->entries_n < countof(l->entries))) {
 		return false;
 	}
 

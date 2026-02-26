@@ -24,6 +24,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <bitset>
 
 #include <stdint.h>
 #include <stdbool.h>

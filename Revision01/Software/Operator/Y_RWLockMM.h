@@ -56,7 +56,7 @@ struct Y_RWLockMM {
 		Assure(!m_entries_capacity);
 
 		/* we allocate one extra entry to prevent false sharing with adjacent memory. */
-		if(!tru(Basic_ArrayPointer_New(m_entries, (1 + arg_entries_capacity)))) {
+		if(!Assure_True(Basic_ArrayPointer_New(m_entries, (1 + arg_entries_capacity)))) {
 			return false;
 		}
 

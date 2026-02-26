@@ -52,7 +52,7 @@ intptr_t Thread_DeviceService(void* _);
 
 inl bool DeviceService_Create(DeviceService* _) {
 	ZoneScoped;
-	if(!tru(_->qi.Create(512))) {
+	if(!Assure_True(_->qi.Create(512))) {
 		return false;
 	}
 	return true;

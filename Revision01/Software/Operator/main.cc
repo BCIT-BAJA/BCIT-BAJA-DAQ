@@ -10,7 +10,7 @@
 // - Stretch Goal : Opening up the serial port and moving the fake data generation to the STM32
 
 // integrate a nice terminal command library like https://github.com/jart/bestline/tree/master
-// Assure.h, Basic.h, version.h, etc, all boilerplate
+// Audit.h, Basic.h, version.h, etc, all boilerplate
 // write assertions (assure, tru) for STM32.
 // then define Protocol.h for a packet containing 10kbps 1khz plain-old-data
 // integrate the log.h function with threads / message queues (probably requires it tbh for separating logging & input & file writing anyway)
@@ -31,12 +31,12 @@
 
 #include "Version.h"
 
-#define assure_implementation
-#include "Assure.h"
+#include "Audit.h"
 
 #define Protocol_Implmentation
 #include "Protocol.h"
 
+#define StateMachine_Implementation
 #include "StateMachine.h"
 
 #include "Y.h"
@@ -61,25 +61,28 @@ int main()
 	printf(Version_StringLiteral() "\n"); 
 	fflush(stdout);
 
-	StateMachine_Demo();
+	// StateMachine_Demo();
+	Audit_Demo();
 
 	LogService log;
 	ExcelService excel;
 	DeviceService device;
 
-	if(!Assure_True(LogService_Create(&log))) { return __LINE__; }
-	if(!Assure_True(ExcelService_Create(&excel))) { return __LINE__; }
-	if(!Assure_True(DeviceService_Create(&device))) { return __LINE__; }
+	if(!Test_True(LogService_Create(&log))) { return __LINE__; }
+	if(!Test_True(ExcelService_Create(&excel))) { return __LINE__; }
+	if(!Test_True(DeviceService_Create(&device))) { return __LINE__; }
 
-	defer(LogService_Destroy(&log));
-	defer(ExcelService_Destroy(&excel));
-	defer(DeviceService_Destroy(&device));
+	Log("Hello, world!\n");
+
+	Defer(LogService_Destroy(&log));
+	Defer(ExcelService_Destroy(&excel));
+	Defer(DeviceService_Destroy(&device));
 
 	LogService_Begin(&log);
 	ExcelService_Begin(&excel, &log);
 	DeviceService_Begin(&device, &log, &excel);
 
-	defer(
+	Defer(
 		DeviceService_SignalEnd(&device);
 		DeviceService_WaitForEnd(&device);
 

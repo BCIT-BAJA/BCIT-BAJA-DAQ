@@ -230,8 +230,8 @@ example:
 */
 
 enum Timeout32_e: uint32_t {
-	Infinite = 0,
-	ASAP = cast(uint32_t)(-1),
+	ASAP = 0,
+	Infinite = cast(uint32_t)(-1),
 };
 
 // __ulock_wait  | timeout:u32 in microseconds.
@@ -246,11 +246,10 @@ enum class Await_e : bool {
 };
 
 namespace OS_AddressEvent {
-inl Await_e AwaitSignal_IfValueEquals(const volatile void* address64, const uint64_t value64, const uint32_t timeout_us) {
-	Assure(cast(uintptr_t)address64 % alignof(std::atomic<uint64_t>) == 0);
+Inline Await_e AwaitSignal_IfValueEquals(const volatile void* address64, const uint64_t value64, const Timeout32_e timeout_us) {
+	Assert_True(cast(uintptr_t)address64 % alignof(std::atomic<uint64_t>) == 0);
 	// typecast(eastl::atomic<uint64_t>)address64;
 
-	Assure_AtCompileTime(Timeout32_e::Infinite == 0);
 #if c_os(apple)
 	int timeout_sys_us = timeout_us;
 	if(timeout_us == Timeout32_e::ASAP) {
@@ -278,18 +277,18 @@ inl Await_e AwaitSignal_IfValueEquals(const volatile void* address64, const uint
 	} else if(timeout_us == Timeout32_e::ASAP) {
 		timeout_sys_ms = 0; // todo: verify: does this work? or does it require ms = 1?
 	} else {
-		Assure(!UnsignedAdditionWouldOverflow(timeout_us, 1000u));
+		Assert_True(!UnsignedAdditionWouldOverflow(cast(uint32_t)timeout_us, 1000u));
 		timeout_sys_ms = (timeout_us + 499) / 1000;
 	}
 
 	TracyMessage("Sleep", sizeof("Sleep"));
 	const BOOL ret = WaitOnAddress(cast(volatile void*)address64, cast(PVOID)&value64, sizeof(uint64_t), timeout_sys_ms);
 	TracyMessage("Wake", sizeof("Wake"));
-	Assure(ret || (timeout_us != Timeout32_e::Infinite && GetLastError() == ERROR_TIMEOUT));
+	Assert_True(ret || (timeout_us != Timeout32_e::Infinite && GetLastError() == ERROR_TIMEOUT));
 	return ret ? Await_e::SignaledSpuriously : Await_e::Timedout;
 #endif
 
-	unreachable;
+	COMPILER_Unreachable;
 }
 
 #if c_os(apple)
@@ -321,47 +320,47 @@ inl void _OS_AddressEvent_Signal(const bool all, const volatile void* address64)
 }
 #endif
 
-inl void Signal_One(const volatile void* address64) {
-	Assure(cast(uintptr_t)address64 % alignof(std::atomic<uint64_t>) == 0);
+Inline void Signal_One(const volatile void* address64) {
+	Assert_True(cast(uintptr_t)address64 % alignof(std::atomic<uint64_t>) == 0);
 #if c_os(apple)
 	return Private::Signal(false, address64);
 #endif
 #if c_os(windows)
 	return WakeByAddressSingle(cast(LPVOID)address64);
 #endif
-	unreachable;
+	COMPILER_Unreachable;
 }
 
-inl void Signal_Everyone(const volatile void* address64) {
-	Assure(cast(uintptr_t)address64 % alignof(std::atomic<uint64_t>) == 0);
+Inline void Signal_Everyone(const volatile void* address64) {
+	Assert_True(cast(uintptr_t)address64 % alignof(std::atomic<uint64_t>) == 0);
 #if c_os(apple)
 	return Private::Signal(true, address64);
 #endif
 #if c_os(windows)
 	return WakeByAddressAll(cast(LPVOID)address64);
 #endif
-	unreachable;
+	COMPILER_Unreachable;
 }
 
 #define Alias(Type) \
-inl Await_e AwaitSignal_IfValueEquals(const Type* address64, const Type value64, const uint32_t timeout_us) { \
-	Assure_AtCompileTime(sizeof(Type) == sizeof(uint64_t)); \
-	Assure_AtCompileTime(alignof(Type) == alignof(uint64_t)); \
-	return AwaitSignal_IfValueEquals(cast(const volatile void*)address64, cast(uint64_t)value64, timeout_us); \
+Inline Await_e AwaitSignal_IfValueEquals(const Type* address64, const Type value64, const uint32_t timeout_us) { \
+	Ensure_TrueAtCompileTime(sizeof(Type) == sizeof(uint64_t)); \
+	Ensure_TrueAtCompileTime(alignof(Type) == alignof(uint64_t)); \
+	return AwaitSignal_IfValueEquals(cast(const volatile void*)address64, cast(uint64_t)value64, cast(Timeout32_e)timeout_us); \
 } \
-inl Await_e AwaitSignal_IfValueEquals(const Type& address64, const Type value64, const uint32_t timeout_us) { \
-	return AwaitSignal_IfValueEquals(cast(const volatile void*)&address64, cast(uint64_t)value64, timeout_us); \
+Inline Await_e AwaitSignal_IfValueEquals(const Type& address64, const Type value64, const uint32_t timeout_us) { \
+	return AwaitSignal_IfValueEquals(cast(const volatile void*)&address64, cast(uint64_t)value64, cast(Timeout32_e)timeout_us); \
 } \
-inl void Signal_One(const Type* address64) { \
+Inline void Signal_One(const Type* address64) { \
 	return Signal_One(cast(const volatile void*)address64); \
 } \
-inl void Signal_One(const Type& address64) { \
+Inline void Signal_One(const Type& address64) { \
 	return Signal_One(cast(const volatile void*)&address64); \
 } \
-inl void Signal_Everyone(const Type* address64) { \
+Inline void Signal_Everyone(const Type* address64) { \
 	return Signal_Everyone(cast(const volatile void*)address64); \
 } \
-inl void Signal_Everyone(const Type& address64) { \
+Inline void Signal_Everyone(const Type& address64) { \
 	return Signal_Everyone(cast(const volatile void*)&address64); \
 } \
 

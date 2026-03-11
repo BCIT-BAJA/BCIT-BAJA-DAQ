@@ -42,12 +42,12 @@ static bool GetLastModified_AsString(const char* filename, SYSTEMTIME* out_st) {
 
 		// 2. Convert FILETIME to SYSTEMTIME (UTC)
 		SYSTEMTIME stUTC;
-		if(!Assure_True(FileTimeToSystemTime(&fileInfo.ftLastWriteTime, &stUTC))) {
+		if(!Test_True(FileTimeToSystemTime(&fileInfo.ftLastWriteTime, &stUTC))) {
 			return false;
 		}
 
 		// 3. Convert UTC to Local Time (optional but usually preferred)
-		if(!Assure_True(SystemTimeToTzSpecificLocalTime(NULL, &stUTC, out_st))) {
+		if(!Test_True(SystemTimeToTzSpecificLocalTime(NULL, &stUTC, out_st))) {
 			return false;
 		}
 
@@ -62,12 +62,12 @@ intptr_t Thread_ExcelService(void* _) {
 
 #if c_config(debug)
 	puts(MACRO_FunctionSignature());
-	defer(puts(MACRO_FunctionSignature()));
+	Defer(puts(MACRO_FunctionSignature()));
 #endif
 
 	ExcelService* self = cast(ExcelService*)_;
 	Y_QueueMM<ExcelService_MsgIn>::Consumer qi_consumer = self->qi.Consumer_Rent();
-	defer(self->qi.Consumer_Return(&qi_consumer));
+	Defer(self->qi.Consumer_Return(&qi_consumer));
 
 	const char* live_xlsx_filename = "live.xlsx";
 
@@ -78,7 +78,7 @@ intptr_t Thread_ExcelService(void* _) {
 		}
 
 		char dead_xlsx_filename[MAX_PATH] = { 0 };
-		snprintf(aarg(dead_xlsx_filename),
+		snprintf(AArg(dead_xlsx_filename),
 			"dead_%04d-%02d-%02d %02d%02d%02d.xlsx",
 			dead_st.wYear,
 			dead_st.wMonth,
@@ -89,7 +89,7 @@ intptr_t Thread_ExcelService(void* _) {
 		);
 
 		// hmm, what do we do with the live.xlsx data? put it somewhere? name it something? i don't know.
-		Assure_True(CopyFileA(live_xlsx_filename, dead_xlsx_filename, false));
+		Test_True(CopyFileA(live_xlsx_filename, dead_xlsx_filename, false));
 	}
 
 	lxw_workbook_options workbook_options = {
@@ -103,21 +103,21 @@ intptr_t Thread_ExcelService(void* _) {
 	lxw_workbook* live_xlsx = null;
 
 	lxw_error xlsx_error = LXW_NO_ERROR;
-	if(!Assure_True(live_xlsx = workbook_new_opt(live_xlsx_filename, &workbook_options))) { return __LINE__; }
-	defer(
-		while(!Assure_True(LXW_NO_ERROR == (xlsx_error = workbook_close(live_xlsx)))) {
+	if(!Test_True(live_xlsx = workbook_new_opt(live_xlsx_filename, &workbook_options))) { return __LINE__; }
+	Defer(
+		while(!Test_True(LXW_NO_ERROR == (xlsx_error = workbook_close(live_xlsx)))) {
 			// loop until we close and write the notebook for good :D
 		}
 	);
 
 	lxw_worksheet* worksheet = null;
-	if(!Assure_True(worksheet = workbook_add_worksheet(live_xlsx, null))) { return __LINE__; }
+	if(!Test_True(worksheet = workbook_add_worksheet(live_xlsx, null))) { return __LINE__; }
 	uint32_t worksheet_row_i = 0;
 
 	#if 0
 	for(uint32_t row_i = 0; row_i < 10; ++row_i) {
-		Assure_True(LXW_NO_ERROR == (xlsx_error = worksheet_write_string(worksheet, row_i*2 + 0, 0, "Hello", null)));
-		Assure_True(LXW_NO_ERROR == (xlsx_error = worksheet_write_number(worksheet, row_i*2 + 1, 0, 123, null)));
+		AssureTrue(LXW_NO_ERROR == (xlsx_error = worksheet_write_string(worksheet, row_i*2 + 0, 0, "Hello", null)));
+		AssureTrue(LXW_NO_ERROR == (xlsx_error = worksheet_write_number(worksheet, row_i*2 + 1, 0, 123, null)));
 	}
 	#endif
 
@@ -142,17 +142,17 @@ intptr_t Thread_ExcelService(void* _) {
 
 				case ExcelService_MsgIn_e::Data: {
 					auto& vec = mi.as.Data.vec;
-					defer(DestructAt_NullSafe(&vec));
+					Defer(DestructAt_NullSafe(&vec));
 
 					for(auto& it : vec) {
-						Assure_True(LXW_NO_ERROR == (xlsx_error = worksheet_write_number(worksheet, worksheet_row_i, 0, it, null)));
+						Test_True(LXW_NO_ERROR == (xlsx_error = worksheet_write_number(worksheet, worksheet_row_i, 0, it, null)));
 						++worksheet_row_i;
 					}
 
 					// check if we're out of room / timeout has passed to (re)create a new workbook ?
 				} break;
 
-				default: assure(false, "Unknown message type %d", mi.type);
+				default: Assert_True(false, "Unknown message type %d", mi.type);
 			}
 		}
 	}
@@ -166,7 +166,7 @@ void ExcelService_PublishData(ExcelService* _, const std::vector<uint16_t>& data
 
 	// todo: make this thread local !!!!!!
 	Y_QueueMM<ExcelService_MsgIn>::Producer qi_producer = _->qi.Producer_Rent();
-	defer(_->qi.Producer_Return(&qi_producer));
+	Defer(_->qi.Producer_Return(&qi_producer));
 
 	ExcelService_MsgIn msg;
 	msg.Construct_Data(data);

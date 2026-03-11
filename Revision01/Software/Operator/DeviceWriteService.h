@@ -1,5 +1,7 @@
 //
 
+#if 0
+
 //
 // Same USB Port : Windows uses the device's VID (Vendor ID), PID (Product ID), and Serial Number to remember it. If those match, it usually reassigns the old COM number.
 // This was true for our hardware:
@@ -91,35 +93,38 @@ struct DeviceService {
 
 intptr_t Thread_DeviceService(void* _);
 
-Inline bool DeviceService_Create(DeviceService* _) {
+inl bool DeviceService_Create(DeviceService* _) {
 	ZoneScoped;
-	if(!Test_True(_->qi.Create(512))) {
+	if(!AssureTrue(_->qi.Create(512))) {
 		return false;
 	}
 	return true;
 }
-Inline void DeviceService_Destroy(DeviceService* _) {
+inl void DeviceService_Destroy(DeviceService* _) {
 	ZoneScoped;
 	_->qi.Destroy();
 }
-Inline void DeviceService_Begin(DeviceService* _, Logger log, ExcelService* excel) {
+inl void DeviceService_Begin(DeviceService* _, Logger log, ExcelService* excel) {
 	ZoneScoped;
 	_->log = log;
 	_->excel = excel;
 	_->thread = std::thread(Thread_DeviceService, _);
 }
-Inline bool DeviceService_SignalEnd(DeviceService* _) {
+inl bool DeviceService_SignalEnd(DeviceService* _) {
 	ZoneScoped;
 
 	DeviceService_MsgIn si;
 	si.type = DeviceService_MsgIn_e::End;
 
-	_->qi.ProduceOne_OrYieldAndRetryForever(&si);
+	Y_QueueMM<DeviceService_MsgIn>::Producer qi_producer = _->qi.Producer_Rent();
+	defer(_->qi.Producer_Return(&qi_producer));
+	while(qi_producer.Push_Tx(&si) != Y_Tx_e::Success) { Y_Thread_Yield(); } // note: todo: will lock up if full.
 	_->qi_produce_event.Signal_One();
 
 	return true;
 }
-Inline void DeviceService_WaitForEnd(DeviceService* _) {
+inl void DeviceService_WaitForEnd(DeviceService* _) {
 	ZoneScoped;
 	_->thread.join();
 }
+#endif

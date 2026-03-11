@@ -135,7 +135,7 @@ public:
 					Task_ZoneScopedN_NoCallstack("Pair_Waiters_PlusOne");
 					pair = m_pair.fetch_add(Pair_Waiters_MinusOne, std::memory_order_seq_cst);
 				}
-				assure(pair & Pair_Waiters_Mask);
+				Assert_True(pair & Pair_Waiters_Mask);
 				return c;
 			}
 
@@ -150,7 +150,7 @@ public:
 					Task_ZoneScopedN_NoCallstack("m_pair.load acquire");
 					pair = m_pair.load(std::memory_order_acquire);
 				}
-				assure(pair & Pair_Waiters_Mask);
+				Assert_True(pair & Pair_Waiters_Mask);
 				if((pair >> Pair_Notifies_Shift) != notifies) {
 					break;
 				}
@@ -166,11 +166,11 @@ public:
 				}
 			}
 
-			assure(pair & Pair_Waiters_Mask);
+			Assert_True(pair & Pair_Waiters_Mask);
 
 			/* since notifies has changed, ... */
 		}
-		unreachable;
+		COMPILER_Unreachable;
 	}
 
 	template<typename Condition>

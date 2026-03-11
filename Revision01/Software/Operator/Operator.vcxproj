@@ -147,8 +147,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Common\Audit.cc" />
     <ClCompile Include="..\Common\Basic.cc" />
     <ClCompile Include="DataService.cc" />
+    <ClCompile Include="DeviceReadService.cc" />
+    <ClCompile Include="DeviceWriteService.cc" />
     <ClCompile Include="ExcelService.cc" />
     <ClCompile Include="LogService.cc" />
     <ClCompile Include="main.cc" />
@@ -161,7 +164,7 @@
     <ClCompile Include="DeviceService.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Common\Assure.h" />
+    <ClInclude Include="..\Common\Audit.h" />
     <ClInclude Include="..\Common\Basic.h" />
     <ClInclude Include="..\Common\Compile.h" />
     <ClInclude Include="..\Common\Compile_PCH.h" />
@@ -172,6 +175,8 @@
     <ClInclude Include="..\Common\Version_MajorMinorPatch.h" />
     <ClInclude Include="..\Common\Version_Revision.h" />
     <ClInclude Include="DataService.h" />
+    <ClInclude Include="DeviceReadService.h" />
+    <ClInclude Include="DeviceWriteService.h" />
     <ClInclude Include="ExcelService.h" />
     <ClInclude Include="LogService.h" />
     <ClInclude Include="OS_AddressEvent.h" />
@@ -187,6 +192,7 @@
     <ClInclude Include="Y_RWLockMM.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\Common\Audit.natjmc" />
     <None Include="..\Common\Version_Revision.bat" />
     <None Include="..\Common\Version_Revision.sh" />
   </ItemGroup>

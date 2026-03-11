@@ -38,25 +38,25 @@ struct Y_RWLockMM {
 	uint8_t _padding[kCacheLineSize - sizeof(m_writer_a)];
 
 	Y_RWLockMM() {
-		Assure_AtCompileTime(2*kCacheLineSize == sizeof(Y_RWLockMM));
+		Ensure_TrueAtCompileTime(2*kCacheLineSize == sizeof(Y_RWLockMM));
 	}
 
 	~Y_RWLockMM() {
-		Assure(!m_entries, "did you forget to Destroy()?");
+		Assert_True(!m_entries, "did you forget to Destroy()?");
 	}
 
 	/* must call before M_*! */
 	bool Create(const uint32_t arg_entries_capacity) {
 		Task_ZoneScoped_NoCallstack;
 
-		Assure(arg_entries_capacity);
-		Assure(arg_entries_capacity < 64);
+		Assert_True(arg_entries_capacity);
+		Assert_True(arg_entries_capacity < 64);
 
-		Assure(!m_entries);
-		Assure(!m_entries_capacity);
+		Assert_True(!m_entries);
+		Assert_True(!m_entries_capacity);
 
 		/* we allocate one extra entry to prevent false sharing with adjacent memory. */
-		if(!Assure_True(Basic_ArrayPointer_New(m_entries, (1 + arg_entries_capacity)))) {
+		if(!Test_True(Basic_ArrayPointer_New(m_entries, (1 + arg_entries_capacity)))) {
 			return false;
 		}
 
@@ -79,8 +79,8 @@ struct Y_RWLockMM {
 	bool M_Read_Lock_Rx(const uint64_t thread_hash) {
 		Task_ZoneScoped_NoCallstack;
 
-		Assure(m_entries);
-		Assure(m_entries_capacity);
+		Assert_True(m_entries);
+		Assert_True(m_entries_capacity);
 
 		ReaderEntry* entry = &m_entries[thread_hash % m_entries_capacity];
 		entry->count_a.fetch_add(1, std::memory_order_relaxed);
@@ -106,19 +106,19 @@ struct Y_RWLockMM {
 	void M_Read_Unlock_Lx(const uint64_t thread_hash) {
 		Task_ZoneScoped_NoCallstack;
 
-		Assure(m_entries);
-		Assure(m_entries_capacity);
+		Assert_True(m_entries);
+		Assert_True(m_entries_capacity);
 
 		ReaderEntry* entry = &m_entries[thread_hash % m_entries_capacity];
 		const uint64_t c = entry->count_a.fetch_add(-1, std::memory_order_relaxed);
-		Assure(c, "Unmatched Lock / Unlock!");
+		Assert_True(c, "Unmatched Lock / Unlock!");
 	}
 
 	void M_Write_Lock_Await_Rx() {
 		Task_ZoneScoped_NoCallstack;
 
-		Assure(m_entries);
-		Assure(m_entries_capacity);
+		Assert_True(m_entries);
+		Assert_True(m_entries_capacity);
 
 		/*
 		// (success)
@@ -141,7 +141,7 @@ struct Y_RWLockMM {
 	}
 
 	void M_Write_Unlock_Tx() {
-		Assure(m_writer_a.load(std::memory_order_relaxed) == 1, "Unmatched Lock/Unlock");
+		Assert_True(m_writer_a.load(std::memory_order_relaxed) == 1, "Unmatched Lock/Unlock");
 		m_writer_a.store(0, std::memory_order_release);
 	}
 };

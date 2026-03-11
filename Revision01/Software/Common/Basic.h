@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "Assure.h"
 #include "Compile.h"
+#include "Audit.h"
 
 // https://web.archive.org/web/20170602083648/http://www.insomniacgames.com/core-coding-standard/
 /*
@@ -49,275 +49,29 @@ YourEnum::kSomeValue;
 // see: https://www.drdobbs.com/cpp/enhancing-assertions/184403745
 // todo: style: add some 'b's in front of booleans
 
-#ifdef __INTELLISENSE__
-#define shared_impl
-#endif
-
-/* macro concatenate */
-#define _cc_impl(x, y) x##y
-#define _cc(x, y) _cc_impl(x, y)
-
-
-
-#define endian_big (*(uint16_t *)"\0\xff" < 0x100)
-#define endian_little (!endian_big)
-
-#ifdef __cplusplus
-#define type_of(T) decltype(T)
-#else
-#define type_of(T) typeof(T)
-#endif
-
-/* value-cast vs type-cast */
-#undef cast
-#define cast(T) (T)
-#define typecast(T) *cast(T*)&
-
-#define null NULL
-#define nop (void)0
-#define unused(v) (void)(v)
-#define Unused unused
-#define stringify(v) #v
-#define stringof(v) ((char*)&v, #v)
-#define case_stringof(c) case c: return #c
-#define case_fallthrough [[fallthrough]]
-#define SWITCH_FallThroughToNextCase() [[fallthrough]]
-
-/* get the size of a structure variable without an instantiated object present in scope */
-#define size_of(T, V) (sizeof((cast((T)*)0)->(V)))
-
-
-/* OS/compiler specific */
-#if defined(WIN32)
-#define os_breakpoint() __debugbreak()
-#elif defined(__GNUC__) || defined(__clang__)
-#define os_breakpoint() __builtin_trap()
-#else
-#define os_breakpoint() raise(SIGTRAP)
-#endif
-
-#if defined(__GNUC__) || defined(__clang__)
-#define inl inline
-#define unreachable __builtin_unreachable()
-// #define MPACK_NORETURN(fn) fn __attribute__((__noreturn__))
-#elif defined(_MSC_VER)
-#define inl __forceinline
-#define unreachable __assume(0)
-// #define MPACK_NORETURN(fn) __declspec(noreturn) fn
-#endif
-
-#ifdef _MSC_VER
-#define fmt_i64 "%I64d"
-#define fmt_u64 "%I64u"
-#else
-#define fmt_i64 "%lld"
-#define fmt_u64 "%llu"
-#endif
-
-#if defined(__clang__) || defined(__GNUC__)
-#define c_fmt(fmt_nth)    __attribute__((format(printf, fmt_nth, fmt_nth + 1)))
-#define c_fmt_va(fmt_nth) __attribute__((format(printf, fmt_nth, 0)))
-#else
-#define c_fmt(fmt_nth)
-#define c_fmt_va(fmt_nth)
-#endif
-
-
-/* using parenthesis for MACRO_ is a style choice; it further differentiates the fact that these represent "dynamic" data. */
-#define MACRO_Ignore(...)
-#define MACRO_CompileDate() __DATE__
-#define MACRO_Line() __LINE__
-#define MACRO_File() __FILE__
-#define MACRO_Function() __FUNCTION__
-#ifdef __FUNCSIG__
-#define MACRO_FunctionSignature() __FUNCSIG__
-#else
-#define MACRO_FunctionSignature() __PRETTY_FUNCTION__
-#endif
-
-/* here's how you disable a class' copy operator = */
-#define class_nocopy(classname)           \
-private:                                  \
-classname(const classname&);              \
-classname& operator = (const classname &) \
-
-/**
-* Traits class which tests if a type is a pointer.
-*/
-// see: https://github.com/EpicGames/UnrealEngine/blob/16dc333db3d6439c7f2886cf89db8907846c0e8a/Engine/Source/Runtime/Core/Public/Templates/IsPointer.h#L11
-template <typename T>
-struct TIsPointer {
-	enum { Value = false };
-};
-template <typename T> struct TIsPointer<T*> { enum { Value = true }; };
-template <typename T> struct TIsPointer<const          T> { enum { Value = TIsPointer<T>::Value }; };
-template <typename T> struct TIsPointer<      volatile T> { enum { Value = TIsPointer<T>::Value }; };
-template <typename T> struct TIsPointer<const volatile T> { enum { Value = TIsPointer<T>::Value }; };
-
-/*
-// countof(), countof_unsafe()
-//
-// motivation:
-// the typical countof() macro "sizeof(A) / sizeof(*A)"
-// returns an incorrect count after converting a stack allocated array
-// into a heap allocated array pointer.
-//
-// T  a[123];                    // sizeof(a) / sizeof(*a) -> 123;
-// T* a = malloc(123*sizeof(T)); // sizeof(a) / sizeof(*a) -> wrong!
-//
-// in order to prevent this, two macros are proposed:
-//
-// countof(A) completely disallows pointer sized arrays.
-// u8  a[8]; // countof(t) will not compile, downgrade to countof_unsafe(a)
-// u16 a[4]; // countof(t) will not compile, downgrade to countof_unsafe(a)
-// u32 a[2]; // countof(t) will not compile, downgrade to countof_unsafe(a)
-// u64 a[1]; // countof(t) will not compile, downgrade to countof_unsafe(a)
-//
-// countof_unsafe() catches T* t; only when (a) T is larger than a pointer or (b) 3,5,6,7 bytes.
-// u8*  a; // countof_unsafe(a) -> 8 (incorrect)
-// u16* a; // countof_unsafe(a) -> 4 (incorrect)
-// u32* a; // countof_unsafe(a) -> 2 (incorrect)
-// u64* a; // countof_unsafe(a) -> 1 (incorrect)
-*/
-#define strlenof(s) ( (int)(sizeof(s)/sizeof(*s) - 1) / (int)(sizeof(*s) == sizeof(char)) )
-
-#ifdef _countof
-#define countof _countof
-#else
-#define _countof(A)        (uint32_t)( (sizeof(A)/sizeof(*A)) / (size_t)(sizeof(A) != sizeof(void*)) )
-#define _countof_unsafe(A) (uint32_t)( (sizeof(A)/sizeof(*A)) / (size_t)(sizeof(A) % sizeof(*A) == 0) )
-
-#if 1 // note: countof() returns bad results when used in conjunction with math, like (countof(uint32_t A[2]) - 1)
-#define countof         _countof
-#define countof_unsafe  _countof_unsafe
-#else
-#define countof         _countof_unsafe
-#define countof_unsafe  _countof_unsafe
-#endif
-#endif
-
-#define Array_CountOf(A) _countof(A)
-
-/* array argument */
-#define aarg(A) (A), countof(A)
-
-// #define offset_of(s,m) __builtin_offsetof(s,m)
-#ifdef __cplusplus
-#define offset_of(s,m) ((::size_t)&reinterpret_cast<char const volatile&>((((s*)0)->m)))
-#else
-#define offset_of(s,m) ((size_t)&(((s*)0)->m))
-#if 0
-#define offset_of(T, V) (cast(ptrdiff_t)&((cast((T)*)0)->(V)))
-#endif
-#endif
-
-// todo: the one weakness of cscope/cdefer is that returns and breaks are not handled.
-//       this can get solved using cpp_scope, cpp_defer instead, which constructs a special object in the for loop init section.
-#define cdefer(...)         for(char _cc(_i,__LINE__) = 1;                    _cc(_i,__LINE__)--;  (__VA_ARGS__))
-#define cscope(data, open, ...) char _cc(_i,__LINE__) = 1; for(data; ((open), _cc(_i,__LINE__)--); (__VA_ARGS__))
-#define va_scope(va, fmt) cscope(va_list va, va_start(va, fmt), va_end(va))
-#if 0 /* usage */
-	// before -1
-	// middle: 0
-	// after 1
-	cscope(int x = -1, (printf("before "), printf("%d\n", x)), ++x, printf("after %d\n", x)) {
-		x = 0;
-		printf("middle: %d\n", x);
-	}
-#endif
-
-/* C/C++ interoperability boilerplate */
-#define Struct(T) \
-	struct T; \
-	typedef struct T T; \
-	struct T
-
-#define Union(U) \
-	union U; \
-	typedef union U U; \
-	union U
-
-#if 1
-#define Enum(E, T) \
-	typedef T E; \
-	enum : T
-#endif
-
-#if 0
-#define Enum(E, T) \
-	enum class E : T 
-#endif
-
-
-
-/* todo: StringLiteral_{ Define when *_implementation, otherwise, Declare */
-#define StringLiteral_Declare(S, L) \
-	extern const char S[sizeof(L)]
-
-#define StringLiteral_Define(S, L) \
-	StringLiteral_Declare(S, L); \
-	const char S[] = L
-
-#ifdef __cplusplus
-template<typename F> struct _ScopedFunction {
-	F f;
-	_ScopedFunction(F f) : f(f) { }
-	~_ScopedFunction() { f(); }
-};
-template<typename F> inline _ScopedFunction<F> _ScopedFunction_Create(F f) { return _ScopedFunction<F>(f); };
-
-#define defer(code) \
-	auto _cc(scope_exit_, __COUNTER__) = _ScopedFunction_Create([&](){ code; })
-#endif
-#define Defer defer
-
-// 
-// Compilers(GCC, Clang, and MSVC) are "smart." If they see you filling a buffer with zeros, but then you never read from that buffer again before it goes out of scope, the optimizer applies Dead Store Elimination(DSE).It decides the memset was useless work and deletes it entirely to save CPU cycles.
-// 
-// This is a disaster if you are :
-// 
-// Clearing sensitive data(passwords / keys) from RAM.
-// 
-// Writing to Memory - Mapped I / O(MMIO) where the act of writing triggers hardware(like your FPGA).
-void* (* const volatile _Memset_Explicit)(void*, int, size_t) = std::memset;
-inl void MemClear_Explicit(void* p, size_t n) {
-	_Memset_Explicit(p, 0, n);
-}
-
-inl void* Malloc_Aligned(size_t size, size_t alignment) {
-#if defined(_WIN32)
-	return _aligned_malloc(size, alignment);
-#else
-#error untested code VVV
-	// std::aligned_alloc requires size to be a multiple of alignment
-	size_t remainder = size % alignment;
-	if (remainder != 0) size += (alignment - remainder);
-	return std::aligned_alloc(alignment, size);
-#endif
-}
-
 template<typename T> inline T* ConstructAt_NullSafe(T* p) {
-	if(Assure_True(p)) {
+	if(Test_True(p)) {
 		new (p) T();
 	}
 	return p;
 }
 
 template<typename T> inline T* DestructAt_NullSafe(T* p) {
-	if(Assure_True(p)) {
+	if(Test_True(p)) {
 		p->~T();
 	}
 	return p;
 }
 
-inl const void* Free_NullSafe(const void* p) {
-	if(Assure_True(p)) {
+
+Inline const void* Free_NullSafe(const void* p) {
+	if(Test_True(p)) {
 		free(cast(void*)p);
 	}
 	return p;
 }
 
-inl void Free_Aligned(void* ptr) {
+Inline void Free_Aligned(void* ptr) {
 #if defined(_WIN32)
 	_aligned_free(ptr);
 #else
@@ -372,36 +126,6 @@ void free_aligned(void** aligned_ptr) {
 	*aligned_ptr = null;
 }
 #endif
-
-#define RoundUp(x, Round) ((((x) + (Round) - 1) / (Round)) * (Round))
-
-#ifndef __cplusplus
-#undef bool
-#endif
-typedef uint8_t bool_t;
-typedef uint8_t char_t;
-typedef uint8_t u8_t;
-typedef  int8_t s8_t;
-
-typedef uint16_t u16_t;
-typedef  int16_t s16_t;
-
-typedef uint32_t u32_t;
-typedef  int32_t s32_t;
-typedef    float f32_t;
-
-typedef uint64_t u64_t;
-typedef  int64_t s64_t;
-typedef   double f64_t;
-
-#ifdef __cplusplus
-typedef size_t    zuint;
-typedef ptrdiff_t zint;
-#endif
-
-typedef size_t    zuint;
-typedef ptrdiff_t zint;
-typedef uint32_t unichar_t;
 
 #define u8_max  cast(uint8_t )(-1)
 #define u16_max cast(uint16_t)(-1)
@@ -574,8 +298,8 @@ float Angle_SignedMod(const float a, const float limit) /* todo: fix this functi
 #endif
 
 char Char_ToLower(const char ch);
-inl bool Char_IsSpace(const char ch) { return ch <= 32 || 127 <= ch; }
-inl bool Char_IsSlash(const char ch) { return ch == '/' || ch == '\\'; }
+Inline bool Char_IsSpace(const char ch) { return ch <= 32 || 127 <= ch; }
+Inline bool Char_IsSlash(const char ch) { return ch == '/' || ch == '\\'; }
 
 #if 0
 #define path_n 260
@@ -771,6 +495,18 @@ inl bool path_extension_is_any_of(const cstr_t& str, const cstr_t* exts, const u
 
 	return false;
 }
+#endif
+
+#if c_os(windows)
+Inline bool WindowsHandle_IsValid(HANDLE h) {
+	return (h && h != INVALID_HANDLE_VALUE);
+}
+#define WindowsHandle_CloseIfValid(h) \
+	if(WindowsHandle_IsValid(h)) { \
+		Test_True(CloseHandle(h)); \
+	} \
+	h = INVALID_HANDLE_VALUE; \
+
 #endif
 
 /* note: cv_hash has been adapted from lmdb */
@@ -1062,9 +798,9 @@ constexpr std::size_t hardware_destructive_interference_size = 64;
 	)
 
 #define tracy(CALL) \
-	TracyCZoneN(_cc(_zone_,__LINE__), #CALL, true); \
+	TracyCZoneN(_CC(_zone_,__LINE__), #CALL, true); \
 	CALL; \
-	TracyCZoneEnd(_cc(_zone_,__LINE__)); \
+	TracyCZoneEnd(_CC(_zone_,__LINE__)); \
 
 #if !c_feature(tracy)
 #define Thread_ZoneScoped
@@ -1266,5 +1002,3 @@ constexpr std::size_t hardware_destructive_interference_size = 64;
 #endif
 
 #endif
-
-

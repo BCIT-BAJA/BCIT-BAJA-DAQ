@@ -68,6 +68,6 @@ union Y_PoolRental {
 
 	~Y_PoolRental() {
 		/* omit T's destructor! */
-		assure(!key, "shouldn't you have returned me?");
+		Assert_True(!key, "shouldn't you have returned me?");
 	}
 };

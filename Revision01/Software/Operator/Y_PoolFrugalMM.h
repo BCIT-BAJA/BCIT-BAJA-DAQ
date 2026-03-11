@@ -17,8 +17,8 @@ struct Y_PoolFrugalMM {
 		uint8_t _padding[kCacheLineSize - sizeof(storage) - sizeof(exclusive)];
 
 		Entry() {
-			Assure_AtCompileTime(kCacheLineSize == alignof(Entry));
-			Assure_AtCompileTime(kCacheLineSize == sizeof(Entry));
+			Ensure_TrueAtCompileTime(kCacheLineSize == alignof(Entry));
+			Ensure_TrueAtCompileTime(kCacheLineSize == sizeof(Entry));
 		}
 	};
 
@@ -31,25 +31,25 @@ struct Y_PoolFrugalMM {
 	uint8_t _padding[kCacheLineSize - sizeof(m_head_a)];
 
 	Y_PoolFrugalMM() {
-		Assure_AtCompileTime(2*kCacheLineSize == sizeof(Y_PoolFrugalMM));
+		Ensure_TrueAtCompileTime(2*kCacheLineSize == sizeof(Y_PoolFrugalMM));
 	}
 
 	~Y_PoolFrugalMM() {
-		Assure(!m_entries, "Did you forget to call Destroy()?");
+		Assert_True(!m_entries, "Did you forget to call Destroy()?");
 	}
 
 	/* must be called before M_* without racing! */
 	bool Create(const uint32_t arg_entries_capacity) {
 		Task_ZoneScoped_NoCallstack;
 
-		Assure(arg_entries_capacity);
-		Assure(arg_entries_capacity < 4*1000*1000);
+		Assert_True(arg_entries_capacity);
+		Assert_True(arg_entries_capacity < 4*1000*1000);
 
-		Assure(!m_entries);
-		Assure(!m_entries_capacity);
+		Assert_True(!m_entries);
+		Assert_True(!m_entries_capacity);
 
 		/* we allocate one extra entry to prevent false sharing with adjacent memory. */
-		if(!Assure_True(Basic_ArrayPointer_New(m_entries, (1 + arg_entries_capacity)))) {
+		if(!Test_True(Basic_ArrayPointer_New(m_entries, (1 + arg_entries_capacity)))) {
 			return false;
 		}
 
@@ -92,19 +92,19 @@ struct Y_PoolFrugalMM {
 	}
 
 	/* note: this can be called multiple times without much performance penalty! */
-	Y_Rx_e M_RentRx(Y_PoolRental<T>* out) {
+	Y_Rx_e M_Rent(Y_PoolRental<T>* out) {
 		Task_ZoneScoped_NoCallstack;
 
-		Assure(m_entries);
-		Assure(m_entries_capacity);
+		Assert_True(m_entries);
+		Assert_True(m_entries_capacity);
 
-		if(!Assure_True(out)) {
+		if(!Test_True(out)) {
 			return Y_Rx_e::Success;
 		}
 
-		Assure(out);
-		Assure(!out->key);
-		Assure(!out->key_epoch);
+		Assert_True(out);
+		Assert_True(!out->key);
+		Assert_True(!out->key_epoch);
 
 		// todo: shouldn't this query [-3] first, rather than [-1], [-2], [-3] ?
 		uint64_t head_i = (1 + m_head_a.load(std::memory_order_relaxed));
@@ -131,29 +131,29 @@ struct Y_PoolFrugalMM {
 		return Y_Rx_e::Empty;
 	}
 
-	Y_Tx_e M_ReturnTx(Y_PoolRental<T>* arg) {
+	Y_Tx_e M_Return(Y_PoolRental<T>* arg) {
 		Task_ZoneScoped_NoCallstack;
 
-		Assure(m_entries);
-		Assure(m_entries_capacity);
+		Assert_True(m_entries);
+		Assert_True(m_entries_capacity);
 
-		if(!Assure_True(arg)) {
+		if(!Test_True(arg)) {
 			return Y_Tx_e::Success;
 		}
 
-		defer(
+		Defer(
 			arg->key = 0;
 			arg->key_epoch = 0;
 			MemclearC(&arg->value, sizeof(T));
 		);
 
 		const uint64_t entry_i = cast(uint64_t)cast(uintptr_t)arg->key;
-		if(!Assure_True(entry_i < m_entries_capacity)) {
+		if(!Test_True(entry_i < m_entries_capacity)) {
 			return Y_Tx_e::Success;
 		}
 
 		uint64_t exclusive = arg->key_epoch;
-		if(!Assure_True(exclusive % 2 != 0)) {
+		if(!Test_True(exclusive % 2 != 0)) {
 			return Y_Tx_e::Success;
 		}
 
@@ -168,7 +168,7 @@ struct Y_PoolFrugalMM {
 				return Y_Tx_e::Success;
 			}
 
-			Assure(false);
+			Assert_True(false);
 		}
 
 		/* rental was already returned. */

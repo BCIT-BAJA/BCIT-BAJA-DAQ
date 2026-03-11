@@ -31,8 +31,8 @@ struct ExcelService_MsgIn {
 		~u() { /* nop */ }
 	} as;
 
-	inl void Construct_Data(const std::vector<uint16_t>& _) {
-		Assure(type == ExcelService_MsgIn_e::nul);
+	Inline void Construct_Data(const std::vector<uint16_t>& _) {
+		Assert_True(type == ExcelService_MsgIn_e::nul);
 		type = ExcelService_MsgIn_e::Data;
 		new (&as.Data.vec) type_of(as.Data.vec)(_);
 	}
@@ -48,36 +48,34 @@ struct ExcelService {
 
 intptr_t Thread_ExcelService(void* _);
 
-inl bool ExcelService_Create(ExcelService* _) {
+Inline bool ExcelService_Create(ExcelService* _) {
 	ZoneScoped;
-	if(!Assure_True(_->qi.Create(512))) {
+	if(!Test_True(_->qi.Create(512))) {
 		return false;
 	}
 	return true;
 }
-inl void ExcelService_Destroy(ExcelService* _) {
+Inline void ExcelService_Destroy(ExcelService* _) {
 	ZoneScoped;
 	_->qi.Destroy();
 }
-inl void ExcelService_Begin(ExcelService* _, Logger l) {
+Inline void ExcelService_Begin(ExcelService* _, Logger l) {
 	ZoneScoped;
 	_->thread = std::thread(Thread_ExcelService, _);
 	_->log = l;
 }
-inl bool ExcelService_SignalEnd(ExcelService* _) {
+Inline bool ExcelService_SignalEnd(ExcelService* _) {
 	ZoneScoped;
 
 	ExcelService_MsgIn si;
 	si.type = ExcelService_MsgIn_e::End;
 
-	Y_QueueMM<ExcelService_MsgIn>::Producer qi_producer = _->qi.Producer_Rent();
-	defer(_->qi.Producer_Return(&qi_producer));
-	while(qi_producer.Push_Tx(&si) != Y_Tx_e::Success) { Y_Thread_Yield(); } // note: todo: will lock up if full.
+	_->qi.ProduceOne_OrYieldAndRetryForever(&si);
 	_->qi_produce_event.Signal_One();
 
 	return true;
 }
-inl void ExcelService_WaitForEnd(ExcelService* _) {
+Inline void ExcelService_WaitForEnd(ExcelService* _) {
 	ZoneScoped;
 	_->thread.join();
 }

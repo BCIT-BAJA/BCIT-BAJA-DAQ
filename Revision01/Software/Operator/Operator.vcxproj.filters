@@ -45,6 +45,15 @@
     <ClCompile Include="ExcelService.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DeviceReadService.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceWriteService.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Audit.cc">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PCH.h">
@@ -57,9 +66,6 @@
       <Filter>Source Files\Common</Filter>
     </ClInclude>
     <ClInclude Include="..\Common\Protocol.h">
-      <Filter>Source Files\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Common\Assure.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
     <ClInclude Include="..\Common\Basic.h">
@@ -119,12 +125,24 @@
     <ClInclude Include="..\Common\StateMachine.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
+    <ClInclude Include="DeviceReadService.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceWriteService.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Audit.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Common\Version_Revision.bat">
       <Filter>Source Files\Common</Filter>
     </None>
     <None Include="..\Common\Version_Revision.sh">
+      <Filter>Source Files\Common</Filter>
+    </None>
+    <None Include="..\Common\Audit.natjmc">
       <Filter>Source Files\Common</Filter>
     </None>
   </ItemGroup>

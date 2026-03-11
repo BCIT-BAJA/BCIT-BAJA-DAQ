@@ -40,9 +40,6 @@
 #error
 #endif
 
-/* Custom assure() disable */
-#define _c_assure_debug() (1 && _c_config_debug())
-
 /* https://stackoverflow.com/questions/16696297/ftell-at-a-position-past-2gb */
 #define _FILE_OFFSET_BITS 64
 #define _LARGEFILE_SOURCE

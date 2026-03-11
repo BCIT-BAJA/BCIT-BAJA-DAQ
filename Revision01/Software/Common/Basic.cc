@@ -386,99 +386,99 @@ void tp_format_yyyymmdd_hhmmss(const time_point<steady_clock>& tp, char* out_str
 // see ImFileLoadToMemory
 
 /* Note: MACRO_* Requires MSVC's /Zc:preprocessor (Standard Conforming Preprocessor) */
-Assure_AtCompileTime(1 == MACRO_HeadArg(1, 2, 3));
-Assure_AtCompileTime(2 == MACRO_HeadArg MACRO_TailArgList(1, 2, 3));
-Assure_AtCompileTime(3 == MACRO_HeadArg MACRO_TailArgList MACRO_TailArgList(1, 2, 3));
+Ensure_TrueAtCompileTime(1 == MACRO_HeadArg(1, 2, 3));
+Ensure_TrueAtCompileTime(2 == MACRO_HeadArg MACRO_TailArgList(1, 2, 3));
+Ensure_TrueAtCompileTime(3 == MACRO_HeadArg MACRO_TailArgList MACRO_TailArgList(1, 2, 3));
 
-Assure_AtCompileTime(1 == MACRO_Arg_1(1, 2, 3));
-Assure_AtCompileTime(2 == MACRO_Arg_2(1, 2, 3));
-Assure_AtCompileTime(3 == MACRO_Arg_3(1, 2, 3));
+Ensure_TrueAtCompileTime(1 == MACRO_Arg_1(1, 2, 3));
+Ensure_TrueAtCompileTime(2 == MACRO_Arg_2(1, 2, 3));
+Ensure_TrueAtCompileTime(3 == MACRO_Arg_3(1, 2, 3));
 
-Assure_AtCompileTime(1 == MACRO_Arg_1 MACRO_ArgsToList(1, 2, 3));
-Assure_AtCompileTime(2 == MACRO_Arg_2 MACRO_ArgsToList(1, 2, 3));
-Assure_AtCompileTime(3 == MACRO_Arg_3 MACRO_ArgsToList(1, 2, 3));
+Ensure_TrueAtCompileTime(1 == MACRO_Arg_1 MACRO_ArgsToList(1, 2, 3));
+Ensure_TrueAtCompileTime(2 == MACRO_Arg_2 MACRO_ArgsToList(1, 2, 3));
+Ensure_TrueAtCompileTime(3 == MACRO_Arg_3 MACRO_ArgsToList(1, 2, 3));
 
-Assure_AtCompileTime(0 == MACRO_ContainsComma());
-Assure_AtCompileTime(0 == MACRO_ContainsComma(()));
-Assure_AtCompileTime(0 == MACRO_ContainsComma(No));
-Assure_AtCompileTime(0 == MACRO_ContainsComma(/* No */));
-Assure_AtCompileTime(1 == MACRO_ContainsComma(,));
-Assure_AtCompileTime(1 == MACRO_ContainsComma(,,));
+Ensure_TrueAtCompileTime(0 == MACRO_ContainsComma());
+Ensure_TrueAtCompileTime(0 == MACRO_ContainsComma(()));
+Ensure_TrueAtCompileTime(0 == MACRO_ContainsComma(No));
+Ensure_TrueAtCompileTime(0 == MACRO_ContainsComma(/* No */));
+Ensure_TrueAtCompileTime(1 == MACRO_ContainsComma(,));
+Ensure_TrueAtCompileTime(1 == MACRO_ContainsComma(,,));
 
-Assure_AtCompileTime(1 == MACRO_CommaCountPlusOne());
-Assure_AtCompileTime(2 == MACRO_CommaCountPlusOne(,));
-Assure_AtCompileTime(3 == MACRO_CommaCountPlusOne(,,3));
-Assure_AtCompileTime(1 == MACRO_CommaCountPlusOne(1));
-Assure_AtCompileTime(2 == MACRO_CommaCountPlusOne(1,2));
+Ensure_TrueAtCompileTime(1 == MACRO_CommaCountPlusOne());
+Ensure_TrueAtCompileTime(2 == MACRO_CommaCountPlusOne(,));
+Ensure_TrueAtCompileTime(3 == MACRO_CommaCountPlusOne(,,3));
+Ensure_TrueAtCompileTime(1 == MACRO_CommaCountPlusOne(1));
+Ensure_TrueAtCompileTime(2 == MACRO_CommaCountPlusOne(1,2));
 
-Assure_AtCompileTime(0 == MACRO_IsParenthesized());
-Assure_AtCompileTime(0 == MACRO_IsParenthesized(No()));
-Assure_AtCompileTime(0 == MACRO_IsParenthesized(MACRO_Empty));
-Assure_AtCompileTime(0 == MACRO_IsParenthesized(No));
-Assure_AtCompileTime(0 == MACRO_IsParenthesized(/* No */));
-Assure_AtCompileTime(0 == MACRO_IsParenthesized(1, 2, 3));
-Assure_AtCompileTime(0 == MACRO_IsParenthesized(1, (2, 3)));
-Assure_AtCompileTime(1 == MACRO_IsParenthesized((1, 2), 3));
-Assure_AtCompileTime(1 == MACRO_IsParenthesized(()));
-Assure_AtCompileTime(1 == MACRO_IsParenthesized((1, 2, 3)));
-Assure_AtCompileTime(1 == MACRO_IsParenthesized((MACRO_Empty)));
+Ensure_TrueAtCompileTime(0 == MACRO_IsParenthesized());
+Ensure_TrueAtCompileTime(0 == MACRO_IsParenthesized(No()));
+Ensure_TrueAtCompileTime(0 == MACRO_IsParenthesized(MACRO_Empty));
+Ensure_TrueAtCompileTime(0 == MACRO_IsParenthesized(No));
+Ensure_TrueAtCompileTime(0 == MACRO_IsParenthesized(/* No */));
+Ensure_TrueAtCompileTime(0 == MACRO_IsParenthesized(1, 2, 3));
+Ensure_TrueAtCompileTime(0 == MACRO_IsParenthesized(1, (2, 3)));
+Ensure_TrueAtCompileTime(1 == MACRO_IsParenthesized((1, 2), 3));
+Ensure_TrueAtCompileTime(1 == MACRO_IsParenthesized(()));
+Ensure_TrueAtCompileTime(1 == MACRO_IsParenthesized((1, 2, 3)));
+Ensure_TrueAtCompileTime(1 == MACRO_IsParenthesized((MACRO_Empty)));
 
-Assure_AtCompileTime(0 == MACRO_IsEmpty(No));
-Assure_AtCompileTime(0 == MACRO_IsEmpty("No"));
-Assure_AtCompileTime(0 == MACRO_IsEmpty(()));
-Assure_AtCompileTime(0 == MACRO_IsEmpty((,2,3,4,)));
-Assure_AtCompileTime(1 == MACRO_IsEmpty());
-Assure_AtCompileTime(1 == MACRO_IsEmpty(MACRO_Empty));
-Assure_AtCompileTime(1 == MACRO_IsEmpty(        ));
-Assure_AtCompileTime(1 == MACRO_IsEmpty(/* Yes */));
+Ensure_TrueAtCompileTime(0 == MACRO_IsEmpty(No));
+Ensure_TrueAtCompileTime(0 == MACRO_IsEmpty("No"));
+Ensure_TrueAtCompileTime(0 == MACRO_IsEmpty(()));
+Ensure_TrueAtCompileTime(0 == MACRO_IsEmpty((,2,3,4,)));
+Ensure_TrueAtCompileTime(1 == MACRO_IsEmpty());
+Ensure_TrueAtCompileTime(1 == MACRO_IsEmpty(MACRO_Empty));
+Ensure_TrueAtCompileTime(1 == MACRO_IsEmpty(        ));
+Ensure_TrueAtCompileTime(1 == MACRO_IsEmpty(/* Yes */));
 
-Assure_AtCompileTime(0 == MACRO_IsArgCountZero(No));
-Assure_AtCompileTime(0 == MACRO_IsArgCountZero("No"));
-Assure_AtCompileTime(0 == MACRO_IsArgCountZero(()));
-Assure_AtCompileTime(0 == MACRO_IsArgCountZero(1,2,3,4,5));
-Assure_AtCompileTime(0 == MACRO_IsArgCountZero(((1,2,3,4,5))));
-Assure_AtCompileTime(0 == MACRO_IsArgCountZero(,2,3,4,5));
-Assure_AtCompileTime(0 == MACRO_IsArgCountZero(,));
-Assure_AtCompileTime(0 == MACRO_IsArgCountZero(,,,,));
-Assure_AtCompileTime(0 == MACRO_IsArgCountZero(MACRO_Empty,MACRO_Empty));
-Assure_AtCompileTime(1 == MACRO_IsArgCountZero());
-Assure_AtCompileTime(1 == MACRO_IsArgCountZero(MACRO_Empty));
-Assure_AtCompileTime(1 == MACRO_IsArgCountZero(        ));
-Assure_AtCompileTime(1 == MACRO_IsArgCountZero(/* Yes */));
+Ensure_TrueAtCompileTime(0 == MACRO_IsArgCountZero(No));
+Ensure_TrueAtCompileTime(0 == MACRO_IsArgCountZero("No"));
+Ensure_TrueAtCompileTime(0 == MACRO_IsArgCountZero(()));
+Ensure_TrueAtCompileTime(0 == MACRO_IsArgCountZero(1,2,3,4,5));
+Ensure_TrueAtCompileTime(0 == MACRO_IsArgCountZero(((1,2,3,4,5))));
+Ensure_TrueAtCompileTime(0 == MACRO_IsArgCountZero(,2,3,4,5));
+Ensure_TrueAtCompileTime(0 == MACRO_IsArgCountZero(,));
+Ensure_TrueAtCompileTime(0 == MACRO_IsArgCountZero(,,,,));
+Ensure_TrueAtCompileTime(0 == MACRO_IsArgCountZero(MACRO_Empty,MACRO_Empty));
+Ensure_TrueAtCompileTime(1 == MACRO_IsArgCountZero());
+Ensure_TrueAtCompileTime(1 == MACRO_IsArgCountZero(MACRO_Empty));
+Ensure_TrueAtCompileTime(1 == MACRO_IsArgCountZero(        ));
+Ensure_TrueAtCompileTime(1 == MACRO_IsArgCountZero(/* Yes */));
 
 #define _MACRO_List0 ()
 #define _MACRO_List123 (1, 2, 3)
 
-Assure_AtCompileTime(0 == MACRO_ArgCount());
-Assure_AtCompileTime(0 == MACRO_ArgCount(MACRO_Empty));
-Assure_AtCompileTime(0 == MACRO_ArgCount _MACRO_List0);
-Assure_AtCompileTime(3 == MACRO_ArgCount _MACRO_List123);
-Assure_AtCompileTime(1 == MACRO_ArgCount(1));
-Assure_AtCompileTime(1 == MACRO_ArgCount((1)));
-Assure_AtCompileTime(2 == MACRO_ArgCount(1, 2));
-Assure_AtCompileTime(2 == MACRO_ArgCount((1), (2, 3)));
-Assure_AtCompileTime(1 == MACRO_ArgCount( ((),2,3,4,5) ));
-Assure_AtCompileTime(2 == MACRO_ArgCount( ((),2,3,4,5), 2 ));
-Assure_AtCompileTime(5 == MACRO_ArgCount( (),2,3,4,5 ));
-Assure_AtCompileTime(5 == MACRO_ArgCount(,2,3,4,5));
+Ensure_TrueAtCompileTime(0 == MACRO_ArgCount());
+Ensure_TrueAtCompileTime(0 == MACRO_ArgCount(MACRO_Empty));
+Ensure_TrueAtCompileTime(0 == MACRO_ArgCount _MACRO_List0);
+Ensure_TrueAtCompileTime(3 == MACRO_ArgCount _MACRO_List123);
+Ensure_TrueAtCompileTime(1 == MACRO_ArgCount(1));
+Ensure_TrueAtCompileTime(1 == MACRO_ArgCount((1)));
+Ensure_TrueAtCompileTime(2 == MACRO_ArgCount(1, 2));
+Ensure_TrueAtCompileTime(2 == MACRO_ArgCount((1), (2, 3)));
+Ensure_TrueAtCompileTime(1 == MACRO_ArgCount( ((),2,3,4,5) ));
+Ensure_TrueAtCompileTime(2 == MACRO_ArgCount( ((),2,3,4,5), 2 ));
+Ensure_TrueAtCompileTime(5 == MACRO_ArgCount( (),2,3,4,5 ));
+Ensure_TrueAtCompileTime(5 == MACRO_ArgCount(,2,3,4,5));
 
-Assure_AtCompileTime(MACRO_Join_0() true);
-Assure_AtCompileTime(123 == MACRO_Join_1(123));
-Assure_AtCompileTime(123 == MACRO_Join_2(1,23));
-Assure_AtCompileTime(123 == MACRO_Join_3(1,2,3));
+Ensure_TrueAtCompileTime(MACRO_Join_0() true);
+Ensure_TrueAtCompileTime(123 == MACRO_Join_1(123));
+Ensure_TrueAtCompileTime(123 == MACRO_Join_2(1,23));
+Ensure_TrueAtCompileTime(123 == MACRO_Join_3(1,2,3));
 
-Assure_AtCompileTime(MACRO_Join() true);
-Assure_AtCompileTime(123456789 == MACRO_Join(123456789));
-Assure_AtCompileTime(123456789 == MACRO_Join(1,23456789));
-Assure_AtCompileTime(123456789 == MACRO_Join(1,2,3456789));
-Assure_AtCompileTime(123456789 == MACRO_Join(1,2,3,456789));
-Assure_AtCompileTime(123456789 == MACRO_Join(1,2,3,4,56789));
-Assure_AtCompileTime(123456789 == MACRO_Join(1,2,3,4,5,6789));
-Assure_AtCompileTime(123456789 == MACRO_Join(1,2,3,4,5,6,789));
-Assure_AtCompileTime(123456789 == MACRO_Join(1,2,3,4,5,6,7,89));
-Assure_AtCompileTime(123456789 == MACRO_Join(1,2,3,4,5,6,7,8,9));
-Assure_AtCompileTime(123456789 == MACRO_Join(,,,,,123456789,,,,));
+Ensure_TrueAtCompileTime(MACRO_Join() true);
+Ensure_TrueAtCompileTime(123456789 == MACRO_Join(123456789));
+Ensure_TrueAtCompileTime(123456789 == MACRO_Join(1,23456789));
+Ensure_TrueAtCompileTime(123456789 == MACRO_Join(1,2,3456789));
+Ensure_TrueAtCompileTime(123456789 == MACRO_Join(1,2,3,456789));
+Ensure_TrueAtCompileTime(123456789 == MACRO_Join(1,2,3,4,56789));
+Ensure_TrueAtCompileTime(123456789 == MACRO_Join(1,2,3,4,5,6789));
+Ensure_TrueAtCompileTime(123456789 == MACRO_Join(1,2,3,4,5,6,789));
+Ensure_TrueAtCompileTime(123456789 == MACRO_Join(1,2,3,4,5,6,7,89));
+Ensure_TrueAtCompileTime(123456789 == MACRO_Join(1,2,3,4,5,6,7,8,9));
+Ensure_TrueAtCompileTime(123456789 == MACRO_Join(,,,,,123456789,,,,));
 
 #define _MACRO_Identity_Each(_Args_, Item, ...) , Item
 #define MACRO_Identity(...) MACRO_Map(_MACRO_Identity_Each, (), __VA_ARGS__)
-Assure_AtCompileTime( (false MACRO_Identity(false, false, true)) );
+Ensure_TrueAtCompileTime( (false MACRO_Identity(false, false, true)) );

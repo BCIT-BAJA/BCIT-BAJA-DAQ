@@ -27,10 +27,10 @@ struct Y_QueueSS {
 		uint8_t _padding[kCacheLineSize - sizeof(T)];
 
 		Entry() {
-			Assure_AtCompileTime(0 == offset_of(Entry, storage));
-			Assure_AtCompileTime(kCacheLineSize == sizeof(Entry));
-			Assure_AtCompileTime(kCacheLineSize == alignof(Entry));
-			Assure_AtCompileTime(kCacheLineSize % alignof(T) == 0);
+			Ensure_TrueAtCompileTime(0 == offset_of(Entry, storage));
+			Ensure_TrueAtCompileTime(kCacheLineSize == sizeof(Entry));
+			Ensure_TrueAtCompileTime(kCacheLineSize == alignof(Entry));
+			Ensure_TrueAtCompileTime(kCacheLineSize % alignof(T) == 0);
 		}
 	};
 
@@ -49,22 +49,22 @@ struct Y_QueueSS {
 	Y_QueueSS() { }
 
 	~Y_QueueSS() {
-		Assure(!m_entries, "Did you forget to call Destroy()?");
+		Assert_True(!m_entries, "Did you forget to call Destroy()?");
 	}
 
 	/* Must be called before S_* without racing ! */
 	bool Create(const uint32_t arg_entries_capacity) {
 		Task_ZoneScoped_NoCallstack;
 
-		Assure(arg_entries_capacity);
-		Assure(arg_entries_capacity < 4*1000*1000);
+		Assert_True(arg_entries_capacity);
+		Assert_True(arg_entries_capacity < 4*1000*1000);
 
-		Assure(!m_entries);
-		Assure(!m_entries_capacity);
+		Assert_True(!m_entries);
+		Assert_True(!m_entries_capacity);
 
 		/* allocate one extra entry to prevent false sharing with adjacent memory. */
 		T* entries = null;
-		if(!Assure_True(Basic_ArrayPointer_New(entries, (1 + arg_entries_capacity)))) {
+		if(!Test_True(Basic_ArrayPointer_New(entries, (1 + arg_entries_capacity)))) {
 			return false;
 		}
 
@@ -95,7 +95,7 @@ struct Y_QueueSS {
 	void Destroy() {
 		Task_ZoneScoped_NoCallstack;
 
-		Assure(Count() <= 0);
+		Assert_True(Count() <= 0);
 
 		Basic_ArrayPointer_Delete(m_entries);
 		m_entries_capacity = 0;
@@ -110,7 +110,7 @@ struct Y_QueueSS {
 	Y_Tx_e S_Produce_Tx(const T* in) {
 		Task_ZoneScoped_NoCallstack;
 
-		if(!Assure_True(in)) {
+		if(!Test_True(in)) {
 			return Y_Tx_e::Success;
 		}
 
@@ -122,7 +122,7 @@ struct Y_QueueSS {
 
 		/* wrap without using % */
 		if(m_entries_capacity <= next_i) {
-			Assure(m_entries_capacity == next_i);
+			Assert_True(m_entries_capacity == next_i);
 			next_i = 0;
 		}
 
@@ -133,7 +133,7 @@ struct Y_QueueSS {
 			*/
 			m_produce_cached_read_i = m_read_i_a.load(std::memory_order_acquire);
 			if(m_produce_cached_read_i == next_i) {
-				Assure(false);
+				Assert_True(false);
 				return Y_Tx_e::Full;
 			}
 		}
@@ -153,7 +153,7 @@ struct Y_QueueSS {
 	Y_Rx_e S_Consume_Rx(T* out) {
 		Task_ZoneScoped_NoCallstack;
 
-		if(!Assure_True(out)) {
+		if(!Test_True(out)) {
 			return Y_Rx_e::Success;
 		}
 
@@ -178,7 +178,7 @@ struct Y_QueueSS {
 		const uint64_t next_i = (read_i + 1);
 		/* wrap without using % */
 		if(m_entries_capacity <= next_i) {
-			Assure(m_entries_capacity == next_i);
+			Assert_True(m_entries_capacity == next_i);
 			next_i = 0;
 		}
 

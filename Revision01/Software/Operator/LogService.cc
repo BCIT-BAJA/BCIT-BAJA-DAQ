@@ -33,7 +33,7 @@ v4 colorof_trace_flag(const trace_flag_e l) {
 intptr_t Thread_LogService(void* _) {
 #if c_config(debug)
 	puts(MACRO_FunctionSignature());
-	defer(puts(MACRO_FunctionSignature()));
+	Defer(puts(MACRO_FunctionSignature()));
 #endif
 
 	#if 0
@@ -47,7 +47,7 @@ intptr_t Thread_LogService(void* _) {
 	#endif
 	
 	Y_QueueMM<Log_MsgIn>::Consumer qi_consumer = self->qi.Consumer_Rent();
-	defer(self->qi.Consumer_Return(&qi_consumer));
+	Defer(self->qi.Consumer_Return(&qi_consumer));
 
 	Log_MsgIn mi;
 
@@ -80,7 +80,7 @@ intptr_t Thread_LogService(void* _) {
 					ZoneScopedN("String");
 
 					auto& str = mi.as.String.object;
-					defer(DestructAt_NullSafe(&str));
+					Defer(DestructAt_NullSafe(&str));
 
 					if(!str.empty()) {
 						// todo: *instead* of dumping this right away to stdout, instead add a timer to awaitsignaluntil, and
@@ -89,7 +89,7 @@ intptr_t Thread_LogService(void* _) {
 					}
 				} break;
 
-				default: Assure_True(false, "unknown message type %d", mi.type);
+				default: Test_True(false, "unknown message type %d", mi.type);
 			}
 		}
 	}
@@ -162,7 +162,7 @@ void Log_Txt(Logger l, Txt* txt) {
 
 	// todo: make this thread local !!!!!!
 	Y_QueueMM<Log_MsgIn>::Producer qi_producer = l->qi.Producer_Rent();
-	defer(l->qi.Producer_Return(&qi_producer));
+	Defer(l->qi.Producer_Return(&qi_producer));
 
 	while(qi_producer.Push_Tx(txt) != Y_Tx_e::Success) { Y_Thread_Yield(); } // note: todo: will lock up if full.
 	l->qi_produce_event.Signal_One();
@@ -175,9 +175,10 @@ void Log_Txt(Logger l, Txt* txt) {
 // Log <<< Printf ~1.3ms
 // :)
 */
+
 void Log(Logger l, const char* fmt, ...) c_fmt(2) {
 	Task_ZoneScoped_NoCallstack;
-	if(!Assure_True(l)) {
+	if(!Test_True(l)) {
 		return;
 	}
 
@@ -188,3 +189,19 @@ void Log(Logger l, const char* fmt, ...) c_fmt(2) {
 	Log_Txt(l, &msg);
 }
 
+ThreadLocal Logger t_logger = null;
+void Log_BindThreadLocal(Logger l) {
+	t_logger = l;
+}
+void Log(const char* fmt, ...) c_fmt(2) {
+	Task_ZoneScoped_NoCallstack;
+	if(!Test_True(t_logger)) {
+		return;
+	}
+
+	Txt msg;
+	va_scope(va, fmt) {
+		Txt_Fmt_(&msg, fmt, va);
+	}
+	Log_Txt(t_logger, &msg);
+}

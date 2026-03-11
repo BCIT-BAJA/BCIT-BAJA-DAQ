@@ -4,6 +4,7 @@
 
 #include "Y.h"
 #include "Basic.h"
+#include "Audit.h"
 
 /*
 // Adapted from rigtorp's MPMCQueue
@@ -54,9 +55,9 @@ struct Y_QueueMM {
 		typename std::aligned_storage<sizeof(T), alignof(T)>::type storage;
 
 		Entry() {
-			Assure_AtCompileTime(0 == offset_of(Entry, coded_loop));
-			Assure_AtCompileTime(kCacheLineSize == sizeof(Entry));
-			Assure_AtCompileTime(kCacheLineSize == alignof(Entry));
+			Ensure_TrueAtCompileTime(0 == offset_of(Entry, coded_loop));
+			Ensure_TrueAtCompileTime(kCacheLineSize == sizeof(Entry));
+			Ensure_TrueAtCompileTime(kCacheLineSize == alignof(Entry));
 		}
 	};
 
@@ -116,13 +117,13 @@ struct Y_QueueMM {
 	};
 
 	Y_QueueMM() {
-		Assure_AtCompileTime(1*kCacheLineSize == offset_of(Y_QueueMM, server.m_writer_a));
-		Assure_AtCompileTime(2*kCacheLineSize == offset_of(Y_QueueMM, server.m_reader_a));
-		Assure_AtCompileTime(3*kCacheLineSize == sizeof(Y_QueueMM));
+		Ensure_TrueAtCompileTime(1*kCacheLineSize == offset_of(Y_QueueMM, server.m_writer_a));
+		Ensure_TrueAtCompileTime(2*kCacheLineSize == offset_of(Y_QueueMM, server.m_reader_a));
+		Ensure_TrueAtCompileTime(3*kCacheLineSize == sizeof(Y_QueueMM));
 	}
 
 	~Y_QueueMM() {
-		Assure(!server.m_entries, "Did you forget to call Destroy()?");
+		Assert_True(!server.m_entries, "Did you forget to call Destroy()?");
 	}
 
 	bool Create(const uint32_t arg_entries_capacity);
@@ -146,8 +147,8 @@ struct Y_QueueMM {
 		}
 	#endif
 
-		Assure(server.m_entries);
-		Assure(server.m_entries_capacity);
+		Assert_True(server.m_entries);
+		Assert_True(server.m_entries_capacity);
 
 		// todo: note: tying consumers & producers together here doesn't make sense !!!!
 		uint64_t client_uid;
@@ -176,9 +177,9 @@ struct Y_QueueMM {
 	#if c_config(debug)
 		Task_ZoneScoped_NoCallstack;
 
-		if(Assure_True(client) && Assure_True(client->m_client_uid)) {
+		if(Test_True(client) && Test_True(client->m_client_uid)) {
 			const uint64_t returns_n = (1 + server.m_returns_n_a.fetch_add(1, std::memory_order_relaxed));
-			Assure(returns_n <= server.m_rents_n_a.load(std::memory_order_relaxed), "Too many returns!");
+			Assert_True(returns_n <= server.m_rents_n_a.load(std::memory_order_relaxed), "Too many returns!");
 
 			(*client) = ClientCache();
 		}
@@ -204,24 +205,33 @@ struct Y_QueueMM {
 	void Producer_Return(Producer* c) {
 		_Cache_Return(&c->cache);
 	}
+
+	void ProduceOne_OrYieldAndRetryForever(const T* message) {
+		Producer producer = Producer_Rent();
+		Defer(Producer_Return(&producer));
+
+		while(producer.Push_Tx(message) != Y_Tx_e::Success) {
+			Y_Thread_Yield();
+		}
+	}
 };
 
 template<typename T>
 /* void */bool Y_QueueMM<T>::Create(const uint32_t arg_entries_capacity) {
 	Task_ZoneScoped_NoCallstack;
 
-	Assure(arg_entries_capacity);
-	Assure(arg_entries_capacity < 4*1000*1000);
+	Assert_True(arg_entries_capacity);
+	Assert_True(arg_entries_capacity < 4*1000*1000);
 
-	Assure(!server.m_entries);
-	Assure(!server.m_entries_capacity);
+	Assert_True(!server.m_entries);
+	Assert_True(!server.m_entries_capacity);
 
 #if c_config(debug)
-	Assure(server.m_returns_n_a.load(std::memory_order_relaxed) == server.m_rents_n_a.load(std::memory_order_relaxed), "No outstanding clients allowed!");
+	Assert_True(server.m_returns_n_a.load(std::memory_order_relaxed) == server.m_rents_n_a.load(std::memory_order_relaxed), "No outstanding clients allowed!");
 #endif
 
 	/* we allocate one extra entry to prevent false sharing with adjacent memory. */
-	if(!/* Check_Allocation */Assure_True(Basic_ArrayPointer_New(server.m_entries, (1 + arg_entries_capacity)))) {
+	if(!/* Check_Allocation */Test_True(Basic_ArrayPointer_New(server.m_entries, (1 + arg_entries_capacity)))) {
 		// Check_Allocation:
 		// Allocations are critical faults in recall.
 		// we immediately Trace() what we can, without allocating anything. the Trace / Trap subsystems must limit its allocations to support this.
@@ -241,7 +251,7 @@ void Y_QueueMM<T>::Destroy() {
 	Task_ZoneScoped_NoCallstack;
 
 #if c_config(debug)
-	Assure(server.m_returns_n_a.load(std::memory_order_relaxed) == server.m_rents_n_a.load(std::memory_order_relaxed), "No outstanding clients allowed!");
+	Assert_True(server.m_returns_n_a.load(std::memory_order_relaxed) == server.m_rents_n_a.load(std::memory_order_relaxed), "No outstanding clients allowed!");
 #endif
 
 	Basic_ArrayPointer_Delete(server.m_entries);
@@ -264,10 +274,10 @@ template<typename T>
 Y_Tx_e Y_QueueMM<T>::Producer::Push_Tx(const T* in) {
 	Task_ZoneScoped_NoCallstack;
 
-	Assure(in);
+	Assert_True(in);
 
-	Assure(cache.m_entries);
-	Assure(cache.m_entries_capacity);
+	Assert_True(cache.m_entries);
+	Assert_True(cache.m_entries_capacity);
 
 	uint64_t writer = cache.m_writer_a->load(std::memory_order_acquire);
 
@@ -315,8 +325,8 @@ template<typename T>
 Y_Rx_e Y_QueueMM<T>::Consumer::Pull_Rx(T* out) {
 	Task_ZoneScoped_NoCallstack;
 
-	Assure(cache.m_entries);
-	Assure(cache.m_entries_capacity);
+	Assert_True(cache.m_entries);
+	Assert_True(cache.m_entries_capacity);
 
 	uint64_t reader = cache.m_reader_a->load(std::memory_order_acquire);
 

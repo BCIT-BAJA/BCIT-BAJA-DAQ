@@ -107,18 +107,31 @@ Struct(AuditMetadata) {
 	__FILE__, \
 	MACRO_FunctionSignature() \
 
-#define _Audit_True(c, ...) ( \
-	(bool)(true \
+#define _Audit_True(ConditionTypeCheckerFunction, c, ...) (bool)( \
+	(true \
 		&& _Audit_Open() \
-		&& (c) \
+		&& ConditionTypeCheckerFunction(c) \
 		&& _Audit_Close_OnConditionTrue() \
 	) \
-	|| _Audit_OnConditionFalse(_Auditor_Metadata_ProvideArguments(c), "" __VA_ARGS__) \
+	|| _Audit_Close_OnConditionFalse(_Auditor_Metadata_ProvideArguments(c), "" __VA_ARGS__) \
 ) \
 
-#define Audit_True(c, ...) _Audit_True(c, __VA_ARGS__)
+// now we can ensure that throws are caught, forcing the caller to Pop() at the correct scope?
+// and the point of throw / catch. (constructor)
+
+// this at LEAST makes it easier to detect a forgotten Pop(), even if the audit succeeds.
+
+// if this fails the caller is expected to Pop() !!!
+#define Audit_True(c, ...) _Audit_True(, c, __VA_ARGS__)
+
+// if this fails the caller is expected to Pop() !!!
+// the only point of the Audit object is to ensure that the user doesn't forget to add logic to Pop an expected yielded false condition!
+#define Audit_TrueAudit(c, ...) _Audit_True(_Audit_ConditionTypeChecker, c, __VA_ARGS__)
+
+#define Audit_ReturnIfUntrue(c, ...) if(!_Audit_True(, c, __VA_ARGS__)) { return Audit(); }
 
 typedef uint64_t AuditError;
+#define AuditError_None 0
 
 extern ThreadLocal AuditError t_audit_error;
 Inline void Audit_SetLastError(AuditError e) {
@@ -135,10 +148,13 @@ Struct(AuditScope) {
 	AuditMetadata metadata;
 };
 
+#define Auditor_MaxScopeDepth 32
+
 Struct(Auditor) {
 	uint32_t depth_nth = 0;
-	std::bitset<32> scope_open_mask = 0;
-	AuditScope scope_at_depth[64];
+	std::bitset<Auditor_MaxScopeDepth> scope_open_mask = 0; // scope_i is open
+	std::bitset<Auditor_MaxScopeDepth> scope_unpoppedfail_mask = 0; // scope_i contains unpopped-fail.
+	AuditScope scope_at_depth[Auditor_MaxScopeDepth];
 };
 
 Struct(AuditPeek) {
@@ -149,22 +165,74 @@ Struct(AuditPeek) {
 Struct(AuditStack) {
 	uint32_t auditor_depth_i = 0;
 	uint32_t scopes_n = 0;
-	AuditScope scopes[64];
+	AuditScope scopes[Auditor_MaxScopeDepth];
 };
 
 extern ThreadLocal Auditor t_auditor;
 
+// this forces the user to construct
+Struct(Audit) {
+	bool success;
+
+	Audit(/* error code? */) {
+		Auditor* _ = &t_auditor;
+		const uint32_t host_scope_i = (_->depth_nth);
+		Assert_True(host_scope_i < Array_CountOf(_->scope_at_depth));
+
+		this->success = (!_->scope_unpoppedfail_mask.test(host_scope_i));
+	}
+
+	#if 0
+	Audit(AuditError e) {
+		if(e) {
+			this->success = false;
+			return;
+		}
+
+		Auditor* _ = &t_auditor;
+		const uint32_t host_scope_i = (_->depth_nth);
+		Assert_True(host_scope_i < Array_CountOf(_->scope_at_depth));
+
+		this->success = (!_->scope_unpoppedfail_mask.test(host_scope_i));
+	}
+	#endif
+};
+
+// Inline bool _Audit_ConditionTypeChecker(bool b) { return b; }
+Inline bool _Audit_ConditionTypeChecker(Audit a) { return a.success; }
+
 Inline bool _Audit_Open() {
 	Auditor* _ = &t_auditor;
 
-	if(Test_True(_->depth_nth < Array_CountOf(_->scope_at_depth))) {
-		uint32_t candidate_depth_i = (_->depth_nth)++;
+	// todo: we need to check if there is a host Audit??
 
-		Assert_True(!_->scope_open_mask.test(candidate_depth_i)
-			, "You forgot to Drop or Pop the last failed audit."
-		);
-		_->scope_open_mask.set(candidate_depth_i);
+	if(!Test_True((_->depth_nth + 1) <= Array_CountOf(_->scope_at_depth)
+		, "You exceeded the maximum Audit Depth of %u"
+		, Array_CountOf(_->scope_at_depth)
+	)) {
+		return true;
 	}
+
+	uint32_t candidate_depth_i = (_->depth_nth)++;
+
+	bool reset_host_and_children = false;
+	reset_host_and_children |= Test_True(!_->scope_open_mask.test(candidate_depth_i));
+
+	{
+		auto& is_unpoppedfail =_->scope_unpoppedfail_mask;
+		reset_host_and_children |= Test_True(!is_unpoppedfail.test(candidate_depth_i)
+			, "You forgot to Pop the last failed audit."
+		);
+
+		if(reset_host_and_children) {
+			for(uint32_t d_i = candidate_depth_i; d_i < Array_CountOf(_->scope_at_depth); ++d_i) {
+				_->scope_open_mask.reset(d_i);
+				is_unpoppedfail.reset(d_i);
+			}
+		}
+	}
+
+	_->scope_open_mask.set(candidate_depth_i);
 
 	return true;
 }
@@ -172,17 +240,20 @@ Inline bool _Audit_Open() {
 Inline bool _Audit_Close_OnConditionTrue() {
 	Auditor* _ = &t_auditor;
 
-	if(Test_True(0 < _->depth_nth && _->depth_nth <= Array_CountOf(_->scope_at_depth))) {
-		uint32_t current_depth_i = --(_->depth_nth);
-
-		Assert_True(_->scope_open_mask.test(current_depth_i));
-		_->scope_open_mask.reset(current_depth_i);
+	if(!(Test_True(0 < _->depth_nth && _->depth_nth <= Array_CountOf(_->scope_at_depth)))) {
+		return true;
 	}
+
+	uint32_t current_depth_i = --(_->depth_nth);
+
+	Assert_True(_->scope_open_mask.test(current_depth_i));
+	_->scope_open_mask.reset(current_depth_i);
+	_->scope_unpoppedfail_mask.reset(current_depth_i);
 
 	return true;
 }
 
-bool _Audit_OnConditionFalse(_Auditor_Metadata_DeclareArguments, const char* format, ...) c_fmt(2);
+bool _Audit_Close_OnConditionFalse(_Auditor_Metadata_DeclareArguments, const char* format, ...) c_fmt(2);
 
 AuditPeek Audit_PeekChild();
 void Audit_Pop(AuditStack* out = null);
@@ -273,8 +344,8 @@ static bool Audit_Demo_F() {
 }
 
 static void Audit_Demo() {
+#if 0
 	// AuditStack stack; Audit_Push(&stack); // should fail...
-
 
 	Audit_Demo_C();
 	Audit_Demo_D();
@@ -293,8 +364,9 @@ static void Audit_Demo() {
 	// Audit_PeekChild(); // this should fail...
 	// Audit_Pop(); // this should fail...
 
-	Audit_Demo_A(); // this should fail
-	Audit_Demo_B(); // this should fail
+	// Audit_Demo_A(); // this should fail
+	// Audit_Demo_B(); // this should fail
+#endif
 }
 
 

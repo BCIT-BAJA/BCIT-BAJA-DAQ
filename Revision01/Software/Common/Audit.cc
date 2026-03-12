@@ -169,7 +169,7 @@ bool _Assert_OnConditionFalse(_AssertMetadata_DeclareArguments, const char* form
 ThreadLocal AuditError t_audit_error;
 ThreadLocal Auditor t_auditor;
 
-bool _Audit_OnConditionFalse(_Auditor_Metadata_DeclareArguments, const char* format, ...) {
+bool _Audit_Close_OnConditionFalse(_Auditor_Metadata_DeclareArguments, const char* format, ...) {
 	Auditor* _ = &t_auditor;
 
 	if(!Test_True(0 < _->depth_nth && _->depth_nth <= Array_CountOf(_->scope_at_depth))) {
@@ -182,8 +182,8 @@ bool _Audit_OnConditionFalse(_Auditor_Metadata_DeclareArguments, const char* for
 		Assert_True(host_depth_i < Array_CountOf(_->scope_at_depth));
 
 		Assert_True(_->scope_open_mask.test(host_depth_i));
-		// do not close this scope, allowing the caller to recover by PopGather() or PopDiscard().
-		/* _->scope_open_mask.reset(close_depth_i); */
+		_->scope_open_mask.reset(host_depth_i);
+		_->scope_unpoppedfail_mask.set(host_depth_i);
 
 		scope = &_->scope_at_depth[host_depth_i];
 	}
@@ -253,15 +253,17 @@ AuditPeek Audit_PeekChild() {
 	AuditPeek peek;
 
 	uint32_t child_depth_i = _->depth_nth; 
-	if(!Test_True(child_depth_i < Array_CountOf(_->scope_at_depth))) {
-		// Uh oh, the Audit system is really broken.
+
+	bool depth_ok = Test_True(child_depth_i < Array_CountOf(_->scope_at_depth));
+	bool unpoppedfail = Test_True(_->scope_unpoppedfail_mask.test(child_depth_i)
+		, "You can't Peek into an Audit that succeeded!"
+	);
+	if(!depth_ok || !unpoppedfail) {
 		// hopefully we're lucky that the last OS call was related.
 		peek.audit_error = Audit_GetLastError();
 		peek.os_error = OS_GetLastError();
 		return peek;
 	}
-
-	Test_True(_->scope_open_mask.test(child_depth_i), "You can't Peek into a closed Audit!");
 
 	AuditScope* child_scope = &_->scope_at_depth[child_depth_i];
 	peek.audit_error = child_scope->audit_error;
@@ -273,10 +275,12 @@ AuditPeek Audit_PeekChild() {
 void Audit_Pop(AuditStack* out) {
 	Auditor* _ = &t_auditor;
 
-	// Pop!
 	uint32_t host_depth_i = (_->depth_nth);
 	Assert_True(host_depth_i < Array_CountOf(_->scope_at_depth));
-	Assert_True(_->scope_open_mask.test(host_depth_i), "No active Audit to Pop!");
+
+	Assert_True(!_->scope_open_mask.test(host_depth_i));
+	auto& is_unpoppedfail = _->scope_unpoppedfail_mask;
+	Assert_True(is_unpoppedfail.test(host_depth_i), "No failed Audit to Pop!");
 
 	if(out) {
 		out->auditor_depth_i = host_depth_i;
@@ -285,7 +289,7 @@ void Audit_Pop(AuditStack* out) {
 		for(uint32_t d_i = host_depth_i; d_i < Array_CountOf(_->scope_at_depth);
 			(++d_i, ++out_scope_i)
 		) {
-			if(!_->scope_open_mask.test(d_i)) {
+			if(!is_unpoppedfail.test(d_i)) {
 				break;
 			}
 
@@ -296,12 +300,9 @@ void Audit_Pop(AuditStack* out) {
 		out->scopes_n = out_scope_i;
 	}
 
-	// here we "close" out scope by resetting scope_open_mask.
+	// Pop!
 	for(uint32_t d_i = host_depth_i; d_i < Array_CountOf(_->scope_at_depth); ++d_i) {
-		if(!_->scope_open_mask.test(d_i)) {
-			break;
-		}
-		_->scope_open_mask.reset(d_i);
+		is_unpoppedfail.reset(d_i);
 	}
 }
 
@@ -325,8 +326,11 @@ void Audit_Push(const AuditStack* in) {
 	// The host scope must match the incoming scope.
 	Assert_True(host_scope_i == in->auditor_depth_i);
 	// Our current host scope must be closed.
-	Assert_True(!_->scope_open_mask.test(host_scope_i)
-		, "You must Pop the active Audit! (Since you cannot overwrite an active Audit)"
+	Assert_True(!_->scope_open_mask.test(host_scope_i));
+
+	auto& is_unpoppedfail = _->scope_unpoppedfail_mask;
+	Assert_True(!is_unpoppedfail.test(host_scope_i)
+		, "You must Pop the last active failed Audit! (Since you cannot overwrite an active Audit)"
 	);
 
 	uint32_t d_i = host_scope_i;
@@ -336,8 +340,7 @@ void Audit_Push(const AuditStack* in) {
 		(++d_i, ++in_scope_i)
 	) {
 		Assert_True(!_->scope_open_mask.test(d_i));
-		// here we "re-open" our host scope.
-		_->scope_open_mask.set(d_i);
+		is_unpoppedfail.set(d_i);
 
 		AuditScope* scope = &_->scope_at_depth[d_i];
 		(*scope) = in->scopes[in_scope_i];

@@ -77,6 +77,35 @@ bool QueryCOMPortNames(vector<string>* _ports) {
 	return true;
 }
 
+/*
+1. Configuration & State
+Functions : GetCommState, SetCommState, BuildCommDCBA, GetCommTimeouts, SetCommTimeouts
+These generally fail due to invalid parameters or hardware being physically disconnected.
+Fatal Errors :
+ERROR_INVALID_HANDLE(6) : The COM port handle is closed or null.
+ERROR_INVALID_PARAMETER(87) : Your DCB structure or timeout values are logically impossible.
+Non - Fatal / Environmental :
+	ERROR_DEVICE_NOT_CONNECTED(1167) : The USB - to - Serial adapter was unplugged.
+	ERROR_BUSY(170) : Another process has locked the settings.
+
+3. Buffer & Error Management
+Functions: PurgeComm, ClearCommError
+These are your "cleanup" crews. They rarely fail unless the handle itself is dead.
+    Fatal Errors:
+	  ERROR_INVALID_HANDLE (6): The port is no longer valid.
+	  ERROR_ACCESS_DENIED (5): You don't have the permissions to flush the buffers.
+    Non-Fatal:
+	  These functions are often used to resolve errors. For example, ClearCommError will report hardware-level flags (like CE_RXOVER for buffer overflows) in its lpErrors parameter rather than via GetLastError.
+*/
+/*
+ERROR_OPERATION_ABORTED	995	Non-Fatal	The I/O was cancelled by your code.
+ERROR_IO_PENDING	997	Normal	Overlapped I/O is in progress (ignore).
+ERROR_INVALID_HANDLE	6	Fatal	Handle is null or already closed.
+ERROR_ACCESS_DENIED	5	Fatal	Port is in use by another app.
+ERROR_GEN_FAILURE	31	Fatal
+ERROR_DEVICE_NOT_CONNECTED (fatal)
+ERROR_BAD_COMMAND (fatal)
+*/
 HANDLE OpenCOMPortHandle_8N1(const char* comN_str, DWORD baudrate) {
 	HANDLE ret = INVALID_HANDLE_VALUE;
 	HANDLE h = INVALID_HANDLE_VALUE;
@@ -227,28 +256,33 @@ static void DeviceService_StateMachineData_CloseCOMPort(DeviceService_StateMachi
 	WindowsHandle_CloseIfValid(d->comport_h);
 }
 
-static bool DeviceService_StateMachineData_TryWaitCommEvent(DeviceService_StateMachineData* d) {
+/*
+2. Event Handling & Overlapped I/O
+Functions: WaitCommEvent, GetOverlappedResult, ResetEvent
+These are the "traffic controllers" of your serial thread.
+    Fatal Errors:
+	  ERROR_INVALID_HANDLE (6): Common if the handle is closed while a thread is still waiting.
+	  ERROR_IO_INCOMPLETE (996): (Specifically for GetOverlappedResult) Not necessarily "fatal," but means you checked for a result before the operation actually finished.
+    Non-Fatal / Expected:
+	  ERROR_IO_PENDING (997): Very common. This isn't actually an error; it means the operation is working in the background.
+	  ERROR_OPERATION_ABORTED (995): The I/O was cancelled (likely by PurgeComm or thread termination).
+*/
+static Audit DeviceService_StateMachineData_TryWaitCommEvent(DeviceService_StateMachineData* d) {
 	/*
 	// If the overlapped operation cannot be completed immediately,
 	// the function returns FALSE and the GetLastError function returns ERROR_IO_PENDING,
 	// indicating that the operation is executing in the background.
 	*/
-	if(!Test_True(ResetEvent(d->comport_ovl_WaitCommEvent.hEvent))) {
-		return false;
-	}
-
-	if(!Test_True(
+	Audit_ReturnIfUntrue(ResetEvent(d->comport_ovl_WaitCommEvent.hEvent));
+	Audit_ReturnIfUntrue(
 		WaitCommEvent(
 			d->comport_h,
 			&d->comport_WaitCommEvent_EvtMask,
 			&d->comport_ovl_WaitCommEvent
 		)
 		|| ERROR_IO_PENDING == GetLastError()
-	)) {
-		return false;
-	}
-
-	return true;
+	);
+	return Audit();
 }
 
 static bool DeviceService_StateMachineData_TryOpenCOMPort(DeviceService_StateMachineData* d, const char* comN_str) {
@@ -308,7 +342,12 @@ static bool DeviceService_StateMachineData_TryOpenCOMPort(DeviceService_StateMac
 		return false;
 	}
 
-	if(!DeviceService_StateMachineData_TryWaitCommEvent(d)) {
+	if(!Audit_TrueAudit(DeviceService_StateMachineData_TryWaitCommEvent(d))) {
+		AuditPeek peek = Audit_PeekChild();
+		Audit_Pop();
+
+		peek.audit_error;
+		peek.os_error;
 		return false;
 	}
 
@@ -384,12 +423,6 @@ static bool DeviceService_StateMachine_AwaitOverlappedIO(DeviceService* _, State
 			} break;
 
 			case (WAIT_OBJECT_0 + 2): {
-				Defer(
-					if(!fatal && !DeviceService_StateMachineData_TryWaitCommEvent(d)) {
-						fatal = true;
-					}
-				);
-
 				/*
 				// The calling process can use one of the wait functions to determine
 				// the event object's state and then use the GetOverlappedResult function
@@ -476,6 +509,15 @@ static bool DeviceService_StateMachine_AwaitOverlappedIO(DeviceService* _, State
 					if(ClearCommError_Errors & CE_OOP) // LPTx Out-Of-Paper
 					if(ClearCommError_Errors & CE_MODE) // Requested mode unsupported
 				#endif
+				}
+
+				if(!fatal) {
+					if(!Audit_TrueAudit(DeviceService_StateMachineData_TryWaitCommEvent(d))) {
+						AuditPeek peek = Audit_PeekChild();
+						Audit_Pop();
+
+						fatal = true;
+					}
 				}
 			} break;
 

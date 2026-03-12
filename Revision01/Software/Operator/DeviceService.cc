@@ -224,7 +224,7 @@ Enum(DeviceService_State, StateMachine_StateType) {
 	DeviceService_State_Default = 0,
 	DeviceService_State_COMPortScan,
 	DeviceService_State_COMPortScan_ForEach,
-	DeviceService_State_ReadNumber,
+	DeviceService_State_AwaitIO,
 };
 
 Struct(DeviceService_StateMachineData) {
@@ -241,7 +241,7 @@ Struct(DeviceService_StateMachineData) {
 	DWORD comport_WaitCommEvent_EvtMask = 0;
 };
 
-static void DeviceService_StateMachineData_CloseCOMPort(DeviceService_StateMachineData* d) {
+static void DeviceService_StateMachineData_CloseCOMPortHandles(DeviceService_StateMachineData* d) {
 #if 0 // todo: this is a race condition, because the driver may still be processing the previous I/O request, and if we close the handle while it's still processing, it could lead to undefined behavior. To avoid this, we need to ensure that all pending I/O operations have completed before closing the handle. Here's a general approach to safely close the COM port handle:
 	1. Stop	CancelIoEx(hSerial, &ov)	Tell the driver to give up.
 	2. Wait	GetOverlappedResult(...)	Wait for the driver to acknowledge the stop.
@@ -250,10 +250,18 @@ static void DeviceService_StateMachineData_CloseCOMPort(DeviceService_StateMachi
 #endif
 
 	Ensure_TrueAtCompileTime(4 == DeviceService_StateMachineData_CountOfHandles);
-	WindowsHandle_CloseIfValid(d->comport_ovl_WaitCommEvent.hEvent);
-	WindowsHandle_CloseIfValid(d->comport_ovl_WriteFile.hEvent);
-	WindowsHandle_CloseIfValid(d->comport_ovl_ReadFile.hEvent);
+	if(WindowsHandle_IsValid(d->comport_h)) {
+		Test_True(
+			CancelIoEx(
+				d->comport_h, 
+				NULL // all I/O requests for the hFile parameter are canceled
+			) || GetLastError() == ERROR_NOT_FOUND // Else if this function cannot find a request to cancel
+		);
+	}
 	WindowsHandle_CloseIfValid(d->comport_h);
+	WindowsHandle_CloseIfValid(d->comport_ovl_WaitCommEvent.hEvent);
+	WindowsHandle_CloseIfValid(d->comport_ovl_ReadFile.hEvent);
+	WindowsHandle_CloseIfValid(d->comport_ovl_WriteFile.hEvent);
 }
 
 /*
@@ -286,12 +294,12 @@ static Audit DeviceService_StateMachineData_TryWaitCommEvent(DeviceService_State
 }
 
 static bool DeviceService_StateMachineData_TryOpenCOMPort(DeviceService_StateMachineData* d, const char* comN_str) {
-	DeviceService_StateMachineData_CloseCOMPort(d);
+	DeviceService_StateMachineData_CloseCOMPortHandles(d);
 
 	bool ret = false;
 	Defer(
 		if(!ret) {
-			DeviceService_StateMachineData_CloseCOMPort(d);
+			DeviceService_StateMachineData_CloseCOMPortHandles(d);
 		}
 	);
 
@@ -366,16 +374,17 @@ static bool DeviceService_StateMachine_AwaitOverlappedIO(DeviceService* _, State
 	};
 	Ensure_TrueAtCompileTime(Array_CountOf(wait_handles) == DeviceService_StateMachineData_CountOfEvents);
 
+	bool fatal = false;
 	for(size_t evt_i = 0; evt_i < Array_CountOf(wait_handles); ++evt_i) {
 		HANDLE evt = wait_handles[evt_i];
 
 		if(!Test_True(WindowsHandle_IsValid(evt))) {
 			// todo: do something here
-			return false;
+			fatal = true;
+			break;
 		}
 	}
 
-	bool fatal = false;
 	bool loop = true;
 	while(loop && !fatal) {
 		// (WaitFor Sleep here, probably for 100 ms or so, that is enough to also poll the main thread queue in a reasonable time)
@@ -540,6 +549,11 @@ static bool DeviceService_StateMachine_AwaitOverlappedIO(DeviceService* _, State
 			} break;
 		}
 	}
+
+	// the handles could be invalid
+	// the device has gone away.
+	// what we're going to do is signal that we intend to shut down the device
+	return !fatal;
 }
 
 static void DeviceService_StateMachine(DeviceService* _, StateMachine* sm) {
@@ -547,6 +561,7 @@ static void DeviceService_StateMachine(DeviceService* _, StateMachine* sm) {
 	StateMachine_OpenSwitch(sm);
 
 	StateMachine_DefaultState(DeviceService_State_Default) {
+		DeviceService_StateMachineData_CloseCOMPortHandles(d);
 		(*d) = DeviceService_StateMachineData();
 		StateMachine_GoTo(sm, DeviceService_State_COMPortScan);
 	}
@@ -556,6 +571,7 @@ static void DeviceService_StateMachine(DeviceService* _, StateMachine* sm) {
 			Log("We couldn't find any USB Devices!\n");
 			StateMachine_Yield_ThenRetry(sm);
 		}
+			Log("We found %u USB Devices!\n", cast(uint32_t)d->comport_names.size());
 		StateMachine_GoTo(sm, DeviceService_State_COMPortScan_ForEach);
 	}
 
@@ -592,22 +608,28 @@ static void DeviceService_StateMachine(DeviceService* _, StateMachine* sm) {
 			}
 		#endif
 
-			StateMachine_GoTo(sm, DeviceService_State_ReadNumber);
+			const char* com_port_str = "?";
+			if(Test_True(d->comport_names_scan_index < d->comport_names.size())) {
+				com_port_str = d->comport_names[d->comport_names_scan_index].c_str();
+			}
+			Log("%s Connected\n", com_port_str);
+			StateMachine_GoTo(sm, DeviceService_State_AwaitIO);
 		}
 
 		// oh fuck, we went through all the ports and none of them worked. log, wait, and rescan.
+		// (for some reason this spammed a bunch of these errors....)
 		Log("We couldn't connect to any USB Device!\n");
-		StateMachine_GoTo(sm, DeviceService_State_COMPortScan);
+		StateMachine_Yield_ThenGoTo(sm, DeviceService_State_COMPortScan);
 	}
 
-	StateMachine_State(DeviceService_State_ReadNumber) {
-		DeviceService_StateMachine_AwaitOverlappedIO(_, sm);
+	StateMachine_State(DeviceService_State_AwaitIO) {
+		if(!DeviceService_StateMachine_AwaitOverlappedIO(_, sm)) {
+			const char* com_port_str = "?";
+			if(Test_True(d->comport_names_scan_index < d->comport_names.size())) {
+				com_port_str = d->comport_names[d->comport_names_scan_index].c_str();
+			}
+			Log("%s Disconnected\n", com_port_str);
 
-		// todo:
-		if(false) {
-			Log("Device Service Fatal Error\n");
-			// todo: (do something smart here, like cleanup, etc.)
-			//       since we have asynchronous operations happening here..!
 			StateMachine_GoTo(sm, DeviceService_State_Default);
 		}
 
@@ -649,15 +671,15 @@ intptr_t Thread_DeviceService(void* _) {
 	while(true) {
 		DeviceService_StateMachine(self, &sm);
 
-		uint32_t qi_blocking_timeout_us = 0;
+		uint32_t qi_blocking_timeout_us = 1000*1000;
 		{
 			bool sm_state_success = true;
 			StateMachine_StateType sm_state;
 			StateMachine_PeekState(&sm, &sm_state);
 			Assert_True(sm_state_success);
 
-			if(sm_state == DeviceService_State_COMPortScan) {
-				qi_blocking_timeout_us = 1000*1000;
+			if(sm_state == DeviceService_State_AwaitIO) {
+				qi_blocking_timeout_us = 0;
 			}
 		}
 

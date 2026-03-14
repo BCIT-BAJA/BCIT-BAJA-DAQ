@@ -64,11 +64,23 @@ template<typename T> inline T* DestructAt_NullSafe(T* p) {
 }
 
 
-Inline const void* Free_NullSafe(const void* p) {
-	if(Test_True(p)) {
-		free(cast(void*)p);
+Inline void* Malloc_OrAbort(const size_t bytes_capacity) {
+	Assert_True(bytes_capacity);
+	void* buffer = malloc(bytes_capacity);
+	if(!Test_True(buffer)) {
+		abort();
 	}
-	return p;
+	return buffer;
+}
+
+template<typename T>
+Inline void Free_NullSafe(T** p) {
+	if(Test_True(p)) {
+		if(Test_True(*p)) {
+			free(*p);
+		}
+		(*p) = null;
+	}
 }
 
 Inline void Free_Aligned(void* ptr) {

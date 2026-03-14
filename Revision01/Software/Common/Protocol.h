@@ -5,6 +5,8 @@
 #ifdef Protocol_Implmentation
 #endif
 
+#define Hub_Serial_8N1BaudRate (500*1000) 
+
 // 
 // Remote
 // Hub

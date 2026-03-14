@@ -192,8 +192,8 @@ bool _Audit_Close_OnConditionFalse(_Auditor_Metadata_DeclareArguments, const cha
 	scope->metadata.file_line = metadata_file_line;
 	scope->metadata.condition_str = metadata_condition_str;
 #if c_config(debug)
-	scope->metadata.file_str = metadata_file_str;
-	scope->metadata.function_signature_str = metadata_function_signature_str;
+	scope->metadata.debug_file_str = metadata_file_str;
+	scope->metadata.debug_function_signature_str = metadata_function_signature_str;
 #endif
 	scope->audit_error = Audit_GetLastError();
 	scope->os_error = OS_GetLastError();

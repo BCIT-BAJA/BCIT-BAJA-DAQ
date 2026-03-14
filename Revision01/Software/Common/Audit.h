@@ -82,8 +82,9 @@ Struct(AuditMetadata) {
 	uint32_t file_line = 0;
 	const char* condition_str = null;
 #if c_config(debug)
-	const char* file_str = null;
-	const char* function_signature_str = null;
+	// todo: it would be really helpful to put this into a separate Struct name. Ie .Debug. ... to not confuse users.
+	const char* debug_file_str = null;
+	const char* debug_function_signature_str = null;
 #endif
 };
 
@@ -126,9 +127,19 @@ Struct(AuditMetadata) {
 
 // if this fails the caller is expected to Pop() !!!
 // the only point of the Audit object is to ensure that the user doesn't forget to add logic to Pop an expected yielded false condition!
-#define Audit_TrueAudit(c, ...) _Audit_True(_Audit_ConditionTypeChecker, c, __VA_ARGS__)
+#define Audit_AuditFailed(c, ...) (!_Audit_True(_Audit_ConditionTypeChecker, c, __VA_ARGS__))
 
-#define Audit_ReturnIfUntrue(c, ...) if(!_Audit_True(, c, __VA_ARGS__)) { return Audit(); }
+#define Audit_ReturnIfUntrue(c, ...) \
+	if(!_Audit_True(, c, __VA_ARGS__)) { \
+		/* todo, in debug builds, maybe Log() this!! */; \
+		return Audit(); \
+	} \
+
+#define Audit_ReturnIfAuditFailed(c, ...) \
+	if(!_Audit_True(_Audit_ConditionTypeChecker, c, __VA_ARGS__)) { \
+		/* todo, in debug builds, maybe Log() this!! */; \
+		return Audit(); \
+	} \
 
 typedef uint64_t AuditError;
 #define AuditError_None 0

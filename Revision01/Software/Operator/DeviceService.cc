@@ -4,6 +4,7 @@
 
 #include "DeviceService.h"
 #include "StateMachine.h"
+#include "Protocol.h"
 
 using namespace std;
 
@@ -106,66 +107,49 @@ ERROR_GEN_FAILURE	31	Fatal
 ERROR_DEVICE_NOT_CONNECTED (fatal)
 ERROR_BAD_COMMAND (fatal)
 */
-HANDLE OpenCOMPortHandle_8N1(const char* comN_str, DWORD baudrate) {
+Audit OpenCOMPortHandle_8N1_Audit(const char* comN_str, DWORD baudrate, COMMTIMEOUTS timeouts, HANDLE* out_handle) {
 	HANDLE ret = INVALID_HANDLE_VALUE;
 	HANDLE h = INVALID_HANDLE_VALUE;
 	Defer(
+		/* if we aren't returning a valid handle, close it. */
 		if(!WindowsHandle_IsValid(ret)) {
 			WindowsHandle_CloseIfValid(h);
+		} else {
+			(*out_handle) = ret;
 		}
 	);
 
 	char path_str[MAX_PATH] = { 0 };
 	snprintf(ArrayArg(path_str), "\\\\.\\%s", comN_str);
 
-	h = CreateFileA(
-		path_str,
-		GENERIC_READ | GENERIC_WRITE,
-		0,
-		NULL,
-		OPEN_EXISTING,
-		FILE_FLAG_OVERLAPPED,
-		NULL
-	);
-	if(!Test_True(
-		h != INVALID_HANDLE_VALUE
+	Audit_ReturnIfUntrue(
+		INVALID_HANDLE_VALUE !=
+		(h = CreateFileA(
+			path_str,
+			GENERIC_READ | GENERIC_WRITE,
+			0,
+			NULL,
+			OPEN_EXISTING,
+			FILE_FLAG_OVERLAPPED,
+			NULL
+		))
 		, "Failed to open %s"
 		, comN_str
-	)) {
-		return INVALID_HANDLE_VALUE;
-	}
+	);
 
 	// Configure DCB (baud, parity, data bits, stop bits)
 	DCB dcb = { 0 };
 	dcb.DCBlength = sizeof(DCB);
 
-	if(!Test_True(GetCommState(h, &dcb))) {
-		return INVALID_HANDLE_VALUE;
-	}
+	Audit_ReturnIfUntrue(GetCommState(h, &dcb));
 
 	snprintf(ArrayArg(path_str)
 		, "baud=%u parity=N data=8 stop=1"
 		, baudrate
 	);
-	if(!Test_True(BuildCommDCBA(path_str, &dcb))) {
-		return INVALID_HANDLE_VALUE;
-	}
-
-	if(!Test_True(SetCommState(h, &dcb))) {
-		return INVALID_HANDLE_VALUE;
-	}
-
-	// todo: provide reasonable timeouts for high speed communication.
-	//       ie latency vs throughput.
-	COMMTIMEOUTS timeouts = { 0 };
-	timeouts.ReadIntervalTimeout = 50;
-	timeouts.ReadTotalTimeoutConstant = 50;
-	timeouts.ReadTotalTimeoutMultiplier = 10;
-	timeouts.WriteTotalTimeoutConstant = 50;
-	timeouts.WriteTotalTimeoutMultiplier = 10;
-	if(!Test_True(SetCommTimeouts(h, &timeouts))) {
-		return INVALID_HANDLE_VALUE;
-	}
+	Audit_ReturnIfUntrue(BuildCommDCBA(path_str, &dcb));
+	Audit_ReturnIfUntrue(SetCommState(h, &dcb));
+	Audit_ReturnIfUntrue(SetCommTimeouts(h, &timeouts));
 
 	// apparently guru knowledge suggests yielding here for the serial driver to 
 	// process the new configuration.
@@ -177,14 +161,9 @@ HANDLE OpenCOMPortHandle_8N1(const char* comN_str, DWORD baudrate) {
 		// For example, if you set a ReadIntervalTimeout of 1ms, but the driver’s internal polling rate is 16ms, the driver might "silent-fail" your request or round it up to 16ms without telling you SetCommTimeouts failed.
 		*/
 		COMMTIMEOUTS verify = { 0 };
-		if(!Test_True(GetCommTimeouts(h, &verify))) {
-			return INVALID_HANDLE_VALUE;
-		}
-
+		Audit_ReturnIfUntrue(GetCommTimeouts(h, &verify));
+		Audit_ReturnIfUntrue(0 == memcmp(&timeouts, &verify, sizeof(timeouts)), "The Driver failed to accept the COM port timeouts.");
 		Ensure_TrueAtCompileTime(sizeof(timeouts) == sizeof(verify));
-		if(!Test_True(0 == memcmp(&timeouts, &verify, sizeof(timeouts)), "The Driver failed to accept the COM port timeouts.")) {
-			return INVALID_HANDLE_VALUE;
-		}
 	}
 
 	// since we changed the driver settings, we'll purge to reset any accumulated data.
@@ -198,7 +177,7 @@ HANDLE OpenCOMPortHandle_8N1(const char* comN_str, DWORD baudrate) {
 	}
 
 	ret = h;
-	return h;
+	return Audit();
 }
 
 // http://www.flounder.com/serial.htm
@@ -239,7 +218,46 @@ Struct(DeviceService_StateMachineData) {
 	OVERLAPPED comport_ovl_WriteFile = { 0 }; // CloseHandle(.hEvent)
 
 	DWORD comport_WaitCommEvent_EvtMask = 0;
+
+#define DeviceService_StateMachineData_ReadFileBuffer_PoolTimeoutCapacity  cast(uint32_t)(4096)
+#define DeviceService_StateMachineData_ReadFileBuffer_PoolActualCapacity   cast(uint32_t)(4096 + 1024)
+#define DeviceService_StateMachineData_ReadFileBuffer_PoolCount (3)
+	struct {
+		uint8_t* pool_contiguous = null; // [Count*Capacity]
+		uint8_t* pools[DeviceService_StateMachineData_ReadFileBuffer_PoolCount] = { 0 };
+		uint32_t pool_free_i = 0;
+	} ReadFileBuffer;
 };
+
+static void DeviceService_StateMachineData_ReinitAndAllocate(DeviceService_StateMachineData* d) {
+	auto rfb = d->ReadFileBuffer;
+
+	if(!rfb.pool_contiguous) {
+		rfb.pool_contiguous = cast(uint8_t*)Malloc_OrAbort(
+			(1
+				*(DeviceService_StateMachineData_ReadFileBuffer_PoolActualCapacity)
+				*(DeviceService_StateMachineData_ReadFileBuffer_PoolCount)
+			)
+		);
+
+		for(uint32_t pool_i = 0; pool_i < Array_CountOf(rfb.pools); ++pool_i) {
+			rfb.pools[pool_i] = 
+				rfb.pool_contiguous
+				+ pool_i*(DeviceService_StateMachineData_ReadFileBuffer_PoolActualCapacity);
+		}
+
+		rfb.pool_free_i = 0;
+	}
+
+	(*d) = DeviceService_StateMachineData();
+
+	/* keep the read buffer alive */
+	d->ReadFileBuffer = rfb;
+}
+
+static void DeviceService_StateMachineData_Free(DeviceService_StateMachineData* d) {
+	Free_NullSafe(&d->ReadFileBuffer.pool_contiguous);
+}
 
 static void DeviceService_StateMachineData_CloseCOMPortHandles(DeviceService_StateMachineData* d) {
 #if 0 // todo: this is a race condition, because the driver may still be processing the previous I/O request, and if we close the handle while it's still processing, it could lead to undefined behavior. To avoid this, we need to ensure that all pending I/O operations have completed before closing the handle. Here's a general approach to safely close the COM port handle:
@@ -275,37 +293,264 @@ These are the "traffic controllers" of your serial thread.
 	  ERROR_IO_PENDING (997): Very common. This isn't actually an error; it means the operation is working in the background.
 	  ERROR_OPERATION_ABORTED (995): The I/O was cancelled (likely by PurgeComm or thread termination).
 */
-static Audit DeviceService_StateMachineData_TryWaitCommEvent(DeviceService_StateMachineData* d) {
+static Audit DeviceService_StateMachineData_WaitCommEvent_AuditOverlappedResult(DeviceService_StateMachineData* d) {
+	OVERLAPPED* lpOverlapped = &d->comport_ovl_WaitCommEvent;
+	/*
+	// The calling process can use one of the wait functions to determine
+	// the event object's state and then use the GetOverlappedResult function
+	// to determine the results of the WaitCommEvent operation.
+	// GetOverlappedResult reports the success or failure of the operation,
+	// and the variable pointed to by the lpEvtMask parameter is set to indicate
+	// the event that occurred. 
+	*/
+	DWORD NumberOfBytesTransferred;
+	Audit_ReturnIfUntrue(GetOverlappedResult(
+		d->comport_h, // hFile
+		lpOverlapped, // lpOverlapped
+		&NumberOfBytesTransferred, // lpNumberOfBytesTransferred
+		FALSE // bWait
+	));
+
+	if(d->comport_WaitCommEvent_EvtMask & EV_ERR) {
+		DWORD ClearCommError_Errors;
+		COMSTAT ClearCommError_Stat;
+		Audit_ReturnIfUntrue(ClearCommError(
+			d->comport_h, // hFile
+			&ClearCommError_Errors, // lpErrors
+			&ClearCommError_Stat // lpStat
+		));
+
+		// we treat all errors as fatal for now, since we don't have any sophisticated error handling or recovery logic in place.
+		// In the future, we can add more nuanced handling based on the specific error conditions.
+		if(ClearCommError_Errors & CE_BREAK) {
+			// Break Detected
+			// The hardware detected a break condition. 
+			// If you aren't expecting a Break signal, CE_BREAK usually points to a physical hardware failure.
+			Log("Received CE_BREAK, Break error\n");
+		}
+		if(ClearCommError_Errors & CE_FRAME) {
+			// Receive Framing error
+			Log("Received CE_FRAME, Framing error\n");
+			// (common in industrial environments with long cables)
+		}
+		if(ClearCommError_Errors & CE_OVERRUN) {
+			// Receive Overrun Error
+			// A character-buffer overrun has occurred. The next character is lost. 
+			// Windows usually allocates a small internal buffer (often 4KB or 8KB) to hold data before your ReadFile is called.
+			// If your code stops calling ReadFile for more than 80–160 ms at 500k baud, the driver buffer will overflow, and you will get a "Buffer Overrun" error (CE_OVERRUN), even though your 1MB buffer is empty.
+			Log("Received CE_OVERRUN, Overrun Error\n");
+		}
+		if(ClearCommError_Errors & CE_RXOVER) {
+			// Receive Queue overflow
+			// An input buffer overflow has occurred. There is either no room in the input buffer, or a character was received after the end-of-file (EOF) character. 
+			Log("Received CE_RXOVER, Queue Overflow Error\n");
+		}
+		if(ClearCommError_Errors & CE_RXPARITY) {
+			// Receive Parity Error
+			// The hardware detected a parity error. 
+			Log("Received CE_RXPARITY, Parity Error\n");
+			// (common in industrial environments with long cables)
+		}
+
+	#if 0 // (not applicable)
+		ClearCommError_Stat.fCtsHold : 1;
+		ClearCommError_Stat.fDsrHold : 1;
+		ClearCommError_Stat.fRlsdHold : 1;
+		ClearCommError_Stat.fXoffHold : 1;
+		ClearCommError_Stat.fXoffSent : 1;
+		ClearCommError_Stat.fEof : 1;
+		ClearCommError_Stat.fTxim : 1;
+	#endif
+
+		Log("ClearCommError_Stat: cbInQue=%u, cbOutQue=%u\n"
+			, ClearCommError_Stat.cbInQue // number of chars in the input queue
+			, ClearCommError_Stat.cbOutQue // number of chars in the output queue
+		);
+
+	#if 0 // (not possible for WaitCommEvent)
+		if(ClearCommError_Errors & CE_TXFULL) // TX Queue is full
+		if(ClearCommError_Errors & CE_PTO) // LPTx Timeout
+		if(ClearCommError_Errors & CE_IOE) // LPTx I/O Error
+		if(ClearCommError_Errors & CE_DNS) // LPTx Device not selected
+		if(ClearCommError_Errors & CE_OOP) // LPTx Out-Of-Paper
+		if(ClearCommError_Errors & CE_MODE) // Requested mode unsupported
+	#endif
+
+		// for now, we raise an audit if there are *any* errors at all.
+		Audit_ReturnIfUntrue(!ClearCommError_Errors);
+	}
+
+	return Audit();
+}
+static Audit DeviceService_StateMachineData_WaitCommEvent_Audit(DeviceService_StateMachineData* d) {
+	LPOVERLAPPED lpOverlapped = &d->comport_ovl_WaitCommEvent;
 	/*
 	// If the overlapped operation cannot be completed immediately,
 	// the function returns FALSE and the GetLastError function returns ERROR_IO_PENDING,
 	// indicating that the operation is executing in the background.
 	*/
-	Audit_ReturnIfUntrue(ResetEvent(d->comport_ovl_WaitCommEvent.hEvent));
-	Audit_ReturnIfUntrue(
-		WaitCommEvent(
-			d->comport_h,
-			&d->comport_WaitCommEvent_EvtMask,
-			&d->comport_ovl_WaitCommEvent
-		)
-		|| ERROR_IO_PENDING == GetLastError()
-	);
+	while(true) {
+		Audit_ReturnIfUntrue(ResetEvent(lpOverlapped->hEvent));
+		if(!WaitCommEvent(
+			d->comport_h, // hFile
+			&d->comport_WaitCommEvent_EvtMask, // lpEvtMask
+			lpOverlapped // lpOverlapped
+		)) {
+			Audit_ReturnIfUntrue(ERROR_IO_PENDING == GetLastError()); // ERROR_IO_PENDING is not a failure; it designates the operation is pending completion asynchronously.
+			break;
+		}
+		Audit_ReturnIfAuditFailed(DeviceService_StateMachineData_WaitCommEvent_AuditOverlappedResult(d));
+	}
 	return Audit();
 }
 
-static bool DeviceService_StateMachineData_TryOpenCOMPort(DeviceService_StateMachineData* d, const char* comN_str) {
-	DeviceService_StateMachineData_CloseCOMPortHandles(d);
+static Audit DeviceService_StateMachineData_ReadFile_AuditOverlappedResult(DeviceService_StateMachineData* d) {
+	LPOVERLAPPED lpOverlapped = &d->comport_ovl_ReadFile;
 
-	bool ret = false;
+	// if readfile completes, immediately re-launch it with the next Rented ring buffer[]. Otherwise, die, (because the buffer should basically never overflow) 
+	DWORD NumberOfBytesTransferred;
+	Audit_ReturnIfUntrue(GetOverlappedResult(
+		d->comport_h, // hFile
+		lpOverlapped, // lpOverlapped
+		&NumberOfBytesTransferred, // lpNumberOfBytesTransferred
+		FALSE // bWait
+	));
+
+	// (bytes were transferred)
+	auto& rfb = d->ReadFileBuffer;
+#if 0
+	const uint32_t pool_i = (
+		  rfb.pool_free_i
+		? (rfb.pool_free_i - 1)
+		: (rfb.pool_free_i - 1) + DeviceService_StateMachineData_ReadFileBuffer_PoolCount
+	);
+	const uint8_t* pool = rfb.pools[pool_i];
+	(++rfb.pool_free_i);
+	if(Array_CountOf(rfb.pools) <= rfb.pool_free_i) {
+		rfb.pool_free_i = 0;
+	}
+#else
+	const uint8_t* pool = rfb.pools[0];
+#endif
+
+	if(!NumberOfBytesTransferred) {
+		return Audit();
+	}
+
+	Assert_True(NumberOfBytesTransferred < DeviceService_StateMachineData_ReadFileBuffer_PoolActualCapacity
+		, "Looks like our timeouts didn't wok, we overflowed our readfile buffer."
+	);
+
+	#if 1
+	std::string data_str;
+	for(uint32_t ch_i = 0; ch_i < NumberOfBytesTransferred; ++ch_i) {
+		char ch = pool[ch_i];
+		switch(ch) {
+			case '\0': { data_str += "\\0"; } break;
+			case '\n': { data_str += "\\n"; } break;
+			case '\t': { data_str += "\\t"; } break;
+			case '\r': { data_str += "\\r"; } break;
+			default:   { data_str += ch; }  break;
+		}
+	}
+	Log("Received: (%u) '%s'\n"
+		, NumberOfBytesTransferred
+		, data_str.c_str()
+	);
+	#endif
+
+	// basically, the idea here is to push data into a contiguous accumulator state machine:
+	// for Protocol_Begin = { memchr(0x5A),   memcmp(0x5A + 1, 5A + 2, 5A + 3, 5A + 4) }
+	// for Protocol_End   = { memchr(0xA5),   memcmp(0xA5 + 1, A5 + 2, A5 + 3, A5 + 4) }
+	// Search_Protocol_Begin(IncomingBuffer):
+	//    
+	//    use memchr() to scan for the Protocol_Begin flag, 0x5A. if the next memcmp() matches, we treat this as Protocol_Begin. Goto FoundProtocolBegin
+	// Found_Protocol_Begin(IncomingBuffer):
+	//    optimistically search for Protocol_End with memchr() and memcmp().
+	//    if we found it, we push the packet (between Protocol_Begin and Protocol_End) into a processing queue, and go back to Search_Protocol_Begin.
+	//    else, we accumulate.
+	//
+	//    if the accumulation has filled up to a maximum limit, without finding Protocol_End,
+	//    we ignore our current Protocol_Begin flag,
+	//
+	// if memchr() finds the 
+	// 64 bit Protocol_Begin flag.
+	// 64 bit Protocol_End flag.
+
+	// a packet is basically guaranteed to be smaller than (8Kb + 8Kb)
+	return Audit();
+}
+
+static Audit DeviceService_StateMachineData_ReadFile_Audit(DeviceService_StateMachineData* d) {
+	LPOVERLAPPED lpOverlapped = &d->comport_ovl_ReadFile;
+	/*
+	// If the overlapped operation cannot be completed immediately,
+	// the function returns FALSE and the GetLastError function returns ERROR_IO_PENDING,
+	// indicating that the operation is executing in the background.
+	*/
+	auto& rfb = d->ReadFileBuffer;
+	while(true) {
+		Audit_ReturnIfUntrue(ResetEvent(lpOverlapped->hEvent));
+		if(!ReadFile(
+			d->comport_h, // hFile
+			// rfb.pools[rfb.pool_free_i], // (out) lpBuffer
+			rfb.pools[0], // (out) lpBuffer
+			DeviceService_StateMachineData_ReadFileBuffer_PoolActualCapacity, // nNumberOfBytesToRead
+			NULL, // lpNumberOfBytesRead parameter should be set to NULL
+			lpOverlapped // lpOverlapped
+		)) {
+			Audit_ReturnIfUntrue(ERROR_IO_PENDING == GetLastError()); // ERROR_IO_PENDING is not a failure; it designates the operation is pending completion asynchronously.
+			break;
+		}
+		Audit_ReturnIfAuditFailed(DeviceService_StateMachineData_ReadFile_AuditOverlappedResult(d));
+	}
+
+	return Audit();
+}
+
+static Audit DeviceService_StateMachineData_AuditOpenCOMPort(DeviceService_StateMachineData* d, const char* comN_str) {
 	Defer(
-		if(!ret) {
+		if(!Audit().success) {
 			DeviceService_StateMachineData_CloseCOMPortHandles(d);
 		}
 	);
 
-	d->comport_h = OpenCOMPortHandle_8N1(comN_str, CBR_115200);
-	if(!WindowsHandle_IsValid(d->comport_h)) {
-		return false;
+	{
+		// we want our buffers to be *filled* with 4Kb, the size of one page.
+		// in order to allow for jitter, and buffer overruns, we *allocate double* that
+		// 8Kb, yet set our total timeout to fill 4Kb.
+
+		// T(imeout)
+		// B(audrate)=500_000, 8N1, (10 bits per data-byte),
+		//
+		// (s/byte) = (1/B seconds/bit)*(10 bits/byte)
+		// C(bytes) = (T) / (s/byte)
+		// (T) = C * (s/byte)
+		//
+
+		const uint32_t ReadTotalTimeout_ms = cast(uint32_t)(
+			/*
+			// always offset the timeout to be 90% of a 4Kb page:
+			// If your buffer is 4KB or less: This usually happens in a single, atomic operation.
+			// The OS doesn't have to worry about your buffer crossing a virtual memory page boundary.
+			*/
+			(-3.99f) + // (-4 ms floor, try to account for possible OS timing jitter)
+			(1000.0f)*(10.0f/Hub_Serial_8N1BaudRate)*DeviceService_StateMachineData_ReadFileBuffer_PoolTimeoutCapacity
+		);
+
+		// we want the overlapped read to complete as soon as there is a "gap" in transmission, signaling the end of a data packet.
+		// Fixed ("total") Timeout = TotalConstant + (TotalMultiplier × BytesRequested)
+		COMMTIMEOUTS timeouts = { 0 };
+		timeouts.ReadIntervalTimeout = 0; // maximum time allowed to elapse before the arrival of the next byte on the communications line, in milliseconds
+		timeouts.ReadTotalTimeoutConstant = ReadTotalTimeout_ms; // added to the product of the ReadTotalTimeoutMultiplier member and the requested number of bytes
+		timeouts.ReadTotalTimeoutMultiplier = 0; // multiplied by the requested number of bytes to be read.
+
+		// 
+		timeouts.WriteTotalTimeoutConstant = 50; 
+		timeouts.WriteTotalTimeoutMultiplier = 10;
+
+		Audit_ReturnIfAuditFailed(OpenCOMPortHandle_8N1_Audit(comN_str, Hub_Serial_8N1BaudRate, timeouts, &d->comport_h));
+		Assert_True(WindowsHandle_IsValid(d->comport_h));
 	}
 
 	HANDLE* d_event_handles[] = {
@@ -318,7 +563,7 @@ static bool DeviceService_StateMachineData_TryOpenCOMPort(DeviceService_StateMac
 		HANDLE* evt_handle = d_event_handles[evt_i];
 		Assert_True(!WindowsHandle_IsValid(*evt_handle));
 
-		if(!Test_True((*evt_handle) = CreateEvent(
+		Audit_ReturnIfUntrue((*evt_handle) = CreateEvent(
 			NULL, // lpEventAttributes (null, cannot be inherited by child processes)
 			/*
 			// "The event object should be a manual-reset event.
@@ -328,12 +573,10 @@ static bool DeviceService_StateMachineData_TryOpenCOMPort(DeviceService_StateMac
 			FALSE, // bManualReset (creates a manual reset event object)
 			FALSE, // bInitialState (initially nonsignaled)
 			NULL // lpName (without a name)
-		))) {
-			return false;
-		}
+		));
 	}
 
-	if(!Test_True(SetCommMask(
+	Audit_ReturnIfUntrue(SetCommMask(
 		d->comport_h, 0
 		| EV_ERR // A line - status error occurred.Line - status errors are CE_FRAME, CE_OVERRUN, and CE_RXPARITY.
 	/*#if 0 // these WaitCommEvent(s) do not apply. Either because we're using OVERLAPPED I/O, binary protocol, or unavailable signal wires.
@@ -346,26 +589,16 @@ static bool DeviceService_StateMachineData_TryOpenCOMPort(DeviceService_StateMac
 		| EV_RLSD // The RLSD(receive - line - signal - detect) signal changed state.
 		| EV_RING // A ring indicator was detected.
 	*/
-	))) {
-		return false;
-	}
+	));
 
-	if(!Audit_TrueAudit(DeviceService_StateMachineData_TryWaitCommEvent(d))) {
-		AuditPeek peek = Audit_PeekChild();
-		Audit_Pop();
-
-		peek.audit_error;
-		peek.os_error;
-		return false;
-	}
-
-	ret = true;
-	return ret;
+	Audit_ReturnIfAuditFailed(DeviceService_StateMachineData_WaitCommEvent_Audit(d));
+	Audit_ReturnIfAuditFailed(DeviceService_StateMachineData_ReadFile_Audit(d));
+	return Audit();
 }
 
 static bool DeviceService_StateMachine_AwaitOverlappedIO(DeviceService* _, StateMachine* sm) {
 	DeviceService_StateMachineData* d = cast(DeviceService_StateMachineData*)sm->user_data;
-	Assert_True(d->comport_h != INVALID_HANDLE_VALUE);
+	Assert_True(WindowsHandle_IsValid(d->comport_h));
 
 	HANDLE wait_handles[] = {
 		d->comport_ovl_ReadFile.hEvent,
@@ -379,7 +612,6 @@ static bool DeviceService_StateMachine_AwaitOverlappedIO(DeviceService* _, State
 		HANDLE evt = wait_handles[evt_i];
 
 		if(!Test_True(WindowsHandle_IsValid(evt))) {
-			// todo: do something here
 			fatal = true;
 			break;
 		}
@@ -404,17 +636,14 @@ static bool DeviceService_StateMachine_AwaitOverlappedIO(DeviceService* _, State
 			// WAIT_OBJECT_0 to (WAIT_OBJECT_0 + nCount– 1)
 			// If bWaitAll is FALSE, the return value minus WAIT_OBJECT_0 indicates the lpHandles array index of the object that satisfied the wait. If more than one object became signaled during the call, this is the array index of the signaled object with the smallest index value of all the signaled objects.
 			case (WAIT_OBJECT_0 + 0): {
-				// if readfile completes, immediately re-launch it with the next Rented ring buffer[]. Otherwise, die, (because the buffer should basically never overflow) 
-				#if 0
-				if(GetOverlappedResult(
-					hComm,
-					&comport_ovl_read,
-					&bytesRead,
-					FALSE
-				)) {
-					printf("Delayed read finished: %d bytes\n", bytesRead);
+				if(false
+					|| Audit_AuditFailed(DeviceService_StateMachineData_ReadFile_AuditOverlappedResult(d))
+					|| Audit_AuditFailed(DeviceService_StateMachineData_ReadFile_Audit(d))
+				) {
+					AuditStack stack;
+					Audit_Pop(&stack);
+					fatal = true;
 				}
-				#endif
 			} break;
 
 			case (WAIT_OBJECT_0 + 1): {
@@ -432,101 +661,12 @@ static bool DeviceService_StateMachine_AwaitOverlappedIO(DeviceService* _, State
 			} break;
 
 			case (WAIT_OBJECT_0 + 2): {
-				/*
-				// The calling process can use one of the wait functions to determine
-				// the event object's state and then use the GetOverlappedResult function
-				// to determine the results of the WaitCommEvent operation.
-				// GetOverlappedResult reports the success or failure of the operation,
-				// and the variable pointed to by the lpEvtMask parameter is set to indicate
-				// the event that occurred. 
-				*/
-				DWORD NumberOfBytesTransferred;
-				if(!Test_True(GetOverlappedResult(
-					d->comport_h, // hFile
-					&d->comport_ovl_WaitCommEvent, // lpOverlapped
-					&NumberOfBytesTransferred, // lpNumberOfBytesTransferred
-					FALSE // bWait
-				))) {
+				if(false
+					|| Audit_AuditFailed(DeviceService_StateMachineData_WaitCommEvent_AuditOverlappedResult(d))
+					|| Audit_AuditFailed(DeviceService_StateMachineData_WaitCommEvent_Audit(d))
+				) {
+					Audit_Pop();
 					fatal = true;
-					break;
-				}
-
-				if(d->comport_WaitCommEvent_EvtMask & EV_ERR) {
-					DWORD ClearCommError_Errors;
-					COMSTAT ClearCommError_Stat;
-					if(!Test_True(ClearCommError(
-						d->comport_h, // hFile
-						&ClearCommError_Errors, // lpErrors
-						&ClearCommError_Stat // lpStat
-					))) {
-						fatal = true;
-						break;
-					}
-
-					// we treat all errors as fatal for now, since we don't have any sophisticated error handling or recovery logic in place.
-					// In the future, we can add more nuanced handling based on the specific error conditions.
-					fatal = !!ClearCommError_Errors;
-
-					if(ClearCommError_Errors & CE_BREAK) {
-						// Break Detected
-						// The hardware detected a break condition. 
-						// If you aren't expecting a Break signal, CE_BREAK usually points to a physical hardware failure.
-						Log("Received CE_BREAK, Break error\n");
-					}
-					if(ClearCommError_Errors & CE_FRAME) {
-						// Receive Framing error
-						Log("Received CE_FRAME, Framing error\n");
-						// (common in industrial environments with long cables)
-					}
-					if(ClearCommError_Errors & CE_OVERRUN) {
-						// Receive Overrun Error
-						// A character-buffer overrun has occurred. The next character is lost. 
-						Log("Received CE_OVERRUN, Overrun Error\n");
-					}
-					if(ClearCommError_Errors & CE_RXOVER) {
-						// Receive Queue overflow
-						// An input buffer overflow has occurred. There is either no room in the input buffer, or a character was received after the end-of-file (EOF) character. 
-						Log("Received CE_RXOVER, Queue Overflow Error\n");
-					}
-					if(ClearCommError_Errors & CE_RXPARITY) {
-						// Receive Parity Error
-						// The hardware detected a parity error. 
-						Log("Received CE_RXPARITY, Parity Error\n");
-						// (common in industrial environments with long cables)
-					}
-
-				#if 0 // (not applicable)
-					ClearCommError_Stat.fCtsHold : 1;
-					ClearCommError_Stat.fDsrHold : 1;
-					ClearCommError_Stat.fRlsdHold : 1;
-					ClearCommError_Stat.fXoffHold : 1;
-					ClearCommError_Stat.fXoffSent : 1;
-					ClearCommError_Stat.fEof : 1;
-					ClearCommError_Stat.fTxim : 1;
-				#endif
-
-					Log("ClearCommError_Stat: cbInQue=%u, cbOutQue=%u\n"
-						, ClearCommError_Stat.cbInQue // number of chars in the input queue
-						, ClearCommError_Stat.cbOutQue // number of chars in the output queue
-					);
-
-				#if 0 // (not possible for WaitCommEvent)
-					if(ClearCommError_Errors & CE_TXFULL) // TX Queue is full
-					if(ClearCommError_Errors & CE_PTO) // LPTx Timeout
-					if(ClearCommError_Errors & CE_IOE) // LPTx I/O Error
-					if(ClearCommError_Errors & CE_DNS) // LPTx Device not selected
-					if(ClearCommError_Errors & CE_OOP) // LPTx Out-Of-Paper
-					if(ClearCommError_Errors & CE_MODE) // Requested mode unsupported
-				#endif
-				}
-
-				if(!fatal) {
-					if(!Audit_TrueAudit(DeviceService_StateMachineData_TryWaitCommEvent(d))) {
-						AuditPeek peek = Audit_PeekChild();
-						Audit_Pop();
-
-						fatal = true;
-					}
 				}
 			} break;
 
@@ -561,8 +701,7 @@ static void DeviceService_StateMachine(DeviceService* _, StateMachine* sm) {
 	StateMachine_OpenSwitch(sm);
 
 	StateMachine_DefaultState(DeviceService_State_Default) {
-		DeviceService_StateMachineData_CloseCOMPortHandles(d);
-		(*d) = DeviceService_StateMachineData();
+		DeviceService_StateMachineData_ReinitAndAllocate(d);
 		StateMachine_GoTo(sm, DeviceService_State_COMPortScan);
 	}
 
@@ -571,7 +710,8 @@ static void DeviceService_StateMachine(DeviceService* _, StateMachine* sm) {
 			Log("We couldn't find any USB Devices!\n");
 			StateMachine_Yield_ThenRetry(sm);
 		}
-			Log("We found %u USB Devices!\n", cast(uint32_t)d->comport_names.size());
+
+		Log("We found %u USB Devices!\n", cast(uint32_t)d->comport_names.size());
 		StateMachine_GoTo(sm, DeviceService_State_COMPortScan_ForEach);
 	}
 
@@ -585,28 +725,16 @@ static void DeviceService_StateMachine(DeviceService* _, StateMachine* sm) {
 		size_t& d_comport_names_i = d->comport_names_scan_index;
 
 		for(; d_comport_names_i < d_comport_names.size(); ++d_comport_names_i) {
-			if(!DeviceService_StateMachineData_TryOpenCOMPort(d, d_comport_names[d_comport_names_i].c_str())) {
+			if(Audit_AuditFailed(DeviceService_StateMachineData_AuditOpenCOMPort(
+				d,
+				d_comport_names[d_comport_names_i].c_str()
+			))) {
+				AuditStack stack;
+				Audit_Pop(&stack);
 				continue;
 			}
 
-		#if 0
-			// 3. Start an overlapped Read
-			if (!ReadFile(hComm, buffer, sizeof(buffer), &bytesRead, &comport_ovl_read)) {
-				if (GetLastError() != ERROR_IO_PENDING) {
-					// A real error occurred
-					printf("Read failed immediately\n");
-				}
-				else {
-					// The read is happening in the background
-					fWaitingOnRead = TRUE;
-					printf("Read pending...\n");
-				}
-			}
-			else {
-				// Read completed immediately (data was already in the buffer)
-				printf("Read %d bytes immediately\n", bytesRead);
-			}
-		#endif
+			Assert_True(WindowsHandle_IsValid(d->comport_h));
 
 			const char* com_port_str = "?";
 			if(Test_True(d->comport_names_scan_index < d->comport_names.size())) {
@@ -630,6 +758,9 @@ static void DeviceService_StateMachine(DeviceService* _, StateMachine* sm) {
 			}
 			Log("%s Disconnected\n", com_port_str);
 
+			// todo: don't we have to close handles here??
+
+			DeviceService_StateMachineData_CloseCOMPortHandles(d);
 			StateMachine_GoTo(sm, DeviceService_State_Default);
 		}
 
@@ -665,6 +796,8 @@ intptr_t Thread_DeviceService(void* _) {
 
 
 	DeviceService_StateMachineData sm_data;
+	Defer(DeviceService_StateMachineData_Free(&sm_data));
+
 	StateMachine sm;
 	sm.user_data = &sm_data;
 

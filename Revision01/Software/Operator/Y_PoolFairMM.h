@@ -91,7 +91,7 @@ struct Y_PoolFairMM {
 			m_entries_constructed = false;
 		}
 
-		Basic_ArrayPointer_Delete(m_entries);
+		Basic_ArrayPointer_Delete_NullSafe(m_entries);
 		m_entries_capacity = 0;
 		m_fair_a.store(0, std::memory_order_relaxed);
 	}

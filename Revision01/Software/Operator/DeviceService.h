@@ -50,7 +50,7 @@
 #include "Y_EventMM.h"
 
 #include "LogService.h"
-#include "ExcelService.h"
+#include "IOService.h"
 
 enum class DeviceService_MsgIn_e : uint8_t {
 	nul = 0,
@@ -86,7 +86,6 @@ struct DeviceService {
 	Y_QueueMM<DeviceService_MsgIn> qi;
 
 	Logger log = null;
-	ExcelService* excel = null;
 };
 
 intptr_t Thread_DeviceService(void* _);
@@ -102,10 +101,9 @@ Inline void DeviceService_Destroy(DeviceService* _) {
 	ZoneScoped;
 	_->qi.Destroy();
 }
-Inline void DeviceService_Begin(DeviceService* _, Logger log, ExcelService* excel) {
+Inline void DeviceService_Begin(DeviceService* _, Logger log) {
 	ZoneScoped;
 	_->log = log;
-	_->excel = excel;
 	_->thread = std::thread(Thread_DeviceService, _);
 }
 Inline bool DeviceService_SignalEnd(DeviceService* _) {

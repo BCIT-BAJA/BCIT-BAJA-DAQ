@@ -52,7 +52,7 @@
 
 #include "LogService.h"
 #include "DataService.h"
-#include "ExcelService.h"
+#include "IOService.h"
 #include "LogService.h"
 #include "DeviceService.h"
 
@@ -61,33 +61,32 @@ int main()
 	printf(Version_StringLiteral() "\n"); 
 	fflush(stdout);
 
-	// StateMachine_Demo();
-	Audit_Demo();
-
 	LogService log;
-	ExcelService excel;
+	IOService io;
 	DeviceService device;
 
 	if(!Test_True(LogService_Create(&log))) { return __LINE__; }
-	if(!Test_True(ExcelService_Create(&excel))) { return __LINE__; }
+	if(!Test_True(IOService_Create(&io))) { return __LINE__; }
 	if(!Test_True(DeviceService_Create(&device))) { return __LINE__; }
 
-	Log("Hello, world!\n");
+	// StateMachine_Demo();
+	// Audit_Demo();
+	IOService_Demo(&log);
 
 	Defer(LogService_Destroy(&log));
-	Defer(ExcelService_Destroy(&excel));
+	Defer(IOService_Destroy(&io));
 	Defer(DeviceService_Destroy(&device));
 
 	LogService_Begin(&log);
-	ExcelService_Begin(&excel, &log);
-	DeviceService_Begin(&device, &log, &excel);
+	IOService_Begin(&io, &log);
+	DeviceService_Begin(&device, &log/*, &File*/);
 
 	Defer(
 		DeviceService_SignalEnd(&device);
 		DeviceService_WaitForEnd(&device);
 
-		ExcelService_SignalEnd(&excel);
-		ExcelService_WaitForEnd(&excel);
+		IOService_SignalEnd(&io);
+		IOService_WaitForEnd(&io);
 
 		LogService_SignalEnd(&log);
 		LogService_WaitForEnd(&log);

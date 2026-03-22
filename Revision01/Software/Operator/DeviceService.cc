@@ -303,11 +303,11 @@ static Audit DeviceService_StateMachineData_WaitCommEvent_AuditOverlappedResult(
 	// and the variable pointed to by the lpEvtMask parameter is set to indicate
 	// the event that occurred. 
 	*/
-	DWORD NumberOfBytesTransferred;
+	DWORD NumberOfBytesTransferred_Undefined; // For a ConnectNamedPipe or WaitCommEvent operation, this value is undefined.
 	Audit_ReturnIfUntrue(GetOverlappedResult(
 		d->comport_h, // hFile
 		lpOverlapped, // lpOverlapped
-		&NumberOfBytesTransferred, // lpNumberOfBytesTransferred
+		&NumberOfBytesTransferred_Undefined, // lpNumberOfBytesTransferred
 		FALSE // bWait
 	));
 
@@ -706,12 +706,16 @@ static void DeviceService_StateMachine(DeviceService* _, StateMachine* sm) {
 	}
 
 	StateMachine_State(DeviceService_State_COMPortScan) {
-		if(!QueryCOMPortNames(&d->comport_names) || d->comport_names.empty()) {
-			Log("We couldn't find any USB Devices!\n");
+		if(!QueryCOMPortNames(&d->comport_names)) {
+			Log("We failed to query USB Devices!\n");
 			StateMachine_Yield_ThenRetry(sm);
 		}
 
 		Log("We found %u USB Devices!\n", cast(uint32_t)d->comport_names.size());
+		if(d->comport_names.empty()) {
+			StateMachine_Yield_ThenRetry(sm);
+		}
+
 		StateMachine_GoTo(sm, DeviceService_State_COMPortScan_ForEach);
 	}
 
@@ -725,28 +729,22 @@ static void DeviceService_StateMachine(DeviceService* _, StateMachine* sm) {
 		size_t& d_comport_names_i = d->comport_names_scan_index;
 
 		for(; d_comport_names_i < d_comport_names.size(); ++d_comport_names_i) {
-			if(Audit_AuditFailed(DeviceService_StateMachineData_AuditOpenCOMPort(
-				d,
-				d_comport_names[d_comport_names_i].c_str()
-			))) {
+			const char* comport_name = d_comport_names[d_comport_names_i].c_str();
+			if(Audit_AuditFailed(DeviceService_StateMachineData_AuditOpenCOMPort(d, comport_name))) {
 				AuditStack stack;
 				Audit_Pop(&stack);
+				Log("We couldn't connect to %s!\n", comport_name);
 				continue;
 			}
 
 			Assert_True(WindowsHandle_IsValid(d->comport_h));
 
-			const char* com_port_str = "?";
-			if(Test_True(d->comport_names_scan_index < d->comport_names.size())) {
-				com_port_str = d->comport_names[d->comport_names_scan_index].c_str();
-			}
-			Log("%s Connected\n", com_port_str);
+			Log("%s Connected\n", comport_name);
 			StateMachine_GoTo(sm, DeviceService_State_AwaitIO);
 		}
 
 		// oh fuck, we went through all the ports and none of them worked. log, wait, and rescan.
 		// (for some reason this spammed a bunch of these errors....)
-		Log("We couldn't connect to any USB Device!\n");
 		StateMachine_Yield_ThenGoTo(sm, DeviceService_State_COMPortScan);
 	}
 

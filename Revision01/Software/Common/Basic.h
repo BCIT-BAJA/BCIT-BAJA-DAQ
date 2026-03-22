@@ -63,6 +63,18 @@ template<typename T> inline T* DestructAt_NullSafe(T* p) {
 	return p;
 }
 
+Inline void Memclear(void* ptr, const size_t bytes) {
+	Assert_True(ptr);
+	Assert_True(bytes);
+	memset(ptr, 0, bytes);
+}
+
+Inline void Memcpy(void* dst, const void* src, const size_t bytes) {
+	Assert_True(dst);
+	Assert_True(src);
+	Assert_True(bytes);
+	memcpy(dst, src, bytes);
+}
 
 Inline void* Malloc_OrAbort(const size_t bytes_capacity) {
 	Assert_True(bytes_capacity);
@@ -118,7 +130,7 @@ Inline void Free_Aligned(void* ptr) {
 	) \
 )
 
-#define Basic_ArrayPointer_Delete(Ptr) \
+#define Basic_ArrayPointer_Delete_NullSafe(Ptr) \
 	do { \
 		if (Ptr) { \
 			Free_Aligned(Ptr); \

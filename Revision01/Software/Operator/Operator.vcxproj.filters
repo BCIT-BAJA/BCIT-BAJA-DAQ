@@ -42,9 +42,6 @@
     <ClCompile Include="DataService.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ExcelService.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="DeviceReadService.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -53,6 +50,9 @@
     </ClCompile>
     <ClCompile Include="..\Common\Audit.cc">
       <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="IOService.cc">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -107,9 +107,6 @@
     <ClInclude Include="DataService.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="ExcelService.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\Common\Version.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
@@ -133,6 +130,12 @@
     </ClInclude>
     <ClInclude Include="..\Common\Audit.h">
       <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="IOService.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Y_IndexRentalMM.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -254,7 +254,7 @@ void Y_QueueMM<T>::Destroy() {
 	Assert_True(server.m_returns_n_a.load(std::memory_order_relaxed) == server.m_rents_n_a.load(std::memory_order_relaxed), "No outstanding clients allowed!");
 #endif
 
-	Basic_ArrayPointer_Delete(server.m_entries);
+	Basic_ArrayPointer_Delete_NullSafe(server.m_entries);
 	server.m_entries_capacity = 0;
 	server.m_writer_a = 0;
 	server.m_reader_a = 0;

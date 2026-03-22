@@ -189,13 +189,13 @@ void Log(Logger l, const char* fmt, ...) c_fmt(2) {
 	Log_Txt(l, &msg);
 }
 
-ThreadLocal Logger t_logger = null;
+ThreadLocal Logger tls_logger = null;
 void Log_BindThreadLocal(Logger l) {
-	t_logger = l;
+	tls_logger = l;
 }
 void Log(const char* fmt, ...) c_fmt(2) {
 	Task_ZoneScoped_NoCallstack;
-	if(!Test_True(t_logger)) {
+	if(!Test_True(tls_logger)) {
 		return;
 	}
 
@@ -203,5 +203,5 @@ void Log(const char* fmt, ...) c_fmt(2) {
 	va_scope(va, fmt) {
 		Txt_Fmt_(&msg, fmt, va);
 	}
-	Log_Txt(t_logger, &msg);
+	Log_Txt(tls_logger, &msg);
 }

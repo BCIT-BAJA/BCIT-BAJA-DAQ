@@ -87,6 +87,18 @@ typedef uint32_t OS_ErrorType;
 #define case_fallthrough [[fallthrough]]
 #define SWITCH_FallThroughToNextCase() [[fallthrough]]
 
+// #define offset_of(s,m) __builtin_offsetof(s,m)
+#ifdef __cplusplus
+#define offset_of(s,m) ((::size_t)&reinterpret_cast<char const volatile&>((((s*)0)->m)))
+#else
+#define offset_of(s,m) ((size_t)&(((s*)0)->m))
+#if 0
+#define offset_of(T, V) (cast(ptrdiff_t)&((cast((T)*)0)->(V)))
+#endif
+#endif
+
+#define STRUCT_MemberAddress(T, Member) offset_of(T, Member)
+
 #define _EnsureTrue_AtCompileTime3(c, msg) typedef char EnsureTrue_AtCompileTime_##msg[(!!(c))*2-1]
 #define _EnsureTrue_AtCompileTime2(c, line) _EnsureTrue_AtCompileTime3(c, FAILED_at_line_##line)
 #define _EnsureTrue_AtCompileTime1(c, line) _EnsureTrue_AtCompileTime2(c, line)
@@ -138,15 +150,7 @@ typedef uint32_t OS_ErrorType;
 #define AArg(A) (A), Array_CountOf(A)
 #define ArrayArg AArg
 
-// #define offset_of(s,m) __builtin_offsetof(s,m)
-#ifdef __cplusplus
-#define offset_of(s,m) ((::size_t)&reinterpret_cast<char const volatile&>((((s*)0)->m)))
-#else
-#define offset_of(s,m) ((size_t)&(((s*)0)->m))
-#if 0
-#define offset_of(T, V) (cast(ptrdiff_t)&((cast((T)*)0)->(V)))
-#endif
-#endif
+#define StringLiteralArg(S) (S), Array_StrlenOf(S)
 
 /*
 //
@@ -231,6 +235,9 @@ template<typename F> inline _ScopedFunction<F> _ScopedFunction_Create(F f) { ret
 #define fmt_i64 "%lld"
 #define fmt_u64 "%llu"
 #endif
+
+#define FMT_i64 fmt_i64
+#define FMT_u64 fmt_u64
 
 #if defined(__clang__) || defined(__GNUC__)
 #define c_fmt(fmt_nth)    __attribute__((format(printf, fmt_nth, fmt_nth + 1)))

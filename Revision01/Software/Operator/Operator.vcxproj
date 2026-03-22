@@ -152,7 +152,7 @@
     <ClCompile Include="DataService.cc" />
     <ClCompile Include="DeviceReadService.cc" />
     <ClCompile Include="DeviceWriteService.cc" />
-    <ClCompile Include="ExcelService.cc" />
+    <ClCompile Include="IOService.cc" />
     <ClCompile Include="LogService.cc" />
     <ClCompile Include="main.cc" />
     <ClCompile Include="OS_AddressEvent.cc" />
@@ -177,7 +177,7 @@
     <ClInclude Include="DataService.h" />
     <ClInclude Include="DeviceReadService.h" />
     <ClInclude Include="DeviceWriteService.h" />
-    <ClInclude Include="ExcelService.h" />
+    <ClInclude Include="IOService.h" />
     <ClInclude Include="LogService.h" />
     <ClInclude Include="OS_AddressEvent.h" />
     <ClInclude Include="OS_Signal.h" />
@@ -185,6 +185,7 @@
     <ClInclude Include="DeviceService.h" />
     <ClInclude Include="Y.h" />
     <ClInclude Include="Y_EventMM.h" />
+    <ClInclude Include="Y_IndexRentalMM.h" />
     <ClInclude Include="Y_PoolFairMM.h" />
     <ClInclude Include="Y_PoolFrugalMM.h" />
     <ClInclude Include="Y_QueueMM.h" />

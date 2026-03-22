@@ -6,19 +6,6 @@
 /*
 // see: https://concurrencyfreaks.blogspot.com/2013/09/distributed-cache-line-counter-scalable.html
 */
-#if 0
-
-// Use 0 for writer's "unlocked" and 1 for "locked" state
-#define DCLC_RWL_UNLOCKED    0
-#define DCLC_RWL_LOCKED      1
-
-// Cache line optimization constants
-#define DCLC_CACHE_LINE          64               // Size in bytes of a cache line
-#define DCLC_CACHE_PADD          (DCLC_CACHE_LINE-sizeof(std::atomic<int>))
-#define DCLC_NUMBER_OF_CORES     32
-#define DCLC_HASH_RATIO           3
-#define DCLC_COUNTERS_RATIO      (DCLC_HASH_RATIO*DCLC_CACHE_LINE/sizeof(int))
-#endif
 
 #include "Basic.h"
 
@@ -71,7 +58,7 @@ struct Y_RWLockMM {
 	void Destroy() {
 		Task_ZoneScoped_NoCallstack;
 
-		Basic_ArrayPointer_Delete(m_entries);
+		Basic_ArrayPointer_Delete_NullSafe(m_entries);
 		m_entries_capacity = 0;
 		m_writer_a.store(0, std::memory_order_relaxed);
 	}

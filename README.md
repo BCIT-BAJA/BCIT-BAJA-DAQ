@@ -36,3 +36,6 @@ Example of LTSPICE simulation used for amplifier board + signal conditioning
 
 Verified amplifier board working
 <img width="975" height="567" alt="image" src="https://github.com/user-attachments/assets/97f6bca2-eba5-471d-8e2b-93cc97f4937b" />
+
+# Results of real-world appied force vs output voltage 
+<img width="1356" height="620" alt="image" src="https://github.com/user-attachments/assets/b343138e-8436-4540-9d79-35ff9e8cacf9" />
